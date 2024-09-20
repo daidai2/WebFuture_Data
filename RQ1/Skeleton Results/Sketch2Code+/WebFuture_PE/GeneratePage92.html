@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Notes Section -->
+  <div class="space-y-6">
+    <!-- Note 1 -->
+    <div class="flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24">
+      <div>
+        <h2 class="text-xl font-bold">Note One</h2>
+        <p>Job Title</p>
+        <p>Details about the job...</p>
+      </div>
+    </div>
+    <!-- Note 2 -->
+    <div class="flex items-center space-x-4">
+      <div>
+        <h2 class="text-xl font-bold">Note Two</h2>
+        <p>Job Title</p>
+        <p>Details about the job...</p>
+      </div>
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24">
+    </div>
+    <!-- Note 3 -->
+    <div class="flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24">
+      <div>
+        <h2 class="text-xl font-bold">Note Three</h2>
+        <p>Job Title</p>
+        <p>Details about the job...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Section -->
+  <div class="mt-12 p-6 bg-white rounded shadow-lg">
+    <h2 class="text-2xl font-bold mb-6">Checkout</h2>
+
+    <!-- Shipping Address -->
+    <h3 class="text-xl font-semibold mb-4">Shipping Address</h3>
+    <div class="space-y-4">
+      <div>
+        <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+        <input type="text" id="first-name" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div>
+        <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input type="text" id="last-name" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div>
+        <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+        <input type="text" id="company" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+    </div>
+
+    <!-- Shipping Service -->
+    <h3 class="text-xl font-semibold mt-8 mb-4">Shipping Service</h3>
+    <div class="space-y-4">
+      <div class="flex items-center">
+        <input type="radio" id="standard" name="shipping" class="h-4 w-4 text-blue-600 border-gray-300">
+        <label for="standard" class="ml-2 block text-sm font-medium text-gray-700">Standard 14 days - $5.99</label>
+      </div>
+      <div class="flex items-center">
+        <input type="radio" id="expedited" name="shipping" class="h-4 w-4 text-blue-600 border-gray-300">
+        <label for="expedited" class="ml-2 block text-sm font-medium text-gray-700">Expedited 7 days - $9.99</label>
+      </div>
+      <div class="flex items-center">
+        <input type="radio" id="express" name="shipping" class="h-4 w-4 text-blue-600 border-gray-300">
+        <label for="express" class="ml-2 block text-sm font-medium text-gray-700">Express 3 days - $19.99</label>
+      </div>
+    </div>
+
+    <div class="mt-8 space-y-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 mx-auto">
+      <!-- Simple form elements (generated based on the placeholder elements in the wireframe) -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Label</label>
+        <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Label</label>
+        <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" id="option1" class="h-4 w-4 text-blue-600 border-gray-300">
+        <label for="option1" class="ml-2 block text-sm font-medium text-gray-700">Checkbox</label>
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" id="option2" class="h-4 w-4 text-blue-600 border-gray-300">
+        <label for="option2" class="ml-2 block text-sm font-medium text-gray-700">Checkbox</label>
+      </div>
+      <button class="mt-4 w-full p-2 bg-blue-600 text-white rounded">Button</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-container, .shipping-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product-info, .rating, .headline, .review, .submit, .shipping-info, .payment-method, .address, .country, .accept {
+            margin-bottom: 15px;
+        }
+        .product-info img {
+            width: 100px;
+            height: 100px;
+        }
+        .rating-stars span {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="review-container">
+        <h1>Write Review</h1>
+        <div class="product-info">
+            <img src="product-image-placeholder.png" alt="Product Image">
+            <div>
+                <h2>Product Name</h2>
+                <p>$Price</p>
+                <p>45 reviews</p>
+            </div>
+        </div>
+        <div class="rating">
+            <p>Rate Product</p>
+            <div class="rating-stars">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>Bad :(</span>
+            </div>
+        </div>
+        <div class="headline">
+            <label for="headline">Headline</label>
+            <input type="text" id="headline" name="headline">
+        </div>
+        <div class="review">
+            <label for="review">Review</label>
+            <textarea id="review" name="review"></textarea>
+        </div>
+        <div class="submit">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    
+    <div class="shipping-container">
+        <h2>Forma de envío</h2>
+        <div class="shipping-info">
+            <p>Medio transporte</p>
+            <label><input type="radio" name="transporte" value="terrestre"> Terrestre</label><br>
+            <label><input type="radio" name="transporte" value="aereo"> Aereo</label><br>
+            <label><input type="radio" name="transporte" value="maritimo"> Marítimo</label>
+        </div>
+        <div class="payment-method">
+            <p>Forma de pago</p>
+            <label><input type="radio" name="pago" value="tarjeta"> Tarjeta (Crédito/débito)</label><br>
+            <label><input type="radio" name="pago" value="transferencia"> Transferencia bancaria</label><br>
+            <label><input type="radio" name="pago" value="metalico"> Metálico</label>
+        </div>
+        <div class="address">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+        </div>
+        <div class="country">
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais">
+        </div>
+        <div class="accept">
+            <button type="submit">Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>

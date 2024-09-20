@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-2 gap-4">
+
+      <!-- Images section -->
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://placehold.co/150x150" alt="Placeholder" class="w-full h-auto">
+        <img src="https://placehold.co/150x150" alt="Placeholder" class="w-full h-auto">
+        <img src="https://placehold.co/300x150" alt="Placeholder" class="col-span-2 w-full h-auto">
+      </div>
+
+      <!-- Text and button section -->
+      <div>
+        <div class="mb-4">
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded mb-4">Button</button>
+        <div>
+          <input type="checkbox" id="checkbox" class="mr-2">
+          <label for="checkbox">Checkbox</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed product section -->
+    <div class="grid grid-cols-2 gap-4 mt-8 bg-white p-6 rounded-lg shadow-lg">
+      <div>
+        <img src="https://placehold.co/300x300" alt="Product Image" class="w-full h-auto mb-4">
+        <div class="grid grid-cols-4 gap-2">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-full h-auto">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-full h-auto">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-full h-auto">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-full h-auto">
+        </div>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-4">Product Name</h2>
+        <p class="mb-2">Manufacturer</p>
+        <p class="mb-2">Color:</p>
+        <div class="mb-4">
+          <input type="radio" id="red" name="color" class="mr-2">
+          <label for="red">Red</label><br>
+          <input type="radio" id="blue" name="color" class="mr-2">
+          <label for="blue">Blue</label><br>
+          <input type="radio" id="white" name="color" class="mr-2">
+          <label for="white">White</label>
+        </div>
+        <p class="mb-2">Price:</p>
+        <p class="text-red-500">$100 <span class="line-through text-gray-500">$200</span></p>
+        <button class="bg-green-500 text-white py-2 px-4 rounded mt-4">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Form section -->
+    <div class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-bold mb-4">Title</h2>
+      <input type="text" class="border p-2 w-full mb-4" placeholder="Title">
+      <div class="mb-4">
+        <p>Radio Buttons:</p>
+        <input type="radio" id="not-relevant" name="relevance" class="mr-2">
+        <label for="not-relevant">Not Relevant</label><br>
+        <input type="radio" id="low" name="relevance" class="mr-2">
+        <label for="low">Low</label><br>
+        <input type="radio" id="medium" name="relevance" class="mr-2">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="high" name="relevance" class="mr-2">
+        <label for="high">High</label>
+      </div>
+      <div class="mb-4">
+        <p>Check Boxes:</p>
+        <input type="checkbox" id="choice1" class="mr-2">
+        <label for="choice1">Choice 1</label><br>
+        <input type="checkbox" id="choice2" class="mr-2">
+        <label for="choice2">Choice 2</label><br>
+        <input type="checkbox" id="choice3" class="mr-2">
+        <label for="choice3">Choice 3</label><br>
+        <input type="checkbox" id="choice4" class="mr-2">
+        <label for="choice4">Choice 4</label><br>
+        <input type="checkbox" id="choice5" class="mr-2">
+        <label for="choice5">Choice 5</label><br>
+        <input type="checkbox" id="choice6" class="mr-2">
+        <label for="choice6">Choice 6</label><br>
+        <input type="checkbox" id="choice7" class="mr-2">
+        <label for="choice7">Choice 7</label><br>
+        <input type="checkbox" id="choice8" class="mr-2">
+        <label for="choice8">Choice 8</label>
+      </div>
+      <div class="flex justify-end">
+        <button class="bg-blue-500 text-white py-2 px-4 mr-2 rounded">OK</button>
+        <button class="bg-gray-500 text-white py-2 px-4 rounded">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

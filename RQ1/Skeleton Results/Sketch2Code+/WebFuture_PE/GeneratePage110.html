@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="container mx-auto bg-white p-8 shadow-md">
+    <!-- Product Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+      <!-- Main Product Image -->
+      <div class="flex flex-col items-center">
+        <img src="https://placehold.co/300x300" alt="Product Image" class="mb-4">
+        <!-- Thumbnail Images -->
+        <div class="flex space-x-2">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 1">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 2">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 3">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 4">
+        </div>
+      </div>
+      <!-- Product Details -->
+      <div>
+        <h1 class="text-2xl font-bold mb-4">Product Name</h1>
+        <p class="mb-4">Manufacturer</p>
+        <div class="mb-4">
+          <p>Color</p>
+          <label class="inline-flex items-center">
+            <input type="radio" name="color" value="red" class="form-radio text-red-500">
+            <span class="ml-2">Red</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" name="color" value="blue" class="form-radio text-blue-500">
+            <span class="ml-2">Blue</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" name="color" value="white" class="form-radio text-gray-500">
+            <span class="ml-2">White</span>
+          </label>
+        </div>
+        <div class="mb-4">
+          <p>Price: $100</p>
+          <p class="line-through text-red-600">Old Price: $200</p>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="mb-8">
+      <div class="flex mb-4">
+        <img src="https://placehold.co/100x100" alt="Mate One" class="mr-4">
+        <div>
+          <h2 class="text-xl font-bold">Mate One</h2>
+          <p>Job Title</p>
+        </div>
+      </div>
+      <div class="flex mb-4">
+        <div class="mr-4">
+          <h2 class="text-xl font-bold">Mate Two</h2>
+          <p>Job Title</p>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Mate Two">
+      </div>
+      <div class="flex">
+        <img src="https://placehold.co/100x100" alt="Mate Three" class="mr-4">
+        <div>
+          <h2 class="text-xl font-bold">Mate Three</h2>
+          <p>Job Title</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">Forma de envío</h2>
+      <fieldset class="mb-4">
+        <legend class="mb-1">Medio transporte</legend>
+        <label class="inline-flex items-center">
+          <input type="radio" name="transporte" value="terrestre" class="form-radio">
+          <span class="ml-2">Terrestre</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="transporte" value="aereo" class="form-radio">
+          <span class="ml-2">Aereo</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="transporte" value="maritimo" class="form-radio">
+          <span class="ml-2">Marítimo</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend class="mb-1">Forma de pago</legend>
+        <label class="inline-flex items-center">
+          <input type="radio" name="pago" value="tarjeta" class="form-radio">
+          <span class="ml-2">Tarjeta (Crédito/débito)</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="pago" value="transferencia" class="form-radio">
+          <span class="ml-2">Transferencia bancaria</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="pago" value="metalico" class="form-radio">
+          <span class="ml-2">Metálico</span>
+        </label>
+      </fieldset>
+
+      <div class="mb-4">
+        <label for="direccion" class="block mb-1">Dirección</label>
+        <input type="text" id="direccion" class="w-full border-gray-300 rounded">
+      </div>
+
+      <div class="mb-4">
+        <label for="pais" class="block mb-1">País</label>
+        <select id="pais" class="w-full border-gray-300 rounded">
+          <option>Choose a country</option>
+        </select>
+      </div>
+
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Aceptar</button>
+    </div>
+  </div>
+</body>
+</html>

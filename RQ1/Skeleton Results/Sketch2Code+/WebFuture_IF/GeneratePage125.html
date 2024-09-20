@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center bg-white p-4 shadow mb-4">
+    <div>
+      <a href="#" class="text-blue-500 mr-4">Login</a>
+      <a href="#" class="text-blue-500">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="space-y-8">
+
+    <!-- Login Area -->
+    <div class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl mb-4">Login</h2>
+      <form>
+        <div class="mb-4">
+          <label for="username" class="block mb-2">Login</label>
+          <input type="text" id="username" class="w-full p-2 border rounded" placeholder="Username">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block mb-2">Password</label>
+          <input type="password" id="password" class="w-full p-2 border rounded" placeholder="Password">
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="rememberme" class="mr-2">
+          <label for="rememberme" class="mr-auto">Remember me</label>
+          <a href="#" class="text-blue-500">Forgot Password</a>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">LOG IN</button>
+      </form>
+    </div>
+
+    <!-- Profile/Content Area -->
+    <section class="bg-white p-6 rounded shadow">
+      <div class="flex mb-4">
+        <img src="https://placehold.co/100x100" alt="Profile Picture" class="w-24 h-24 mr-4">
+        <div>
+          <p class="mb-2">Line 1</p>
+          <p class="mb-2">Line 2</p>
+          <p class="mb-2">Line 3</p>
+        </div>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">BACK</button>
+      <div>
+        <input type="checkbox" id="checkbox2" class="mr-2">
+        <label for="checkbox2">Checkbox</label>
+      </div>
+    </section>
+
+    <!-- Product Catalog -->
+    <section class="bg-white p-6 rounded shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl">Product Catalog</h2>
+        <div class="flex">
+          <input type="text" class="p-2 border rounded mr-2" placeholder="Search...">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Product 1 -->
+        <div class="p-4 border rounded">
+          <img src="https://placehold.co/150x150" alt="Product 1" class="w-full h-32 object-cover mb-4">
+          <h3 class="text-lg mb-2">PRODUCT 1</h3>
+          <p class="text-gray-500 mb-4">$20.00</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="p-4 border rounded">
+          <img src="https://placehold.co/150x150" alt="Product 2" class="w-full h-32 object-cover mb-4">
+          <h3 class="text-lg mb-2">PRODUCT 2</h3>
+          <p class="text-gray-500 mb-4">$10.00</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="p-4 border rounded">
+          <img src="https://placehold.co/150x150" alt="Product 3" class="w-full h-32 object-cover mb-4">
+          <h3 class="text-lg mb-2">PRODUCT 3</h3>
+          <p class="text-gray-500 mb-4">$40.00</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

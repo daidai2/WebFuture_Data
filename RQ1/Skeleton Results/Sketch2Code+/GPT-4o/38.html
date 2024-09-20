@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .header {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .checkbox, .radio {
+            margin: 10px 0;
+        }
+        .checkbox input, .radio input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="content">
+            <p>Some text content goes here...</p>
+            <p>Some text content goes here...</p>
+            <p>Some text content goes here...</p>
+            <p>Some text content goes here...</p>
+        </div>
+        <div class="form">
+            <input type="text" class="input-field" placeholder="Field 1">
+            <input type="text" class="input-field" placeholder="Field 2">
+            <button class="button">Submit</button>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Option 1</label><br>
+            <label><input type="checkbox"> Option 2</label><br>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="options"> Option 1</label><br>
+            <label><input type="radio" name="options"> Option 2</label><br>
+            <label><input type="radio" name="options"> Option 3</label>
+        </div>
+        <hr>
+        <div class="payment-method">
+            <h3>Select your payment method</h3>
+            <label><input type="radio" name="payment"> Credit Card</label><br>
+            <label><input type="radio" name="payment"> PayPal</label><br>
+            <label><input type="radio" name="payment"> Bank Transfer</label><br>
+            <h4>Enter your data</h4>
+            <input type="text" class="input-field" placeholder="Card Number"><br>
+            <input type="text" class="input-field" placeholder="Expiration Date"><br>
+            <input type="text" class="input-field" placeholder="CVV"><br>
+            <button class="button">Complete</button>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Option 1</label><br>
+            <label><input type="checkbox"> Option 2</label><br>
+        </div>
+        <button class="button">Back</button>
+        <button class="button">Button</button>
+    </div>
+</body>
+</html>

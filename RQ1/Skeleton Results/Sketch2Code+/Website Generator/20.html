@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .header, .footer, .main, .product-page {
+            margin: 20px 0;
+        }
+        .header, .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        .main, .product-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .image-placeholder {
+            background-color: #ddd;
+            width: 100%;
+            padding-bottom: 75%; /* 4:3 Aspect Ratio */
+            position: relative;
+        }
+        .image-placeholder::after {
+            content: "Image";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #555;
+        }
+        .text-placeholder {
+            background-color: #eee;
+            height: 20px;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 100%;
+            max-width: 600px;
+        }
+        .form-section label {
+            margin: 10px 0 5px;
+        }
+        .form-section input, .form-section select {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header container">
+        <h1>Header</h1>
+    </div>
+
+    <div class="main container">
+        <div class="card">
+            <div class="image-placeholder"></div>
+            <div class="text-placeholder" style="height: 30px;"></div>
+            <div class="text-placeholder"></div>
+            <div class="button">Button</div>
+        </div>
+        <div class="card">
+            <div class="image-placeholder"></div>
+            <div class="text-placeholder" style="height: 30px;"></div>
+            <div class="text-placeholder"></div>
+            <div class="button">Button</div>
+        </div>
+    </div>
+
+    <div class="product-page container">
+        <h2>Product Page</h2>
+        <div class="image-placeholder" style="width: 100%; max-width: 600px;"></div>
+        <div class="form-section">
+            <label for="product-name">Product Name</label>
+            <div class="text-placeholder" style="width: 100%; max-width: 300px;"></div>
+
+            <label for="manufacturer">Manufacturer</label>
+            <div class="text-placeholder" style="width: 100%; max-width: 300px;"></div>
+
+            <label for="color">Color</label>
+            <select id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+            </select>
+
+            <label for="price">Price</label>
+            <div class="text-placeholder" style="width: 100%; max-width: 100px;"></div>
+
+            <label for="old-price">Old Price</label>
+            <div class="text-placeholder" style="width: 100%; max-width: 100px;"></div>
+
+            <a href="#" class="button">Add to Cart</a>
+        </div>
+    </div>
+
+    <div class="footer container">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

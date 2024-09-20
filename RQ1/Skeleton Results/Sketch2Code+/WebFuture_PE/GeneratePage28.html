@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe to HTML</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- Login Page -->
+  <section class="bg-white p-8 rounded-lg shadow-md">
+    <div class="flex justify-between mb-4">
+      <a href="#" class="text-blue-500">Login</a>
+      <a href="#" class="text-blue-500">Sign Up</a>
+    </div>
+
+    <div>
+      <label class="block mb-2" for="login">Login</label>
+      <input id="login" type="text" class="w-full p-2 mb-4 border border-gray-300 rounded" />
+    </div>
+
+    <div>
+      <label class="block mb-2" for="password">Password</label>
+      <input id="password" type="password" class="w-full p-2 mb-4 border border-gray-300 rounded" />
+    </div>
+
+    <div class="flex items-center mb-4">
+      <input id="remember" type="checkbox" class="mr-2" />
+      <label for="remember">Remember me</label>
+    </div>
+
+    <div class="mb-4">
+      <a href="#" class="text-blue-500">Forgot Password</a>
+    </div>
+
+    <div>
+      <button class="w-full bg-blue-500 text-white p-2 rounded">LOGIN</button>
+    </div>
+  </section>
+
+  <!-- Main Content with Video and Posts -->
+  <section class="mt-8 bg-white p-8 rounded-lg shadow-md">
+    <div class="text-2xl font-bold mb-4">Title Page</div>
+    <div class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque...</div>
+
+    <div class="mb-8 h-64 w-full bg-gray-300 flex items-center justify-center">
+      <button class="text-6xl text-white">▶</button>
+    </div>
+
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <div class="mb-2">Title</div>
+        <div class="flex">
+          <img src="https://placehold.co/100x100" alt="Placeholder" class="mr-4">
+          <div>Title Post</div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <div class="mb-2">Title</div>
+        <div class="flex">
+          <img src="https://placehold.co/100x100" alt="Placeholder" class="mr-4">
+          <div>Title Post</div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <div class="mb-2">Title</div>
+        <div class="flex">
+          <img src="https://placehold.co/100x100" alt="Placeholder" class="mr-4">
+          <div>Title Post</div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <div class="mb-2">Title</div>
+        <div class="flex">
+          <img src="https://placehold.co/100x100" alt="Placeholder" class="mr-4">
+          <div>Title Post</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog -->
+  <section class="mt-8 bg-white p-8 rounded-lg shadow-md">
+    <div class="flex justify-between mb-8">
+      <div class="text-2xl font-bold">Product Catalog</div>
+      <div>
+        <input type="text" class="p-2 border border-gray-300 rounded mr-2" placeholder="Search" />
+        <button class="bg-blue-500 text-white p-2 rounded">Search</button>
+      </div>
+    </div>
+
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <img src="https://placehold.co/150x150" alt="Product 1" class="mb-4">
+        <div class="mb-2">PRODUCT 1</div>
+        <div class="mb-2">$20.00</div>
+        <button class="w-full bg-blue-500 text-white p-2 rounded">ADD TO CART</button>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <img src="https://placehold.co/150x150" alt="Product 2" class="mb-4">
+        <div class="mb-2">PRODUCT 2</div>
+        <div class="mb-2">$10.00</div>
+        <button class="w-full bg-blue-500 text-white p-2 rounded">ADD TO CART</button>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <img src="https://placehold.co/150x150" alt="Product 3" class="mb-4">
+        <div class="mb-2">PRODUCT 3</div>
+        <div class="mb-2">$40.00</div>
+        <button class="w-full bg-blue-500 text-white p-2 rounded">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

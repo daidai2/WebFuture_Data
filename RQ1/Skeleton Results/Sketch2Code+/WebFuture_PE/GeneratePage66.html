@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-6 shadow-lg space-y-6">
+    <header class="border-b pb-4 mb-6">
+      <h1 class="text-2xl font-bold">Write Review</h1>
+    </header>
+
+    <section class="flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24 object-cover">
+      <div>
+        <div class="text-xl font-semibold">Product Name</div>
+        <div class="text-gray-600">$Price</div>
+        <div class="text-yellow-500">★★★★☆ 45 reviews</div>
+      </div>
+    </section>
+
+    <section class="space-y-4">
+      <div class="space-y-2">
+        <label class="block font-medium">Rate Product</label>
+        <div class="flex space-x-2 text-yellow-500">
+          ★★★★☆ <span class="text-gray-600">Bad :(</span>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <label for="headline" class="block font-medium">Headline</label>
+        <input type="text" id="headline" class="w-full p-2 border rounded">
+      </div>
+
+      <div class="space-y-2">
+        <label for="review" class="block font-medium">Review</label>
+        <textarea id="review" rows="4" class="w-full p-2 border rounded"></textarea>
+      </div>
+
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+    </section>
+
+    <section class="grid grid-cols-2 gap-4 mt-8">
+      <div class="space-y-4">
+        <img src="https://placehold.co/100x100" alt="Image" class="w-full h-32 object-cover">
+        <img src="https://placehold.co/100x100" alt="Image" class="w-full h-32 object-cover">
+      </div>
+      <div class="space-y-4">
+        <div class="space-y-2">
+          <div class="h-4 bg-gray-200 rounded"></div>
+          <div class="h-4 bg-gray-200 rounded"></div>
+          <div class="h-4 bg-gray-200 rounded"></div>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Image" class="w-full h-32 object-cover">
+      </div>
+    </section>
+
+    <div class="space-y-4">
+      <button class="bg-gray-200 text-black py-2 px-4 rounded">Button</button>
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" class="h-5 w-5 text-blue-500">
+        <span>Checkmark</span>
+      </div>
+      <div class="space-y-2">
+        <div class="h-4 bg-gray-200 rounded"></div>
+        <div class="h-4 bg-gray-200 rounded"></div>
+      </div>
+
+      <div class="space-x-4 flex">
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Btn</button>
+      </div>
+    </div>
+
+    <footer class="space-y-4 mt-6">
+      <div>
+        <label for="title" class="block font-medium">Title</label>
+        <input type="text" id="title" class="w-full p-2 border rounded">
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center space-x-2">
+          <span class="font-medium">Radio Buttons</span>
+          <label><input type="radio" name="rating" class="mr-1"> Not relevant</label>
+          <label><input type="radio" name="rating" class="mr-1"> Low</label>
+          <label><input type="radio" name="rating" class="mr-1"> Medium</label>
+          <label><input type="radio" name="rating" class="mr-1"> High</label>
+        </div>
+      </div>
+      <div class="space-y-2">
+        <div class="flex flex-wrap items-center space-x-2">
+          <span class="font-medium">Checkbox</span>
+          <label><input type="checkbox" class="mr-1"> choice 1</label>
+          <label><input type="checkbox" checked class="mr-1"> choice 2</label>
+          <label><input type="checkbox" class="mr-1"> choice 3</label>
+          <label><input type="checkbox" checked class="mr-1"> choice 4</label>
+          <label><input type="checkbox" class="mr-1"> choice 5</label>
+          <label><input type="checkbox" class="mr-1"> choice 6</label>
+          <label><input type="checkbox" checked class="mr-1"> choice 7</label>
+          <label><input type="checkbox" class="mr-1"> choice 8</label>
+        </div>
+      </div>
+      <div class="space-x-4 flex justify-end">
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">OK</button>
+        <button class="bg-gray-500 text-white py-2 px-4 rounded">Cancel</button>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

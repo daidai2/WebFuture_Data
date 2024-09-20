@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+  <div class="max-w-2xl mx-auto bg-white shadow-md p-6">
+    <!-- Header Section -->
+    <div class="text-center mb-6">
+      <h1 class="text-xl font-bold">Mobility Solutions & Daily Living Aids</h1>
+      <p class="text-gray-700">Making Life Easier</p>
+      <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Find Out More</button>
+    </div>
+
+    <!-- Links Section -->
+    <div class="flex justify-around mb-6">
+      <div class="text-center">
+        <h2 class="text-lg font-semibold">Wheelchair Repair</h2>
+        <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">Find Out More</button>
+      </div>
+      <div class="text-center">
+        <h2 class="text-lg font-semibold">Community Contracts</h2>
+        <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">Find Out More</button>
+      </div>
+    </div>
+
+    <!-- Image and Description Section -->
+    <div class="mb-6">
+      <img src="https://placehold.co/600x400" alt="Placeholder Image" class="w-full h-auto mb-4">
+      <button class="block mx-auto mt-2 px-4 py-2 bg-blue-500 text-white rounded">Find Out More</button>
+    </div>
+
+    <!-- Product Section -->
+    <div class="text-center mb-6">
+      <img src="https://placehold.co/500x200" alt="Product Image" class="w-full h-auto mx-auto mb-4">
+      <p class="text-xl font-bold text-gray-700 mb-2">$24.99</p>
+      <h3 class="text-lg font-semibold">Product Title</h3>
+      <hr class="my-4">
+    </div>
+
+    <!-- Checklist Section -->
+    <div class="mb-6">
+      <h4 class="font-semibold mb-2">Check Items:</h4>
+      <ul class="list-none">
+        <li class="mb-2"><input type="checkbox" checked class="mr-2">Check Item 1</li>
+        <li class="mb-2"><input type="checkbox" class="mr-2">Check Item 2</li>
+        <li class="mb-2"><input type="checkbox" class="mr-2">Check Item 3</li>
+      </ul>
+    </div>
+
+    <!-- Buy Now Button -->
+    <div class="text-center mb-6">
+      <button class="px-6 py-2 bg-green-500 text-white rounded">Buy Now</button>
+    </div>
+
+    <!-- Shipping Info Section -->
+    <div>
+      <h4 class="font-semibold mb-2">Shipping Info</h4>
+      <form class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="firstName" class="block font-medium">First Name</label>
+          <input id="firstName" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div>
+          <label for="lastName" class="block font-medium">Last Name</label>
+          <input id="lastName" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div>
+          <label for="phone" class="block font-medium">Phone</label>
+          <input id="phone" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div>
+          <label for="email" class="block font-medium">Email</label>
+          <input id="email" type="email" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div>
+          <label for="country" class="block font-medium">Country</label>
+          <select id="country" class="w-full px-3 py-2 border rounded">
+            <option>United States</option>
+            <!-- Add other countries as needed -->
+          </select>
+        </div>
+        <div>
+          <label for="state" class="block font-medium">State</label>
+          <select id="state" class="w-full px-3 py-2 border rounded">
+            <option>Choose...</option>
+            <!-- Add states as needed -->
+          </select>
+        </div>
+        <div>
+          <label for="city" class="block font-medium">City</label>
+          <input id="city" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div>
+          <label for="zip" class="block font-medium">Zip Code</label>
+          <input id="zip" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+      </form>
+      <div class="flex justify-between mt-6">
+        <button class="px-6 py-2 bg-gray-300 text-black rounded">Back</button>
+        <button class="px-6 py-2 bg-blue-500 text-white rounded">Next Step</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

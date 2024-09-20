@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+
+  <!-- Title Section -->
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold mb-4">Title Page</h1>
+    <hr>
+  </header>
+
+  <!-- Video Section -->
+  <section class="mb-8">
+    <div class="w-full h-64 bg-gray-300 flex items-center justify-center">
+      <button class="text-3xl">&#9658;</button>
+    </div>
+  </section>
+
+  <!-- Article Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+    <article class="flex space-x-4">
+      <img src="https://placehold.co/150x150" alt="Placeholder Image" class="w-32 h-32">
+      <div>
+        <h2 class="text-xl font-bold">Title</h2>
+        <p>Title page</p>
+      </div>
+    </article>
+    <article class="flex space-x-4">
+      <img src="https://placehold.co/150x150" alt="Placeholder Image" class="w-32 h-32">
+      <div>
+        <h2 class="text-xl font-bold">Title</h2>
+        <p>Title page</p>
+      </div>
+    </article>
+    <article class="flex space-x-4">
+      <img src="https://placehold.co/150x150" alt="Placeholder Image" class="w-32 h-32">
+      <div>
+        <h2 class="text-xl font-bold">Title</h2>
+        <p>Title page</p>
+      </div>
+    </article>
+    <article class="flex space-x-4">
+      <img src="https://placehold.co/150x150" alt="Placeholder Image" class="w-32 h-32">
+      <div>
+        <h2 class="text-xl font-bold">Title</h2>
+        <p>Title page</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Images Section -->
+  <section class="flex space-x-4 mb-8">
+    <div class="w-32 h-32 bg-gray-300"></div>
+    <div class="w-64 h-64 bg-gray-300"></div>
+    <div class="w-32 h-32 bg-gray-300"></div>
+  </section>
+
+  <!-- Text Section -->
+  <section class="space-y-4 mb-8">
+    <div class="h-4 bg-gray-300 w-full"></div>
+    <div class="h-4 bg-gray-300 w-full"></div>
+    <div class="h-4 bg-gray-300 w-full"></div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="mb-8">
+    <div class="mb-4">
+      <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+      <input type="text" id="title" name="title" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm">
+    </div>
+    <fieldset class="mb-4">
+      <legend class="text-sm font-medium text-gray-700">Radio Buttons</legend>
+      <div class="flex items-center mt-2">
+        <input type="radio" id="not-relevant" name="relevance" value="not-relevant" class="mx-2">
+        <label for="not-relevant" class="text-sm">Not Relevant</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="radio" id="low" name="relevance" value="low" class="mx-2">
+        <label for="low" class="text-sm">Low</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="radio" id="medium" name="relevance" value="medium" class="mx-2">
+        <label for="medium" class="text-sm">Medium</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="radio" id="high" name="relevance" value="high" class="mx-2">
+        <label for="high" class="text-sm">High</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="text-sm font-medium text-gray-700">Checkboxes</legend>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice1" name="choice1" class="mx-2">
+        <label for="choice1" class="text-sm">Choice1</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice2" name="choice2" class="mx-2">
+        <label for="choice2" class="text-sm">Choice2</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice3" name="choice3" class="mx-2">
+        <label for="choice3" class="text-sm">Choice3</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice4" name="choice4" class="mx-2">
+        <label for="choice4" class="text-sm">Choice4</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice5" name="choice5" class="mx-2">
+        <label for="choice5" class="text-sm">Choice5</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice6" name="choice6" class="mx-2">
+        <label for="choice6" class="text-sm">Choice6</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice7" name="choice7" class="mx-2">
+        <label for="choice7" class="text-sm">Choice7</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="choice8" name="choice8" class="mx-2">
+        <label for="choice8" class="text-sm">Choice8</label>
+      </div>
+    </fieldset>
+  </section>
+
+  <!-- Button Section -->
+  <section class="flex space-x-4">
+    <button class="px-4 py-2 bg-blue-500 text-white rounded-md">OK</button>
+    <button class="px-4 py-2 bg-gray-500 text-white rounded-md">Cancel</button>
+  </section>
+
+</body>
+</html>

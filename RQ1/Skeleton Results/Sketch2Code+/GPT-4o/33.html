@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header, .main-content, .services, .team, .contact-form {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            color: #fff;
+            background: #333;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .services div, .team div {
+            display: inline-block;
+            width: 48%;
+            vertical-align: top;
+            margin: 1%;
+        }
+        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>Mobility Solutions & Daily Living Aids</h1>
+        <p>Making Life Easier</p>
+        <a href="#" class="btn">Find out More</a>
+    </header>
+
+    <section class="container services">
+        <div>
+            <h2>Wheelchair Repair</h2>
+            <a href="#" class="btn">Find out More</a>
+        </div>
+        <div>
+            <h2>Community Contracts</h2>
+            <a href="#" class="btn">Find out More</a>
+        </div>
+    </section>
+
+    <section class="container main-content">
+        <div style="width: 100%; height: 300px; background: #ccc; text-align: center;">
+            <p>Image Placeholder</p>
+        </div>
+        <div style="width: 48%; display: inline-block; vertical-align: top; margin: 1%;">
+            <h2>Mate One</h2>
+            <p>Job Title</p>
+        </div>
+        <div style="width: 48%; display: inline-block; vertical-align: top; margin: 1%;">
+            <h2>Mate Two</h2>
+            <p>Job Title</p>
+        </div>
+        <div style="width: 48%; display: inline-block; vertical-align: top; margin: 1%;">
+            <h2>Mate Three</h2>
+            <p>Job Title</p>
+        </div>
+    </section>
+
+    <section class="container contact-form">
+        <form>
+            <label for="name">Label</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Label</label>
+            <input type="email" id="email" name="email">
+
+            <div class="radio-group">
+                <label><input type="radio" name="option" value="1"> Radio 1</label><br>
+                <label><input type="radio" name="option" value="2"> Radio 2</label><br>
+                <label><input type="radio" name="option" value="3"> Radio 3</label><br>
+                <label><input type="radio" name="option" value="4"> Radio 4</label>
+            </div>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="checkbox1"> Checkbox 1</label><br>
+                <label><input type="checkbox" name="checkbox2"> Checkbox 2</label><br>
+                <label><input type="checkbox" name="checkbox3"> Checkbox 3</label><br>
+                <label><input type="checkbox" name="checkbox4"> Checkbox 4</label>
+            </div>
+
+            <input type="submit" value="Button">
+        </form>
+    </section>
+</body>
+</html>

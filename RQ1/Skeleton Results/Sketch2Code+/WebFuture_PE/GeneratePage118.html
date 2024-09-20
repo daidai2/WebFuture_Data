@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-lg">
+    <!-- Login Section -->
+    <div class="mb-8">
+      <div class="flex justify-between mb-4">
+        <button class="text-blue-500">Login</button>
+        <button class="text-gray-500">Sign Up</button>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Login</label>
+        <input type="text" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Password</label>
+        <input type="password" class="w-full p-2 border rounded">
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="remember-me" class="mr-2">
+        <label for="remember-me">Remember me</label>
+      </div>
+      <div class="mb-4">
+        <button class="text-blue-500">Forgot Password</button>
+      </div>
+      <button class="w-full bg-blue-500 text-white p-2 rounded">LOG IN</button>
+    </div>
+
+    <!-- Content Section -->
+    <div class="mb-8">
+      <div class="mb-4">
+        <img src="https://placehold.co/300x200" alt="Placeholder image" class="w-full h-48 bg-gray-200">
+      </div>
+      <div class="mb-4">
+        <textarea class="w-full p-2 border rounded h-24"></textarea>
+      </div>
+      <button class="bg-gray-500 text-white p-2 rounded mb-4">BACK</button>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="content-checkbox" class="mr-2">
+        <label for="content-checkbox">Check box</label>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="mb-8">
+      <label class="block mb-2">Title</label>
+      <input type="text" class="w-full p-2 border rounded mb-4">
+
+      <div class="mb-4">
+        <label class="block mb-2">Radio Buttons</label>
+        <div class="flex items-center">
+          <input type="radio" id="not-relevant" name="relevance" class="mr-2">
+          <label for="not-relevant" class="mr-4">Not relevant</label>
+          <input type="radio" id="low" name="relevance" class="mr-2">
+          <label for="low" class="mr-4">Low</label>
+          <input type="radio" id="medium" name="relevance" class="mr-2">
+          <label for="medium" class="mr-4">Medium</label>
+          <input type="radio" id="high" name="relevance" class="mr-2">
+          <label for="high">High</label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2">Check Boxes</label>
+        <div class="grid grid-cols-2 gap-2">
+          <div class="flex items-center">
+            <input type="checkbox" id="choice1" class="mr-2">
+            <label for="choice1">Choice 1</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="choice2" class="mr-2">
+            <label for="choice2">Choice 2</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="choice3" class="mr-2">
+            <label for="choice3">Choice 3</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="choice4" class="mr-2">
+            <label for="choice4">Choice 4</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="choice5" class="mr-2">
+            <label for="choice5">Choice 5</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="choice6" class="mr-2">
+            <label for="choice6">Choice 6</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="choice7" class="mr-2">
+            <label for="choice7">Choice 7</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="choice8" class="mr-2">
+            <label for="choice8">Choice 8</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-end space-x-4">
+      <button class="bg-blue-500 text-white p-2 rounded">OK</button>
+      <button class="bg-gray-500 text-white p-2 rounded">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>

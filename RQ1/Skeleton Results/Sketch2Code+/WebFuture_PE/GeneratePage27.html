@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe</title>
+</head>
+<body class="bg-gray-100 p-5">
+
+  <!-- Top Section with Image Boxes and Text -->
+  <div class="flex justify-between items-center mb-5">
+    <div class="w-1/4 h-48 bg-gray-300 flex items-center justify-center">
+      <img src="https://placehold.co/150x150" alt="placeholder">
+    </div>
+    <div class="w-1/4 h-48 bg-gray-300 flex items-center justify-center">
+      <img src="https://placehold.co/150x150" alt="placeholder">
+    </div>
+    <div class="w-1/4 h-48 bg-gray-300 flex items-center justify-center">
+      <img src="https://placehold.co/150x150" alt="placeholder">
+    </div>
+  </div>
+  <div class="w-1/4 h-48 bg-gray-300 flex items-center justify-center mb-5">
+    <img src="https://placehold.co/150x150" alt="placeholder">
+  </div>
+  <div class="mb-5">
+    <p class="bg-gray-200 p-4 rounded">Some text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="bg-gray-200 p-4 rounded mt-4">Additional text goes here. Lorem ipsum dolor sit amet.</p>
+  </div>
+
+  <!-- Information and Checkbox Section -->
+  <div class="flex items-start mb-5">
+    <div class="w-2/3 bg-gray-300 h-48 p-4 flex items-center justify-center">
+      <img src="https://placehold.co/200x200" alt="placeholder">
+    </div>
+    <div class="flex flex-col ml-4">
+      <p class="bg-gray-200 p-2 rounded">Item description or information.</p>
+      <div class="flex mt-4 items-center">
+        <input type="checkbox" id="check1" class="mr-2">
+        <label for="check1">Option</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-between items-center mb-5">
+    <div class="w-1/2 bg-gray-200 h-12 flex items-center justify-center mr-2">Button</div>
+    <div class="w-1/2 bg-gray-200 h-12 flex items-center justify-center ml-2">
+      <button class="bg-gray-400 px-4 py-2 rounded">btn</button>
+    </div>
+  </div>
+
+  <!-- Product Page -->
+  <div class="border border-gray-300 p-5 mb-5">
+    <div class="flex">
+      <div class="w-1/2 h-64 bg-gray-300 flex items-center justify-center">
+        <img src="https://placehold.co/300x300" alt="placeholder">
+      </div>
+      <div class="w-1/2 ml-4">
+        <h2 class="text-lg font-bold">Product Name</h2>
+        <p>Manufacturer</p>
+        <div class="mt-4">
+          <label><input type="radio" name="color" value="red" class="mr-2"> Red</label><br>
+          <label><input type="radio" name="color" value="blue" class="mr-2"> Blue</label><br>
+          <label><input type="radio" name="color" value="white" class="mr-2"> White</label>
+        </div>
+        <div class="mt-4">
+          <p>Price: $400 </p>
+          <p>Old Price: $200</p>
+        </div>
+        <button class="bg-gray-400 px-4 py-2 rounded mt-4">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center mt-4">
+      <div class="w-1/5 h-24 bg-gray-300 flex items-center justify-center">
+        <img src="https://placehold.co/80x80" alt="placeholder">
+      </div>
+      <div class="w-1/5 h-24 bg-gray-300 flex items-center justify-center">
+        <img src="https://placehold.co/80x80" alt="placeholder">
+      </div>
+      <div class="w-1/5 h-24 bg-gray-300 flex items-center justify-center">
+        <img src="https://placehold.co/80x80" alt="placeholder">
+      </div>
+      <div class="w-1/5 h-24 bg-gray-300 flex items-center justify-center">
+        <img src="https://placehold.co/80x80" alt="placeholder">
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Catalog -->
+  <div class="bg-white border border-gray-300 p-5">
+    <div class="flex justify-between items-center mb-5">
+      <h2 class="text-lg font-bold">Product Catalog</h2>
+      <input type="text" placeholder="Search" class="border p-1">
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="border p-4">
+        <div class="bg-gray-300 h-48 mb-4 flex items-center justify-center">
+          <img src="https://placehold.co/150x150" alt="placeholder">
+        </div>
+        <h3 class="text-md font-bold">Product 1</h3>
+        <p class="text-red-500">$30.00</p>
+        <button class="bg-gray-400 px-4 py-2 rounded mt-2 w-full">Add to Cart</button>
+      </div>
+
+      <div class="border p-4">
+        <div class="bg-gray-300 h-48 mb-4 flex items-center justify-center">
+          <img src="https://placehold.co/150x150" alt="placeholder">
+        </div>
+        <h3 class="text-md font-bold">Product 2</h3>
+        <p class="text-red-500">$10.00</p>
+        <button class="bg-gray-400 px-4 py-2 rounded mt-2 w-full">Add to Cart</button>
+      </div>
+
+      <div class="border p-4">
+        <div class="bg-gray-300 h-48 mb-4 flex items-center justify-center">
+          <img src="https://placehold.co/150x150" alt="placeholder">
+        </div>
+        <h3 class="text-md font-bold">Product 3</h3>
+        <p class="text-red-500">$40.00</p>
+        <button class="bg-gray-400 px-4 py-2 rounded mt-2 w-full">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

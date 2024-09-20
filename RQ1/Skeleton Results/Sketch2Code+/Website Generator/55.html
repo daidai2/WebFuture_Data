@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        header, .post, .banner, .shipping-form {
+            margin: 20px 0;
+        }
+        header h1, .post h2, .banner h2, .shipping-form h2 {
+            font-size: 24px;
+        }
+        .post, .banner, .shipping-form {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .post img, .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .shipping-form input, .shipping-form select, .shipping-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .shipping-form .half-width {
+            width: 48%;
+            float: left;
+        }
+        .shipping-form .half-width:nth-child(2n) {
+            margin-left: 4%;
+        }
+        .shipping-form .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Title</h1>
+        <p>Title Page</p>
+        <div>
+            <img src="path/to/your/video-thumbnail.jpg" alt="Video Thumbnail">
+        </div>
+    </header>
+
+    <section class="post">
+        <h2>Title</h2>
+        <img src="path/to/image.jpg" alt="Post Image">
+        <p>Title Post</p>
+    </section>
+    <section class="post">
+        <h2>Title</h2>
+        <img src="path/to/image.jpg" alt="Post Image">
+        <p>Title Post</p>
+    </section>
+    <section class="post">
+        <h2>Title</h2>
+        <img src="path/to/image.jpg" alt="Post Image">
+        <p>Title Post</p>
+    </section>
+
+    <div class="banner">
+        <h2>Banner Title</h2>
+        <img src="path/to/banner-image.jpg" alt="Banner Image">
+    </div>
+
+    <section class="shipping-form">
+        <h2>Shipping Info</h2>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Phone">
+        <input type="email" placeholder="Email">
+        <select>
+            <option value="US">United States</option>
+            <!-- Add other countries here -->
+        </select>
+        <input type="text" placeholder="State" class="half-width">
+        <input type="text" placeholder="City" class="half-width">
+        <input type="text" placeholder="Zip Code" class="half-width">
+        <div class="clear"></div>
+        <button>Next Step</button>
+        <button>Back</button>
+    </section>
+</div>
+
+</body>
+</html>

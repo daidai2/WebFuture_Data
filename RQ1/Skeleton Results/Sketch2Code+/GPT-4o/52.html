@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review and Shipping Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .product-review img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+        }
+        .rating-stars span {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rating-stars .selected {
+            color: gold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            box-sizing: border-box;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-group div:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section product-review">
+        <h2>Write Review</h2>
+        <div>
+            <img src="" alt="Product Image">
+            <div>PRODUCT NAME</div>
+            <div>$PRICE</div>
+            <div>★★★★☆ 45 reviews</div>
+        </div>
+        <div>
+            <label>Rate Product</label>
+            <div class="rating-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                <span>Bad :(</span>
+            </div>
+        </div>
+        <div>
+            <label for="headline">Headline</label>
+            <input type="text" id="headline" name="headline">
+        </div>
+        <div>
+            <label for="review">Review</label>
+            <textarea id="review" name="review"></textarea>
+        </div>
+        <button class="button">Submit</button>
+    </div>
+
+    <div class="section shipping-info">
+        <h2>Shipping Info</h2>
+        <div class="form-group">
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="united-states">United States</option>
+                    <!-- Add more countries as needed -->
+                </select>
+            </div>
+            <div>
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">Choose</option>
+                    <!-- Add states as needed -->
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div>
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="button">Back</button>
+            <button class="button">Next Step</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

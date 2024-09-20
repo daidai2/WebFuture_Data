@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+    <div class="mb-4">
+      <label class="block">
+        <input type="radio" name="paymentMethod" class="mr-2"> Credit Card
+      </label>
+      <label class="block">
+        <input type="radio" name="paymentMethod" class="mr-2"> Paypal
+      </label>
+      <label class="block">
+        <input type="radio" name="paymentMethod" class="mr-2"> Bank Transfer
+      </label>
+    </div>
+
+    <h2 class="text-xl font-bold mb-4">Enter your data</h2>
+    <div class="mb-4">
+      <label for="cardNumber" class="block">Card Number</label>
+      <input type="text" id="cardNumber" class="w-full border border-gray-300 p-2 rounded mt-2">
+    </div>
+    <div class="mb-4 flex">
+      <div class="flex-1 mr-2">
+        <label for="expirationDate" class="block">Expiration date</label>
+        <input type="text" id="expirationDate" class="w-full border border-gray-300 p-2 rounded mt-2" placeholder="MM / YY">
+      </div>
+      <div class="flex-1 ml-2">
+        <label for="cvv" class="block">CVV</label>
+        <input type="text" id="cvv" class="w-full border border-gray-300 p-2 rounded mt-2" placeholder="CVV">
+      </div>
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded">Complete</button>
+
+    <div class="mt-6">
+      <h2 class="text-lg font-bold mb-2">Mobility Solutions & Daily Living Aids</h2>
+      <p class="mb-2">Making life Easier</p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Find out More ></button>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-gray-200 p-4 rounded">
+          <h3 class="font-semibold mb-2">Wheelchair Repair</h3>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Find out More ></button>
+        </div>
+        <div class="bg-gray-200 p-4 rounded">
+          <h3 class="font-semibold mb-2">Community Contracts</h3>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Find out More ></button>
+        </div>
+        <div class="col-span-2 flex flex-col items-center bg-gray-200 p-4 rounded">
+          <img src="https://placehold.co/150x150" alt="Placeholder Image" class="rounded mb-4">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Find out More ></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-xl font-bold mb-4">Forma de envío</h2>
+      <div class="mb-4">
+        <label class="block">
+          <input type="radio" name="shippingMethod" class="mr-2"> Tereeste
+        </label>
+        <label class="block">
+          <input type="radio" name="shippingMethod" class="mr-2"> Aereo
+        </label>
+        <label class="block">
+          <input type="radio" name="shippingMethod" class="mr-2"> Maritimo
+        </label>
+      </div>
+
+      <h2 class="text-xl font-bold mb-4">Forma de pago</h2>
+      <div class="mb-4">
+        <label class="block">
+          <input type="radio" name="paymentMethod2" class="mr-2"> Tarjeta (Crédito/Débito)
+        </label>
+        <label class="block">
+          <input type="radio" name="paymentMethod2" class="mr-2"> Transferencia bancaria
+        </label>
+        <label class="block">
+          <input type="radio" name="paymentMethod2" class="mr-2"> Metálico
+        </label>
+      </div>
+      <div class="mb-4">
+        <label for="address" class="block">Dirección</label>
+        <input type="text" id="address" class="w-full border border-gray-300 p-2 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label for="country" class="block">País</label>
+        <select id="country" class="w-full border border-gray-300 p-2 rounded mt-2">
+          <option value="">Select Country</option>
+        </select>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <!-- Main Container -->
+  <div class="container mx-auto">
+    <!-- Payment Method Section -->
+    <section class="bg-white p-6 mb-6">
+      <header>
+        <h2 class="text-lg font-bold mb-4">Select your payment method</h2>
+      </header>
+      <form>
+        <!-- Payment Method Options -->
+        <div class="mb-4">
+          <label class="block mb-2">
+            <input type="radio" name="payment_method" value="credit_card" class="mr-2">Credit Card
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="payment_method" value="paypal" class="mr-2">Paypal
+          </label>
+          <label class="block">
+            <input type="radio" name="payment_method" value="bank_transfer" class="mr-2">Bank Transfer
+          </label>
+        </div>
+
+        <!-- Credit Card Information -->
+        <div class="mb-4">
+          <label class="block mb-2">Card Number</label>
+          <input type="text" class="border border-gray-300 p-2 w-full mb-4">
+
+          <label class="block mb-2">Expiration Date</label>
+          <div class="flex mb-4">
+            <select class="border border-gray-300 p-2 mr-2">
+              <option value="">Month</option>
+              <!-- Add more options here -->
+            </select>
+            <select class="border border-gray-300 p-2">
+              <option value="">Year</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+
+          <label class="block mb-2">CVV</label>
+          <input type="text" class="border border-gray-300 p-2 w-full">
+        </div>
+
+        <button type="button" class="bg-blue-500 text-white p-2 rounded">Complete</button>
+      </form>
+    </section>
+
+    <!-- Sign Up / Login Section -->
+    <section class="bg-white p-6 mb-6">
+      <nav class="mb-4">
+        <a href="#signup" class="text-blue-500 mr-4">Sign Up</a>
+        <a href="#login" class="text-blue-500">Login</a>
+      </nav>
+
+      <form>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label class="block mb-2">Name</label>
+            <input type="text" class="border border-gray-300 p-2 w-full">
+          </div>
+          <div>
+            <label class="block mb-2">Last Name</label>
+            <input type="text" class="border border-gray-300 p-2 w-full">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label class="block mb-2">Phone</label>
+            <input type="text" class="border border-gray-300 p-2 w-full">
+          </div>
+          <div>
+            <label class="block mb-2">E-mail</label>
+            <input type="email" class="border border-gray-300 p-2 w-full">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label class="block mb-2">Password</label>
+            <input type="password" class="border border-gray-300 p-2 w-full">
+          </div>
+          <div>
+            <label class="block mb-2">Confirm Password</label>
+            <input type="password" class="border border-gray-300 p-2 w-full">
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> I agree to Terms and Conditions
+          </label>
+        </div>
+
+        <button type="button" class="bg-blue-500 text-white p-2 rounded">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Promotional Banner Section -->
+    <section class="mb-6">
+      <img src="https://placehold.co/600x200" alt="Promotional Banner" class="w-full">
+    </section>
+
+    <!-- Content and Checkboxes Section -->
+    <section class="bg-white p-6 mb-6">
+      <article class="mb-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec risus vel nunc ultricies maximus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec risus vel nunc ultricies maximus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec risus vel nunc ultricies maximus.</p>
+      </article>
+
+      <aside>
+        <div class="mb-4">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 1
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 2
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 3
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 4
+          </label>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Form with Labels and Radio Buttons Section -->
+    <section class="bg-white p-6 mb-6">
+      <form>
+        <div class="mb-4">
+          <label class="block mb-2">Label</label>
+          <input type="text" class="border border-gray-300 p-2 w-full">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">Label</label>
+          <input type="text" class="border border-gray-300 p-2 w-full">
+        </div>
+
+        <div class="mb-4">
+          <button type="button" class="bg-blue-500 text-white p-2 rounded">Button</button>
+        </div>
+
+        <div class="mb-4">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 1
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 2
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 3
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 4
+          </label>
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2">Radio Buttons</label>
+          <label class="flex items-center">
+            <input type="radio" name="radio_option" class="mr-2"> Radio 1
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="radio_option" class="mr-2"> Radio 2
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="radio_option" class="mr-2"> Radio 3
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="radio_option" class="mr-2"> Radio 4
+          </label>
+        </div>
+
+        <div>
+          <img src="https://placehold.co/150x100" alt="Small Placeholder" class="mb-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec risus vel nunc ultricies maximus.</p>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white p-6 text-center">
+      <p>Placeholder text for the footer.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

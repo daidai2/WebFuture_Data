@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wire Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+
+  <!-- Header Section -->
+  <header class="bg-white p-5 mb-5 flex justify-between items-center shadow-sm">
+    <div class="flex items-center">
+      <img src="https://placehold.co/50x50" alt="Product Image" class="mr-3">
+      <div>
+        <h1 class="text-xl font-bold">Project Name</h1>
+        <p class="text-gray-600">$Price</p>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <p class="text-yellow-500 text-xl mr-2">★★★★☆</p>
+      <p class="text-gray-600">45 reviews</p>
+    </div>
+  </header>
+
+  <!-- Review Submission Form -->
+  <section class="bg-white p-5 mb-5 shadow-sm">
+    <h2 class="text-lg font-bold mb-3">Rate Product</h2>
+    <div class="flex items-center mb-3">
+      <p class="text-yellow-500 text-lg mr-2">★★★★★</p>
+      <p class="text-gray-600">Bad!</p>
+    </div>
+    <div class="mb-3">
+      <label for="headline" class="block mb-2 font-medium">Headline</label>
+      <input type="text" id="headline" class="border border-gray-300 p-2 w-full">
+    </div>
+    <div class="mb-3">
+      <label for="review" class="block mb-2 font-medium">Review</label>
+      <textarea id="review" class="border border-gray-300 p-2 w-full h-24"></textarea>
+    </div>
+    <button class="bg-blue-500 text-white px-5 py-2">Submit</button>
+  </section>
+
+  <!-- Gallery and Description Section -->
+  <section class="bg-white p-5 mb-5 shadow-sm">
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <img src="https://placehold.co/150x150" alt="Gallery Image" class="w-full">
+      <img src="https://placehold.co/150x150" alt="Gallery Image" class="w-full">
+      <img src="https://placehold.co/75x75" alt="Gallery Image" class="w-full">
+      <img src="https://placehold.co/75x75" alt="Gallery Image" class="w-full">
+      <img src="https://placehold.co/50x50" alt="Gallery Image" class="w-full">
+      <img src="https://placehold.co/50x50" alt="Gallery Image" class="w-full">
+    </div>
+    <button class="bg-blue-500 text-white px-5 py-2">btn</button>
+  </section>
+
+  <!-- Additional Form Section -->
+  <section class="bg-white p-5 shadow-sm">
+    <div class="mb-3">
+      <label for="textField1" class="block mb-2 font-medium">Label</label>
+      <input type="text" id="textField1" class="border border-gray-300 p-2 w-full">
+    </div>
+    <div class="mb-3">
+      <label for="textField2" class="block mb-2 font-medium">Label</label>
+      <input type="text" id="textField2" class="border border-gray-300 p-2 w-full">
+    </div>
+    <div class="mb-3">
+      <label class="block mb-2 font-medium">Checkbox</label>
+      <input type="checkbox" id="checkbox1" class="mr-2">
+      <label for="checkbox1">Checkbox</label>
+      <input type="checkbox" id="checkbox2" class="ml-4 mr-2">
+      <label for="checkbox2">Checkbox</label>
+    </div>
+    <div class="mb-3">
+      <label class="block mb-2 font-medium">Radio</label>
+      <input type="radio" name="radio" id="radio1" class="mr-2">
+      <label for="radio1">Radio</label>
+      <input type="radio" name="radio" id="radio2" class="ml-4 mr-2">
+      <label for="radio2">Radio</label>
+    </div>
+    <div>
+      <img src="https://placehold.co/200x200" alt="Large Image Placeholder" class="w-full">
+    </div>
+  </section>
+
+</body>
+</html>

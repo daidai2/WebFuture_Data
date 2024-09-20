@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <!-- Header -->
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold">Checkout</h1>
+    </header>
+
+    <!-- Shipping Address Section -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Shipping Address</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-lg font-medium mb-1">First Name</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="First Name">
+        </div>
+        <div>
+          <label class="block text-lg font-medium mb-1">Last Name</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Last Name">
+        </div>
+        <div>
+          <label class="block text-lg font-medium mb-1">Company</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Company">
+        </div>
+      </form>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Shipping Service</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="flex items-center">
+            <input type="radio" name="shipping" class="mr-2">
+            <span>Standard 14 days - $6.99</span>
+          </label>
+        </div>
+        <div>
+          <label class="flex items-center">
+            <input type="radio" name="shipping" class="mr-2">
+            <span>Expedited 7 days - $14.99</span>
+          </label>
+        </div>
+        <div>
+          <label class="flex items-center">
+            <input type="radio" name="shipping" class="mr-2">
+            <span>Express 3 days - $19.99</span>
+          </label>
+        </div>
+      </form>
+    </section>
+
+    <!-- Write Review Section -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Write Review</h2>
+      <div class="flex items-start mb-4">
+        <figure class="w-32 h-32 bg-gray-200 flex-shrink-0 mr-4">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="w-full h-full object-cover">
+        </figure>
+        <figcaption class="flex-grow">
+          <p class="text-xl font-semibold">PRODUCT NAME</p>
+          <p class="text-lg text-gray-600">PRICE</p>
+          <p class="text-lg text-gray-500">45 reviews</p>
+        </figcaption>
+      </div>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-lg font-medium mb-1">Rate Product</label>
+          <div class="flex items-center space-x-2">
+            <span>★</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+          </div>
+          <p class="text-sm text-red-600">Bad :(</p>
+        </div>
+        <div>
+          <label class="block text-lg font-medium mb-1">Headline</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Headline">
+        </div>
+        <div>
+          <label class="block text-lg font-medium mb-1">Review</label>
+          <textarea class="w-full p-2 border border-gray-300 rounded" placeholder="Write your review..."></textarea>
+        </div>
+        <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-6">
+      <h2 class="text-2xl font-semibold mb-4">Payment Method</h2>
+      <form class="space-y-4">
+        <div>
+          <p class="text-lg font-medium mb-2">Método de Transporte</p>
+          <label class="flex items-center mb-2">
+            <input type="radio" name="transport" class="mr-2">
+            <span>Terrestre</span>
+          </label>
+          <label class="flex items-center mb-2">
+            <input type="radio" name="transport" class="mr-2">
+            <span>Aéreo</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="transport" class="mr-2">
+            <span>Marítimo</span>
+          </label>
+        </div>
+        <div>
+          <p class="text-lg font-medium mb-2">Forma de Pago</p>
+          <label class="flex items-center mb-2">
+            <input type="radio" name="payment" class="mr-2">
+            <span>Tarjeta (Crédito/Débito)</span>
+          </label>
+          <label class="flex items-center mb-2">
+            <input type="radio" name="payment" class="mr-2">
+            <span>Transferencia Bancaria</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="payment" class="mr-2">
+            <span>Metálico</span>
+          </label>
+        </div>
+        <div>
+          <label class="block text-lg font-medium mb-1">Dirección</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Dirección">
+        </div>
+        <div>
+          <label class="block text-lg font-medium mb-1">País</label>
+          <select class="w-full p-2 border border-gray-300 rounded">
+            <option>Seleccionar País</option>
+            <option>México</option>
+            <option>Estados Unidos</option>
+            <option>Canadá</option>
+          </select>
+        </div>
+        <button type="submit" class="px-4 py-2 bg-green-500 text-white rounded">Aceptar</button>
+      </form>
+    </footer>
+  </div>
+</body>
+</html>

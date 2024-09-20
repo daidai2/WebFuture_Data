@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+  <main class="bg-white p-4 shadow-md rounded-md">
+    <!-- Payment Method Section -->
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block mb-2">
+            <input type="radio" name="paymentMethod" value="creditCard" class="mr-2">Credit Card
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="paymentMethod" value="paypal" class="mr-2">Paypal
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="paymentMethod" value="bankTransfer" class="mr-2">Bank Transfer
+          </label>
+        </div>
+        <h2 class="text-lg font-semibold mb-2">Enter your data</h2>
+        <div class="mb-4">
+          <label for="cardNumber" class="block mb-2">Card Number</label>
+          <input type="text" id="cardNumber" name="cardNumber" class="w-full p-2 border rounded-md">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">Expiration Date</label>
+          <div class="flex space-x-4">
+            <input type="text" name="expirationDateMonth" placeholder="MM" class="w-16 p-2 border rounded-md">
+            <input type="text" name="expirationDateYear" placeholder="YY" class="w-16 p-2 border rounded-md">
+            <input type="text" name="cvv" placeholder="CVV" class="w-16 p-2 border rounded-md">
+          </div>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Complete</button>
+      </form>
+    </section>
+
+    <!-- Advertisement/Content Section 1 -->
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-2">Mobility Solutions & Daily Living Aids</h2>
+      <p class="mb-4">Making life easier</p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+    </section>
+
+    <!-- Advertisement/Content Section 2 -->
+    <section class="mb-8">
+      <article class="mb-4">
+        <h2 class="text-lg font-semibold mb-2">Wheelchair Repair</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+      </article>
+      <article class="mb-4">
+        <h2 class="text-lg font-semibold mb-2">Community Contacts</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+      </article>
+      <article class="mb-4">
+        <img src="https://placehold.co/300x200" alt="Placeholder" class="mb-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+      </article>
+    </section>
+
+    <!-- Shipping Information Section -->
+    <section>
+      <h2 class="text-xl font-bold mb-4">Shipping Info</h2>
+      <form>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="firstName" class="block mb-2">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="w-full p-2 border rounded-md">
+          </div>
+          <div>
+            <label for="lastName" class="block mb-2">Last Name</label>
+            <input type="text" id="lastName" name="lastName" class="w-full p-2 border rounded-md">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="phone" class="block mb-2">Phone</label>
+            <input type="text" id="phone" name="phone" class="w-full p-2 border rounded-md">
+          </div>
+          <div>
+            <label for="email" class="block mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-2 border rounded-md">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="country" class="block mb-2">Country</label>
+            <select id="country" name="country" class="w-full p-2 border rounded-md">
+              <option>United States</option>
+            </select>
+          </div>
+          <div>
+            <label for="state" class="block mb-2">State</label>
+            <select id="state" name="state" class="w-full p-2 border rounded-md">
+              <option>Choose</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="city" class="block mb-2">City</label>
+            <input type="text" id="city" name="city" class="w-full p-2 border rounded-md">
+          </div>
+          <div>
+            <label for="zipCode" class="block mb-2">Zip Code</label>
+            <input type="text" id="zipCode" name="zipCode" class="w-full p-2 border rounded-md">
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded-md">Back</button>
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Next Step</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

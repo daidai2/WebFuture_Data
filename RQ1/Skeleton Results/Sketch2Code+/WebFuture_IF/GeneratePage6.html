@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <div class="container mx-auto p-4">
+    <!-- Product Listing Section -->
+    <div class="mb-8">
+      <div class="grid grid-cols-3 gap-4">
+        <img src="https://placehold.co/200x200" alt="Product Image 1" class="w-full">
+        <img src="https://placehold.co/200x200" alt="Product Image 2" class="w-full">
+        <img src="https://placehold.co/200x200" alt="Product Image 3" class="w-full">
+      </div>
+      <div class="mt-4">
+        <p>Product Name and Description 1</p>
+        <p>Product Name and Description 2</p>
+      </div>
+      <div class="mt-4">
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Product Page Section -->
+    <div class="bg-white p-4 rounded shadow-md">
+      <div class="grid grid-cols-2 gap-4">
+        <!-- Left Column (Product Image) -->
+        <div>
+          <img src="https://placehold.co/300x300" alt="Main Product Image" class="w-full mb-4">
+          <div class="grid grid-cols-4 gap-2">
+            <img src="https://placehold.co/75x75" alt="Additional Image 1" class="w-full">
+            <img src="https://placehold.co/75x75" alt="Additional Image 2" class="w-full">
+            <img src="https://placehold.co/75x75" alt="Additional Image 3" class="w-full">
+            <img src="https://placehold.co/75x75" alt="Additional Image 4" class="w-full">
+          </div>
+        </div>
+        <!-- Right Column (Product Details) -->
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Product Name</h2>
+          <p class="mb-2">Manufacturer</p>
+          <p class="mb-2">Colors:</p>
+          <form>
+            <label class="inline-flex items-center">
+              <input type="radio" name="color" value="red" class="form-radio text-red-500">
+              <span class="ml-2">Red</span>
+            </label>
+            <br>
+            <label class="inline-flex items-center">
+              <input type="radio" name="color" value="blue" class="form-radio text-blue-500">
+              <span class="ml-2">Blue</span>
+            </label>
+            <br>
+            <label class="inline-flex items-center">
+              <input type="radio" name="color" value="white" class="form-radio text-gray-500">
+              <span class="ml-2">White</span>
+            </label>
+          </form>
+          <p class="mt-4 mb-2">Price: $400</p>
+          <p class="mb-4">Old Price: $200</p>
+          <button class="bg-green-500 text-white py-2 px-4 rounded">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shipping Information Section -->
+    <div class="bg-white p-4 rounded shadow-md mt-8">
+      <h2 class="text-xl font-bold mb-4">Shipping Info</h2>
+      <form class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label for="fname_input">First Name</label>
+            <input type="text" id="fname_input" class="w-full border rounded p-2">
+          </div>
+          <div class="space-y-2">
+            <label for="lname_input">Last Name</label>
+            <input type="text" id="lname_input" class="w-full border rounded p-2">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label for="phone_input">Phone</label>
+            <input type="tel" id="phone_input" class="w-full border rounded p-2">
+          </div>
+          <div class="space-y-2">
+            <label for="email_input">E-mail</label>
+            <input type="email" id="email_input" class="w-full border rounded p-2">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label for="country_dropdown">Country</label>
+            <select id="country_dropdown" class="w-full border rounded p-2">
+              <option>United States</option>
+              <!-- Add other options as needed -->
+            </select>
+          </div>
+          <div class="space-y-2">
+            <label for="state_dropdown">State</label>
+            <select id="state_dropdown" class="w-full border rounded p-2">
+              <option>California</option>
+              <!-- Add other options as needed -->
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label for="city_input">City</label>
+            <input type="text" id="city_input" class="w-full border rounded p-2">
+          </div>
+          <div class="space-y-2">
+            <label for="zip_input">Zip Code</label>
+            <input type="text" id="zip_input" class="w-full border rounded p-2">
+          </div>
+        </div>
+        <div class="flex justify-between pt-4">
+          <button type="button" class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+          <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Next Step</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <header class="mb-8">
+    <nav class="flex justify-between items-center">
+      <a href="#" class="text-blue-600">Sign Up</a>
+      <a href="#" class="text-blue-600">Login</a>
+    </nav>
+  </header>
+
+  <main class="bg-white p-8 rounded shadow-md max-w-sm mx-auto">
+    <form class="space-y-4">
+      <div class="flex space-x-4">
+        <div class="flex-1">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="block w-full mt-1 border-gray-300 rounded-md p-2" />
+        </div>
+        <div class="flex-1">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" class="block w-full mt-1 border-gray-300 rounded-md p-2" />
+        </div>
+      </div>
+      <div class="flex space-x-4">
+        <div class="flex-1">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" class="block w-full mt-1 border-gray-300 rounded-md p-2" />
+        </div>
+        <div class="flex-1">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" class="block w-full mt-1 border-gray-300 rounded-md p-2" />
+        </div>
+      </div>
+      <div class="flex space-x-4">
+        <div class="flex-1">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="block w-full mt-1 border-gray-300 rounded-md p-2" />
+        </div>
+        <div class="flex-1">
+          <label for="confirm_password">Confirm Password</label>
+          <input type="password" id="confirm_password" class="block w-full mt-1 border-gray-300 rounded-md p-2" />
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" id="terms" class="h-4 w-4" />
+        <label for="terms" class="text-sm">I agree to Terms and Conditions</label>
+      </div>
+      <div>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-md">Sign Up</button>
+      </div>
+    </form>
+
+    <div class="my-8 text-center">
+      <img src="https://placehold.co/300x200" alt="Product Image" class="mx-auto mb-4">
+      <div class="text-xl font-semibold">$24.9</div>
+      <h2 class="text-lg font-semibold">Product Title</h2>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Check Items:</h3>
+      <div>
+        <label class="flex items-center">
+          <input type="checkbox" class="h-4 w-4">
+          <span class="ml-2">Check item 1</span>
+        </label>
+        <label class="flex items-center mt-2">
+          <input type="checkbox" class="h-4 w-4">
+          <span class="ml-2">Check item 2</span>
+        </label>
+        <label class="flex items-center mt-2">
+          <input type="checkbox" class="h-4 w-4">
+          <span class="ml-2">Check item 3</span>
+        </label>
+      </div>
+      <div class="mt-4">
+        <button class="bg-green-600 text-white py-2 px-4 rounded-md">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <div class="mb-4">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="block w-full mt-1 border-gray-300 rounded-md p-2" />
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-sm font-semibold mb-2">Radio Buttons</h3>
+        <div class="flex space-x-4">
+          <label class="flex items-center">
+            <input type="radio" name="relevance" class="h-4 w-4">
+            <span class="ml-2">Not relevant</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="relevance" class="h-4 w-4">
+            <span class="ml-2">Low</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="relevance" class="h-4 w-4">
+            <span class="ml-2">Medium</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="relevance" class="h-4 w-4">
+            <span class="ml-2">High</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-sm font-semibold mb-2">Check Boxes</h3>
+        <div class="grid grid-cols-4 gap-2">
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 1</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 2</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 3</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 4</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 5</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 6</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 7</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Choice 8</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="flex space-x-4">
+        <button class="bg-blue-600 text-white py-2 px-4 rounded-md">OK</button>
+        <button class="bg-red-600 text-white py-2 px-4 rounded-md">Cancel</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

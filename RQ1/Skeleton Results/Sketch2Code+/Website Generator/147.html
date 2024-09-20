@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 1356px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .header select, .header button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .checkbox-group div, .radio-group div {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input, .radio-group input {
+            margin-right: 10px;
+        }
+        .large-image, .small-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <select>
+                <option value="csharp">C#</option>
+            </select>
+            <button>Get Drop Down Here</button>
+        </div>
+        <div class="content">
+            <div class="checkbox-group">
+                <div><input type="checkbox" id="csharp" name="csharp"><label for="csharp">C#</label></div>
+                <div><input type="checkbox" id="java" name="java"><label for="java">Java</label></div>
+                <div><input type="checkbox" id="php" name="php"><label for="php">PHP</label></div>
+                <div><input type="checkbox" id="vb" name="vb"><label for="vb">Visual Basic</label></div>
+            </div>
+            <div class="large-image"></div>
+            <div class="form-group">
+                <label for="text1">Label</label>
+                <input type="text" id="text1" name="text1">
+                <input type="text" id="text2" name="text2">
+                <button>Button</button>
+            </div>
+            <div class="radio-group">
+                <div><input type="radio" id="option1" name="radio"><label for="option1">Option 1</label></div>
+                <div><input type="radio" id="option2" name="radio"><label for="option2">Option 2</label></div>
+            </div>
+            <div class="small-image"></div>
+        </div>
+    </div>
+</body>
+</html>

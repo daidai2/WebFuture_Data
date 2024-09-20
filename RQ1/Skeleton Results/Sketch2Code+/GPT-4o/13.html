@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 300px;
+            height: 300px;
+        }
+        .details {
+            width: 60%;
+        }
+        .details h1 {
+            font-size: 24px;
+        }
+        .details label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .price {
+            margin-top: 20px;
+        }
+        .price span {
+            margin-right: 20px;
+        }
+        .add-to-cart {
+            margin-top: 20px;
+        }
+        .add-to-cart button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .shipping-form {
+            width: 80%;
+            margin-top: 40px;
+        }
+        .shipping-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .shipping-form input, .shipping-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        .shipping-form button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Product Page -->
+        <div class="product">
+            <img src="placeholder.png" alt="Product Image">
+            <div class="details">
+                <h1>Product Name</h1>
+                <p>Manufacturer</p>
+                <label>Color:</label>
+                <input type="radio" name="color" value="red"> Red
+                <input type="radio" name="color" value="blue"> Blue
+                <input type="radio" name="color" value="white"> White
+                <div class="price">
+                    <span>Price: $100</span>
+                    <span>Old Price: $200</span>
+                </div>
+                <div class="add-to-cart">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shipping and Payment Form -->
+        <div class="shipping-form">
+            <h2>Forma de envío</h2>
+            <label>Medio transporte:</label>
+            <input type="radio" name="transport" value="terrestre"> Terrestre
+            <input type="radio" name="transport" value="aereo"> Aereo
+            <input type="radio" name="transport" value="maritimo"> Marítimo
+            <label>Forma de pago:</label>
+            <input type="radio" name="payment" value="tarjeta"> Tarjeta (Crédito/débito)
+            <input type="radio" name="payment" value="transferencia"> Transferencia bancaria
+            <input type="radio" name="payment" value="metalico"> Metálico
+            <label>Dirección:</label>
+            <input type="text" name="address">
+            <label>País:</label>
+            <select name="country">
+                <option value="country1">País 1</option>
+                <option value="country2">País 2</option>
+                <option value="country3">País 3</option>
+            </select>
+            <button>Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>

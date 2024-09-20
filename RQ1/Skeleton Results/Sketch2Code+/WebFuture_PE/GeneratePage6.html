@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Example</title>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div class="container mx-auto bg-white p-6 shadow-md">
+
+    <!-- Upper Image Section -->
+    <div class="grid grid-cols-3 gap-4 mb-6">
+      <img src="https://placehold.co/100x100" alt="placeholder image" class="w-full">
+      <img src="https://placehold.co/100x100" alt="placeholder image" class="w-full">
+      <img src="https://placehold.co/100x100" alt="placeholder image" class="w-full">
+    </div>
+
+    <!-- Lines and Image Section -->
+    <div class="mb-6">
+      <div class="mb-4">
+        <div class="h-2 bg-gray-300 my-2 w-3/4 mx-auto"></div>
+        <div class="h-2 bg-gray-300 my-2 w-2/3 mx-auto"></div>
+        <div class="h-2 bg-gray-300 my-2 w-1/2 mx-auto"></div>
+      </div>
+      <img src="https://placehold.co/200x200" alt="placeholder image" class="w-full mb-4">
+      <div class="h-2 bg-gray-300 my-2 w-1/2 mx-auto mb-4"></div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="example_check" class="mr-2">
+        <label for="example_check" class="text-gray-700">Checkbox example</label>
+      </div>
+      <button class="bg-blue-500 text-white p-2 w-full">Button</button>
+    </div>
+
+    <!-- Product Page -->
+    <div class="border-t border-gray-300 pt-6">
+      <div class="flex mb-6">
+        <img src="https://placehold.co/200x200" alt="product image" class="w-1/2">
+        <div class="pl-4">
+          <h2 class="text-2xl font-bold mb-2">Product Name</h2>
+          <p class="text-gray-700">Manufacturer</p>
+          <div class="my-4">
+            <label class="block mb-1">Color:</label>
+            <input type="radio" name="color" id="red" value="red" class="mr-2"><label for="red" class="text-gray-700 mr-4">Red</label>
+            <input type="radio" name="color" id="blue" value="blue" class="mr-2"><label for="blue" class="text-gray-700 mr-4">Blue</label>
+            <input type="radio" name="color" id="white" value="white" class="mr-2"><label for="white" class="text-gray-700">White</label>
+          </div>
+          <div class="my-4">
+            <p class="text-gray-700">Price: $400</p>
+            <p class="text-gray-400 line-through">Old Price: $200</p>
+          </div>
+          <button class="bg-green-500 text-white p-2 w-full">Add to Cart</button>
+        </div>
+      </div>
+      <div class="flex space-x-4 mb-6">
+        <img src="https://placehold.co/100x100" alt="thumbnail image" class="w-1/5">
+        <img src="https://placehold.co/100x100" alt="thumbnail image" class="w-1/5">
+        <img src="https://placehold.co/100x100" alt="thumbnail image" class="w-1/5">
+        <img src="https://placehold.co/100x100" alt="thumbnail image" class="w-1/5">
+      </div>
+    </div>
+
+    <!-- Shipping Information -->
+    <div class="border-t border-gray-300 pt-6">
+      <h3 class="text-xl font-bold mb-4">Shipping Info</h3>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <input type="text" placeholder="First Name" class="p-2 border border-gray-300">
+        <input type="text" placeholder="Last Name" class="p-2 border border-gray-300">
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <input type="text" placeholder="Phone" class="p-2 border border-gray-300">
+        <input type="email" placeholder="E-mail" class="p-2 border border-gray-300">
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <select class="p-2 border border-gray-300">
+          <option>United States</option>
+        </select>
+        <input type="text" placeholder="State" class="p-2 border border-gray-300">
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <input type="text" placeholder="City" class="p-2 border border-gray-300">
+        <input type="text" placeholder="Zip Code" class="p-2 border border-gray-300">
+      </div>
+      <div class="flex justify-between">
+        <button class="bg-gray-500 text-white p-2 w-1/3">Back</button>
+        <button class="bg-blue-500 text-white p-2 w-1/3">Next Step</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

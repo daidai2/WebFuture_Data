@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <section class="bg-white p-6 rounded-lg shadow-lg mx-auto max-w-2xl">
+    <header class="text-center mb-6">
+      <h1 class="text-2xl font-bold">Checkout</h1>
+    </header>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+      <div class="mb-4">
+        <label class="block text-gray-700">First Name</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Last Name</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Company</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+      <div class="mb-2">
+        <input type="radio" id="standard" name="shipping" class="mr-2">
+        <label for="standard" class="text-gray-700">Standard</label>
+        <span class="block text-gray-500 text-sm ml-4">14 days - $6.59</span>
+      </div>
+      <div class="mb-2">
+        <input type="radio" id="expedited" name="shipping" class="mr-2">
+        <label for="expedited" class="text-gray-700">Expedited</label>
+        <span class="block text-gray-500 text-sm ml-4">7 days - $1.97</span>
+      </div>
+      <div class="mb-2">
+        <input type="radio" id="express" name="shipping" class="mr-2">
+        <label for="express" class="text-gray-700">Express</label>
+        <span class="block text-gray-500 text-sm ml-4">3 days - $19.97</span>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <select class="block w-full p-2 border border-gray-300 rounded mb-4">
+        <option>Get Drop Down Here</option>
+      </select>
+      <div class="flex items-center gap-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">C Sharp</button>
+        <button class="bg-gray-300 px-4 py-2 rounded">Get Drop Down Here</button>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Languages</h2>
+      <div class="flex items-center gap-4 mb-4">
+        <div>
+          <input type="checkbox" id="csharp" class="mr-2">
+          <label for="csharp" class="text-gray-700">C#</label>
+        </div>
+        <div>
+          <input type="checkbox" id="java" class="mr-2">
+          <label for="java" class="text-gray-700">Java</label>
+        </div>
+        <div>
+          <input type="checkbox" id="php" class="mr-2">
+          <label for="php" class="text-gray-700">PHP</label>
+        </div>
+        <div>
+          <input type="checkbox" id="vb" class="mr-2">
+          <label for="vb" class="text-gray-700">Visual Basic</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Title</h2>
+      <input type="text" class="w-full p-2 border border-gray-300 rounded mb-4">
+    </div>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Relevance</h2>
+      <div class="flex items-center gap-4 mb-4">
+        <div>
+          <input type="radio" id="not_relevant" name="relevance" class="mr-2">
+          <label for="not_relevant" class="text-gray-700">Not relevant</label>
+        </div>
+        <div>
+          <input type="radio" id="low" name="relevance" class="mr-2">
+          <label for="low" class="text-gray-700">Low</label>
+        </div>
+        <div>
+          <input type="radio" id="medium" name="relevance" class="mr-2">
+          <label for="medium" class="text-gray-700">Medium</label>
+        </div>
+        <div>
+          <input type="radio" id="high" name="relevance" class="mr-2">
+          <label for="high" class="text-gray-700">High</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Options</h2>
+      <div class="grid grid-cols-4 gap-4 mb-4">
+        <div>
+          <input type="checkbox" id="choice1" class="mr-2">
+          <label for="choice1" class="text-gray-700">choice1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice2" class="mr-2">
+          <label for="choice2" class="text-gray-700">choice2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice3" class="mr-2">
+          <label for="choice3" class="text-gray-700">choice3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice4" class="mr-2">
+          <label for="choice4" class="text-gray-700">choice4</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice5" class="mr-2">
+          <label for="choice5" class="text-gray-700">choice5</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice6" class="mr-2">
+          <label for="choice6" class="text-gray-700">choice6</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice7" class="mr-2">
+          <label for="choice7" class="text-gray-700">choice7</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice8" class="mr-2">
+          <label for="choice8" class="text-gray-700">choice8</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-end gap-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">OK</button>
+      <button class="bg-gray-300 px-4 py-2 rounded">Cancel</button>
+    </div>
+  </section>
+</body>
+</html>

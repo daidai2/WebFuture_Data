@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+        }
+        .product-image, .product-details {
+            flex: 1;
+        }
+        .product-image img {
+            width: 100%;
+        }
+        .product-thumbnails {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-thumbnails img {
+            width: 24%;
+        }
+        .product-details {
+            margin-left: 20px;
+        }
+        .product-details h1 {
+            font-size: 24px;
+        }
+        .product-details .manufacturer {
+            margin-bottom: 20px;
+        }
+        .product-details .color-options label {
+            display: block;
+        }
+        .product-details .price {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .product-details .old-price {
+            text-decoration: line-through;
+            margin-left: 10px;
+            color: red;
+        }
+        .product-details button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .mates {
+            margin-top: 40px;
+        }
+        .mate {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .mate img {
+            width: 150px;
+            margin-right: 20px;
+        }
+        .mate-details {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="main-product.jpg" alt="Product Image">
+            <div class="product-thumbnails">
+                <img src="thumbnail1.jpg" alt="Thumbnail 1">
+                <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                <img src="thumbnail4.jpg" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <div class="manufacturer">Manufacturer</div>
+            <div class="color-options">
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+            </div>
+            <div class="price">
+                $100 <span class="old-price">$200</span>
+            </div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div class="mates">
+        <div class="mate">
+            <img src="mate1.jpg" alt="Mate One">
+            <div class="mate-details">
+                <h2>Mate One</h2>
+                <div>Job Title</div>
+                <p>Details about mate one...</p>
+            </div>
+        </div>
+        <div class="mate">
+            <img src="mate2.jpg" alt="Mate Two">
+            <div class="mate-details">
+                <h2>Mate Two</h2>
+                <div>Job Title</div>
+                <p>Details about mate two...</p>
+            </div>
+        </div>
+        <div class="mate">
+            <img src="mate3.jpg" alt="Mate Three">
+            <div class="mate-details">
+                <h2>Mate Three</h2>
+                <div>Job Title</div>
+                <p>Details about mate three...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+  <!-- Header Section -->
+  <header class="text-center mb-10">
+    <h1 class="text-4xl font-bold">Product Page</h1>
+  </header>
+
+  <!-- Main Product Detail Section -->
+  <section class="container mx-auto mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <!-- Main Product Image -->
+        <img src="https://placehold.co/400x400" alt="Main Product" class="w-full mb-5">
+        <!-- Thumbnail Images -->
+        <div class="grid grid-cols-4 gap-2">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full">
+        </div>
+      </div>
+      <div>
+        <!-- Product Info -->
+        <h2 class="text-3xl font-bold">Product NAME</h2>
+        <p class="text-xl mb-5">Manufacturer</p>
+        <div class="mb-5">
+          <span class="mr-3">Color:</span>
+          <label class="mr-2"><input type="radio" name="color" value="red"> Red</label>
+          <label class="mr-2"><input type="radio" name="color" value="blue"> Blue</label>
+          <label class="mr-2"><input type="radio" name="color" value="white"> White</label>
+        </div>
+        <div class="mb-5">
+          <p class="text-2xl font-bold">$100</p>
+          <p class="text-xl line-through">$200</p>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="container mx-auto mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Mate One -->
+      <article class="flex items-center">
+        <img src="https://placehold.co/100x100" alt="Mate One" class="w-32 h-32 mr-5">
+        <div>
+          <h3 class="text-xl font-bold">Mate One</h3>
+          <p>Job TITLE</p>
+        </div>
+      </article>
+      <!-- Mate Two -->
+      <article class="flex items-center">
+        <img src="https://placehold.co/100x100" alt="Mate Two" class="w-32 h-32 mr-5">
+        <div>
+          <h3 class="text-xl font-bold">Mate Two</h3>
+          <p>Job TITLE</p>
+        </div>
+      </article>
+      <!-- Mate Three -->
+      <article class="flex items-center">
+        <img src="https://placehold.co/100x100" alt="Mate Three" class="w-32 h-32 mr-5">
+        <div>
+          <h3 class="text-xl font-bold">Mate Three</h3>
+          <p>Job TITLE</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="container mx-auto mb-10">
+    <div class="flex justify-between items-center mb-5">
+      <h2 class="text-3xl font-bold">Product Catalog</h2>
+      <div class="flex">
+        <input type="text" placeholder="Search" class="border border-gray-300 p-2 rounded-l">
+        <button class="bg-blue-500 text-white p-2 rounded-r">Search</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Product 1 -->
+      <article class="text-center">
+        <img src="https://placehold.co/100x100" alt="Product 1" class="w-full mb-3">
+        <h3 class="text-xl font-bold mb-3">PRODUCT 1</h3>
+        <p class="text-2xl font-bold mb-3">$20.00</p>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">ADD TO CART</button>
+      </article>
+      <!-- Product 2 -->
+      <article class="text-center">
+        <img src="https://placehold.co/100x100" alt="Product 2" class="w-full mb-3">
+        <h3 class="text-xl font-bold mb-3">PRODUCT 2</h3>
+        <p class="text-2xl font-bold mb-3">$10.00</p>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">ADD TO CART</button>
+      </article>
+      <!-- Product 3 -->
+      <article class="text-center">
+        <img src="https://placehold.co/100x100" alt="Product 3" class="w-full mb-3">
+        <h3 class="text-xl font-bold mb-3">PRODUCT 3</h3>
+        <p class="text-2xl font-bold mb-3">$40.00</p>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">ADD TO CART</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center mt-10">
+    <p class="text-gray-600">&copy; 2023 Product Page</p>
+  </footer>
+</body>
+</html>

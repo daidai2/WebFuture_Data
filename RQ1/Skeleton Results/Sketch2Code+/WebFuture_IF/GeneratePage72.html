@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+  <div class="container mx-auto">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center mb-8">
+      <div class="space-x-4">
+        <a href="#" class="text-blue-500 hover:underline">Sign Up</a>
+        <a href="#" class="text-blue-500 hover:underline">Login</a>
+      </div>
+    </header>
+
+    <!-- Sign-Up Form Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+      <h2 class="text-xl font-bold mb-4">Sign Up</h2>
+      <form>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="name" class="block text-gray-700">Name</label>
+            <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded mt-1">
+          </div>
+          <div>
+            <label for="lastName" class="block text-gray-700">Last Name</label>
+            <input type="text" id="lastName" class="w-full p-2 border border-gray-300 rounded mt-1">
+          </div>
+          <div>
+            <label for="phone" class="block text-gray-700">Phone</label>
+            <input type="text" id="phone" class="w-full p-2 border border-gray-300 rounded mt-1">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700">E-mail</label>
+            <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded mt-1">
+          </div>
+          <div>
+            <label for="password" class="block text-gray-700">Password</label>
+            <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded mt-1">
+          </div>
+          <div>
+            <label for="confirmPassword" class="block text-gray-700">Confirm Password</label>
+            <input type="password" id="confirmPassword" class="w-full p-2 border border-gray-300 rounded mt-1">
+          </div>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="terms" class="mr-2">
+          <label for="terms" class="text-gray-700">I agree to Terms and Conditions</label>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Product Display Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+      <img src="https://placehold.co/600x400" alt="Product Image" class="w-full h-auto mb-4">
+      <div class="mb-2 text-2xl text-bold">$24.99</div>
+      <h3 class="text-xl font-bold mb-4">Product Title</h3>
+      <div class="border-b mb-4"></div>
+      <div class="mb-4">
+        <p class="font-bold">Check items:</p>
+        <div>
+          <input type="checkbox" id="item1" class="mr-2">
+          <label for="item1">Check item 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="item2" class="mr-2">
+          <label for="item2">Check item 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="item3" class="mr-2">
+          <label for="item3">Check item 3</label>
+        </div>
+      </div>
+      <button class="bg-green-500 text-white px-4 py-2 rounded">Buy Now</button>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold">Product Catalog</h2>
+        <div class="flex space-x-2">
+          <input type="text" placeholder="Search" class="p-2 border border-gray-300 rounded">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Product 1 -->
+        <div class="bg-white p-4 border border-gray-200 rounded-lg shadow-md">
+          <img src="https://placehold.co/200x200" alt="Product 1" class="w-full h-auto mb-2">
+          <h3 class="text-lg font-bold">Product 1</h3>
+          <div class="mb-2">$20.00</div>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white p-4 border border-gray-200 rounded-lg shadow-md">
+          <img src="https://placehold.co/200x200" alt="Product 2" class="w-full h-auto mb-2">
+          <h3 class="text-lg font-bold">Product 2</h3>
+          <div class="mb-2">$10.00</div>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white p-4 border border-gray-200 rounded-lg shadow-md">
+          <img src="https://placehold.co/200x200" alt="Product 3" class="w-full h-auto mb-2">
+          <h3 class="text-lg font-bold">Product 3</h3>
+          <div class="mb-2">$40.00</div>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

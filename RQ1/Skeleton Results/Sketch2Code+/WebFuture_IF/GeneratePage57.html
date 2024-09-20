@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team and Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+  <section class="team-checkout-section max-w-4xl mx-auto">
+    <!-- Team Section -->
+    <section class="team-section mb-8">
+      <div class="team-member flex items-center mb-4">
+        <img src="https://placehold.co/100x100" alt="Profile 1" class="w-24 h-24 rounded-full mr-4">
+        <div class="member-info">
+          <span class="name block font-bold text-xl">Mate One</span>
+          <span class="job-title block text-gray-600">Job Title</span>
+        </div>
+      </div>
+      <div class="team-member flex items-center mb-4">
+        <div class="member-info text-right mr-4">
+          <span class="name block font-bold text-xl">Mate Two</span>
+          <span class="job-title block text-gray-600">Job Title</span>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Profile 2" class="w-24 h-24 rounded-full">
+      </div>
+      <div class="team-member flex items-center">
+        <img src="https://placehold.co/100x100" alt="Profile 3" class="w-24 h-24 rounded-full mr-4">
+        <div class="member-info">
+          <span class="name block font-bold text-xl">Mate Three</span>
+          <span class="job-title block text-gray-600">Job Title</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section p-6 bg-white rounded-lg shadow-md mb-8">
+      <header class="mb-6">
+        <h2 class="text-2xl font-bold">Checkout</h2>
+      </header>
+
+      <!-- Shipping Address -->
+      <section class="shipping-address mb-6">
+        <header class="mb-4">
+          <h3 class="text-xl font-bold">Shipping Address</h3>
+        </header>
+        <div class="mb-4">
+          <label for="first-name" class="block text-gray-700">First Name</label>
+          <input type="text" id="first-name" class="w-full border border-gray-300 p-2 rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="last-name" class="block text-gray-700">Last Name</label>
+          <input type="text" id="last-name" class="w-full border border-gray-300 p-2 rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="company" class="block text-gray-700">Company</label>
+          <input type="text" id="company" class="w-full border border-gray-300 p-2 rounded-lg">
+        </div>
+      </section>
+
+      <!-- Shipping Service -->
+      <section class="shipping-service mb-6">
+        <header class="mb-4">
+          <h3 class="text-xl font-bold">Shipping Service</h3>
+        </header>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="shipping" id="standard" class="mr-2"> Standard (14 days - $6.59)
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="shipping" id="expedited" class="mr-2"> Expedited (7 days - $11.97)
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="shipping" id="express" class="mr-2"> Express (3 days - $19.97)
+          </label>
+        </div>
+      </section>
+    </section>
+
+    <!-- Additional Checkout Section in Spanish -->
+    <section class="additional-checkout-section p-6 bg-white rounded-lg shadow-md">
+      <header class="mb-6">
+        <h2 class="text-2xl font-bold">Forma de envio</h2>
+      </header>
+
+      <!-- Shipping Method -->
+      <section class="shipping-method mb-6">
+        <header class="mb-4">
+          <h3 class="text-xl font-bold">Método Transporte</h3>
+        </header>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="transport" id="terrestre" class="mr-2"> Terrestre
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="transport" id="aereo" class="mr-2"> Aereo
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="transport" id="maritimo" class="mr-2"> Maritimo
+          </label>
+        </div>
+      </section>
+
+      <!-- Payment Method -->
+      <section class="payment-method mb-6">
+        <header class="mb-4">
+          <h3 class="text-xl font-bold">Forma de pago</h3>
+        </header>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="payment" id="tarjeta" class="mr-2"> Tarjeta (Crédito/Débito)
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="payment" id="transferencia" class="mr-2"> Transferencia bancaria
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="payment" id="metalico" class="mr-2"> Metálico
+          </label>
+        </div>
+      </section>
+
+      <!-- Address Input -->
+      <div class="mb-4">
+        <label for="direccion" class="block text-gray-700">Direccion</label>
+        <input type="text" id="direccion" class="w-full border border-gray-300 p-2 rounded-lg">
+      </div>
+      <div class="mb-4">
+        <label for="pais" class="block text-gray-700">País</label>
+        <input type="text" id="pais" class="w-ful border border-gray-300 p-2 rounded-lg">
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg">Aceptar</button>
+    </section>
+  </section>
+</body>
+
+</html>

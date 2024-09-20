@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .back-button {
+            margin: 20px 0;
+        }
+        .product-page, .product-catalog {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product-page img, .product-catalog img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        .product-catalog .product {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            vertical-align: top;
+            text-align: center;
+        }
+        .product-details {
+            display: inline-block;
+            vertical-align: top;
+            width: 65%;
+            margin-left: 20px;
+        }
+        .product-details h2, .product-details p {
+            margin: 0;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Back Button Section -->
+    <div class="back-button">
+        <button onclick="window.history.back()">Back</button>
+        <label>
+            <input type="checkbox"> Check box
+        </label>
+    </div>
+
+    <!-- Product Page Section -->
+    <div class="product-page">
+        <h1>Product Page</h1>
+        <img src="https://via.placeholder.com/300" alt="Product Image">
+        <div class="product-details">
+            <h2>Product Name</h2>
+            <p>Manufacturer: Example Manufacturer</p>
+            <p>Color:
+                <label><input type="radio" name="color" value="red" checked> Red</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+            </p>
+            <p>Price: $100</p>
+            <p>Old Price: $200</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product Catalog Section -->
+    <div class="product-catalog">
+        <h1>Product Catalog</h1>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <p>Product 1</p>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <p>Product 2</p>
+            <p>$10.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <p>Product 3</p>
+            <p>$40.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

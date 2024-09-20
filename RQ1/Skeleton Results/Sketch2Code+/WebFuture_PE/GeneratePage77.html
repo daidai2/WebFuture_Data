@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 p-10">
+
+  <!-- Navigation Links -->
+  <div class="flex justify-between mb-10">
+    <div>
+      <a href="#" class="text-blue-500 mx-2">Login</a>
+      <a href="#" class="text-blue-500 mx-2">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Login Form -->
+  <form class="bg-white p-5 rounded shadow mb-10">
+    <div class="mb-4">
+      <label class="block text-gray-700">Login</label>
+      <input type="text" class="border w-full p-2 rounded">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Password</label>
+      <input type="password" class="border w-full p-2 rounded">
+    </div>
+    <div class="flex items-center mb-4">
+      <input type="checkbox" id="remember" class="mr-2">
+      <label for="remember" class="text-gray-700">Remember me</label>
+    </div>
+    <div class="mb-4">
+      <a href="#" class="text-blue-500">Forgot Password</a>
+    </div>
+    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Login</button>
+  </form>
+
+  <!-- Second Section -->
+  <div class="bg-white p-5 rounded shadow mb-10">
+    <div class="flex items-center mb-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded mr-2">C Sharp</button>
+      <input type="checkbox" class="mr-2" checked>
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Get Drop Down Here</button>
+    <div class="space-y-2">
+      <label><input type="checkbox" class="mr-2"> C# </label>
+      <label><input type="checkbox" class="mr-2"> Java </label>
+      <label><input type="checkbox" class="mr-2"> PHP </label>
+      <label><input type="checkbox" class="mr-2"> Visual Basic </label>
+    </div>
+  </div>
+
+  <!-- Product Catalog -->
+  <div class="bg-white p-5 rounded shadow">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Product Catalog</h2>
+      <input type="text" placeholder="Search" class="border p-2 rounded">
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Product 1 -->
+      <div class="border p-4 rounded">
+        <img src="https://placehold.co/150x150" alt="Product 1 Image" class="w-full mb-4">
+        <div class="text-center">
+          <h3 class="text-lg">Product 1</h3>
+          <p class="text-gray-500">$20.00</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="border p-4 rounded">
+        <img src="https://placehold.co/150x150" alt="Product 2 Image" class="w-full mb-4">
+        <div class="text-center">
+          <h3 class="text-lg">Product 2</h3>
+          <p class="text-gray-500">$10.00</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="border p-4 rounded">
+        <img src="https://placehold.co/150x150" alt="Product 3 Image" class="w-full mb-4">
+        <div class="text-center">
+          <h3 class="text-lg">Product 3</h3>
+          <p class="text-gray-500">$40.00</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .product-image {
+            width: 300px;
+            height: 300px;
+            background-color: #ddd;
+        }
+        .product-info {
+            margin-top: 20px;
+        }
+        .back-button {
+            margin-top: 20px;
+        }
+        .checkbox {
+            margin-top: 20px;
+        }
+        .product-page {
+            display: flex;
+            margin-top: 20px;
+        }
+        .product-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .product-thumbnails div {
+            width: 50px;
+            height: 50px;
+            background-color: #ddd;
+        }
+        .product-details {
+            margin-left: 20px;
+        }
+        .product-details label {
+            display: block;
+            margin-top: 10px;
+        }
+        .price {
+            margin-top: 20px;
+        }
+        .add-to-cart {
+            margin-top: 20px;
+        }
+        .form-section {
+            margin-top: 40px;
+        }
+        .form-section label, .form-section .checkbox, .form-section .radio-button {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First Section -->
+        <div class="product-image"></div>
+        <div class="product-info">
+            <p>Some product description here.</p>
+            <p>More information about the product.</p>
+            <p>Even more details about the product.</p>
+        </div>
+        <button class="back-button">BACK</button>
+        <div class="checkbox">
+            <input type="checkbox" id="check1" name="check1">
+            <label for="check1">Checkbox</label>
+        </div>
+
+        <!-- Second Section - Product Page -->
+        <h2>Product Page</h2>
+        <div class="product-page">
+            <div class="product-image"></div>
+            <div class="product-details">
+                <label>Product Name</label>
+                <label>Manufacturer</label>
+                <label>Color</label>
+                <input type="radio" id="red" name="color" value="red">
+                <label for="red">Red</label>
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue">Blue</label>
+                <input type="radio" id="white" name="color" value="white">
+                <label for="white">White</label>
+                <div class="price">
+                    <span>Price: $100</span>
+                    <span style="text-decoration: line-through; margin-left: 20px;">Old Price: $200</span>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="product-thumbnails">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Third Section - Form -->
+        <div class="form-section">
+            <label>Label</label>
+            <div class="product-image"></div>
+            <div>
+                <input type="checkbox" id="form-check1" name="form-check1">
+                <label for="form-check1">Checkbox</label>
+            </div>
+            <div>
+                <input type="checkbox" id="form-check2" name="form-check2">
+                <label for="form-check2">Checkbox</label>
+            </div>
+            <button>Button</button>
+            <label>Label</label>
+            <input type="radio" id="form-radio1" name="form-radio" value="option1">
+            <label for="form-radio1">Radio button</label>
+            <input type="radio" id="form-radio2" name="form-radio" value="option2">
+            <label for="form-radio2">Radio button</label>
+        </div>
+    </div>
+</body>
+</html>

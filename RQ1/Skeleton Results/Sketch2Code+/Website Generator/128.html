@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .main-content, .footer, .form-section, .post-section, .media-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .post img {
+            width: 30%;
+            height: auto;
+        }
+        .post-content {
+            width: 65%;
+        }
+        .media-section iframe {
+            width: 100%;
+            height: 400px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section label {
+            margin-bottom: 5px;
+        }
+        .form-section input, .form-section button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .footer ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Title</h1>
+            <p>Title Page</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="media-section">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="post-section">
+                <div class="post">
+                    <img src="path/to/image1.jpg" alt="Post Image 1">
+                    <div class="post-content">
+                        <h2>Title</h2>
+                        <p>Title Post</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="path/to/image2.jpg" alt="Post Image 2">
+                    <div class="post-content">
+                        <h2>Title</h2>
+                        <p>Title Post</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="path/to/image3.jpg" alt="Post Image 3">
+                    <div class="post-content">
+                        <h2>Title</h2>
+                        <p>Title Post</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <form action="#" method="POST">
+                <label for="label1">Label</label>
+                <input type="text" id="label1" name="label1">
+                <label for="label2">Label</label>
+                <input type="text" id="label2" name="label2">
+                <button type="submit">Button</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <ul>
+                <li><input type="radio" name="radio" id="radio1"><label for="radio1">Radio 1</label></li>
+                <li><input type="radio" name="radio" id="radio2"><label for="radio2">Radio 2</label></li>
+                <li><input type="radio" name="radio" id="radio3"><label for="radio3">Radio 3</label></li>
+                <li><input type="radio" name="radio" id="radio4"><label for="radio4">Radio 4</label></li>
+            </ul>
+            <div>
+                <input type="checkbox" id="checkbox1" name="checkbox1"><label for="checkbox1">Checkbox 1</label>
+                <input type="checkbox" id="checkbox2" name="checkbox2"><label for="checkbox2">Checkbox 2</label>
+                <input type="checkbox" id="checkbox3" name="checkbox3"><label for="checkbox3">Checkbox 3</label>
+                <input type="checkbox" id="checkbox4" name="checkbox4"><label for="checkbox4">Checkbox 4</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

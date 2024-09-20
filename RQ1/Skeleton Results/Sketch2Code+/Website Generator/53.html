@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Page</title>
+</head>
+<body>
+    <div class="form-page">
+        <img src="image-placeholder.jpg" alt="Image Placeholder" style="width: 200px; height: 200px;">
+        <form action="/submit" method="POST">
+            <textarea name="description" rows="4" cols="50" placeholder="Enter description here"></textarea>
+            <br>
+            <button type="button" onclick="goBack()">Back</button>
+            <br>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">Check box</label>
+        </form>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

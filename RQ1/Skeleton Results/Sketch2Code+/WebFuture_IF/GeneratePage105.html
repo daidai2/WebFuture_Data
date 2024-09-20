@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Header Section -->
+  <header class="flex justify-between items-center p-6 bg-white shadow">
+    <div class="flex items-center space-x-3">
+      <label for="programming-language" class="text-lg">C Sharp</label>
+      <select id="programming-language" class="border rounded p-2">
+        <option value="csharp">C#</option>
+        <option value="java">Java</option>
+        <option value="php">PHP</option>
+        <option value="vb">Visual Basic</option>
+      </select>
+    </div>
+    <button class="p-2 bg-blue-500 text-white rounded">Get Drop Down Here</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <!-- Programming Languages Selection -->
+    <div class="flex space-x-3 mb-6">
+      <label><input type="checkbox" class="mr-1">C#</label>
+      <label><input type="checkbox" class="mr-1">Java</label>
+      <label><input type="checkbox" class="mr-1">PHP</label>
+      <label><input type="checkbox" class="mr-1">Visual Basic</label>
+    </div>
+
+    <!-- Image Placeholder -->
+    <div class="flex justify-center mb-6">
+      <img src="https://placehold.co/1356x624" alt="Placeholder" class="border border-gray-300">
+    </div>
+
+    <!-- Form Section -->
+    <form class="space-y-4 mb-6">
+      <input type="text" placeholder="Input Field 1" class="w-full p-2 border rounded">
+      <input type="text" placeholder="Input Field 2" class="w-full p-2 border rounded">
+      <button type="submit" class="p-2 bg-blue-500 text-white rounded">GO</button>
+    </form>
+
+    <!-- Options Section -->
+    <div class="flex flex-col space-y-3 mb-6">
+      <label class="flex items-center"><input type="checkbox" class="mr-2">Checkbox 1</label>
+      <label class="flex items-center"><input type="checkbox" class="mr-2">Checkbox 2</label>
+      <label class="flex items-center"><input type="radio" name="options" class="mr-2">Radio Button 1</label>
+      <label class="flex items-center"><input type="radio" name="options" class="mr-2">Radio Button 2</label>
+    </div>
+
+    <!-- Shipping Info Section -->
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-xl mb-4">Shipping Info</h2>
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <input type="text" placeholder="First Name" class="w-full p-2 border rounded">
+        <input type="text" placeholder="Last Name" class="w-full p-2 border rounded">
+        <input type="text" placeholder="Phone" class="w-full p-2 border rounded">
+        <input type="email" placeholder="E-mail" class="w-full p-2 border rounded">
+        <select class="w-full p-2 border rounded">
+          <option>Country</option>
+          <option>United States</option>
+        </select>
+        <select class="w-full p-2 border rounded">
+          <option>State</option>
+          <option>California</option>
+        </select>
+        <select class="w-full p-2 border rounded">
+          <option>City</option>
+          <option>Palo Alto</option>
+        </select>
+        <input type="text" placeholder="Zip Code" class="w-full p-2 border rounded">
+      </div>
+      <div class="flex justify-between">
+        <button type="button" class="p-2 bg-gray-500 text-white rounded">BACK</button>
+        <button type="button" class="p-2 bg-blue-500 text-white rounded">NEXT STEP</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

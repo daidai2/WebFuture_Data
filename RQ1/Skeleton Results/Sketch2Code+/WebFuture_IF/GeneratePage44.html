@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-8">
+  <header class="mb-8">
+    <h1 class="text-2xl font-bold">Checkout</h1>
+  </header>
+
+  <section id="shipping-address" class="mb-8">
+    <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+    <div class="mb-4">
+      <label for="first-name" class="block mb-1">First Name</label>
+      <input type="text" id="first-name" class="w-full border p-2">
+    </div>
+    <div class="mb-4">
+      <label for="last-name" class="block mb-1">Last Name</label>
+      <input type="text" id="last-name" class="w-full border p-2">
+    </div>
+    <div class="mb-4">
+      <label for="company" class="block mb-1">Company</label>
+      <input type="text" id="company" class="w-full border p-2">
+    </div>
+  </section>
+
+  <section id="shipping-service" class="mb-8">
+    <h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+    <div class="mb-4">
+      <label class="block"><input type="radio" name="shipping" class="mr-2">Standard 14 days - $6.59</label>
+    </div>
+    <div class="mb-4">
+      <label class="block"><input type="radio" name="shipping" class="mr-2">Expedited 7 days - $11.97</label>
+    </div>
+    <div class="mb-4">
+      <label class="block"><input type="radio" name="shipping" class="mr-2">Express 3 days - $19.97</label>
+    </div>
+  </section>
+
+  <section id="dropdowns-and-checkboxes" class="mb-8">
+    <div class="flex space-x-4 mb-4">
+      <div>
+        <label for="language-dropdown" class="block mb-1">C Sharp</label>
+        <select id="language-dropdown" class="w-full border p-2">
+          <option>C Sharp</option>
+        </select>
+      </div>
+      <div>
+        <label for="dropdown-button" class="block mb-1">Get Drop Down Here</label>
+        <button id="dropdown-button" class="w-full border p-2">Get Drop Down Here</button>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block mb-1"><input type="checkbox" class="mr-2">C#</label>
+      <label class="block mb-1"><input type="checkbox" class="mr-2">Java</label>
+      <label class="block mb-1"><input type="checkbox" class="mr-2">PHP</label>
+      <label class="block mb-1"><input type="checkbox" class="mr-2">Visual Basic</label>
+    </div>
+  </section>
+
+  <section id="additional-elements" class="mb-8">
+    <div class="mb-4">
+      <img src="https://placehold.co/300x200" alt="Placeholder Image" class="border mb-4">
+      <textarea class="w-full border p-2 mb-4" rows="4" placeholder="Multiple Line Textbox"></textarea>
+    </div>
+    <div class="mb-4">
+      <label class="block mb-1">Label</label>
+      <input type="text" class="w-full border p-2 mb-4">
+    </div>
+    <div class="mb-4">
+      <label class="block mb-1">Label</label>
+      <input type="text" class="w-full border p-2 mb-4">
+    </div>
+    <div class="mb-4">
+      <label class="block"><input type="checkbox" class="mr-2">Checkbox</label>
+      <label class="block"><input type="checkbox" class="mr-2">Checkbox</label>
+    </div>
+    <div class="mb-4">
+      <button class="w-full border p-2">Button</button>
+    </div>
+    <div class="mb-4">
+      <label class="block"><input type="radio" name="option" class="mr-2">Radio button</label>
+      <label class="block"><input type="radio" name="option" class="mr-2">Radio button</label>
+    </div>
+    <div class="mb-4">
+      <img src="https://placehold.co/200x100" alt="Placeholder Image" class="border">
+    </div>
+  </section>
+
+  <footer class="mt-8">
+    <p class="text-center text-gray-600">Footer</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <header class="mb-8">
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/100x100" alt="Logo" class="w-12 h-12">
+      <div class="ml-4">
+        <h2 class="text-lg font-bold">Note One</h2>
+        <p>Job Title</p>
+      </div>
+    </div>
+    <div class="flex items-center mb-4">
+      <div class="mr-4">
+        <h2 class="text-lg font-bold">Note Two</h2>
+        <p>Job Title</p>
+      </div>
+      <img src="https://placehold.co/100x100" alt="Profile 2" class="w-12 h-12">
+    </div>
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/100x100" alt="Profile 3" class="w-12 h-12">
+      <div class="ml-4">
+        <h2 class="text-lg font-bold">Note Three</h2>
+        <p>Job Title</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-white p-6 rounded shadow-md mb-8">
+    <h1 class="text-2xl font-bold mb-6">Checkout</h1>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Shipping Address</h2>
+      <div class="mb-4">
+        <label for="first-name" class="block mb-2">First Name</label>
+        <input type="text" id="first-name" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4">
+        <label for="last-name" class="block mb-2">Last Name</label>
+        <input type="text" id="last-name" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-6">
+        <label for="company" class="block mb-2">Company</label>
+        <input type="text" id="company" class="w-full p-2 border rounded">
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Shipping Service</h2>
+      <div class="flex items-center mb-2">
+        <input type="radio" id="standard" name="shipping" class="mr-2">
+        <label for="standard">Standard</label>
+        <p class="ml-2 text-sm">14 days - $6.59</p>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" id="expedited" name="shipping" class="mr-2">
+        <label for="expedited">Expedited</label>
+        <p class="ml-2 text-sm">7 days - $12.77</p>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" id="express" name="shipping" class="mr-2">
+        <label for="express">Express</label>
+        <p class="ml-2 text-sm">3 days - $19.77</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-white p-6 rounded shadow-md mb-8">
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/100x100" alt="Additional Info" class="w-12 h-12">
+    </div>
+    <div class="mb-4">
+      <label for="additional-info" class="block mb-2">Additional Information</label>
+      <input type="text" id="additional-info" class="w-full p-2 border rounded">
+    </div>
+    <div class="flex items-center mb-4">
+      <input type="checkbox" id="option1" class="mr-2">
+      <label for="option1">Option 1</label>
+    </div>
+    <div class="flex items-center mb-4">
+      <input type="checkbox" id="option2" class="mr-2">
+      <label for="option2">Option 2</label>
+    </div>
+    <div class="flex items-center mb-4">
+      <input type="radio" id="option3" name="additional" class="mr-2">
+      <label for="option3">Option 3</label>
+    </div>
+  </div>
+
+  <footer class="flex justify-between">
+    <button class="bg-gray-300 p-2 rounded">Back</button>
+    <button class="bg-gray-300 p-2 rounded">Back</button>
+    <button class="bg-blue-500 text-white p-2 rounded">Submit</button>
+  </footer>
+</body>
+</html>

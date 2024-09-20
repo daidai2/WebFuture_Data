@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            width: 45%;
+            margin: 2.5%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .details {
+            margin-top: 20px;
+        }
+        .details div {
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .form-element {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>产品页面</h1>
+    <div class="container">
+        <div class="product">
+            <img src="product1.jpg" alt="产品图片1">
+            <div class="details">
+                <div><strong>产品名称:</strong> 示例产品</div>
+                <div><strong>制造商:</strong> 示例制造商</div>
+                <div>
+                    <strong>颜色:</strong>
+                    <input type="radio" id="red" name="color" value="red">
+                    <label for="red">红色</label>
+                    <input type="radio" id="blue" name="color" value="blue">
+                    <label for="blue">蓝色</label>
+                    <input type="radio" id="white" name="color" value="white">
+                    <label for="white">白色</label>
+                </div>
+                <div><strong>价格:</strong> $100 <del>$200</del></div>
+                <a href="#" class="button">添加到购物车</a>
+            </div>
+        </div>
+    </div>
+    <h2>表单</h2>
+    <form>
+        <div class="form-element">
+            <label for="title">标题:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="form-element">
+            <label>单选按钮:</label><br>
+            <input type="radio" id="not_relevant" name="relevance" value="not_relevant">
+            <label for="not_relevant">不相关</label>
+            <input type="radio" id="low" name="relevance" value="low">
+            <label for="low">低</label>
+            <input type="radio" id="medium" name="relevance" value="medium">
+            <label for="medium">中</label>
+            <input type="radio" id="high" name="relevance" value="high">
+            <label for="high">高</label>
+        </div>
+        <div class="form-element">
+            <label>复选框:</label><br>
+            <input type="checkbox" id="choice1" name="choice1">
+            <label for="choice1">选择1</label>
+            <input type="checkbox" id="choice2" name="choice2">
+            <label for="choice2">选择2</label>
+            <input type="checkbox" id="choice3" name="choice3">
+            <label for="choice3">选择3</label>
+            <input type="checkbox" id="choice4" name="choice4">
+            <label for="choice4">选择4</label>
+            <input type="checkbox" id="choice5" name="choice5">
+            <label for="choice5">选择5</label>
+            <input type="checkbox" id="choice6" name="choice6">
+            <label for="choice6">选择6</label>
+            <input type="checkbox" id="choice7" name="choice7">
+            <label for="choice7">选择7</label>
+            <input type="checkbox" id="choice8" name="choice8">
+            <label for="choice8">选择8</label>
+        </div>
+        <button type="submit" class="button">确定</button>
+        <button type="reset" class="button" style="background-color: #6c757d;">取消</button>
+    </form>
+</body>
+</html>

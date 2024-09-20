@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .product-image {
+            width: 50%;
+            float: left;
+        }
+        .product-details {
+            width: 50%;
+            float: left;
+        }
+        .product-thumbnails {
+            clear: both;
+            padding-top: 10px;
+        }
+        .thumbnail {
+            width: 100px;
+            float: left;
+            margin-right: 10px;
+        }
+        .clearfix {
+            clear: both;
+        }
+        .team {
+            padding-top: 20px;
+        }
+        .team-member {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Page</h1>
+        <div class="product-image">
+            <img src="product-main.jpg" alt="Product Main Image" style="width:100%;">
+        </div>
+        <div class="product-details">
+            <h2>Product Name</h2>
+            <p>Manufacturer</p>
+            <div>
+                <label for="color">Color:</label><br>
+                <input type="radio" id="red" name="color" value="red">
+                <label for="red">Red</label><br>
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue">Blue</label><br>
+                <input type="radio" id="white" name="color" value="white">
+                <label for="white">White</label>
+            </div>
+            <p>Price: $100 <span style="text-decoration: line-through;">$200</span></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="clearfix"></div>
+        <div class="product-thumbnails">
+            <img src="thumbnail1.jpg" alt="Thumbnail 1" class="thumbnail">
+            <img src="thumbnail2.jpg" alt="Thumbnail 2" class="thumbnail">
+            <img src="thumbnail3.jpg" alt="Thumbnail 3" class="thumbnail">
+        </div>
+        <div class="clearfix"></div>
+        <div class="team">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1" style="width:100%;">
+                <p>Mate One<br>Job Title</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2" style="width:100%;">
+                <p>Mate Two<br>Job Title</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3" style="width:100%;">
+                <p>Mate Three<br>Job Title</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>

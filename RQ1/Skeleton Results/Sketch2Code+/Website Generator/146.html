@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .form-group .link {
+            color: #007BFF;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .form-group .link:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .checkbox-group,
+        .radio-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="section">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-group">
+                <a href="#" class="link">Forgot Password</a>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+
+        <!-- Other Form Elements -->
+        <div class="section">
+            <div class="form-group">
+                <button type="button">Back</button>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="checkbox1" name="checkbox1">
+                <label for="checkbox1">Checkbox</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="form-group">
+                <label for="input1">Label</label>
+                <input type="text" id="input1" name="input1">
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="checkbox2" name="checkbox2">
+                <label for="checkbox2">Checkbox</label>
+            </div>
+            <div class="form-group radio-group">
+                <input type="radio" id="radio1" name="radio-group">
+                <label for="radio1">Radio button</label>
+            </div>
+            <div class="form-group radio-group">
+                <input type="radio" id="radio2" name="radio-group">
+                <label for="radio2">Radio button</label>
+            </div>
+            <div class="form-group">
+                <button type="button">Button</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

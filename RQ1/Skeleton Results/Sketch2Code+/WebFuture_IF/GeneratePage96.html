@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-6">
+  <main class="space-y-12">
+
+    <!-- Payment Method Section -->
+    <section id="payment-method" class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-semibold mb-4">Select your payment method</h2>
+      <div id="payment-options" class="flex flex-col space-y-2 mb-4">
+        <label><input type="radio" name="payment-method" class="mr-2"> Credit Card</label>
+        <label><input type="radio" name="payment-method" class="mr-2"> Paypal</label>
+        <label><input type="radio" name="payment-method" class="mr-2"> Bank transfer</label>
+      </div>
+      <h3 class="text-lg font-medium mb-2">Enter your data</h3>
+      <div id="payment-details" class="space-y-4">
+        <div>
+          <label for="card-number" class="block font-medium">Card Number</label>
+          <input type="text" id="card-number" class="w-full border rounded p-2">
+        </div>
+        <div class="flex space-x-4">
+          <div>
+            <label for="expiration-date" class="block font-medium">Expiration date</label>
+            <input type="text" id="expiration-date-month" class="w-16 border rounded p-2" placeholder="MM">
+            <input type="text" id="expiration-date-year" class="w-16 border rounded p-2" placeholder="YY">
+          </div>
+          <div>
+            <label for="cvv" class="block font-medium">CVV</label>
+            <input type="text" id="cvv" class="w-16 border rounded p-2">
+          </div>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Complete</button>
+      </div>
+    </section>
+
+    <!-- Information Section -->
+    <section id="info-section" class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold">Mobility Solutions & Daily Living Aids</h3>
+      <p class="mb-4">Making Life Easier</p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services-section" class="bg-white p-6 rounded-lg shadow-md space-y-6">
+      <div id="service1">
+        <h4 class="text-lg font-semibold">Wheelchair Repair</h4>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded">Find Out More</button>
+      </div>
+      <div id="service2">
+        <h4 class="text-lg font-semibold">Community Contracts</h4>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded">Find Out More</button>
+      </div>
+    </section>
+
+    <!-- Visual and Text Content Section -->
+    <section id="visual-content" class="bg-white p-6 rounded-lg shadow-md flex space-x-6">
+      <div id="image-placeholder1" class="w-1/2">
+        <img src="https://placehold.co/300x200" alt="Placeholder" class="rounded-lg">
+      </div>
+      <div id="text-block1" class="w-1/2">
+        <p class="font-medium">Placeholder text block. This section can contain any text content related to the corresponding image.</p>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Find Out More</button>
+      </div>
+    </section>
+
+    <section id="visual-content2" class="bg-white p-6 rounded-lg shadow-md space-x-6">
+      <div id="image-placeholder2" class="w-full">
+        <img src="https://placehold.co/600x400" alt="Placeholder" class="rounded-lg">
+      </div>
+      <div id="text-block2">
+        <p class="font-medium">Another placeholder text block, designed to showcase additional information alongside another image.</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-elements" class="bg-white p-6 rounded-lg shadow-md space-y-6">
+      <div id="label-input">
+        <label for="input-text" class="block font-medium">Label</label>
+        <input type="text" id="input-text" class="w-full border rounded p-2">
+      </div>
+      <div id="checkbox-group" class="space-y-2">
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Checkbox
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Checkbox
+        </label>
+      </div>
+      <div id="radio-group" class="space-y-2">
+        <label class="block font-medium">Radio Button</label>
+        <label class="flex items-center">
+          <input type="radio" name="radio-group" class="mr-2"> Radio Button
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="radio-group" class="mr-2"> Radio Button
+        </label>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Button</button>
+      <div id="image-placeholder3" class="mt-6">
+        <img src="https://placehold.co/600x400" alt="Placeholder" class="rounded-lg">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

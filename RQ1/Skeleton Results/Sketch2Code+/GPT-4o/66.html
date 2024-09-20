@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .product-info, .review-section, .rating-section, .images-section, .checkbox-section, .submit-section {
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            display: inline-block;
+        }
+        .product-info div {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+        .rating-section span, .checkbox-section label {
+            margin-right: 10px;
+        }
+        .review-section textarea {
+            width: 100%;
+            height: 100px;
+        }
+        .images-section img, .checkbox-section label {
+            display: block;
+            margin-top: 10px;
+        }
+        .submit-section {
+            text-align: right;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .button.cancel {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Write Review</h1>
+        <div class="product-info">
+            <img src="#" alt="Product Image">
+            <div>
+                <p>Product NAME</p>
+                <p>$PRICE</p>
+                <p>★★★★☆ 45 reviews</p>
+            </div>
+        </div>
+        <div class="rating-section">
+            <p>Rate Product</p>
+            <span>★☆☆☆☆ Bad :(</span>
+        </div>
+        <div class="review-section">
+            <p>Headline</p>
+            <input type="text" placeholder="Headline">
+            <p>Review</p>
+            <textarea placeholder="Write your review here..."></textarea>
+        </div>
+        <div class="images-section">
+            <img src="#" alt="Image 1" width="150" height="150">
+            <img src="#" alt="Image 2" width="150" height="150">
+            <img src="#" alt="Image 3" width="150" height="150">
+            <img src="#" alt="Image 4" width="150" height="150">
+        </div>
+        <div class="checkbox-section">
+            <p>Title</p>
+            <input type="text" placeholder="Title">
+            <div>
+                <p>Radio Buttons</p>
+                <label><input type="radio" name="relevance" value="not-relevant"> Not relevant</label>
+                <label><input type="radio" name="relevance" value="low"> Low</label>
+                <label><input type="radio" name="relevance" value="medium"> Medium</label>
+                <label><input type="radio" name="relevance" value="high"> High</label>
+            </div>
+            <div>
+                <p>Checkboxes</p>
+                <label><input type="checkbox" name="choice1"> Choice 1</label>
+                <label><input type="checkbox" name="choice2"> Choice 2</label>
+                <label><input type="checkbox" name="choice3"> Choice 3</label>
+                <label><input type="checkbox" name="choice4"> Choice 4</label>
+                <label><input type="checkbox" name="choice5"> Choice 5</label>
+                <label><input type="checkbox" name="choice6"> Choice 6</label>
+                <label><input type="checkbox" name="choice7"> Choice 7</label>
+                <label><input type="checkbox" name="choice8"> Choice 8</label>
+            </div>
+        </div>
+        <div class="submit-section">
+            <button class="button">OK</button>
+            <button class="button cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

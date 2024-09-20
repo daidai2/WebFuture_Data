@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>低保真线框图网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1356px;
+            margin: auto;
+        }
+        .header {
+            width: 100%;
+            height: 400px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section input[type="text"],
+        .form-section input[type="password"],
+        .form-section input[type="email"],
+        .form-section input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #45a049;
+        }
+        .payment-methods {
+            margin-bottom: 20px;
+        }
+        .payment-methods input {
+            margin-right: 10px;
+        }
+        .payment-form {
+            margin-bottom: 20px;
+        }
+        .payment-form input {
+            margin-bottom: 10px;
+        }
+        .checkboxes,
+        .radio-buttons {
+            margin-bottom: 20px;
+        }
+        .checkboxes input,
+        .radio-buttons input {
+            margin-right: 10px;
+        }
+        .footer {
+            height: 200px;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="header-image-placeholder.png" alt="Header Image">
+        </div>
+        <div class="content">
+            <p>这里是一些文字描述内容。</p>
+            <p>这里是一些文字描述内容。</p>
+            <p>这里是一些文字描述内容。</p>
+        </div>
+        <div class="form-section">
+            <input type="text" placeholder="输入框1">
+            <input type="text" placeholder="输入框2">
+            <button>提交</button>
+        </div>
+        <div class="payment-methods">
+            <p>选择你的支付方式:</p>
+            <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+            <label for="credit-card">信用卡</label><br>
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal">PayPal</label><br>
+            <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+            <label for="bank-transfer">银行转账</label>
+        </div>
+        <div class="payment-form">
+            <input type="text" placeholder="卡号">
+            <input type="text" placeholder="到期日期">
+            <input type="text" placeholder="CVV">
+            <button>完成</button>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            <label for="checkbox1">复选框1</label><br>
+            <input type="checkbox" id="checkbox2" name="checkbox2">
+            <label for="checkbox2">复选框2</label>
+        </div>
+        <div class="radio-buttons">
+            <input type="radio" id="radio1" name="radio-group" value="radio1" checked>
+            <label for="radio1">单选按钮1</label><br>
+            <input type="radio" id="radio2" name="radio-group" value="radio2">
+            <label for="radio2">单选按钮2</label>
+        </div>
+        <div class="footer">
+            <p>这里是一些额外的信息。</p>
+        </div>
+    </div>
+</body>
+</html>

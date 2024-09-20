@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Fidelity Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 300px;
+            margin: auto;
+        }
+        .login-form, .language-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .login-form input, .language-form input, .language-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .login-form label, .language-form label {
+            margin-bottom: 5px;
+            display: block;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .checkbox-group label, .radio-group label {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <a href="#">Forgot Password</a>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Language Selection Form -->
+        <div class="language-form">
+            <h2>Select Programming Language</h2>
+            <form>
+                <label for="dropdown">C Sharp</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="csharp">C Sharp</option>
+                </select>
+                <button type="button">Get Drop Down Here</button>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="language" value="csharp"> C#
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" value="java"> Java
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" value="php"> PHP
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" value="visualbasic"> Visual Basic
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="radiobutton"> RadioButton
+                    </label>
+                    <label>
+                        <input type="radio" name="radiobutton"> RadioButton
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

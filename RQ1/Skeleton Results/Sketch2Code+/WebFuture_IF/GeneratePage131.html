@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+  <header class="text-center my-4">
+    <h1 class="text-3xl font-bold">PROJECT PAGE</h1>
+  </header>
+
+  <section class="bg-white p-6 shadow-md rounded-md mb-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <img src="https://placehold.co/600x600" alt="Main Product Image" class="w-full">
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-2">Product Name</h2>
+      <p class="mb-2">Manufacturer</p>
+      <h3 class="text-xl font-semibold mb-1">Color</h3>
+      <form>
+        <div class="mb-2">
+          <input type="radio" id="color_red" name="color" class="mr-2">
+          <label for="color_red">Red</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="color_blue" name="color" class="mr-2">
+          <label for="color_blue">Blue</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="color_white" name="color" class="mr-2">
+          <label for="color_white">White</label>
+        </div>
+      </form>
+      <h3 class="text-xl font-semibold mb-1">Price</h3>
+      <p class="mb-2">$400</p>
+      <p class="mb-4 text-gray-500 line-through">$200</p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="mb-6">
+    <div class="flex space-x-4">
+      <img src="https://placehold.co/150x150" alt="Related Product 1" class="w-1/4">
+      <img src="https://placehold.co/150x150" alt="Related Product 2" class="w-1/4">
+      <img src="https://placehold.co/150x150" alt="Related Product 3" class="w-1/4">
+      <img src="https://placehold.co/150x150" alt="Related Product 4" class="w-1/4">
+    </div>
+  </section>
+
+  <section class="bg-white p-6 shadow-md rounded-md mb-6">
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="text-center">
+        <img src="https://placehold.co/150x150" alt="Mate One" class="mx-auto mb-2">
+        <h3 class="text-xl font-semibold">Mate One</h3>
+        <h4 class="text-md text-gray-500 mb-2">Job Title</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Consectetur adipiscing elit.</p>
+      </article>
+      <article class="text-center">
+        <img src="https://placehold.co/150x150" alt="Mate Two" class="mx-auto mb-2">
+        <h3 class="text-xl font-semibold">Mate Two</h3>
+        <h4 class="text-md text-gray-500 mb-2">Job Title</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Consectetur adipiscing elit.</p>
+      </article>
+      <article class="text-center">
+        <img src="https://placehold.co/150x150" alt="Mate Three" class="mx-auto mb-2">
+        <h3 class="text-xl font-semibold">Mate Three</h3>
+        <h4 class="text-md text-gray-500 mb-2">Job Title</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Consectetur adipiscing elit.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="bg-white p-6 shadow-md rounded-md mb-6">
+    <img src="https://placehold.co/1200x300" alt="Feature Image" class="w-full mb-4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris felis, commodo eget sapien eu, rhoncus accumsan ligula. Phasellus vehicula magna nisl.</p>
+  </section>
+
+  <section class="bg-white p-6 shadow-md rounded-md mb-6">
+    <div class="grid grid-cols-3 gap-4 mb-4">
+      <p>Text content goes here.</p>
+      <p>Text content goes here.</p>
+      <p>Text content goes here.</p>
+    </div>
+  </section>
+
+  <form class="bg-white p-6 shadow-md rounded-md mb-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+      <div class="flex flex-col">
+        <label for="field1" class="mb-2">Label</label>
+        <input type="text" id="field1" class="border-gray-300 p-2 rounded-md">
+      </div>
+      <div class="flex flex-col">
+        <label for="field2" class="mb-2">Label</label>
+        <input type="text" id="field2" class="border-gray-300 p-2 rounded-md">
+      </div>
+      <div class="flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 md:space-x-4">
+        <div>
+          <input type="checkbox" id="checkbox1" class="mr-2">
+          <label for="checkbox1">Checkbox 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox2" class="mr-2">
+          <label for="checkbox2">Checkbox 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox3" class="mr-2">
+          <label for="checkbox3">Checkbox 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox4" class="mr-2">
+          <label for="checkbox4">Checkbox 4</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 md:space-x-4 mb-4">
+      <div>
+        <input type="radio" id="radio1" name="radio-group" class="mr-2">
+        <label for="radio1">Radio 1</label>
+      </div>
+      <div>
+        <input type="radio" id="radio2" name="radio-group" class="mr-2">
+        <label for="radio2">Radio 2</label>
+      </div>
+      <div>
+        <input type="radio" id="radio3" name="radio-group" class="mr-2">
+        <label for="radio3">Radio 3</label>
+      </div>
+      <div>
+        <input type="radio" id="radio4" name="radio-group" class="mr-2">
+        <label for="radio4">Radio 4</label>
+      </div>
+    </div>
+
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Button</button>
+  </form>
+
+  <section class="bg-white p-6 shadow-md rounded-md">
+    <img src="https://placehold.co/600x300" alt="Additional Info Image" class="w-full mb-4">
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris felis, commodo eget sapien eu, rhoncus accumsan ligula. Phasellus vehicula magna nisl.</p>
+    </div>
+  </section>
+</body>
+</html>

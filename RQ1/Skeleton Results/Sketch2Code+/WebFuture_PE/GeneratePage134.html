@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
+    <!-- Payment Method Section -->
+    <div class="mb-8">
+      <h2 class="text-lg font-semibold mb-4">Select your payment method</h2>
+      <div class="space-y-2 mb-4">
+        <div>
+          <input type="radio" id="credit_card" name="payment_method" value="Credit Card">
+          <label for="credit_card">Credit Card</label>
+        </div>
+        <div>
+          <input type="radio" id="paypal" name="payment_method" value="PayPal">
+          <label for="paypal">PayPal</label>
+        </div>
+        <div>
+          <input type="radio" id="bank_transfer" name="payment_method" value="Bank Transfer">
+          <label for="bank_transfer">Bank Transfer</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2" for="card_number">Card Number</label>
+        <input type="text" id="card_number" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+      </div>
+      <div class="flex space-x-4 mb-4">
+        <div>
+          <label class="block mb-2" for="expiry_month">Expiration Date</label>
+          <input type="text" id="expiry_month" class="w-16 border border-gray-300 px-3 py-2 rounded-lg" placeholder="MM">
+        </div>
+        <div class="pt-6">/</div>
+        <div class="pt-6">
+          <input type="text" id="expiry_year" class="w-16 border border-gray-300 px-3 py-2 rounded-lg" placeholder="YY">
+        </div>
+        <div>
+          <label class="block mb-2" for="cvv">CVV</label>
+          <input type="text" id="cvv" class="w-16 border border-gray-300 px-3 py-2 rounded-lg">
+        </div>
+      </div>
+      <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Complete</button>
+    </div>
+
+    <hr class="my-8">
+
+    <!-- Sign Up/Login Section -->
+    <div class="mb-8">
+      <div class="flex space-x-8 mb-4">
+        <button class="text-blue-500 font-semibold">Sign Up</button>
+        <button class="text-gray-500">Login</button>
+      </div>
+      <div class="flex space-x-4 mb-4">
+        <div class="w-1/2">
+          <label class="block mb-2" for="name">Name</label>
+          <input type="text" id="name" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+        </div>
+        <div class="w-1/2">
+          <label class="block mb-2" for="last_name">Last Name</label>
+          <input type="text" id="last_name" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+        </div>
+      </div>
+      <div class="flex space-x-4 mb-4">
+        <div class="w-1/2">
+          <label class="block mb-2" for="phone">Phone</label>
+          <input type="text" id="phone" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+        </div>
+        <div class="w-1/2">
+          <label class="block mb-2" for="email">E-mail</label>
+          <input type="email" id="email" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+        </div>
+      </div>
+      <div class="flex space-x-4 mb-4">
+        <div class="w-1/2">
+          <label class="block mb-2" for="password">Password</label>
+          <input type="password" id="password" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+        </div>
+        <div class="w-1/2">
+          <label class="block mb-2" for="confirm_password">Confirm Password</label>
+          <input type="password" id="confirm_password" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+        </div>
+      </div>
+      <div class="mb-4">
+        <input type="checkbox" id="terms" class="mr-2">
+        <label for="terms">I agree to Terms and Conditions</label>
+      </div>
+      <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Sign Up</button>
+    </div>
+
+    <hr class="my-8">
+
+    <!-- Image and Placeholder Text Section -->
+    <div class="mb-8">
+      <img src="https://placehold.co/200x200" alt="Placeholder" class="w-48 h-48 mb-4">
+      <div class="mb-4">
+        <input type="text" class="w-full border border-gray-300 px-3 py-2 rounded-lg">
+      </div>
+      <div class="space-y-2">
+        <p class="border-b border-gray-300 py-2"></p>
+        <p class="border-b border-gray-300 py-2"></p>
+        <p class="border-b border-gray-300 py-2"></p>
+      </div>
+    </div>
+
+    <hr class="my-8">
+
+    <!-- Checkbox and Radio Button Section -->
+    <div class="mb-8">
+      <div class="space-y-2 mb-4">
+        <div>
+          <input type="checkbox" id="check1" class="mr-2">
+          <label for="check1">Option 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="check2" class="mr-2">
+          <label for="check2">Option 2</label>
+        </div>
+        <div>
+          <input type="radio" id="radio1" name="radio_option" class="mr-2">
+          <label for="radio1">Radio Option</label>
+        </div>
+      </div>
+      <div class="flex space-x-4">
+        <button class="bg-gray-300 px-4 py-2 rounded-lg">Back</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

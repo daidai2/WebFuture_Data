@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .payment-method, .form-section, .info-section {
+            margin-bottom: 20px;
+        }
+        .payment-method label, .form-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-section input[type="text"], .form-section input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-section input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .info-section {
+            text-align: center;
+        }
+        .info-section div {
+            margin-bottom: 10px;
+        }
+        .info-section div a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+        }
+        .info-section div a:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Payment Method</h1>
+        <div class="payment-method">
+            <label>
+                <input type="radio" name="payment" value="credit-card" checked> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="paypal"> Paypal
+            </label>
+            <label>
+                <input type="radio" name="payment" value="bank-transfer"> Bank Transfer
+            </label>
+        </div>
+
+        <h2>Enter Your Data</h2>
+        <div class="form-section">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="Card Number">
+            
+            <label for="expiration-date">Expiration Date</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM / YY">
+            
+            <label for="ccv">CCV</label>
+            <input type="number" id="ccv" name="ccv" placeholder="CCV">
+
+            <input type="submit" value="Complete">
+        </div>
+
+        <h2>Information Sections</h2>
+        <div class="info-section">
+            <div>
+                <h3>Mobility Solutions & Daily Living Aids</h3>
+                <p>Making life easier</p>
+                <a href="#">Find out more</a>
+            </div>
+            <div>
+                <h3>Wheelchair Repair</h3>
+                <a href="#">Find out more</a>
+            </div>
+            <div>
+                <h3>Community Contacts</h3>
+                <a href="#">Find out more</a>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label>
+                <input type="checkbox" name="option1"> Option 1
+            </label>
+            <label>
+                <input type="checkbox" name="option2"> Option 2
+            </label>
+            <label>
+                <input type="radio" name="choice" value="choice1"> Choice 1
+            </label>
+            <label>
+                <input type="radio" name="choice" value="choice2"> Choice 2
+            </label>
+
+            <input type="submit" value="Back">
+            <input type="submit" value="Button">
+        </div>
+    </div>
+</body>
+</html>

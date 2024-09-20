@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+        .back-button, .add-to-cart-button {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .checkbox, .radio-button {
+            margin: 10px 0;
+        }
+        .price {
+            margin: 10px 0;
+        }
+        .old-price {
+            text-decoration: line-through;
+        }
+        .product-thumbnails img {
+            width: 50px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面头部 -->
+        <div class="header">
+            <h1>产品页面</h1>
+        </div>
+        
+        <!-- 产品详情 -->
+        <div class="product-detail">
+            <img src="product-main.jpg" alt="产品主图" class="product-image">
+            <div class="product-info">
+                <h2>产品名称</h2>
+                <p>制造商</p>
+                <div class="color-selection">
+                    <p>颜色</p>
+                    <label><input type="radio" name="color" value="red" class="radio-button"> 红色</label>
+                    <label><input type="radio" name="color" value="blue" class="radio-button"> 蓝色</label>
+                    <label><input type="radio" name="color" value="white" class="radio-button"> 白色</label>
+                </div>
+                <div class="price">
+                    <span class="new-price">$100</span>
+                    <span class="old-price">$200</span>
+                </div>
+                <a href="#" class="add-to-cart-button">加入购物车</a>
+            </div>
+        </div>
+        
+        <!-- 产品缩略图 -->
+        <div class="product-thumbnails">
+            <img src="thumb1.jpg" alt="缩略图1">
+            <img src="thumb2.jpg" alt="缩略图2">
+            <img src="thumb3.jpg" alt="缩略图3">
+            <img src="thumb4.jpg" alt="缩略图4">
+        </div>
+        
+        <!-- 返回按钮 -->
+        <div class="back-button-section">
+            <a href="#" class="back-button">返回</a>
+        </div>
+
+        <!-- 其他元素 -->
+        <div class="additional-elements">
+            <label class="checkbox"><input type="checkbox"> 复选框</label>
+            <label class="checkbox"><input type="checkbox"> 复选框</label>
+            <label class="radio-button"><input type="radio" name="option"> 单选按钮</label>
+            <a href="#" class="back-button">返回</a>
+            <a href="#" class="back-button">按钮</a>
+        </div>
+        
+        <!-- 页面底部 -->
+        <div class="footer">
+            <p>&copy; 2024 产品页面</p>
+        </div>
+    </div>
+</body>
+</html>

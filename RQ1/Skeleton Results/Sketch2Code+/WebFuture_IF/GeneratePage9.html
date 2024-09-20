@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <header class="mb-8">
+      <h1 class="text-2xl font-bold">Checkout</h1>
+    </header>
+
+    <section class="mb-8">
+      <section class="mb-8">
+        <article>
+          <h2 class="text-xl font-semibold">Shipping Address</h2>
+        </article>
+        <div class="mt-4">
+          <label class="block mb-2">First Name</label>
+          <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded">
+        </div>
+        <div class="mt-4">
+          <label class="block mb-2">Last Name</label>
+          <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded">
+        </div>
+        <div class="mt-4">
+          <label class="block mb-2">Company</label>
+          <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded">
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <article>
+          <h2 class="text-xl font-semibold">Shipping Service</h2>
+        </article>
+        <div class="mt-4">
+          <label class="block"><input type="radio" name="shipping"> Standard - 14 days - $6.99</label>
+          <label class="block mt-2"><input type="radio" name="shipping"> Expedited - 7 days - $14.99</label>
+          <label class="block mt-2"><input type="radio" name="shipping"> Express - 3 days - $19.99</label>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <div class="flex items-center mb-4">
+          <select class="p-2 border border-gray-300 rounded mr-4">
+            <option>C Sharp</option>
+          </select>
+          <button class="p-2 border border-gray-300 rounded">Get Drop Down Here</button>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">Programming Language Preferences</h2>
+        <div class="flex items-center space-x-4">
+          <label><input type="checkbox" class="mr-2"> C#</label>
+          <label><input type="checkbox" class="mr-2"> Java</label>
+          <label><input type="checkbox" class="mr-2"> PHP</label>
+          <label><input type="checkbox" class="mr-2"> Visual Basic</label>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold">Forma de envío</h2>
+        <aside class="mt-4 mb-8">
+          <label class="block"><input type="radio" name="envio"> Terrestre</label>
+          <label class="block mt-2"><input type="radio" name="envio"> Aéreo</label>
+          <label class="block mt-2"><input type="radio" name="envio"> Marítimo</label>
+        </aside>
+
+        <h2 class="text-xl font-semibold">Forma de pago</h2>
+        <aside class="mt-4 mb-8">
+          <label class="block"><input type="radio" name="pago"> Tarjeta (Crédito/Débito)</label>
+          <label class="block mt-2"><input type="radio" name="pago"> Transferencia bancaria</label>
+          <label class="block mt-2"><input type="radio" name="pago"> Metálico</label>
+        </aside>
+
+        <div class="mb-4">
+          <label class="block mb-2">Dirección</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">País</label>
+          <select class="w-full p-2 border border-gray-300 rounded">
+            <option>País</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="flex justify-end">
+        <button class="bg-blue-500 text-white p-2 rounded">Aceptar</button>
+      </div>
+    </section>
+
+    <footer class="mt-8">
+      <!-- Additional footer elements can go here if needed -->
+    </footer>
+  </div>
+</body>
+</html>

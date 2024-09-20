@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .login {
+            margin: 20px 0;
+        }
+        .login input[type="text"], .login input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .login input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .login button {
+            padding: 10px;
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login button:hover {
+            background-color: #0056b3;
+        }
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .post {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .catalog {
+            margin: 20px 0;
+        }
+        .catalog h2 {
+            text-align: center;
+        }
+        .catalog .products {
+            display: flex;
+            gap: 20px;
+        }
+        .catalog .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .catalog .product img {
+            width: 100%;
+            height: auto;
+        }
+        .catalog .product button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .catalog .product button:hover {
+            background-color: #218838;
+        }
+        .search-box {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .search-box input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .search-box button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Login" required>
+                <input type="password" placeholder="Password" required>
+                <div>
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Forgot Password</a>
+                <button type="submit">LOGIN</button>
+            </form>
+        </div>
+        
+        <div class="posts">
+            <div class="post">
+                <h3>Title Page</h3>
+                <p>Some description here...</p>
+            </div>
+            <div class="post">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="Image">
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="Image">
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="Image">
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="Image">
+                <p>Title Post</p>
+            </div>
+        </div>
+        
+        <div class="catalog">
+            <h2>Product Catalog</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button type="button">Search</button>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$20.00</p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$10.00</p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$40.00</p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

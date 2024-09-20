@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .payment-method, .services, .product-catalog {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .payment-method input, .payment-method button {
+            display: block;
+            margin: 10px 0;
+        }
+        .services div, .product-catalog div {
+            margin: 10px 0;
+        }
+        .product-catalog img {
+            width: 100px;
+            height: 100px;
+        }
+        .product {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="payment-method">
+        <h2>Select your payment method</h2>
+        <label><input type="radio" name="payment" value="credit-card"> Credit Card</label>
+        <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+        <label><input type="radio" name="payment" value="bank-transfer"> Bank Transfer</label>
+        
+        <h3>Enter your data</h3>
+        <input type="text" placeholder="Card Number">
+        <input type="text" placeholder="Expiration Date">
+        <input type="text" placeholder="CCV">
+        <button>Complete</button>
+    </section>
+
+    <section class="services">
+        <h2>Mobility Solutions & Daily Living Aids</h2>
+        <p>Making life easier</p>
+        <button>Find out more</button>
+
+        <div>
+            <h3>Wheelchair Repair</h3>
+            <button>Find out more</button>
+        </div>
+
+        <div>
+            <h3>Community Contracts</h3>
+            <button>Find out more</button>
+        </div>
+    </section>
+
+    <section class="product-catalog">
+        <h2>Product Catalog</h2>
+        <input type="text" placeholder="Search">
+
+        <div class="product">
+            <img src="product1.png" alt="Product 1">
+            <p>Product 1</p>
+            <p>$20.00</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.png" alt="Product 2">
+            <p>Product 2</p>
+            <p>$10.00</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product3.png" alt="Product 3">
+            <p>Product 3</p>
+            <p>$40.00</p>
+            <button>Add to cart</button>
+        </div>
+    </section>
+
+</body>
+</html>

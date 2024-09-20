@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header Section -->
+  <header class="bg-white p-4 shadow">
+    <h1 class="text-3xl font-bold">Title</h1>
+    <h2 class="text-xl">Title Page</h2>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="p-4">
+
+    <!-- First Section -->
+    <section class="flex flex-col md:flex-row items-start mb-4">
+      <div class="flex-1 mb-4 md:mb-0 md:mr-4">
+        <p class="text-base mb-4">Some descriptive text about the video or media content.</p>
+      </div>
+      <div class="flex-1">
+        <video class="w-full" controls>
+          <source src="http://placehold.co/255x200" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+      <article class="bg-white p-4 shadow">
+        <h3 class="font-bold text-xl mb-2">Title</h3>
+        <img src="http://placehold.co/100x100" alt="Placeholder Image" class="w-full mb-2">
+        <p>Title Text</p>
+      </article>
+      <article class="bg-white p-4 shadow">
+        <h3 class="font-bold text-xl mb-2">Title</h3>
+        <img src="http://placehold.co/100x100" alt="Placeholder Image" class="w-full mb-2">
+        <p>Title Text</p>
+      </article>
+      <article class="bg-white p-4 shadow">
+        <h3 class="font-bold text-xl mb-2">Title</h3>
+        <img src="http://placehold.co/100x100" alt="Placeholder Image" class="w-full mb-2">
+        <p>Title Text</p>
+      </article>
+      <article class="bg-white p-4 shadow">
+        <h3 class="font-bold text-xl mb-2">Title</h3>
+        <img src="http://placehold.co/100x100" alt="Placeholder Image" class="w-full mb-2">
+        <p>Title Text</p>
+      </article>
+    </section>
+
+    <!-- Third Section -->
+    <section class="flex flex-col md:flex-row items-start mb-4">
+      <div class="flex-1 flex flex-col mr-4">
+        <img src="http://placehold.co/200x200" alt="Placeholder Image" class="w-full mb-4">
+        <img src="http://placehold.co/200x200" alt="Placeholder Image" class="w-full">
+      </div>
+      <div class="flex-1 flex flex-col">
+        <img src="http://placehold.co/200x200" alt="Placeholder Image" class="w-full mb-4">
+        <p>Some text describing the image or related content in detail.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-white p-4 shadow mt-4">
+    <form>
+      <!-- Title Input Field -->
+      <div class="mb-4">
+        <label for="title" class="block font-bold mb-1">title</label>
+        <input type="text" id="title" name="title" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <!-- Radio Buttons -->
+      <div class="mb-4">
+        <span class="block font-bold mb-1">Radio Buttons</span>
+        <label class="mr-4">
+          <input type="radio" name="relevance" value="not_relevant" class="mr-1">Not relevant
+        </label>
+        <label class="mr-4">
+          <input type="radio" name="relevance" value="low" class="mr-1">Low
+        </label>
+        <label class="mr-4">
+          <input type="radio" name="relevance" value="medium" class="mr-1">Medium
+        </label>
+        <label class="mr-4">
+          <input type="radio" name="relevance" value="high" class="mr-1">High
+        </label>
+      </div>
+
+      <!-- Checkboxes -->
+      <div class="mb-4">
+        <span class="block font-bold mb-1">Checkboxes</span>
+        <div class="grid grid-cols-2 gap-4">
+          <label>
+            <input type="checkbox" name="choice1" class="mr-1">choice1
+          </label>
+          <label>
+            <input type="checkbox" name="choice2" class="mr-1">choice2
+          </label>
+          <label>
+            <input type="checkbox" name="choice3" class="mr-1">choice3
+          </label>
+          <label>
+            <input type="checkbox" name="choice4" class="mr-1">choice4
+          </label>
+          <label>
+            <input type="checkbox" name="choice5" class="mr-1">choice5
+          </label>
+          <label>
+            <input type="checkbox" name="choice6" class="mr-1">choice6
+          </label>
+          <label>
+            <input type="checkbox" name="choice7" class="mr-1">choice7
+          </label>
+          <label>
+            <input type="checkbox" name="choice8" class="mr-1">choice8
+          </label>
+        </div>
+      </div>
+
+      <!-- Form Buttons -->
+      <div class="flex justify-end">
+        <button type="submit" class="px-4 py-2 bg-green-500 text-white rounded mr-2">OK</button>
+        <button type="reset" class="px-4 py-2 bg-red-500 text-white rounded">Cancel</button>
+      </div>
+    </form>
+  </footer>
+</body>
+
+</html>

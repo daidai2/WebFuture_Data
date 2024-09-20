@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Fidelity Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Payment Method Section -->
+        <div class="section">
+            <h2>Select your payment method</h2>
+            <label><input type="radio" name="payment" value="credit_card" checked> Credit Card</label>
+            <label><input type="radio" name="payment" value="paypal"> Paypal</label>
+            <label><input type="radio" name="payment" value="bank_transfer"> Bank Transfer</label>
+            <h3>Enter your data</h3>
+            <label for="card_number">Card Number</label>
+            <input type="text" id="card_number" name="card_number">
+            <label for="expiration_date">Expiration Date</label>
+            <input type="text" id="expiration_date" name="expiration_date" placeholder="MM/YY">
+            <label for="ccv">CCV</label>
+            <input type="text" id="ccv" name="ccv">
+            <button type="submit">Complete</button>
+        </div>
+        
+        <!-- Sign Up / Login Section -->
+        <div class="section">
+            <h2>Sign Up / Login</h2>
+            <div class="tabs">
+                <button onclick="showSignUp()">Sign Up</button>
+                <button onclick="showLogin()">Login</button>
+            </div>
+            <div id="signup" class="form">
+                <label for="first_name">Name</label>
+                <input type="text" id="first_name" name="first_name">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password">
+                <label><input type="checkbox" name="terms"> I agree to Terms and Conditions</label>
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+        
+        <!-- Additional Form Elements Section -->
+        <div class="section">
+            <div>
+                <label>Label</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Label</label>
+                <input type="text">
+            </div>
+            <div>
+                <label><input type="checkbox"> Checkbox</label>
+                <label><input type="checkbox"> Checkbox</label>
+            </div>
+            <div>
+                <label><input type="radio" name="option"> Radio Button</label>
+                <label><input type="radio" name="option"> Radio Button</label>
+            </div>
+            <button>Button</button>
+        </div>
+    </div>
+
+    <script>
+        function showSignUp() {
+            document.getElementById('signup').style.display = 'block';
+            document.getElementById('login').style.display = 'none';
+        }
+
+        function showLogin() {
+            document.getElementById('signup').style.display = 'none';
+            document.getElementById('login').style.display = 'block';
+        }
+
+        // Initialize to show the Sign Up form by default
+        showSignUp();
+    </script>
+</body>
+</html>

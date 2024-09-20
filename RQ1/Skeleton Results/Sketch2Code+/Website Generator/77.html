@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-container, .catalog-container, .filter-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"], .filter-container input[type="checkbox"] {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-container label {
+            display: flex;
+            align-items: center;
+        }
+        .catalog-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#">
+            <label for="username">Login</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+            <label>
+                <input type="checkbox" id="remember" name="remember"> Remember me
+            </label>
+            <a href="#">Forgot Password</a>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Filter Container -->
+    <div class="filter-container">
+        <h2>Select Your Language</h2>
+        <form action="#">
+            <label>
+                <input type="checkbox" name="language" value="C#"> C#
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="Java"> Java
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="PHP"> PHP
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="Visual Basic"> Visual Basic
+            </label>
+        </form>
+        <button>Get Drop Down Here</button>
+    </div>
+
+    <!-- Product Catalog Container -->
+    <div class="catalog-container">
+        <h2>Product Catalog</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$10.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$40.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

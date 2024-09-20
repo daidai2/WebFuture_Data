@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4">
+  <header class="mb-8">
+    <!-- Assuming header here if needed -->
+  </header>
+
+  <section id="payment-method" class="mb-8">
+    <h1 class="text-2xl font-bold mb-4">Select your payment method</h1>
+    <form>
+      <div class="mb-4">
+        <input type="radio" name="payment-method" id="credit-card" class="mr-2"><label for="credit-card">Credit Card</label><br>
+        <input type="radio" name="payment-method" id="paypal" class="mr-2"><label for="paypal">PayPal</label><br>
+        <input type="radio" name="payment-method" id="bank-transfer" class="mr-2"><label for="bank-transfer">Bank Transfer</label>
+      </div>
+      <div id="payment-details">
+        <label for="card-number">Enter your data</label><br>
+        <input type="text" id="card-number" class="border p-2 mb-4 block w-full" placeholder="Card Number"><br>
+        <label for="expiry-date">Expiration Date</label><br>
+        <input type="text" id="expiry-date-mm" class="border p-2 mb-4 inline-block w-20 mr-2" placeholder="MM">
+        <input type="text" id="expiry-date-yy" class="border p-2 mb-4 inline-block w-20 mr-2" placeholder="YY">
+        <input type="text" id="ccv" class="border p-2 mb-4 inline-block w-20" placeholder="CCV"><br>
+        <button type="submit" id="complete-btn" class="bg-blue-500 text-white p-2 rounded">Complete</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="info-sections" class="mb-8">
+    <article id="mobility-solutions" class="mb-4">
+      <h2 class="text-xl font-semibold">Mobility Solutions & Daily Living Aids</h2>
+      <p class="mb-2">Making Life Easier</p>
+      <button class="bg-green-500 text-white p-2 rounded">Find out More</button>
+    </article>
+
+    <div class="grid grid-cols-2 gap-4">
+      <article id="wheelchair-repair">
+        <h2 class="text-xl font-semibold">Wheelchair Repair</h2>
+        <button class="bg-green-500 text-white p-2 rounded mt-2">Find out More</button>
+      </article>
+      <article id="community-contracts">
+        <h2 class="text-xl font-semibold">Community Contracts</h2>
+        <button class="bg-green-500 text-white p-2 rounded mt-2">Find out More</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="additional-info" class="mb-8">
+    <div class="image-container mb-4">
+      <img src="https://placehold.co/600x400" alt="Placeholder Image">
+    </div>
+    <button class="bg-green-500 text-white p-2 rounded">Find out More</button>
+  </section>
+
+  <section id="promo-banner" class="mb-8">
+    <div class="banner">
+      <img src="https://placehold.co/1200x300" alt="Placeholder Banner">
+    </div>
+  </section>
+
+  <section id="content-blocks" class="mb-8">
+    <div class="text-columns grid grid-cols-4 gap-4">
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+  </section>
+
+  <section id="form-section" class="mb-8">
+    <form>
+      <div class="mb-4">
+        <label for="label1" class="block">Label 1</label>
+        <input type="text" id="label1" class="border p-2 block w-full"><br>
+        <label for="label2" class="block">Label 2</label>
+        <input type="text" id="label2" class="border p-2 block w-full">
+      </div>
+      <button type="submit" class="bg-blue-500 text-white p-2 rounded mb-4">Button</button>
+      <div class="mb-4">
+        <input type="checkbox" id="checkbox1" class="mr-2"><label for="checkbox1">Checkbox 1</label><br>
+        <input type="checkbox" id="checkbox2" class="mr-2"><label for="checkbox2">Checkbox 2</label><br>
+        <input type="checkbox" id="checkbox3" class="mr-2"><label for="checkbox3">Checkbox 3</label><br>
+        <input type="checkbox" id="checkbox4" class="mr-2"><label for="checkbox4">Checkbox 4</label>
+      </div>
+    </form>
+  </section>
+
+  <section id="radio-image-section" class="mb-8">
+    <form>
+      <div>
+        <label class="block">Radio</label>
+        <input type="radio" name="radio-choice" id="radio1" class="mr-2"><label for="radio1">Radio 1</label><br>
+        <input type="radio" name="radio-choice" id="radio2" class="mr-2"><label for="radio2">Radio 2</label><br>
+        <input type="radio" name="radio-choice" id="radio3" class="mr-2"><label for="radio3">Radio 3</label><br>
+        <input type="radio" name="radio-choice" id="radio4" class="mr-2"><label for="radio4">Radio 4</label>
+      </div>
+      <div class="image-container mb-4">
+        <img src="https://placehold.co/600x400" alt="Placeholder Image">
+      </div>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </form>
+  </section>
+
+  <footer>
+    <!-- Assuming footer here if needed -->
+  </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Main Container -->
+  <div id="checkout-container" class="bg-white p-8 rounded shadow-lg max-w-2xl mx-auto">
+
+    <!-- Header -->
+    <header class="mb-6">
+      <h1 class="text-2xl font-bold">Checkout</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="main-content">
+
+      <!-- Shipping Address Section -->
+      <div id="shipping-address" class="mb-6">
+        <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+        <form id="address-form" class="space-y-4">
+          <div>
+            <label for="first-name" class="block text-sm font-medium">First Name</label>
+            <input type="text" id="first-name" name="first-name" class="mt-1 block w-full shadow-sm border-gray-300 rounded-md">
+          </div>
+          <div>
+            <label for="last-name" class="block text-sm font-medium">Last Name</label>
+            <input type="text" id="last-name" name="last-name" class="mt-1 block w-full shadow-sm border-gray-300 rounded-md">
+          </div>
+          <div>
+            <label for="company" class="block text-sm font-medium">Company</label>
+            <input type="text" id="company" name="company" class="mt-1 block w-full shadow-sm border-gray-300 rounded-md">
+          </div>
+        </form>
+      </div>
+
+      <!-- Shipping Service Section -->
+      <div id="shipping-service" class="mb-6">
+        <h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+        <form id="service-form">
+          <div class="flex items-center mb-2">
+            <input type="radio" id="standard" name="shipping-service" value="standard" class="mr-2">
+            <label for="standard">Standard 14 days - $6.59</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="expedited" name="shipping-service" value="expedited" class="mr-2">
+            <label for="expedited">Expedited 7 days - $12.97</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="express" name="shipping-service" value="express" class="mr-2">
+            <label for="express">Express 3 days - $19.97</label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Dropdown and Buttons Section -->
+      <div id="dropdown-buttons" class="mb-6 flex space-x-4">
+        <select id="dropdown" class="form-select block w-full mt-1 shadow-sm border-gray-300 rounded-md">
+          <option value="csharp">C Sharp</option>
+          <!-- Additional options can be added here -->
+        </select>
+        <button id="dropdown-button" class="px-4 py-2 bg-blue-500 text-white rounded-md">Get Drop Down Here</button>
+      </div>
+
+      <!-- Checkbox List Section -->
+      <div id="checkbox-list" class="mb-6">
+        <h3 class="text-lg font-semibold mb-4">Select Languages</h3>
+        <div class="space-x-4">
+          <label>
+            <input type="checkbox" id="csharp" name="language" value="csharp">
+            C#
+          </label>
+          <label>
+            <input type="checkbox" id="java" name="language" value="java">
+            Java
+          </label>
+          <label>
+            <input type="checkbox" id="php" name="language" value="php">
+            PHP
+          </label>
+          <label>
+            <input type="checkbox" id="visualbasic" name="language" value="visualbasic">
+            Visual Basic
+          </label>
+        </div>
+      </div>
+
+      <!-- Image Placeholder Section -->
+      <div id="image-placeholder" class="mb-6">
+        <h3 class="text-lg font-semibold mb-4">Image Placeholder</h3>
+        <img src="https://placehold.co/600x400" alt="Image Placeholder" class="mb-4">
+        <p>Additional text lines could be placed here.</p>
+        <div class="space-y-2">
+          <input type="text" placeholder="Text Field 1" class="block w-full shadow-sm border-gray-300 rounded-md mb-2">
+          <input type="text" placeholder="Text Field 2" class="block w-full shadow-sm border-gray-300 rounded-md mb-2">
+        </div>
+      </div>
+
+      <!-- Radio Buttons Section -->
+      <div id="radio-buttons" class="mb-6">
+        <h3 class="text-lg font-semibold mb-4">Radio Options</h3>
+        <div class="space-y-2">
+          <div class="flex items-center">
+            <input type="radio" name="radio_group" value="option1" class="mr-2">
+            <label>Option 1</label>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" name="radio_group" value="option2" class="mr-2">
+            <label>Option 2</label>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" name="radio_group" value="option3" class="mr-2">
+            <label>Option 3</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons Section -->
+      <div id="navigation-buttons" class="mt-6 flex justify-between">
+        <button class="px-4 py-2 bg-gray-300 rounded-md">Back</button>
+        <button class="px-4 py-2 bg-green-500 text-white rounded-md">Submit</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-8">
+      <p class="text-sm text-gray-500">Footer content could go here, such as navigation, contact info, etc.</p>
+    </footer>
+  </div>
+
+</body>
+</html>

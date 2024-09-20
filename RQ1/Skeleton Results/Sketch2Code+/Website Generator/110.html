@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-images, .product-details {
+            width: 48%;
+        }
+        .product-images img {
+            width: 100%;
+            height: auto;
+        }
+        .product-thumbnails {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .product-thumbnails img {
+            width: 23%;
+            height: auto;
+            cursor: pointer;
+        }
+        .product-details h1 {
+            font-size: 24px;
+        }
+        .product-details p {
+            margin: 10px 0;
+        }
+        .product-details label {
+            display: block;
+            margin: 5px 0;
+        }
+        .product-details input[type="radio"] {
+            margin-right: 5px;
+        }
+        .product-details .price {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .product-details .old-price {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .add-to-cart {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .shipping-form {
+            margin-top: 30px;
+        }
+        .shipping-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .shipping-form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .shipping-form input[type="radio"] {
+            margin-right: 5px;
+        }
+        .shipping-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .shipping-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-images">
+            <img src="placeholder.png" alt="Product Image">
+            <div class="product-thumbnails">
+                <img src="thumb1.png" alt="Thumbnail 1">
+                <img src="thumb2.png" alt="Thumbnail 2">
+                <img src="thumb3.png" alt="Thumbnail 3">
+                <img src="thumb4.png" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p>Manufacturer</p>
+            <p>
+                <label>Color:</label>
+                <input type="radio" name="color" value="red" checked> Red
+                <input type="radio" name="color" value="blue"> Blue
+                <input type="radio" name="color" value="white"> White
+            </p>
+            <p class="price">
+                $100 <span class="old-price">$200</span>
+            </p>
+            <a href="#" class="add-to-cart">Add to Cart</a>
+        </div>
+    </div>
+
+    <div class="team-members">
+        <div class="team-member">
+            <img src="mate1.png" alt="Mate One">
+            <div>
+                <p>Mate One</p>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="mate2.png" alt="Mate Two">
+            <div>
+                <p>Mate Two</p>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="mate3.png" alt="Mate Three">
+            <div>
+                <p>Mate Three</p>
+                <p>Job Title</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="shipping-form">
+        <h2>Forma de envío</h2>
+        <label>Medio transporte:</label>
+        <input type="radio" name="transporte" value="terrestre"> Terrestre
+        <input type="radio" name="transporte" value="aereo"> Aéreo
+        <input type="radio" name="transporte" value="maritimo"> Marítimo
+
+        <label>Forma de pago:</label>
+        <input type="radio" name="pago" value="tarjeta" checked> Tarjeta (Crédito/Débito)
+        <input type="radio" name="pago" value="transferencia"> Transferencia bancaria
+        <input type="radio" name="pago" value="metalico"> Metálico
+
+        <label>Dirección:</label>
+        <input type="text" name="direccion">
+
+        <label>País:</label>
+        <select name="pais">
+            <option value="pais1">País 1</option>
+            <option value="pais2">País 2</option>
+            <option value="pais3">País 3</option>
+        </select>
+
+        <button>Aceptar</button>
+    </div>
+</body>
+</html>

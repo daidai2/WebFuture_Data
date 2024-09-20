@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Payment Method Section -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block">
+          <input type="radio" name="payment" class="mr-2"> Credit Card
+        </label>
+        <label class="block">
+          <input type="radio" name="payment" class="mr-2"> Paypal
+        </label>
+        <label class="block">
+          <input type="radio" name="payment" class="mr-2"> Bank Transfer
+        </label>
+      </div>
+
+      <!-- Card Details -->
+      <div class="mb-4">
+        <label for="card-number" class="block font-semibold mb-1">Enter your data</label>
+        <input type="text" id="card-number" class="w-full border rounded px-3 py-2" placeholder="Card Number">
+      </div>
+      <div class="mb-4 flex justify-between">
+        <div>
+          <label for="expiry-date" class="block font-semibold mb-1">Expiration Date</label>
+          <input type="text" id="expiry-date" class="border rounded px-3 py-2" placeholder="MM/YY">
+        </div>
+        <div>
+          <label for="ccv" class="block font-semibold mb-1">CCV</label>
+          <input type="text" id="ccv" class="border rounded px-3 py-2" placeholder="CCV">
+        </div>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white font-bold px-4 py-2 rounded">Complete</button>
+    </form>
+  </section>
+
+  <!-- Information Sections -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <h2 class="text-xl font-bold mb-4">Mobility Solutions & Daily Living Aids</h2>
+    <p class="mb-4">Making Life Easier</p>
+    <button class="bg-blue-500 text-white font-bold px-4 py-2 rounded">Find Out More</button>
+  </section>
+
+  <section class="flex justify-between mb-6">
+    <div class="bg-white p-6 rounded-lg shadow-md w-1/2 mr-3">
+      <h2 class="text-xl font-bold mb-4">Wheelchair Repair</h2>
+      <button class="bg-blue-500 text-white font-bold px-4 py-2 rounded">Find Out More</button>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md w-1/2 ml-3">
+      <h2 class="text-xl font-bold mb-4">Community Contracts</h2>
+      <button class="bg-blue-500 text-white font-bold px-4 py-2 rounded">Find Out More</button>
+    </div>
+  </section>
+
+  <!-- Image Section -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <img src="https://placehold.co/600x400" alt="Placeholder Image" class="w-full h-40 mb-4">
+    <button class="bg-blue-500 text-white font-bold px-4 py-2 rounded">Find Out More</button>
+  </section>
+
+  <!-- Large Image Section with Text -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <img src="https://placehold.co/1200x400" alt="Placeholder Image" class="w-full h-40 mb-4">
+    <div class="flex justify-around">
+      <p class="w-1/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <p class="w-1/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <p class="w-1/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <div class="mb-4">
+      <label for="label1" class="block mb-2">Label</label>
+      <input type="text" id="label1" class="w-full border rounded px-3 py-2">
+    </div>
+    <div class="mb-4">
+      <label for="label2" class="block mb-2">Label</label>
+      <input type="text" id="label2" class="w-full border rounded px-3 py-2">
+    </div>
+    <button class="bg-blue-500 text-white font-bold px-4 py-2 rounded mb-4">Button</button>
+    <div class="mb-4">
+      <label class="block mb-2">
+        <input type="checkbox" class="mr-2"> Checkbox 1
+      </label>
+      <label class="block mb-2">
+        <input type="checkbox" class="mr-2"> Checkbox 2
+      </label>
+      <label class="block mb-2">
+        <input type="checkbox" class="mr-2"> Checkbox 3
+      </label>
+      <label class="block mb-2">
+        <input type="checkbox" class="mr-2"> Checkbox 4
+      </label>
+    </div>
+
+    <!-- Radio and Image Section -->
+    <div>
+      <label class="block mb-2">
+        <input type="radio" name="radio" class="mr-2"> Radio 1
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="radio" class="mr-2"> Radio 2
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="radio" class="mr-2"> Radio 3
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="radio" class="mr-2"> Radio 4
+      </label>
+    </div>
+
+    <!-- Image With a Paragraph -->
+    <div class="mt-4">
+      <img src="https://placehold.co/400x300" alt="Placeholder Image" class="w-full mb-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+  </section>
+</body>
+</html>

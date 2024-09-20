@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md">
+    <div class="flex items-center">
+      <img src="https://placehold.co/100x100" alt="Header Image" class="w-24 h-24 mr-4">
+      <div class="flex-grow">
+        <div class="text-lg">Line 1 of Text</div>
+        <div class="text-lg">Line 2 of Text</div>
+        <div class="text-lg">Line 3 of Text</div>
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 ml-4">BACK</button>
+    </div>
+    <label class="block mt-4">
+      <input type="checkbox" class="mr-2">Checkbox
+    </label>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-4 flex">
+    <!-- Product Section -->
+    <section class="w-1/2 p-4">
+      <h2 class="text-xl mb-4">Product Page</h2>
+      <img src="https://placehold.co/300x300" alt="Main Product Image" class="w-full mb-4">
+      <div class="flex space-x-2">
+        <img src="https://placehold.co/50x50" alt="Thumbnail 1" class="w-1/4">
+        <img src="https://placehold.co/50x50" alt="Thumbnail 2" class="w-1/4">
+        <img src="https://placehold.co/50x50" alt="Thumbnail 3" class="w-1/4">
+      </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="w-1/2 p-4">
+      <div class="mb-4">
+        <h3 class="text-2xl">Product Name</h3>
+        <p class="text-xl">Manufacturer</p>
+      </div>
+      <div class="mb-4">
+        <h4 class="text-lg mb-2">Color</h4>
+        <div>
+          <label class="block"><input type="radio" name="color" class="mr-2">Red</label>
+          <label class="block"><input type="radio" name="color" class="mr-2">Blue</label>
+          <label class="block"><input type="radio" name="color" class="mr-2">White</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <h4 class="text-lg mb-2">Price</h4>
+        <p>$100 <span class="line-through ml-4">$200</span></p>
+      </div>
+      <button class="bg-green-500 text-white py-2 px-4">Add To Cart</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 p-4">
+    <div class="mb-4">
+      <label class="block mb-2">Title</label>
+      <input type="text" class="border p-2 w-full">
+    </div>
+    <div class="mb-4">
+      <h4 class="text-lg mb-2">Radio Buttons</h4>
+      <label class="block"><input type="radio" name="priority" class="mr-2">Not Relevant</label>
+      <label class="block"><input type="radio" name="priority" class="mr-2">Low</label>
+      <label class="block"><input type="radio" name="priority" class="mr-2">Medium</label>
+      <label class="block"><input type="radio" name="priority" class="mr-2">High</label>
+    </div>
+    <div class="mb-4">
+      <h4 class="text-lg mb-2">Checkboxes</h4>
+      <label class="block"><input type="checkbox" class="mr-2">Choice 1</label>
+      <label class="block"><input type="checkbox" class="mr-2" checked>Choice 2</label>
+      <label class="block"><input type="checkbox" class="mr-2">Choice 3</label>
+      <label class="block"><input type="checkbox" class="mr-2">Choice 4</label>
+      <label class="block"><input type="checkbox" class="mr-2" checked>Choice 5</label>
+      <label class="block"><input type="checkbox" class="mr-2">Choice 6</label>
+      <label class="block"><input type="checkbox" class="mr-2">Choice 7</label>
+      <label class="block"><input type="checkbox" class="mr-2">Choice 8</label>
+    </div>
+    <div class="flex">
+      <button class="bg-blue-500 text-white py-2 px-4 mr-2">OK</button>
+      <button class="bg-red-500 text-white py-2 px-4">Cancel</button>
+    </div>
+  </footer>
+</body>
+</html>

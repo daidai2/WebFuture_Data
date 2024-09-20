@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <header class="bg-white border-b shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Title / Logo</h1>
+    <img src="https://placehold.co/50x50" alt="Video Thumbnail" class="w-12 h-12">
+  </header>
+
+  <main class="p-4">
+    <!-- Section 1: Grid Layout with three items -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <!-- Grid Item 1 -->
+      <div class="bg-white p-4 shadow rounded">
+        <h2 class="text-xl font-bold mb-2">Title</h2>
+        <img src="https://placehold.co/300x200" alt="Image 1" class="mb-2">
+        <p>Description for item 1</p>
+      </div>
+      <!-- Grid Item 2 -->
+      <div class="bg-white p-4 shadow rounded">
+        <h2 class="text-xl font-bold mb-2">Title</h2>
+        <img src="https://placehold.co/300x200" alt="Image 2" class="mb-2">
+        <p>Description for item 2</p>
+      </div>
+      <!-- Grid Item 3 -->
+      <div class="bg-white p-4 shadow rounded">
+        <h2 class="text-xl font-bold mb-2">Title</h2>
+        <img src="https://placehold.co/300x200" alt="Image 3" class="mb-2">
+        <p>Description for item 3</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Large Image -->
+    <section class="mb-8">
+      <img src="https://placehold.co/1366x264" alt="Large Image" class="w-full h-auto mb-4">
+      <p>Paragraph text below the large image.</p>
+    </section>
+
+    <!-- Section 3: Form Section -->
+    <section class="mb-8">
+      <form class="bg-white p-4 shadow rounded">
+        <input type="text" placeholder="Input Text Field" class="border p-2 mb-4 w-full">
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Submit</button>
+      </form>
+    </section>
+
+    <!-- Section 4: Additional Form Elements -->
+    <section class="mb-8">
+      <fieldset class="bg-white p-4 shadow rounded">
+        <label class="block mb-2">
+          <input type="checkbox" class="mr-2"> Checkbox
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" class="mr-2"> Checkbox
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="option" class="mr-2"> Radio Button
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="option" class="mr-2"> Radio Button
+        </label>
+      </fieldset>
+    </section>
+
+    <!-- Section 5: Sidebar-like Section -->
+    <section class="flex flex-col md:flex-row bg-white p-4 shadow rounded">
+      <img src="https://placehold.co/100x100" alt="Sidebar Image" class="mb-4 md:mb-0 md:mr-4">
+      <div>
+        <ul class="mb-4">
+          <li>Text List Item 1</li>
+          <li>Text List Item 2</li>
+        </ul>
+        <form class="mb-4">
+          <input type="text" placeholder="Input Text Field" class="border p-2 mb-2 w-full">
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> Checkbox
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="option" class="mr-2"> Radio Button
+          </label>
+          <button type="submit" class="bg-blue-500 text-white p-2 rounded">Submit</button>
+        </form>
+        <img src="https://placehold.co/100x100" alt="Additional Image" class="mt-4">
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t shadow p-4 mt-8">
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-blue-500">Link 1</a></li>
+        <li><a href="#" class="text-blue-500">Link 2</a></li>
+        <li><a href="#" class="text-blue-500">Link 3</a></li>
+      </ul>
+    </nav>
+    <img src="https://placehold.co/50x50" alt="Footer Image" class="mt-4">
+    <form class="mt-4">
+      <label class="block mb-2">Label:
+        <select class="border p-2 w-full">
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </label>
+    </form>
+  </footer>
+</body>
+</html>

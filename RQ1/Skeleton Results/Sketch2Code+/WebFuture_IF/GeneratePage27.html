@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Logo</h1>
+    <nav>
+      <!-- If navigation is needed, it can go here -->
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="p-4">
+    <!-- Top Images -->
+    <div class="flex space-x-4 mb-4">
+      <div class="w-1/2 h-48 bg-gray-300"></div>
+      <div class="w-1/2 h-48 bg-gray-300"></div>
+    </div>
+
+    <!-- Product Description -->
+    <div class="bg-gray-300 h-24 mb-4"></div>
+
+    <!-- Highlight Image -->
+    <div class="bg-gray-300 h-48 mb-4"></div>
+
+    <!-- Additional Descriptions -->
+    <div class="bg-gray-300 h-24 mb-4"></div>
+
+    <!-- Primary and Secondary Buttons -->
+    <div class="flex justify-between">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Primary Button</button>
+      <div>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Checkbox</label>
+      </div>
+    </div>
+
+    <!-- Call to Action Button -->
+    <div class="flex justify-center mt-4">
+      <button class="bg-green-500 text-white py-2 px-6 rounded">Call to Action Button</button>
+    </div>
+  </section>
+
+  <!-- Product Page Section -->
+  <section class="flex p-4 bg-white shadow-md my-4">
+    <!-- Main Product Image -->
+    <div class="w-1/2">
+      <div class="bg-gray-300 h-64 mb-2"></div>
+      <div class="grid grid-cols-4 gap-2">
+        <div class="bg-gray-300 h-24"></div>
+        <div class="bg-gray-300 h-24"></div>
+        <div class="bg-gray-300 h-24"></div>
+        <div class="bg-gray-300 h-24"></div>
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <aside class="w-1/2 pl-4">
+      <h2 class="text-xl font-bold mb-4">Product Name</h2>
+      <p class="mb-2">Manufacturer: XYZ</p>
+      <p class="mb-2">Color:</p>
+      <label><input type="radio" name="color" value="red"> Red</label><br>
+      <label><input type="radio" name="color" value="blue"> Blue</label><br>
+      <label><input type="radio" name="color" value="white"> White</label><br>
+      <p class="mt-4">Price: <span class="line-through">$200</span> $100</p>
+      <button class="bg-yellow-500 text-white py-2 px-4 rounded mt-4">Add to Cart</button>
+    </aside>
+  </section>
+
+  <!-- Product Catalog Page -->
+  <section class="p-4 bg-white shadow-md">
+    <header class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Product Catalog</h2>
+      <div>
+        <input type="text" class="border p-2 rounded" placeholder="Search...">
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Search</button>
+      </div>
+    </header>
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Product 1 -->
+      <article class="bg-gray-100 p-4 rounded shadow">
+        <div class="bg-gray-300 h-32 mb-2"></div>
+        <h3 class="text-lg font-semibold">Product 1</h3>
+        <p class="text-blue-500 mb-2">$30.00</p>
+        <button class="bg-green-500 text-white py-2 px-4 rounded w-full">Add to Cart</button>
+      </article>
+      <!-- Product 2 -->
+      <article class="bg-gray-100 p-4 rounded shadow">
+        <div class="bg-gray-300 h-32 mb-2"></div>
+        <h3 class="text-lg font-semibold">Product 2</h3>
+        <p class="text-blue-500 mb-2">$10.00</p>
+        <button class="bg-green-500 text-white py-2 px-4 rounded w-full">Add to Cart</button>
+      </article>
+      <!-- Product 3 -->
+      <article class="bg-gray-100 p-4 rounded shadow">
+        <div class="bg-gray-300 h-32 mb-2"></div>
+        <h3 class="text-lg font-semibold">Product 3</h3>
+        <p class="text-blue-500 mb-2">$40.00</p>
+        <button class="bg-green-500 text-white py-2 px-4 rounded w-full">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

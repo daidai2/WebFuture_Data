@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Info Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .section input[type="text"],
+        .section input[type="number"],
+        .section select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .section button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .section button:hover {
+            background-color: #45a049;
+        }
+        .info-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .info-box button {
+            background-color: #008CBA;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Payment Method</h2>
+    <div class="section">
+        <label>Select your payment method</label>
+        <input type="radio" id="credit" name="payment" value="credit" checked>
+        <label for="credit">Credit Card</label><br>
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="paypal">Paypal</label><br>
+        <input type="radio" id="bank" name="payment" value="bank">
+        <label for="bank">Bank Transfer</label>
+    </div>
+    <div class="section">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number">
+        
+        <label for="exp-date">Expiration Date</label>
+        <input type="number" id="exp-month" name="exp-month" placeholder="MM" style="width:48%; display:inline-block;">
+        <input type="number" id="exp-year" name="exp-year" placeholder="YY" style="width:48%; display:inline-block;">
+        
+        <label for="ccv">CCV</label>
+        <input type="text" id="ccv" name="ccv">
+    </div>
+    <div class="section">
+        <button type="submit">Complete</button>
+    </div>
+    
+    <div class="info-box">
+        <h2>Mobility Solutions & Daily Living Aids</h2>
+        <p>Making Life Easier</p>
+        <button>Find out More</button>
+    </div>
+    <div class="info-box">
+        <h2>Wheelchair Repair</h2>
+        <button>Find out More</button>
+    </div>
+    <div class="info-box">
+        <h2>Community Contracts</h2>
+        <button>Find out More</button>
+    </div>
+    
+    <h2>Forma de envío</h2>
+    <div class="section">
+        <label for="transport">Medio transporte</label>
+        <input type="radio" id="terrestre" name="transport" value="terrestre" checked>
+        <label for="terrestre">Terrestre</label><br>
+        <input type="radio" id="aereo" name="transport" value="aereo">
+        <label for="aereo">Aereo</label><br>
+        <input type="radio" id="maritimo" name="transport" value="maritimo">
+        <label for="maritimo">Maritimo</label>
+    </div>
+    <div class="section">
+        <label for="payment-method">Forma de pago</label>
+        <input type="radio" id="tarjeta" name="payment-method" value="tarjeta" checked>
+        <label for="tarjeta">Tarjeta (Crédito/débito)</label><br>
+        <input type="radio" id="transferencia" name="payment-method" value="transferencia">
+        <label for="transferencia">Transferencia bancaria</label><br>
+        <input type="radio" id="metalico" name="payment-method" value="metalico">
+        <label for="metalico">Metálico</label>
+    </div>
+    <div class="section">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion">
+        
+        <label for="pais">País</label>
+        <select id="pais" name="pais">
+            <option value="country1">Country 1</option>
+            <option value="country2">Country 2</option>
+        </select>
+    </div>
+    <div class="section">
+        <button type="submit">Aceptar</button>
+    </div>
+</div>
+
+</body>
+</html>

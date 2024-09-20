@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Low-Fidelity Wireframe</title>
+</head>
+<body class="bg-gray-100 p-10">
+  <header class="bg-white p-6 mb-6">
+    <div class="flex items-center">
+      <img src="https://placehold.co/100x100" alt="Logo" class="mr-4">
+      <div>
+        <div class="mb-2">
+          <span class="block bg-gray-300 h-5 w-40 mb-1"></span>
+          <span class="block bg-gray-300 h-5 w-40 mb-1"></span>
+          <span class="block bg-gray-300 h-5 w-40"></span>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded mb-2">Back</button>
+        <div>
+          <input type="checkbox" id="checkbox" class="mr-2">
+          <label for="checkbox">Check box</label>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <!-- Product Page Section -->
+    <div class="bg-white p-6 mb-6 flex">
+      <div class="w-1/2">
+        <img src="https://placehold.co/400x400" alt="Product Image" class="mb-4">
+        <div class="flex space-x-2">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-20 h-20">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-20 h-20">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-20 h-20">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-20 h-20">
+        </div>
+      </div>
+      <div class="w-1/2 pl-6">
+        <h2 class="text-xl font-bold mb-2">Product Name</h2>
+        <p class="text-gray-700 mb-4">Manufacturer</p>
+        <div class="mb-4">
+          <p class="text-gray-700 mb-2">Colors</p>
+          <label class="block">
+            <input type="radio" name="color" value="red" class="mr-2"> Red
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="blue" class="mr-2"> Blue
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="white" class="mr-2"> White
+          </label>
+        </div>
+        <div class="mb-4">
+          <p class="text-gray-700 mb-1">Price: $100</p>
+          <p class="text-gray-400 line-through">$200</p>
+        </div>
+        <button class="bg-green-500 text-white py-2 px-4 rounded">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Shipping Info Section -->
+    <div class="bg-white p-6">
+      <h2 class="text-xl font-bold mb-4">Shipping Info</h2>
+      <form>
+        <div class="flex mb-4">
+          <input type="text" placeholder="First Name" class="border p-2 w-1/2 mr-2">
+          <input type="text" placeholder="Last Name" class="border p-2 w-1/2">
+        </div>
+        <div class="flex mb-4">
+          <input type="tel" placeholder="Phone" class="border p-2 w-1/2 mr-2">
+          <input type="email" placeholder="E-mail" class="border p-2 w-1/2">
+        </div>
+        <div class="flex mb-4">
+          <select class="border p-2 w-1/2 mr-2">
+            <option>Country</option>
+            <option>United States</option>
+          </select>
+          <input type="text" placeholder="State" class="border p-2 w-1/2">
+        </div>
+        <div class="flex mb-4">
+          <input type="text" placeholder="City" class="border p-2 w-1/2 mr-2">
+          <input type="text" placeholder="Zip Code" class="border p-2 w-1/2">
+        </div>
+        <div class="flex justify-between">
+          <button class="bg-blue-500 text-white py-2 px-4 rounded">Back</button>
+          <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded">Next Step</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

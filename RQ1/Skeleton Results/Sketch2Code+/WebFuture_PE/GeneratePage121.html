@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+  <div class="container mx-auto">
+    <!-- Page Title Section -->
+    <header class="text-center mb-10">
+      <h1 class="text-3xl font-bold">Title of the Page</h1>
+    </header>
+
+    <!-- Top Section with Title and Video -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      <div>
+        <h2 class="text-2xl mb-2">Title Page</h2>
+        <hr class="border-gray-300 mb-5">
+      </div>
+      <div>
+        <div class="w-full h-48 bg-gray-300 flex justify-center items-center">
+          <span class="text-3xl">Video</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Four Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-10">
+      <div class="bg-white p-5 shadow-md">
+        <h3 class="text-xl mb-2">Title</h3>
+        <div class="w-full h-32 bg-gray-200 mb-2"></div>
+        <p>Title text</p>
+      </div>
+      <div class="bg-white p-5 shadow-md">
+        <h3 class="text-xl mb-2">Title</h3>
+        <div class="w-full h-32 bg-gray-200 mb-2"></div>
+        <p>Title text</p>
+      </div>
+      <div class="bg-white p-5 shadow-md">
+        <h3 class="text-xl mb-2">Title</h3>
+        <div class="w-full h-32 bg-gray-200 mb-2"></div>
+        <p>Title text</p>
+      </div>
+      <div class="bg-white p-5 shadow-md">
+        <h3 class="text-xl mb-2">Title</h3>
+        <div class="w-full h-32 bg-gray-200 mb-2"></div>
+        <p>Title text</p>
+      </div>
+    </div>
+
+    <!-- Mixed Content Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      <div class="w-full h-48 bg-gray-300 mb-2"></div>
+      <div class="w-full h-48 bg-gray-300 mb-2"></div>
+      <div class="mb-2">
+        <div class="bg-gray-300 h-32 mb-2"></div>
+        <p class="text-center">Some text content</p>
+      </div>
+      <div class="bg-gray-300 h-32 mb-2"></div>
+      <div class="bg-gray-300 h-10 mb-2"></div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2"> Checkbox
+      </div>
+      <div class="bg-gray-300 h-10 mb-2"></div>
+    </div>
+
+    <!-- Product Catalog Section -->
+    <section>
+      <div class="mb-5 flex justify-between items-center">
+        <h2 class="text-2xl font-bold">Product Catalog</h2>
+        <div class="flex items-center space-x-2">
+          <input type="text" class="border border-gray-300 p-2" placeholder="Search">
+          <button class="bg-gray-300 p-2">Search</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-5 shadow-md">
+          <div class="w-full h-48 bg-gray-200 mb-2"></div>
+          <h3 class="text-xl mb-2">Product 1</h3>
+          <p class="text-lg mb-2">$30.00</p>
+          <button class="bg-blue-500 text-white p-2 w-full">Add to Cart</button>
+        </div>
+        <div class="bg-white p-5 shadow-md">
+          <div class="w-full h-48 bg-gray-200 mb-2"></div>
+          <h3 class="text-xl mb-2">Product 2</h3>
+          <p class="text-lg mb-2">$10.00</p>
+          <button class="bg-blue-500 text-white p-2 w-full">Add to Cart</button>
+        </div>
+        <div class="bg-white p-5 shadow-md">
+          <div class="w-full h-48 bg-gray-200 mb-2"></div>
+          <h3 class="text-xl mb-2">Product 3</h3>
+          <p class="text-lg mb-2">$40.00</p>
+          <button class="bg-blue-500 text-white p-2 w-full">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div class="container mx-auto">
+    <!-- Header Section -->
+    <header class="bg-white p-6 shadow-md mb-4">
+      <!-- Payment Method Form -->
+      <form class="mb-8">
+        <fieldset class="mb-4">
+          <legend class="text-xl font-bold mb-2">Select your payment method</legend>
+          <div>
+            <label class="inline-flex items-center">
+              <input class="form-radio" type="radio" name="paymentMethod" value="credit">
+              <span class="ml-2">Credit Card</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input class="form-radio" type="radio" name="paymentMethod" value="paypal">
+              <span class="ml-2">Paypal</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input class="form-radio" type="radio" name="paymentMethod" value="bankTransfer">
+              <span class="ml-2">Bank Transfer</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="text-lg font-semibold mb-2">Enter your data</legend>
+          <div class="mb-4">
+            <label class="block text-sm mb-1" for="cardNumber">Card Number</label>
+            <input id="cardNumber" type="text" class="w-full p-2 border rounded-md" placeholder="Card Number">
+          </div>
+          <div class="flex mb-4">
+            <div class="mr-2">
+              <label class="block text-sm mb-1" for="expMonth">Expiration date</label>
+              <input id="expMonth" type="text" class="w-20 p-2 border rounded-md" placeholder="MM">
+            </div>
+            <div class="mr-2">
+              <label class="block text-sm mb-1" for="expYear">Year</label>
+              <input id="expYear" type="text" class="w-20 p-2 border rounded-md" placeholder="YY">
+            </div>
+            <div>
+              <label class="block text-sm mb-1" for="cvv">CVV</label>
+              <input id="cvv" type="text" class="w-20 p-2 border rounded-md" placeholder="CVV">
+            </div>
+          </div>
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Complete</button>
+        </fieldset>
+      </form>
+      <!-- Promotional Section -->
+      <section>
+        <h2 class="text-2xl font-bold mb-2">Mobility Solutions & Daily Living Aids Making Life Easier</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+      </section>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <!-- Service Information Section -->
+      <section class="grid grid-cols-3 gap-4 mb-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Wheelchair Repair</h3>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Community Contacts</h3>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+        </div>
+        <div>
+          <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full mb-2">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+        </div>
+      </section>
+
+      <!-- Product Catalog Section -->
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold">Product Catalog</h2>
+          <div class="flex">
+            <input type="text" class="w-64 p-2 border rounded-md" placeholder="Search">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md ml-2">Search</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Product 1 -->
+          <div class="bg-white p-4 shadow-md">
+            <img src="https://placehold.co/300x200" alt="Product 1" class="w-full mb-2">
+            <h3 class="text-xl font-semibold">PRODUCT 1</h3>
+            <p class="text-lg mb-2">$20.00</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md">ADD TO CART</button>
+          </div>
+          <!-- Product 2 -->
+          <div class="bg-white p-4 shadow-md">
+            <img src="https://placehold.co/300x200" alt="Product 2" class="w-full mb-2">
+            <h3 class="text-xl font-semibold">PRODUCT 2</h3>
+            <p class="text-lg mb-2">$10.00</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md">ADD TO CART</button>
+          </div>
+          <!-- Product 3 -->
+          <div class="bg-white p-4 shadow-md">
+            <img src="https://placehold.co/300x200" alt="Product 3" class="w-full mb-2">
+            <h3 class="text-xl font-semibold">PRODUCT 3</h3>
+            <p class="text-lg mb-2">$40.00</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

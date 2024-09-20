@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .stars {
+            display: inline-block;
+            color: #f5c518;
+            margin-right: 10px;
+        }
+        .review-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .review-form input, .review-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .review-form button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .checklist, .radio-buttons, .checkboxes {
+            margin-bottom: 20px;
+        }
+        .buy-now {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .buy-now button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .additional-controls {
+            display: flex;
+            justify-content: space-between;
+        }
+        .additional-controls button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Write Review</h1>
+        <div class="product-info">
+            <div>
+                <img src="#" alt="Product Image">
+                <div>Product Name</div>
+                <div class="price">$24.99</div>
+            </div>
+            <div class="rating">
+                <div class="stars">★★★★☆</div>
+                <div>45 reviews</div>
+            </div>
+        </div>
+        <form class="review-form">
+            <label for="rating">Rate Product</label>
+            <div class="stars">★☆☆☆☆ Bad :(</div>
+            <input type="text" id="headline" name="headline" placeholder="Headline">
+            <textarea id="review" name="review" rows="4" placeholder="Review"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="checklist">
+            <h2>Check items:</h2>
+            <label><input type="checkbox"> Check item 1</label><br>
+            <label><input type="checkbox"> Check item 2</label><br>
+            <label><input type="checkbox"> Check item 3</label><br>
+        </div>
+        <div class="buy-now">
+            <button>Buy Now</button>
+        </div>
+        <div class="radio-buttons">
+            <h2>Radio Buttons</h2>
+            <label><input type="radio" name="relevance" value="not-relevant"> Not relevant</label><br>
+            <label><input type="radio" name="relevance" value="low"> Low</label><br>
+            <label><input type="radio" name="relevance" value="medium"> Medium</label><br>
+            <label><input type="radio" name="relevance" value="high"> High</label><br>
+        </div>
+        <div class="checkboxes">
+            <h2>Check Boxes</h2>
+            <label><input type="checkbox"> Choice 1</label><br>
+            <label><input type="checkbox"> Choice 2</label><br>
+            <label><input type="checkbox"> Choice 3</label><br>
+            <label><input type="checkbox"> Choice 4</label><br>
+        </div>
+        <div class="additional-controls">
+            <button>OK</button>
+            <button>Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

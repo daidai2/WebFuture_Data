@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div id="main-container" class="max-w-2xl mx-auto bg-white p-6 shadow-lg rounded">
+    <header id="header" class="mb-6">
+      <nav id="auth-nav" class="flex justify-between">
+        <a href="#" class="text-blue-500">Login</a>
+        <a href="#" class="text-blue-500">Sign Up</a>
+      </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section id="login-section" class="mb-6">
+      <h1 class="text-xl font-bold mb-4">Login</h1>
+      <form id="login-form">
+        <div class="mb-4">
+          <label for="username" class="block mb-1">Login</label>
+          <input type="text" id="username" name="username" class="w-full p-2 border rounded">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block mb-1">Password</label>
+          <input type="password" id="password" name="password" class="w-full p-2 border rounded">
+        </div>
+        <div id="remember-me-container" class="mb-4 flex items-center">
+          <input type="checkbox" id="remember-me" name="remember-me" class="mr-2">
+          <label for="remember-me" class="mr-auto">Remember me</label>
+          <a href="#" id="forgot-password" class="text-blue-500">Forgot Password</a>
+        </div>
+        <button type="submit" id="login-button" class="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+      </form>
+    </section>
+
+    <!-- Preferences Section -->
+    <section id="preferences-section" class="mb-6">
+      <div class="flex justify-between mb-4">
+        <span>C Sharp</span>
+        <button id="get-dropdown" class="bg-gray-200 p-2 rounded">Get Drop Down Here</button>
+      </div>
+      <div id="programming-languages">
+        <div class="mb-2">
+          <input type="checkbox" id="csharp" name="language" value="csharp" class="mr-2">
+          <label for="csharp">C#</label>
+        </div>
+        <div class="mb-2">
+          <input type="checkbox" id="java" name="language" value="java" class="mr-2">
+          <label for="java">Java</label>
+        </div>
+        <div class="mb-2">
+          <input type="checkbox" id="php" name="language" value="php" class="mr-2">
+          <label for="php">PHP</label>
+        </div>
+        <div class="mb-2">
+          <input type="checkbox" id="visualbasic" name="language" value="visualbasic" class="mr-2">
+          <label for="visualbasic">Visual Basic</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-section">
+      <h2 class="text-xl font-bold mb-4">Forma de envío</h2>
+      <div class="mb-4">
+        <label for="shipping-method" class="block mb-1">Medio transporte</label>
+        <div id="shipping-method">
+          <div class="mb-2">
+            <input type="radio" id="terrestre" name="shipping" value="terrestre" class="mr-2">
+            <label for="terrestre">Terrestre</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="aereo" name="shipping" value="aereo" class="mr-2">
+            <label for="aereo">Aereo</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="maritimo" name="shipping" value="maritimo" class="mr-2">
+            <label for="maritimo">Maritimo</label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="payment-method" class="block mb-1">Forma de pago</label>
+        <div id="payment-method">
+          <div class="mb-2">
+            <input type="radio" id="tarjeta" name="payment" value="tarjeta" class="mr-2">
+            <label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="transferencia" name="payment" value="transferencia" class="mr-2">
+            <label for="transferencia">Transferencia bancaria</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="metalico" name="payment" value="metalico" class="mr-2">
+            <label for="metalico">Metálico</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label for="direccion" class="block mb-1">Direccion</label>
+        <input type="text" id="direccion" name="direccion" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4">
+        <label for="pais" class="block mb-1">País</label>
+        <select id="pais" name="pais" class="w-full p-2 border rounded">
+          <option value="country1">Country 1</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <button type="submit" id="accept-button" class="w-full bg-blue-500 text-white p-2 rounded">Aceptar</button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="mt-6">
+      <p class="text-center text-gray-500">&copy; 2023 Wireframe Page</p>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 p-4">
+  <div class="max-w-xl mx-auto bg-white p-8 shadow-md rounded">
+    <!-- Navigation Links -->
+    <div class="flex justify-between mb-4">
+      <a href="#" class="text-lg font-semibold">Sign Up</a>
+      <a href="#" class="text-lg font-semibold">Login</a>
+    </div>
+
+    <!-- Form Start -->
+    <form action="#" method="POST" class="space-y-4">
+      <!-- Name -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" placeholder="First Name" class="border p-2 rounded w-full" required>
+        <input type="text" placeholder="Last Name" class="border p-2 rounded w-full" required>
+      </div>
+
+      <!-- Contact info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="tel" placeholder="Phone" class="border p-2 rounded w-full" required>
+        <input type="email" placeholder="Email" class="border p-2 rounded w-full" required>
+      </div>
+
+      <!-- Password -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="password" placeholder="Password" class="border p-2 rounded w-full" required>
+        <input type="password" placeholder="Confirm Password" class="border p-2 rounded w-full" required>
+      </div>
+
+      <!-- Terms and Conditions -->
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="terms" class="mr-2">
+        <label for="terms" class="text-sm">I agree to Terms and Conditions</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex justify-end">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
+      </div>
+    </form>
+
+    <!-- Additional Form -->
+    <div class="mt-8">
+      <!-- Placeholder Image -->
+      <img src="https://placehold.co/600x400" alt="Placeholder Image" class="mb-4">
+
+      <!-- Text Area -->
+      <textarea rows="3" class="border w-full p-2 rounded mb-4"></textarea>
+
+      <!-- Back Button -->
+      <div class="flex justify-start mb-4">
+        <button class="bg-gray-300 text-black px-4 py-2 rounded">Back</button>
+      </div>
+
+      <!-- Nested Image and Button -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <!-- Placeholder Image -->
+        <img src="https://placehold.co/600x400" alt="Placeholder Image">
+
+        <!-- Button -->
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+      </div>
+
+      <!-- Checkbox and Radio -->
+      <div class="flex items-center space-x-4 mb-4">
+        <input type="checkbox" id="option1" class="mr-2">
+        <label for="option1" class="text-sm">Option 1</label>
+
+        <input type="checkbox" id="option2" class="mr-2">
+        <label for="option2" class="text-sm">Option 2</label>
+
+        <input type="radio" id="option3" name="radioGroup" class="mr-2">
+        <label for="option3" class="text-sm">Option 3</label>
+      </div>
+
+      <!-- Back and Button -->
+      <div class="flex space-x-4">
+        <button class="bg-gray-300 text-black px-4 py-2 rounded">Back</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

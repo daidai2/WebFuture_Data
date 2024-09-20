@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review and Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .review-section, .catalog-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product-info, .rate-product, .headline, .review, .check-items, .buy-now, .submit-btn {
+            margin-bottom: 20px;
+        }
+        .product-info img, .product-info .product-image {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            display: inline-block;
+        }
+        .rate-product span {
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .catalog-section img, .catalog-section .product-image {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            display: block;
+            margin: auto;
+        }
+        .catalog-item {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin-right: 3.33%;
+        }
+        .catalog-item:last-child {
+            margin-right: 0;
+        }
+        .submit-btn, .add-to-cart-btn, .buy-now-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: calc(100% - 100px);
+            padding: 10px;
+            margin-right: -4px;
+        }
+        .search-bar button {
+            width: 100px;
+            padding: 10px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="review-section">
+            <h2>Write Review</h2>
+            <div class="product-info">
+                <div class="product-image"></div>
+                <div>
+                    <p>Product Name</p>
+                    <p>$Price</p>
+                </div>
+                <div>
+                    <p>★★★★★</p>
+                    <p>45 reviews</p>
+                </div>
+            </div>
+            <div class="rate-product">
+                <p>Rate Product</p>
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <span>Bad :(</span>
+            </div>
+            <div class="headline">
+                <p>Headline</p>
+                <input type="text" style="width: 100%; padding: 10px;">
+            </div>
+            <div class="review">
+                <p>Review</p>
+                <textarea style="width: 100%; padding: 10px;" rows="4"></textarea>
+            </div>
+            <button class="submit-btn">Submit</button>
+        </div>
+
+        <div class="catalog-section">
+            <h2>Product Catalog</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+            <div class="catalog-item">
+                <div class="product-image"></div>
+                <p>Product 1</p>
+                <p>$20.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="catalog-item">
+                <div class="product-image"></div>
+                <p>Product 2</p>
+                <p>$10.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="catalog-item">
+                <div class="product-image"></div>
+                <p>Product 3</p>
+                <p>$40.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

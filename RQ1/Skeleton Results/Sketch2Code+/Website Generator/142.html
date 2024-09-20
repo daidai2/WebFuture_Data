@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .video {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video img {
+            width: 100%;
+            max-width: 600px;
+        }
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .post {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+        }
+        .post img {
+            width: 100%;
+        }
+        .form-section {
+            margin: 20px 0;
+        }
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-section input[type="text"],
+        .form-section input[type="checkbox"],
+        .form-section input[type="radio"],
+        .form-section button {
+            margin: 10px 0;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Title Page</h1>
+            <p>Subtitle or description goes here</p>
+        </div>
+        <div class="video">
+            <img src="video-placeholder.png" alt="Video Placeholder">
+        </div>
+        <div class="posts">
+            <div class="post">
+                <h2>Title</h2>
+                <img src="post-image-placeholder.png" alt="Post Image">
+                <p>Content goes here...</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <img src="post-image-placeholder.png" alt="Post Image">
+                <p>Content goes here...</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <img src="post-image-placeholder.png" alt="Post Image">
+                <p>Content goes here...</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <img src="post-image-placeholder.png" alt="Post Image">
+                <p>Content goes here...</p>
+            </div>
+        </div>
+        <div class="form-section">
+            <label for="input1">Label</label>
+            <input type="text" id="input1">
+            
+            <label for="input2">Label</label>
+            <input type="text" id="input2">
+
+            <div>
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">Checkbox</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2">
+                <label for="checkbox2">Checkbox</label>
+            </div>
+
+            <div>
+                <input type="radio" name="radio-group" id="radio1">
+                <label for="radio1">Radio button</label>
+            </div>
+            <div>
+                <input type="radio" name="radio-group" id="radio2">
+                <label for="radio2">Radio button</label>
+            </div>
+            
+            <button type="button">Button</button>
+        </div>
+    </div>
+</body>
+</html>

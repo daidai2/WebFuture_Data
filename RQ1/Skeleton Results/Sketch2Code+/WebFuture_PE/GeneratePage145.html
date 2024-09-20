@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-5">
+  <div class="max-w-4xl mx-auto bg-white p-10 shadow-md rounded">
+    <!-- Product Section -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="w-full md:w-1/2 lg:w-1/3 mb-4">
+        <img src="https://placehold.co/400x400" alt="Product Image" class="w-full mb-4">
+        <div class="flex justify-between">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/5">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/5">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/5">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/5">
+        </div>
+      </div>
+      <div class="md:w-1/2 lg:w-2/3">
+        <h1 class="text-2xl font-bold">Product Name</h1>
+        <p class="mt-4">Manufacturer</p>
+        <div class="mt-4">
+          <p>Colors</p>
+          <input type="radio" id="colorRed" name="color" value="red">
+          <label for="colorRed">Red</label><br>
+          <input type="radio" id="colorBlue" name="color" value="blue">
+          <label for="colorBlue">Blue</label><br>
+          <input type="radio" id="colorWhite" name="color" value="white">
+          <label for="colorWhite">White</label>
+        </div>
+        <div class="mt-4">
+          <p>Price: $400</p>
+          <p class="line-through">Old Price: $600</p>
+        </div>
+        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="mt-10">
+      <div class="flex items-center my-4">
+        <img src="https://placehold.co/100x100" alt="Profile Image" class="w-20 h-20 mr-4 rounded-full">
+        <div>
+          <h2 class="font-bold">Mate One</h2>
+          <p>Job Title</p>
+        </div>
+      </div>
+      <div class="flex items-center my-4">
+        <div>
+          <h2 class="font-bold">Mate Two</h2>
+          <p>Job Title</p>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Profile Image" class="w-20 h-20 ml-4 rounded-full">
+      </div>
+      <div class="flex items-center my-4">
+        <img src="https://placehold.co/100x100" alt="Profile Image" class="w-20 h-20 mr-4 rounded-full">
+        <div>
+          <h2 class="font-bold">Mate Three</h2>
+          <p>Job Title</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Content Section -->
+    <div class="mt-10">
+      <div class="flex mb-4">
+        <img src="https://placehold.co/200x200" alt="Additional Image" class="w-1/4 mr-4 rounded">
+        <div class="w-3/4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="mt-10 space-y-4">
+        <label class="block">
+          <span class="text-gray-700">Label</span>
+          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        </label>
+        <label class="block">
+          <span class="text-gray-700">Label</span>
+          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        </label>
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox1">
+          <label for="checkbox1">Checkbox</label><br>
+          <input type="checkbox" id="checkbox2" name="checkbox2">
+          <label for="checkbox2">Checkbox</label>
+        </div>
+        <div>
+          <input type="radio" id="radio1" name="radio" value="option1">
+          <label for="radio1">Radio button</label><br>
+          <input type="radio" id="radio2" name="radio" value="option2">
+          <label for="radio2">Radio button</label>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

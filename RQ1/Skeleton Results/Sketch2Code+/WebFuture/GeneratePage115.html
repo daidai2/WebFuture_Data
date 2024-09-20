@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <section class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+
+    <header class="mb-6">
+      <h1 class="text-2xl font-bold">Checkout</h1>
+      <hr class="mt-2 mb-6">
+    </header>
+
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+      <div class="mb-4">
+        <label class="block text-gray-700">First Name</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Last Name</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Company</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+    </section>
+
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+      <div class="mb-2">
+        <input type="radio" name="shipping" id="standard" class="mr-2">
+        <label for="standard">Standard 14 days - $6.99</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" name="shipping" id="expedited" class="mr-2">
+        <label for="expedited">Expedited 7 days - $11.99</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" name="shipping" id="express" class="mr-2">
+        <label for="express">Express 3 days - $19.97</label>
+      </div>
+    </section>
+
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Write Review</h2>
+      <article class="flex items-start mb-6">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="flex-none w-24 h-24 object-cover mr-4">
+        <div>
+          <div class="font-bold">Product Name</div>
+          <div class="text-gray-500 mb-2">$Price</div>
+          <div class="flex items-center mb-2">
+            <span class="text-yellow-500">★★★★★</span>
+            <span class="text-gray-500 ml-2">45 reviews</span>
+          </div>
+        </div>
+      </article>
+      <div class="mb-4">
+        <label class="block text-gray-700">Rate Product</label>
+        <div class="flex items-center">
+          <input type="radio" name="rating" class="mr-1">1
+          <input type="radio" name="rating" class="mr-1 ml-3">2
+          <input type="radio" name="rating" class="mr-1 ml-3">3
+          <input type="radio" name="rating" class="mr-1 ml-3">4
+          <input type="radio" name="rating" class="mr-1 ml-3">5
+          <span class="ml-4">(Bad :(</span>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Headline</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700">Review</label>
+        <textarea class="w-full p-2 border border-gray-300 rounded"></textarea>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+    </section>
+
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Additional Options</h2>
+      <div class="mb-4">
+        <label class="block text-gray-700">Title</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold mb-2">Radio Buttons</h3>
+        <div class="mb-2">
+          <input type="radio" name="relevance" id="not-relevant" class="mr-2">
+          <label for="not-relevant">Not relevant</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" name="relevance" id="low" class="mr-2">
+          <label for="low">Low</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" name="relevance" id="medium" class="mr-2">
+          <label for="medium">Medium</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" name="relevance" id="high" class="mr-2">
+          <label for="high">High</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold mb-2">Check Boxes</h3>
+        <div class="flex flex-wrap">
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice1" class="mr-2">
+            <label for="choice1">Choice 1</label>
+          </div>
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice2" class="mr-2">
+            <label for="choice2">Choice 2</label>
+          </div>
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice3" class="mr-2">
+            <label for="choice3">Choice 3</label>
+          </div>
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice4" class="mr-2">
+            <label for="choice4">Choice 4</label>
+          </div>
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice5" class="mr-2">
+            <label for="choice5">Choice 5</label>
+          </div>
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice6" class="mr-2">
+            <label for="choice6">Choice 6</label>
+          </div>
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice7" class="mr-2">
+            <label for="choice7">Choice 7</label>
+          </div>
+          <div class="mr-4 mb-2">
+            <input type="checkbox" id="choice8" class="mr-2">
+            <label for="choice8">Choice 8</label>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end space-x-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">OK</button>
+        <button class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+      </div>
+    </section>
+
+  </section>
+</body>
+</html>

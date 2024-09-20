@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Page</title>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- Write Review Section -->
+  <header class="bg-white p-4 rounded shadow mb-8">
+    <h1 class="text-2xl font-bold mb-4">Write Review</h1>
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24 mr-4">
+      <div>
+        <div class="text-xl font-semibold">Product Name, $Price</div>
+        <div class="flex items-center">
+          <span class="text-yellow-500">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+          <span class="ml-2 text-gray-500">45 reviews</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Rate Product</h2>
+      <div class="flex items-center mb-4">
+        <span class="text-2xl text-yellow-500 cursor-pointer">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+        <span class="ml-4 text-gray-500">Bad :(</span>
+      </div>
+      <div class="mb-4">
+        <label for="headline" class="block font-semibold mb-2">Headline</label>
+        <input type="text" id="headline" class="w-full border p-2 rounded">
+      </div>
+      <div class="mb-4">
+        <label for="review" class="block font-semibold mb-2">Review</label>
+        <textarea id="review" class="w-full border p-2 rounded h-32"></textarea>
+      </div>
+      <button class="bg-blue-500 text-white px-6 py-2 rounded">SUBMIT</button>
+    </div>
+  </header>
+
+  <!-- Middle Section -->
+  <section class="bg-white p-4 rounded shadow mb-8">
+    <div class="flex mb-4">
+      <img src="https://placehold.co/200x200" alt="Content Image 1" class="w-1/2 h-48 mr-4">
+      <img src="https://placehold.co/200x200" alt="Content Image 2" class="w-1/2 h-48">
+    </div>
+    <div class="mb-4">Content Text</div>
+    <div class="flex mb-4">
+      <img src="https://placehold.co/200x200" alt="Content Image 3" class="w-1/2 h-48">
+      <div class="w-1/2 pl-4">
+        <div class="mb-4">Content Text</div>
+        <div class="flex items-center mb-4">
+          <input type="text" class="flex-grow border p-2 rounded mr-4">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+        </div>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded">Button</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="bg-white p-4 rounded shadow mb-8">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold">Product Catalog</h2>
+      <div class="flex items-center">
+        <input type="text" class="border p-2 rounded mr-2">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="https://placehold.co/150x150" alt="Product Image" class="w-full h-36 mb-2">
+        <div class="font-semibold mb-2">PRODUCT 1</div>
+        <div class="text-gray-500 mb-2">$30.00</div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="https://placehold.co/150x150" alt="Product Image" class="w-full h-36 mb-2">
+        <div class="font-semibold mb-2">PRODUCT 2</div>
+        <div class="text-gray-500 mb-2">$10.00</div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow text-center">
+        <img src="https://placehold.co/150x150" alt="Product Image" class="w-full h-36 mb-2">
+        <div class="font-semibold mb-2">PRODUCT 3</div>
+        <div class="text-gray-500 mb-2">$40.00</div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

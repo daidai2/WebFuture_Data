@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Navigation -->
+  <div class="flex justify-between mb-6">
+    <div class="space-x-6">
+      <a href="#" class="text-blue-500">Sign Up</a>
+      <a href="#" class="text-blue-500">Login</a>
+    </div>
+  </div>
+
+  <!-- Sign Up Form -->
+  <div class="bg-white p-6 rounded-lg shadow-lg">
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <label for="first-name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="first-name" class="mt-1 px-3 py-2 border border-gray-300 rounded-md w-full">
+      </div>
+      <div>
+        <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input type="text" id="last-name" class="mt-1 px-3 py-2 border border-gray-300 rounded-md w-full">
+      </div>
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+        <input type="text" id="phone" class="mt-1 px-3 py-2 border border-gray-300 rounded-md w-full">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+        <input type="email" id="email" class="mt-1 px-3 py-2 border border-gray-300 rounded-md w-full">
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" class="mt-1 px-3 py-2 border border-gray-300 rounded-md w-full">
+      </div>
+      <div>
+        <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+        <input type="password" id="confirm-password" class="mt-1 px-3 py-2 border border-gray-300 rounded-md w-full">
+      </div>
+    </div>
+    <div class="flex items-center mt-4">
+      <input type="checkbox" id="terms" class="mr-2">
+      <label for="terms" class="text-sm font-medium text-gray-700">I agree to Terms and Conditions</label>
+    </div>
+    <div class="mt-4 flex justify-end">
+      <button class="px-6 py-2 bg-blue-500 text-white rounded-md">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Product Section -->
+  <div class="bg-white p-6 mt-6 rounded-lg shadow-lg">
+    <img src="https://placehold.co/600x300" alt="Product Image" class="w-full h-48 object-cover mb-4">
+    <div class="text-center mb-4">
+      <div class="text-2xl font-bold text-gray-800">$24.99</div>
+      <div class="text-xl font-semibold text-gray-600">Product Title</div>
+    </div>
+    <div class="border-t border-b py-4 mb-4">
+      <div class="flex items-center">
+        <input type="checkbox" id="item1" class="mr-2">
+        <label for="item1" class="text-sm font-medium text-gray-700">Check item 1</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="item2" class="mr-2">
+        <label for="item2" class="text-sm font-medium text-gray-700">Check item 2</label>
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" id="item3" class="mr-2">
+        <label for="item3" class="text-sm font-medium text-gray-700">Check item 3</label>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <button class="px-6 py-2 bg-green-500 text-white rounded-md">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Product Catalog -->
+  <div class="bg-white p-6 mt-6 rounded-lg shadow-lg">
+    <div class="flex justify-between mb-6">
+      <div class="text-2xl font-bold">Product Catalog</div>
+      <input type="text" placeholder="Search" class="px-3 py-2 border border-gray-300 rounded-md">
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="text-center">
+        <img src="https://placehold.co/200x200" alt="Product 1" class="mx-auto mb-2">
+        <div class="font-semibold">Product 1</div>
+        <div class="text-gray-600 mb-2">$30.00</div>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-md">Add to Cart</button>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200" alt="Product 2" class="mx-auto mb-2">
+        <div class="font-semibold">Product 2</div>
+        <div class="text-gray-600 mb-2">$10.00</div>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-md">Add to Cart</button>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200" alt="Product 3" class="mx-auto mb-2">
+        <div class="font-semibold">Product 3</div>
+        <div class="text-gray-600 mb-2">$40.00</div>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-md">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

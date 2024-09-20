@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review and Order Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Write Review Section -->
+  <section class="max-w-2xl mx-auto bg-white shadow p-6 rounded mb-6">
+    <h2 class="text-2xl font-bold mb-4">Write Review</h2>
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/80x80" alt="Product Image" class="w-20 h-20 object-cover rounded mr-4">
+      <div>
+        <p class="font-bold">Product Name</p>
+        <p>$Price</p>
+        <p>⭐⭐⭐⭐⭐ 45 reviews</p>
+      </div>
+    </div>
+    <div class="mb-4">
+      <p class="font-bold mb-2">Rate Product</p>
+      <div class="flex items-center">
+        <div class="flex text-yellow-500">
+          <span>⭐⭐⭐</span>
+          <span class="text-gray-300">⭐⭐</span>
+        </div>
+        <p class="ml-2 text-red-500">Bad :(</p>
+      </div>
+    </div>
+    <form class="flex flex-col gap-y-4">
+      <input type="text" placeholder="Headline" class="border p-2 rounded w-full">
+      <textarea placeholder="Review" class="border p-2 rounded w-full h-24"></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+    </form>
+  </section>
+
+  <!-- Product Info and Order Section -->
+  <section class="max-w-2xl mx-auto bg-white shadow p-6 rounded mb-6">
+    <img src="https://placehold.co/600x400" alt="Product Image" class="w-full h-64 object-cover rounded mb-4">
+    <p class="text-2xl font-bold">$24.9</p>
+    <p class="text-xl mb-4">Product Title</p>
+    <hr class="mb-4">
+    <div class="mb-4">
+      <p class="font-bold mb-2">Check items:</p>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2" checked> Check item 1
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2"> Check item 2
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2"> Check item 3
+      </label>
+    </div>
+    <button class="bg-green-500 text-white px-4 py-2 rounded w-full">Buy Now</button>
+  </section>
+
+  <!-- Shipping Info Section -->
+  <section class="max-w-2xl mx-auto bg-white shadow p-6 rounded mb-6">
+    <h2 class="text-2xl font-bold mb-4">Shipping Info</h2>
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input type="text" placeholder="First Name" class="border p-2 rounded w-full">
+      <input type="text" placeholder="Last Name" class="border p-2 rounded w-full">
+      <input type="text" placeholder="Phone" class="border p-2 rounded w-full">
+      <input type="email" placeholder="E-mail" class="border p-2 rounded w-full">
+      <select class="border p-2 rounded w-full">
+        <option>United States</option>
+        <option>Canada</option>
+        <option>Mexico</option>
+      </select>
+      <input type="text" placeholder="State" class="border p-2 rounded w-full">
+      <input type="text" placeholder="City" class="border p-2 rounded w-full">
+      <input type="text" placeholder="Zip Code" class="border p-2 rounded w-full">
+    </form>
+    <div class="flex justify-between mt-4">
+      <button class="bg-gray-500 text-white px-4 py-2 rounded">Back</button>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Next Step</button>
+    </div>
+  </section>
+
+</body>
+</html>

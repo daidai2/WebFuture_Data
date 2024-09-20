@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Top Section -->
+  <div class="mb-10">
+    <div class="bg-white p-4 shadow-lg rounded-md">
+      <img src="https://placehold.co/150x150" alt="logo" class="w-24 h-24 mb-4">
+      <ul>
+        <li class="mb-2">Menu Item 1</li>
+        <li class="mb-2">Menu Item 2</li>
+        <li class="mb-2">Menu Item 3</li>
+      </ul>
+      <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Back</button>
+      <div class="mt-4">
+        <input type="checkbox" id="checkbox" class="mr-2">
+        <label for="checkbox">Checkbox</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mid Section (Product Page) -->
+  <div class="mb-10 flex space-x-10">
+    <div class="bg-white p-4 shadow-lg rounded-md flex-auto">
+      <img src="https://placehold.co/250x250" alt="Product Image" class="w-full h-auto mb-4">
+      <div class="flex space-x-2">
+        <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12">
+        <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12">
+        <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12">
+        <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12">
+      </div>
+    </div>
+    <div class="flex-auto bg-white p-4 shadow-lg rounded-md">
+      <h1 class="text-xl font-bold mb-2">Product Name</h1>
+      <p class="mb-4">Manufacturer</p>
+      <div class="mb-4">
+        <span class="mr-2">Color:</span>
+        <label><input type="radio" name="color" class="mr-2">Red</label>
+        <label><input type="radio" name="color" class="mr-2">Blue</label>
+        <label><input type="radio" name="color" class="mr-2">White</label>
+      </div>
+      <div class="flex items-center mb-4">
+        <span class="text-green-500 font-bold mr-4">$400</span>
+        <span class="line-through">$200</span>
+      </div>
+      <button class="px-4 py-2 bg-green-500 text-white rounded-md">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Bottom Section (Product Catalog) -->
+  <div class="bg-white p-4 shadow-lg rounded-md">
+    <h2 class="text-2xl font-bold mb-4">Product Catalog</h2>
+    <div class="flex justify-between items-center mb-4">
+      <input type="text" placeholder="Search..." class="p-2 border border-gray-300 rounded">
+      <button class="ml-4 px-4 py-2 bg-blue-500 text-white rounded-md">Search</button>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-gray-200 p-4 rounded-md">
+        <img src="https://placehold.co/150x150" alt="Product 1" class="w-full h-auto mb-4">
+        <h3 class="font-bold mb-2">Product 1</h3>
+        <p class="mb-3 text-green-500 text-xl">$30.00</p>
+        <button class="w-full px-4 py-2 bg-green-500 text-white rounded-md">Add to Cart</button>
+      </div>
+      <div class="bg-gray-200 p-4 rounded-md">
+        <img src="https://placehold.co/150x150" alt="Product 2" class="w-full h-auto mb-4">
+        <h3 class="font-bold mb-2">Product 2</h3>
+        <p class="mb-3 text-green-500 text-xl">$10.00</p>
+        <button class="w-full px-4 py-2 bg-green-500 text-white rounded-md">Add to Cart</button>
+      </div>
+      <div class="bg-gray-200 p-4 rounded-md">
+        <img src="https://placehold.co/150x150" alt="Product 3" class="w-full h-auto mb-4">
+        <h3 class="font-bold mb-2">Product 3</h3>
+        <p class="mb-3 text-green-500 text-xl">$40.00</p>
+        <button class="w-full px-4 py-2 bg-green-500 text-white rounded-md">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

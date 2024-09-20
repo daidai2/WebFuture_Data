@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <div class="max-w-4xl mx-auto bg-white p-6 shadow-lg">
+    <!-- Header -->
+    <header class="text-2xl font-bold mb-4 text-center">Write Review</header>
+
+    <!-- Product Review Section -->
+    <section class="mb-6">
+      <div class="flex items-center">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24 mr-4">
+        <div>
+          <span class="block text-xl font-semibold">Product Name</span>
+          <span class="block text-lg text-gray-600">$Price</span>
+          <span class="block text-yellow-500">★★★★☆ 45 reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rate Product Form -->
+    <section class="mb-6">
+      <form>
+        <div class="mb-4">
+          <label class="block text-lg font-semibold mb-2">Rate Product:</label>
+          <div class="flex items-center">
+            <span class="text-yellow-500">★★★★★</span>
+            <span class="ml-2 text-red-600">Bad :(</span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="headline" class="block text-lg font-semibold mb-2">Headline:</label>
+          <input type="text" id="headline" class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+          <label for="review" class="block text-lg font-semibold mb-2">Review:</label>
+          <textarea id="review" rows="4" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md">SUBMIT</button>
+      </form>
+    </section>
+
+    <!-- Product Information Section -->
+    <section class="mb-6">
+      <div class="mb-4">
+        <img src="https://placehold.co/400x400" alt="Large Product Image" class="w-full">
+      </div>
+      <div class="mb-4">
+        <span class="block text-xl font-semibold">$24.9</span>
+      </div>
+      <h1 class="text-2xl font-bold mb-2">Product Title</h1>
+      <hr class="border-gray-300 mb-4">
+    </section>
+
+    <!-- Checklist Items Section -->
+    <section class="mb-6">
+      <form>
+        <label class="block text-xl font-semibold mb-2">Check items:</label>
+        <div class="mb-2">
+          <input type="checkbox" id="item1" class="mr-2">
+          <label for="item1">Check item 1</label>
+        </div>
+        <div class="mb-2">
+          <input type="checkbox" id="item2" class="mr-2">
+          <label for="item2">Check item 2</label>
+        </div>
+        <div class="mb-4">
+          <input type="checkbox" id="item3" class="mr-2">
+          <label for="item3">Check item 3</label>
+        </div>
+        <button type="button" class="bg-green-500 text-white py-2 px-4 rounded-md">Buy Now</button>
+      </form>
+    </section>
+
+    <!-- Shipping and Payment Section -->
+    <section>
+      <form>
+        <div class="mb-4">
+          <label class="block text-xl font-semibold mb-2">Forma de envío:</label>
+          <div class="mb-2">
+            <input type="radio" id="terrestre" name="transport" class="mr-2">
+            <label for="terrestre">Terrestre</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="aereo" name="transport" class="mr-2">
+            <label for="aereo">Aéreo</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="maritimo" name="transport" class="mr-2">
+            <label for="maritimo">Marítimo</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-xl font-semibold mb-2">Forma de pago:</label>
+          <div class="mb-2">
+            <input type="radio" id="tarjeta" name="payment" class="mr-2">
+            <label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="transferencia" name="payment" class="mr-2">
+            <label for="transferencia">Transferencia bancaria</label>
+          </div>
+          <div class="mb-4">
+            <input type="radio" id="metalico" name="payment" class="mr-2">
+            <label for="metalico">Metálico</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="direccion" class="block text-xl font-semibold mb-2">Dirección:</label>
+          <input type="text" id="direccion" class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+          <label for="pais" class="block text-xl font-semibold mb-2">País:</label>
+          <select id="pais" class="w-full p-2 border border-gray-300 rounded-md">
+            <option value="" disabled selected>Select a country</option>
+            <option value="us">United States</option>
+            <option value="es">Spain</option>
+            <option value="fr">France</option>
+          </select>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md">Aceptar</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>

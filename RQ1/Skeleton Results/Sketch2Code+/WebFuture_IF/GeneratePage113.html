@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+
+  <div class="container mx-auto bg-white p-8 rounded-lg shadow-lg">
+
+    <!-- Payment Method Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Select your payment method</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block mb-2">
+            <input type="radio" name="payment method" class="mr-2">Credit Card
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="payment method" class="mr-2">Paypal
+          </label>
+          <label class="block mb-4">
+            <input type="radio" name="payment method" class="mr-2">Bank Transfer
+          </label>
+        </div>
+
+        <label class="block mb-2 text-lg font-medium">Enter your data</label>
+        <label class="block mb-2">Card Number</label>
+        <input type="text" class="block w-full p-3 border border-gray-300 rounded-md mb-4">
+
+        <div class="flex items-center mb-4">
+          <div class="mr-4">
+            <label class="block mb-2">Expiration date</label>
+            <select class="w-20 p-2 border border-gray-300 rounded-md">
+              <option>MM</option>
+            </select>
+            <select class="w-20 p-2 border border-gray-300 rounded-md ml-2">
+              <option>YY</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">CCV</label>
+            <input type="text" class="w-24 p-2 border border-gray-300 rounded-md">
+          </div>
+        </div>
+
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Complete</button>
+      </form>
+    </section>
+
+    <!-- Sign Up/Login Section -->
+    <section class="mb-8">
+      <nav class="mb-4">
+        <a href="#signup" class="text-lg font-bold mr-4">Sign Up</a>
+        <a href="#login" class="text-lg">Login</a>
+      </nav>
+
+      <form id="signup">
+        <div class="flex mb-4">
+          <div class="mr-4 w-1/2">
+            <label class="block mb-2">Name</label>
+            <input type="text" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+          <div class="w-1/2">
+            <label class="block mb-2">Last Name</label>
+            <input type="text" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+        </div>
+
+        <div class="flex mb-4">
+          <div class="mr-4 w-1/2">
+            <label class="block mb-2">Phone</label>
+            <input type="text" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+          <div class="w-1/2">
+            <label class="block mb-2">E-mail</label>
+            <input type="email" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+        </div>
+
+        <div class="flex mb-4">
+          <div class="mr-4 w-1/2">
+            <label class="block mb-2">Password</label>
+            <input type="password" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+          <div class="w-1/2">
+            <label class="block mb-2">Confirm Password</label>
+            <input type="password" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+        </div>
+
+        <label class="block mb-4">
+          <input type="checkbox" class="mr-2"> I agree to Terms and Conditions
+        </label>
+
+        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Miscellaneous Section -->
+    <section>
+      <form>
+        <div class="mb-4">
+          <label class="block mb-2">Title</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2">Radio Buttons</label>
+          <label class="block mb-2">
+            <input type="radio" name="relevance" class="mr-2">Not relevant
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="relevance" class="mr-2">Low
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="relevance" class="mr-2">Medium
+          </label>
+          <label class="block mb-4">
+            <input type="radio" name="relevance" class="mr-2">High
+          </label>
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2">Check Boxes</label>
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> choice1
+          </label>
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> choice2
+          </label>
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> choice3
+          </label>
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> choice4
+          </label>
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> choice5
+          </label>
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> choice6
+          </label>
+          <label class="block mb-2">
+            <input type="checkbox" class="mr-2"> choice7
+          </label>
+          <label class="block mb-4">
+            <input type="checkbox" class="mr-2"> choice8
+          </label>
+        </div>
+
+        <div class="flex">
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 mr-2 rounded-md">OK</button>
+          <button type="button" class="bg-red-500 text-white px-4 py-2 rounded-md">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+  </div>
+
+</body>
+
+</html>

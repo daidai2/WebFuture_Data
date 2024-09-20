@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between">
+    <a href="#" class="text-blue-500">Login</a>
+    <a href="#" class="text-blue-500">Sign Up</a>
+  </header>
+
+  <!-- Login Section -->
+  <section id="login-section" class="p-8">
+    <div class="bg-white p-6 rounded shadow-md max-w-md mx-auto">
+      <h2 class="text-2xl mb-4">Login</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block mb-1" for="username">Login</label>
+          <input type="text" id="username" class="w-full p-2 border border-gray-300 rounded" />
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1" for="password">Password</label>
+          <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded" />
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="remember-me" class="mr-2">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="mb-4">
+          <a href="#" class="text-blue-500">Forgot Password</a>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Home Content Section -->
+  <section id="home-content" class="p-8">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl mb-4">Title</h2>
+      <div class="bg-white p-6 rounded shadow-md mb-8">
+        <h3 class="text-2xl mb-2">Title Page</h3>
+        <img src="https://placehold.co/600x400" alt="Video Placeholder" class="w-full h-64 mb-4 object-cover">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <article class="bg-gray-200 p-4 rounded shadow">
+            <h4 class="text-xl mb-2">Title</h4>
+            <img src="https://placehold.co/200x150" alt="Placeholder Image" class="mb-2">
+            <p>Title Post</p>
+          </article>
+          <article class="bg-gray-200 p-4 rounded shadow">
+            <h4 class="text-xl mb-2">Title</h4>
+            <img src="https://placehold.co/200x150" alt="Placeholder Image" class="mb-2">
+            <p>Title Post</p>
+          </article>
+          <article class="bg-gray-200 p-4 rounded shadow">
+            <h4 class="text-xl mb-2">Title</h4>
+            <img src="https://placehold.co/200x150" alt="Placeholder Image" class="mb-2">
+            <p>Title Post</p>
+          </article>
+          <article class="bg-gray-200 p-4 rounded shadow">
+            <h4 class="text-xl mb-2">Title</h4>
+            <img src="https://placehold.co/200x150" alt="Placeholder Image" class="mb-2">
+            <p>Title Post</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Sidebar Section -->
+  <aside class="p-8">
+    <div class="bg-white p-6 rounded shadow-md max-w-md mx-auto">
+      <form>
+        <div class="mb-4">
+          <label class="block mb-1" for="form-title">Title</label>
+          <input type="text" id="form-title" class="w-full p-2 border border-gray-300 rounded" />
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Radio Buttons</p>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="not-relevant" name="relevance" class="mr-2">
+            <label for="not-relevant">Not relevant</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="low" name="relevance" class="mr-2">
+            <label for="low">Low</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="medium" name="relevance" class="mr-2">
+            <label for="medium">Medium</label>
+          </div>
+          <div class="flex items-center mb-4">
+            <input type="radio" id="high" name="relevance" class="mr-2">
+            <label for="high">High</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Checkboxes</p>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="choice1" class="mr-2">
+            <label for="choice1">Choice 1</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="choice2" class="mr-2">
+            <label for="choice2">Choice 2</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="choice3" class="mr-2">
+            <label for="choice3">Choice 3</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="choice4" class="mr-2">
+            <label for="choice4">Choice 4</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="choice5" class="mr-2">
+            <label for="choice5">Choice 5</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="choice6" class="mr-2">
+            <label for="choice6">Choice 6</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="choice7" class="mr-2">
+            <label for="choice7">Choice 7</label>
+          </div>
+          <div class="flex items-center mb-4">
+            <input type="checkbox" id="choice8" class="mr-2">
+            <label for="choice8">Choice 8</label>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <button type="submit" class="bg-blue-500 text-white p-2 rounded mr-2">OK</button>
+          <button type="button" class="bg-gray-500 text-white p-2 rounded">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow p-4 flex justify-center mt-8">
+    <span>Footer content goes here</span>
+  </footer>
+
+</body>
+</html>

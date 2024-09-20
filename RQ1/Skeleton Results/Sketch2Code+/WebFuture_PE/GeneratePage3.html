@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <!-- Main Container -->
+  <div class="max-w-5xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+
+    <!-- Image Section -->
+    <div class="w-full bg-gray-300 h-64 flex items-center justify-center">
+      <img src="https://placehold.co/600x200" alt="Placeholder Image" class="object-cover">
+    </div>
+
+    <!-- Text Section -->
+    <div class="p-6 space-y-4">
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="text-gray-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="text-gray-700">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex space-x-4 justify-center">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Button 1</button>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Button 2</button>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Button 3</button>
+    </div>
+
+    <!-- Checkbox Section -->
+    <div class="p-6 space-y-4">
+      <label class="flex items-center">
+        <input type="checkbox" class="form-checkbox text-blue-600">
+        <span class="ml-2 text-gray-700">Option 1</span>
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="form-checkbox text-blue-600">
+        <span class="ml-2 text-gray-700">Option 2</span>
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="form-checkbox text-blue-600">
+        <span class="ml-2 text-gray-700">Option 3</span>
+      </label>
+    </div>
+
+    <!-- Payment Method Section -->
+    <div class="p-6 border-t border-gray-200">
+      <h2 class="text-lg font-bold mb-4">Select Your Payment Method</h2>
+      <label class="block">
+        <input type="radio" name="payment" class="form-radio text-blue-600">
+        <span class="ml-2 text-gray-700">Credit Card</span>
+      </label>
+      <label class="block">
+        <input type="radio" name="payment" class="form-radio text-blue-600">
+        <span class="ml-2 text-gray-700">Paypal</span>
+      </label>
+      <label class="block">
+        <input type="radio" name="payment" class="form-radio text-blue-600">
+        <span class="ml-2 text-gray-700">Bank Transfer</span>
+      </label>
+
+      <!-- Card Details -->
+      <div class="mt-4 space-y-4">
+        <input type="text" class="w-full border px-4 py-2" placeholder="Card Number">
+        <div class="flex space-x-4">
+          <input type="text" class="w-1/4 border px-4 py-2" placeholder="MM">
+          <input type="text" class="w-1/4 border px-4 py-2" placeholder="YY">
+          <input type="text" class="w-1/4 border px-4 py-2" placeholder="CVV">
+        </div>
+      </div>
+
+      <!-- Continue Button -->
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4">Continue</button>
+    </div>
+
+    <!-- Shipping Info Section -->
+    <div class="p-6 border-t border-gray-200">
+      <h2 class="text-lg font-bold mb-4">Shipping Info</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" class="w-full border px-4 py-2" placeholder="First Name">
+        <input type="text" class="w-full border px-4 py-2" placeholder="Last Name">
+        <input type="text" class="w-full border px-4 py-2" placeholder="Phone">
+        <input type="text" class="w-full border px-4 py-2" placeholder="E-mail">
+        <div class="col-span-2">
+          <select class="w-full border px-4 py-2">
+            <option>United States</option>
+            <option>Canada</option>
+            <option>UK</option>
+          </select>
+        </div>
+        <input type="text" class="w-full border px-4 py-2" placeholder="State">
+        <input type="text" class="w-full border px-4 py-2" placeholder="City">
+        <input type="text" class="w-full border px-4 py-2" placeholder="Zip Code">
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="flex justify-between mt-4">
+        <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg">Back</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Next Step</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

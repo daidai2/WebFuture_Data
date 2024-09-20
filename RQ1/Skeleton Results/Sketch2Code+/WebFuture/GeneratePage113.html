@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+
+    <!-- Payment Method Section -->
+    <section id="payment-method" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Select your payment method</h2>
+      <div class="radio-buttons mb-6">
+        <label class="block mb-2">
+          <input type="radio" name="payment-method" value="credit-card" class="mr-2"> Credit Card
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="payment-method" value="paypal" class="mr-2"> Paypal
+        </label>
+        <label class="block mb-6">
+          <input type="radio" name="payment-method" value="bank-transfer" class="mr-2"> Bank transfer
+        </label>
+      </div>
+
+      <form id="payment-details">
+        <label for="card-number" class="block mb-2">Card Number</label>
+        <input type="text" id="card-number" class="w-full border p-2 mb-4">
+
+        <div class="flex space-x-4 mb-4">
+          <div>
+            <label for="expiration-date" class="block mb-2">Expiration date</label>
+            <div class="flex space-x-2">
+              <input type="number" id="month" placeholder="MM" class="w-20 border p-2">
+              <input type="number" id="year" placeholder="YY" class="w-20 border p-2">
+            </div>
+          </div>
+          <div>
+            <label for="ccv" class="block mb-2">CCV</label>
+            <input type="text" id="ccv" class="w-20 border p-2">
+          </div>
+        </div>
+
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Complete</button>
+      </form>
+    </section>
+
+    <!-- Tabs Navigation -->
+    <nav class="tabs border-b-2 mb-8">
+      <a href="#signup" class="inline-block py-2 px-4 text-blue-500 border-b-2 border-blue-500">Sign Up</a>
+      <a href="#login" class="inline-block py-2 px-4 text-gray-500">Login</a>
+    </nav>
+
+    <!-- Sign-Up and Login Section -->
+    <section id="auth-forms" class="mb-8">
+      <form id="signup-form" class="grid grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="name" class="block">Name</label>
+          <input type="text" id="name" class="w-full border p-2">
+        </div>
+        <div>
+          <label for="last-name" class="block">Last Name</label>
+          <input type="text" id="last-name" class="w-full border p-2">
+        </div>
+        <div>
+          <label for="phone" class="block">Phone</label>
+          <input type="text" id="phone" class="w-full border p-2">
+        </div>
+        <div>
+          <label for="email" class="block">E-mail</label>
+          <input type="email" id="email" class="w-full border p-2">
+        </div>
+        <div>
+          <label for="password" class="block">Password</label>
+          <input type="password" id="password" class="w-full border p-2">
+        </div>
+        <div>
+          <label for="confirm-password" class="block">Confirm Password</label>
+          <input type="password" id="confirm-password" class="w-full border p-2">
+        </div>
+      </form>
+      <label class="block mb-4">
+        <input type="checkbox" id="terms" class="mr-2"> I agree to Terms and Conditions
+      </label>
+      <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Sign Up</button>
+    </section>
+
+    <!-- Miscellaneous Options Section -->
+    <section id="misc-options" class="mb-8">
+      <label for="title" class="block mb-2">Title</label>
+      <input type="text" id="title" class="w-full border p-2 mb-4">
+
+      <div class="radio-group mb-4">
+        <label class="block mb-2">Radio Buttons</label>
+        <label class="block mb-2">
+          <input type="radio" name="relevance" value="not-relevant" class="mr-2"> Not relevant
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="relevance" value="low" class="mr-2"> Low
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="relevance" value="medium" class="mr-2"> Medium
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="relevance" value="high" class="mr-2"> High
+        </label>
+      </div>
+
+      <div class="checkbox-group mb-4">
+        <label class="block mb-2">CheckBoxes</label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice1" class="mr-2"> choice1
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice2" checked class="mr-2"> choice2
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice3" class="mr-2"> choice3
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice4" class="mr-2"> choice4
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice5" checked class="mr-2"> choice5
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice6" class="mr-2"> choice6
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice7" class="mr-2"> choice7
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="choice8" checked class="mr-2"> choice8
+        </label>
+      </div>
+    </section>
+
+    <!-- Final Action Buttons -->
+    <div class="action-buttons text-right">
+      <button class="bg-green-500 text-white py-2 px-4 rounded mr-2">OK</button>
+      <button class="bg-red-500 text-white py-2 px-4 rounded">Cancel</button>
+    </div>
+  </div>
+
+</body>
+</html>

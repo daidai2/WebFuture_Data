@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-2xl mx-auto bg-white p-8 shadow-md">
+    <!-- Sign Up / Login Section -->
+    <div class="mb-8">
+      <div class="flex justify-between mb-4">
+        <button class="text-blue-500">Sign Up</button>
+        <button class="text-blue-500">Login</button>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <input type="text" placeholder="Name" class="border p-2">
+        <input type="text" placeholder="Last Name" class="border p-2">
+        <input type="text" placeholder="Phone" class="border p-2">
+        <input type="text" placeholder="E-mail" class="border p-2">
+        <input type="password" placeholder="Password" class="border p-2">
+        <input type="password" placeholder="Confirm Password" class="border p-2">
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="terms" class="mr-2">
+        <label for="terms" class="text-gray-700">I agree to Terms and Conditions</label>
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Sign Up</button>
+    </div>
+
+    <!-- Product Section -->
+    <div class="mb-8">
+      <img src="https://placehold.co/300x200" class="w-full h-56 object-cover mb-4">
+      <p class="text-gray-700 text-2xl font-semibold mb-2">$24.99</p>
+      <p class="text-gray-700 text-xl mb-4">Product Title</p>
+      <hr class="mb-4">
+      <div class="mb-4">
+        <p class="text-gray-700 font-semibold mb-2">Check items:</p>
+        <div class="flex items-center mb-2">
+          <input type="checkbox" id="item1" class="mr-2" checked>
+          <label for="item1">Check item 1</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="checkbox" id="item2" class="mr-2">
+          <label for="item2">Check item 2</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="checkbox" id="item3" class="mr-2">
+          <label for="item3">Check item 3</label>
+        </div>
+      </div>
+      <button class="bg-green-500 text-white py-2 px-4 rounded w-full">Buy Now</button>
+    </div>
+
+    <!-- Shipping Information Section -->
+    <div>
+      <h2 class="text-gray-700 text-xl font-semibold mb-4">Shipping Info</h2>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <input type="text" placeholder="First Name" class="border p-2">
+        <input type="text" placeholder="Last Name" class="border p-2">
+        <input type="text" placeholder="Phone" class="border p-2">
+        <input type="text" placeholder="E-mail" class="border p-2">
+        <input type="text" placeholder="Country" class="border p-2">
+        <input type="text" placeholder="State" class="border p-2">
+        <input type="text" placeholder="City" class="border p-2">
+        <input type="text" placeholder="Zip Code" class="border p-2">
+      </div>
+      <div class="flex justify-between">
+        <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Next Step</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+  <div class="max-w-3xl mx-auto bg-white p-5 rounded shadow">
+    <!-- Payment Method Section -->
+    <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block mb-2">
+          <input type="radio" name="paymentMethod" class="mr-2"> Credit Card
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="paymentMethod" class="mr-2"> PayPal
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="paymentMethod" class="mr-2"> Bank Transfer
+        </label>
+      </div>
+
+      <!-- Card Information Section -->
+      <h2 class="text-xl font-bold mb-4">Enter your data</h2>
+      <div class="mb-4">
+        <label class="block mb-2">Card Number</label>
+        <input type="text" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4 flex space-x-4">
+        <div class="flex-1">
+          <label class="block mb-2">Expiration Date</label>
+          <input type="text" placeholder="MM/YY" class="w-full p-2 border rounded">
+        </div>
+        <div class="flex-1">
+          <label class="block mb-2">CVV</label>
+          <input type="text" class="w-full p-2 border rounded">
+        </div>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Complete</button>
+    </form>
+  </div>
+
+  <div class="max-w-3xl mx-auto bg-white p-5 rounded shadow mt-5">
+    <!-- Additional Information Section -->
+    <h2 class="text-xl font-bold mb-4">Mobility Solutions & Daily Living Aids</h2>
+    <p class="mb-4">Making life easier</p>
+    <button class="bg-blue-500 text-white py-2 px-4 rounded mb-4">Find out more</button>
+
+    <!-- Links Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+      <div>
+        <h3 class="mb-2 font-semibold">Wheelchair Repair</h3>
+        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Find out more</button>
+      </div>
+      <div>
+        <h3 class="mb-2 font-semibold">Community Contacts</h3>
+        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Find out more</button>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="mb-4">
+      <img src="https://placehold.co/400x200" alt="Placeholder Image" class="w-full h-auto rounded">
+      <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded mt-2">Find out more</button>
+    </div>
+  </div>
+
+  <div class="max-w-3xl mx-auto bg-white p-5 rounded shadow mt-5">
+    <!-- Shipping Information Section -->
+    <h2 class="text-xl font-bold mb-4">Shipping Info</h2>
+    <form>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mb-4">
+          <label class="block mb-2">First Name</label>
+          <input type="text" class="w-full p-2 border rounded">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">Last Name</label>
+          <input type="text" class="w-full p-2 border rounded">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mb-4">
+          <label class="block mb-2">Phone</label>
+          <input type="text" class="w-full p-2 border rounded">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">E-mail</label>
+          <input type="email" class="w-full p-2 border rounded">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mb-4">
+          <label class="block mb-2">Country</label>
+          <select class="w-full p-2 border rounded">
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">State</label>
+          <select class="w-full p-2 border rounded">
+            <option>Choose</option>
+            <option>State 1</option>
+            <option>State 2</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mb-4">
+          <label class="block mb-2">City</label>
+          <input type="text" class="w-full p-2 border rounded">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">Zip Code</label>
+          <input type="text" class="w-full p-2 border rounded">
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <button type="button" class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Next Step</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

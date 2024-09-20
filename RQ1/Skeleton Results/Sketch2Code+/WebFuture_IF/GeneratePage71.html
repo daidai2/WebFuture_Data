@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-6xl mx-auto bg-white p-4 rounded shadow-lg">
+
+    <!-- Team Members Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Team Members</h2>
+      <div class="flex mb-4">
+        <img src="https://placehold.co/100x100" alt="Team Member 1" class="w-24 h-24 rounded">
+        <div class="ml-4">
+          <p class="font-bold">Mate One</p>
+          <p class="text-gray-600">Job Title</p>
+        </div>
+      </div>
+      <div class="flex mb-4">
+        <div class="mr-4">
+          <p class="font-bold">Mate Two</p>
+          <p class="text-gray-600">Job Title</p>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Team Member 2" class="w-24 h-24 rounded">
+      </div>
+      <div class="flex">
+        <img src="https://placehold.co/100x100" alt="Team Member 3" class="w-24 h-24 rounded">
+        <div class="ml-4">
+          <p class="font-bold">Mate Three</p>
+          <p class="text-gray-600">Job Title</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Checkout</h2>
+      <form class="mb-4">
+        <h3 class="text-xl font-semibold mb-2">Shipping Address</h3>
+        <div class="mb-2">
+          <label for="first-name" class="block">First Name</label>
+          <input type="text" id="first-name" class="border p-2 w-full">
+        </div>
+        <div class="mb-2">
+          <label for="last-name" class="block">Last Name</label>
+          <input type="text" id="last-name" class="border p-2 w-full">
+        </div>
+        <div class="mb-2">
+          <label for="company" class="block">Company</label>
+          <input type="text" id="company" class="border p-2 w-full">
+        </div>
+      </form>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Shipping Service</h3>
+        <div class="mb-2">
+          <input type="radio" id="standard" name="shipping" class="mr-2">
+          <label for="standard">Standard - 14 days - $6.99</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="expedited" name="shipping" class="mr-2">
+          <label for="expedited">Expedited - 7 days - $14.99</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="express" name="shipping" class="mr-2">
+          <label for="express">Express - 3 days - $19.99</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section>
+      <div class="flex justify-between mb-4">
+        <h2 class="text-2xl font-bold">Product Catalog</h2>
+        <div class="flex">
+          <input type="text" placeholder="Search" class="border p-2">
+          <button class="ml-2 bg-blue-500 text-white p-2 rounded">Search</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="border p-4 text-center">
+          <img src="https://placehold.co/100x100" alt="Product 1" class="w-full h-32 object-cover mb-2">
+          <p class="font-bold">Product 1</p>
+          <p class="text-gray-600 mb-2">$20.00</p>
+          <button class="bg-blue-500 text-white p-2 rounded">Add to Cart</button>
+        </div>
+        <div class="border p-4 text-center">
+          <img src="https://placehold.co/100x100" alt="Product 2" class="w-full h-32 object-cover mb-2">
+          <p class="font-bold">Product 2</p>
+          <p class="text-gray-600 mb-2">$10.00</p>
+          <button class="bg-blue-500 text-white p-2 rounded">Add to Cart</button>
+        </div>
+        <div class="border p-4 text-center">
+          <img src="https://placehold.co/100x100" alt="Product 3" class="w-full h-32 object-cover mb-2">
+          <p class="font-bold">Product 3</p>
+          <p class="text-gray-600 mb-2">$40.00</p>
+          <button class="bg-blue-500 text-white p-2 rounded">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

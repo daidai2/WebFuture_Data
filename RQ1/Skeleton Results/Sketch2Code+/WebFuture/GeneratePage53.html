@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Product Page</title>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <header class="bg-white p-4 mb-6 flex items-center justify-between shadow">
+    <img src="https://placehold.co/60x60" alt="Logo" class="h-16 w-16">
+    <nav class="flex-1 text-right">
+      <a href="#" class="text-gray-600 mx-2">Home</a>
+      <a href="#" class="text-gray-600 mx-2">About</a>
+      <a href="#" class="text-gray-600 mx-2">Contact</a>
+    </nav>
+    <div class="w-20 flex justify-center">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Back</button>
+    </div>
+  </header>
+
+  <section class="main-content mb-6">
+    <div class="basic-info mb-6 flex items-center">
+      <input type="checkbox" id="remember" name="remember" class="mr-2">
+      <label for="remember" class="text-gray-600">Remember Me</label>
+    </div>
+
+    <section class="product-page flex justify-between mb-6">
+      <div class="product-image w-1/2">
+        <img src="https://placehold.co/300x300" alt="Product Image">
+      </div>
+      <div class="product-details w-1/2">
+        <h2 class="text-2xl font-bold mb-4">Product Name</h2>
+        <p class="text-gray-600 mb-4">Manufacturer</p>
+        <div class="product-options mb-4">
+          <label class="block mb-2">Colors:</label>
+          <input type="radio" id="red" name="color" value="red" class="mr-1">
+          <label for="red" class="mr-4">Red</label>
+          <input type="radio" id="blue" name="color" value="blue" class="mr-1">
+          <label for="blue" class="mr-4">Blue</label>
+          <input type="radio" id="white" name="color" value="white" class="mr-1">
+          <label for="white">White</label>
+        </div>
+        <div class="mb-4">
+          <p class="text-gray-600">Price: <span class="line-through">$400</span> <span>$200</span></p>
+        </div>
+        <button class="bg-green-500 text-white py-2 px-4 rounded">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="shipping-info bg-white p-6 shadow">
+      <h3 class="text-xl font-bold mb-4">Shipping Information</h3>
+      <form class="shipping-form">
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <input type="text" name="first_name" placeholder="First Name" class="border p-2 rounded">
+          <input type="text" name="last_name" placeholder="Last Name" class="border p-2 rounded">
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <input type="text" name="phone" placeholder="Phone" class="border p-2 rounded">
+          <input type="email" name="email" placeholder="E-mail" class="border p-2 rounded">
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <select name="country" class="border p-2 rounded">
+            <option>United States</option>
+          </select>
+          <select name="state" class="border p-2 rounded">
+            <option>California</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <input type="text" name="city" placeholder="City" class="border p-2 rounded">
+          <input type="text" name="zip_code" placeholder="Zip Code" class="border p-2 rounded">
+        </div>
+        <div class="flex justify-between">
+          <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+          <button class="bg-blue-500 text-white py-2 px-4 rounded">Next Step</button>
+        </div>
+      </form>
+    </section>
+  </section>
+
+  <footer class="bg-white p-4 mt-6 shadow">
+    <!-- Footer content here -->
+  </footer>
+
+</body>
+</html>

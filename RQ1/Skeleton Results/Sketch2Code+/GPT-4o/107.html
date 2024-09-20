@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Fidelity Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .video, .content, .form {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        .header h1, .header p, .content h2, .content p, .form label {
+            margin: 10px 0;
+        }
+        .post {
+            display: flex;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .post img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .form input, .form select {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .form input[type="radio"], .form input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Title</h1>
+            <p>Title Page</p>
+        </div>
+        <div class="video">
+            <p>Video Placeholder</p>
+        </div>
+        <div class="content">
+            <div class="post">
+                <img src="placeholder.jpg" alt="Post Image">
+                <div>
+                    <h2>Title</h2>
+                    <p>Title Post</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="placeholder.jpg" alt="Post Image">
+                <div>
+                    <h2>Title</h2>
+                    <p>Title Post</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="placeholder.jpg" alt="Post Image">
+                <div>
+                    <h2>Title</h2>
+                    <p>Title Post</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="placeholder.jpg" alt="Post Image">
+                <div>
+                    <h2>Title</h2>
+                    <p>Title Post</p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <label>Forma de envío</label>
+            <label><input type="radio" name="transport" value="terrestre"> Terrestre</label>
+            <label><input type="radio" name="transport" value="aereo"> Aereo</label>
+            <label><input type="radio" name="transport" value="maritimo"> Marítimo</label>
+            
+            <label>Forma de pago</label>
+            <label><input type="radio" name="payment" value="tarjeta"> Tarjeta (Crédito/débito)</label>
+            <label><input type="radio" name="payment" value="transferencia"> Transferencia bancaria</label>
+            <label><input type="radio" name="payment" value="metalico"> Metálico</label>
+            
+            <label>Dirección</label>
+            <input type="text" name="direccion">
+            
+            <label>País</label>
+            <select name="pais">
+                <option value="pais1">País 1</option>
+                <option value="pais2">País 2</option>
+                <option value="pais3">País 3</option>
+            </select>
+            
+            <button type="submit">Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>

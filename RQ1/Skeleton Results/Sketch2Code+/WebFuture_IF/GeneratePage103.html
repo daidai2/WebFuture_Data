@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Header Section -->
+  <header class="bg-white py-4 shadow">
+    <div class="container mx-auto">
+      <h1 class="text-2xl font-bold">Product Page</h1>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="container mx-auto p-4 mt-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Product Details -->
+      <div class="product-details bg-white p-4 shadow rounded">
+        <img src="https://placehold.co/300x300" alt="Product Image" class="w-full h-auto mb-4">
+        <div class="product-info">
+          <h2 class="text-xl font-semibold">Product Name</h2>
+          <p class="text-gray-600">Manufacturer</p>
+          <form class="my-4">
+            <label class="block">
+              <input type="radio" name="color" value="red" class="mr-2"> Red
+            </label>
+            <label class="block">
+              <input type="radio" name="color" value="blue" class="mr-2"> Blue
+            </label>
+            <label class="block">
+              <input type="radio" name="color" value="white" class="mr-2"> White
+            </label>
+          </form>
+          <div class="price-info my-4">
+            <p class="text-xl font-bold">$100</p>
+            <p class="line-through text-gray-500">$200</p>
+          </div>
+          <button class="bg-blue-500 text-white py-2 px-4 rounded">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <div class="related-products bg-white p-4 shadow rounded">
+        <h3 class="text-xl font-semibold mb-4">Related Products</h3>
+        <div class="grid grid-cols-4 gap-2">
+          <img src="https://placehold.co/100x100" alt="Variant 1" class="w-full h-auto">
+          <img src="https://placehold.co/100x100" alt="Variant 2" class="w-full h-auto">
+          <img src="https://placehold.co/100x100" alt="Variant 3" class="w-full h-auto">
+          <img src="https://placehold.co/100x100" alt="Variant 4" class="w-full h-auto">
+        </div>
+      </div>
+    </div>
+
+    <!-- Mates Section -->
+    <section class="my-8">
+      <div class="bg-white p-4 shadow rounded mb-4">
+        <img src="https://placehold.co/100x100" alt="Mate One" class="w-24 h-24 rounded-full mb-2">
+        <h3 class="text-lg font-semibold">Mate One</h3>
+        <p>Job Title</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded mb-4">
+        <img src="https://placehold.co/100x100" alt="Mate Two" class="w-24 h-24 rounded-full mb-2">
+        <h3 class="text-lg font-semibold">Mate Two</h3>
+        <p>Job Title</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img src="https://placehold.co/100x100" alt="Mate Three" class="w-24 h-24 rounded-full mb-2">
+        <h3 class="text-lg font-semibold">Mate Three</h3>
+        <p>Job Title</p>
+      </div>
+    </section>
+
+    <!-- Shipping Info Section -->
+    <section class="bg-white p-4 shadow rounded">
+      <h2 class="text-2xl font-semibold mb-4">Shipping Info</h2>
+      <form class="grid grid-cols-2 gap-4">
+        <input type="text" name="first-name" placeholder="First Name" class="border p-2 rounded">
+        <input type="text" name="last-name" placeholder="Last Name" class="border p-2 rounded">
+        <input type="tel" name="phone" placeholder="Phone" class="border p-2 rounded">
+        <input type="email" name="email" placeholder="E-mail" class="border p-2 rounded">
+        <select name="country" class="border p-2 rounded">
+          <option>United States</option>
+        </select>
+        <select name="state" class="border p-2 rounded">
+          <option>Choose</option>
+        </select>
+        <select name="city" class="border p-2 rounded">
+          <option>Palo Alto</option>
+        </select>
+        <input type="text" name="zip-code" placeholder="Zip Code" class="border p-2 rounded col-span-2">
+        <div class="col-span-2 flex justify-between">
+          <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+          <button class="bg-blue-500 text-white py-2 px-4 rounded">Next Step</button>
+        </div>
+      </form>
+    </section>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+    <p>&copy; 2023 Product Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>

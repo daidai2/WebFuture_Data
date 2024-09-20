@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <section class="max-w-4xl mx-auto bg-white shadow-md rounded-md p-6">
+    <!-- Header Section -->
+    <header class="flex items-center justify-between mb-6">
+      <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24">
+      <div>
+        <h2 class="text-2xl font-bold">Product Name</h2>
+        <p class="text-xl text-gray-500">$24.9</p>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <span class="text-yellow-500">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+          <span class="ml-2 text-gray-600">45 reviews</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Review Section -->
+    <section class="mb-6">
+      <div class="mb-4">
+        <h3 class="text-xl font-semibold">Rate Product</h3>
+        <!-- Star Rating Div -->
+        <div class="flex items-center">
+          <span class="text-yellow-500">&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+          <span class="ml-2 text-gray-600">3.0</span>
+        </div>
+      </div>
+      <form class="space-y-4">
+        <input type="text" placeholder="Headline" class="w-full p-2 border border-gray-300 rounded-md">
+        <textarea placeholder="Review" class="w-full p-2 border border-gray-300 rounded-md h-24"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+      </form>
+    </section>
+
+    <!-- Product Details Section -->
+    <article class="text-center mb-6">
+      <img src="https://placehold.co/300x300" alt="Product Image" class="mx-auto mb-4">
+      <p class="text-xl text-gray-600 mb-2">$24.9</p>
+      <h1 class="text-3xl font-bold">Product Title</h1>
+      <hr class="my-4">
+    </article>
+
+    <!-- Checklist Section -->
+    <aside class="mb-6">
+      <p class="text-lg font-semibold mb-2">Check items:</p>
+      <div class="flex flex-col space-y-2">
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Check Item 1
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Check Item 2
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Check Item 3
+        </label>
+      </div>
+      <button class="bg-green-500 text-white px-4 py-2 mt-4 rounded-md w-full">Buy Now</button>
+    </aside>
+
+    <!-- Additional Elements Section -->
+    <section class="mt-8">
+      <div class="flex justify-between items-start mb-6">
+        <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24">
+        <input type="text" placeholder="Additional Input" class="p-2 border border-gray-300 rounded-md">
+      </div>
+      <div class="space-y-4">
+        <div class="flex flex-col space-y-2">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox Text Item
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="radioGroup" class="mr-2"> Radio Button Text Item 1
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="radioGroup" class="mr-2"> Radio Button Text Item 2
+          </label>
+        </div>
+        <div class="flex space-x-2">
+          <button class="bg-gray-500 text-white px-4 py-2 rounded-md">Back</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Next</button>
+          <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Button</button>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px 0;
+            display: flex;
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1 -->
+        <div class="section">
+            <h1>Mobility Solutions & Daily Living Aids</h1>
+            <p>Making life easier</p>
+            <a href="#" class="button">Find out More</a>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <div class="card">
+                <div>
+                    <h2>Wheelchair Repair</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat.</p>
+                    <a href="#" class="button">Find out More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2>Community Contracts</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat.</p>
+                    <a href="#" class="button">Find out More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <div class="card">
+                <img src="placeholder.png" alt="Mate One">
+                <div>
+                    <h3>Mate One</h3>
+                    <p>Job Title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="placeholder.png" alt="Mate Two">
+                <div>
+                    <h3>Mate Two</h3>
+                    <p>Job Title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="placeholder.png" alt="Mate Three">
+                <div>
+                    <h3>Mate Three</h3>
+                    <p>Job Title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section">
+            <form>
+                <div class="form-group">
+                    <label>Forma de envío</label>
+                    <input type="radio" name="envio" value="terrestre"> Terrestre
+                    <input type="radio" name="envio" value="aereo"> Aereo
+                    <input type="radio" name="envio" value="maritimo"> Marítimo
+                </div>
+                <div class="form-group">
+                    <label>Forma de pago</label>
+                    <input type="radio" name="pago" value="tarjeta"> Tarjeta (Crédito/Débito)
+                    <input type="radio" name="pago" value="transferencia"> Transferencia bancaria
+                    <input type="radio" name="pago" value="metalico"> Metálico
+                </div>
+                <div class="form-group">
+                    <label>Dirección</label>
+                    <input type="text" name="direccion">
+                </div>
+                <div class="form-group">
+                    <label>País</label>
+                    <select name="pais">
+                        <option value="país1">País 1</option>
+                        <option value="país2">País 2</option>
+                        <option value="país3">País 3</option>
+                    </select>
+                </div>
+                <button type="submit" class="button">Aceptar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

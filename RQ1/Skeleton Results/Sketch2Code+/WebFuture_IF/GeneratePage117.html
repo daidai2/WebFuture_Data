@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Header -->
+  <header class="text-2xl font-bold mb-6">Product Page</header>
+
+  <!-- Main Section -->
+  <section class="flex space-x-8">
+    <!-- Product Images -->
+    <div class="product-images space-y-4">
+      <img src="https://placehold.co/300x300" alt="Main product image" class="main-image w-72 h-72 border">
+      <div class="gallery flex space-x-2">
+        <img src="https://placehold.co/75x75" alt="Thumbnail" class="w-16 h-16 border">
+        <img src="https://placehold.co/75x75" alt="Thumbnail" class="w-16 h-16 border">
+        <img src="https://placehold.co/75x75" alt="Thumbnail" class="w-16 h-16 border">
+        <img src="https://placehold.co/75x75" alt="Thumbnail" class="w-16 h-16 border">
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details space-y-4">
+      <div>
+        <span class="product-name block text-xl font-semibold">Product Name</span>
+        <span class="manufacturer text-gray-500">Manufacturer</span>
+      </div>
+      <div class="color-options">
+        <span class="block mb-2 font-semibold">Color</span>
+        <label><input type="radio" name="color" value="red"> Red</label><br>
+        <label><input type="radio" name="color" value="blue"> Blue</label><br>
+        <label><input type="radio" name="color" value="white"> White</label>
+      </div>
+      <div class="price">
+        <span class="text-xl font-semibold">Price: $100</span><br>
+        <span class="text-gray-500 line-through">$200</span>
+      </div>
+      <button class="add-to-cart bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Teammates Section -->
+  <section class="teammates mt-10 space-y-6">
+    <article class="teammate flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Teammate image" class="teammate-image w-24 h-24 border">
+      <div>
+        <span class="teammate-name block font-semibold">Mate One</span>
+        <span class="teammate-title text-gray-500">Job Title</span>
+      </div>
+    </article>
+    <article class="teammate flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Teammate image" class="teammate-image w-24 h-24 border">
+      <div>
+        <span class="teammate-name block font-semibold">Mate Two</span>
+        <span class="teammate-title text-gray-500">Job Title</span>
+      </div>
+    </article>
+    <article class="teammate flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Teammate image" class="teammate-image w-24 h-24 border">
+      <div>
+        <span class="teammate-name block font-semibold">Mate Three</span>
+        <span class="teammate-title text-gray-500">Job Title</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- Form Section -->
+  <form class="mt-10 space-y-4">
+    <label for="title" class="block font-semibold">Title</label>
+    <input type="text" id="title" name="title" class="w-full p-2 border rounded">
+
+    <fieldset class="mt-4">
+      <legend class="font-semibold">Radio Buttons</legend>
+      <label class="block"><input type="radio" name="relevance" value="notRelevant"> Not Relevant</label>
+      <label class="block"><input type="radio" name="relevance" value="low"> Low</label>
+      <label class="block"><input type="radio" name="relevance" value="medium"> Medium</label>
+      <label class="block"><input type="radio" name="relevance" value="high"> High</label>
+    </fieldset>
+
+    <fieldset class="mt-4">
+      <legend class="font-semibold">Check Boxes</legend>
+      <label class="block"><input type="checkbox" name="choice1"> Choice 1</label>
+      <label class="block"><input type="checkbox" name="choice2"> Choice 2</label>
+      <label class="block"><input type="checkbox" name="choice3"> Choice 3</label>
+      <label class="block"><input type="checkbox" name="choice4"> Choice 4</label>
+      <label class="block"><input type="checkbox" name="choice5"> Choice 5</label>
+      <label class="block"><input type="checkbox" name="choice6"> Choice 6</label>
+      <label class="block"><input type="checkbox" name="choice7"> Choice 7</label>
+      <label class="block"><input type="checkbox" name="choice8"> Choice 8</label>
+    </fieldset>
+
+    <div class="space-x-4">
+      <button type="button" id="ok" class="bg-green-500 text-white px-4 py-2 rounded">OK</button>
+      <button type="button" id="cancel" class="bg-red-500 text-white px-4 py-2 rounded">Cancel</button>
+    </div>
+  </form>
+
+  <!-- Footer (Not explicitly in wireframe but generally a good practice) -->
+  <footer class="mt-10 text-gray-600">
+    <p>Contact Information | Privacy Policy</p>
+  </footer>
+</body>
+</html>

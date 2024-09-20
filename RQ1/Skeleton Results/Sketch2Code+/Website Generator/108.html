@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"], select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .shipping-service {
+            margin-top: 20px;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .rate-product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .stars {
+            display: flex;
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            font-size: 2em;
+            color: lightgray;
+            cursor: pointer;
+        }
+        .stars input:checked ~ label {
+            color: gold;
+        }
+        .stars label:hover, .stars label:hover ~ label {
+            color: gold;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        <form>
+            <h3>Shipping Address</h3>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+            <div class="shipping-service">
+                <h3>Shipping Service</h3>
+                <input type="radio" id="standard" name="shipping" value="standard">
+                <label for="standard">Standard - 14 days - $6.59</label><br>
+                <input type="radio" id="expedited" name="shipping" value="expedited">
+                <label for="expedited">Expedited - 7 days - $1.97</label><br>
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express - 3 days - $19.97</label>
+            </div>
+            <div class="rate-product">
+                <h3>Rate Product</h3>
+                <div class="stars">
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;</label>
+                </div>
+                <label for="headline">Headline</label>
+                <input type="text" id="headline" name="headline">
+                <label for="review">Review</label>
+                <input type="text" id="review" name="review">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Formulario de Envío</h2>
+        <form>
+            <h3>Forma de Envío</h3>
+            <label for="medio-transporte">Medio Transporte</label><br>
+            <input type="radio" id="terrestre" name="medio-transporte" value="terrestre">
+            <label for="terrestre">Terrestre</label><br>
+            <input type="radio" id="aereo" name="medio-transporte" value="aereo">
+            <label for="aereo">Aéreo</label><br>
+            <input type="radio" id="maritimo" name="medio-transporte" value="maritimo">
+            <label for="maritimo">Marítimo</label><br>
+            
+            <h3>Forma de Pago</h3>
+            <input type="radio" id="tarjeta" name="forma-pago" value="tarjeta">
+            <label for="tarjeta">Tarjeta (Crédito/débito)</label><br>
+            <input type="radio" id="transferencia" name="forma-pago" value="transferencia">
+            <label for="transferencia">Transferencia bancaria</label><br>
+            <input type="radio" id="metalico" name="forma-pago" value="metalico">
+            <label for="metalico">Metálico</label><br>
+            
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option value="pais1">País 1</option>
+                <option value="pais2">País 2</option>
+                <option value="pais3">País 3</option>
+            </select>
+            <button type="submit" class="submit-btn">Aceptar</button>
+        </form>
+    </div>
+</body>
+</html>

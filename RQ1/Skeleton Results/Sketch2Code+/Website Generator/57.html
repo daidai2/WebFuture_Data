@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .team-member div {
+            flex: 1;
+        }
+        .checkout-form {
+            max-width: 400px;
+        }
+        .checkout-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .checkout-form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .shipping-options {
+            margin-top: 20px;
+        }
+        .shipping-options label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Team Members Section -->
+    <section id="team">
+        <div class="team-member">
+            <img src="placeholder.jpg" alt="Mate One">
+            <div>
+                <h3>Mate One</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="placeholder.jpg" alt="Mate Two">
+            <div>
+                <h3>Mate Two</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="placeholder.jpg" alt="Mate Three">
+            <div>
+                <h3>Mate Three</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Form Section -->
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <form class="checkout-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <div class="shipping-options">
+                <h3>Shipping Service</h3>
+                <label>
+                    <input type="radio" name="shipping" value="standard" checked> Standard - 14 days - $6.59
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="expedited"> Expedited - 7 days - $12.97
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="express"> Express - 3 days - $19.97
+                </label>
+            </div>
+
+            <h3>Forma de Envío</h3>
+            <label>
+                <input type="radio" name="medio-transporte" value="terrestre" checked> Terrestre
+            </label>
+            <label>
+                <input type="radio" name="medio-transporte" value="aereo"> Aéreo
+            </label>
+            <label>
+                <input type="radio" name="medio-transporte" value="maritimo"> Marítimo
+            </label>
+
+            <h3>Forma de Pago</h3>
+            <label>
+                <input type="radio" name="forma-pago" value="tarjeta" checked> Tarjeta (Crédito/Débito)
+            </label>
+            <label>
+                <input type="radio" name="forma-pago" value="transferencia"> Transferencia Bancaria
+            </label>
+            <label>
+                <input type="radio" name="forma-pago" value="metalico"> Metálico
+            </label>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais">
+
+            <button type="submit">Aceptar</button>
+        </form>
+    </section>
+
+</body>
+</html>

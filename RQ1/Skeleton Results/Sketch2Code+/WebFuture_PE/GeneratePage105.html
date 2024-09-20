@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Page</title>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+
+    <!-- Dropdown Section -->
+    <div class="flex space-x-4 mb-6">
+      <select class="border rounded p-2">
+        <option value="csharp">C Sharp</option>
+        <!-- Add more options as needed -->
+      </select>
+      <button class="border rounded p-2 bg-gray-200">Get Drop Down Here</button>
+    </div>
+
+    <!-- Checkbox Options Section -->
+    <div class="flex space-x-4 mb-6">
+      <div>
+        <input type="checkbox" id="csharp" class="mr-2"><label for="csharp">C#</label>
+      </div>
+      <div>
+        <input type="checkbox" id="java" class="mr-2"><label for="java">Java</label>
+      </div>
+      <div>
+        <input type="checkbox" id="php" class="mr-2"><label for="php">PHP</label>
+      </div>
+      <div>
+        <input type="checkbox" id="vb" class="mr-2"><label for="vb">Visual Basic</label>
+      </div>
+    </div>
+
+    <!-- Large Image Placeholder -->
+    <div class="mb-6">
+      <img src="https://placehold.co/720x240" alt="Placeholder image" class="w-full h-48 object-cover rounded">
+    </div>
+
+    <!-- Form Inputs Section -->
+    <div class="mb-6">
+      <input type="text" placeholder="Field 1" class="w-full mb-2 border p-2 rounded">
+      <input type="text" placeholder="Field 2" class="w-full mb-2 border p-2 rounded">
+      <input type="text" placeholder="Field 3" class="w-full mb-2 border p-2 rounded">
+      <input type="text" placeholder="Field 4" class="w-full mb-2 border p-2 rounded">
+    </div>
+
+    <!-- Small Buttons -->
+    <div class="mb-6">
+      <input type="text" placeholder="Small Field 1" class="w-full mb-2 border p-2 rounded">
+      <input type="text" placeholder="Small Field 2" class="w-full mb-2 border p-2 rounded">
+      <button class="border rounded p-2 bg-gray-200 w-full">Go</button>
+    </div>
+
+    <!-- More Checkbox Options Section -->
+    <div class="flex flex-col space-y-2 mb-6">
+      <div>
+        <input type="checkbox" id="option1" class="mr-2"><label for="option1">Option 1</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option2" class="mr-2"><label for="option2">Option 2</label>
+      </div>
+      <div>
+        <input type="radio" name="radio-group" id="radio1" class="mr-2"><label for="radio1">Radio 1</label>
+      </div>
+      <div>
+        <input type="radio" name="radio-group" id="radio2" class="mr-2"><label for="radio2">Radio 2</label>
+      </div>
+    </div>
+
+    <!-- Shipping Info Section -->
+    <div class="bg-gray-200 p-4 rounded-lg">
+      <h2 class="mb-4 font-bold text-lg">Shipping Info</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" placeholder="First Name" class="border p-2 rounded">
+        <input type="text" placeholder="Last Name" class="border p-2 rounded">
+        <input type="text" placeholder="Phone" class="border p-2 rounded">
+        <input type="email" placeholder="E-mail" class="border p-2 rounded">
+        <select class="border p-2 rounded">
+          <option>United States</option>
+          <!-- Add more country options as needed -->
+        </select>
+        <select class="border p-2 rounded">
+          <option>Choose</option>
+          <!-- Add more state options as needed -->
+        </select>
+        <input type="text" placeholder="City" class="border p-2 rounded">
+        <input type="text" placeholder="Zip Code" class="border p-2 rounded">
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="flex justify-between mt-4">
+        <button class="border rounded p-2 bg-gray-200">Back</button>
+        <button class="border rounded p-2 bg-gray-200">Next Step</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

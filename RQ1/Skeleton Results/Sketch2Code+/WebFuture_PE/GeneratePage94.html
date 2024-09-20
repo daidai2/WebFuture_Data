@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <!-- Review Section -->
+    <div class="border-b pb-6 mb-6">
+      <h2 class="text-lg font-bold mb-4">Write Review</h2>
+      <div class="flex items-center mb-4">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="w-16 h-16 mr-4">
+        <div>
+          <div class="text-xl font-semibold">Product Name</div>
+          <div class="text-gray-600">$ Price</div>
+        </div>
+        <div class="ml-auto text-right">
+          <div class="text-yellow-500">★★★★☆</div>
+          <div class="text-gray-600">45 reviews</div>
+        </div>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">Rate Product</h3>
+      <div class="flex items-center mb-4">
+        <div class="text-yellow-500">★★★★★</div>
+        <div class="ml-2 text-gray-600">Bad :(</div>
+      </div>
+      <input type="text" placeholder="Headline" class="w-full p-2 border rounded mb-4">
+      <textarea placeholder="Review" class="w-full p-2 border rounded mb-4"></textarea>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+    </div>
+
+    <!-- Images & Content Section -->
+    <div class="grid grid-cols-2 gap-4">
+      <img src="https://placehold.co/200x200" alt="Image 1" class="w-full h-full object-cover rounded">
+      <img src="https://placehold.co/200x200" alt="Image 2" class="w-full h-full object-cover rounded">
+      <div class="col-span-2 space-y-4">
+        <div class="w-full h-24 bg-gray-200 rounded"></div>
+        <img src="https://placehold.co/200x200" alt="Image 3" class="w-full h-full object-cover rounded">
+        <div class="w-full h-16 bg-gray-200 rounded"></div>
+      </div>
+    </div>
+    <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">btn</button>
+  </div>
+
+  <!-- Form Section -->
+  <div class="mt-6 max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <img src="https://placehold.co/300x300" alt="Large Image" class="w-full h-64 object-cover rounded mb-4">
+    <input type="text" placeholder="Label" class="w-full p-2 border rounded mb-4">
+    <input type="text" placeholder="Label" class="w-full p-2 border rounded mb-4">
+    <div class="mb-4">
+      <label class="block mb-2">Checkboxes</label>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Choice1</label>
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" class="mr-2">
+        <label>Choice2</label>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block mb-2">Radios</label>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="radios" class="mr-2">
+        <label>Radiobutton</label>
+      </div>
+      <div class="flex items-center">
+        <input type="radio" name="radios" class="mr-2">
+        <label>Radiobutton</label>
+      </div>
+    </div>
+    <button class="bg-blue-500 text-white py-2 px-4 rounded mb-4">Button</button>
+    <img src="https://placehold.co/200x200" alt="Small Image" class="w-full h-32 object-cover rounded">
+  </div>
+</body>
+
+</html>

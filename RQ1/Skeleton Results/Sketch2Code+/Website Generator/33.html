@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0;
+        }
+        header a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .services, .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service, .team-member {
+            flex: 1 1 45%;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .form-group {
+            flex: 1 1 45%;
+            margin: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group input[type="radio"], .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobility Solutions & Daily Living Aids</h1>
+        <p>Making Life Easier</p>
+        <a href="#">Find out More</a>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Wheelchair Repair</h3>
+                    <a href="#">Find out More</a>
+                </div>
+                <div class="service">
+                    <h3>Community Contracts</h3>
+                    <a href="#">Find out More</a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Meet the Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="path/to/image" alt="Mate One">
+                    <h3>Mate One</h3>
+                    <p>Job Title</p>
+                </div>
+                <div class="team-member">
+                    <img src="path/to/image" alt="Mate Two">
+                    <h3>Mate Two</h3>
+                    <p>Job Title</p>
+                </div>
+                <div class="team-member">
+                    <img src="path/to/image" alt="Mate Three">
+                    <h3>Mate Three</h3>
+                    <p>Job Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Contact Us</h2>
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Options</label>
+                    <input type="radio" id="option1" name="option" value="1"><label for="option1">Radio 1</label>
+                    <input type="radio" id="option2" name="option" value="2"><label for="option2">Radio 2</label>
+                    <input type="radio" id="option3" name="option" value="3"><label for="option3">Radio 3</label>
+                    <input type="radio" id="option4" name="option" value="4"><label for="option4">Radio 4</label>
+                </div>
+                <div class="form-group">
+                    <label>Preferences</label>
+                    <input type="checkbox" id="preference1" name="preference1"><label for="preference1">Checkbox 1</label>
+                    <input type="checkbox" id="preference2" name="preference2"><label for="preference2">Checkbox 2</label>
+                    <input type="checkbox" id="preference3" name="preference3"><label for="preference3">Checkbox 3</label>
+                    <input type="checkbox" id="preference4" name="preference4"><label for="preference4">Checkbox 4</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

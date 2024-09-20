@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header, .footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .login-form, .main-content, .form-elements {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000;
+        }
+        .login-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .login-form button {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .main-content .post, .main-content .video {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .form-elements input[type="text"], .form-elements input[type="checkbox"], .form-elements input[type="radio"], .form-elements button {
+            margin: 10px 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+            <a href="#">Sign Up</a>
+        </div>
+        
+        <div class="login-form">
+            <form>
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <label>
+                    <input type="checkbox" name="remember">
+                    Remember me
+                </label>
+                <a href="#">Forgot Password</a>
+                <button type="submit">LOGIN</button>
+            </form>
+        </div>
+        
+        <div class="main-content">
+            <div class="post">
+                <h2>Title Page</h2>
+                <p>Content goes here...</p>
+            </div>
+            <div class="video">
+                <h2>Title</h2>
+                <button>Play Video</button>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <p>Title Post</p>
+            </div>
+        </div>
+        
+        <div class="form-elements">
+            <label for="text1">Label</label>
+            <input type="text" id="text1" name="text1">
+            <label for="text2">Label</label>
+            <input type="text" id="text2" name="text2">
+            <label>
+                <input type="checkbox" name="checkbox1">
+                Checkbox
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox2">
+                Checkbox
+            </label>
+            <label>
+                <input type="radio" name="radio" value="1">
+                Radio Button
+            </label>
+            <label>
+                <input type="radio" name="radio" value="2">
+                Radio Button
+            </label>
+            <button>Button</button>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 Wireframe Example</p>
+        </div>
+    </div>
+
+</body>
+</html>

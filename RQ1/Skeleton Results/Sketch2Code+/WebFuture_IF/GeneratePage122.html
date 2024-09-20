@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+  <div id="main-container" class="max-w-4xl mx-auto bg-white p-4 shadow-md">
+    <!-- Header Section -->
+    <header class="mb-6">
+      <h1 class="text-2xl font-bold mb-4">Checkout</h1>
+    </header>
+
+    <!-- Shipping Address Section -->
+    <section id="shipping-address" class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+      <form>
+        <div class="grid grid-cols-1 gap-4">
+          <div>
+            <label for="first-name" class="block mb-2">First Name</label>
+            <input type="text" id="first-name" class="w-full border border-gray-300 p-2 rounded">
+          </div>
+          <div>
+            <label for="last-name" class="block mb-2">Last Name</label>
+            <input type="text" id="last-name" class="w-full border border-gray-300 p-2 rounded">
+          </div>
+          <div>
+            <label for="company" class="block mb-2">Company</label>
+            <input type="text" id="company" class="w-full border border-gray-300 p-2 rounded">
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section id="shipping-service" class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+      <form>
+        <div class="space-y-4">
+          <div class="flex items-center">
+            <input type="radio" name="shipping" id="standard" class="mr-2">
+            <label for="standard" class="flex-1">Standard</label>
+            <span>14 days - $6.99</span>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" name="shipping" id="expedited" class="mr-2">
+            <label for="expedited" class="flex-1">Expedited</label>
+            <span>7 days - $14.99</span>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" name="shipping" id="express" class="mr-2">
+            <label for="express" class="flex-1">Express</label>
+            <span>3 days - $19.99</span>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Product Review Section -->
+    <section id="product-review" class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Write Review</h2>
+      <div class="flex items-center mb-4">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="mr-4">
+        <div>
+          <span class="block font-semibold">Product Name</span>
+          <span class="block text-gray-600">$Price</span>
+          <span class="block text-yellow-400">★★★★★ 45 reviews</span>
+        </div>
+      </div>
+      <form>
+        <!-- Rating Section -->
+        <div class="flex items-center mb-6">
+          <div class="flex space-x-2 mr-4">
+            <span class="text-yellow-400">★</span>
+            <span class="text-gray-400">★</span>
+            <span class="text-gray-400">★</span>
+            <span class="text-gray-400">★</span>
+            <span class="text-gray-400">★</span>
+          </div>
+          <label for="rating" class="text-gray-500">Bad :(</label>
+        </div>
+        <!-- Headline -->
+        <div class="mb-4">
+          <label for="headline" class="block mb-2">Headline</label>
+          <input type="text" id="headline" class="w-full border border-gray-300 p-2 rounded">
+        </div>
+        <!-- Review -->
+        <div class="mb-4">
+          <label for="review" class="block mb-2">Review</label>
+          <textarea id="review" rows="4" class="w-full border border-gray-300 p-2 rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer: Product Catalog Section -->
+    <footer class="p-4 border-t border-gray-300">
+      <section id="product-catalog">
+        <h2 class="text-xl font-semibold mb-4">Product Catalog</h2>
+        <div id="search-bar" class="flex items-center mb-6">
+          <input type="text" id="search" class="w-full border border-gray-300 p-2 rounded" placeholder="Search">
+          <button id="search-button" class="ml-4 bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+        </div>
+        <!-- Product Items -->
+        <div class="grid grid-cols-3 gap-4">
+          <div class="product-item text-center p-4 border border-gray-300 rounded shadow">
+            <img src="https://placehold.co/150x150" alt="Product 1 Image" class="mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Product 1</h3>
+            <span class="block text-gray-600 mb-2">$20.00</span>
+            <button class="add-to-cart bg-green-500 text-white px-4 py-2 rounded">Add to Cart</button>
+          </div>
+          <div class="product-item text-center p-4 border border-gray-300 rounded shadow">
+            <img src="https://placehold.co/150x150" alt="Product 2 Image" class="mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+            <span class="block text-gray-600 mb-2">$10.00</span>
+            <button class="add-to-cart bg-green-500 text-white px-4 py-2 rounded">Add to Cart</button>
+          </div>
+          <div class="product-item text-center p-4 border border-gray-300 rounded shadow">
+            <img src="https://placehold.co/150x150" alt="Product 3 Image" class="mx-auto mb-4">
+            <h3 class="text-lg font-semibold mb-2">Product 3</h3>
+            <span class="block text-gray-600 mb-2">$40.00</span>
+            <button class="add-to-cart bg-green-500 text-white px-4 py-2 rounded">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

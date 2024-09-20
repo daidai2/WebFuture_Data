@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .payment-method, .card-info, .shipping-info, .services {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .services .service-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .services .service-item img {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .services .service-item div {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Select your payment method</h2>
+    <div class="payment-method">
+        <div class="form-group">
+            <label><input type="radio" name="payment" value="credit-card" checked> Credit Card</label>
+            <label><input type="radio" name="payment" value="paypal"> Paypal</label>
+            <label><input type="radio" name="payment" value="bank-transfer"> Bank Transfer</label>
+        </div>
+    </div>
+
+    <h2>Enter your data</h2>
+    <div class="card-info">
+        <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number">
+        </div>
+        <div class="form-group">
+            <label for="expiration-date">Expiration Date</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM / YY">
+        </div>
+        <div class="form-group">
+            <label for="ccv">CCV</label>
+            <input type="text" id="ccv" name="ccv">
+        </div>
+        <button class="button">Complete</button>
+    </div>
+
+    <h2>Mobility Solutions & Daily Living Aids</h2>
+    <div class="services">
+        <div class="service-item">
+            <div>
+                <h3>Wheelchair Repair</h3>
+                <a class="button" href="#">Find out More</a>
+            </div>
+        </div>
+        <div class="service-item">
+            <div>
+                <h3>Community Contracts</h3>
+                <a class="button" href="#">Find out More</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Shipping Info</h2>
+    <div class="shipping-info">
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="United States">United States</option>
+                <!-- Add other countries as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="state">State</label>
+            <select id="state" name="state">
+                <option value="Choose">Choose</option>
+                <!-- Add other states as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+        </div>
+        <div class="form-group">
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" name="zip-code">
+        </div>
+        <div class="form-group">
+            <button class="button">Back</button>
+            <button class="button">Next Step</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

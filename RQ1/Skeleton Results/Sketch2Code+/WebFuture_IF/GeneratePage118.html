@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Implementation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Top Header Section -->
+  <header class="flex justify-between items-center bg-white p-6 shadow-md">
+    <div class="flex space-x-4">
+      <a href="#" class="text-blue-600">Login</a>
+      <a href="#" class="text-blue-600">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Login Form Section -->
+  <section class="bg-white p-6 shadow-md mt-6">
+    <form class="space-y-4">
+      <div class="flex flex-col">
+        <label for="login" class="text-lg">Login</label>
+        <input type="text" id="login" class="p-2 border border-gray-300 rounded" placeholder="Enter your login">
+      </div>
+      <div class="flex flex-col">
+        <label for="password" class="text-lg">Password</label>
+        <input type="password" id="password" class="p-2 border border-gray-300 rounded" placeholder="Enter your password">
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" id="rememberMe" class="mr-2">
+        <label for="rememberMe" class="text-lg">Remember me</label>
+      </div>
+      <div>
+        <a href="#" class="text-blue-600">Forgot Password</a>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded">LOGIN</button>
+    </form>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="bg-white p-6 shadow-md mt-6">
+    <div class="flex">
+      <img src="https://placehold.co/200x200" alt="Placeholder Image" class="mr-4">
+      <div class="space-y-2">
+        <p>Some text content here.</p>
+        <p>More text content here.</p>
+        <p>Even more text content here.</p>
+      </div>
+    </div>
+    <button class="bg-blue-600 text-white py-2 px-4 mt-4 rounded">BACK</button>
+    <div class="flex items-center mt-4">
+      <input type="checkbox" id="extraCheckbox" class="mr-2">
+      <label for="extraCheckbox" class="text-lg">Checkbox</label>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="bg-white p-6 shadow-md mt-6 space-y-4">
+    <div class="flex flex-col">
+      <label for="title" class="text-lg">Title</label>
+      <input type="text" id="title" class="p-2 border border-gray-300 rounded" placeholder="Enter title">
+    </div>
+
+    <fieldset class="space-y-2">
+      <legend class="text-lg">Radio Buttons</legend>
+      <div>
+        <input type="radio" id="notRelevant" name="relevance" value="Not relevant" class="mr-2">
+        <label for="notRelevant">Not relevant</label>
+      </div>
+      <div>
+        <input type="radio" id="low" name="relevance" value="Low" class="mr-2">
+        <label for="low">Low</label>
+      </div>
+      <div>
+        <input type="radio" id="medium" name="relevance" value="Medium" class="mr-2">
+        <label for="medium">Medium</label>
+      </div>
+      <div>
+        <input type="radio" id="high" name="relevance" value="High" class="mr-2">
+        <label for="high">High</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="space-y-2">
+      <legend class="text-lg">Check Boxes</legend>
+      <div class="flex flex-wrap gap-4">
+        <div>
+          <input type="checkbox" id="choice1" class="mr-2">
+          <label for="choice1">Choice 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice2" class="mr-2">
+          <label for="choice2">Choice 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice3" class="mr-2">
+          <label for="choice3">Choice 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice4" class="mr-2">
+          <label for="choice4">Choice 4</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice5" class="mr-2">
+          <label for="choice5">Choice 5</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice6" class="mr-2">
+          <label for="choice6">Choice 6</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice7" class="mr-2">
+          <label for="choice7">Choice 7</label>
+        </div>
+        <div>
+          <input type="checkbox" id="choice8" class="mr-2">
+          <label for="choice8">Choice 8</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="flex space-x-4">
+      <button class="bg-blue-600 text-white py-2 px-4 rounded">OK</button>
+      <button class="bg-gray-600 text-white py-2 px-4 rounded">Cancel</button>
+    </div>
+  </section>
+
+</body>
+</html>

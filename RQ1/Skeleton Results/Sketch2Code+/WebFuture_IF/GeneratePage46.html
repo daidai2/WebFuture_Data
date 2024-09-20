@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- Top-Level Container -->
+  <div class="container mx-auto bg-white p-6 shadow-lg">
+
+    <!-- Header Section -->
+    <header class="mb-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24">
+        <div>
+          <h1 class="text-xl font-bold">Product Name</h1>
+          <p class="text-gray-600">$ Price</p>
+          <div class="flex items-center space-x-2">
+            <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-600">(15 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Product Rating Section -->
+    <section class="mb-6">
+      <h2 class="text-lg font-semibold">Rate Product</h2>
+      <div class="flex items-center space-x-2">
+        <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+        <p class="text-gray-600">5.0</p>
+      </div>
+    </section>
+
+    <!-- Review Submission Section -->
+    <section class="mb-6">
+      <h2 class="text-lg font-semibold">Write Review</h2>
+      <div class="mb-4">
+        <input type="text" placeholder="Headline" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <textarea placeholder="Review" class="w-full p-2 border border-gray-300 rounded"></textarea>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+    </section>
+
+    <!-- Product Display Section -->
+    <section class="mb-6">
+      <img src="https://placehold.co/500x300" alt="Large Product Image" class="w-full h-64 object-cover mb-4">
+      <p class="text-2xl font-bold">$24.9</p>
+      <h2 class="text-xl font-semibold">Product Title</h2>
+    </section>
+
+    <!-- Checklist Section -->
+    <section class="mb-6">
+      <h2 class="text-lg font-semibold">Check items:</h2>
+      <ul>
+        <li><input type="checkbox" id="item1" class="mr-2"><label for="item1">Check Item 1</label></li>
+        <li><input type="checkbox" id="item2" class="mr-2"><label for="item2">Check Item 2</label></li>
+        <li><input type="checkbox" id="item3" class="mr-2"><label for="item3">Check Item 3</label></li>
+      </ul>
+    </section>
+
+    <!-- Purchase Button Section -->
+    <div class="mb-6">
+      <button class="bg-green-500 text-white px-4 py-2 w-full rounded">Buy Now</button>
+    </div>
+
+    <!-- Form Section -->
+    <section>
+      <div class="flex mb-6">
+        <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 mr-4">
+        <p class="flex-1">Additional information text goes here.</p>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Label</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Label</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Choose options</label>
+        <div>
+          <input type="checkbox" id="option1" class="mr-2"><label for="option1">Option 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="option2" class="mr-2"><label for="option2">Option 2</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Choose one</label>
+        <div>
+          <input type="radio" id="radio1" name="option" class="mr-2"><label for="radio1">Radio Option 1</label>
+        </div>
+        <div>
+          <input type="radio" id="radio2" name="option" class="mr-2"><label for="radio2">Radio Option 2</label>
+        </div>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+      <div class="mt-6">
+        <img src="https://placehold.co/100x100" alt="Small Placeholder Image" class="w-24 h-24">
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

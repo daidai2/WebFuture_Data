@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Checkout</title>
+</head>
+
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold">Checkout</h1>
+    </header>
+
+    <!-- Shipping Address Section -->
+    <section id="shipping-address" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Shipping Address</h2>
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full md:w-1/2 px-2 mb-4">
+          <label class="block mb-2">First Name</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div class="w-full md:w-1/2 px-2 mb-4">
+          <label class="block mb-2">Last Name</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div class="w-full px-2 mb-4">
+          <label class="block mb-2">Company</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+      </div>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section id="shipping-service" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Shipping Service</h2>
+      <div class="mb-4">
+        <input type="radio" name="shipping" class="mr-2"> <span>Standard - 14 days - $6.99</span>
+      </div>
+      <div class="mb-4">
+        <input type="radio" name="shipping" class="mr-2"> <span>Expedited - 7 days - $11.77</span>
+      </div>
+      <div class="mb-4">
+        <input type="radio" name="shipping" class="mr-2"> <span>Express - 3 days - $19.77</span>
+      </div>
+    </section>
+
+    <!-- Write Review Section -->
+    <section id="write-review" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Write Review</h2>
+      <div class="flex mb-4">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24 bg-gray-300">
+        <div class="ml-4">
+          <p>Product Name</p>
+          <p>$Price</p>
+          <p>★★★★★ - 45 Reviews</p>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <p class="font-bold mb-2">Rate Product</p>
+        <div class="flex items-center">
+          <span class="mr-2">★★★★★</span>
+          <span class="ml-2">Bad :(</span>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2">Headline</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Review</label>
+        <textarea class="w-full p-2 border border-gray-300 rounded"></textarea>
+      </div>
+      <button class="p-2 bg-blue-500 text-white rounded">Submit</button>
+    </section>
+
+    <!-- Product Information Section -->
+    <section id="product-info" class="mb-8">
+      <img src="https://placehold.co/600x300" alt="Product Large Image" class="w-full h-auto mb-4">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </section>
+
+    <!-- Additional Form Elements Section -->
+    <form id="additional-info" class="mb-8">
+      <div class="mb-4">
+        <label class="block mb-2">Label</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Label</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <button class="p-2 bg-blue-500 text-white rounded mb-4">Button</button>
+    </form>
+
+    <div class="mb-8">
+      <img src="https://placehold.co/100x100" alt="Additional Image" class="w-24 h-24 bg-gray-300">
+      <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, nemo nammolestiae, nisi quas commodi totam voluptas commodi ratione suscipit illum molestiae nihil, natus natus.</p>
+    </div>
+
+    <div class="mb-4">
+      <label class="block mb-2 font-bold">Radio Options</label>
+      <div class="mb-2">
+        <input type="radio" name="radio" class="mr-2"> <span>Radio 1</span>
+      </div>
+      <div class="mb-2">
+        <input type="radio" name="radio" class="mr-2"> <span>Radio 2</span>
+      </div>
+      <div class="mb-2">
+        <input type="radio" name="radio" class="mr-2"> <span>Radio 3</span>
+      </div>
+      <div class="mb-2">
+        <input type="radio" name="radio" class="mr-2"> <span>Radio 4</span>
+      </div>
+    </div>
+
+    <div>
+      <label class="block mb-2 font-bold">Checkbox Options</label>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2"> <span>Checkbox 1</span>
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2"> <span>Checkbox 2</span>
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2"> <span>Checkbox 3</span>
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2"> <span>Checkbox 4</span>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="mt-8 text-gray-600">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.</p>
+      <p>Donec scelerisque lacus non nulla varius, nec finibus massa varius. Vestibulum feugiat, leo et vehicula viverra, elit augue placerat nisl, et tempus mi orci sit amet purus.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

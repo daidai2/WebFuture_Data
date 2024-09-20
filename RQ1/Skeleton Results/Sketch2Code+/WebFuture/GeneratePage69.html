@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between">
+      <h1 class="text-3xl font-bold">Title</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Link 1</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Link 2</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Link 3</a>
+      </nav>
+    </div>
+    <div class="container mx-auto">
+      <h2 class="text-xl">Title Page</h2>
+      <p>Description text or introduction text.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto mt-6 p-4">
+
+    <!-- Video Section -->
+    <section class="flex justify-end mb-6">
+      <video controls class="w-1/2">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Article Section -->
+    <section class="grid grid-cols-2 gap-4 mb-6">
+      <article class="bg-white p-4 shadow">
+        <img src="https://placehold.co/150" alt="Thumbnail Image">
+        <h2 class="text-xl font-bold mt-2">Title</h2>
+        <p>Title Post</p>
+      </article>
+      <article class="bg-white p-4 shadow">
+        <img src="https://placehold.co/150" alt="Thumbnail Image">
+        <h2 class="text-xl font-bold mt-2">Title</h2>
+        <p>Title Post</p>
+      </article>
+      <article class="bg-white p-4 shadow">
+        <img src="https://placehold.co/150" alt="Thumbnail Image">
+        <h2 class="text-xl font-bold mt-2">Title</h2>
+        <p>Title Post</p>
+      </article>
+      <article class="bg-white p-4 shadow">
+        <img src="https://placehold.co/150" alt="Thumbnail Image">
+        <h2 class="text-xl font-bold mt-2">Title</h2>
+        <p>Title Post</p>
+      </article>
+    </section>
+
+    <!-- Large Banner Image -->
+    <section class="mb-6">
+      <img class="w-full" src="https://placehold.co/1366x624" alt="Banner Image">
+    </section>
+
+    <!-- Text Section -->
+    <section class="mb-6">
+      <p>Multiple lines of text content go here.</p>
+      <p>Additional text content goes here.</p>
+      <p>More text content goes here.</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="mb-6">
+      <label for="titleInput" class="block text-sm">Title</label>
+      <input id="titleInput" type="text" class="w-full p-2 border border-gray-300 rounded mb-4">
+
+      <div class="mb-2">
+        <label class="block mb-1">Radio Buttons</label>
+        <div class="flex space-x-4">
+          <label><input type="radio" name="relevance" value="0" class="mr-2">Not relevant</label>
+          <label><input type="radio" name="relevance" value="1" class="mr-2">Low</label>
+          <label><input type="radio" name="relevance" value="2" class="mr-2">Medium</label>
+          <label><input type="radio" name="relevance" value="3" class="mr-2">High</label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1">Check Boxes</label>
+        <div class="grid grid-cols-2 gap-2">
+          <label><input type="checkbox" value="1" class="mr-2">Choice 1</label>
+          <label><input type="checkbox" value="2" class="mr-2">Choice 2</label>
+          <label><input type="checkbox" value="3" class="mr-2">Choice 3</label>
+          <label><input type="checkbox" value="4" class="mr-2">Choice 4</label>
+          <label><input type="checkbox" value="5" class="mr-2">Choice 5</label>
+          <label><input type="checkbox" value="6" class="mr-2">Choice 6</label>
+          <label><input type="checkbox" value="7" class="mr-2">Choice 7</label>
+          <label><input type="checkbox" value="8" class="mr-2">Choice 8</label>
+        </div>
+      </div>
+
+      <div class="space-x-4">
+        <button class="p-2 bg-blue-500 text-white rounded">OK</button>
+        <button class="p-2 bg-gray-500 text-white rounded">Cancel</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow p-4 mt-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Company Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

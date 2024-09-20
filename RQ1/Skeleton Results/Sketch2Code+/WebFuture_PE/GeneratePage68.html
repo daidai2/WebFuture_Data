@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+  <div class="max-w-xl mx-auto bg-white p-6 shadow-lg rounded-lg">
+    <h2 class="text-lg font-bold mb-4">Select your payment method</h2>
+    <form action="#">
+      <div class="mb-4">
+        <input type="radio" id="credit-card" name="payment-method" class="mr-2" checked>
+        <label for="credit-card" class="mr-4">Credit Card</label>
+        <input type="radio" id="paypal" name="payment-method" class="mr-2">
+        <label for="paypal" class="mr-4">Paypal</label>
+        <input type="radio" id="bank-transfer" name="payment-method" class="mr-2">
+        <label for="bank-transfer">Bank Transfer</label>
+      </div>
+      <h2 class="text-lg font-bold mb-4">Enter your data</h2>
+      <div class="mb-4">
+        <label for="card-number" class="block mb-2">Card Number</label>
+        <input type="text" id="card-number" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label for="expiration-date" class="block mb-2">Expiration date</label>
+        <div class="flex space-x-4">
+          <input type="text" id="expiration-month" class="w-1/3 p-2 border border-gray-300 rounded" placeholder="MM">
+          <span class="self-center">/</span>
+          <input type="text" id="expiration-year" class="w-1/3 p-2 border border-gray-300 rounded" placeholder="YY">
+          <input type="text" id="ccv" class="w-1/3 p-2 border border-gray-300 rounded" placeholder="CCV">
+        </div>
+      </div>
+      <div class="mb-6">
+        <button type="submit" class="w-full p-2 bg-blue-600 text-white font-bold rounded">Complete</button>
+      </div>
+    </form>
+    <h2 class="text-lg font-bold mb-4">Mobility Solutions & Daily Living Aids</h2>
+    <p class="mb-4">Making Life Easier</p>
+    <div class="mb-4">
+      <button class="w-full p-2 bg-blue-600 text-white font-bold rounded">Find out More</button>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <div>
+        <h3 class="text-lg font-bold mb-2">Wheelchair Repair</h3>
+        <button class="w-full p-2 bg-blue-600 text-white font-bold rounded">Find out More</button>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-2">Community Contracts</h3>
+        <button class="w-full p-2 bg-blue-600 text-white font-bold rounded">Find out More</button>
+      </div>
+    </div>
+    <div class="mb-6">
+      <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full mb-4">
+      <button class="w-full p-2 bg-blue-600 text-white font-bold rounded">Find out More</button>
+    </div>
+    <h3 class="text-lg font-bold mb-4">Title</h3>
+    <div class="mb-4">
+      <input type="text" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+    <h3 class="text-lg font-bold mb-4">Radio Buttons</h3>
+    <div class="mb-4">
+      <input type="radio" id="radio-not-relevant" name="relevance" class="mr-2">
+      <label for="radio-not-relevant" class="mr-4">Not relevant</label>
+      <input type="radio" id="radio-low" name="relevance" class="mr-2">
+      <label for="radio-low" class="mr-4">Low</label>
+      <input type="radio" id="radio-medium" name="relevance" class="mr-2">
+      <label for="radio-medium" class="mr-4">Medium</label>
+      <input type="radio" id="radio-high" name="relevance" class="mr-2">
+      <label for="radio-high">High</label>
+    </div>
+    <h3 class="text-lg font-bold mb-4">CheckBoxes</h3>
+    <div class="mb-6">
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2" checked>
+        <span>Choice 1</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2" checked>
+        <span>Choice 2</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <span>Choice 3</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <span>Choice 4</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2" checked>
+        <span>Choice 5</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2" checked>
+        <span>Choice 6</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <span>Choice 7</span>
+      </label>
+      <label class="flex items-center mb-6">
+        <input type="checkbox" class="mr-2">
+        <span>Choice 8</span>
+      </label>
+    </div>
+    <div class="flex space-x-4">
+      <button class="w-full p-2 bg-blue-600 text-white font-bold rounded">OK</button>
+      <button class="w-full p-2 bg-gray-400 text-white font-bold rounded">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>

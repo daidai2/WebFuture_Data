@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-blue-500 text-white p-4">
+    <div class="container mx-auto flex justify-between">
+      <div>
+        <a href="#" class="mr-4">Sign Up</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sign Up Form Section -->
+  <section class="bg-white p-6 mt-4 shadow-md rounded-lg max-w-xl mx-auto">
+    <form id="sign-up-form">
+      <div class="mb-4">
+        <label for="first-name" class="block text-gray-700">Name</label>
+        <input type="text" id="first-name" class="border rounded w-full py-2 px-3 mt-1">
+      </div>
+      <div class="mb-4">
+        <label for="last-name" class="block text-gray-700">Last Name</label>
+        <input type="text" id="last-name" class="border rounded w-full py-2 px-3 mt-1">
+      </div>
+      <div class="mb-4">
+        <label for="phone" class="block text-gray-700">Phone</label>
+        <input type="text" id="phone" class="border rounded w-full py-2 px-3 mt-1">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700">E-mail</label>
+        <input type="email" id="email" class="border rounded w-full py-2 px-3 mt-1">
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700">Password</label>
+        <input type="password" id="password" class="border rounded w-full py-2 px-3 mt-1">
+      </div>
+      <div class="mb-4">
+        <label for="confirm-password" class="block text-gray-700">Confirm Password</label>
+        <input type="password" id="confirm-password" class="border rounded w-full py-2 px-3 mt-1">
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="checkbox" id="terms" class="mr-2">
+        <label for="terms" class="text-gray-700">I agree to Terms and Conditions</label>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product-info" class="bg-white p-6 mt-6 shadow-md rounded-lg max-w-xl mx-auto">
+    <div id="product-details" class="text-center">
+      <img src="https://placehold.co/150x150" alt="Product Image" class="mx-auto mb-4">
+      <span class="text-gray-900 text-xl font-bold">$24.99</span>
+      <h2 class="text-gray-900 text-lg font-medium mt-2">Product Title</h2>
+      <hr class="my-4">
+    </div>
+
+    <div id="product-actions" class="text-center">
+      <p>Check items:</p>
+      <div class="flex flex-col items-start">
+        <label class="inline-flex items-center mt-2">
+          <input type="checkbox" checked class="form-checkbox text-blue-600">
+          <span class="ml-2">Check item 1</span>
+        </label>
+        <label class="inline-flex items-center mt-2">
+          <input type="checkbox" class="form-checkbox text-blue-600">
+          <span class="ml-2">Check item 2</span>
+        </label>
+        <label class="inline-flex items-center mt-2">
+          <input type="checkbox" class="form-checkbox text-blue-600">
+          <span class="ml-2">Check item 3</span>
+        </label>
+      </div>
+      <button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Shipping and Payment Section -->
+  <section id="shipping-payment" class="bg-white p-6 mt-6 shadow-md rounded-lg max-w-xl mx-auto">
+    <div id="shipping-details" class="mb-6">
+      <p class="font-medium mb-2">Forma de envío</p>
+      <label class="block mb-2">
+        <input type="radio" name="shipping" value="postal" class="mr-2">
+        Postal
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="shipping" value="courier" class="mr-2">
+        Courier
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="shipping" value="pickup" class="mr-2">
+        Pickup
+      </label>
+    </div>
+
+    <div id="payment-methods" class="mb-6">
+      <p class="font-medium mb-2">Forma de pago</p>
+      <label class="block mb-2">
+        <input type="radio" name="payment" value="credit-card" class="mr-2">
+        Tarjeta (Crédito/Débito)
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="payment" value="bank-transfer" class="mr-2">
+        Transferencia bancaria
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="payment" value="cash" class="mr-2">
+        Metálico
+      </label>
+      <div class="mt-4">
+        <label for="address" class="block text-gray-700">Dirección</label>
+        <input type="text" id="address" class="border rounded w-full py-2 px-3 mt-1">
+      </div>
+      <div class="mt-4">
+        <label for="country" class="block text-gray-700">País</label>
+        <select id="country" class="border rounded w-full py-2 px-3 mt-1">
+          <option value="country-1">Country 1</option>
+          <option value="country-2">Country 2</option>
+          <option value="country-3">Country 3</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="confirm-order" class="text-center">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+    </div>
+  </section>
+
+</body>
+</html>

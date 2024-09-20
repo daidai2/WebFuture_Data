@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Checkout</h1>
+
+    <!-- Shipping Address Section -->
+    <section class="mb-6">
+      <h2 class="text-xl mb-4">Shipping Address</h2>
+      <div class="mb-4">
+        <label for="first-name" class="block text-gray-700">First Name</label>
+        <input type="text" id="first-name" class="w-full px-3 py-2 border rounded-lg" placeholder="John">
+      </div>
+      <div class="mb-4">
+        <label for="last-name" class="block text-gray-700">Last Name</label>
+        <input type="text" id="last-name" class="w-full px-3 py-2 border rounded-lg" placeholder="Doe">
+      </div>
+      <div class="mb-4">
+        <label for="company" class="block text-gray-700">Company</label>
+        <input type="text" id="company" class="w-full px-3 py-2 border rounded-lg" placeholder="Company Name">
+      </div>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section class="mb-6">
+      <h2 class="text-xl mb-4">Shipping Service</h2>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="shipping-service" value="standard" class="mr-2">
+          Standard (14 days - $6.59)
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="shipping-service" value="expedited" class="mr-2">
+          Expedited (7 days - $1.97)
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="shipping-service" value="express" class="mr-2">
+          Express (3 days - $19.97)
+        </label>
+      </div>
+    </section>
+
+    <!-- Dropdown and Checkboxes Section -->
+    <section class="mb-6">
+      <div class="mb-4 flex justify-between">
+        <select class="w-1/2 px-3 py-2 border rounded-lg mr-2">
+          <option>C Sharp</option>
+          <option>Java</option>
+          <option>PHP</option>
+          <option>Visual Basic</option>
+        </select>
+        <select class="w-1/2 px-3 py-2 border rounded-lg">
+          <option>Get Drop Down Here</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </div>
+      <div class="flex flex-wrap -mx-2">
+        <label class="w-1/4 px-2 text-gray-700">
+          <input type="checkbox" class="mr-2"> C#
+        </label>
+        <label class="w-1/4 px-2 text-gray-700">
+          <input type="checkbox" class="mr-2"> Java
+        </label>
+        <label class="w-1/4 px-2 text-gray-700">
+          <input type="checkbox" class="mr-2"> PHP
+        </label>
+        <label class="w-1/4 px-2 text-gray-700">
+          <input type="checkbox" class="mr-2"> Visual Basic
+        </label>
+      </div>
+    </section>
+
+    <!-- Forma de envío Section -->
+    <section class="mb-6">
+      <h2 class="text-xl mb-4">Forma de envío</h2>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="transporte" value="terrestre" class="mr-2">
+          Terrestre
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="transporte" value="aereo" class="mr-2">
+          Aereo
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="transporte" value="maritimo" class="mr-2">
+          Marítimo
+        </label>
+      </div>
+    </section>
+
+    <!-- Forma de pago Section -->
+    <section class="mb-6">
+      <h2 class="text-xl mb-4">Forma de pago</h2>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="pago" value="tarjeta" class="mr-2">
+          Tarjeta (Crédito/Débito)
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="pago" value="transferencia" class="mr-2">
+          Transferencia bancaria
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="block text-gray-700">
+          <input type="radio" name="pago" value="metalico" class="mr-2">
+          Metálico
+        </label>
+      </div>
+    </section>
+
+    <!-- Address and Country Dropdown -->
+    <div class="mb-4">
+      <label for="direccion" class="block text-gray-700">Dirección</label>
+      <input type="text" id="direccion" class="w-full px-3 py-2 border rounded-lg" placeholder="Dirección">
+    </div>
+    <div class="mb-4">
+      <label for="pais" class="block text-gray-700">País</label>
+      <select id="pais" class="w-full px-3 py-2 border rounded-lg">
+        <option value="">Seleccione un país</option>
+        <option value="us">United States</option>
+        <option value="es">España</option>
+        <option value="mx">México</option>
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Aceptar</button>
+    </div>
+  </div>
+</body>
+</html>

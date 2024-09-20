@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+  <div class="max-w-screen-lg mx-auto bg-white p-10 shadow-lg rounded-md">
+    <h1 class="text-2xl font-bold mb-5">Product Page</h1>
+
+    <div class="flex mb-10">
+      <div class="flex-1">
+        <img src="https://placehold.co/300x300" alt="Product Image" class="w-64 h-64 object-cover mb-5">
+        <div class="flex space-x-2">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12 object-cover">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12 object-cover">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12 object-cover">
+          <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-12 h-12 object-cover">
+        </div>
+      </div>
+
+      <div class="flex-1 ml-10">
+        <h2 class="text-xl font-bold">Product Name</h2>
+        <p class="mb-4">Manufacturer</p>
+
+        <p class="font-semibold mb-2">Color</p>
+        <div class="mb-4">
+          <label class="inline-flex items-center">
+            <input type="radio" name="color" class="form-radio" checked>
+            <span class="ml-2">Red</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" name="color" class="form-radio">
+            <span class="ml-2">Blue</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" name="color" class="form-radio">
+            <span class="ml-2">White</span>
+          </label>
+        </div>
+
+        <p class="mb-4">Price: <span class="text-green-500 font-bold">$100</span> <span class="line-through text-gray-500">$200</span></p>
+
+        <button class="bg-blue-500 text-white py-2 px-4 rounded shadow hover:bg-blue-600">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+      <div class="flex">
+        <img src="https://placehold.co/100x100" alt="Mate One" class="w-24 h-24 object-cover mr-4">
+        <div>
+          <h3 class="font-bold">Mate One</h3>
+          <p class="mb-2">Job Title</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="flex">
+        <img src="https://placehold.co/100x100" alt="Mate Two" class="w-24 h-24 object-cover mr-4">
+        <div>
+          <h3 class="font-bold">Mate Two</h3>
+          <p class="mb-2">Job Title</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="flex">
+        <img src="https://placehold.co/100x100" alt="Mate Three" class="w-24 h-24 object-cover mr-4">
+        <div>
+          <h3 class="font-bold">Mate Three</h3>
+          <p class="mb-2">Job Title</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-10">
+      <label class="block font-bold mb-2">Title</label>
+      <input type="text" class="w-full p-2 border border-gray-300 rounded-md mb-5">
+
+      <p class="font-semibold mb-2">Radio Buttons</p>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="radio" name="relevance" class="form-radio">
+          <span class="ml-2">Not Relevant</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="relevance" class="form-radio">
+          <span class="ml-2">Low</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="relevance" class="form-radio">
+          <span class="ml-2">Medium</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="relevance" class="form-radio">
+          <span class="ml-2">High</span>
+        </label>
+      </div>
+
+      <p class="font-semibold mb-2">Check Boxes</p>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Choice 1</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="checkbox" class="form-checkbox" checked>
+          <span class="ml-2">Choice 2</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Choice 3</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Choice 4</span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox" checked>
+          <span class="ml-2">Choice 5</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Choice 6</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Choice 7</span>
+        </label>
+        <label class="inline-flex items-center ml-4">
+          <input type="checkbox" class="form-checkbox" checked>
+          <span class="ml-2">Choice 8</span>
+        </label>
+      </div>
+
+      <div class="flex space-x-4">
+        <button class="bg-green-500 text-white py-2 px-4 rounded shadow hover:bg-green-600">OK</button>
+        <button class="bg-red-500 text-white py-2 px-4 rounded shadow hover:bg-red-600">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

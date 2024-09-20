@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Prototype</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- Header Section -->
+  <header class="flex justify-between items-center border-b-2 pb-2 mb-4">
+    <div>
+      <a href="#" class="mr-4 text-blue-500">Login</a>
+      <a href="#" class="text-blue-500">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Login Form Section -->
+  <section class="mb-8">
+    <div class="mb-4">
+      <label for="username" class="block mb-1">Login</label>
+      <input id="username" type="text" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+    <div class="mb-4">
+      <label for="password" class="block mb-1">Password</label>
+      <input id="password" type="password" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+    <div class="flex items-center mb-4">
+      <input id="remember" type="checkbox" class="mr-2">
+      <label for="remember" class="mr-4">Remember me</label>
+      <a href="#" class="text-blue-500">Forgot Password</a>
+    </div>
+    <div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">LOGIN</button>
+    </div>
+  </section>
+
+  <!-- Middle Section: Programming Language Selection -->
+  <section class="mb-8">
+    <div class="flex mb-4">
+      <div class="mr-4">
+        <input id="csharp" type="checkbox" class="mr-2">
+        <label for="csharp">C Sharp</label>
+      </div>
+      <button class="mr-4 bg-gray-200 px-4 py-2 rounded">Get Drop Down Here</button>
+    </div>
+    <div class="flex gap-4">
+      <div>
+        <input id="csharp-alt" type="checkbox" class="mr-2">
+        <label for="csharp-alt">C#</label>
+      </div>
+      <div>
+        <input id="java" type="checkbox" class="mr-2">
+        <label for="java">Java</label>
+      </div>
+      <div>
+        <input id="php" type="checkbox" class="mr-2">
+        <label for="php">PHP</label>
+      </div>
+      <div>
+        <input id="vb" type="checkbox" class="mr-2">
+        <label for="vb">Visual Basic</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Section: Product Catalog -->
+  <main>
+    <section>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl">Product Catalog</h2>
+        <input type="text" placeholder="Search" class="p-2 border border-gray-300 rounded">
+      </div>
+      <div class="grid grid-cols-3 gap-6">
+        <!-- Product 1 -->
+        <article class="border p-4 rounded bg-white">
+          <div class="mb-2">
+            <img src="https://placehold.co/100x100" alt="Product 1 Image" class="w-full h-auto">
+          </div>
+          <div class="mb-2">
+            <h3 class="text-xl">Product 1</h3>
+            <p class="text-gray-500">Product description goes here.</p>
+            <p class="text-green-500">$20.00</p>
+          </div>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+        </article>
+        <!-- Product 2 -->
+        <article class="border p-4 rounded bg-white">
+          <div class="mb-2">
+            <img src="https://placehold.co/100x100" alt="Product 2 Image" class="w-full h-auto">
+          </div>
+          <div class="mb-2">
+            <h3 class="text-xl">Product 2</h3>
+            <p class="text-gray-500">Product description goes here.</p>
+            <p class="text-green-500">$10.00</p>
+          </div>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+        </article>
+        <!-- Product 3 -->
+        <article class="border p-4 rounded bg-white">
+          <div class="mb-2">
+            <img src="https://placehold.co/100x100" alt="Product 3 Image" class="w-full h-auto">
+          </div>
+          <div class="mb-2">
+            <h3 class="text-xl">Product 3</h3>
+            <p class="text-gray-500">Product description goes here.</p>
+            <p class="text-green-500">$40.00</p>
+          </div>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

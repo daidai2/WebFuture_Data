@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center mb-6">
+      <div>
+        <h1 class="text-4xl font-bold">Title</h1>
+        <p class="text-xl">Subtitle Text</p>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x100" alt="Video Thumbnail" class="rounded">
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Section -->
+      <section class="mb-10">
+        <div class="text-center mb-6">
+          <h2 class="text-3xl font-bold">Hero Title</h2>
+          <p class="text-xl">Detailed text describing the hero section</p>
+        </div>
+        <div class="flex justify-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video player"></iframe>
+        </div>
+      </section>
+
+      <!-- Featured Articles Section -->
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-48 object-cover mb-4">
+          <h3 class="font-bold text-xl mb-2">Article Title 1</h3>
+          <p>Text snippet for article 1...</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-48 object-cover mb-4">
+          <h3 class="font-bold text-xl mb-2">Article Title 2</h3>
+          <p>Text snippet for article 2...</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-48 object-cover mb-4">
+          <h3 class="font-bold text-xl mb-2">Article Title 3</h3>
+          <p>Text snippet for article 3...</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-48 object-cover mb-4">
+          <h3 class="font-bold text-xl mb-2">Article Title 4</h3>
+          <p>Text snippet for article 4...</p>
+        </article>
+      </section>
+
+      <!-- Large Image Section -->
+      <section class="mb-10">
+        <img src="https://placehold.co/800x400" alt="Large Image" class="w-full h-auto">
+      </section>
+
+      <!-- Form Section -->
+      <section class="bg-white p-6 rounded shadow mb-10">
+        <form>
+          <!-- Text Inputs -->
+          <div class="mb-4">
+            <label for="input1" class="block mb-2">Label 1</label>
+            <input type="text" id="input1" class="w-full p-2 border rounded">
+          </div>
+          <div class="mb-4">
+            <label for="input2" class="block mb-2">Label 2</label>
+            <input type="text" id="input2" class="w-full p-2 border rounded">
+          </div>
+          <!-- Button -->
+          <div class="flex items-center mb-4">
+            <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Button</button>
+            <!-- Checkboxes -->
+            <div class="ml-4">
+              <label class="inline-flex items-center mb-2">
+                <input type="checkbox" class="form-checkbox">
+                <span class="ml-2">Checkbox 1</span>
+              </label>
+              <br>
+              <label class="inline-flex items-center mb-2">
+                <input type="checkbox" class="form-checkbox">
+                <span class="ml-2">Checkbox 2</span>
+              </label>
+              <br>
+              <label class="inline-flex items-center">
+                <input type="checkbox" class="form-checkbox">
+                <span class="ml-2">Checkbox 3</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Complex Content Section -->
+      <section class="bg-white p-6 rounded shadow mb-10">
+        <!-- Radio Buttons -->
+        <div class="mb-4">
+          <label class="inline-flex items-center mb-2">
+            <input type="radio" name="radioGroup" class="form-radio">
+            <span class="ml-2">Radio 1</span>
+          </label>
+          <br>
+          <label class="inline-flex items-center mb-2">
+            <input type="radio" name="radioGroup" class="form-radio">
+            <span class="ml-2">Radio 2</span>
+          </label>
+          <br>
+          <label class="inline-flex items-center mb-2">
+            <input type="radio" name="radioGroup" class="form-radio">
+            <span class="ml-2">Radio 3</span>
+          </label>
+          <br>
+          <label class="inline-flex items-center">
+            <input type="radio" name="radioGroup" class="form-radio">
+            <span class="ml-2">Radio 4</span>
+          </label>
+        </div>
+
+        <!-- Image with Description -->
+        <div class="text-center">
+          <img src="https://placehold.co/200x150" alt="Centered Image" class="mx-auto mb-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-200 p-4 rounded shadow mt-10">
+      <p class="text-center">© 2023 Placeholder Website. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

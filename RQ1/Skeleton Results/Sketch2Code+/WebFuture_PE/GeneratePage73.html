@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <div class="container mx-auto p-4">
+    <!-- Write Review Section -->
+    <section class="my-8 p-4 bg-white rounded shadow">
+      <h1 class="text-2xl font-bold mb-4">Write Review</h1>
+      <div class="flex items-center mb-4">
+        <img src="https://placehold.co/50x50" alt="Product Image" class="mr-4">
+        <div>
+          <span class="block font-semibold">Product Name</span>
+          <span class="block text-gray-600">$ Price</span>
+        </div>
+      </div>
+      <div class="flex items-center mb-4">
+        <span class="text-yellow-500 mr-2">★★★★★</span>
+        <span class="text-gray-600">45 reviews</span>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1">Rate Product:</label>
+        <div class="flex items-center">
+          <span class="text-yellow-500">★★★★★</span>
+          <span class="ml-4">Bad :(</span>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="headline" class="block mb-1">Headline:</label>
+        <input id="headline" type="text" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4">
+        <label for="review" class="block mb-1">Review:</label>
+        <textarea id="review" rows="4" class="w-full p-2 border rounded"></textarea>
+      </div>
+      <button class="py-2 px-4 bg-blue-500 text-white rounded">SUBMIT</button>
+    </section>
+
+    <!-- Additional Section (Images and Content) -->
+    <section class="my-8 p-4 bg-white rounded shadow">
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <img src="https://placehold.co/100x100" alt="Placeholder Image" class="rounded">
+        <img src="https://placehold.co/100x100" alt="Placeholder Image" class="rounded">
+      </div>
+      <div class="mb-4">
+        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.</p>
+        <img src="https://placehold.co/150x100" alt="Placeholder Image" class="rounded">
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" class="mr-2">
+        <span>Example Checkbox</span>
+      </div>
+      <button class="py-2 px-4 bg-blue-500 text-white rounded">Button</button>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section class="my-8 p-4 bg-white rounded shadow">
+      <h1 class="text-2xl font-bold mb-4">Product Catalog</h1>
+      <div class="flex justify-end mb-4">
+        <input type="text" placeholder="Search" class="p-2 border rounded">
+        <button class="py-2 px-4 bg-gray-200 border-l rounded-r">Search</button>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-gray-100 p-4 rounded">
+          <img src="https://placehold.co/100x100" alt="Product 1" class="mb-4">
+          <h2 class="font-semibold mb-2">Product 1</h2>
+          <p class="text-gray-600 mb-2">$30.00</p>
+          <button class="py-2 px-4 bg-blue-500 text-white rounded w-full">ADD TO CART</button>
+        </div>
+        <div class="bg-gray-100 p-4 rounded">
+          <img src="https://placehold.co/100x100" alt="Product 2" class="mb-4">
+          <h2 class="font-semibold mb-2">Product 2</h2>
+          <p class="text-gray-600 mb-2">$10.00</p>
+          <button class="py-2 px-4 bg-blue-500 text-white rounded w-full">ADD TO CART</button>
+        </div>
+        <div class="bg-gray-100 p-4 rounded">
+          <img src="https://placehold.co/100x100" alt="Product 3" class="mb-4">
+          <h2 class="font-semibold mb-2">Product 3</h2>
+          <p class="text-gray-600 mb-2">$40.00</p>
+          <button class="py-2 px-4 bg-blue-500 text-white rounded w-full">ADD TO CART</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

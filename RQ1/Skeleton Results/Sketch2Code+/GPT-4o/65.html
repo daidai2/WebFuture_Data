@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe to HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header a {
+            text-decoration: none;
+            color: #000;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        form div {
+            flex: 1 1 45%;
+            margin: 5px;
+        }
+        form div.full {
+            flex: 1 1 100%;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .checkbox-group,
+        .radio-group {
+            margin: 15px 0;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#">Sign Up</a>
+            <a href="#">Login</a>
+        </div>
+        <form>
+            <div>
+                <label for="first-name">Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+            <div class="full">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to Terms and Conditions</label>
+            </div>
+            <div class="full">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="product">
+            <div class="image-placeholder" style="width: 100%; height: 150px; background: #ccc; text-align: center; line-height: 150px;">
+                Image
+            </div>
+            <p>$24.9</p>
+            <h2>Product Title</h2>
+        </div>
+        <div class="checkbox-group">
+            <p>Check items:</p>
+            <input type="checkbox" id="item1" name="item1">
+            <label for="item1">Check item 1</label><br>
+            <input type="checkbox" id="item2" name="item2">
+            <label for="item2">Check item 2</label><br>
+            <input type="checkbox" id="item3" name="item3">
+            <label for="item3">Check item 3</label>
+        </div>
+        <button>Buy Now</button>
+        <form>
+            <div class="full">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="radio-group">
+                <p>Radio Buttons:</p>
+                <input type="radio" id="not-relevant" name="relevance" value="not-relevant">
+                <label for="not-relevant">Not relevant</label><br>
+                <input type="radio" id="low" name="relevance" value="low">
+                <label for="low">Low</label><br>
+                <input type="radio" id="medium" name="relevance" value="medium">
+                <label for="medium">Medium</label><br>
+                <input type="radio" id="high" name="relevance" value="high">
+                <label for="high">High</label>
+            </div>
+            <div class="checkbox-group">
+                <p>Check Boxes:</p>
+                <input type="checkbox" id="choice1" name="choice1">
+                <label for="choice1">Choice 1</label><br>
+                <input type="checkbox" id="choice2" name="choice2">
+                <label for="choice2">Choice 2</label><br>
+                <input type="checkbox" id="choice3" name="choice3">
+                <label for="choice3">Choice 3</label><br>
+                <input type="checkbox" id="choice4" name="choice4">
+                <label for="choice4">Choice 4</label><br>
+                <input type="checkbox" id="choice5" name="choice5">
+                <label for="choice5">Choice 5</label><br>
+                <input type="checkbox" id="choice6" name="choice6">
+                <label for="choice6">Choice 6</label><br>
+                <input type="checkbox" id="choice7" name="choice7">
+                <label for="choice7">Choice 7</label><br>
+                <input type="checkbox" id="choice8" name="choice8">
+                <label for="choice8">Choice 8</label>
+            </div>
+            <div class="button-group">
+                <button type="submit">OK</button>
+                <button type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

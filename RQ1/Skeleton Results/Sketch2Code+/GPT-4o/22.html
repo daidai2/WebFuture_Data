@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .checkbox-group label {
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .catalog {
+            margin-top: 40px;
+        }
+        .catalog-item {
+            display: inline-block;
+            width: 30%;
+            margin-right: 3%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .catalog-item img {
+            width: 100%;
+            height: auto;
+        }
+        .catalog-item p {
+            margin: 10px 0;
+        }
+        .catalog-item button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            padding: 8px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+            <label for="first-name">Name</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to Terms and Conditions</label>
+        </div>
+        <div class="button-group">
+            <button type="button">Back</button>
+            <button type="button">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="container catalog">
+        <h2>Product Catalog</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="catalog-item">
+            <img src="placeholder.jpg" alt="Product 1">
+            <p>Product 1</p>
+            <p>$20.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="catalog-item">
+            <img src="placeholder.jpg" alt="Product 2">
+            <p>Product 2</p>
+            <p>$10.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="catalog-item">
+            <img src="placeholder.jpg" alt="Product 3">
+            <p>Product 3</p>
+            <p>$40.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

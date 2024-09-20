@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Example</title>
+</head>
+<body class="bg-gray-100 p-4">
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md flex justify-between items-center">
+    <img src="https://placehold.co/200x100" alt="Logo" class="h-16">
+    <!-- Navigation -->
+    <nav class="flex items-center">
+      <input type="text" placeholder="Search" class="border rounded p-2 mr-2">
+      <button class="bg-blue-500 text-white rounded p-2">Search</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="mt-4">
+    <!-- Payment Form Section -->
+    <section class="bg-white p-4 shadow-md rounded mb-8">
+      <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+      <div class="mb-4">
+        <label class="flex items-center mb-2">
+          <input type="radio" name="payment_method" class="mr-2"> Credit Card
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="payment_method" class="mr-2"> Paypal
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="payment_method" class="mr-2"> Bank Transfer
+        </label>
+      </div>
+
+      <h3 class="text-lg font-bold mb-4">Enter your data</h3>
+      <div class="mb-4">
+        <label class="block mb-2">Card Number</label>
+        <input type="text" class="border rounded p-2 w-full mb-4">
+      </div>
+      <div class="flex mb-4">
+        <div class="flex-1 mr-2">
+          <label class="block mb-2">Expiration Date</label>
+          <input type="text" class="border rounded p-2 w-full">
+        </div>
+        <div class="flex-1 ml-2">
+          <label class="block mb-2">CVV</label>
+          <input type="text" class="border rounded p-2 w-full">
+        </div>
+      </div>
+      <button class="bg-green-500 text-white rounded p-2 w-full">Complete</button>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section class="bg-white p-4 shadow-md rounded">
+      <h2 class="text-xl font-bold mb-4">Product Catalog</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-100 p-4 rounded shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product 1" class="mx-auto mb-2">
+          <p class="font-bold">Product 1</p>
+          <p class="text-gray-700">$30.00</p>
+          <button class="bg-blue-500 text-white rounded p-2 mt-2">Add to Cart</button>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product 2" class="mx-auto mb-2">
+          <p class="font-bold">Product 2</p>
+          <p class="text-gray-700">$10.00</p>
+          <button class="bg-blue-500 text-white rounded p-2 mt-2">Add to Cart</button>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product 3" class="mx-auto mb-2">
+          <p class="font-bold">Product 3</p>
+          <p class="text-gray-700">$40.00</p>
+          <button class="bg-blue-500 text-white rounded p-2 mt-2">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white p-4 mt-8 shadow-md text-center">
+    <p class="text-gray-600">Footer Content Here</p>
+  </footer>
+</body>
+</html>

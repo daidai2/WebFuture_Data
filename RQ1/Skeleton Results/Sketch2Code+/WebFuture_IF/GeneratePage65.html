@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Page</title>
+</head>
+<body class="font-sans bg-gray-100">
+  <header class="bg-white p-4 shadow-md flex justify-between items-center">
+    <a href="#" class="text-blue-500">Sign Up</a>
+    <a href="#" class="text-blue-500">Login</a>
+  </header>
+  <main class="px-4 py-6">
+    <!-- Sign Up Form Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" placeholder="Name" class="border p-2 rounded">
+        <input type="text" placeholder="Last Name" class="border p-2 rounded">
+        <input type="tel" placeholder="Phone" class="border p-2 rounded">
+        <input type="email" placeholder="E-mail" class="border p-2 rounded">
+        <input type="password" placeholder="Password" class="border p-2 rounded">
+        <input type="password" placeholder="Confirm Password" class="border p-2 rounded">
+      </div>
+      <div class="my-4">
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> I agree to Terms and Conditions
+        </label>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
+    </section>
+
+    <!-- Product Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <div class="flex justify-center mb-4">
+        <img src="https://placehold.co/300x200" alt="Product Image" class="w-full max-w-md h-auto">
+      </div>
+      <div class="text-center">
+        <span class="block text-xl font-semibold mb-2">$24.9</span>
+        <h2 class="text-2xl font-semibold">Product Title</h2>
+      </div>
+    </section>
+
+    <!-- Check Items Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h3 class="text-lg font-semibold mb-4">Check items:</h3>
+      <div class="mb-4">
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Check item 1
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Check item 2
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2"> Check item 3
+        </label>
+      </div>
+      <button class="bg-green-500 text-white px-4 py-2 rounded">Buy Now</button>
+    </section>
+
+    <!-- Additional Form Elements -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <div class="mb-4">
+        <input type="text" placeholder="title" class="border p-2 rounded w-full">
+      </div>
+      <div class="mb-4">
+        <span class="block mb-2">Radio Buttons:</span>
+        <label class="flex items-center">
+          <input type="radio" name="preference" value="not-relevant" class="mr-2"> Not relevant
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="preference" value="low" class="mr-2"> Low
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="preference" value="medium" class="mr-2"> Medium
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="preference" value="high" class="mr-2"> High
+        </label>
+      </div>
+      <div>
+        <span class="block mb-2">Check Boxes:</span>
+        <div class="grid grid-cols-4 gap-2">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice1
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice2
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice3
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice4
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice5
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice6
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice7
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> choice8
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <div class="flex justify-end space-x-4 mt-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">OK</button>
+      <button class="bg-gray-300 text-black px-4 py-2 rounded">Cancel</button>
+    </div>
+  </main>
+  <footer class="bg-gray-200 p-4 text-center">
+    <!-- Additional links or information can go here -->
+  </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Webpage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col items-center justify-start py-10">
+    <!-- Login Section -->
+    <div class="w-full max-w-sm bg-white p-6 rounded-lg shadow-md mb-10">
+      <header class="flex justify-between items-center mb-6">
+        <a href="#" class="text-blue-500">Login</a>
+        <a href="#" class="text-blue-500">Sign Up</a>
+      </header>
+      <section>
+        <form class="space-y-4">
+          <div>
+            <label for="username" class="block text-sm font-medium text-gray-700">Login</label>
+            <input type="text" id="username" class="mt-1 block w-full px-3 py-2 bg-white border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring focus:ring-opacity-50">
+          </div>
+          <div>
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" id="password" class="mt-1 block w-full px-3 py-2 bg-white border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring focus:ring-opacity-50">
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input type="checkbox" id="remember_me" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+              <label for="remember_me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+            </div>
+            <div><a href="#" class="text-sm text-blue-600 hover:underline">Forgot Password</a></div>
+          </div>
+          <div>
+            <button type="submit" class="w-full bg-blue-600 text-white text-sm font-medium py-2 px-4 rounded-md">LOGIN</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="w-full max-w-3xl space-y-10">
+      <!-- Dropdown Section -->
+      <div class="flex space-x-10">
+        <div>
+          <label for="language" class="block text-sm font-medium text-gray-700">C Sharp</label>
+          <select id="language" class="mt-1 block w-48 px-3 py-2 bg-white border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-opacity-50">
+            <option selected>C Sharp</option>
+          </select>
+        </div>
+        <div>
+          <label for="dropdown2" class="block text-sm font-medium text-gray-700">Get Drop Down Here</label>
+          <select id="dropdown2" class="mt-1 block w-48 px-3 py-2 bg-white border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-opacity-50">
+            <option selected>Get Drop Down Here</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Checkboxes Section -->
+      <div class="flex space-x-10">
+        <div>
+          <input type="checkbox" id="csharp" class="mr-2">
+          <label for="csharp">C#</label>
+        </div>
+        <div>
+          <input type="checkbox" id="java" class="mr-2">
+          <label for="java">Java</label>
+        </div>
+        <div>
+          <input type="checkbox" id="php" class="mr-2">
+          <label for="php">PHP</label>
+        </div>
+        <div>
+          <input type="checkbox" id="vb" class="mr-2">
+          <label for="vb">Visual Basic</label>
+        </div>
+      </div>
+
+      <!-- Image Placeholder and Input -->
+      <div class="flex space-x-10">
+        <div>
+          <img src="https://placehold.co/150x150" alt="Placeholder Image">
+        </div>
+        <div>
+          <input type="text" class="mt-1 block w-full px-3 py-2 bg-white border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring focus:ring-opacity-50">
+        </div>
+      </div>
+
+      <!-- Horizontal Lines (Placeholder for Text) -->
+      <div>
+        <p class="w-full h-4 bg-gray-200 mb-2"></p>
+        <p class="w-full h-4 bg-gray-200 mb-2"></p>
+        <p class="w-full h-4 bg-gray-200 mb-2"></p>
+      </div>
+
+      <!-- List and Actions Section -->
+      <div class="flex justify-between">
+        <div class="space-y-4">
+          <div>
+            <input type="checkbox" id="option1" class="mr-2" checked>
+            <label for="option1">Checkbox 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="option2" class="mr-2">
+            <label for="option2">Checkbox 2</label>
+          </div>
+          <div>
+            <input type="radio" id="radio1" name="radio" class="mr-2" checked>
+            <label for="radio1">Radio Button 1</label>
+          </div>
+          <div>
+            <input type="radio" id="radio2" name="radio" class="mr-2">
+            <label for="radio2">Radio Button 2</label>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <button class="w-full bg-gray-300 text-black text-sm font-medium py-2 px-4 rounded-md">BACK</button>
+          <button class="w-full bg-gray-300 text-black text-sm font-medium py-2 px-4 rounded-md">Button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

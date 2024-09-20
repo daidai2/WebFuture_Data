@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage from Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .payment-methods, .options {
+            margin-bottom: 10px;
+        }
+        .payment-methods input, .options input {
+            margin-right: 10px;
+        }
+        .card-input {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-input label, .card-input input {
+            margin-bottom: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .info-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .info-section h2 {
+            margin-bottom: 10px;
+        }
+        .info-section .btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .info-columns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .info-columns .column {
+            width: 48%;
+            text-align: center;
+        }
+        .info-columns .column .btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .options label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Select your payment method</h2>
+            <div class="payment-methods">
+                <input type="radio" id="credit-card" name="payment-method" checked>
+                <label for="credit-card">Credit Card</label><br>
+                <input type="radio" id="paypal" name="payment-method">
+                <label for="paypal">Paypal</label><br>
+                <input type="radio" id="bank-transfer" name="payment-method">
+                <label for="bank-transfer">Bank Transfer</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Enter your data</h2>
+            <div class="card-input">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number"><br>
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM / YY"><br>
+                <label for="ccv">CCV</label>
+                <input type="text" id="ccv" name="ccv">
+            </div>
+            <a href="#" class="btn">Complete</a>
+        </div>
+
+        <div class="info-section">
+            <h2>Mobility Solutions & Daily Living Aids</h2>
+            <p>Making life easier</p>
+            <a href="#" class="btn">Find out more</a>
+        </div>
+
+        <div class="info-columns">
+            <div class="column">
+                <h2>Wheelchair Repair</h2>
+                <a href="#" class="btn">Find out more</a>
+            </div>
+            <div class="column">
+                <h2>Community Contracts</h2>
+                <a href="#" class="btn">Find out more</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Title</h2>
+            <div class="options">
+                <div>
+                    <label>Radio Buttons</label><br>
+                    <input type="radio" id="not-relevant" name="relevance" checked>
+                    <label for="not-relevant">Not relevant</label><br>
+                    <input type="radio" id="low" name="relevance">
+                    <label for="low">Low</label><br>
+                    <input type="radio" id="medium" name="relevance">
+                    <label for="medium">Medium</label><br>
+                    <input type="radio" id="high" name="relevance">
+                    <label for="high">High</label>
+                </div>
+                <div>
+                    <label>Check Boxes</label><br>
+                    <input type="checkbox" id="choice1">
+                    <label for="choice1">Choice 1</label>
+                    <input type="checkbox" id="choice2" checked>
+                    <label for="choice2">Choice 2</label>
+                    <input type="checkbox" id="choice3">
+                    <label for="choice3">Choice 3</label>
+                    <input type="checkbox" id="choice4">
+                    <label for="choice4">Choice 4</label><br>
+                    <input type="checkbox" id="choice5" checked>
+                    <label for="choice5">Choice 5</label>
+                    <input type="checkbox" id="choice6">
+                    <label for="choice6">Choice 6</label>
+                    <input type="checkbox" id="choice7">
+                    <label for="choice7">Choice 7</label>
+                    <input type="checkbox" id="choice8" checked>
+                    <label for="choice8">Choice 8</label>
+                </div>
+            </div>
+            <a href="#" class="btn">OK</a>
+            <a href="#" class="btn" style="background-color: #dc3545;">Cancel</a>
+        </div>
+    </div>
+</body>
+</html>

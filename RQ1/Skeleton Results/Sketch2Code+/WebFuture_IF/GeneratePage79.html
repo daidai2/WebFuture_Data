@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header Section -->
+  <header class="bg-white border-b border-gray-200">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div>
+        <a href="#" class="text-blue-700 mr-4">Sign Up</a>
+        <a href="#" class="text-blue-700">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: User Registration Form -->
+  <section class="container mx-auto px-6 py-6">
+    <div class="bg-white p-6 rounded shadow-md">
+      <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Name" class="border p-2" />
+          <input type="text" placeholder="Last Name" class="border p-2" />
+          <input type="text" placeholder="Phone" class="border p-2" />
+          <input type="email" placeholder="E-mail" class="border p-2" />
+          <input type="password" placeholder="Password" class="border p-2" />
+          <input type="password" placeholder="Confirm Password" class="border p-2" />
+        </div>
+        <div class="flex items-center mt-4">
+          <input type="checkbox" class="mr-2" />
+          <span>I agree to Terms and Conditions</span>
+        </div>
+        <button type="submit" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Section 2: Product Information -->
+  <section class="container mx-auto px-6 py-6">
+    <div class="bg-white p-6 rounded shadow-md text-center">
+      <div class="mb-4">
+        <img src="https://placehold.co/300x200" alt="Product" class="mx-auto">
+      </div>
+      <div class="text-xl font-semibold text-gray-800">$24.9</div>
+      <h1 class="text-2xl font-bold text-gray-900">Product Title</h1>
+      <ul class="mt-4 text-left">
+        <li>
+          <input type="checkbox" class="mr-2" /> Check item 1
+        </li>
+        <li>
+          <input type="checkbox" class="mr-2" /> Check item 2
+        </li>
+        <li>
+          <input type="checkbox" class="mr-2" /> Check item 3
+        </li>
+      </ul>
+      <button class="mt-6 bg-green-500 text-white py-2 px-4 rounded">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Section 3: Banner Image -->
+  <section class="container mx-auto px-6 py-6">
+    <div class="bg-white p-6 rounded shadow-md text-center">
+      <img src="https://placehold.co/600x200" alt="Banner Image" class="mx-auto">
+    </div>
+  </section>
+
+  <!-- Section 4: Additional Content -->
+  <section class="container mx-auto px-6 py-6">
+    <div class="bg-white p-6 rounded shadow-md grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="text-center">
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+      </div>
+      <div class="text-center">
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+      </div>
+      <div class="text-center">
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+        <div class="bg-gray-300 p-4 mb-4">Text Placeholder</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Extended Form -->
+  <section class="container mx-auto px-6 py-6">
+    <div class="bg-white p-6 rounded shadow-md">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex flex-col">
+          <label for="label1" class="mb-2">Label</label>
+          <input type="text" id="label1" class="border p-2" />
+        </div>
+        <div class="flex flex-col">
+          <label for="label2" class="mb-2">Label</label>
+          <input type="text" id="label2" class="border p-2" />
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div>
+          <div class="mb-4">
+            <input type="checkbox" class="mr-2" /> Checklist 1
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" class="mr-2" /> Checklist 2
+          </div>
+        </div>
+        <div>
+          <div class="mb-4">
+            <input type="checkbox" class="mr-2" /> Checklist 3
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" class="mr-2" /> Checklist 4
+          </div>
+        </div>
+      </div>
+      <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+    </div>
+  </section>
+
+  <!-- Section 6: Survey Section -->
+  <section class="container mx-auto px-6 py-6">
+    <div class="bg-white p-6 rounded shadow-md">
+      <div class="mb-4">
+        <input type="radio" name="radio" id="radio1" class="mr-2" /><label for="radio1">Radio 1</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" name="radio" id="radio2" class="mr-2" /><label for="radio2">Radio 2</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" name="radio" id="radio3" class="mr-2" /><label for="radio3">Radio 3</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" name="radio" id="radio4" class="mr-2" /><label for="radio4">Radio 4</label>
+      </div>
+      <div class="flex items-center mt-4">
+        <img src="https://placehold.co/150x150" alt="Supporting Image" class="mr-4">
+        <textarea class="w-full border p-2" rows="5" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <div class="container mx-auto">
+      Additional informational links or text
+    </div>
+  </footer>
+
+</body>
+</html>

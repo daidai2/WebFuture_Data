@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-4">
+
+  <section class="w-full max-w-screen-lg bg-white shadow-md rounded p-4 mb-4">
+    <header class="flex justify-between items-start mb-4">
+      <div class="flex items-center">
+        <img src="https://placehold.co/50x50" alt="Top Image" class="w-12 h-12">
+      </div>
+      <nav class="flex flex-col items-start ml-4">
+        <span class="block mb-2">TopTextLine1</span>
+        <span class="block mb-2">TopTextLine2</span>
+        <span class="block mb-2">TopTextLine3</span>
+        <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">Back</button>
+        <label class="flex items-center mt-2">
+          <input type="checkbox" class="mr-2">
+          <span>Check box</span>
+        </label>
+      </nav>
+    </header>
+  </section>
+
+  <section id="product-page" class="w-full max-w-screen-lg bg-white shadow-md rounded p-4 mb-4 flex justify-between">
+    <article class="w-1/2">
+      <div class="mb-4">
+        <img src="https://placehold.co/200x200" alt="Product Main Image" class="w-full h-auto">
+      </div>
+      <div class="flex justify-between">
+        <img src="https://placehold.co/50x50" alt="Product Small Image 1" class="w-16 h-16">
+        <img src="https://placehold.co/50x50" alt="Product Small Image 2" class="w-16 h-16">
+        <img src="https://placehold.co/50x50" alt="Product Small Image 3" class="w-16 h-16">
+        <img src="https://placehold.co/50x50" alt="Product Small Image 4" class="w-16 h-16">
+      </div>
+    </article>
+    <aside class="w-1/2 pl-4 flex flex-col">
+      <h1 class="text-2xl mb-2">PRODUCT NAME</h1>
+      <p class="mb-4">Manufacturer</p>
+      <form class="flex flex-col">
+        <div class="mb-4">
+          <p>Color</p>
+          <label class="block">
+            <input type="radio" name="color" value="red" class="mr-2"> Red
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="blue" class="mr-2"> Blue
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="white" class="mr-2"> White
+          </label>
+        </div>
+        <div class="flex justify-between items-center mb-4">
+          <p class="text-lg">$100</p>
+          <p class="line-through text-gray-500">$200</p>
+        </div>
+        <button class="px-4 py-2 bg-green-500 text-white rounded">Add To Cart</button>
+      </form>
+    </aside>
+  </section>
+
+  <footer class="w-full max-w-screen-lg bg-white shadow-md rounded p-4">
+    <form>
+      <fieldset class="mb-4">
+        <legend class="mb-2">Forma de envío</legend>
+        <label class="block mb-2">
+          <input type="radio" name="shipping" value="terrestre" class="mr-2"> Terrestre
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="shipping" value="aereo" class="mr-2"> Aéreo
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="shipping" value="maritimo" class="mr-2"> Marítimo
+        </label>
+      </fieldset>
+      <fieldset class="mb-4">
+        <legend class="mb-2">Forma de pago</legend>
+        <label class="block mb-2">
+          <input type="radio" name="payment" value="tarjeta" class="mr-2"> Tarjeta (Crédito/Débito)
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="payment" value="transferencia" class="mr-2"> Transferencia bancaria
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="payment" value="metalico" class="mr-2"> Metálico
+        </label>
+      </fieldset>
+      <div class="mb-4">
+        <label class="block mb-2">Dirección</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Dirección">
+      </div>
+      <div class="flex items-center mb-4">
+        <div class="w-full">
+          <label class="block mb-2">País</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="País">
+        </div>
+        <label class="flex items-center ml-2 mt-6">
+          <input type="checkbox" class="mr-2">
+        </label>
+      </div>
+      <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Aceptar</button>
+    </form>
+  </footer>
+
+</body>
+</html>

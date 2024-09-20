@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6 font-sans">
+  <!-- Header Section -->
+  <header class="bg-white p-4 rounded shadow mb-6">
+    <h1 class="text-xl font-bold mb-2">Write Review</h1>
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/50x50" alt="Product Image" class="h-12 w-12 mr-4">
+      <div>
+        <p class="font-semibold">Project Name</p>
+        <p class="text-gray-600">$ Price</p>
+      </div>
+      <div class="ml-auto text-right">
+        <div class="flex items-center">
+          <span class="inline-block text-yellow-500">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+          <span class="ml-2 text-gray-600">45 reviews</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Review Form Section -->
+    <section class="bg-white p-4 rounded shadow mb-6">
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Rate Product</label>
+        <div class="flex items-center">
+          <span class="inline-block text-yellow-500">&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+          <label class="ml-2">Bad :(</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Headline</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Headline">
+      </div>
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Review</label>
+        <textarea class="w-full border border-gray-300 p-2 rounded" rows="4" placeholder="Write your review..."></textarea>
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+    </section>
+
+    <!-- Additional Image and Content Section -->
+    <section class="bg-white p-4 rounded shadow mb-6">
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <img src="https://placehold.co/150x150" alt="Image 1" class="w-full h-auto">
+        <img src="https://placehold.co/150x150" alt="Image 2" class="w-full h-auto">
+      </div>
+      <div class="mb-4">
+        <p class="mb-2">Some text block here.</p>
+        <img src="https://placehold.co/150x150" alt="Image 3" class="w-full h-auto mb-2">
+        <p class="mb-2">Additional small text block.</p>
+        <p class="mb-2">Another small text block.</p>
+        <div class="flex items-center mb-2">
+          <select class="mr-2 p-2 border border-gray-300 rounded">
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+          <input type="checkbox" class="mr-2">
+          <button class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lower Section -->
+    <section class="bg-white p-4 rounded shadow mb-6">
+      <div class="mb-4 flex">
+        <img src="https://placehold.co/150x150" alt="Large Image" class="w-1/2 h-auto">
+        <div class="w-1/2 ml-4">
+          <p class="mb-2">Text block header</p>
+          <p class="mb-2">Another line of text here</p>
+        </div>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="mr-4">Option 1</label>
+        <input type="checkbox" class="mr-2">
+        <label class="mr-4">Option 2</label>
+        <input type="radio" name="radio_option" class="mr-2">
+        <label class="mr-4">Radio Option</label>
+      </div>
+      <div class="flex justify-between">
+        <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+        <button class="bg-gray-500 text-white py-2 px-4 rounded">Button</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

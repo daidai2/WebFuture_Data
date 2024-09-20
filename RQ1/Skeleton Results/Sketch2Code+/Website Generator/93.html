@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .product {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .product img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .product-title {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .product-price {
+            font-size: 20px;
+            color: green;
+        }
+        .checkbox-group {
+            margin: 20px 0;
+        }
+        .checkbox-group label {
+            display: block;
+            margin: 5px 0;
+        }
+        .buy-now {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF5733;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Sign Up</h1>
+    <form>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to Terms and Conditions</label>
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="product">
+        <img src="path/to/image.jpg" alt="Product Image">
+        <p class="product-price">$24.99</p>
+        <h2 class="product-title">Product Title</h2>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="item1"> Check item 1</label>
+            <label><input type="checkbox" name="item2"> Check item 2</label>
+            <label><input type="checkbox" name="item3"> Check item 3</label>
+        </div>
+        <a href="#" class="buy-now">Buy Now</a>
+    </div>
+
+    <div class="additional-section">
+        <div class="form-group">
+            <label for="label1">Label</label>
+            <input type="text" id="label1" name="label1">
+        </div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="checkbox1"> Checkbox</label>
+            <label><input type="checkbox" name="checkbox2"> Checkbox</label>
+        </div>
+        <div class="form-group">
+            <label>Radio buttons:</label>
+            <label><input type="radio" name="radio" value="option1"> Radio button</label>
+            <label><input type="radio" name="radio" value="option2"> Radio button</label>
+        </div>
+        <button type="button">Button</button>
+        <div class="image-placeholder">
+            <img src="path/to/another-image.jpg" alt="Another Image">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

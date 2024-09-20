@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded shadow">
+    <h1 class="text-2xl font-bold mb-4">Checkout</h1>
+
+    <h2 class="text-xl font-semibold mb-2">Shipping Address</h2>
+    <form>
+      <div class="mb-4">
+        <label for="firstName" class="block text-sm font-medium">First Name</label>
+        <input id="firstName" type="text" class="mt-1 p-2 block w-full border rounded" />
+      </div>
+      <div class="mb-4">
+        <label for="lastName" class="block text-sm font-medium">Last Name</label>
+        <input id="lastName" type="text" class="mt-1 p-2 block w-full border rounded" />
+      </div>
+      <div class="mb-4">
+        <label for="company" class="block text-sm font-medium">Company</label>
+        <input id="company" type="text" class="mt-1 p-2 block w-full border rounded" />
+      </div>
+
+      <h2 class="text-xl font-semibold mb-2">Shipping Service</h2>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="radio" name="shipping" value="standard" class="form-radio">
+          <span class="ml-2">Standard <span class="text-sm">(14 days - $6.59)</span></span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="radio" name="shipping" value="expedited" class="form-radio">
+          <span class="ml-2">Expedited <span class="text-sm">(7 days - $12.99)</span></span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="radio" name="shipping" value="express" class="form-radio">
+          <span class="ml-2">Express <span class="text-sm">(3 days - $19.99)</span></span>
+        </label>
+      </div>
+
+      <div class="mb-4">
+        <label for="dropdown" class="block text-sm font-medium">C Sharp</label>
+        <select id="dropdown" class="mt-1 p-2 block w-full border rounded">
+          <option value="CSharp">C Sharp</option>
+          <option value="Java">Java</option>
+          <option value="PHP">PHP</option>
+          <option value="VisualBasic">Visual Basic</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label for="getDropdown" class="block text-sm font-medium">Get Drop Down Here</label>
+        <select id="getDropdown" class="mt-1 p-2 block w-full border rounded">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">C#</span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Java</span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">PHP</span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Visual Basic</span>
+        </label>
+      </div>
+    </form>
+
+    <div class="mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder" class="block mb-4 mx-auto rounded">
+      <p class="text-sm mb-2">Some placeholder text goes here.</p>
+    </div>
+
+    <form>
+      <div class="mb-4">
+        <label class="block text-sm font-medium">Label</label>
+        <input type="text" class="mt-1 p-2 block w-full border rounded" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm font-medium">Label</label>
+        <input type="text" class="mt-1 p-2 block w-full border rounded" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm font-medium">Label</label>
+        <input type="text" class="mt-1 p-2 block w-full border rounded" />
+      </div>
+
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Checkbox</span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Checkbox</span>
+        </label>
+      </div>
+
+      <div class="mb-4">
+        <button class="px-4 py-2 bg-blue-500 text-white rounded">Button</button>
+      </div>
+
+      <img src="https://placehold.co/200x200" alt="Placeholder" class="block mx-auto rounded">
+    </form>
+  </div>
+</body>
+</html>

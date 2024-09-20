@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+  <!-- Payment Method Selection -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block mb-2" for="payment-method">Payment Method:</label>
+        <div>
+          <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+          <label for="credit-card">Credit Card</label>
+        </div>
+        <div>
+          <input type="radio" id="paypal" name="payment-method" value="paypal">
+          <label for="paypal">Paypal</label>
+        </div>
+        <div>
+          <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+          <label for="bank-transfer">Bank Transfer</label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2" for="card-number">Card Number:</label>
+        <input type="text" id="card-number" class="w-full border px-3 py-2 rounded-md">
+      </div>
+
+      <div class="flex space-x-4 mb-4">
+        <div>
+          <label class="block mb-2" for="expiration-date">Expiration Date:</label>
+          <input type="text" id="expiration-date" class="w-full border px-3 py-2 rounded-md">
+        </div>
+        <div>
+          <label class="block mb-2" for="ccv">CCV:</label>
+          <input type="text" id="ccv" class="w-full border px-3 py-2 rounded-md">
+        </div>
+      </div>
+
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">
+        Complete
+      </button>
+    </form>
+  </section>
+
+  <!-- Information Section -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <h2 class="text-xl font-bold mb-4">Mobility Solutions & Daily Living Aids Making Life Easier</h2>
+    <div class="mb-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+        Find out More
+      </button>
+    </div>
+
+    <div class="flex mb-4 space-x-4">
+      <div class="flex-1">
+        <h3 class="font-bold">Wheelchair Repair</h3>
+        <div class="mt-2 mb-2 h-12 bg-gray-200"></div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+          Find out More
+        </button>
+      </div>
+      <div class="flex-1">
+        <h3 class="font-bold">Community Contracts</h3>
+        <div class="mt-2 mb-2 h-12 bg-gray-200"></div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+          Find out More
+        </button>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <div class="h-48 bg-gray-200 mb-4"></div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+        Find out More
+      </button>
+    </div>
+  </section>
+
+  <!-- Product Catalog -->
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-xl font-bold mb-4">Product Catalog</h2>
+    <div class="flex items-center mb-4">
+      <input type="text" class="border rounded-lg p-2 mr-2" placeholder="Search">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Search</button>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <img src="https://placehold.co/150x150" alt="Product 1" class="w-full mb-2">
+        <h3 class="font-bold mb-2">Product 1</h3>
+        <p class="mb-2">$20.00</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-full">Add to Cart</button>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <img src="https://placehold.co/150x150" alt="Product 2" class="w-full mb-2">
+        <h3 class="font-bold mb-2">Product 2</h3>
+        <p class="mb-2">$10.00</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-full">Add to Cart</button>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <img src="https://placehold.co/150x150" alt="Product 3" class="w-full mb-2">
+        <h3 class="font-bold mb-2">Product 3</h3>
+        <p class="mb-2">$40.00</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-full">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

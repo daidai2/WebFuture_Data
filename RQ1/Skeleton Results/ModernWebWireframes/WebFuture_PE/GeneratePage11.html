@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Page</title>
+</head>
+<body class="bg-gray-100">
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-1/5 bg-gray-800 text-white p-4">
+      <div class="mb-8">
+        <div class="h-10 bg-gray-600 mb-4"></div>
+        <nav>
+          <ul>
+            <li class="mb-4"><a href="#" class="block bg-gray-600 h-10"></a></li>
+            <li class="mb-4"><a href="#" class="block bg-gray-600 h-10"></a></li>
+            <li class="mb-4"><a href="#" class="block bg-gray-600 h-10"></a></li>
+            <li><a href="#" class="block bg-gray-600 h-10"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="w-4/5 p-8">
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Title2</h2>
+        <h3 class="text-xl mb-4">Title2.1</h3>
+        <button class="bg-gray-600 text-white p-2">Button</button>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Title3</h2>
+        <p class="mb-4">Text3</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-gray-300 h-32">IMG3-1</div>
+          <div class="bg-gray-300 h-32">IMG3-2</div>
+          <div class="bg-gray-300 h-32 col-span-2">IMG3-3</div>
+          <div class="bg-gray-300 h-32">IMG3-4</div>
+          <div class="bg-gray-300 h-32">IMG3-5</div>
+          <div class="bg-gray-300 h-32">IMG3-6</div>
+          <div class="bg-gray-300 h-32 col-span-2">IMG3-7</div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Title4</h2>
+        <div class="bg-gray-300 h-64 mb-4">IMG4</div>
+        <p>Text4</p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Title5</h2>
+        <p class="mb-4">Text5</p>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <input type="text" class="p-2 border border-gray-400" placeholder="TextInput">
+          <input type="text" class="p-2 border border-gray-400" placeholder="TextInput">
+        </div>
+        <textarea class="w-full p-2 border border-gray-400 mb-4" placeholder="TextArea"></textarea>
+        <button class="bg-gray-600 text-white p-2">Button5</button>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-800 text-white p-4 text-center">
+        <span class="mr-4">Label4.1</span>
+        <span>Label4.2</span>
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .product-info, .review-section, .product-details {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product-info img, .product-details img {
+            width: 100px;
+            height: 100px;
+        }
+        .product-info h2, .product-details h2 {
+            margin: 0 0 10px;
+        }
+        .stars {
+            color: gold;
+        }
+        .review-section textarea, .review-section input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .product-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-details li {
+            margin-bottom: 10px;
+        }
+        .product-details label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="review-section">
+            <h2>Write Review</h2>
+            <div class="product-info">
+                <img src="placeholder.png" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>$Price</p>
+                <p><span class="stars">★★★★☆</span> 45 reviews</p>
+            </div>
+            <div>
+                <p>Rate Product</p>
+                <p><span class="stars">★☆☆☆☆</span> Bad :(</p>
+            </div>
+            <div>
+                <input type="text" placeholder="Headline">
+                <textarea rows="4" placeholder="Review"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h2>$24.9</h2>
+            <h2>Product Title</h2>
+            <ul>
+                <li><label><input type="checkbox" checked> Check item 1</label></li>
+                <li><label><input type="checkbox"> Check item 2</label></li>
+                <li><label><input type="checkbox"> Check item 3</label></li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="other-sections">
+            <div>
+                <img src="placeholder.png" alt="Another Image">
+                <p>Some other text here.</p>
+            </div>
+            <div>
+                <label>Label</label>
+                <input type="text">
+            </div>
+            <div>
+                <label><input type="checkbox" checked> Checkbox</label>
+                <label><input type="checkbox"> Checkbox</label>
+            </div>
+            <div>
+                <label><input type="radio" name="radio"> Radio button</label>
+                <label><input type="radio" name="radio"> Radio button</label>
+            </div>
+            <button>Button</button>
+            <div>
+                <img src="placeholder.png" alt="Yet Another Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

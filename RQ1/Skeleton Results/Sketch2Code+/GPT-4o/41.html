@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .product {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .product img {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .product-details {
+            max-width: 500px;
+        }
+        .product-details h2, .product-details p {
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #e60000;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .add-to-cart {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Page</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="product">
+        <img src="product-image.png" alt="Product Image">
+        <div class="product-details">
+            <h2>Product Name</h2>
+            <p>Manufacturer: XYZ</p>
+            <p>Color:</p>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">Red</label><br>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">Blue</label><br>
+            <input type="radio" id="white" name="color" value="white">
+            <label for="white">White</label>
+            <p class="price">$100 <span class="old-price">$200</span></p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

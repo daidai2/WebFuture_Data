@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-6">
+
+  <header class="w-full max-w-screen-md flex justify-between items-center mb-8">
+    <a href="#" class="text-blue-500">Sign Up</a>
+    <a href="#" class="text-blue-500">Login</a>
+  </header>
+
+  <section class="w-full max-w-screen-md bg-white p-6 rounded-lg shadow-md mb-8">
+    <form action="#">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <input type="text" placeholder="Name" class="p-2 border border-gray-300 rounded" required>
+        <input type="text" placeholder="Last Name" class="p-2 border border-gray-300 rounded" required>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <input type="tel" placeholder="Phone" class="p-2 border border-gray-300 rounded" required>
+        <input type="email" placeholder="E-mail" class="p-2 border border-gray-300 rounded" required>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <input type="password" placeholder="Password" class="p-2 border border-gray-300 rounded" required>
+        <input type="password" placeholder="Confirm Password" class="p-2 border border-gray-300 rounded" required>
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="terms" class="mr-2">
+        <label for="terms">I agree to Terms and Conditions</label>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Sign Up</button>
+    </form>
+  </section>
+
+  <section class="w-full max-w-screen-md bg-white p-6 rounded-lg shadow-md mb-8">
+    <div class="flex flex-col items-center mb-4">
+      <img src="https://placehold.co/400x250" alt="Product Image" class="mb-4">
+      <p class="text-xl font-bold mb-2">$24.9</p>
+      <h2 class="text-2xl font-bold mb-4">Product Title</h2>
+    </div>
+    <div class="mb-4">
+      <h3 class="text-lg font-semibold mb-2">Check items:</h3>
+      <div class="mb-2">
+        <input type="checkbox" id="item1" class="mr-2">
+        <label for="item1">Check item 1</label>
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" id="item2" class="mr-2">
+        <label for="item2">Check item 2</label>
+      </div>
+      <div class="mb-4">
+        <input type="checkbox" id="item3" class="mr-2">
+        <label for="item3">Check item 3</label>
+      </div>
+    </div>
+    <button type="button" class="w-full bg-green-500 text-white py-2 rounded">Buy Now</button>
+  </section>
+
+  <section class="w-full max-w-screen-md bg-white p-6 rounded-lg shadow-md">
+    <div class="flex flex-col items-center mb-4">
+      <img src="https://placehold.co/200x200" alt="Image" class="mb-4">
+      <p class="text-lg font-semibold mb-2">Some other text or content here</p>
+      <div class="mb-4">
+        <p>Additional details or description can go here.</p>
+      </div>
+    </div>
+    <div class="mb-4">
+      <div class="mb-2">
+        <input type="checkbox" id="option1" class="mr-2">
+        <label for="option1">Option 1</label>
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" id="option2" class="mr-2">
+        <label for="option2">Option 2</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" name="radio" id="radio1" class="mr-2">
+        <label for="radio1">Radio Option 1</label>
+      </div>
+      <div>
+        <input type="radio" name="radio" id="radio2" class="mr-2">
+        <label for="radio2">Radio Option 2</label>
+      </div>
+    </div>
+    <div class="flex justify-between">
+      <button type="button" class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+      <button type="button" class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+    </div>
+  </section>
+
+</body>
+</html>

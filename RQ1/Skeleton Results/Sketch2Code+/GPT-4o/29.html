@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"], 
+        .form-group input[type="email"], 
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            margin-bottom: 15px;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 15px;
+        }
+        .checkbox-group input, .radio-group input {
+            margin-right: 5px;
+        }
+        .checkbox-group label, .radio-group label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Sign Up</h1>
+    <h2>Login</h2>
+
+    <div class="form-group">
+        <label for="firstName">Name</label>
+        <input type="text" id="firstName" name="firstName">
+    </div>
+    
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName">
+    </div>
+    
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone">
+    </div>
+    
+    <div class="form-group">
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="email">
+    </div>
+    
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+    </div>
+    
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+    </div>
+    
+    <div class="form-group">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to Terms and Conditions</label>
+    </div>
+    
+    <div class="form-group">
+        <button type="submit">Sign Up</button>
+    </div>
+
+    <div class="image-placeholder"></div>
+
+    <div class="form-group">
+        <button type="button">Back</button>
+    </div>
+
+    <div class="checkbox-group">
+        <input type="checkbox" id="checkbox1" name="checkbox1">
+        <label for="checkbox1">Checkbox 1</label>
+        
+        <input type="checkbox" id="checkbox2" name="checkbox2">
+        <label for="checkbox2">Checkbox 2</label>
+        
+        <input type="checkbox" id="checkbox3" name="checkbox3">
+        <label for="checkbox3">Checkbox 3</label>
+        
+        <input type="checkbox" id="checkbox4" name="checkbox4">
+        <label for="checkbox4">Checkbox 4</label>
+    </div>
+
+    <div class="radio-group">
+        <input type="radio" id="radio1" name="radio" value="1">
+        <label for="radio1">Radio 1</label>
+        
+        <input type="radio" id="radio2" name="radio" value="2">
+        <label for="radio2">Radio 2</label>
+        
+        <input type="radio" id="radio3" name="radio" value="3">
+        <label for="radio3">Radio 3</label>
+        
+        <input type="radio" id="radio4" name="radio" value="4">
+        <label for="radio4">Radio 4</label>
+    </div>
+
+    <div class="form-group">
+        <label for="input1">Label</label>
+        <input type="text" id="input1" name="input1">
+    </div>
+
+    <div class="form-group">
+        <label for="input2">Label</label>
+        <input type="text" id="input2" name="input2">
+    </div>
+
+    <div class="form-group">
+        <button type="button">Button</button>
+    </div>
+
+    <div class="image-placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+    </div>
+</div>
+
+</body>
+</html>

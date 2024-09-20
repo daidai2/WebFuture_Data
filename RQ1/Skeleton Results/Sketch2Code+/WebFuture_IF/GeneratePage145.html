@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <h1 class="text-2xl font-bold">Product Page</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto my-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Product Image and Description -->
+    <section class="lg:col-span-2 bg-white p-6 rounded-lg shadow-lg">
+      <div class="flex">
+        <img src="https://placehold.co/300x300" alt="Product Image" class="w-1/2 object-cover">
+        <div class="ml-6">
+          <h2 class="text-3xl font-bold">PRODUCT NAME</h2>
+          <p class="text-gray-700">Manufacturer</p>
+          <div class="mt-4">
+            <p class="text-gray-700 mb-2">Colors:</p>
+            <label class="inline-flex items-center mr-4">
+              <input type="radio" name="color" class="form-radio" value="red">
+              <span class="ml-2">Red</span>
+            </label>
+            <label class="inline-flex items-center mr-4">
+              <input type="radio" name="color" class="form-radio" value="blue">
+              <span class="ml-2">Blue</span>
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" name="color" class="form-radio" value="white">
+              <span class="ml-2">White</span>
+            </label>
+          </div>
+          <div class="mt-4 flex items-baseline">
+            <p class="text-xl font-bold text-green-600 mr-2">$400</p>
+            <p class="text-sm text-gray-500 line-through">$200</p>
+          </div>
+          <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Add to Cart</button>
+        </div>
+      </div>
+      <div class="mt-6 flex justify-between">
+        <img src="https://placehold.co/100x100" alt="Thumbnail 1" class="w-16 h-16 object-cover">
+        <img src="https://placehold.co/100x100" alt="Thumbnail 2" class="w-16 h-16 object-cover">
+        <img src="https://placehold.co/100x100" alt="Thumbnail 3" class="w-16 h-16 object-cover">
+        <img src="https://placehold.co/100x100" alt="Thumbnail 4" class="w-16 h-16 object-cover">
+      </div>
+    </section>
+
+    <!-- Notes Section -->
+    <section class="lg:col-span-1 space-y-6">
+      <article class="bg-white p-6 rounded-lg shadow-lg flex">
+        <img src="https://placehold.co/100x100" alt="Note One Image" class="w-24 h-24 rounded-full object-cover mr-4">
+        <div>
+          <h3 class="text-xl font-bold">Note One</h3>
+          <p class="text-gray-500">Job Title</p>
+        </div>
+      </article>
+      <article class="bg-white p-6 rounded-lg shadow-lg flex flex-row-reverse">
+        <img src="https://placehold.co/100x100" alt="Note Two Image" class="w-24 h-24 rounded-full object-cover ml-4">
+        <div>
+          <h3 class="text-xl font-bold">Note Two</h3>
+          <p class="text-gray-500">Job Title</p>
+        </div>
+      </article>
+      <article class="bg-white p-6 rounded-lg shadow-lg flex">
+        <img src="https://placehold.co/100x100" alt="Note Three Image" class="w-24 h-24 rounded-full object-cover mr-4">
+        <div>
+          <h3 class="text-xl font-bold">Note Three</h3>
+          <p class="text-gray-500">Job Title</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Form Section -->
+  <section class="container mx-auto my-8 bg-white p-6 rounded-lg shadow-lg">
+    <form>
+      <div class="flex items-start">
+        <img src="https://placehold.co/200x200" alt="Form Image" class="w-1/3 object-cover mr-6">
+        <div class="w-2/3 space-y-4">
+          <div>
+            <label class="block text-gray-700">Label</label>
+            <input type="text" class="form-input mt-1 block w-full">
+          </div>
+          <div>
+            <label class="block text-gray-700">Label</label>
+            <input type="text" class="form-input mt-1 block w-full">
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="form-checkbox">
+            <span class="ml-2 text-gray-700">Checkbox</span>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="form-checkbox">
+            <span class="ml-2 text-gray-700">Checkbox</span>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" class="form-radio" name="option">
+            <span class="ml-2 text-gray-700">RadioButton</span>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" class="form-radio" name="option">
+            <span class="ml-2 text-gray-700">RadioButton</span>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Button</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2023. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-100 p-4">
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md flex justify-between items-center">
+    <div>
+      <span class="font-bold text-xl">Logo/Name</span>
+      <select class="ml-4 border rounded p-2">
+        <option>C Sharp</option>
+      </select>
+    </div>
+    <button class="border rounded p-2">Get Drop Down Here</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-white mt-4 p-4 shadow-md flex justify-between">
+    <label><input type="checkbox" name="languages" value="C#"> C#</label>
+    <label><input type="checkbox" name="languages" value="Java"> Java</label>
+    <label><input type="checkbox" name="languages" value="PHP"> PHP</label>
+    <label><input type="checkbox" name="languages" value="Visual Basic"> Visual Basic</label>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="mt-4">
+    <article class="bg-white shadow-md p-4">
+      <img src="https://placehold.co/600x200" alt="Placeholder Image" class="w-full mb-4">
+
+      <p>Here's some descriptive text about the image above or the primary content of the page.</p>
+
+      <form class="mt-4 flex flex-col space-y-4">
+        <input type="text" class="border rounded p-2" placeholder="Input Field 1">
+        <input type="text" class="border rounded p-2" placeholder="Input Field 2">
+        <input type="text" class="border rounded p-2" placeholder="Input Field 3">
+        <input type="submit" class="border rounded p-2 bg-blue-500 text-white" value="Submit">
+      </form>
+
+      <div class="mt-4">
+        <label><input type="checkbox" name="option1"> Option 1</label>
+        <label class="ml-4"><input type="checkbox" name="option2"> Option 2</label>
+      </div>
+
+      <div class="mt-4">
+        <label><input type="radio" name="radiogroup" value="option1"> Option 1</label>
+        <label class="ml-4"><input type="radio" name="radiogroup" value="option2"> Option 2</label>
+      </div>
+    </article>
+
+    <article class="mt-8 bg-white shadow-md p-4 flex">
+      <img src="https://placehold.co/300x200" alt="Placeholder Image" class="mr-4">
+      <div>
+        <p>Additional text goes here. This could be an advertisement or additional content.</p>
+
+        <div class="mt-4">
+          <label class="block">Label 1</label>
+          <input type="text" class="border rounded p-2 w-full" placeholder="Input Field 4">
+        </div>
+
+        <div class="mt-4">
+          <label class="block">Label 2</label>
+          <input type="text" class="border rounded p-2 w-full" placeholder="Input Field 5">
+        </div>
+
+        <div class="mt-4 flex items-center">
+          <label><input type="checkbox" name="option3"> Checkbox 1</label>
+          <label class="ml-4"><input type="checkbox" name="option4"> Checkbox 2</label>
+        </div>
+
+        <div class="mt-4 flex items-center">
+          <label><input type="radio" name="radiogroup2" value="option3"> Radio Button 3</label>
+          <label class="ml-4"><input type="radio" name="radiogroup2" value="option4"> Radio Button 4</label>
+        </div>
+      </div>
+    </article>
+
+    <div class="mt-4 text-center">
+      <button class="border rounded p-2 bg-green-500 text-white">Button</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-4 p-4 shadow-md">
+    <div class="flex items-center">
+      <img src="https://placehold.co/200x100" alt="Footer Placeholder Image" class="mr-4">
+      <p>Footer content or additional description follows here.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

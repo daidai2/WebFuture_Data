@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-10">
+  <!-- Payment Method Section -->
+  <section id="payment-method" class="bg-white p-8 rounded-lg shadow-lg mb-10">
+    <fieldset class="mb-6">
+      <legend class="text-lg font-semibold mb-4">Select your payment method</legend>
+      <div class="space-y-2">
+        <div>
+          <input type="radio" id="credit-card" name="payment-method" value="credit-card" class="mr-2">
+          <label for="credit-card">Credit Card</label>
+        </div>
+        <div>
+          <input type="radio" id="paypal" name="payment-method" value="paypal" class="mr-2">
+          <label for="paypal">PayPal</label>
+        </div>
+        <div>
+          <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer" class="mr-2">
+          <label for="bank-transfer">Bank Transfer</label>
+        </div>
+      </div>
+    </fieldset>
+    <form>
+      <label for="card-number" class="block text-sm font-medium text-gray-700">Card Number</label>
+      <input type="text" id="card-number" class="block w-full mt-1 mb-4 p-2 border border-gray-300 rounded-lg">
+
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <label for="exp-date" class="block text-sm font-medium text-gray-700">Expiration Date</label>
+          <input type="text" id="exp-date" class="block w-full mt-1 p-2 border border-gray-300 rounded-lg">
+        </div>
+        <div>
+          <label for="cvv" class="block text-sm font-medium text-gray-700">CVV</label>
+          <input type="text" id="cvv" class="block w-full mt-1 p-2 border border-gray-300 rounded-lg">
+        </div>
+      </div>
+
+      <button type="submit" class="mt-6 bg-blue-500 text-white py-2 px-4 rounded-lg">Complete</button>
+    </form>
+  </section>
+
+  <!-- Information and Services Section -->
+  <section id="info-services" class="bg-white p-8 rounded-lg shadow-lg mb-10">
+    <header class="text-lg font-semibold mb-4">Mobility Solutions & Daily Living Aids</header>
+    <p class="mb-4">Making Life Easier</p>
+    <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mb-6">Find Out More</button>
+
+    <div class="space-y-8">
+      <div class="service">
+        <header class="font-medium mb-2">Wheelchair Repair</header>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Find Out More</button>
+      </div>
+      <div class="service">
+        <header class="font-medium mb-2">Community Contacts</header>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Find Out More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Area -->
+  <section id="content-area" class="bg-white p-8 rounded-lg shadow-lg mb-10">
+    <div class="content-block mb-8">
+      <img src="https://placehold.co/300x200" alt="Placeholder Image" class="mb-4 rounded-lg">
+      <p class="mb-4">Some descriptive text.</p>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Find Out More</button>
+    </div>
+
+    <div class="content-block mb-8">
+      <img src="https://placehold.co/300x200" alt="Placeholder Image" class="mb-4 rounded-lg">
+      <p class="mb-4">Some descriptive text.</p>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Find Out More</button>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="bg-white p-8 rounded-lg shadow-lg">
+    <div class="mb-6">
+      <input type="checkbox" id="option1" class="mr-2">
+      <label for="option1">Option 1</label>
+    </div>
+    <div class="mb-6">
+      <input type="checkbox" id="option2" class="mr-2">
+      <label for="option2">Option 2</label>
+    </div>
+    <div class="mb-6">
+      <input type="radio" id="radio1" name="radio-group" class="mr-2">
+      <label for="radio1">Radio Option 1</label>
+    </div>
+    <div class="mb-6">
+      <input type="radio" id="radio2" name="radio-group" class="mr-2">
+      <label for="radio2">Radio Option 2</label>
+    </div>
+    <div class="flex space-x-4">
+      <button class="bg-gray-500 text-white py-2 px-4 rounded-lg">Back</button>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Button</button>
+    </div>
+  </section>
+</body>
+
+</html>

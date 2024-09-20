@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout & Product Catalog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+    <!-- Checkout Section -->
+    <h1 class="text-2xl font-bold mb-4">Checkout</h1>
+
+    <!-- Shipping Address -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Shipping Address</h2>
+      <div class="mb-2">
+        <label for="first-name" class="block font-semibold">First Name</label>
+        <input type="text" id="first-name" class="w-full p-2 border rounded" placeholder="First Name">
+      </div>
+      <div class="mb-2">
+        <label for="last-name" class="block font-semibold">Last Name</label>
+        <input type="text" id="last-name" class="w-full p-2 border rounded" placeholder="Last Name">
+      </div>
+      <div class="mb-2">
+        <label for="company" class="block font-semibold">Company</label>
+        <input type="text" id="company" class="w-full p-2 border rounded" placeholder="Company">
+      </div>
+    </div>
+
+    <!-- Shipping Service -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Shipping Service</h2>
+      <div class="mb-1">
+        <input type="radio" id="standard" name="shipping" value="standard" checked>
+        <label for="standard" class="ml-2">Standard - 14 days - $6.59</label>
+      </div>
+      <div class="mb-1">
+        <input type="radio" id="expedited" name="shipping" value="expedited">
+        <label for="expedited" class="ml-2">Expedited - 7 days - $1.97</label>
+      </div>
+      <div class="mb-1">
+        <input type="radio" id="express" name="shipping" value="express">
+        <label for="express" class="ml-2">Express - 3 days - $19.97</label>
+      </div>
+    </div>
+
+    <!-- Programming Languages -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Programming Languages</h2>
+      <div class="flex items-center mb-2">
+        <label for="dropdown" class="mr-2">C Sharp</label>
+        <input type="checkbox" id="dropdown" class="mr-4">
+        <button class="bg-blue-500 text-white px-3 py-1 rounded">Get Drop Down Here</button>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div>
+          <input type="checkbox" id="csharp">
+          <label for="csharp" class="ml-2">C#</label>
+        </div>
+        <div>
+          <input type="checkbox" id="java">
+          <label for="java" class="ml-2">Java</label>
+        </div>
+        <div>
+          <input type="checkbox" id="php">
+          <label for="php" class="ml-2">PHP</label>
+        </div>
+        <div>
+          <input type="checkbox" id="visual-basic">
+          <label for="visual-basic" class="ml-2">Visual Basic</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto bg-white p-6 my-8 rounded-lg shadow-md">
+    <!-- Product Catalog -->
+    <h1 class="text-2xl font-bold mb-4">Product Catalog</h1>
+
+    <!-- Search Bar -->
+    <div class="flex mb-6">
+      <input type="text" placeholder="Search" class="w-full p-2 border border-gray-300 rounded-l">
+      <button class="bg-blue-500 text-white px-4 rounded-r">Search</button>
+    </div>
+
+    <!-- Product List -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="bg-gray-100 p-4 rounded-lg shadow">
+        <img src="https://placehold.co/150x150" alt="Product 1" class="w-full h-32 object-cover rounded mb-4">
+        <h3 class="text-lg font-bold mb-2">Product 1</h3>
+        <div class="text-lg font-semibold mb-4">$20.00</div>
+        <button class="bg-green-500 text-white px-3 py-1 rounded w-full">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="bg-gray-100 p-4 rounded-lg shadow">
+        <img src="https://placehold.co/150x150" alt="Product 2" class="w-full h-32 object-cover rounded mb-4">
+        <h3 class="text-lg font-bold mb-2">Product 2</h3>
+        <div class="text-lg font-semibold mb-4">$10.00</div>
+        <button class="bg-green-500 text-white px-3 py-1 rounded w-full">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="bg-gray-100 p-4 rounded-lg shadow">
+        <img src="https://placehold.co/150x150" alt="Product 3" class="w-full h-32 object-cover rounded mb-4">
+        <h3 class="text-lg font-bold mb-2">Product 3</h3>
+        <div class="text-lg font-semibold mb-4">$40.00</div>
+        <button class="bg-green-500 text-white px-3 py-1 rounded w-full">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

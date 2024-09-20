@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+  <!-- Write Review Section -->
+  <div class="bg-white p-4 rounded-md shadow-md mb-8">
+    <h2 class="text-xl font-bold mb-4">Write Review</h2>
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/50x50" alt="Product Image" class="w-12 h-12 mr-4">
+      <div>
+        <div>Product Name</div>
+        <div class="text-sm text-gray-600">$Price</div>
+        <div class="flex items-center">
+          <div class="flex text-yellow-500">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+          </div>
+          <span class="ml-2 text-sm text-gray-600">45 reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium mb-1">Rate Product</label>
+      <div class="flex text-yellow-500 mb-1">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="text-sm text-gray-500">(Bad :(</div>
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium mb-1">Headline</label>
+      <input type="text" class="w-full border border-gray-300 rounded-md p-2">
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium mb-1">Review</label>
+      <textarea class="w-full border border-gray-300 rounded-md p-2"></textarea>
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+  </div>
+
+  <!-- Product Display Section -->
+  <div class="bg-white p-4 rounded-md shadow-md mb-8">
+    <img src="https://placehold.co/500x300" alt="Product Image" class="w-full mb-4">
+    <div class="text-2xl font-bold mb-2">$24.99</div>
+    <div class="text-xl mb-4">Product Title</div>
+    <div class="border-t border-gray-300 mb-4"></div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium mb-2">Check items:</label>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2"> Check item 1
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2"> Check item 2
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2"> Check item 3
+      </div>
+    </div>
+    <button class="bg-green-500 text-white px-4 py-2 rounded-md">Buy Now</button>
+  </div>
+
+  <!-- Product Catalog Section -->
+  <div class="bg-white p-4 rounded-md shadow-md">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Product Catalog</h2>
+      <input type="text" placeholder="Search" class="border border-gray-300 rounded-md p-2">
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Product 1 -->
+      <div class="bg-white border border-gray-300 rounded-md p-4">
+        <img src="https://placehold.co/100x100" alt="Product 1" class="w-full mb-2">
+        <div class="text-center mb-2">Product 1</div>
+        <div class="text-center text-gray-600 mb-2">$20.00</div>
+        <button class="bg-blue-500 text-white w-full py-2 rounded-md">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="bg-white border border-gray-300 rounded-md p-4">
+        <img src="https://placehold.co/100x100" alt="Product 2" class="w-full mb-2">
+        <div class="text-center mb-2">Product 2</div>
+        <div class="text-center text-gray-600 mb-2">$10.00</div>
+        <button class="bg-blue-500 text-white w-full py-2 rounded-md">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="bg-white border border-gray-300 rounded-md p-4">
+        <img src="https://placehold.co/100x100" alt="Product 3" class="w-full mb-2">
+        <div class="text-center mb-2">Product 3</div>
+        <div class="text-center text-gray-600 mb-2">$40.00</div>
+        <button class="bg-blue-500 text-white w-full py-2 rounded-md">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

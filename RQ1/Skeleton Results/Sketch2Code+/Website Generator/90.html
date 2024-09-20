@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        .hero {
+            position: relative;
+            background: #ddd;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hero .play-button {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .content-section .post {
+            flex: 1 1 calc(50% - 40px);
+            margin: 10px;
+            background: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-section .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .large-image-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .large-image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-section {
+            padding: 20px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section form input,
+        .form-section form textarea,
+        .form-section form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .checkbox-section, .radio-section {
+            padding: 20px;
+        }
+        .checkbox-section label,
+        .radio-section label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Title</h1>
+        <p>Title Page</p>
+    </header>
+    <div class="hero">
+        <img src="path-to-image.jpg" alt="Hero Image">
+        <div class="play-button">&#9658;</div>
+    </div>
+    <div class="content-section">
+        <div class="post">
+            <h2>Title</h2>
+            <p>Title Post</p>
+            <img src="path-to-image.jpg" alt="Post Image">
+        </div>
+        <div class="post">
+            <h2>Title</h2>
+            <p>Title Post</p>
+            <img src="path-to-image.jpg" alt="Post Image">
+        </div>
+        <div class="post">
+            <h2>Title</h2>
+            <p>Title Post</p>
+            <img src="path-to-image.jpg" alt="Post Image">
+        </div>
+        <div class="post">
+            <h2>Title</h2>
+            <p>Title Post</p>
+            <img src="path-to-image.jpg" alt="Post Image">
+        </div>
+    </div>
+    <div class="large-image-section">
+        <img src="path-to-large-image.jpg" alt="Large Image">
+    </div>
+    <div class="form-section">
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="checkbox-section">
+        <label><input type="checkbox"> Option 1</label>
+        <label><input type="checkbox"> Option 2</label>
+    </div>
+    <div class="radio-section">
+        <label><input type="radio" name="options"> Option 1</label>
+        <label><input type="radio" name="options"> Option 2</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Header -->
+  <header class="text-center py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold">Product Page</h1>
+  </header>
+
+  <!-- Main Section -->
+  <section class="flex flex-col items-center mt-4">
+    <!-- Product Details -->
+    <div class="flex w-full max-w-4xl shadow-lg bg-white p-6">
+      <!-- Product Image -->
+      <div class="w-1/2">
+        <img src="https://placehold.co/400x400" alt="Product Image">
+      </div>
+      <!-- Product Details -->
+      <div class="w-1/2 pl-6">
+        <!-- Product Name and Manufacturer -->
+        <span class="block text-xl font-bold">Product Name</span>
+        <span class="block text-gray-600">Manufacturer</span>
+        <!-- Color Options -->
+        <div class="mt-4">
+          <span class="block font-medium">Color</span>
+          <label class="block">
+            <input type="radio" name="color" value="red"> Red
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="blue"> Blue
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="white"> White
+          </label>
+        </div>
+        <!-- Price Information -->
+        <div class="mt-4">
+          <span class="text-lg text-red-500 font-semibold">$100</span>
+          <span class="text-gray-500 line-through">$200</span>
+        </div>
+        <!-- Add to Cart Button -->
+        <button class="mt-6 bg-blue-500 text-white px-4 py-2 rounded">
+          ADD TO CART
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail Images -->
+    <div class="flex justify-center gap-4 mt-4">
+      <img src="https://placehold.co/100x100" alt="Thumbnail Image">
+      <img src="https://placehold.co/100x100" alt="Thumbnail Image">
+      <img src="https://placehold.co/100x100" alt="Thumbnail Image">
+      <img src="https://placehold.co/100x100" alt="Thumbnail Image">
+    </div>
+
+    <!-- Recommendations Section -->
+    <section class="mt-8 w-full max-w-4xl bg-white p-6 shadow-lg">
+      <!-- Mate One -->
+      <article class="flex mb-6">
+        <img src="https://placehold.co/100x100" alt="Mate Image">
+        <div class="ml-4">
+          <span class="block text-xl font-bold">Mate One</span>
+          <span class="block text-gray-600">Job Title</span>
+          <span class="block text-gray-500">Additional information</span>
+        </div>
+      </article>
+      <!-- Mate Two -->
+      <article class="flex mb-6">
+        <div class="ml-auto">
+          <span class="block text-xl font-bold">Mate Two</span>
+          <span class="block text-gray-600">Job Title</span>
+          <span class="block text-gray-500">Additional information</span>
+        </div>
+        <img class="ml-4" src="https://placehold.co/100x100" alt="Mate Image">
+      </article>
+      <!-- Mate Three -->
+      <article class="flex mb-6">
+        <img src="https://placehold.co/100x100" alt="Mate Image">
+        <div class="ml-4">
+          <span class="block text-xl font-bold">Mate Three</span>
+          <span class="block text-gray-600">Job Title</span>
+          <span class="block text-gray-500">Additional information</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Shipping Info Section -->
+    <section class="mt-8 w-full max-w-4xl bg-white p-6 shadow-lg">
+      <h2 class="text-xl font-bold mb-6">Shipping Info</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- First Name -->
+        <div>
+          <label class="block text-gray-700">First Name</label>
+          <input type="text" class="block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <!-- Last Name -->
+        <div>
+          <label class="block text-gray-700">Last Name</label>
+          <input type="text" class="block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <!-- Phone -->
+        <div>
+          <label class="block text-gray-700">Phone</label>
+          <input type="text" class="block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <!-- E-mail -->
+        <div>
+          <label class="block text-gray-700">E-mail</label>
+          <input type="email" class="block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <!-- Country -->
+        <div>
+          <label class="block text-gray-700">Country</label>
+          <select class="block w-full p-2 border border-gray-300 rounded">
+            <option>United States</option>
+          </select>
+        </div>
+        <!-- State -->
+        <div>
+          <label class="block text-gray-700">State</label>
+          <select class="block w-full p-2 border border-gray-300 rounded">
+            <option>Choose</option>
+          </select>
+        </div>
+        <!-- City -->
+        <div>
+          <label class="block text-gray-700">City</label>
+          <input type="text" value="Palo Alto" class="block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <!-- Zip Code -->
+        <div>
+          <label class="block text-gray-700">Zip Code</label>
+          <input type="text" class="block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div class="col-span-1 md:col-span-2 flex justify-between">
+          <!-- Back Button -->
+          <button type="button" class="bg-gray-300 text-gray-700 px-4 py-2 rounded">
+            BACK
+          </button>
+          <!-- Next Step Button -->
+          <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded">
+            NEXT STEP
+          </button>
+        </div>
+      </form>
+    </section>
+  </section>
+</body>
+</html>

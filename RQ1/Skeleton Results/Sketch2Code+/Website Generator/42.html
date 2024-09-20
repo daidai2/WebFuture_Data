@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Based Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, nav, section, aside, footer {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        header {
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main-content, .sidebar {
+            float: left;
+            width: 100%;
+        }
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        @media (min-width: 768px) {
+            .main-content {
+                width: 70%;
+            }
+            .sidebar {
+                width: 25%;
+                margin-left: 5%;
+            }
+        }
+        footer {
+            clear: both;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-control input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-control input[type="checkbox"] {
+            width: auto;
+        }
+        .form-control button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .form-control button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Login / Sign Up</h1>
+        </div>
+    </header>
+
+    <section class="container">
+        <form action="#">
+            <div class="form-control">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login">
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-control">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-control">
+                <a href="#">Forgot Password</a>
+            </div>
+            <div class="form-control">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="container">
+        <h2>Title Page</h2>
+        <p>Some introductory text goes here.</p>
+    </section>
+
+    <section class="container main-content">
+        <article>
+            <h2>Title</h2>
+            <p>Title Post</p>
+        </article>
+        <article>
+            <h2>Title</h2>
+            <p>Title Post</p>
+        </article>
+        <article>
+            <h2>Title</h2>
+            <p>Title Post</p>
+        </article>
+    </section>
+
+    <aside class="container sidebar">
+        <h3>Sidebar Content</h3>
+        <p>Additional information goes here.</p>
+    </aside>
+
+    <section class="container">
+        <h2>Another Section</h2>
+        <p>More content here.</p>
+    </section>
+
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+
+</body>
+</html>

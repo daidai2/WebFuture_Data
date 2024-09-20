@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Based on Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .team-section, .checkout-section, .shipping-section, .form-controls {
+            margin-bottom: 30px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .team-member .details {
+            flex-grow: 1;
+        }
+        .shipping-section .shipping-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .shipping-section .shipping-option input {
+            margin-right: 10px;
+        }
+        .form-controls .control-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="team-section">
+        <div class="team-member">
+            <img src="path/to/image1.jpg" alt="Mate One">
+            <div class="details">
+                <h3>Mate One</h3>
+                <p>Job Title</p>
+                <p>Additional Info Line 1</p>
+                <p>Additional Info Line 2</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="path/to/image2.jpg" alt="Mate Two">
+            <div class="details">
+                <h3>Mate Two</h3>
+                <p>Job Title</p>
+                <p>Additional Info Line 1</p>
+                <p>Additional Info Line 2</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="path/to/image3.jpg" alt="Mate Three">
+            <div class="details">
+                <h3>Mate Three</h3>
+                <p>Job Title</p>
+                <p>Additional Info Line 1</p>
+                <p>Additional Info Line 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout-section">
+        <h2>Checkout</h2>
+        <form>
+            <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div>
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company">
+            </div>
+        </form>
+    </section>
+
+    <section class="shipping-section">
+        <h2>Shipping Service</h2>
+        <div class="shipping-option">
+            <input type="radio" id="standard" name="shipping" value="standard" checked>
+            <label for="standard">Standard (14 days - $6.59)</label>
+        </div>
+        <div class="shipping-option">
+            <input type="radio" id="expedited" name="shipping" value="expedited">
+            <label for="expedited">Expedited (7 days - $12.99)</label>
+        </div>
+        <div class="shipping-option">
+            <input type="radio" id="express" name="shipping" value="express">
+            <label for="express">Express (3 days - $19.99)</label>
+        </div>
+    </section>
+
+    <section class="form-controls">
+        <div class="control-group">
+            <input type="checkbox" id="check1">
+            <label for="check1">Check Option</label>
+        </div>
+        <div class="control-group">
+            <input type="checkbox" id="check2">
+            <label for="check2">Another Check Option</label>
+        </div>
+        <div class="control-group">
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label for="radio1">Radio Option 1</label>
+        </div>
+        <div class="control-group">
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">Radio Option 2</label>
+        </div>
+        <div>
+            <button type="button">Back</button>
+            <button type="button">Button</button>
+        </div>
+    </section>
+
+</body>
+</html>

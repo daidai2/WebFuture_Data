@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <!-- Header Section -->
+  <header class="bg-white shadow p-6 mb-6">
+    <div class="mb-6">
+      <img src="https://placehold.co/1366x264" alt="Header Image" class="w-full h-auto">
+    </div>
+    <nav class="flex justify-around">
+      <a href="#" class="text-gray-700">Link 1</a>
+      <a href="#" class="text-gray-700">Link 2</a>
+      <a href="#" class="text-gray-700">Link 3</a>
+      <a href="#" class="text-gray-700">Link 4</a>
+    </nav>
+  </header>
+
+  <!-- Main Form Section -->
+  <section class="bg-white shadow p-6 mb-6">
+    <h2 class="text-2xl font-bold mb-6">Select your payment method</h2>
+    <form class="space-y-4">
+      <div class="flex items-center mb-4">
+        <input type="radio" id="credit_card" name="payment_method" class="mr-2">
+        <label for="credit_card">Credit Card</label>
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="radio" id="paypal" name="payment_method" class="mr-2">
+        <label for="paypal">PayPal</label>
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="radio" id="bank_transfer" name="payment_method" class="mr-2">
+        <label for="bank_transfer">Bank Transfer</label>
+      </div>
+      <label for="card_number">Card Number</label>
+      <input type="text" id="card_number" class="border border-gray-300 p-2 w-full mb-4">
+      <div class="flex space-x-4">
+        <div>
+          <label for="expiry_date">Expiration Date</label>
+          <div class="flex space-x-2 mt-1">
+            <input type="text" id="exp_month" placeholder="MM" class="border border-gray-300 p-2 w-16">
+            <input type="text" id="exp_year" placeholder="YY" class="border border-gray-300 p-2 w-16">
+          </div>
+        </div>
+        <div>
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" class="border border-gray-300 p-2 w-16 mt-1">
+        </div>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded mt-6 mx-auto block">Complete</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="bg-white shadow p-6 mb-6">
+    <div class="mb-4">
+      <img src="https://placehold.co/400x100" alt="Footer Image" class="w-full h-auto mb-4">
+    </div>
+    <div class="mb-4 text-center">
+      <p class="mb-4">Text content or additional instructions</p>
+      <form class="space-y-4">
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="option1" class="mr-2">
+          <label for="option1">Option 1</label>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="option2" class="mr-2">
+          <label for="option2">Option 2</label>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="radio" id="radio_option1" name="radio_group" class="mr-2">
+          <label for="radio_option1">Radio Option 1</label>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="radio" id="radio_option2" name="radio_group" class="mr-2">
+          <label for="radio_option2">Radio Option 2</label>
+        </div>
+        <div class="flex justify-between mt-6">
+          <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded">Back</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Next</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

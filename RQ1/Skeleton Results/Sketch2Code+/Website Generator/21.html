@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .login-form {
+            margin-bottom: 30px;
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .login-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .content-section {
+            margin-bottom: 30px;
+        }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .post .image {
+            width: 30%;
+            height: 100px;
+            background-color: #e0e0e0;
+        }
+        .post .text {
+            width: 65%;
+            padding-left: 20px;
+        }
+        .options-section {
+            margin-bottom: 30px;
+        }
+        .options-section label {
+            display: block;
+            margin: 10px 0;
+        }
+        .options-section input[type="radio"], .options-section input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+                <br>
+                <a href="#">Forgot Password?</a>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="content-section">
+            <h2>Title</h2>
+            <p>Title Page</p>
+            <div class="post">
+                <div class="image"></div>
+                <div class="text">
+                    <h3>Title Post</h3>
+                    <p>Post description goes here...</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="image"></div>
+                <div class="text">
+                    <h3>Title Post</h3>
+                    <p>Post description goes here...</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="image"></div>
+                <div class="text">
+                    <h3>Title Post</h3>
+                    <p>Post description goes here...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Options Section -->
+        <div class="options-section">
+            <h2>Options</h2>
+            <label>
+                <input type="radio" name="relevance" value="not_relevant"> Not relevant
+            </label>
+            <label>
+                <input type="radio" name="relevance" value="low"> Low
+            </label>
+            <label>
+                <input type="radio" name="relevance" value="medium"> Medium
+            </label>
+            <label>
+                <input type="radio" name="relevance" value="high"> High
+            </label>
+            
+            <label>
+                <input type="checkbox" name="choice1"> Choice 1
+            </label>
+            <label>
+                <input type="checkbox" name="choice2"> Choice 2
+            </label>
+            <label>
+                <input type="checkbox" name="choice3"> Choice 3
+            </label>
+            <label>
+                <input type="checkbox" name="choice4"> Choice 4
+            </label>
+            <label>
+                <input type="checkbox" name="choice5"> Choice 5
+            </label>
+            <label>
+                <input type="checkbox" name="choice6"> Choice 6
+            </label>
+            <label>
+                <input type="checkbox" name="choice7"> Choice 7
+            </label>
+            <label>
+                <input type="checkbox" name="choice8"> Choice 8
+            </label>
+            
+            <br>
+            <button type="submit">OK</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

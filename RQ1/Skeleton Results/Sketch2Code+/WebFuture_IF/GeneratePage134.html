@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <main class="max-w-4xl mx-auto bg-white shadow-md p-6 rounded">
+    <!-- Payment Method Section -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Select your payment method</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="inline-flex items-center">
+            <input type="radio" name="payment-method" class="form-radio" value="credit-card">
+            <span class="ml-2">Credit Card</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input type="radio" name="payment-method" class="form-radio" value="paypal">
+            <span class="ml-2">Paypal</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input type="radio" name="payment-method" class="form-radio" value="bank-transfer">
+            <span class="ml-2">Bank transfer</span>
+          </label>
+        </div>
+
+        <h3 class="text-lg font-medium mt-4">Enter your data</h3>
+
+        <label class="block">
+          <span class="text-gray-700">Card Number</span>
+          <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Card Number">
+        </label>
+
+        <div class="flex space-x-4">
+          <label class="block">
+            <span class="text-gray-700">Expiration date (MM/YY)</span>
+            <input type="date" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+          </label>
+          <label class="block">
+            <span class="text-gray-700">CVV</span>
+            <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="CVV">
+          </label>
+        </div>
+
+        <button type="submit" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">Complete</button>
+      </form>
+    </section>
+
+    <!-- Sign Up/Login Section -->
+    <section class="mb-8">
+      <div class="flex space-x-4 mb-4">
+        <button class="px-4 py-2 bg-gray-300 text-gray-800 rounded-md">Sign Up</button>
+        <button class="px-4 py-2 bg-gray-300 text-gray-800 rounded-md">Login</button>
+      </div>
+
+      <form class="space-y-4">
+        <div class="flex space-x-4">
+          <label class="block w-full">
+            <span class="text-gray-700">Name</span>
+            <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Name">
+          </label>
+          <label class="block w-full">
+            <span class="text-gray-700">Last Name</span>
+            <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Last Name">
+          </label>
+        </div>
+        <div class="flex space-x-4">
+          <label class="block w-full">
+            <span class="text-gray-700">Phone</span>
+            <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Phone">
+          </label>
+          <label class="block w-full">
+            <span class="text-gray-700">E-mail</span>
+            <input type="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="E-mail">
+          </label>
+        </div>
+        <div class="flex space-x-4">
+          <label class="block w-full">
+            <span class="text-gray-700">Password</span>
+            <input type="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Password">
+          </label>
+          <label class="block w-full">
+            <span class="text-gray-700">Confirm Password</span>
+            <input type="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Confirm Password">
+          </label>
+        </div>
+
+        <label class="inline-flex items-center mt-4">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">I agree to Terms and Conditions</span>
+        </label>
+
+        <button type="submit" class="mt-4 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-700">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Additional Components Section -->
+    <section class="mb-8">
+      <div class="flex space-x-4">
+        <div class="w-1/3">
+          <img src="https://placehold.co/150x150?text=Image" alt="Placeholder Image" class="w-full h-auto">
+        </div>
+        <div class="w-2/3">
+          <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Additional Input">
+        </div>
+      </div>
+      <div class="mt-4">
+        <p class="mb-2">Placeholder Text</p>
+        <p class="mb-2">Placeholder Text</p>
+        <p class="mb-2">Placeholder Text</p>
+      </div>
+    </section>
+
+    <!-- Action Section -->
+    <section class="flex flex-col mb-8 space-y-4">
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox">
+        <span class="ml-2">Option 1</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox">
+        <span class="ml-2">Option 2</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input type="radio" name="option" class="form-radio">
+        <span class="ml-2">Option 3</span>
+      </label>
+
+      <div class="flex space-x-4">
+        <button class="px-4 py-2 bg-gray-300 text-gray-800 rounded-md">Back</button>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">Submit</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .header, .main-content, .footer {
+            margin-bottom: 20px;
+        }
+        .header, .footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .title, .title-page {
+            margin-bottom: 10px;
+        }
+        .video {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .post-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .post {
+            width: 48%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .form-section, .large-section {
+            margin-bottom: 20px;
+        }
+        .form-section input[type="text"], .form-section button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .checkbox-list, .radio-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li, .radio-list li {
+            margin-bottom: 10px;
+        }
+        .large-image {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">Title</div>
+            <div class="title-page">Title Page</div>
+        </header>
+        
+        <section class="main-content">
+            <div class="video">
+                <button>Play</button>
+            </div>
+            
+            <div class="post-list">
+                <div class="post">
+                    <img src="placeholder.jpg" alt="Post Image">
+                    <h2>Title Post</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="post">
+                    <img src="placeholder.jpg" alt="Post Image">
+                    <h2>Title Post</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="post">
+                    <img src="placeholder.jpg" alt="Post Image">
+                    <h2>Title Post</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="post">
+                    <img src="placeholder.jpg" alt="Post Image">
+                    <h2>Title Post</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            
+            <div class="large-section">
+                <div class="large-image"></div>
+            </div>
+            
+            <div class="form-section">
+                <input type="text" placeholder="Label">
+                <input type="text" placeholder="Label">
+                <button>Button</button>
+            </div>
+            
+            <ul class="checkbox-list">
+                <li><input type="checkbox"> Checkbox 1</li>
+                <li><input type="checkbox"> Checkbox 2</li>
+                <li><input type="checkbox" checked> Checkbox 3</li>
+                <li><input type="checkbox"> Checkbox 4</li>
+            </ul>
+            
+            <ul class="radio-list">
+                <li><input type="radio" name="radio"> Radio 1</li>
+                <li><input type="radio" name="radio"> Radio 2</li>
+                <li><input type="radio" name="radio"> Radio 3</li>
+                <li><input type="radio" name="radio"> Radio 4</li>
+            </ul>
+        </section>
+        
+        <footer class="footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+        </footer>
+    </div>
+</body>
+</html>

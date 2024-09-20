@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-500 text-white p-4 flex justify-between">
+    <div>
+      <a href="#" class="ml-4 text-lg">Login</a>
+      <a href="#" class="ml-4 text-lg">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section id="login-section" class="bg-white p-6 m-6 rounded shadow-md">
+    <h2 class="text-2xl mb-4">Login</h2>
+
+    <div class="mb-4">
+      <label for="login" class="block text-lg">Login</label>
+      <input type="text" id="login" class="mt-1 p-2 w-full border rounded">
+    </div>
+
+    <div class="mb-4">
+      <label for="password" class="block text-lg">Password</label>
+      <input type="password" id="password" class="mt-1 p-2 w-full border rounded">
+    </div>
+
+    <div class="flex items-center mb-4">
+      <input type="checkbox" id="remember-me" class="mr-2">
+      <label for="remember-me" class="text-lg">Remember me</label>
+    </div>
+
+    <div class="flex justify-between items-center mb-4">
+      <a href="#" class="text-blue-500">Forgot Password</a>
+    </div>
+
+    <button class="bg-blue-500 text-white p-2 w-full rounded">LOGIN</button>
+  </section>
+
+  <!-- Middle Section -->
+  <section id="middle-section" class="bg-white p-6 m-6 rounded shadow-md">
+    <div class="flex space-x-4 items-start mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24">
+
+      <div class="space-y-2">
+        <span class="block bg-gray-300 h-6 w-32"></span>
+        <span class="block bg-gray-300 h-6 w-48"></span>
+        <span class="block bg-gray-300 h-6 w-40"></span>
+      </div>
+    </div>
+
+    <button class="bg-gray-300 text-black p-2 w-full rounded mb-4">BACK</button>
+
+    <div class="flex items-center">
+      <input type="checkbox" id="checkbox" class="mr-2">
+      <label for="checkbox" class="text-lg">Checkbox label</label>
+    </div>
+  </section>
+
+  <!-- Shipping Info Section -->
+  <section id="shipping-info" class="bg-white p-6 m-6 rounded shadow-md">
+    <h2 class="text-2xl text-center mb-4">Shipping Info</h2>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div class="flex flex-col">
+        <label for="first-name" class="text-lg">First Name</label>
+        <input type="text" id="first-name" class="mt-1 p-2 border rounded">
+      </div>
+      <div class="flex flex-col">
+        <label for="last-name" class="text-lg">Last Name</label>
+        <input type="text" id="last-name" class="mt-1 p-2 border rounded">
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div class="flex flex-col">
+        <label for="phone" class="text-lg">Phone</label>
+        <input type="text" id="phone" class="mt-1 p-2 border rounded">
+      </div>
+      <div class="flex flex-col">
+        <label for="email" class="text-lg">E-mail</label>
+        <input type="text" id="email" class="mt-1 p-2 border rounded">
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div class="flex flex-col">
+        <label for="country" class="text-lg">Country</label>
+        <select id="country" class="mt-1 p-2 border rounded">
+          <option>United States</option>
+          <option>Canada</option>
+        </select>
+      </div>
+      <div class="flex flex-col">
+        <label for="state" class="text-lg">State</label>
+        <select id="state" class="mt-1 p-2 border rounded">
+          <option>California</option>
+          <option>Texas</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div class="flex flex-col">
+        <label for="city" class="text-lg">City</label>
+        <input type="text" id="city" class="mt-1 p-2 border rounded">
+      </div>
+      <div class="flex flex-col">
+        <label for="zip-code" class="text-lg">Zip Code</label>
+        <input type="text" id="zip-code" class="mt-1 p-2 border rounded">
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center mt-4">
+      <button class="bg-gray-300 text-black p-2 rounded">BACK</button>
+      <button class="bg-blue-500 text-white p-2 rounded">NEXT STEP</button>
+    </div>
+  </section>
+
+</body>
+</html>

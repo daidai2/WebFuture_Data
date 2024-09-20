@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- Write Review Section -->
+  <section class="bg-white p-4 rounded shadow mb-4">
+    <h2 class="text-xl font-bold mb-2">Write Review</h2>
+    <div class="flex items-center mb-2">
+      <img src="https://placehold.co/100x100" alt="Product Image" class="w-16 h-16 mr-4">
+      <div>
+        <h3 class="font-semibold">Product Name</h3>
+        <p>$ Price</p>
+        <p class="text-yellow-500">★★★★☆ 45 reviews</p>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Rate Product</label>
+      <div class="flex items-center">
+        <div class="text-yellow-500">★★★★★</div>
+        <div class="ml-2 text-red-500">Bad :(</div>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Headline</label>
+      <input type="text" class="w-full border border-gray-300 rounded p-2">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Review</label>
+      <textarea class="w-full border border-gray-300 rounded p-2 h-24"></textarea>
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+  </section>
+
+  <!-- Product Section -->
+  <section class="bg-white p-4 rounded shadow mb-4 text-center">
+    <img src="https://placehold.co/600x400" alt="Product Image" class="w-full h-64 object-cover mb-4">
+    <p class="text-2xl font-bold mb-2">$24.99</p>
+    <h3 class="text-xl font-semibold mb-4">Product Title</h3>
+    <div class="border-t border-gray-300 mb-4"></div>
+    <div class="mb-4 text-left">
+      <h4 class="text-lg font-semibold mb-2">Check items:</h4>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2" checked>
+        <label>Check item 1</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Check item 2</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Check item 3</label>
+      </div>
+    </div>
+    <button class="bg-green-500 text-white px-4 py-2 rounded">Buy Now</button>
+  </section>
+
+  <!-- Shipping and Payment Form -->
+  <section class="bg-white p-4 rounded shadow">
+    <h3 class="text-xl font-semibold mb-4">Forma de envio</h3>
+    <div class="mb-4">
+      <h4 class="text-lg mb-2">Método transporte:</h4>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="transporte" class="mr-2">
+        <label>Terrestre</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="transporte" class="mr-2">
+        <label>Aéreo</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="transporte" class="mr-2">
+        <label>Marítimo</label>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-lg mb-2">Forma de pago:</h4>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="pago" class="mr-2">
+        <label>Tarjeta (Crédito/débito)</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="pago" class="mr-2">
+        <label>Transferencia bancaria</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="pago" class="mr-2">
+        <label>Metálico</label>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700">Dirección</label>
+      <input type="text" class="w-full border border-gray-300 rounded p-2">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">País</label>
+      <input type="text" class="w-full border border-gray-300 rounded p-2">
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+  </section>
+
+</body>
+</html>

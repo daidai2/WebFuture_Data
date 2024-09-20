@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .shipping-options {
+            margin: 20px 0;
+        }
+        .shipping-options label {
+            display: block;
+        }
+        .dropdown, .checkbox-group {
+            margin-top: 20px;
+        }
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .product-catalog {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Checkout</h1>
+        
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+            
+            <div class="shipping-options">
+                <h2>Shipping Service</h2>
+                <label><input type="radio" name="shipping" value="standard" checked> Standard - 14 days - $6.59</label>
+                <label><input type="radio" name="shipping" value="expedited"> Expedited - 7 days - $1.97</label>
+                <label><input type="radio" name="shipping" value="express"> Express - 3 days - $19.99</label>
+            </div>
+            
+            <div class="dropdown">
+                <label for="language">Choose a Language:</label>
+                <select id="language" name="language">
+                    <option value="csharp">C#</option>
+                    <option value="java">Java</option>
+                    <option value="php">PHP</option>
+                    <option value="vb">Visual Basic</option>
+                </select>
+            </div>
+            
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="tech" value="csharp"> C#</label>
+                <label><input type="checkbox" name="tech" value="java"> Java</label>
+                <label><input type="checkbox" name="tech" value="php"> PHP</label>
+                <label><input type="checkbox" name="tech" value="vb"> Visual Basic</label>
+            </div>
+        </form>
+        
+        <h2>Product Catalog</h2>
+        <div class="product-catalog">
+            <div class="product">
+                <img src="placeholder.png" alt="Product 1">
+                <p>Product 1</p>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="placeholder.png" alt="Product 2">
+                <p>Product 2</p>
+                <p>$10.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="placeholder.png" alt="Product 3">
+                <p>Product 3</p>
+                <p>$40.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

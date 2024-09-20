@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <!-- Login Section -->
+  <section id="login" class="bg-white p-6 rounded shadow-md mb-6">
+    <header class="flex justify-between items-center mb-4">
+      <nav>
+        <a href="#" class="text-blue-500">Login</a>
+      </nav>
+      <nav>
+        <a href="#" class="text-blue-500">Sign Up</a>
+      </nav>
+    </header>
+    <form>
+      <div class="mb-4">
+        <label class="block mb-2">Login</label>
+        <input type="text" class="w-full p-2 border rounded" />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Password</label>
+        <input type="password" class="w-full p-2 border rounded" />
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Remember me</span>
+        </label>
+        <a href="#" class="text-blue-500">Forgot Password</a>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">LOGIN</button>
+    </form>
+  </section>
+
+  <!-- Blog Page Section -->
+  <section id="blog" class="bg-white p-6 rounded shadow-md mb-6">
+    <header class="mb-4">
+      <h2 class="text-xl font-bold">Title</h2>
+    </header>
+    <div class="mb-6">
+      <h3 class="mb-2">Title Page</h3>
+      <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <iframe class="w-full h-64 mb-4" src="https://placehold.co/600x400" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <article class="bg-gray-200 p-4 rounded">
+        <img src="https://placehold.co/150" class="w-full mb-2" alt="Placeholder Image">
+        <h2 class="text-lg font-bold mb-2">Title</h2>
+        <p class="mb-2">Title Post</p>
+      </article>
+      <article class="bg-gray-200 p-4 rounded">
+        <img src="https://placehold.co/150" class="w-full mb-2" alt="Placeholder Image">
+        <h2 class="text-lg font-bold mb-2">Title</h2>
+        <p class="mb-2">Title Post</p>
+      </article>
+      <article class="bg-gray-200 p-4 rounded">
+        <img src="https://placehold.co/150" class="w-full mb-2" alt="Placeholder Image">
+        <h2 class="text-lg font-bold mb-2">Title</h2>
+        <p class="mb-2">Title Post</p>
+      </article>
+      <article class="bg-gray-200 p-4 rounded">
+        <img src="https://placehold.co/150" class="w-full mb-2" alt="Placeholder Image">
+        <h2 class="text-lg font-bold mb-2">Title</h2>
+        <p class="mb-2">Title Post</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section id="product-catalog" class="bg-white p-6 rounded shadow-md">
+    <header class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Product Catalog</h2>
+      <form class="flex items-center">
+        <input type="text" class="w-full p-2 border rounded-l" placeholder="Search...">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-r">Search</button>
+      </form>
+    </header>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <article class="bg-gray-200 p-4 rounded">
+        <img src="https://placehold.co/150" class="w-full mb-2" alt="Product 1">
+        <h3 class="text-lg font-bold mb-2">PRODUCT 1</h3>
+        <p class="mb-2">Lorem ipsum dolor sit amet.</p>
+        <span class="block mb-2 font-bold">$20.00</span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </article>
+      <article class="bg-gray-200 p-4 rounded">
+        <img src="https://placehold.co/150" class="w-full mb-2" alt="Product 2">
+        <h3 class="text-lg font-bold mb-2">PRODUCT 2</h3>
+        <p class="mb-2">Lorem ipsum dolor sit amet.</p>
+        <span class="block mb-2 font-bold">$10.00</span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </article>
+      <article class="bg-gray-200 p-4 rounded">
+        <img src="https://placehold.co/150" class="w-full mb-2" alt="Product 3">
+        <h3 class="text-lg font-bold mb-2">PRODUCT 3</h3>
+        <p class="mb-2">Lorem ipsum dolor sit amet.</p>
+        <span class="block mb-2 font-bold">$40.00</span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

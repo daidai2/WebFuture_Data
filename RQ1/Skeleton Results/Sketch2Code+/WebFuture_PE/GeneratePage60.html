@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <!-- First Section -->
+  <div class="mb-8">
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 bg-gray-300">
+      <div class="ml-4">
+        <p class="mb-2">Some lines of text</p>
+        <button class="bg-gray-300 px-4 py-2 rounded">BACK</button>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <input type="checkbox" id="checkbox" class="mr-2">
+      <label for="checkbox">Checkbox</label>
+    </div>
+  </div>
+
+  <!-- Second Section -->
+  <div class="mb-8">
+    <h2 class="text-center text-xl font-bold mb-4">Product Page</h2>
+    <div class="flex mb-4">
+      <img src="https://placehold.co/200x200" alt="Product Image" class="w-1/2 bg-gray-300">
+      <div class="w-1/2 p-4">
+        <h3 class="text-lg font-bold">PRODUCT NAME</h3>
+        <p class="mb-2">Manufacturer</p>
+
+        <div class="mb-2">
+          <p>Color:</p>
+          <div>
+            <input type="radio" id="red" name="color" value="red" class="mr-2">
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input type="radio" id="blue" name="color" value="blue" class="mr-2">
+            <label for="blue">Blue</label>
+          </div>
+          <div>
+            <input type="radio" id="white" name="color" value="white" class="mr-2">
+            <label for "white">White</label>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <p class="line-through">$200</p>
+          <p class="text-red-500">$100</p>
+        </div>
+
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </div>
+    </div>
+
+    <div class="flex justify-center space-x-2">
+      <img src="https://placehold.co/50x50" alt="Related Product" class="w-12 h-12 bg-gray-300">
+      <img src="https://placehold.co/50x50" alt="Related Product" class="w-12 h-12 bg-gray-300">
+      <img src="https://placehold.co/50x50" alt="Related Product" class="w-12 h-12 bg-gray-300">
+      <img src="https://placehold.co/50x50" alt="Related Product" class="w-12 h-12 bg-gray-300">
+    </div>
+  </div>
+
+  <!-- Third Section -->
+  <div>
+    <h2 class="text-center text-xl font-bold mb-4">Forma de envío</h2>
+
+    <div class="mb-4">
+      <p>Método de transporte:</p>
+      <div>
+        <input type="radio" id="terrestre" name="transporte" value="terrestre" class="mr-2">
+        <label for="terrestre">Terrestre</label>
+      </div>
+      <div>
+        <input type="radio" id="aereo" name="transporte" value="aereo" class="mr-2">
+        <label for="aereo">Aéreo</label>
+      </div>
+      <div>
+        <input type="radio" id="maritimo" name="transporte" value="maritimo" class="mr-2">
+        <label for="maritimo">Marítimo</label>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <p>Forma de pago:</p>
+      <div>
+        <input type="radio" id="tarjeta" name="pago" value="tarjeta" class="mr-2">
+        <label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+      </div>
+      <div>
+        <input type="radio" id="transferencia" name="pago" value="transferencia" class="mr-2">
+        <label for="transferencia">Transferencia bancaria</label>
+      </div>
+      <div>
+        <input type="radio" id="metalico" name="pago" value="metalico" class="mr-2">
+        <label for="metalico">Metálico</label>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+
+    <div class="mb-4">
+      <label for="pais">País:</label>
+      <select id="pais" class="w-full p-2 border border-gray-300 rounded">
+        <option value="">Seleccione un país</option>
+        <option value="pais1">País 1</option>
+        <option value="pais2">País 2</option>
+      </select>
+    </div>
+
+    <button class="bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+  </div>
+</body>
+</html>

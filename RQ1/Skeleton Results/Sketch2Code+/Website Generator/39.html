@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+        }
+        .product-info, .review-form, .product-details, .checklist {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .product-info img, .product-details img {
+            width: 100px;
+            height: 100px;
+        }
+        .star-rating {
+            display: flex;
+            align-items: center;
+        }
+        .star {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .star:hover, .star:hover ~ .star {
+            color: gold;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+        }
+        .checklist-item input {
+            margin-right: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Write Review</h1>
+        
+        <div class="product-info">
+            <img src="product_image.jpg" alt="Product Name">
+            <div>
+                <h2>Product Name</h2>
+                <p>$Price</p>
+                <p>45 reviews</p>
+            </div>
+        </div>
+
+        <div class="review-form">
+            <h2>Rate Product</h2>
+            <div class="star-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span>Bad :(</span>
+            </div>
+            <form>
+                <label for="headline">Headline</label><br>
+                <input type="text" id="headline" name="headline"><br><br>
+                <label for="review">Review</label><br>
+                <textarea id="review" name="review"></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="product-details">
+            <img src="product_image.jpg" alt="Product Title">
+            <p>$24.99</p>
+            <h2>Product Title</h2>
+        </div>
+
+        <div class="checklist">
+            <h2>Check items:</h2>
+            <div class="checklist-item">
+                <input type="checkbox" id="item1" name="item1">
+                <label for="item1">Check item 1</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="item2" name="item2">
+                <label for="item2">Check item 2</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="item3" name="item3">
+                <label for="item3">Check item 3</label>
+            </div>
+            <button type="button">Buy Now</button>
+        </div>
+
+        <div class="buttons">
+            <button type="button">Back</button>
+            <button type="button">Button</button>
+        </div>
+    </div>
+</body>
+</html>

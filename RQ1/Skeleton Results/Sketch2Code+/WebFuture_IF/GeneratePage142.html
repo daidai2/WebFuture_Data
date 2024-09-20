@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Main Container -->
+  <div class="container mx-auto p-4">
+
+    <!-- Header Section -->
+    <header class="flex justify-between items-center border-b pb-4 mb-4">
+      <h1 class="text-2xl font-bold">Title Page</h1>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Play</button>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <!-- Intro Section -->
+      <section class="intro mb-4">
+        <div class="flex mb-4">
+          <iframe class="w-full h-48 bg-gray-200" src="https://placehold.co/600x400" allow="autoplay"></iframe>
+        </div>
+      </section>
+
+      <!-- Articles Section -->
+      <section class="articles mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- First article preview -->
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-32 object-cover mb-2">
+          <h2 class="text-xl font-bold">Title</h2>
+          <p>Snippet text</p>
+        </article>
+        <!-- Second article preview -->
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-32 object-cover mb-2">
+          <h2 class="text-xl font-bold">Title</h2>
+          <p>Snippet text</p>
+        </article>
+        <!-- Third article preview -->
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-32 object-cover mb-2">
+          <h2 class="text-xl font-bold">Title</h2>
+          <p>Snippet text</p>
+        </article>
+        <!-- Fourth article preview -->
+        <article class="bg-white p-4 rounded shadow">
+          <img src="https://placehold.co/150x150" alt="Article Image" class="w-full h-32 object-cover mb-2">
+          <h2 class="text-xl font-bold">Title</h2>
+          <p>Snippet text</p>
+        </article>
+      </section>
+
+      <!-- Secondary Content Section -->
+      <section class="secondary-content mb-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full h-48 object-cover">
+          <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full h-48 object-cover">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <p>First line of text</p>
+            <p>Second line of text</p>
+            <p>Third line of text</p>
+          </div>
+          <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full h-48 object-cover">
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="option" class="mr-2">
+          <label for="option">Option</label>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+      </section>
+    </main>
+
+    <!-- Form Section -->
+    <section class="form bg-white p-4 rounded shadow mb-4">
+      <div class="flex flex-wrap md:flex-no-wrap mb-4">
+        <img src="https://placehold.co/100x100" alt="Avatar Image" class="w-24 h-24 object-cover mb-4 md:mb-0 md:mr-4">
+        <div class="flex flex-col flex-grow">
+          <label for="label" class="mb-2">Label</label>
+          <input type="text" id="label" class="border p-2 rounded mb-4">
+          <label for="location" class="mb-2">Location</label>
+          <input type="text" id="location" class="border p-2 rounded mb-4">
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="option1" class="inline-flex items-center">
+          <input type="radio" id="option1" name="options" class="mr-2">
+          <span>RadioButton</span>
+        </label>
+        <label for="option2" class="inline-flex items-center ml-4">
+          <input type="radio" id="option2" name="options" class="mr-2">
+          <span>RadioButton</span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label for="checkbox1" class="inline-flex items-center">
+          <input type="checkbox" id="checkbox1" class="mr-2">
+          <span>Checkbox1</span>
+        </label>
+        <label for="checkbox2" class="inline-flex items-center ml-4">
+          <input type="checkbox" id="checkbox2" class="mr-2">
+          <span>Checkbox2</span>
+        </label>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Button</button>
+      <div>
+        <p>First line of text</p>
+        <p>Second line of text</p>
+        <p>Third line of text</p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4 border-t">
+      <p>&copy; 2023 Company Name. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

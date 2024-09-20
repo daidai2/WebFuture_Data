@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Container -->
+  <div class="max-w-4xl mx-auto bg-white shadow-lg p-6">
+
+    <!-- Payment Method Section -->
+    <section id="payment-method" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Select your payment method</h2>
+      <ul class="mb-4 space-y-2">
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="payment-method" class="form-radio">
+            <span>Credit Card</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="payment-method" class="form-radio">
+            <span>PayPal</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="payment-method" class="form-radio">
+            <span>Bank Transfer</span>
+          </label>
+        </li>
+      </ul>
+      <h2 class="text-2xl font-bold mb-4">Enter your data</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block mb-2">Card Number</label>
+          <input type="text" class="border border-gray-300 rounded p-2 w-full">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">Expiration date</label>
+          <div class="flex space-x-2">
+            <select class="border border-gray-300 rounded p-2">
+              <option>MM</option>
+              <option>01</option>
+              <option>02</option>
+              <option>...</option>
+            </select>
+            <select class="border border-gray-300 rounded p-2">
+              <option>YY</option>
+              <option>23</option>
+              <option>24</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 inline-block">CVV</label>
+          <input type="text" class="border border-gray-300 rounded p-2 w-1/4">
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Complete</button>
+      </form>
+    </section>
+
+    <!-- Related Services Section -->
+    <section id="related-services" class="mb-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-2">Mobility Solutions & Daily Living Aids</h2>
+        <p class="mb-2">Making life easier</p>
+        <a href="#" class="text-blue-500">Find out More</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="service-item p-4 border border-gray-300 rounded">
+          <h3 class="text-xl font-bold mb-2">Wheelchair Repair</h3>
+          <p class="mb-2">Lorem ipsum dolor sit amet...</p>
+          <a href="#" class="text-blue-500">Find out More</a>
+        </div>
+        <div class="service-item p-4 border border-gray-300 rounded">
+          <h3 class="text-xl font-bold mb-2">Community Contacts</h3>
+          <p class="mb-2">Lorem ipsum dolor sit amet...</p>
+          <a href="#" class="text-blue-500">Find out More</a>
+        </div>
+      </div>
+      <div class="mt-8">
+        <img src="https://placehold.co/600x400" alt="Promotional" class="mb-4">
+        <a href="#" class="text-blue-500">Find out More</a>
+      </div>
+    </section>
+
+    <!-- Shipping Form Section -->
+    <section id="shipping-method" class="">
+      <h2 class="text-2xl font-bold mb-4">Forma de envío</h2>
+      <ul class="mb-4 space-y-2">
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="shipping-method" class="form-radio">
+            <span>Terreste</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="shipping-method" class="form-radio">
+            <span>Aereo</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="shipping-method" class="form-radio">
+            <span>Maritimo</span>
+          </label>
+        </li>
+      </ul>
+      <h2 class="text-2xl font-bold mb-4">Forma de pago</h2>
+      <ul class="mb-4 space-y-2">
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="payment-method" class="form-radio">
+            <span>Tarjeta (Crédito/Debito)</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="payment-method" class="form-radio">
+            <span>Transferencia bancaria</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="payment-method" class="form-radio">
+            <span>Metálico</span>
+          </label>
+        </li>
+      </ul>
+      <div class="mb-4">
+        <label class="block mb-2">Dirección</label>
+        <input type="text" class="border border-gray-300 rounded p-2 w-full">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">País</label>
+        <select class="border border-gray-300 rounded p-2 w-full">
+          <option>País</option>
+          <option>España</option>
+          <option>Francia</option>
+          <option>...</option>
+        </select>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+    </section>
+
+  </div>
+
+</body>
+</html>

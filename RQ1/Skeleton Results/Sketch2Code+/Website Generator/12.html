@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            background-color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .hero a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .section a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .team-member {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 40px);
+            max-width: calc(33% - 40px);
+            text-align: center;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+        }
+        .team-member p {
+            margin: 5px 0;
+        }
+        .form-section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h2 {
+            margin-top: 0;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section label {
+            margin-bottom: 5px;
+        }
+        .form-section input, .form-section select, .form-section textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .form-section button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Mobility Solutions & Daily Living Aids</h1>
+    <p>Making Life Easier</p>
+    <a href="#">Find out More</a>
+</div>
+
+<div class="section">
+    <h2>Wheelchair Repair</h2>
+    <p>We offer comprehensive repair services for all types of wheelchairs. Our experienced technicians ensure your wheelchair is safe and reliable.</p>
+    <a href="#">Find out More</a>
+</div>
+
+<div class="section">
+    <h2>Community Contracts</h2>
+    <p>Our community contracts provide tailored solutions for organizations and groups. We work closely with you to meet your specific needs.</p>
+    <a href="#">Find out More</a>
+</div>
+
+<div class="team">
+    <div class="team-member">
+        <img src="placeholder.jpg" alt="Mate One">
+        <h3>Mate One</h3>
+        <p>Job Title</p>
+    </div>
+    <div class="team-member">
+        <img src="placeholder.jpg" alt="Mate Two">
+        <h3>Mate Two</h3>
+        <p>Job Title</p>
+    </div>
+    <div class="team-member">
+        <img src="placeholder.jpg" alt="Mate Three">
+        <h3>Mate Three</h3>
+        <p>Job Title</p>
+    </div>
+</div>
+
+<div class="form-section">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="transport">Forma de envío:</label>
+        <select id="transport" name="transport">
+            <option value="terrestre">Terrestre</option>
+            <option value="aereo">Aereo</option>
+            <option value="maritimo">Marítimo</option>
+        </select>
+
+        <label for="payment">Forma de pago:</label>
+        <select id="payment" name="payment">
+            <option value="tarjeta">Tarjeta (Crédito/débito)</option>
+            <option value="transferencia">Transferencia bancaria</option>
+            <option value="metalico">Metálico</option>
+        </select>
+
+        <label for="address">Dirección:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="country">País:</label>
+        <select id="country" name="country">
+            <option value="pais1">País 1</option>
+            <option value="pais2">País 2</option>
+        </select>
+
+        <button type="submit">Aceptar</button>
+    </form>
+</div>
+
+</body>
+</html>

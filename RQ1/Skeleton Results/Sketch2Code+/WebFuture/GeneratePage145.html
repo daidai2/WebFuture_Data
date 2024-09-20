@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 p-8">
+  <div class="max-w-4xl mx-auto bg-white p-4">
+    <!-- Header -->
+    <header class="text-center mb-6">
+      <h1 class="text-3xl font-bold">Product Page</h1>
+    </header>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Left Section: Images -->
+      <section class="lg:w-1/2">
+        <figure class="mb-4">
+          <img src="https://placehold.co/600x400" alt="Main Product Image" class="w-full">
+        </figure>
+        <div class="flex gap-2">
+          <figure>
+            <img src="https://placehold.co/100x100" alt="Thumbnail 1" class="w-24 h-24">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/100x100" alt="Thumbnail 2" class="w-24 h-24">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/100x100" alt="Thumbnail 3" class="w-24 h-24">
+          </figure>
+          <figure>
+            <img src="https://placehold.co/100x100" alt="Thumbnail 4" class="w-24 h-24">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Right Section: Product Details -->
+      <section class="lg:w-1/2 space-y-4">
+        <h2 class="text-2xl font-bold">PRODUCT NAME</h2>
+        <p class="text-gray-600">Manufacturer</p>
+        <form class="space-y-4">
+          <div>
+            <p class="font-bold">COLOR:</p>
+            <label class="block">
+              <input type="radio" name="color" value="red"> Red
+            </label>
+            <label class="block">
+              <input type="radio" name="color" value="blue"> Blue
+            </label>
+            <label class="block">
+              <input type="radio" name="color" value="white"> White
+            </label>
+          </div>
+          <div class="flex items-baseline space-x-2">
+            <p class="text-lg font-bold">Price: $400</p>
+            <p class="text-lg line-through text-gray-400">Old Price: $200</p>
+          </div>
+          <button class="px-4 py-2 bg-blue-500 text-white rounded">Add to Cart</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Notes Section -->
+    <section class="mt-8">
+      <h2 class="text-xl font-bold mb-4">Employees</h2>
+      <div>
+        <!-- Employee 1 -->
+        <article class="flex items-start mb-4">
+          <figure class="w-24 h-24 mr-4">
+            <img src="https://placehold.co/100x100" alt="Employee 1 Image">
+          </figure>
+          <div>
+            <h3 class="text-lg font-bold">Name One</h3>
+            <p>Job Title</p>
+          </div>
+        </article>
+
+        <!-- Employee 2 -->
+        <article class="flex items-start mb-4">
+          <div class="mr-4">
+            <h3 class="text-lg font-bold">Name Two</h3>
+            <p>Job Title</p>
+          </div>
+          <figure class="w-24 h-24">
+            <img src="https://placehold.co/100x100" alt="Employee 2 Image">
+          </figure>
+        </article>
+
+        <!-- Employee 3 -->
+        <article class="flex items-start mb-4">
+          <figure class="w-24 h-24 mr-4">
+            <img src="https://placehold.co/100x100" alt="Employee 3 Image">
+          </figure>
+          <div>
+            <h3 class="text-lg font-bold">Name Three</h3>
+            <p>Job Title</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Additional Section for Notes -->
+    <section class="mt-8">
+      <figure class="mb-4">
+        <img src="https://placehold.co/600x400" alt="Additional Image">
+      </figure>
+      <p class="text-gray-600">Additional text here...</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="mt-8">
+      <form class="space-y-4">
+        <div>
+          <label>Label 1</label>
+          <input type="text" class="ml-2 border border-gray-400 p-2">
+        </div>
+        <div>
+          <label>Label 2</label>
+          <input type="text" class="ml-2 border border-gray-400 p-2">
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="checkbox1" class="mr-2">
+          <label for="checkbox1">Checkbox 1</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="checkbox2" class="mr-2">
+          <label for="checkbox2">Checkbox 2</label>
+        </div>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded">Button</button>
+        <div>
+          <label>
+            <input type="radio" name="radio"> Radio Button 1
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="radio"> Radio Button 2
+          </label>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="mt-8">
+      <p class="text-gray-600">Footer information...</p>
+    </footer>
+  </div>
+</body>
+</html>

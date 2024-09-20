@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-white text-center py-4 shadow-md">
+    <h1 class="text-3xl font-bold">Title</h1>
+    <h2 class="text-xl">Title Page</h2>
+  </header>
+
+  <!-- Video/Image Section -->
+  <section class="flex flex-col items-center mt-6">
+    <div class="w-11/12 md:w-2/3 lg:w-1/2 h-64 bg-gray-300 flex items-center justify-center">
+      <span class="text-3xl">Play Button</span>
+    </div>
+  </section>
+
+  <!-- Card Container Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 mx-4 lg:mx-32">
+    <article class="bg-white p-4 shadow-md">
+      <h3 class="font-bold">Title</h3>
+      <div class="w-full h-32 bg-gray-300 mt-2"></div>
+      <p class="mt-2">Some text lines...</p>
+    </article>
+    <article class="bg-white p-4 shadow-md">
+      <h3 class="font-bold">Title</h3>
+      <div class="w-full h-32 bg-gray-300 mt-2"></div>
+      <p class="mt-2">Some text lines...</p>
+    </article>
+    <article class="bg-white p-4 shadow-md">
+      <h3 class="font-bold">Title</h3>
+      <div class="w-full h-32 bg-gray-300 mt-2"></div>
+      <p class="mt-2">Some text lines...</p>
+    </article>
+    <article class="bg-white p-4 shadow-md">
+      <h3 class="font-bold">Title</h3>
+      <div class="w-full h-32 bg-gray-300 mt-2"></div>
+      <p class="mt-2">Some text lines...</p>
+    </article>
+  </div>
+
+  <!-- Banner Section -->
+  <main class="mt-8">
+    <div class="w-11/12 mx-auto h-64 bg-gray-300"></div>
+    <div class="mt-4 text-center">
+      <p>Paragraph text line 1...</p>
+      <p>Paragraph text line 2...</p>
+      <p>Paragraph text line 3...</p>
+    </div>
+  </main>
+
+  <!-- Form Section -->
+  <section class="mt-8 mx-4 lg:mx-32">
+    <form class="bg-white p-8 shadow-md">
+      <div class="mb-4">
+        <label for="input1" class="block text-sm font-medium text-gray-700">Input Field 1</label>
+        <input type="text" id="input1" class="mt-1 block w-full px-3 py-2 bg-white border shadow-sm border-gray-300 rounded-md" />
+      </div>
+      <div class="mb-4">
+        <label for="input2" class="block text-sm font-medium text-gray-700">Input Field 2</label>
+        <input type="text" id="input2" class="mt-1 block w-full px-3 py-2 bg-white border shadow-sm border-gray-300 rounded-md" />
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password Field</label>
+        <input type="password" id="password" class="mt-1 block w-full px-3 py-2 bg-white border shadow-sm border-gray-300 rounded-md" />
+      </div>
+      <div class="mb-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Login</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Options Section -->
+  <section class="mt-8 mx-4 lg:mx-32">
+    <form class="bg-white p-8 shadow-md">
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">Checkbox Group</label>
+        <div class="mt-2 space-y-2">
+          <div>
+            <input type="checkbox" id="checkbox1" />
+            <label for="checkbox1" class="ml-2">Option 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox2" />
+            <label for="checkbox2" class="ml-2">Option 2</label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">Radio Button Group</label>
+        <div class="mt-2 space-y-2">
+          <div>
+            <input type="radio" name="radioGroup" id="radio1" />
+            <label for="radio1" class="ml-2">Not relevant</label>
+          </div>
+          <div>
+            <input type="radio" name="radioGroup" id="radio2" />
+            <label for="radio2" class="ml-2">Low</label>
+          </div>
+          <div>
+            <input type="radio" name="radioGroup" id="radio3" />
+            <label for="radio3" class="ml-2">Medium</label>
+          </div>
+          <div>
+            <input type="radio" name="radioGroup" id="radio4" />
+            <label for="radio4" class="ml-2">High</label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">Checkboxes</label>
+        <div class="mt-2 grid grid-cols-4 gap-4">
+          <div>
+            <input type="checkbox" id="choice1" />
+            <label for="choice1" class="ml-2">Choice 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice2" />
+            <label for="choice2" class="ml-2">Choice 2</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice3" />
+            <label for="choice3" class="ml-2">Choice 3</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice4" />
+            <label for="choice4" class="ml-2">Choice 4</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice5" />
+            <label for="choice5" class="ml-2">Choice 5</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice6" />
+            <label for="choice6" class="ml-2">Choice 6</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice7" />
+            <label for="choice7" class="ml-2">Choice 7</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice8" />
+            <label for="choice8" class="ml-2">Choice 8</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-white p-4 shadow-md text-center mt-8">
+    <div class="mb-4">
+      <label for="footerTitle" class="block text-sm font-medium text-gray-700">Title</label>
+      <input type="text" id="footerTitle" class="mt-1 block w-full px-3 py-2 bg-white border shadow-sm border-gray-300 rounded-md" />
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700">Radio Buttons</label>
+      <div class="mt-2 space-y-2">
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio1" />
+          <label for="footerRadio1" class="ml-2">Not relevant</label>
+        </div>
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio2" />
+          <label for="footerRadio2" class="ml-2">Low</label>
+        </div>
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio3" />
+          <label for="footerRadio3" class="ml-2">Medium</label>
+        </div>
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio4" />
+          <label for="footerRadio4" class="ml-2">High</label>
+        </div>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700">Checkboxes</label>
+      <div class="mt-2 grid grid-cols-4 gap-4">
+        <div>
+          <input type="checkbox" id="footerChoice1" />
+          <label for="footerChoice1" class="ml-2">Choice 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerChoice2" />
+          <label for="footerChoice2" class="ml-2">Choice 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerChoice3" />
+          <label for="footerChoice3" class="ml-2">Choice 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerChoice4" />
+          <label for="footerChoice4" class="ml-2">Choice 4</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerChoice5" />
+          <label for="footerChoice5" class="ml-2">Choice 5</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerChoice6" />
+          <label for="footerChoice6" class="ml-2">Choice 6</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerChoice7" />
+          <label for="footerChoice7" class="ml-2">Choice 7</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerChoice8" />
+          <label for="footerChoice8" class="ml-2">Choice 8</label>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center space-x-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">OK</button>
+      <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-md">Cancel</button>
+    </div>
+  </footer>
+
+</body>
+</html>

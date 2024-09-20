@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <header class="bg-white p-4 shadow-md mb-4">
+    <h1 class="text-2xl font-bold">Checkout</h1>
+  </header>
+
+  <section class="bg-white p-4 shadow-md mb-4">
+    <!-- Shipping Address Section -->
+    <div id="shipping-address" class="mb-6">
+      <h2 class="text-xl font-bold mb-2">Shipping Address</h2>
+      <label for="first-name" class="block mb-2">First Name</label>
+      <input type="text" id="first-name" class="w-full p-2 border mb-4">
+
+      <label for="last-name" class="block mb-2">Last Name</label>
+      <input type="text" id="last-name" class="w-full p-2 border mb-4">
+
+      <label for="company" class="block mb-2">Company</label>
+      <input type="text" id="company" class="w-full p-2 border">
+    </div>
+
+    <!-- Shipping Service Section -->
+    <div id="shipping-service" class="mb-6">
+      <h2 class="text-xl font-bold mb-2">Shipping Service</h2>
+      <label class="block mb-2">
+        <input type="radio" name="shipping" value="standard" class="mr-2">
+        Standard 14 days - $6.99
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="shipping" value="expected" class="mr-2">
+        Expected 7 days - $14.99
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="shipping" value="express" class="mr-2">
+        Express 3 days - $19.99
+      </label>
+    </div>
+
+    <!-- Write Review Section -->
+    <div id="write-review" class="mb-6">
+      <h2 class="text-xl font-bold mb-2">Write Review</h2>
+      <div id="product-info" class="flex items-center mb-4">
+        <img src="https://placehold.co/50x50" alt="Product Image" class="w-16 h-16 mr-4 border">
+        <div>
+          <span class="block font-bold">Product Name</span>
+          <span class="block">$Price</span>
+          <span class="block">45 reviews</span>
+        </div>
+        <div class="ml-auto">
+          <span>★★★☆☆</span>
+        </div>
+      </div>
+      <div id="rate-product">
+        <label class="block font-bold mb-2">Rate Product</label>
+        <div class="flex items-center mb-4">
+          <input type="radio" name="rating" value="1-star" class="mr-1"> ★
+          <input type="radio" name="rating" value="2-stars" class="mr-1"> ★★
+          <input type="radio" name="rating" value="3-stars" class="mr-1"> ★★★
+          <input type="radio" name="rating" value="4-stars" class="mr-1"> ★★★★
+          <input type="radio" name="rating" value="5-stars" class="mr-1"> ★★★★★
+        </div>
+
+        <label for="headline" class="block mb-2">Headline</label>
+        <input type="text" id="headline" class="w-full p-2 border mb-4">
+
+        <label for="review" class="block mb-2">Review</label>
+        <textarea id="review" class="w-full p-2 border mb-4"></textarea>
+
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2">Submit</button>
+      </div>
+    </div>
+
+    <!-- Spanish Section -->
+    <div id="spanish-section">
+      <h2 class="text-xl font-bold mb-2">Formas de envío</h2>
+
+      <h3 class="text-lg font-semibold mb-2">Método transporte</h3>
+      <label class="block mb-2">
+        <input type="radio" name="shipment" value="terreste" class="mr-2"> Terreste
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="shipment" value="aereo" class="mr-2"> Aereo
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="shipment" value="maritimo" class="mr-2"> Maritimo
+      </label>
+
+      <h3 class="text-lg font-semibold mb-2">Forma de pago</h3>
+      <label class="block mb-2">
+        <input type="radio" name="payment" value="tarjeta" class="mr-2"> Tarjeta (Crédito/Débito)
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="payment" value="transferencia" class="mr-2"> Transferencia bancaria
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="payment" value="metalico" class="mr-2"> Metálico
+      </label>
+
+      <label for="direccion" class="block mb-2">Dirección</label>
+      <input type="text" id="direccion" class="w-full p-2 border mb-4">
+
+      <label for="pais" class="block mb-2">País</label>
+      <select id="pais" class="w-full p-2 border mb-4">
+        <option value="">Select Country</option>
+        <option value="country1">Country 1</option>
+        <option value="country2">Country 2</option>
+      </select>
+
+      <button class="bg-blue-500 text-white px-4 py-2">Aceptar</button>
+    </div>
+  </section>
+</body>
+</html>

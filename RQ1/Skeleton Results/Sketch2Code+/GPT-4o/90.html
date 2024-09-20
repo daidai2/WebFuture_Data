@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, .main-content, .footer {
+            margin-bottom: 20px;
+        }
+        .header-title, .main-title, .post-title, .footer-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .video, .image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 200px;
+            font-size: 18px;
+            color: #666;
+        }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .post-content {
+            width: 70%;
+        }
+        .post-image {
+            width: 28%;
+            background-color: #eee;
+            height: 100px;
+        }
+        .form {
+            margin-top: 20px;
+        }
+        .form input[type="text"], .form input[type="email"], .form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form button:hover {
+            background-color: #555;
+        }
+        .checkboxes, .radios {
+            margin-top: 20px;
+        }
+        .checkbox, .radio {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="header-title">Title</h1>
+            <h2>Title Page</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="video">Video Placeholder</div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <h2 class="main-title">Title</h2>
+            <div class="post">
+                <div class="post-image">Image</div>
+                <div class="post-content">
+                    <h3 class="post-title">Title Post</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-image">Image</div>
+                <div class="post-content">
+                    <h3 class="post-title">Title Post</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-image">Image</div>
+                <div class="post-content">
+                    <h3 class="post-title">Title Post</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-image">Image</div>
+                <div class="post-content">
+                    <h3 class="post-title">Title Post</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <h2 class="footer-title">Title</h2>
+            <div class="image">Image Placeholder</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula tincidunt felis.</p>
+
+            <!-- Form Section -->
+            <div class="form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Submit</button>
+            </div>
+
+            <!-- Checkboxes Section -->
+            <div class="checkboxes">
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Checkbox 1</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">Checkbox 2</label>
+                </div>
+            </div>
+
+            <!-- Radios Section -->
+            <div class="radios">
+                <div class="radio">
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">Radio 1</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">Radio 2</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

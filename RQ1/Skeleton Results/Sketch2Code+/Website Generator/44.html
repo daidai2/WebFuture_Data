@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 10px;
+        }
+        .radio-group input, .checkbox-group input {
+            margin-right: 10px;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <form>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <div class="radio-group">
+                <label>Shipping Service</label>
+                <label><input type="radio" name="shipping" value="standard" required> Standard (14 days - $6.59)</label>
+                <label><input type="radio" name="shipping" value="expedited"> Expedited (7 days - $11.97)</label>
+                <label><input type="radio" name="shipping" value="express"> Express (3 days - $19.97)</label>
+            </div>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="language" value="csharp"> C#</label>
+                <label><input type="checkbox" name="language" value="java"> Java</label>
+                <label><input type="checkbox" name="language" value="php"> PHP</label>
+                <label><input type="checkbox" name="language" value="visual-basic"> Visual Basic</label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

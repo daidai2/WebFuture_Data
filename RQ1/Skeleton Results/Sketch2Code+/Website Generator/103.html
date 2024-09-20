@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .product .image {
+            width: 300px;
+            height: 300px;
+            background-color: #eaeaea;
+            margin-right: 20px;
+        }
+        .product .details {
+            max-width: 400px;
+        }
+        .product .thumbnails {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .product .thumbnail {
+            width: 60px;
+            height: 60px;
+            background-color: #eaeaea;
+        }
+        .product .details h2 {
+            margin: 0;
+        }
+        .product .details .colors {
+            margin: 10px 0;
+        }
+        .product .details .price {
+            margin: 10px 0;
+            color: red;
+        }
+        .product .details .old-price {
+            text-decoration: line-through;
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member .photo {
+            width: 100px;
+            height: 100px;
+            background-color: #eaeaea;
+            margin-bottom: 10px;
+        }
+        .shipping-info {
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .shipping-info form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .shipping-info label {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .shipping-info input, .shipping-info select {
+            width: calc(50% - 10px);
+            margin: 5px;
+            padding: 10px;
+        }
+        .shipping-info .actions {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="image"></div>
+            <div class="details">
+                <h2>Product Name</h2>
+                <p>Manufacturer</p>
+                <div class="colors">
+                    <label>
+                        <input type="radio" name="color" value="red" checked> Red
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="blue"> Blue
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="white"> White
+                    </label>
+                </div>
+                <div class="price">
+                    <span>$100</span>
+                    <span class="old-price">$200</span>
+                </div>
+                <button>Add to Cart</button>
+                <div class="thumbnails">
+                    <div class="thumbnail"></div>
+                    <div class="thumbnail"></div>
+                    <div class="thumbnail"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team">
+            <div class="team-member">
+                <div class="photo"></div>
+                <div>Mate One</div>
+                <div>Job Title</div>
+            </div>
+            <div class="team-member">
+                <div class="photo"></div>
+                <div>Mate Two</div>
+                <div>Job Title</div>
+            </div>
+            <div class="team-member">
+                <div class="photo"></div>
+                <div>Mate Three</div>
+                <div>Job Title</div>
+            </div>
+        </div>
+
+        <div class="shipping-info">
+            <form>
+                <label>First Name</label>
+                <input type="text" name="first-name">
+                
+                <label>Last Name</label>
+                <input type="text" name="last-name">
+                
+                <label>Phone</label>
+                <input type="text" name="phone">
+                
+                <label>Email</label>
+                <input type="email" name="email">
+                
+                <label>Country</label>
+                <select name="country">
+                    <option value="us">United States</option>
+                </select>
+                
+                <label>State</label>
+                <select name="state">
+                    <option value="">Choose</option>
+                </select>
+                
+                <label>City</label>
+                <input type="text" name="city">
+                
+                <label>Zip Code</label>
+                <input type="text" name="zip-code">
+                
+                <div class="actions">
+                    <button type="button">Back</button>
+                    <button type="submit">Next Step</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

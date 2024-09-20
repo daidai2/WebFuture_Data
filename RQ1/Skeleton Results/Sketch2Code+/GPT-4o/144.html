@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .section, .product, .options {
+            margin-bottom: 20px;
+        }
+        .header button, .section button, .product button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .section, .product {
+            display: flex;
+            justify-content: space-between;
+        }
+        .section div, .product div {
+            width: 45%;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .options label, .options button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mobility Solutions & Daily Living Aids</h1>
+            <p>Making Life Easier</p>
+            <button>Find out More</button>
+        </div>
+        
+        <div class="section">
+            <div>
+                <h2>Wheelchair Repair</h2>
+                <hr>
+                <button>Find out More</button>
+            </div>
+            <div>
+                <h2>Community Contracts</h2>
+                <hr>
+                <button>Find out More</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div>
+                <img src="placeholder.png" alt="Image Placeholder">
+                <hr>
+                <button>Find out More</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="product_image.png" alt="Product Image">
+            <div class="product-details">
+                <p>$24.99</p>
+                <h3>Product Title</h3>
+                <hr>
+                <p>Description of the product goes here.</p>
+                <h4>Check items:</h4>
+                <label><input type="checkbox"> Check item 1</label>
+                <label><input type="checkbox"> Check item 2</label>
+                <label><input type="checkbox"> Check item 3</label>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="options">
+            <div>
+                <label>Label</label>
+                <label><input type="checkbox"> Checkbox</label>
+                <label><input type="checkbox"> Checkbox</label>
+            </div>
+            <div>
+                <label>Label</label>
+                <label><input type="radio" name="radio"> Radio button</label>
+                <label><input type="radio" name="radio"> Radio button</label>
+                <button>Button</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold mb-6">Checkout</h1>
+
+    <div class="mb-6">
+      <h2 class="mb-2 text-xl font-semibold">Shipping Address</h2>
+      <form class="space-y-4">
+        <!-- Shipping Address Fields -->
+        <div>
+          <label class="block text-sm font-medium mb-1">First Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Last Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Company</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+        </div>
+      </form>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="mb-2 text-xl font-semibold">Shipping Service</h2>
+      <div class="space-y-2">
+        <div>
+          <input type="radio" name="shipping" id="standard" class="mr-2">
+          <label for="standard" class="text-sm">Standard (14 days - $6.59)</label>
+        </div>
+        <div>
+          <input type="radio" name="shipping" id="expedited" class="mr-2">
+          <label for="expedited" class="text-sm">Expedited (7 days - $1.97)</label>
+        </div>
+        <div>
+          <input type="radio" name="shipping" id="express" class="mr-2">
+          <label for="express" class="text-sm">Express (3 days - $19.97)</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="mb-2 text-xl font-semibold">Programming Languages</h2>
+      <div class="space-y-2">
+        <div class="flex items-center">
+          <input type="checkbox" id="csharp" class="mr-2">
+          <label for="csharp" class="text-sm">C#</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="java" class="mr-2">
+          <label for="java" class="text-sm">Java</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="php" class="mr-2">
+          <label for="php" class="text-sm">PHP</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="visualbasic" class="mr-2">
+          <label for="visualbasic" class="text-sm">Visual Basic</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="mb-2 text-xl font-semibold">Shipping Info</h2>
+      <form class="space-y-4">
+        <!-- Shipping Info Fields -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">First Name</label>
+            <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Last Name</label>
+            <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Phone</label>
+            <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">E-mail</label>
+            <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Country</label>
+            <select class="w-full border border-gray-300 rounded px-3 py-2">
+              <option>United States</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">State</label>
+            <select class="w-full border border-gray-300 rounded px-3 py-2">
+              <option>Choose</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">City</label>
+            <select class="w-full border border-gray-300 rounded px-3 py-2">
+              <option>Palo Alto</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Zip Code</label>
+            <input type="text" class="w-full border border-gray-300 rounded px-3 py-2">
+          </div>
+        </div>
+        <div class="flex justify-between mt-4">
+          <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded">Back</button>
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Next Step</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

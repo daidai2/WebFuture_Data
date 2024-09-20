@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            background-color: #eaeaea;
+            margin-bottom: 10px;
+        }
+        .product button {
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Catalog</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="#" alt="Product 1">
+                <p>Product 1</p>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="#" alt="Product 2">
+                <p>Product 2</p>
+                <p>$10.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="#" alt="Product 3">
+                <p>Product 3</p>
+                <p>$40.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

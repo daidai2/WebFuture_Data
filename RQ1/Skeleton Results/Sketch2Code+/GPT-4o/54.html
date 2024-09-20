@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Shipping Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+        .radio-group label {
+            margin-right: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .find-more-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .find-more-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <h2>Select your payment method</h2>
+        <div class="radio-group">
+            <label><input type="radio" name="payment" value="credit_card" checked> Credit Card</label>
+            <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+            <label><input type="radio" name="payment" value="bank_transfer"> Bank Transfer</label>
+        </div>
+        <h2>Enter your data</h2>
+        <input type="text" id="card_number" name="card_number" placeholder="Card Number">
+        <div style="display: flex; gap: 10px;">
+            <input type="text" id="expiration_date" name="expiration_date" placeholder="MM / YY" style="flex: 1;">
+            <input type="text" id="ccv" name="ccv" placeholder="CCV" style="flex: 1;">
+        </div>
+        <button class="button">Complete</button>
+    </div>
+
+    <div class="section">
+        <h2>Mobility Solutions & Daily Living Aids</h2>
+        <p>Making Life Easier</p>
+        <a href="#" class="find-more-button">Find out More</a>
+    </div>
+
+    <div class="section">
+        <h2>Wheelchair Repair</h2>
+        <a href="#" class="find-more-button">Find out More</a>
+    </div>
+
+    <div class="section">
+        <h2>Community Contracts</h2>
+        <a href="#" class="find-more-button">Find out More</a>
+    </div>
+
+    <div class="section">
+        <h2>Shipping Info</h2>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name">
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+        <input type="text" id="phone" name="phone" placeholder="Phone">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <select id="country" name="country">
+            <option value="united_states">United States</option>
+        </select>
+        <select id="state" name="state">
+            <option value="choose">Choose</option>
+        </select>
+        <input type="text" id="city" name="city" placeholder="City">
+        <input type="text" id="zip_code" name="zip_code" placeholder="Zip Code">
+        <div style="display: flex; gap: 10px;">
+            <button class="button">Back</button>
+            <button class="button">Next Step</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

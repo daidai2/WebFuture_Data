@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Implementation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <!-- Payment Method Section -->
+  <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+    <form class="bg-white p-4 shadow rounded">
+      <fieldset class="mb-4">
+        <legend class="font-semibold">Payment Method</legend>
+        <div>
+          <label class="inline-flex items-center">
+            <input type="radio" name="paymentMethod" value="creditCard" class="form-radio">
+            <span class="ml-2">Credit Card</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input type="radio" name="paymentMethod" value="paypal" class="form-radio">
+            <span class="ml-2">Paypal</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input type="radio" name="paymentMethod" value="bankTransfer" class="form-radio">
+            <span class="ml-2">Bank Transfer</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Form Input Section -->
+      <div class="mb-4">
+        <h3 class="text-lg font-bold mb-2">Enter your data</h3>
+        <label class="block mb-2">Card Number</label>
+        <input type="text" name="cardNumber" class="w-full p-2 border rounded mb-4" placeholder="Card Number">
+
+        <div class="flex items-center mb-4">
+          <div class="mr-2">
+            <label class="block mb-2">Expiration date</label>
+            <div class="flex">
+              <select name="expMonth" class="p-2 border rounded mr-2">
+                <option>MM</option>
+                <!-- Additional options here -->
+              </select>
+              <select name="expYear" class="p-2 border rounded">
+                <option>YY</option>
+                <!-- Additional options here -->
+              </select>
+            </div>
+          </div>
+
+          <div class="ml-4">
+            <label class="block mb-2">CCV</label>
+            <input type="text" name="ccv" class="w-full p-2 border rounded" placeholder="CCV">
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Button -->
+      <button type="submit" class="px-4 py-2 bg-blue-500 text-white font-bold rounded">Complete</button>
+    </form>
+  </section>
+
+  <!-- Advertisement Section -->
+  <section class="bg-white mb-8 p-4 shadow rounded">
+    <h2 class="text-xl font-bold mb-4">Mobility Solutions & Daily Living Aids Making Life Easier</h2>
+    <button class="px-4 py-2 bg-blue-500 text-white font-bold rounded">Find out More</button>
+  </section>
+
+  <!-- Service Section -->
+  <section class="flex flex-wrap gap-4 mb-8">
+    <div class="bg-white p-4 shadow rounded flex-1">
+      <h3 class="text-lg font-bold mb-4">Wheelchair Repair</h3>
+      <img src="https://placehold.co/200x200" alt="Service Image" class="mb-4">
+      <button class="px-4 py-2 bg-blue-500 text-white font-bold rounded">Find out More</button>
+    </div>
+    <div class="bg-white p-4 shadow rounded flex-1">
+      <h3 class="text-lg font-bold mb-4">Community Contracts</h3>
+      <img src="https://placehold.co/200x200" alt="Service Image" class="mb-4">
+      <button class="px-4 py-2 bg-blue-500 text-white font-bold rounded">Find out More</button>
+    </div>
+  </section>
+
+  <!-- Survey Section -->
+  <section class="bg-white mb-8 p-4 shadow rounded">
+    <label class="block text-lg font-bold mb-4">Title</label>
+    <input type="text" name="surveyTitle" class="w-full p-2 border rounded mb-4" placeholder="Title">
+
+    <fieldset class="mb-4">
+      <legend class="font-semibold">Radio Buttons</legend>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="radio" name="relevance" value="not_relevant" class="form-radio">
+          <span class="ml-2">Not relevant</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="radio" name="relevance" value="low" class="form-radio">
+          <span class="ml-2">Low</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="radio" name="relevance" value="medium" class="form-radio">
+          <span class="ml-2">Medium</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="radio" name="relevance" value="high" class="form-radio">
+          <span class="ml-2">High</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="font-semibold">Checkboxes</legend>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice1" class="form-checkbox">
+          <span class="ml-2">choice1</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice2" class="form-checkbox">
+          <span class="ml-2">choice2</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice3" class="form-checkbox">
+          <span class="ml-2">choice3</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice4" class="form-checkbox">
+          <span class="ml-2">choice4</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice5" class="form-checkbox">
+          <span class="ml-2">choice5</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice6" class="form-checkbox">
+          <span class="ml-2">choice6</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice7" class="form-checkbox">
+          <span class="ml-2">choice7</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="choice" value="choice8" class="form-checkbox">
+          <span class="ml-2">choice8</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="flex">
+      <button type="submit" class="px-4 py-2 bg-blue-500 text-white font-bold rounded mr-2">OK</button>
+      <button type="button" class="px-4 py-2 bg-gray-300 text-black font-bold rounded">Cancel</button>
+    </div>
+  </section>
+</body>
+</html>

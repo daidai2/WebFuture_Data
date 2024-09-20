@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 1356px;
+            height: 624px;
+            border: 1px solid #000;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+        .text-line {
+            width: 100%;
+            height: 20px;
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+        }
+        .button {
+            width: 200px;
+            height: 40px;
+            margin-bottom: 20px;
+            background-color: #dcdcdc;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 40px;
+        }
+        .checkbox,
+        .radio {
+            margin-bottom: 10px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section input[type="text"],
+        .form-section input[type="number"] {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .form-section input[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #dcdcdc;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="text-line"></div>
+        <div class="text-line"></div>
+        <div class="text-line"></div>
+        <div class="text-line"></div>
+        <div class="button">Button</div>
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Checkbox 1</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox2" checked>
+            <label for="checkbox2">Checkbox 2</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3">Checkbox 3</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Radio 1</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="radio" id="radio2" checked>
+            <label for="radio2">Radio 2</label>
+        </div>
+
+        <form class="form-section">
+            <div>
+                <label>Select your payment method:</label><br>
+                <input type="radio" name="payment" value="credit_card" checked> Credit Card<br>
+                <input type="radio" name="payment" value="paypal"> PayPal<br>
+                <input type="radio" name="payment" value="bank_transfer"> Bank Transfer<br>
+            </div>
+            <div>
+                <label for="card-number">Card Number:</label><br>
+                <input type="text" id="card-number" name="card-number">
+            </div>
+            <div>
+                <label for="expiration-date">Expiration Date:</label><br>
+                <input type="number" id="expiration-date" name="expiration-date" style="width: 48%;" placeholder="MM">
+                <input type="number" id="expiration-year" name="expiration-year" style="width: 48%;" placeholder="YY">
+            </div>
+            <div>
+                <label for="ccv">CCV:</label><br>
+                <input type="text" id="ccv" name="ccv" style="width: 48%;">
+            </div>
+            <input type="submit" value="Complete">
+        </form>
+
+        <form class="form-section">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title">
+            <div>
+                <label>Radio Buttons:</label><br>
+                <input type="radio" name="relevance" value="not_relevant"> Not relevant<br>
+                <input type="radio" name="relevance" value="low"> Low<br>
+                <input type="radio" name="relevance" value="medium"> Medium<br>
+                <input type="radio" name="relevance" value="high"> High<br>
+            </div>
+            <div>
+                <label>Check Boxes:</label><br>
+                <input type="checkbox" id="choice1" name="choice" value="choice1"> Choice 1<br>
+                <input type="checkbox" id="choice2" name="choice" value="choice2" checked> Choice 2<br>
+                <input type="checkbox" id="choice3" name="choice" value="choice3"> Choice 3<br>
+                <input type="checkbox" id="choice4" name="choice" value="choice4"> Choice 4<br>
+                <input type="checkbox" id="choice5" name="choice" value="choice5" checked> Choice 5<br>
+                <input type="checkbox" id="choice6" name="choice" value="choice6"> Choice 6<br>
+                <input type="checkbox" id="choice7" name="choice" value="choice7"> Choice 7<br>
+                <input type="checkbox" id="choice8" name="choice" value="choice8" checked> Choice 8<br>
+            </div>
+            <div>
+                <input type="button" value="OK">
+                <input type="button" value="Cancel">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

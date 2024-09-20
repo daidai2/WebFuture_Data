@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin-right: 20px;
+        }
+        .profile .info {
+            flex-grow: 1;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .shipping-service {
+            margin-bottom: 20px;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-row .form-group {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-row .form-group:last-child {
+            margin-right: 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="profile1.png" alt="Mate One">
+        <div class="info">
+            <h2>Mate One</h2>
+            <p>Job Title</p>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="info">
+            <h2>Mate Two</h2>
+            <p>Job Title</p>
+        </div>
+        <img src="profile2.png" alt="Mate Two">
+    </div>
+    <div class="profile">
+        <img src="profile3.png" alt="Mate Three">
+        <div class="info">
+            <h2>Mate Three</h2>
+            <p>Job Title</p>
+        </div>
+    </div>
+    
+    <h2>Checkout</h2>
+    <form>
+        <h3>Shipping Address</h3>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+        
+        <h3>Shipping Service</h3>
+        <div class="shipping-service">
+            <div class="form-group">
+                <input type="radio" id="standard" name="shipping" value="standard">
+                <label for="standard">Standard - 14 days - $6.59</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="expedited" name="shipping" value="expedited">
+                <label for="expedited">Expedited - 7 days - $11.97</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express - 3 days - $19.99</label>
+            </div>
+        </div>
+        
+        <h3>Shipping Info</h3>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="ship-first-name">First Name</label>
+                <input type="text" id="ship-first-name" name="ship-first-name">
+            </div>
+            <div class="form-group">
+                <label for="ship-last-name">Last Name</label>
+                <input type="text" id="ship-last-name" name="ship-last-name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="choose">Choose</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip">
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button type="button">Back</button>
+            <button type="submit">Next Step</button>
+        </div>
+    </form>
+</body>
+</html>

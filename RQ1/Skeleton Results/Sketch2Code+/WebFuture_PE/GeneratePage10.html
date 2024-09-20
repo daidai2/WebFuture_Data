@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-4xl mx-auto bg-white p-8 shadow-md rounded-md">
+    <!-- Image Section -->
+    <div class="mb-8">
+      <img src="https://placehold.co/1366x624" alt="Placeholder Image" class="w-full h-72 object-cover bg-gray-200">
+    </div>
+
+    <!-- Text Section -->
+    <div class="mb-8">
+      <div class="h-4 bg-gray-300 mb-2"></div>
+      <div class="h-4 bg-gray-300 mb-2"></div>
+      <div class="h-4 bg-gray-300 mb-2"></div>
+      <div class="h-4 bg-gray-300 mb-2"></div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="mb-8">
+      <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded-md" placeholder="Input field">
+      <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded-md" placeholder="Input field">
+      <button class="bg-blue-500 text-white p-2 rounded-md w-full">Button</button>
+    </div>
+
+    <!-- Checkbox and Radio Section -->
+    <div class="mb-8">
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <span class="text-gray-700">Checkbox</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <span class="text-gray-700">Checkbox</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="radio" class="mr-2">
+        <span class="text-gray-700">Radio</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="radio" class="mr-2">
+        <span class="text-gray-700">Radio</span>
+      </label>
+    </div>
+
+    <!-- Payment Method Section -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Select your payment method</h2>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="payment" class="mr-2">
+        <span class="text-gray-700">Credit Card</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="payment" class="mr-2">
+        <span class="text-gray-700">Paypal</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="payment" class="mr-2">
+        <span class="text-gray-700">Bank transfer</span>
+      </label>
+
+      <!-- Payment Details Section -->
+      <div class="mt-4">
+        <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded-md" placeholder="Card Number">
+        <div class="flex space-x-4 mb-4">
+          <input type="text" class="w-1/2 p-2 border border-gray-300 rounded-md" placeholder="Expiration date">
+          <input type="text" class="w-1/2 p-2 border border-gray-300 rounded-md" placeholder="CVV">
+        </div>
+        <button class="bg-blue-500 text-white p-2 rounded-md w-full">Complete</button>
+      </div>
+    </div>
+
+    <!-- Shipping Method Section -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Forma de envío</h2>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="shipping" class="mr-2">
+        <span class="text-gray-700">Público transport</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="shipping" class="mr-2">
+        <span class="text-gray-700">Tren</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="shipping" class="mr-2">
+        <span class="text-gray-700">Aéreo</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="shipping" class="mr-2">
+        <span class="text-gray-700">Marítimo</span>
+      </label>
+
+      <h2 class="text-xl font-semibold mb-4 mt-8">Forma de pago</h2>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="payment-method" class="mr-2">
+        <span class="text-gray-700">Tarjeta (Crédito/Débito)</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="payment-method" class="mr-2">
+        <span class="text-gray-700">Transferencia bancaria</span>
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="payment-method" class="mr-2">
+        <span class="text-gray-700">Metálico</span>
+      </label>
+
+      <div class="mt-4">
+        <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded-md" placeholder="Dirección">
+        <input type="text" class="w-full p-2 mb-4 border border-gray-300 rounded-md" placeholder="País">
+        <button class="bg-blue-500 text-white p-2 rounded-md w-full">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

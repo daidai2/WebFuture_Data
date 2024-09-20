@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Example</title>
+</head>
+<body class="bg-gray-100 p-6">
+  <section id="payment-method" class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block mb-2">
+          <input type="radio" name="paymentMethod" value="creditCard" class="mr-2"> Credit Card
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="paymentMethod" value="paypal" class="mr-2"> PayPal
+        </label>
+        <label class="block mb-2">
+          <input type="radio" name="paymentMethod" value="bankTransfer" class="mr-2"> Bank Transfer
+        </label>
+      </div>
+      <div class="mb-4">
+        <label for="cardNumber" class="block mb-2">Card Number</label>
+        <input type="text" id="cardNumber" class="w-full p-2 border rounded-md" placeholder="Card Number">
+      </div>
+      <div class="mb-4 flex">
+        <div class="mr-2">
+          <label for="expirationMonth" class="block mb-2">Expiration Date</label>
+          <input type="text" id="expirationMonth" class="w-12 p-2 border rounded-md" placeholder="MM">
+        </div>
+        <span class="self-center mx-2">/</span>
+        <div class="mr-2">
+          <label for="expirationYear" class="sr-only">Expiration Year</label>
+          <input type="text" id="expirationYear" class="w-12 p-2 border rounded-md" placeholder="YY">
+        </div>
+        <div>
+          <label for="cvv" class="block mb-2">CVV</label>
+          <input type="text" id="cvv" class="w-16 p-2 border rounded-md" placeholder="CVV">
+        </div>
+      </div>
+      <button type="button" class="w-full bg-blue-500 text-white p-2 rounded-md">Complete</button>
+    </form>
+  </section>
+
+  <section id="additional-info" class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <div class="mb-4">
+      <h3 class="text-lg font-bold mb-2">Mobility Solutions & Daily Living Aids</h3>
+      <p class="mb-2">Making Life Easier</p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+    </div>
+    <div class="flex space-x-4 mb-4">
+      <div id="wheelchair-repair" class="w-1/3">
+        <h4 class="text-md font-bold mb-2">Wheelchair Repair</h4>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+      </div>
+      <div id="community-contracts" class="w-1/3">
+        <h4 class="text-md font-bold mb-2">Community Contracts</h4>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+      </div>
+      <div id="additional-info" class="w-1/3">
+        <img src="https://placehold.co/200x200" alt="Image placeholder" class="mb-2">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+      </div>
+    </div>
+  </section>
+
+  <form class="bg-white p-6 rounded-lg shadow-md">
+    <fieldset class="mb-4">
+      <legend class="text-lg font-bold mb-4">Formulario de envío</legend>
+      <div class="mb-4">
+        <label class="block mb-2">Medio transporte</label>
+        <label class="block mb-1">
+          <input type="radio" id="terrestre" name="medioTransporte" value="terrestre" class="mr-2"> Terrestre
+        </label>
+        <label class="block mb-1">
+          <input type="radio" id="aereo" name="medioTransporte" value="aereo" class="mr-2"> Aéreo
+        </label>
+        <label class="block mb-1">
+          <input type="radio" id="maritimo" name="medioTransporte" value="maritimo" class="mr-2"> Marítimo
+        </label>
+      </div>
+
+      <fieldset class="mb-4">
+        <legend class="text-md font-medium mb-2">Forma de pago</legend>
+        <label class="block mb-1">
+          <input type="radio" id="tarjeta" name="formaPago" value="tarjeta" class="mr-2"> Tarjeta (Crédito/Debito)
+        </label>
+        <label class="block mb-1">
+          <input type="radio" id="transferencia" name="formaPago" value="transferencia" class="mr-2"> Transferencia bancaria
+        </label>
+        <label class="block mb-1">
+          <input type="radio" id="metalico" name="formaPago" value="metalico" class="mr-2"> Metálico
+        </label>
+      </fieldset>
+
+      <div class="mb-4">
+        <label for="direccion" class="block mb-2">Dirección</label>
+        <input type="text" id="direccion" class="w-full p-2 border rounded-md">
+      </div>
+
+      <div class="mb-4">
+        <label for="pais" class="block mb-2">País</label>
+        <select id="pais" class="w-full p-2 border rounded-md">
+          <option value="option1">Option 1</option>
+        </select>
+      </div>
+
+      <button type="button" class="w-full bg-blue-500 text-white p-2 rounded-md">Aceptar</button>
+    </fieldset>
+  </form>
+</body>
+</html>

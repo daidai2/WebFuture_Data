@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 1356px;
+            margin: 0 auto;
+        }
+        .dropdown, .button {
+            margin: 10px 0;
+        }
+        .dropdown select, .button button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .checkboxes, .radiobuttons {
+            margin: 20px 0;
+        }
+        .checkboxes label, .radiobuttons label {
+            display: block;
+            margin: 5px 0;
+        }
+        .shipping-info {
+            border-top: 2px solid #000;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+        .shipping-info h2 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .form-group label {
+            flex-basis: 45%;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="dropdown">
+        <label for="languages">Programming Language:</label>
+        <select id="languages">
+            <option value="csharp">C#</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="visualbasic">Visual Basic</option>
+        </select>
+    </div>
+    <div class="button">
+        <button type="button">Get Drop Down Here</button>
+    </div>
+    <div class="checkboxes">
+        <label><input type="checkbox" name="language" value="csharp"> C#</label>
+        <label><input type="checkbox" name="language" value="java"> Java</label>
+        <label><input type="checkbox" name="language" value="php"> PHP</label>
+        <label><input type="checkbox" name="language" value="visualbasic"> Visual Basic</label>
+    </div>
+    <div class="radiobuttons">
+        <label><input type="radio" name="option"> Option 1</label>
+        <label><input type="radio" name="option"> Option 2</label>
+        <label><input type="radio" name="option"> Option 3</label>
+    </div>
+    
+    <div class="shipping-info">
+        <h2>Shipping Info</h2>
+        <div class="form-group">
+            <label>
+                First Name
+                <input type="text" name="first_name">
+            </label>
+            <label>
+                Last Name
+                <input type="text" name="last_name">
+            </label>
+            <label>
+                Phone
+                <input type="text" name="phone">
+            </label>
+            <label>
+                E-mail
+                <input type="text" name="email">
+            </label>
+            <label>
+                Country
+                <select name="country">
+                    <option value="usa">United States</option>
+                    <!-- Add more countries as needed -->
+                </select>
+            </label>
+            <label>
+                State
+                <select name="state">
+                    <option value="">Choose</option>
+                    <!-- Add states as needed -->
+                </select>
+            </label>
+            <label>
+                City
+                <input type="text" name="city">
+            </label>
+            <label>
+                Zip Code
+                <input type="text" name="zip_code">
+            </label>
+        </div>
+        <div class="buttons">
+            <button type="button">Back</button>
+            <button type="button">Next Step</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

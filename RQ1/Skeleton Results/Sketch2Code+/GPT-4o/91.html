@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe to HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .login-signup {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group label {
+            margin-left: 5px;
+        }
+        .dropdown,
+        .buttons,
+        .checkbox-group,
+        .radio-group {
+            margin-bottom: 20px;
+        }
+        .checkbox-group input,
+        .radio-group input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="login-signup">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+    </div>
+    
+    <div class="form-group">
+        <label for="username">Login</label>
+        <input type="text" id="username">
+    </div>
+    
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+    </div>
+    
+    <div class="form-group">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Remember me</label>
+        <a href="#" style="float: right;">Forgot Password</a>
+    </div>
+    
+    <div class="form-group">
+        <input type="submit" value="LOGIN">
+    </div>
+
+    <div class="dropdown">
+        <label for="languages">C Sharp</label>
+        <select id="languages">
+            <option value="csharp">C#</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="visual-basic">Visual Basic</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <button type="button">Get Drop Down Here</button>
+    </div>
+    
+    <div class="checkbox-group">
+        <input type="checkbox" id="csharp-checkbox">
+        <label for="csharp-checkbox">C#</label>
+        
+        <input type="checkbox" id="java-checkbox">
+        <label for="java-checkbox">Java</label>
+        
+        <input type="checkbox" id="php-checkbox">
+        <label for="php-checkbox">PHP</label>
+        
+        <input type="checkbox" id="vb-checkbox">
+        <label for="vb-checkbox">Visual Basic</label>
+    </div>
+    
+    <div class="image-placeholder">
+        <div style="width: 100%; height: 200px; border: 1px solid #000; display: flex; align-items: center; justify-content: center;">
+            Image Placeholder
+        </div>
+    </div>
+    
+    <div class="text-placeholder">
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+    </div>
+    
+    <div class="radio-group">
+        <input type="radio" id="radio1" name="radio-group">
+        <label for="radio1">Option 1</label>
+        
+        <input type="radio" id="radio2" name="radio-group">
+        <label for="radio2">Option 2</label>
+    </div>
+    
+    <div class="buttons">
+        <button type="button">Back</button>
+        <button type="button">Button</button>
+    </div>
+</div>
+
+</body>
+</html>

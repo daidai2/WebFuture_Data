@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wireframe Page</title>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header section -->
+  <header class="bg-white p-4 flex justify-between items-center shadow-md">
+    <nav class="space-x-4 text-blue-500">
+      <a href="#" class="hover:underline">Login</a>
+      <a href="#" class="hover:underline">Sign Up</a>
+    </nav>
+  </header>
+
+  <!-- Main section -->
+  <section class="p-8 space-y-12">
+
+    <!-- Login form -->
+    <article class="bg-white p-6 shadow-md rounded-md space-y-4">
+      <h2 class="text-xl font-bold">Login</h2>
+      <div>
+        <label class="block mb-1">Login</label>
+        <input type="text" class="w-full border border-gray-400 p-2 rounded-md">
+      </div>
+      <div>
+        <label class="block mb-1">Password</label>
+        <input type="password" class="w-full border border-gray-400 p-2 rounded-md">
+      </div>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input type="checkbox" class="mr-2">
+          <label>Remember me</label>
+        </div>
+        <a href="#" class="text-blue-500 hover:underline">Forgot Password</a>
+      </div>
+      <button class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">LOGIN</button>
+    </article>
+
+    <!-- Survey/Questionnaire -->
+    <article class="bg-white p-6 shadow-md rounded-md space-y-4">
+      <h2 class="text-xl font-bold">Programming Languages</h2>
+      <div class="space-y-2">
+        <div class="flex items-center">
+          <input type="checkbox" id="csharp" class="mr-2">
+          <label for="csharp">C Sharp</label>
+        </div>
+        <div class="flex items-center">
+          <label for="dropdown" class="mr-2">Get Drop Down Here</label>
+          <select id="dropdown" class="border border-gray-400 p-2 rounded-md">
+            <option>C#</option>
+            <option>Java</option>
+            <option>PHP</option>
+            <option>Visual Basic</option>
+          </select>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex items-center">
+            <input type="checkbox" id="csharpLang" class="mr-2">
+            <label for="csharpLang">C#</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="java" class="mr-2">
+            <label for="java">Java</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="php" class="mr-2">
+            <label for="php">PHP</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="visualbasic" class="mr-2">
+            <label for="visualbasic">Visual Basic</label>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Shipping Information form -->
+    <article class="bg-white p-6 shadow-md rounded-md space-y-4">
+      <h2 class="text-xl font-bold">Shipping Info</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-1">First Name</label>
+          <input type="text" class="w-full border border-gray-400 p-2 rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Last Name</label>
+          <input type="text" class="w-full border border-gray-400 p-2 rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Phone</label>
+          <input type="text" class="w-full border border-gray-400 p-2 rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">E-mail</label>
+          <input type="email" class="w-full border border-gray-400 p-2 rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Country</label>
+          <select class="w-full border border-gray-400 p-2 rounded-md">
+            <option>United States</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1">State</label>
+          <select class="w-full border border-gray-400 p-2 rounded-md">
+            <option>Choose</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1">City</label>
+          <select class="w-full border border-gray-400 p-2 rounded-md">
+            <option>Palo Alto</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1">Zip Code</label>
+          <input type="text" class="w-full border border-gray-400 p-2 rounded-md">
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <button class="bg-gray-500 text-white p-2 rounded-md hover:bg-gray-600">BACK</button>
+        <button class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">NEXT STEP</button>
+      </div>
+    </article>
+
+  </section>
+</body>
+</html>

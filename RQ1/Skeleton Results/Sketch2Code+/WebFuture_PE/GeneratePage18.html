@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Product Review</title>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-xl mx-auto bg-white p-6 shadow-md rounded">
+    <h1 class="text-xl font-bold mb-4">Write Review</h1>
+
+    <!-- Product Info Section -->
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/60x60" alt="Product Image" class="w-16 h-16 object-cover">
+      <div class="ml-4">
+        <h2 class="text-lg font-semibold">Product Name</h2>
+        <p>$Price</p>
+        <p>⭐⭐⭐⭐⭐ (45 reviews)</p>
+      </div>
+    </div>
+
+    <!-- Rate Product Section -->
+    <p class="font-semibold mb-2">Rate Product</p>
+    <div class="flex items-center mb-4">
+      <span>⭐⭐⭐⭐⭐ Bad :(</span>
+    </div>
+
+    <!-- Review Form -->
+    <form>
+      <div class="mb-4">
+        <input type="text" placeholder="Headline" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div class="mb-4">
+        <textarea placeholder="Review" class="w-full p-2 border border-gray-300 rounded"></textarea>
+      </div>
+
+      <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+    </form>
+
+    <!-- Product Details Section -->
+    <div class="my-6">
+      <img src="https://placehold.co/400x200" alt="Product Image" class="w-full h-auto mb-4">
+      <p class="text-2xl font-semibold">$24.9</p>
+      <h3 class="text-xl font-semibold">Product Title</h3>
+    </div>
+
+    <hr class="my-4">
+
+    <!-- Checkbox Items Section -->
+    <div class="mb-4">
+      <p class="font-semibold mb-2">Check Items:</p>
+      <div>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2"> Check item 1
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2"> Check item 2
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2"> Check item 3
+        </label>
+      </div>
+    </div>
+
+    <!-- Buy Now Button -->
+    <button class="w-full bg-green-500 text-white py-2 rounded">Buy Now</button>
+
+    <hr class="my-4">
+
+    <!-- Additional Options Section -->
+    <div class="mb-4">
+      <label>Title</label>
+      <input type="text" class="w-full p-2 border border-gray-300 rounded mb-4">
+
+      <p>Radio Buttons</p>
+      <div class="flex items-center mb-2">
+        <label class="mr-4"><input type="radio" name="relevance" class="mr-1"> Not relevant</label>
+        <label class="mr-4"><input type="radio" name="relevance" class="mr-1"> Low</label>
+        <label class="mr-4"><input type="radio" name="relevance" class="mr-1"> Medium</label>
+        <label class="mr-4"><input type="radio" name="relevance" class="mr-1"> High</label>
+      </div>
+
+      <p>Check Boxes</p>
+      <div class="grid grid-cols-2 gap-2">
+        <label><input type="checkbox" class="mr-1"> choice 1</label>
+        <label><input type="checkbox" class="mr-1"> choice 2</label>
+        <label><input type="checkbox" class="mr-1"> choice 3</label>
+        <label><input type="checkbox" class="mr-1"> choice 4</label>
+        <label><input type="checkbox" class="mr-1"> choice 5</label>
+        <label><input type="checkbox" class="mr-1"> choice 6</label>
+        <label><input type="checkbox" class="mr-1"> choice 7</label>
+        <label><input type="checkbox" class="mr-1"> choice 8</label>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex space-x-4">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">OK</button>
+      <button class="bg-gray-300 text-black py-2 px-4 rounded">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>

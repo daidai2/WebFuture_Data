@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #f2f2f2;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .section div {
+            width: 45%;
+            text-align: center;
+        }
+        .section div button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .product {
+            text-align: center;
+            padding: 20px;
+        }
+        .product img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        .product-details {
+            text-align: center;
+            padding: 20px;
+        }
+        .product-details h2 {
+            margin-bottom: 10px;
+        }
+        .product-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-details ul li {
+            margin: 5px 0;
+        }
+        .product-details button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .form-section {
+            padding: 20px;
+        }
+        .form-section form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section form label,
+        .form-section form input,
+        .form-section form select,
+        .form-section form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Mobility Solutions & Daily Living Aids</h1>
+        <h2>Making Life Easier</h2>
+        <button>Find Out More</button>
+    </div>
+
+    <div class="section">
+        <div>
+            <h3>Wheelchair Repair</h3>
+            <button>Find Out More</button>
+        </div>
+        <div>
+            <h3>Community Contracts</h3>
+            <button>Find Out More</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="path/to/your/image.jpg" alt="Product Image">
+    </div>
+
+    <div class="product-details">
+        <h2>$24.9</h2>
+        <p>Product Title</p>
+        <ul>
+            <li><input type="checkbox" checked> Check Item 1</li>
+            <li><input type="checkbox"> Check Item 2</li>
+            <li><input type="checkbox"> Check Item 3</li>
+        </ul>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="form-section">
+        <form>
+            <label for="shipping-method">Forma de envío</label>
+            <select id="shipping-method" name="shipping-method">
+                <option value="terrestre">Terrestre</option>
+                <option value="aereo">Aéreo</option>
+                <option value="maritimo">Marítimo</option>
+            </select>
+
+            <label for="payment-method">Forma de pago</label>
+            <select id="payment-method" name="payment-method">
+                <option value="tarjeta">Tarjeta (Crédito/Débito)</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="metalico">Metálico</option>
+            </select>
+
+            <label for="address">Dirección</label>
+            <input type="text" id="address" name="address">
+
+            <label for="country">País</label>
+            <select id="country" name="country">
+                <option value="pais1">País 1</option>
+                <option value="pais2">País 2</option>
+            </select>
+
+            <button type="submit">Aceptar</button>
+        </form>
+    </div>
+
+</body>
+</html>

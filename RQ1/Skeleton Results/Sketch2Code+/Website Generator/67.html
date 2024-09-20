@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 300px;
+            height: 300px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+        .product-details {
+            margin-top: 20px;
+        }
+        .product-details h2 {
+            margin: 0;
+        }
+        .product-details p {
+            margin: 5px 0;
+        }
+        .options, .checkboxes, .buttons {
+            margin-top: 20px;
+        }
+        .options label, .checkboxes label {
+            display: block;
+            margin: 5px 0;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        .buttons button.cancel {
+            background-color: #dc3545;
+        }
+        .buttons button:disabled {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <span>Image</span>
+        </div>
+        <div class="product-details">
+            <h2>Product Name</h2>
+            <p>Manufacturer: XYZ Corp</p>
+            <div class="options">
+                <h3>Color</h3>
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+            </div>
+            <div class="price">
+                <p>Price: $100</p>
+                <p>Old Price: <del>$200</del></p>
+            </div>
+            <button>Add to Cart</button>
+        </div>
+        <div class="checkboxes">
+            <h3>Choices</h3>
+            <label><input type="checkbox" value="choice1"> Choice 1</label>
+            <label><input type="checkbox" value="choice2" checked> Choice 2</label>
+            <label><input type="checkbox" value="choice3"> Choice 3</label>
+            <label><input type="checkbox" value="choice4"> Choice 4</label>
+            <label><input type="checkbox" value="choice5" checked> Choice 5</label>
+            <label><input type="checkbox" value="choice6"> Choice 6</label>
+            <label><input type="checkbox" value="choice7"> Choice 7</label>
+            <label><input type="checkbox" value="choice8" checked> Choice 8</label>
+        </div>
+        <div class="buttons">
+            <button>OK</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

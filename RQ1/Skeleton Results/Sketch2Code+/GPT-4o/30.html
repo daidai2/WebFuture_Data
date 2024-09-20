@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-group input, .checkbox-group input {
+            margin-right: 10px;
+        }
+        .button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+        
+        <h2>Shipping Service</h2>
+        
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="shipping" value="standard" checked> Standard - 14 days - $6.59
+            </label>
+            <label>
+                <input type="radio" name="shipping" value="expedited"> Expedited - 7 days - $1.97
+            </label>
+            <label>
+                <input type="radio" name="shipping" value="express"> Express - 3 days - $19.99
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="programmingLanguage">Programming Language</label>
+            <select id="programmingLanguage" name="programmingLanguage">
+                <option value="csharp">C#</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+                <option value="visualbasic">Visual Basic</option>
+            </select>
+        </div>
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="language" value="csharp"> C#
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="java"> Java
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="php"> PHP
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="visualbasic"> Visual Basic
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="textbox1">Label</label>
+            <input type="text" id="textbox1" name="textbox1">
+        </div>
+        <div class="form-group">
+            <label for="textbox2">Label</label>
+            <input type="text" id="textbox2" name="textbox2">
+        </div>
+
+        <div class="form-group button">
+            <button type="submit">Button</button>
+        </div>
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="options" value="radio1"> Radio 1
+            </label>
+            <label>
+                <input type="radio" name="options" value="radio2"> Radio 2
+            </label>
+            <label>
+                <input type="radio" name="options" value="radio3"> Radio 3
+            </label>
+            <label>
+                <input type="radio" name="options" value="radio4"> Radio 4
+            </label>
+        </div>
+
+        <div class="form-group">
+            <textarea rows="4" readonly>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.
+            </textarea>
+        </div>
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="check1" value="check1"> Checkbox 1
+            </label>
+            <label>
+                <input type="checkbox" name="check2" value="check2"> Checkbox 2
+            </label>
+            <label>
+                <input type="checkbox" name="check3" value="check3"> Checkbox 3
+            </label>
+            <label>
+                <input type="checkbox" name="check4" value="check4"> Checkbox 4
+            </label>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Container -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white py-4 shadow">
+      <nav class="container mx-auto flex justify-between">
+        <div>
+          <h1 class="text-xl font-bold">Login</h1>
+        </div>
+        <div>
+          <a href="#login" class="text-blue-500 px-4">Login</a>
+          <a href="#signup" class="text-blue-500 px-4">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- First Section -->
+    <section class="container mx-auto py-8 px-6 bg-white shadow mt-4">
+      <h2 class="text-2xl mb-4">Login</h2>
+      <form>
+        <div class="mb-4">
+          <label for="login" class="block text-gray-700">Login</label>
+          <input type="text" id="login" class="mt-1 p-2 border w-full" />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input type="password" id="password" class="mt-1 p-2 border w-full" />
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="remember" class="mr-2" />
+          <label for="remember" class="text-gray-700">Remember me</label>
+        </div>
+        <div class="mb-4">
+          <a href="#forgot-password" class="text-blue-500">Forgot Password</a>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white p-2 w-full">Login</button>
+      </form>
+    </section>
+
+    <!-- Second Section -->
+    <section class="container mx-auto py-8 px-6 bg-white shadow mt-4">
+      <div class="mb-4">
+        <img src="https://placehold.co/600x400" alt="placeholder" class="w-full h-auto">
+      </div>
+      <div class="mb-4">
+        <p>Text line 1</p>
+        <p>Text line 2</p>
+        <p>Text line 3</p>
+      </div>
+      <button class="bg-blue-500 text-white p-2 w-full mb-4">Back</button>
+      <div class="flex items-center">
+        <input type="checkbox" id="section2-checkbox" class="mr-2">
+        <label for="section2-checkbox" class="text-gray-700">Checkbox</label>
+      </div>
+    </section>
+
+    <!-- Third Section -->
+    <section class="container mx-auto py-8 px-6 bg-white shadow mt-4">
+      <div class="mb-4">
+        <img src="https://placehold.co/1200x400" alt="large placeholder" class="w-full h-auto">
+      </div>
+      <div class="mb-4 grid grid-cols-3 gap-4">
+        <p>Column 1 Text</p>
+        <p>Column 2 Text</p>
+        <p>Column 3 Text</p>
+      </div>
+      <form>
+        <div class="mb-4">
+          <label for="form-label-1" class="block text-gray-700">Label 1</label>
+          <input type="text" id="form-label-1" class="mt-1 p-2 border w-full">
+        </div>
+        <div class="mb-4">
+          <label for="form-label-2" class="block text-gray-700">Label 2</label>
+          <input type="text" id="form-label-2" class="mt-1 p-2 border w-full">
+        </div>
+        <div class="mb-4 grid grid-cols-2 gap-4">
+          <div>
+            <div class="flex items-center mb-2">
+              <input type="checkbox" id="checkbox1" class="mr-2">
+              <label for="checkbox1" class="text-gray-700">Checkbox 1</label>
+            </div>
+            <div class="flex items-center mb-2">
+              <input type="checkbox" id="checkbox2" class="mr-2">
+              <label for="checkbox2" class="text-gray-700">Checkbox 2</label>
+            </div>
+            <div class="flex items-center mb-2">
+              <input type="checkbox" id="checkbox3" class="mr-2">
+              <label for="checkbox3" class="text-gray-700">Checkbox 3</label>
+            </div>
+            <div class="flex items-center mb-2">
+              <input type="checkbox" id="checkbox4" class="mr-2">
+              <label for="checkbox4" class="text-gray-700">Checkbox 4</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white p-2 w-full mb-4">Button</button>
+        <div class="flex items-center mb-4">
+          <input type="radio" name="radio-group" id="radio1" class="mr-2">
+          <label for="radio1" class="text-gray-700">Radio 1</label>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="radio" name="radio-group" id="radio2" class="mr-2">
+          <label for="radio2" class="text-gray-700">Radio 2</label>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="radio" name="radio-group" id="radio3" class="mr-2">
+          <label for="radio3" class="text-gray-700">Radio 3</label>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="radio" name="radio-group" id="radio4" class="mr-2">
+          <label for="radio4" class="text-gray-700">Radio 4</label>
+        </div>
+        <div class="mb-4">
+          <img src="https://placehold.co/400x300" alt="small placeholder" class="w-full h-auto">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet sit amet leo nec scelerisque.</p>
+      </form>
+    </section>
+
+    <!-- Footer Placeholder (if needed) -->
+    <footer class="bg-white py-4 shadow mt-4">
+      <div class="container mx-auto text-center">
+        Footer content here
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

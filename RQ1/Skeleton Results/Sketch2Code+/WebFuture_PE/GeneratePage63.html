@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+  <div class="max-w-md mx-auto bg-white shadow-md rounded-md p-6 space-y-6">
+    <!-- Login/Signup Section -->
+    <div>
+      <div class="flex justify-between">
+        <a href="#" class="text-blue-500">Login</a>
+        <a href="#" class="text-blue-500">Sign Up</a>
+      </div>
+
+      <div class="mt-4">
+        <label class="block text-gray-700">Login</label>
+        <input type="text" class="w-full px-3 py-2 border rounded-md" placeholder="Login">
+      </div>
+
+      <div class="mt-4">
+        <label class="block text-gray-700">Password</label>
+        <input type="password" class="w-full px-3 py-2 border rounded-md" placeholder="Password">
+      </div>
+
+      <div class="mt-4 flex items-center">
+        <input type="checkbox" id="remember" class="mr-2">
+        <label for="remember" class="text-gray-700">Remember me</label>
+      </div>
+
+      <div class="mt-2">
+        <a href="#" class="text-blue-500">Forgot Password?</a>
+      </div>
+
+      <div class="mt-4">
+        <button class="w-full bg-blue-500 text-white py-2 rounded-md">LOGIN</button>
+      </div>
+    </div>
+
+    <!-- Programming Languages Section -->
+    <div>
+      <div class="flex space-x-4">
+        <button class="bg-blue-500 text-white py-2 px-4 rounded-md">C Sharp</button>
+        <input type="checkbox" id="csharp" class="mr-2">
+
+        <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-md">Get Drop Down Here</button>
+      </div>
+
+      <div class="mt-4 space-y-2">
+        <div class="flex items-center">
+          <input type="checkbox" id="csharp2" class="mr-2">
+          <label for="csharp2" class="text-gray-700">C#</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="java" class="mr-2">
+          <label for="java" class="text-gray-700">Java</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="php" class="mr-2">
+          <label for="php" class="text-gray-700">PHP</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="vb" class="mr-2">
+          <label for="vb" class="text-gray-700">Visual Basic</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shipping and Payment Section -->
+    <div>
+      <h2 class="text-lg text-gray-700">Forma de envío</h2>
+
+      <div class="mt-4">
+        <h3 class="text-gray-700">Medio transporte</h3>
+        <div class="mt-2">
+          <div class="flex items-center">
+            <input type="radio" id="terrestre" name="transporte" class="mr-2">
+            <label for="terrestre" class="text-gray-700">Terrestre</label>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" id="aero" name="transporte" class="mr-2">
+            <label for="aero" class="text-gray-700">Aereo</label>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" id="maritimo" name="transporte" class="mr-2">
+            <label for="maritimo" class="text-gray-700">Maritimo</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h3 class="text-gray-700">Forma de pago</h3>
+        <div class="mt-2">
+          <div class="flex items-center">
+            <input type="radio" id="tarjeta" name="pago" class="mr-2">
+            <label for="tarjeta" class="text-gray-700">Tarjeta (Crédito/Débito)</label>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" id="transferencia" name="pago" class="mr-2">
+            <label for="transferencia" class="text-gray-700">Transferencia bancaria</label>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" id="metalico" name="pago" class="mr-2">
+            <label for="metalico" class="text-gray-700">Metálico</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <label class="block text-gray-700">Dirección</label>
+        <input type="text" class="w-full px-3 py-2 border rounded-md" placeholder="Dirección">
+      </div>
+
+      <div class="mt-4">
+        <label class="block text-gray-700">País</label>
+        <select class="w-full px-3 py-2 border rounded-md">
+          <option value="">Seleccione un País</option>
+        </select>
+      </div>
+
+      <div class="mt-4">
+        <button class="w-full bg-blue-500 text-white py-2 rounded-md">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

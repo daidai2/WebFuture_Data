@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-6xl mx-auto bg-white p-6 shadow-lg">
+    <!-- Product Section -->
+    <div class="flex">
+      <div class="w-1/2">
+        <img src="https://placehold.co/300x300" alt="Product Image" class="w-full">
+        <div class="flex mt-4 space-x-4">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/4">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/4">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/4">
+          <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-1/4">
+        </div>
+      </div>
+      <div class="w-1/2 pl-6">
+        <h1 class="text-3xl font-bold">Product Name</h1>
+        <p class="mt-4">Manufacturer</p>
+        <div class="mt-4">
+          <p>Color</p>
+          <label class="block">
+            <input type="radio" name="color" value="red" class="mr-2">Red
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="blue" class="mr-2">Blue
+          </label>
+          <label class="block">
+            <input type="radio" name="color" value="white" class="mr-2">White
+          </label>
+        </div>
+        <div class="mt-4">
+          <p class="text-2xl">$400 <span class="line-through text-gray-500">$500</span></p>
+        </div>
+        <div class="mt-4">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes Section -->
+    <div class="mt-8">
+      <div class="flex items-center mb-4">
+        <img src="https://placehold.co/100x100" alt="Note Image" class="w-24">
+        <div class="ml-4">
+          <h2 class="text-xl font-bold">Note One</h2>
+          <p>Job Title</p>
+        </div>
+      </div>
+      <div class="flex items-center mb-4">
+        <div class="mr-4">
+          <h2 class="text-xl font-bold">Note Two</h2>
+          <p>Job Title</p>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Note Image" class="w-24">
+      </div>
+      <div class="flex items-center mb-4">
+        <img src="https://placehold.co/100x100" alt="Note Image" class="w-24">
+        <div class="ml-4">
+          <h2 class="text-xl font-bold">Note Three</h2>
+          <p>Job Title</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Section -->
+    <div class="flex mt-8">
+      <img src="https://placehold.co/100x100" alt="Additional Image" class="w-24 mr-4">
+      <div class="flex-1">
+        <div class="bg-gray-300 h-8 mb-4"></div>
+        <div class="bg-gray-300 h-2 mb-2"></div>
+        <div class="bg-gray-300 h-2 mb-2"></div>
+        <div class="bg-gray-300 h-2 mb-2"></div>
+        <div class="bg-gray-300 h-2"></div>
+      </div>
+    </div>
+
+    <!-- List Section -->
+    <ul class="mt-8">
+      <li class="mb-2"><input type="checkbox" class="mr-2">Item 1</li>
+      <li class="mb-2"><input type="checkbox" class="mr-2">Item 2</li>
+      <li><input type="checkbox" class="mr-2">Item 3</li>
+    </ul>
+
+    <!-- Buttons Section -->
+    <div class="mt-8">
+      <button class="bg-gray-500 text-white px-4 py-2 rounded mr-2">Back</button>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+    </div>
+  </div>
+</body>
+</html>

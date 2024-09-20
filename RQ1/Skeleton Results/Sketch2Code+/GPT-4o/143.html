@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+        .shipping-service label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .shipping-service input {
+            margin-right: 5px;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating span {
+            margin-left: 10px;
+        }
+        .stars input {
+            margin-right: 5px;
+        }
+        .submit-button {
+            display: block;
+            width: 100px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Checkout</h2>
+            <div class="section">
+                <h3>Shipping Address</h3>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div class="section shipping-service">
+                <h3>Shipping Service</h3>
+                <label><input type="radio" name="shipping" value="standard"> Standard (14 days - $6.59)</label>
+                <label><input type="radio" name="shipping" value="expedited"> Expedited (7 days - $12.99)</label>
+                <label><input type="radio" name="shipping" value="express"> Express (3 days - $19.99)</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Write Review</h2>
+            <div class="section">
+                <img src="placeholder.jpg" alt="Product Image" style="width: 100px; height: 100px;">
+                <p>Product Name<br>$Price<br>★★★★☆ 45 reviews</p>
+            </div>
+            <div class="section">
+                <h3>Rate Product</h3>
+                <div class="rating">
+                    <div class="stars">
+                        <label><input type="radio" name="rating" value="1"> ★</label>
+                        <label><input type="radio" name="rating" value="2"> ★★</label>
+                        <label><input type="radio" name="rating" value="3"> ★★★</label>
+                        <label><input type="radio" name="rating" value="4"> ★★★★</label>
+                        <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+                    </div>
+                    <span>Bad :(</span>
+                </div>
+            </div>
+            <div class="section">
+                <label for="headline">Headline</label>
+                <input type="text" id="headline" name="headline">
+                <label for="review">Review</label>
+                <input type="text" id="review" name="review">
+            </div>
+            <div class="section">
+                <a href="#" class="submit-button">Submit</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

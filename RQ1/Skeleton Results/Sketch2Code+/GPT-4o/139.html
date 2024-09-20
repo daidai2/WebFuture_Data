@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Fidelity Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .login-container {
+            max-width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        .login-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .back-button {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .checkbox-container input[type="checkbox"], .checkbox-container input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="login-container">
+            <h2>Login</h2>
+            <input type="text" placeholder="Login">
+            <input type="password" placeholder="Password">
+            <div class="checkbox-container">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <a href="#">Forgot Password</a>
+            <button>LOGIN</button>
+        </div>
+        
+        <!-- Other Elements -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Checkbox</label>
+        </div>
+        
+        <a href="#" class="back-button">BACK</a>
+        
+        <div>
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Checkbox Option 1</label><br>
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3">Checkbox Option 2</label><br>
+            <input type="radio" id="radio1" name="radio">
+            <label for="radio1">Radio Option</label><br>
+        </div>
+        
+        <a href="#" class="back-button">BACK</a>
+        <button>BUTTON</button>
+    </div>
+</body>
+</html>

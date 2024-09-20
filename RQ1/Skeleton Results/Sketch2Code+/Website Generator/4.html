@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .product-info, .rating, .review-form, .product-price, .product-title, .checklist, .shipping-info {
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            max-width: 100px;
+            height: auto;
+        }
+        .rating-stars {
+            display: flex;
+            align-items: center;
+        }
+        .rating-stars span {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        .rating-label {
+            margin-left: 10px;
+        }
+        .review-form input, .review-form textarea, .shipping-info input, .shipping-info select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .review-form button, .shipping-info button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-info">
+            <img src="placeholder.png" alt="Product Image">
+            <h1>Product NAME</h1>
+            <p>Price: $24.9</p>
+            <p>★★★★☆ 45 reviews</p>
+        </div>
+        
+        <div class="rating">
+            <h2>Rate Product</h2>
+            <div class="rating-stars">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>☆</span>
+                <span class="rating-label">Bad :(</span>
+            </div>
+        </div>
+        
+        <div class="review-form">
+            <h2>Write Review</h2>
+            <input type="text" placeholder="Headline">
+            <textarea rows="5" placeholder="Review"></textarea>
+            <button type="submit">Submit</button>
+        </div>
+        
+        <div class="product-price">
+            <h2>$24.9</h2>
+        </div>
+        
+        <div class="product-title">
+            <h2>Product Title</h2>
+        </div>
+        
+        <div class="checklist">
+            <h2>Check Items:</h2>
+            <ul>
+                <li><input type="checkbox"> Check item 1</li>
+                <li><input type="checkbox"> Check item 2</li>
+                <li><input type="checkbox"> Check item 3</li>
+            </ul>
+            <button type="button">Buy Now</button>
+        </div>
+        
+        <div class="shipping-info">
+            <h2>Shipping Info</h2>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Phone">
+            <input type="email" placeholder="Email">
+            <select>
+                <option value="United States">United States</option>
+                <!-- Add more options as needed -->
+            </select>
+            <select>
+                <option value="">Choose State</option>
+                <!-- Add more options as needed -->
+            </select>
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Zip Code">
+            <button type="button">Back</button>
+            <button type="button">Next Step</button>
+        </div>
+    </div>
+</body>
+</html>

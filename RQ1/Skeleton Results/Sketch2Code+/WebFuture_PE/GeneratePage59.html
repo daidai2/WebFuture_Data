@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow">
+    <!-- Write Review Section -->
+    <header class="mb-6">
+      <h1 class="text-2xl font-bold mb-6">Write Review</h1>
+      <div class="flex items-center">
+        <img src="https://placehold.co/50x50" alt="product image" class="w-12 h-12 mr-4">
+        <div>
+          <h2 class="text-lg">Product Name</h2>
+          <p class="text-gray-500">$Price</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-2">
+        <div class="flex text-yellow-500">
+          <!-- Stars -->
+          <span>★ ★ ★ ★ ★</span>
+        </div>
+        <span class="ml-2 text-gray-500">45 reviews</span>
+      </div>
+    </header>
+
+    <!-- Rate Product Section -->
+    <section class="mb-6">
+      <label for="rating" class="font-semibold block mb-2">Rate Product:</label>
+      <div id="rating" class="flex items-center mb-2">
+        <div class="text-yellow-500">★ ★ ★ ★ ★</div>
+        <div class="text-red-500 ml-4">Bad :(</div>
+      </div>
+      <input type="text" placeholder="Headline" class="w-full border p-2 rounded mb-4">
+      <textarea placeholder="Review" class="w-full border p-2 rounded mb-4"></textarea>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+    </section>
+
+    <!-- Additional Section -->
+    <section class="mb-6">
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <img src="https://placehold.co/150x150" alt="image placeholder" class="w-full h-full object-cover rounded">
+        <img src="https://placehold.co/150x150" alt="image placeholder" class="w-full h-full object-cover rounded">
+      </div>
+      <div class="mb-4">
+        <p class="mb-2">Text line 1</p>
+        <p class="mb-2">Text line 2</p>
+        <img src="https://placehold.co/150x150" alt="image placeholder" class="w-full h-full object-cover rounded">
+        <p class="mb-2">Text line 3</p>
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="checkbox-1" class="mr-2">
+        <label for="checkbox-1">Checkbox text</label>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Button text</button>
+    </section>
+
+    <!-- Shipping Form Section -->
+    <section>
+      <form>
+        <div class="mb-4">
+          <label class="block font-semibold mb-2">Forma de envío</label>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="transporte-terrestre" name="transporte" class="mr-2">
+            <label for="transporte-terrestre">Transporte Terrestre</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="aereo" name="transporte" class="mr-2">
+            <label for="aereo">Aereo</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="maritimo" name="transporte" class="mr-2">
+            <label for="maritimo">Maritimo</label>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label class="block font-semibold mb-2">Forma de pago</label>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="tarjeta" name="pago" class="mr-2">
+            <label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="transferencia" name="pago" class="mr-2">
+            <label for="transferencia">Transferencia bancaria</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="metálico" name="pago" class="mr-2">
+            <label for="metálico">Metálico</label>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <input type="text" name="direccion" placeholder="Direccion" class="w-full border p-2 rounded mb-2">
+        </div>
+
+        <div class="mb-4">
+          <label for="pais" class="font-semibold mb-2">País</label>
+          <select name="pais" id="pais" class="w-full border p-2 rounded">
+            <option value="">Seleccionar País</option>
+            <!-- Add more options here -->
+          </select>
+        </div>
+
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment and Shipping Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <section class="max-w-4xl mx-auto bg-white shadow-md rounded p-6">
+    <header class="mb-6">
+      <img src="https://placehold.co/1366x624" alt="Header Image" class="w-full h-56 object-cover rounded">
+    </header>
+    <main>
+      <section class="mb-6">
+        <fieldset class="mb-4">
+          <legend class="text-lg font-semibold mb-2">Select your payment method</legend>
+          <label class="block mb-2"><input type="radio" name="payment_method" value="credit_card" class="mr-2"> Credit Card</label>
+          <label class="block mb-2"><input type="radio" name="payment_method" value="paypal" class="mr-2"> Paypal</label>
+          <label class="block mb-2"><input type="radio" name="payment_method" value="bank_transfer" class="mr-2"> Bank Transfer</label>
+        </fieldset>
+        <fieldset class="mb-4">
+          <legend class="text-lg font-semibold mb-2">Enter your data</legend>
+          <label for="card_number" class="block mb-2">Card Number</label>
+          <input type="text" id="card_number" name="card_number" class="w-full mb-4 p-2 border rounded">
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="expiration_date" class="block mb-2">Expiration Date</label>
+              <input type="text" id="expiration_date" name="expiration_date" class="w-full mb-4 p-2 border rounded">
+            </div>
+            <div>
+              <label for="cvc" class="block mb-2">CVC</label>
+              <input type="text" id="cvc" name="cvc" class="w-full mb-4 p-2 border rounded">
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Complete</button>
+      </section>
+      <section class="mb-6">
+        <fieldset class="mb-4">
+          <legend class="text-lg font-semibold mb-2">Forma de envío</legend>
+          <label class="block mb-2"><input type="radio" name="shipping_method" value="terrestre" class="mr-2"> Terrestre</label>
+          <label class="block mb-2"><input type="radio" name="shipping_method" value="aereo" class="mr-2"> Aereo</label>
+          <label class="block mb-2"><input type="radio" name="shipping_method" value="maritimo" class="mr-2"> Marítimo</label>
+        </fieldset>
+        <fieldset class="mb-4">
+          <legend class="text-lg font-semibold mb-2">Forma de pago</legend>
+          <label class="block mb-2"><input type="radio" name="payment_method_alt" value="tarjeta" class="mr-2">Tarjeta (Crédito/Débito)</label>
+          <label class="block mb-2"><input type="radio" name="payment_method_alt" value="transferencia" class="mr-2">Transferencia bancaria</label>
+          <label class="block mb-2"><input type="radio" name="payment_method_alt" value="metálico" class="mr-2">Metálico</label>
+        </fieldset>
+        <label for="direccion" class="block mb-2">Dirección</label>
+        <input type="text" id="direccion" name="direccion" class="w-full mb-4 p-2 border rounded">
+        <label for="pais" class="block mb-2">País</label>
+        <select id="pais" name="pais" class="w-full mb-4 p-2 border rounded">
+          <option value="us">United States</option>
+          <option value="mx">Mexico</option>
+          <option value="ca">Canada</option>
+          <!-- Add more countries as needed -->
+        </select>
+        <button type="submit" class="bg-green-500 text-white font-semibold py-2 px-4 rounded">Aceptar</button>
+      </section>
+    </main>
+    <footer class="mt-6">
+      <button type="submit" class="bg-blue-700 text-white font-semibold py-2 px-4 rounded">Accept</button>
+    </footer>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <h1 class="text-lg">Sign Up</h1>
+    <nav>
+      <a href="#" class="mr-4">Sign Up</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <!-- Main Form Section -->
+  <section id="main-form" class="bg-white p-8 mt-6 max-w-lg mx-auto rounded shadow-md">
+    <form>
+      <div class="mb-4">
+        <label for="first_name" class="block text-gray-700">First Name</label>
+        <input type="text" name="first_name" id="first_name" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label for="last_name" class="block text-gray-700">Last Name</label>
+        <input type="text" name="last_name" id="last_name" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label for="phone" class="block text-gray-700">Phone</label>
+        <input type="text" name="phone" id="phone" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700">E-mail</label>
+        <input type="email" name="email" id="email" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700">Password</label>
+        <input type="password" name="password" id="password" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label for="confirm_password" class="block text-gray-700">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirm_password" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="checkbox" name="terms" id="terms" class="mr-2">
+        <label for="terms" class="text-gray-700">I agree to Terms and Conditions</label>
+      </div>
+      <div class="flex justify-between items-center">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
+        <button type="button" class="bg-gray-300 text-black px-4 py-2 rounded">Back</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Image/Avatar Section -->
+  <div class="image-section max-w-lg mx-auto mt-6 text-center">
+    <img src="https://placehold.co/200x200" alt="placeholder" class="mx-auto mb-4">
+  </div>
+
+  <!-- Additional Form Section -->
+  <section id="additional-form" class="bg-white p-8 mt-6 max-w-lg mx-auto rounded shadow-md">
+    <h2 class="text-gray-700 mb-4">Forma de envío</h2>
+    <div class="mb-4">
+      <input type="radio" name="delivery" id="delivery_transport" value="Transporte" class="mr-2">
+      <label for="delivery_transport" class="text-gray-700">Agente transporte</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" name="delivery" id="delivery_aereo" value="Aereo" class="mr-2">
+      <label for="delivery_aereo" class="text-gray-700">Aereo</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" name="delivery" id="delivery_marítimo" value="Marítimo" class="mr-2">
+      <label for="delivery_marítimo" class="text-gray-700">Marítimo</label>
+    </div>
+
+    <h2 class="text-gray-700 mb-4">Forma de pago</h2>
+    <div class="mb-4">
+      <input type="radio" name="payment" id="payment_tarjeta" value="Tarjeta" class="mr-2">
+      <label for="payment_tarjeta" class="text-gray-700">Tarjeta (Crédito/Débito)</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" name="payment" id="payment_transferencia" value="Transferencia" class="mr-2">
+      <label for="payment_transferencia" class="text-gray-700">Transferencia bancaria</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" name="payment" id="payment_metalico" value="Metálico" class="mr-2">
+      <label for="payment_metalico" class="text-gray-700">Metálico</label>
+    </div>
+
+    <div class="mb-4">
+      <label for="address" class="block text-gray-700">Dirección</label>
+      <input type="text" name="address" id="address" class="w-full p-2 border border-gray-300 rounded mt-2">
+    </div>
+
+    <div class="mb-4">
+      <label for="country" class="block text-gray-700">País</label>
+      <select name="country" id="country" class="w-full p-2 border border-gray-300 rounded mt-2">
+        <option value="x">País 1</option>
+        <option value="y">País 2</option>
+        <option value="z">País 3</option>
+      </select>
+    </div>
+
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+  </section>
+
+</body>
+</html>

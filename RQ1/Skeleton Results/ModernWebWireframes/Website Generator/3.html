@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section-text {
+            margin-bottom: 20px;
+        }
+        .section-img {
+            width: 100%;
+            height: 200px;
+            background: #ddd;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .grid-item {
+            width: 30%;
+            margin: 1.5%;
+            background: #eee;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            padding: 10px;
+            font-size: 16px;
+            background: #333;
+            color: #fff;
+            border: none;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li {
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Title1</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Link1-1</a></li>
+                    <li><a href="#">Link1-2</a></li>
+                    <li><a href="#">Link1-3</a></li>
+                    <li><a href="#">Link1-4</a></li>
+                    <li><a href="#">Link1-5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2 class="section-title">Title2</h2>
+            <p class="section-text">Text2</p>
+            <div class="section-img">PIC2-1</div>
+        </section>
+        <section>
+            <h2 class="section-title">Title3</h2>
+            <p class="section-text">Text3</p>
+            <div class="section-img">PIC3-1</div>
+        </section>
+        <section>
+            <h2 class="section-title">Title4</h2>
+            <p class="section-text">Text4</p>
+            <div class="section-img">PIC4-1</div>
+        </section>
+        <section>
+            <h2 class="section-title">Title5</h2>
+            <div class="section-text">Title5-1</div>
+            <div class="grid">
+                <div class="grid-item">PIC5-1</div>
+                <div class="grid-item">PIC5-2</div>
+                <div class="grid-item">PIC5-3</div>
+                <div class="grid-item">PIC5-4</div>
+                <div class="grid-item">PIC5-5</div>
+                <div class="grid-item">PIC5-6</div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Title6</h2>
+            <div class="section-text">Title6-1</div>
+            <form class="contact-form">
+                <input type="text" placeholder="TextInput">
+                <input type="text" placeholder="TextInput">
+                <textarea placeholder="TextArea"></textarea>
+                <button type="submit">Button6</button>
+            </form>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">Link7-1</a></li>
+                <li><a href="#">Link7-2</a></li>
+                <li><a href="#">Link7-3</a></li>
+                <li><a href="#">Link7-4</a></li>
+                <li><a href="#">Link7-5</a></li>
+            </ul>
+            <p>Text7-1 Text7-2</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center min-h-screen p-4">
+
+  <!-- Login Section -->
+  <div class="w-full max-w-md mb-6">
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="flex justify-between mb-4">
+        <button class="text-blue-500 font-bold hover:text-blue-700">Login</button>
+        <button class="text-blue-500 hover:text-blue-700">Sign Up</button>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="login">Login</label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="login" type="text" placeholder="Login">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password">
+      </div>
+      <div class="flex items-center justify-between">
+        <div>
+          <input class="mr-2 leading-tight" type="checkbox" id="rememberMe">
+          <label class="text-sm" for="rememberMe">Remember me</label>
+        </div>
+        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+          Forgot Password?
+        </a>
+      </div>
+      <div class="flex items-center justify-center mt-4">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          LOGIN
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Section -->
+  <div class="w-full max-w-md mb-6">
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <img src="https://placehold.co/100x100" alt="Placeholder Image" class="mx-auto">
+      </div>
+      <div class="mb-4">
+        <p class="border-b border-gray-300 mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="flex justify-between mb-4">
+        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          BACK
+        </button>
+        <div>
+          <input class="mr-2 leading-tight" type="checkbox" id="middleCheckbox">
+          <label class="text-sm" for="middleCheckbox">Check box</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shipping Info Section -->
+  <div class="w-full max-w-lg">
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8">
+      <h2 class="mb-6 text-xl font-bold">Shipping Info</h2>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="firstName">First Name</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstName" type="text" placeholder="First Name">
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="lastName">Last Name</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastName" type="text" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="Phone">
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">E-mail</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="E-mail">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="country">Country</label>
+          <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="country">
+            <option>United States</option>
+            <option>Canada</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="state">State</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="state" type="text" placeholder="State">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="city">City</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" type="text" placeholder="City">
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="zipCode">Zip Code</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="zipCode" type="text" placeholder="Zip Code">
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          BACK
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          NEXT STEP
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

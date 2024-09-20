@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans">
+  <!-- Header -->
+  <header class="text-center py-4 bg-gray-100">
+    <h1 class="text-2xl font-bold">Mobility Solutions & Daily Living Aids Making Life Easier</h1>
+    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav class="bg-gray-200 py-4 text-center">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main class="p-4">
+    <section class="grid grid-cols-2 gap-4">
+      <!-- Wheelchair Repair -->
+      <div class="text-center border p-4">
+        <h2 class="text-lg font-semibold">Wheelchair Repair</h2>
+        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+      </div>
+
+      <!-- Community Contracts -->
+      <div class="text-center border p-4">
+        <h2 class="text-lg font-semibold">Community Contracts</h2>
+        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+      </div>
+    </section>
+
+    <!-- Image and Description Section -->
+    <section class="mt-8 grid grid-cols-2 gap-4">
+      <img src="https://placehold.co/300" alt="Placeholder Image" class="w-full h-full object-cover">
+      <div class="self-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+      </div>
+    </section>
+
+    <!-- Team Members Section -->
+    <section class="mt-8 space-y-8">
+      <article class="flex items-center border p-4">
+        <img src="https://placehold.co/100" alt="Mate One" class="w-24 h-24 object-cover">
+        <div class="ml-4">
+          <h3 class="text-lg font-semibold">Mate One</h3>
+          <p class="text-sm text-gray-600">Job Title</p>
+          <p class="text-sm mt-2">Description about Mate One</p>
+        </div>
+      </article>
+
+      <article class="flex items-center border p-4">
+        <div class="mr-4">
+          <h3 class="text-lg font-semibold">Mate Two</h3>
+          <p class="text-sm text-gray-600">Job Title</p>
+          <p class="text-sm mt-2">Description about Mate Two</p>
+        </div>
+        <img src="https://placehold.co/100" alt="Mate Two" class="w-24 h-24 object-cover">
+      </article>
+
+      <article class="flex items-center border p-4">
+        <img src="https://placehold.co/100" alt="Mate Three" class="w-24 h-24 object-cover">
+        <div class="ml-4">
+          <h3 class="text-lg font-semibold">Mate Three</h3>
+          <p class="text-sm text-gray-600">Job Title</p>
+          <p class="text-sm mt-2">Description about Mate Three</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Form Section -->
+  <form class="p-4 mt-8 grid grid-cols-1 gap-4">
+    <label for="title" class="block">Title</label>
+    <input type="text" id="title" name="title" class="border px-2 py-1">
+
+    <fieldset class="flex flex-col">
+      <legend class="block">Radio Buttons</legend>
+      <label class="flex items-center mt-1"><input type="radio" name="relevance" value="Not relevant" class="mr-2">Not relevant</label>
+      <label class="flex items-center mt-1"><input type="radio" name="relevance" value="Low" class="mr-2">Low</label>
+      <label class="flex items-center mt-1"><input type="radio" name="relevance" value="Medium" class="mr-2">Medium</label>
+      <label class="flex items-center mt-1"><input type="radio" name="relevance" value="High" class="mr-2">High</label>
+    </fieldset>
+
+    <fieldset class="flex flex-col mt-4">
+      <legend class="block">Checkboxes</legend>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice1" class="mr-2">choice1</label>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice2" class="mr-2">choice2</label>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice3" class="mr-2">choice3</label>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice4" class="mr-2">choice4</label>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice5" class="mr-2">choice5</label>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice6" class="mr-2">choice6</label>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice7" class="mr-2">choice7</label>
+      <label class="flex items-center mt-1"><input type="checkbox" name="choices" value="choice8" class="mr-2">choice8</label>
+    </fieldset>
+
+    <div class="flex mt-4 space-x-4">
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">OK</button>
+      <button type="reset" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+    </div>
+  </form>
+
+</body>
+
+</html>

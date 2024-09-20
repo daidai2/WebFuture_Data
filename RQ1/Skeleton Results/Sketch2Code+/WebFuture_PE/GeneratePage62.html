@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div class="max-w-screen-lg mx-auto bg-white p-6 rounded shadow">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4">Title</h1>
+      <h2 class="text-2xl text-gray-600 mb-4">Title Page</h2>
+      <div class="w-full aspect-video bg-gray-200 flex items-center justify-center rounded">
+        <button class="text-3xl">▶</button>
+      </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">Title</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-200 p-4 rounded flex items-center">
+          <div class="w-1/3 bg-gray-300 h-24 mr-4"></div>
+          <div>
+            <h4 class="font-semibold">Title Post</h4>
+            <p class="text-gray-600">Description here...</p>
+          </div>
+        </div>
+        <div class="bg-gray-200 p-4 rounded flex items-center">
+          <div class="w-1/3 bg-gray-300 h-24 mr-4"></div>
+          <div>
+            <h4 class="font-semibold">Title Post</h4>
+            <p class="text-gray-600">Description here...</p>
+          </div>
+        </div>
+        <div class="bg-gray-200 p-4 rounded flex items-center">
+          <div class="w-1/3 bg-gray-300 h-24 mr-4"></div>
+          <div>
+            <h4 class="font-semibold">Title Post</h4>
+            <p class="text-gray-600">Description here...</p>
+          </div>
+        </div>
+        <div class="bg-gray-200 p-4 rounded flex items-center">
+          <div class="w-1/3 bg-gray-300 h-24 mr-4"></div>
+          <div>
+            <h4 class="font-semibold">Title Post</h4>
+            <p class="text-gray-600">Description here...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Large Image -->
+    <section class="mb-8">
+      <div class="w-full bg-gray-200 h-64 rounded flex items-center justify-center">
+        <p>Image Placeholder</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h3 class="text-xl font-semibold mb-4">Forma de envio</h3>
+      <form class="space-y-4">
+        <div>
+          <label class="block mb-2 font-semibold">Medio transporte:</label>
+          <div class="space-y-1">
+            <div>
+              <input type="radio" id="transporte" name="transporte" class="mr-2">
+              <label for="transporte">Transporte</label>
+            </div>
+            <div>
+              <input type="radio" id="aereo" name="transporte" class="mr-2">
+              <label for="aereo">Aereo</label>
+            </div>
+            <div>
+              <input type="radio" id="maritimo" name="transporte" class="mr-2">
+              <label for="maritimo">Maritimo</label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold">Forma de pago:</label>
+          <div class="space-y-1">
+            <div>
+              <input type="radio" id="tarjeta" name="pago" class="mr-2">
+              <label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+            </div>
+            <div>
+              <input type="radio" id="transferencia" name="pago" class="mr-2">
+              <label for="transferencia">Transferencia bancaria</label>
+            </div>
+            <div>
+              <input type="radio" id="metalico" name="pago" class="mr-2">
+              <label for="metalico">Metálico</label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold">Dirección:</label>
+          <input type="text" class="w-full px-4 py-2 border rounded" placeholder="Dirección">
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold">País:</label>
+          <select class="w-full px-4 py-2 border rounded">
+            <option value="pais1">País 1</option>
+            <option value="pais2">País 2</option>
+            <option value="pais3">País 3</option>
+          </select>
+        </div>
+
+        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Aceptar</button>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>

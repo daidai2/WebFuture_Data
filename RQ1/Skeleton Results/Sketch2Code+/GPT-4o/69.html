@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header, .video, .content, .form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .header {
+            text-align: center;
+        }
+        .post {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .post img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .form input[type="text"], .form input[type="submit"], .form input[type="button"] {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 200px;
+        }
+        .form .checkboxes, .form .radio-buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .form label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Title Page</h1>
+        <p>Subtitle or description goes here</p>
+    </div>
+    <div class="video">
+        <h2>Title</h2>
+        <div style="text-align: center;">
+            <button style="font-size: 24px;">▶</button>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Title</h2>
+        <div class="post">
+            <img src="placeholder.jpg" alt="Image">
+            <div>
+                <h3>Title Post</h3>
+                <p>Description text goes here</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="placeholder.jpg" alt="Image">
+            <div>
+                <h3>Title Post</h3>
+                <p>Description text goes here</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="placeholder.jpg" alt="Image">
+            <div>
+                <h3>Title Post</h3>
+                <p>Description text goes here</p>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <h2>Form Title</h2>
+        <input type="text" placeholder="Enter title">
+        <div class="radio-buttons">
+            <label><input type="radio" name="relevance" value="not_relevant"> Not relevant</label>
+            <label><input type="radio" name="relevance" value="low"> Low</label>
+            <label><input type="radio" name="relevance" value="medium"> Medium</label>
+            <label><input type="radio" name="relevance" value="high"> High</label>
+        </div>
+        <div class="checkboxes">
+            <label><input type="checkbox" name="choice" value="choice1"> Choice 1</label>
+            <label><input type="checkbox" name="choice" value="choice2" checked> Choice 2</label>
+            <label><input type="checkbox" name="choice" value="choice3"> Choice 3</label>
+            <label><input type="checkbox" name="choice" value="choice4"> Choice 4</label>
+            <label><input type="checkbox" name="choice" value="choice5" checked> Choice 5</label>
+            <label><input type="checkbox" name="choice" value="choice6"> Choice 6</label>
+            <label><input type="checkbox" name="choice" value="choice7"> Choice 7</label>
+            <label><input type="checkbox" name="choice" value="choice8" checked> Choice 8</label>
+        </div>
+        <input type="submit" value="OK">
+        <input type="button" value="Cancel">
+    </div>
+</body>
+</html>

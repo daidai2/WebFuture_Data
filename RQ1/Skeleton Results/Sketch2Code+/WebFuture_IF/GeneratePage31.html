@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <div class="container mx-auto p-4">
+
+    <!-- Header Section -->
+    <header class="mb-8">
+      <div class="bg-gray-300 w-full h-48 flex items-center justify-center">
+        <img src="https://placehold.co/700x200" alt="Hero Image" class="w-full h-full object-cover">
+      </div>
+      <h1 class="text-center text-4xl my-4">Headline</h1>
+      <h2 class="text-center text-2xl my-2">Subheadline</h2>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet. </p>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet. </p>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet. </p>
+    </header>
+
+    <!-- Form Section -->
+    <section class="mb-8">
+      <form action="#" method="POST" class="space-y-4">
+
+        <!-- Payment Methods -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Select your payment method</h3>
+          <div class="flex flex-col space-y-2">
+            <label>
+              <input type="radio" name="paymentMethod" value="CreditCard">
+              Credit Card
+            </label>
+            <label>
+              <input type="radio" name="paymentMethod" value="Paypal">
+              Paypal
+            </label>
+            <label>
+              <input type="radio" name="paymentMethod" value="BankTransfer">
+              Bank Transfer
+            </label>
+          </div>
+        </div>
+
+        <!-- Payment Details -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Enter your data</h3>
+          <label class="block">
+            Card Number
+            <input type="text" name="cardNumber" class="border border-gray-400 p-2 w-full mt-1">
+          </label>
+          <div class="flex space-x-4 mt-4">
+            <label class="block w-1/2">
+              Expiration Date
+              <input type="text" name="expirationDate" placeholder="MM/YY" class="border border-gray-400 p-2 w-full mt-1">
+            </label>
+            <label class="block w-1/2">
+              CVV
+              <input type="text" name="cvv" class="border border-gray-400 p-2 w-full mt-1">
+            </label>
+          </div>
+        </div>
+
+        <!-- Form Submission -->
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Complete</button>
+
+      </form>
+    </section>
+
+    <!-- Content Section -->
+    <section class="mb-8">
+      <div class="bg-gray-300 w-full h-48 flex items-center justify-center">
+        <img src="https://placehold.co/700x200" alt="Content Image" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-wrap justify-between my-4">
+        <p class="w-1/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet.</p>
+        <p class="w-1/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet.</p>
+        <p class="w-1/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet.</p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="flex space-x-4">
+          <label class="flex-1">
+            Label
+            <input type="text" name="labelInput1" class="border border-gray-400 p-2 w-full mt-1">
+          </label>
+          <div class="flex-1 flex space-x-2 items-center">
+            <input type="checkbox" name="checkbox1">
+            <span>Checkbox 1</span>
+          </div>
+        </div>
+
+        <div class="flex space-x-4">
+          <label class="flex-1">
+            Label
+            <input type="text" name="labelInput2" class="border border-gray-400 p-2 w-full mt-1">
+          </label>
+          <div class="flex-1 flex space-x-2 items-center">
+            <input type="checkbox" name="checkbox2">
+            <span>Checkbox 2</span>
+          </div>
+        </div>
+
+        <div class="flex-1 flex space-x-2 items-center">
+          <input type="checkbox" name="checkbox3">
+          <span>Checkbox 3</span>
+        </div>
+      </div>
+
+      <button class="bg-blue-600 text-white px-4 py-2 rounded mt-4">Button</button>
+    </section>
+
+    <!-- Selection Section -->
+    <section class="mb-8">
+      <div class="flex flex-col space-y-2">
+        <label>
+          <input type="radio" name="selection" value="1">
+          Radio 1
+        </label>
+        <label>
+          <input type="radio" name="selection" value="2">
+          Radio 2
+        </label>
+        <label>
+          <input type="radio" name="selection" value="3">
+          Radio 3
+        </label>
+        <label>
+          <input type="radio" name="selection" value="4">
+          Radio 4
+        </label>
+        <label>
+          <input type="radio" name="selection" value="5">
+          Radio 5
+        </label>
+      </div>
+
+      <div class="bg-gray-300 w-full h-48 flex items-center justify-center mt-4">
+        <img src="https://placehold.co/400x200" alt="Radio Image" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4">
+      <div class="flex justify-between">
+        <div>
+          <h4 class="font-semibold">Column 1</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Column 2</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Column 3</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

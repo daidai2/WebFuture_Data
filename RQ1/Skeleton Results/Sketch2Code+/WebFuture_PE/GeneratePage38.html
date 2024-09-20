@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+    <!-- Header Image -->
+    <div class="mb-6">
+      <img src="https://placehold.co/600x300" alt="Header Image" class="w-full rounded">
+    </div>
+
+    <!-- Content -->
+    <div class="mb-4">
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim.</p>
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p class="text-gray-700">Duis dignissim mi eu urna malesuada scelerisque.</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mb-4 flex flex-col space-y-4">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Button 1</button>
+      <button class="bg-green-500 text-white py-2 px-4 rounded">Button 2</button>
+    </div>
+
+    <!-- Payment Method -->
+    <div class="mb-6">
+      <h2 class="mb-2 text-lg font-semibold">Select your payment method</h2>
+      <div class="flex flex-col space-y-2">
+        <label class="flex items-center">
+          <input type="radio" name="payment_method" class="mr-2">
+          Credit Card
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="payment_method" class="mr-2">
+          Paypal
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="payment_method" class="mr-2">
+          Bank Transfer
+        </label>
+      </div>
+    </div>
+
+    <!-- Credit Card Details -->
+    <div class="mb-4">
+      <h3 class="mb-2 text-md font-semibold">Enter your data</h3>
+      <input type="text" placeholder="Card Number" class="mb-2 p-2 border rounded w-full">
+      <div class="mb-2 flex space-x-2">
+        <input type="text" placeholder="MM" class="p-2 border rounded w-1/4">
+        <input type="text" placeholder="YY" class="p-2 border rounded w-1/4">
+        <input type="text" placeholder="CVV" class="p-2 border rounded w-1/4">
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded w-full">Complete</button>
+    </div>
+
+    <hr class="mb-6">
+
+    <!-- Footer Image and Buttons -->
+    <div>
+      <img src="https://placehold.co/200x200" alt="Footer Image" class="w-full mb-4">
+      <div class="flex justify-between mb-4">
+        <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+      </div>
+
+      <!-- Additional Content -->
+      <div class="mb-4">
+        <p class="text-gray-700 mb-2">Additional content or instructions...</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

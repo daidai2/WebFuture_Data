@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center py-10">
+  <div class="bg-white rounded-lg shadow-md p-8 w-full max-w-2xl mb-8">
+    <div class="flex justify-between mb-4">
+      <a href="#">Sign Up</a>
+      <a href="#">Login</a>
+    </div>
+    <form>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-4">
+        <input type="text" placeholder="Name" class="p-2 border rounded">
+        <input type="text" placeholder="Last Name" class="p-2 border rounded">
+        <input type="tel" placeholder="Phone" class="p-2 border rounded">
+        <input type="email" placeholder="E-mail" class="p-2 border rounded">
+        <input type="password" placeholder="Password" class="p-2 border rounded">
+        <input type="password" placeholder="Confirm Password" class="p-2 border rounded">
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" class="mr-2">
+        <label for="agree">I agree to Terms and Conditions</label>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Sign Up</button>
+    </form>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-md p-8 w-full max-w-2xl mb-8 text-center">
+    <img src="https://placehold.co/300x150" alt="Placeholder Image" class="mb-4 mx-auto">
+    <p class="text-2xl font-bold mb-2">$24.9</p>
+    <p class="text-xl mb-4">Product Title</p>
+    <hr class="mb-4">
+    <p class="text-left mb-4">Check items:</p>
+    <div class="text-left">
+      <div class="mb-2">
+        <input type="checkbox" checked class="mr-2">
+        <label>Check item 1</label>
+      </div>
+      <div class="mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Check item 2</label>
+      </div>
+      <div class="mb-6">
+        <input type="checkbox" class="mr-2">
+        <label>Check item 3</label>
+      </div>
+      <button class="w-full bg-green-500 text-white py-2 rounded">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-md p-8 w-full max-w-2xl">
+    <form>
+      <p class="text-xl mb-4">Forma de envío</p>
+
+      <div class="mb-4">
+        <label class="block mb-2">Medio transporte</label>
+        <div class="flex flex-col">
+          <label class="mb-2">
+            <input type="radio" name="transporte" class="mr-2"> Terrestre
+          </label>
+          <label class="mb-2">
+            <input type="radio" name="transporte" class="mr-2"> Aéreo
+          </label>
+          <label>
+            <input type="radio" name="transporte" class="mr-2"> Marítimo
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2">Forma de pago</label>
+        <div class="flex flex-col">
+          <label class="mb-2">
+            <input type="radio" name="pago" class="mr-2"> Tarjeta (Crédito/Débito)
+          </label>
+          <label class="mb-2">
+            <input type="radio" name="pago" class="mr-2"> Transferencia bancaria
+          </label>
+          <label>
+            <input type="radio" name="pago" class="mr-2"> Metálico
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <input type="text" placeholder="Dirección" class="p-2 border rounded w-full">
+      </div>
+
+      <div class="mb-4">
+        <input type="text" placeholder="País" class="p-2 border rounded w-full">
+      </div>
+
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Aceptar</button>
+    </form>
+  </div>
+</body>
+</html>

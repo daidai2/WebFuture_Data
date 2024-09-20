@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+  <!-- Write Review Section -->
+  <section class="bg-white p-4 shadow rounded mb-6">
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/50x50" alt="Product Image" class="rounded mr-4">
+      <div>
+        <h1 class="text-lg font-bold">Product Name</h1>
+        <p class="text-sm text-gray-600">$Price</p>
+        <p class="text-yellow-500">★★★★★ <span class="text-gray-600">45 reviews</span></p>
+      </div>
+    </div>
+    <div class="mb-4">
+      <p class="font-semibold">Rate Product</p>
+      <div class="text-yellow-500">★☆☆☆☆ <span class="text-gray-600">2.0 :(</span></div>
+    </div>
+    <div class="mb-4">
+      <input type="text" placeholder="Headline" class="w-full p-2 border rounded mb-2">
+      <textarea placeholder="Review" class="w-full p-2 border rounded mb-2"></textarea>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+    </div>
+  </section>
+
+  <!-- Product Image and Details -->
+  <section class="bg-white p-4 shadow rounded mb-6 text-center">
+    <img src="https://placehold.co/600x400" alt="Product Image" class="mx-auto mb-4">
+    <p class="text-xl font-semibold mb-2">$24.9</p>
+    <h2 class="text-2xl font-bold mb-4">Product Title</h2>
+  </section>
+
+  <!-- Check Items Section -->
+  <section class="bg-white p-4 shadow rounded mb-6">
+    <p class="font-semibold mb-2">Check items:</p>
+    <div class="space-y-2">
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+        <span class="ml-2">Check item 1</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+        <span class="ml-2">Check item 2</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+        <span class="ml-2">Check item 3</span>
+      </label>
+    </div>
+    <button class="mt-4 bg-green-500 text-white py-2 px-4 rounded w-full">Buy Now</button>
+  </section>
+
+  <!-- Basic Inputs and Buttons Section -->
+  <section class="bg-white p-4 shadow rounded mb-6">
+    <div class="mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="mx-auto mb-4">
+      <input type="text" placeholder="Input field" class="w-full p-2 border rounded mb-2">
+    </div>
+    <div class="border-t border-gray-200 mb-4"></div>
+    <div class="flex justify-between items-center">
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 mr-2"> One
+      </label>
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 mr-2"> Two
+      </label>
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 mr-2"> Three
+      </label>
+    </div>
+    <div class="flex space-x-4 mt-4">
+      <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Next</button>
+    </div>
+  </section>
+</body>
+
+</html>

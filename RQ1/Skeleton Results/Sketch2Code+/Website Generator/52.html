@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review and Shipping Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .product-review, .shipping-info {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .product-info, .rating, .headline, .review, .submit-btn, .shipping-form {
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            max-width: 100px;
+        }
+        .rating span {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .rating span:hover, .rating span.selected {
+            color: gold;
+        }
+        .submit-btn input {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .shipping-form input, .shipping-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .shipping-form .half-width {
+            width: 48%;
+            display: inline-block;
+        }
+        .shipping-form .half-width:nth-child(odd) {
+            margin-right: 4%;
+        }
+        .shipping-form .full-width {
+            width: 100%;
+        }
+        .form-buttons {
+            text-align: center;
+        }
+        .form-buttons input {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Product Review Section -->
+    <div class="section product-review">
+        <h2>Write Review</h2>
+        <div class="product-info">
+            <img src="product.jpg" alt="Product Image">
+            <p>Product Name<br>$Price</p>
+            <p>★★★★☆ 45 reviews</p>
+        </div>
+        <div class="rating">
+            <label>Rate Product</label><br>
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> Bad :(
+        </div>
+        <div class="headline">
+            <label for="headline">Headline</label><br>
+            <input type="text" id="headline" name="headline">
+        </div>
+        <div class="review">
+            <label for="review">Review</label><br>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+
+    <!-- Shipping Info Section -->
+    <div class="section shipping-info">
+        <h2>Shipping Info</h2>
+        <form class="shipping-form">
+            <div class="half-width">
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="half-width">
+                <label for="last-name">Last Name</label><br>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="half-width">
+                <label for="phone">Phone</label><br>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="half-width">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="half-width">
+                <label for="country">Country</label><br>
+                <select id="country" name="country">
+                    <option value="United States">United States</option>
+                    <!-- Other countries can be added here -->
+                </select>
+            </div>
+            <div class="half-width">
+                <label for="state">State</label><br>
+                <select id="state" name="state">
+                    <option value="">Choose</option>
+                    <!-- States can be added here -->
+                </select>
+            </div>
+            <div class="half-width">
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="half-width">
+                <label for="zip">Zip Code</label><br>
+                <input type="text" id="zip" name="zip">
+            </div>
+            <div class="form-buttons">
+                <input type="button" value="Back">
+                <input type="submit" value="Next Step">
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    // JavaScript for rating stars
+    document.querySelectorAll('.rating span').forEach(function(star, index) {
+        star.addEventListener('click', function() {
+            document.querySelectorAll('.rating span').forEach(function(s, i) {
+                if (i <= index) {
+                    s.classList.add('selected');
+                } else {
+                    s.classList.remove('selected');
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

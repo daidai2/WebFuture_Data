@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .login-container, .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"], 
+        .login-container input[type="password"], 
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        .login-container button, 
+        .form-container button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+        }
+        .form-container .checkbox-group,
+        .form-container .radio-group {
+            margin: 10px 0;
+        }
+        .form-container .checkbox-group label,
+        .form-container .radio-group label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" placeholder="Login">
+        <input type="password" placeholder="Password">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+        <div>
+            <a href="#">Forgot Password</a>
+        </div>
+        <button>Login</button>
+    </div>
+
+    <div class="form-container">
+        <h2>Form</h2>
+        <div style="width: 100px; height: 150px; border: 1px solid #ccc; margin-bottom: 10px;">
+            <!-- Placeholder for image -->
+        </div>
+        <div>
+            <input type="text" placeholder="Title">
+        </div>
+        <div class="radio-group">
+            <label>Radio Buttons</label>
+            <label><input type="radio" name="relevance" value="not_relevant"> Not relevant</label>
+            <label><input type="radio" name="relevance" value="low"> Low</label>
+            <label><input type="radio" name="relevance" value="medium"> Medium</label>
+            <label><input type="radio" name="relevance" value="high"> High</label>
+        </div>
+        <div class="checkbox-group">
+            <label>Check Boxes</label>
+            <label><input type="checkbox"> Choice 1</label>
+            <label><input type="checkbox" checked> Choice 2</label>
+            <label><input type="checkbox"> Choice 3</label>
+            <label><input type="checkbox"> Choice 4</label>
+            <label><input type="checkbox" checked> Choice 5</label>
+            <label><input type="checkbox"> Choice 6</label>
+            <label><input type="checkbox"> Choice 7</label>
+            <label><input type="checkbox" checked> Choice 8</label>
+        </div>
+        <button>OK</button>
+        <button>Cancel</button>
+    </div>
+
+</body>
+</html>

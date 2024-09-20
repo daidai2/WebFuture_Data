@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .product-main {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .product-main img {
+            max-width: 300px;
+        }
+        .product-details {
+            max-width: 300px;
+        }
+        .product-thumbnails {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .product-thumbnails img {
+            width: 50px;
+            height: 50px;
+        }
+        .team-member {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 10px 0;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+        }
+        .form-section {
+            width: 80%;
+            margin-top: 20px;
+        }
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-section input[type="text"], .form-section textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-section input[type="checkbox"], .form-section input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Page</h1>
+        <div class="product-main">
+            <img src="main-product.jpg" alt="Main Product Image">
+            <div class="product-details">
+                <h2>Product Name</h2>
+                <p>Manufacturer</p>
+                <p>Color:</p>
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+                <p>Price: $100</p>
+                <p>Old Price: $200</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-thumbnails">
+            <img src="thumb1.jpg" alt="Thumbnail 1">
+            <img src="thumb2.jpg" alt="Thumbnail 2">
+            <img src="thumb3.jpg" alt="Thumbnail 3">
+            <img src="thumb4.jpg" alt="Thumbnail 4">
+        </div>
+        <div class="team-member">
+            <img src="mate1.jpg" alt="Mate One">
+            <div>
+                <h3>Mate One</h3>
+                <p>Job Title</p>
+                <p>Job Description Line 1</p>
+                <p>Job Description Line 2</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div>
+                <h3>Mate Two</h3>
+                <p>Job Title</p>
+                <p>Job Description Line 1</p>
+                <p>Job Description Line 2</p>
+            </div>
+            <img src="mate2.jpg" alt="Mate Two">
+        </div>
+        <div class="team-member">
+            <img src="mate3.jpg" alt="Mate Three">
+            <div>
+                <h3>Mate Three</h3>
+                <p>Job Title</p>
+                <p>Job Description Line 1</p>
+                <p>Job Description Line 2</p>
+            </div>
+        </div>
+        <div class="form-section">
+            <label for="label1">Label 1</label>
+            <input type="text" id="label1">
+            <label for="label2">Label 2</label>
+            <input type="text" id="label2">
+            <label><input type="checkbox"> Checkbox 1</label>
+            <label><input type="checkbox"> Checkbox 2</label>
+            <label><input type="radio" name="radio" value="1"> Radio Button 1</label>
+            <label><input type="radio" name="radio" value="2"> Radio Button 2</label>
+            <button>Button</button>
+        </div>
+    </div>
+</body>
+</html>

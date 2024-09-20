@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white p-4 shadow">
+    <h1 class="text-3xl font-bold">Title Page</h1>
+  </header>
+  <section class="p-4">
+    <div class="bg-gray-200 aspect-w-16 aspect-h-9 mb-4">
+      <img src="https://placehold.co/600x400" alt="Video Player" class="w-full h-full object-cover">
+    </div>
+  </section>
+
+  <section class="p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <article class="bg-white p-4 shadow-md">
+      <h2 class="text-xl font-bold">Title</h2>
+      <img src="https://placehold.co/200x150" alt="Thumbnail" class="my-2">
+      <p>Text</p>
+    </article>
+    <article class="bg-white p-4 shadow-md">
+      <h2 class="text-xl font-bold">Title</h2>
+      <img src="https://placehold.co/200x150" alt="Thumbnail" class="my-2">
+      <p>Text</p>
+    </article>
+    <article class="bg-white p-4 shadow-md">
+      <h2 class="text-xl font-bold">Title</h2>
+      <img src="https://placehold.co/200x150" alt="Thumbnail" class="my-2">
+      <p>Text</p>
+    </article>
+  </section>
+
+  <section class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full h-full object-cover">
+    <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full h-full object-cover">
+  </section>
+
+  <section class="p-4">
+    <div class="bg-gray-200 p-4 mb-4">
+      <p class="mb-2">Summary text 1</p>
+      <p class="mb-2">Summary text 2</p>
+      <p class="mb-2">Summary text 3</p>
+    </div>
+    <div class="bg-gray-200 p-4 flex items-center mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="mr-4">
+      <div>
+        <p>Text line</p>
+        <p>Text line</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 mb-4">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+      <input type="checkbox" id="checkbox" class="h-4 w-4">
+      <label for="checkbox">Checkbox</label>
+    </div>
+  </section>
+
+  <section class="p-4 bg-white shadow-md">
+    <form>
+      <div class="mb-4">
+        <label for="input1" class="block text-sm font-medium text-gray-700">Label</label>
+        <input type="text" id="input1" class="mt-1 block w-full p-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+      </div>
+      <div class="mb-4">
+        <label for="input2" class="block text-sm font-medium text-gray-700">Label</label>
+        <input type="text" id="input2" class="mt-1 block w-full p-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+      </div>
+      <fieldset class="mb-4">
+        <legend class="text-sm font-medium text-gray-700">Checkboxes</legend>
+        <div class="flex items-center">
+          <input type="checkbox" id="checkbox1" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+          <label for="checkbox1" class="ml-2 text-sm text-gray-600">Choice 1</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="checkbox2" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+          <label for="checkbox2" class="ml-2 text-sm text-gray-600">Choice 2</label>
+        </div>
+      </fieldset>
+      <fieldset class="mb-4">
+        <legend class="text-sm font-medium text-gray-700">Radio buttons</legend>
+        <div class="flex items-center">
+          <input type="radio" id="option1" name="options" class="h-4 w-4 text-blue-600 border-gray-300">
+          <label for="option1" class="ml-2 text-sm text-gray-600">Option 1</label>
+        </div>
+        <div class="flex items-center">
+          <input type="radio" id="option2" name="options" class="h-4 w-4 text-blue-600 border-gray-300">
+          <label for="option2" class="ml-2 text-sm text-gray-600">Option 2</label>
+        </div>
+      </fieldset>
+      <div class="mb-4">
+        <label for="dropdown" class="block text-sm font-medium text-gray-700">Dropdown</label>
+        <select id="dropdown" class="mt-1 block w-full p-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+    </form>
+  </section>
+</body>
+</html>

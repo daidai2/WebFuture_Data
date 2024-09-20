@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-group {
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="firstName">Name</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms">
+                <label for="agreeTerms">I agree to Terms and Conditions</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+
+        <h2>Additional Section</h2>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="form-group radio-group">
+            <label>Radio Buttons</label>
+            <input type="radio" id="notRelevant" name="relevance" value="Not relevant">
+            <label for="notRelevant">Not relevant</label>
+            <input type="radio" id="low" name="relevance" value="Low">
+            <label for="low">Low</label>
+            <input type="radio" id="medium" name="relevance" value="Medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="high" name="relevance" value="High">
+            <label for="high">High</label>
+        </div>
+        <div class="form-group checkbox-group">
+            <label>Check Boxes</label>
+            <input type="checkbox" id="choice1" name="choices" value="Choice 1">
+            <label for="choice1">Choice 1</label>
+            <input type="checkbox" id="choice2" name="choices" value="Choice 2">
+            <label for="choice2">Choice 2</label>
+            <input type="checkbox" id="choice3" name="choices" value="Choice 3">
+            <label for="choice3">Choice 3</label>
+            <input type="checkbox" id="choice4" name="choices" value="Choice 4">
+            <label for="choice4">Choice 4</label>
+            <input type="checkbox" id="choice5" name="choices" value="Choice 5">
+            <label for="choice5">Choice 5</label>
+            <input type="checkbox" id="choice6" name="choices" value="Choice 6">
+            <label for="choice6">Choice 6</label>
+            <input type="checkbox" id="choice7" name="choices" value="Choice 7">
+            <label for="choice7">Choice 7</label>
+            <input type="checkbox" id="choice8" name="choices" value="Choice 8">
+            <label for="choice8">Choice 8</label>
+        </div>
+        <div class="form-group button-group">
+            <button type="button">OK</button>
+            <button type="button">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

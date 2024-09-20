@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <div class="container mx-auto p-4 flex-grow">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center py-4">
+      <div class="text-lg font-semibold">Sign Up</div>
+      <nav class="space-x-4">
+        <a href="#" class="text-blue-500">Sign Up</a>
+        <a href="#" class="text-blue-500">Login</a>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <!-- Sign-Up Form -->
+      <form action="#" method="POST" class="space-y-6">
+        <div class="flex space-x-4">
+          <div class="w-1/2">
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+          </div>
+          <div class="w-1/2">
+            <label for="lastname" class="block text-sm font-medium">Last Name</label>
+            <input type="text" id="lastname" name="lastname" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="w-1/2">
+            <label for="phone" class="block text-sm font-medium">Phone</label>
+            <input type="text" id="phone" name="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+          </div>
+          <div class="w-1/2">
+            <label for="email" class="block text-sm font-medium">E-mail</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="w-1/2">
+            <label for="password" class="block text-sm font-medium">Password</label>
+            <input type="password" id="password" name="password" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+          </div>
+          <div class="w-1/2">
+            <label for="confirmpassword" class="block text-sm font-medium">Confirm Password</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <input type="checkbox" id="terms" name="terms" class="h-4 w-4 text-indigo-600 border-gray-300 rounded">
+          <label for="terms" class="text-sm">I agree to Terms and Conditions</label>
+        </div>
+        <div class="flex justify-end">
+          <button type="submit" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md shadow-sm">Sign Up</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Additional Section -->
+    <aside class="bg-white p-8 rounded-lg shadow-md mt-8 flex">
+      <div class="flex-grow">
+        <img src="https://placehold.co/100x100" alt="Placeholder Image" class="mb-4">
+        <div class="mb-4">
+          <p>Some text here...</p>
+          <p>More text here...</p>
+        </div>
+        <div>
+          <button class="px-4 py-2 bg-gray-400 text-white font-semibold rounded-md shadow-sm">Back</button>
+        </div>
+      </div>
+      <div class="ml-8">
+        <div>
+          <label for="title" class="block text-sm font-medium">Title</label>
+          <input type="text" id="title" name="title" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div class="mt-4">
+          <div class="text-sm font-medium">Radio Buttons</div>
+          <div class="mt-1">
+            <label class="inline-flex items-center"><input type="radio" name="relevance" value="not-relevant" class="form-radio text-indigo-600"> Not relevant</label>
+            <label class="inline-flex items-center ml-4"><input type="radio" name="relevance" value="low" class="form-radio text-indigo-600"> Low</label>
+            <label class="inline-flex items-center ml-4"><input type="radio" name="relevance" value="medium" class="form-radio text-indigo-600"> Medium</label>
+            <label class="inline-flex items-center ml-4"><input type="radio" name="relevance" value="high" class="form-radio text-indigo-600"> High</label>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div class="text-sm font-medium">Check Boxes</div>
+          <div class="mt-1">
+            <label class="inline-flex items-center"><input type="checkbox" name="choices" value="1" class="form-checkbox text-indigo-600"> choice 1</label>
+            <label class="inline-flex items-center ml-4"><input type="checkbox" name="choices" value="2" class="form-checkbox text-indigo-600"> choice 2</label>
+            <label class="inline-flex items-center ml-4"><input type="checkbox" name="choices" value="3" class="form-checkbox text-indigo-600"> choice 3</label>
+            <label class="inline-flex items-center ml-4"><input type="checkbox" name="choices" value="4" class="form-checkbox text-indigo-600"> choice 4</label>
+            <label class="inline-flex items-center ml-4"><input type="checkbox" name="choices" value="5" class="form-checkbox text-indigo-600"> choice 5</label>
+            <label class="inline-flex items-center ml-4"><input type="checkbox" name="choices" value="6" class="form-checkbox text-indigo-600"> choice 6</label>
+            <label class="inline-flex items-center ml-4"><input type="checkbox" name="choices" value="7" class="form-checkbox text-indigo-600"> choice 7</label>
+            <label class="inline-flex items-center ml-4"><input type="checkbox" name="choices" value="8" class="form-checkbox text-indigo-600"> choice 8</label>
+          </div>
+        </div>
+        <div class="mt-4 flex space-x-2">
+          <button class="px-4 py-2 bg-green-500 text-white font-semibold rounded-md shadow-sm">OK</button>
+          <button class="px-4 py-2 bg-red-500 text-white font-semibold rounded-md shadow-sm">Cancel</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white p-4 mt-auto text-center">
+    © 2023 - Sample Footer
+  </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Fidelity Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .payment-method, .form-section, .checkbox-section, .radio-section, .image-section, .button-section {
+            margin-bottom: 20px;
+        }
+        .form-section input, .checkbox-section input, .radio-section input {
+            margin-right: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .large-image {
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Payment Method Section -->
+        <div class="payment-method">
+            <h3>Select your payment method</h3>
+            <input type="radio" id="credit" name="payment" value="credit" checked>
+            <label for="credit">Credit Card</label><br>
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal">Paypal</label><br>
+            <input type="radio" id="bank" name="payment" value="bank">
+            <label for="bank">Bank Transfer</label><br>
+        </div>
+
+        <!-- Card Information Section -->
+        <div class="form-section">
+            <h3>Enter your data</h3>
+            <label for="card-number">Card Number</label><br>
+            <input type="text" id="card-number" name="card-number" placeholder="Card Number" style="width:100%;"><br><br>
+            <label for="expiration-date">Expiration date</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" style="width: 60px;">
+            <label for="ccv">CCV</label>
+            <input type="text" id="ccv" name="ccv" placeholder="CCV" style="width: 60px;">
+        </div>
+
+        <!-- Signup/Login Section -->
+        <div class="form-section">
+            <h3>Sign Up / Login</h3>
+            <input type="radio" id="signup" name="account" value="signup" checked>
+            <label for="signup">Sign Up</label>
+            <input type="radio" id="login" name="account" value="login">
+            <label for="login">Login</label><br><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" style="width:45%;">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" style="width:45%;"><br><br>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone" style="width:45%;">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" style="width:45%;"><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" style="width:45%;">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" style="width:45%;"><br><br>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to Terms and Conditions</label><br><br>
+            <button class="button">Sign Up</button>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <div class="large-image">Image Placeholder</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+        </div>
+
+        <!-- Label Section -->
+        <div class="form-section">
+            <label for="label1">Label</label>
+            <input type="text" id="label1" name="label1" style="width:100%;"><br><br>
+            <label for="label2">Label</label>
+            <input type="text" id="label2" name="label2" style="width:100%;">
+        </div>
+
+        <!-- Checkbox Section -->
+        <div class="checkbox-section">
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            <label for="checkbox1">Checkbox 1</label><br>
+            <input type="checkbox" id="checkbox2" name="checkbox2">
+            <label for="checkbox2">Checkbox 2</label><br>
+            <input type="checkbox" id="checkbox3" name="checkbox3" checked>
+            <label for="checkbox3">Checkbox 3</label><br>
+            <input type="checkbox" id="checkbox4" name="checkbox4">
+            <label for="checkbox4">Checkbox 4</label><br>
+        </div>
+
+        <!-- Radio Button Section -->
+        <div class="radio-section">
+            <input type="radio" id="radio1" name="radio" value="radio1" checked>
+            <label for="radio1">Radio 1</label><br>
+            <input type="radio" id="radio2" name="radio" value="radio2">
+            <label for="radio2">Radio 2</label><br>
+            <input type="radio" id="radio3" name="radio" value="radio3">
+            <label for="radio3">Radio 3</label><br>
+            <input type="radio" id="radio4" name="radio" value="radio4">
+            <label for="radio4">Radio 4</label><br>
+        </div>
+
+        <!-- Button Section -->
+        <div class="button-section">
+            <button class="button">Button</button>
+        </div>
+    </div>
+</body>
+</html>

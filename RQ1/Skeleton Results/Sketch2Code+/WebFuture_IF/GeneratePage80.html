@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <!-- Header Section -->
+    <header class="bg-white p-4 mb-4 shadow-sm rounded-lg">
+      <div class="flex items-center">
+        <img src="https://placehold.co/80" alt="Product" class="w-20 h-20" />
+        <div class="ml-4">
+          <h1 class="text-2xl font-bold">Product Name</h1>
+          <p class="text-lg text-gray-600">$Price</p>
+        </div>
+        <div class="ml-auto text-right">
+          <div class="text-yellow-500">
+            ★★★★☆
+          </div>
+          <p class="text-gray-600">45 reviews</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Rate Product Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg">
+      <h2 class="text-xl font-bold mb-2">Rate Product</h2>
+      <div class="flex items-center">
+        <div class="flex">
+          ★★★★☆
+        </div>
+        <p class="ml-2 text-gray-600">Bad :(</p>
+      </div>
+    </section>
+
+    <!-- Review Form Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg">
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700">Headline</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded mt-1" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Review</label>
+          <textarea class="w-full p-2 border border-gray-300 rounded mt-1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+      </form>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg grid grid-cols-2 gap-4">
+      <img src="https://placehold.co/100" alt="Gallery Image" class="w-full h-full object-cover rounded">
+      <img src="https://placehold.co/100" alt="Gallery Image" class="w-full h-full object-cover rounded">
+      <img src="https://placehold.co/100" alt="Gallery Image" class="w-full h-full object-cover rounded">
+      <p class="text-gray-700">Some placeholder text lines describing the product or related information.</p>
+    </section>
+
+    <!-- Additional Content Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg">
+      <p class="text-gray-700">Some additional content here...</p>
+    </section>
+
+    <!-- Checkbox Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg">
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Checkbox 1</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Checkbox 2</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Checkbox 3</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label>Checkbox 4</label>
+      </div>
+    </section>
+
+    <!-- Radio Button Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg">
+      <div class="flex items-center mb-2">
+        <input type="radio" name="option" class="mr-2">
+        <label>Radio 1</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="option" class="mr-2">
+        <label>Radio 2</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="option" class="mr-2">
+        <label>Radio 3</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="option" class="mr-2">
+        <label>Radio 4</label>
+      </div>
+    </section>
+
+    <!-- Button Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg text-center">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+    </section>
+
+    <!-- Large Image Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg">
+      <img src="https://placehold.co/600x100" alt="Large Banner Image" class="w-full h-full object-cover rounded mb-4">
+      <div class="flex justify-between text-center text-gray-600 text-sm">
+        <p>Column 1 text goes here.</p>
+        <p>Column 2 text goes here.</p>
+        <p>Column 3 text goes here.</p>
+        <p>Column 4 text goes here.</p>
+      </div>
+    </section>
+
+    <!-- Footer Text Section -->
+    <section class="bg-white p-4 mb-4 shadow-sm rounded-lg text-center text-gray-600 text-sm">
+      <p>Footer text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet.</p>
+    </section>
+  </div>
+</body>
+</html>

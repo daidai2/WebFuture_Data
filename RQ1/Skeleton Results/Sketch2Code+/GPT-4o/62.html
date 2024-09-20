@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>低保真线框图示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1356px;
+            margin: 0 auto;
+        }
+        .header, .section, .form-section {
+            margin-bottom: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .content .item {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+        }
+        .form-section input[type="text"], 
+        .form-section input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .form-section label {
+            margin-right: 10px;
+        }
+        .form-section .checkbox-group, 
+        .form-section .radio-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Title</h1>
+            <button>Play Video</button>
+        </div>
+        <div class="section">
+            <h2>Title Page</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        </div>
+        <div class="content">
+            <div class="item">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="placeholder">
+                <p>Title Post</p>
+            </div>
+            <div class="item">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="placeholder">
+                <p>Title Post</p>
+            </div>
+            <div class="item">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="placeholder">
+                <p>Title Post</p>
+            </div>
+            <div class="item">
+                <h3>Title</h3>
+                <img src="https://via.placeholder.com/150" alt="placeholder">
+                <p>Title Post</p>
+            </div>
+        </div>
+        <div class="section banner"></div>
+        <div class="form-section">
+            <h2>Form</h2>
+            <div>
+                <label for="address">Direccion:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div>
+                <label for="country">Pais:</label>
+                <select id="country" name="country">
+                    <option value="1">Country 1</option>
+                    <option value="2">Country 2</option>
+                </select>
+            </div>
+            <div class="checkbox-group">
+                <label for="transport">Medio transporte:</label>
+                <input type="checkbox" id="land" name="transport" value="land"> Terrestre
+                <input type="checkbox" id="air" name="transport" value="air"> Aereo
+                <input type="checkbox" id="sea" name="transport" value="sea"> Maritimo
+            </div>
+            <div class="radio-group">
+                <label for="payment">Forma de pago:</label>
+                <input type="radio" id="card" name="payment" value="card"> Tarjeta (Crédito/débito)
+                <input type="radio" id="bank" name="payment" value="bank"> Transferencia bancaria
+                <input type="radio" id="cash" name="payment" value="cash"> Metalico
+            </div>
+            <input type="submit" value="Aceptar">
+        </div>
+    </div>
+</body>
+</html>

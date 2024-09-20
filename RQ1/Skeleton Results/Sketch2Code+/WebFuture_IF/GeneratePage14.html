@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between">
+      <nav>
+        <a href="#" class="mr-4">Login</a>
+        <a href="#" class="mr-4">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section class="container mx-auto my-10 p-5 max-w-lg bg-white shadow-md">
+    <h1 class="text-2xl font-bold mb-5 text-center">Login / Sign Up</h1>
+
+    <div class="mb-4">
+      <label class="block mb-1">Login</label>
+      <input type="text" name="username" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+
+    <div class="mb-4">
+      <label class="block mb-1">Password</label>
+      <input type="password" name="password" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+
+    <div class="flex items-center mb-4">
+      <input type="checkbox" name="remember_me" class="mr-2">
+      <label>Remember me</label>
+      <a href="#" class="ml-auto text-blue-600">Forgot Password</a>
+    </div>
+
+    <button class="w-full bg-blue-600 text-white p-2 rounded">Login</button>
+  </section>
+
+  <!-- Main Content Area -->
+  <section class="container mx-auto my-10">
+    <article>
+      <h2 class="text-3xl font-bold mb-2">Title</h2>
+      <h3 class="text-xl mb-5">Title Page</h3>
+
+      <div class="flex mb-10">
+        <p class="w-1/2">Subtitle or brief description goes here.</p>
+        <iframe class="w-1/2 h-48" src="https://www.youtube.com/embed/XXXXX" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <aside>
+      <div class="grid grid-cols-2 gap-10">
+        <article class="border p-4">
+          <h4 class="text-xl font-bold mb-2">Title</h4>
+          <img src="https://placehold.co/150x100" alt="Image 1" class="mb-2">
+          <p>Title Post</p>
+        </article>
+
+        <article class="border p-4">
+          <h4 class="text-xl font-bold mb-2">Title</h4>
+          <img src="https://placehold.co/150x100" alt="Image 2" class="mb-2">
+          <p>Title Post</p>
+        </article>
+
+        <article class="border p-4">
+          <h4 class="text-xl font-bold mb-2">Title</h4>
+          <img src="https://placehold.co/150x100" alt="Image 3" class="mb-2">
+          <p>Title Post</p>
+        </article>
+
+        <article class="border p-4">
+          <h4 class="text-xl font-bold mb-2">Title</h4>
+          <img src="https://placehold.co/150x100" alt="Image 4" class="mb-2">
+          <p>Title Post</p>
+        </article>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Shipping and Payment Form -->
+  <section class="container mx-auto my-10 p-5 max-w-lg bg-white shadow-md">
+    <form>
+      <fieldset class="mb-5">
+        <legend class="text-xl font-bold mb-3">Forma de envío</legend>
+        <label class="block"><input type="radio" name="transporte" value="Tierra"> Terrestre</label>
+        <label class="block"><input type="radio" name="transporte" value="Aereo"> Aéreo</label>
+        <label class="block"><input type="radio" name="transporte" value="Maritimo"> Marítimo</label>
+      </fieldset>
+
+      <fieldset class="mb-5">
+        <legend class="text-xl font-bold mb-3">Forma de pago</legend>
+        <label class="block"><input type="radio" name="pago" value="Tarjeta"> Tarjeta (Crédito/Débito)</label>
+        <label class="block"><input type="radio" name="pago" value="Transferencia"> Transferencia bancaria</label>
+        <label class="block"><input type="radio" name="pago" value="Metalico"> Efectivo</label>
+      </fieldset>
+
+      <div class="mb-4">
+        <label class="block mb-1">Dirección</label>
+        <input type="text" name="direccion" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1">País</label>
+        <select name="pais" class="w-full p-2 border border-gray-300 rounded">
+          <option value="example">Example</option>
+        </select>
+      </div>
+
+      <button type="submit" class="w-full bg-green-600 text-white p-2 rounded">Aceptar</button>
+    </form>
+  </section>
+
+</body>
+</html>

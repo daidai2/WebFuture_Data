@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product-image, .product-details {
+            flex: 1;
+            padding: 20px;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .thumbnail-images img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .product-details h1 {
+            font-size: 24px;
+        }
+        .product-details .manufacturer {
+            font-size: 18px;
+        }
+        .product-details .color-options {
+            margin: 10px 0;
+        }
+        .product-details .price {
+            font-size: 20px;
+            color: red;
+        }
+        .product-details .old-price {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .product-details button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .team-members {
+            margin-top: 50px;
+        }
+        .team-member {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .team-member .details {
+            flex: 1;
+        }
+        .shipping-form {
+            margin-top: 50px;
+        }
+        .shipping-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .shipping-form input, .shipping-form select, .shipping-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="product-main.jpg" alt="Product Image">
+            <div class="thumbnail-images">
+                <img src="thumb1.jpg" alt="Thumbnail">
+                <img src="thumb2.jpg" alt="Thumbnail">
+                <img src="thumb3.jpg" alt="Thumbnail">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p class="manufacturer">Manufacturer</p>
+            <div class="color-options">
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+            </div>
+            <p class="price">$100 <span class="old-price">$200</span></p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="mate1.jpg" alt="Mate One">
+            <div class="details">
+                <h3>Mate One</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="mate2.jpg" alt="Mate Two">
+            <div class="details">
+                <h3>Mate Two</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="mate3.jpg" alt="Mate Three">
+            <div class="details">
+                <h3>Mate Three</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+    </div>
+    <div class="shipping-form">
+        <form>
+            <label>Forma de envío:</label>
+            <label><input type="radio" name="transporte" value="terrestre"> Terrestre</label>
+            <label><input type="radio" name="transporte" value="aereo"> Aereo</label>
+            <label><input type="radio" name="transporte" value="maritimo"> Marítimo</label>
+            
+            <label>Forma de pago:</label>
+            <label><input type="radio" name="pago" value="tarjeta"> Tarjeta (Crédito/débito)</label>
+            <label><input type="radio" name="pago" value="transferencia"> Transferencia bancaria</label>
+            <label><input type="radio" name="pago" value="metalico"> Metálico</label>
+
+            <label>Dirección:</label>
+            <input type="text" name="direccion">
+            
+            <label>País:</label>
+            <select name="pais">
+                <option value="mx">México</option>
+                <option value="us">Estados Unidos</option>
+                <option value="es">España</option>
+            </select>
+            
+            <button type="submit">Aceptar</button>
+        </form>
+    </div>
+</body>
+</html>

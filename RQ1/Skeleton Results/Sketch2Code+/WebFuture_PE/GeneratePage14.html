@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Login/Sign Up Section -->
+  <div class="max-w-md mx-auto bg-white p-6 mb-6 shadow-md rounded-md">
+    <div class="flex justify-between mb-4">
+      <a href="#" class="text-blue-500">Login</a>
+      <a href="#" class="text-blue-500">Sign Up</a>
+    </div>
+    <form>
+      <div class="mb-4">
+        <label for="login" class="block text-sm font-medium text-gray-700">Login</label>
+        <input type="text" id="login" name="login" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="remember-me" name="remember-me" class="h-4 w-4 text-indigo-600 border-gray-300 rounded">
+        <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+      </div>
+      <div class="mb-4 text-right">
+        <a href="#" class="text-sm text-blue-500">Forgot Password</a>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md">Login</button>
+    </form>
+  </div>
+
+  <!-- Title Section -->
+  <div class="max-w-4xl mx-auto mb-6">
+    <h1 class="text-2xl font-bold mb-4">Title</h1>
+    <h2 class="text-xl mb-2">Title Page</h2>
+    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula ex eu lacus volutpat, at dapibus neque efficitur.</p>
+    <div class="mb-6">
+      <img src="https://placehold.co/600x400?text=Video+Placeholder" alt="Video placeholder" class="w-full h-72 object-cover rounded-md border">
+    </div>
+
+    <!-- Article Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-4 shadow-md rounded-md">
+        <h3 class="font-semibold mb-2">Title</h3>
+        <img src="https://placehold.co/150?text=Image" alt="Placeholder image" class="w-full h-32 object-cover mb-2 rounded-md">
+        <p>Title Post</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded-md">
+        <h3 class="font-semibold mb-2">Title</h3>
+        <img src="https://placehold.co/150?text=Image" alt="Placeholder image" class="w-full h-32 object-cover mb-2 rounded-md">
+        <p>Title Post</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded-md">
+        <h3 class="font-semibold mb-2">Title</h3>
+        <img src="https://placehold.co/150?text=Image" alt="Placeholder image" class="w-full h-32 object-cover mb-2 rounded-md">
+        <p>Title Post</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded-md">
+        <h3 class="font-semibold mb-2">Title</h3>
+        <img src="https://placehold.co/150?text=Image" alt="Placeholder image" class="w-full h-32 object-cover mb-2 rounded-md">
+        <p>Title Post</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shipping & Payment Section -->
+  <div class="max-w-lg mx-auto bg-white p-6 mb-6 shadow-md rounded-md">
+    <h2 class="text-xl font-semibold mb-4">Forma de envío</h2>
+    <form>
+      <fieldset class="mb-4">
+        <legend class="font-medium mb-2">Método transportista</legend>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="transporte" name="transportista" class="h-4 w-4 text-indigo-600 border-gray-300">
+          <label for="transporte" class="ml-2 block text-sm text-gray-900">Transporte</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="aereo" name="transportista" class="h-4 w-4 text-indigo-600 border-gray-300">
+          <label for="aereo" class="ml-2 block text-sm text-gray-900">Aéreo</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="maritimo" name="transportista" class="h-4 w-4 text-indigo-600 border-gray-300">
+          <label for="maritimo" class="ml-2 block text-sm text-gray-900">Marítimo</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend class="font-medium mb-2">Forma de pago</legend>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="tarjeta" name="pago" class="h-4 w-4 text-indigo-600 border-gray-300">
+          <label for="tarjeta" class="ml-2 block text-sm text-gray-900">Tarjeta (Crédito/Débito)</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="transferencia" name="pago" class="h-4 w-4 text-indigo-600 border-gray-300">
+          <label for="transferencia" class="ml-2 block text-sm text-gray-900">Transferencia bancaria</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="metalico" name="pago" class="h-4 w-4 text-indigo-600 border-gray-300">
+          <label for="metalico" class="ml-2 block text-sm text-gray-900">Metálico</label>
+        </div>
+      </fieldset>
+
+      <div class="mb-4">
+        <label for="direccion" class="block text-sm font-medium text-gray-700">Dirección</label>
+        <input type="text" id="direccion" name="direccion" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+      </div>
+      <div class="mb-4">
+        <label for="pais" class="block text-sm font-medium text-gray-700">País</label>
+        <select id="pais" name="pais" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+          <option value="">Select a country</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md">Aceptar</button>
+    </form>
+  </div>
+
+</body>
+</html>

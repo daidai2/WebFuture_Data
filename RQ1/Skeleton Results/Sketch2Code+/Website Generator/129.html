@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .shipping-service {
+            margin-bottom: 20px;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .review-section {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .review-section input[type="radio"] {
+            margin-right: 5px;
+        }
+        .review-section textarea {
+            width: 100%;
+            height: 100px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .rating span {
+            font-size: 1.5rem;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .checkbox-group, .radio-group {
+            margin-top: 20px;
+        }
+        .checkbox-group input, .radio-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Checkout</h1>
+    
+    <h2>Shipping Address</h2>
+    <form>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name">
+
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company">
+        
+        <h2>Shipping Service</h2>
+        <div class="shipping-service">
+            <input type="radio" id="standard" name="shipping" value="standard">
+            <label for="standard">Standard 14 days - $6.59</label><br>
+            <input type="radio" id="expedited" name="shipping" value="expedited">
+            <label for="expedited">Expedited 7 days - $11.97</label><br>
+            <input type="radio" id="express" name="shipping" value="express">
+            <label for="express">Express 3 days - $19.99</label>
+        </div>
+        
+        <h2>Write Review</h2>
+        <div class="review-section">
+            <div>
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product-name">
+            </div>
+            <div>
+                <label for="product-price">Price</label>
+                <input type="text" id="product-price" name="product-price">
+            </div>
+            <div class="rating">
+                <span>Rate Product:</span>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★★★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★★★★</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★★★★★</label>
+            </div>
+            <div>
+                <label for="review">Review</label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+        
+        <div class="additional-section">
+            <label for="label1">Label 1</label>
+            <input type="text" id="label1" name="label1">
+            
+            <label for="label2">Label 2</label>
+            <input type="text" id="label2" name="label2">
+            
+            <button type="button">Button</button>
+            
+            <div class="radio-group">
+                <input type="radio" id="radio1" name="group1" value="radio1">
+                <label for="radio1">Radio 1</label><br>
+                <input type="radio" id="radio2" name="group1" value="radio2">
+                <label for="radio2">Radio 2</label><br>
+                <input type="radio" id="radio3" name="group1" value="radio3">
+                <label for="radio3">Radio 3</label><br>
+                <input type="radio" id="radio4" name="group1" value="radio4">
+                <label for="radio4">Radio 4</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="checkbox1" name="checkbox1">
+                <label for="checkbox1">Checkbox 1</label><br>
+                <input type="checkbox" id="checkbox2" name="checkbox2">
+                <label for="checkbox2">Checkbox 2</label><br>
+                <input type="checkbox" id="checkbox3" name="checkbox3">
+                <label for="checkbox3">Checkbox 3</label><br>
+                <input type="checkbox" id="checkbox4" name="checkbox4">
+                <label for="checkbox4">Checkbox 4</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

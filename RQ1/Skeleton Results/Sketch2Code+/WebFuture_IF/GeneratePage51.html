@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <!-- Header Section -->
+  <header class="flex justify-between items-center mb-6">
+    <span class="text-2xl font-semibold">Sign Up</span>
+    <a href="#" class="text-blue-500">Login</a>
+  </header>
+
+  <!-- Sign Up Form Section -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <label for="firstName" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="firstName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input type="text" id="lastName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+        <input type="text" id="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+        <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+        <input type="password" id="confirmPassword" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+    </div>
+    <div class="flex items-center mt-4">
+      <input type="checkbox" id="terms" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+      <label for="terms" class="ml-2 block text-sm text-gray-900">I agree to Terms and Conditions</label>
+    </div>
+    <button type="submit" class="w-full mt-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Sign Up</button>
+  </section>
+
+  <!-- Product Section -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6 text-center">
+    <img src="https://placehold.co/600x400" alt="Product Image" class="mx-auto mb-4">
+    <div class="text-lg font-semibold mb-2">$24.9</div>
+    <div class="text-xl mb-6">PRODUCT TITLE</div>
+
+    <!-- Check Items Section -->
+    <div class="mb-4 text-left">
+      <div class="mb-2 font-semibold">Check items:</div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" id="item1" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+        <label for="item1" class="ml-2 block text-sm text-gray-900">Check item 1</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" id="item2" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+        <label for="item2" class="ml-2 block text-sm text-gray-900">Check item 2</label>
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="item3" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+        <label for="item3" class="ml-2 block text-sm text-gray-900">Check item 3</label>
+      </div>
+      <button type="button" class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Shipping Information Section -->
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <div class="text-xl font-semibold mb-4">Shipping Info</div>
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <label for="shippingFirstName" class="block text-sm font-medium text-gray-700">First Name</label>
+        <input type="text" id="shippingFirstName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="shippingLastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input type="text" id="shippingLastName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="shippingPhone" class="block text-sm font-medium text-gray-700">Phone</label>
+        <input type="text" id="shippingPhone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="shippingEmail" class="block text-sm font-medium text-gray-700">E-mail</label>
+        <input type="email" id="shippingEmail" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+        <select id="country" class="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option>United States</option>
+        </select>
+      </div>
+      <div>
+        <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+        <select id="state" class="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option>California</option>
+        </select>
+      </div>
+      <div>
+        <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+        <input type="text" id="city" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="zipCode" class="block text-sm font-medium text-gray-700">Zip Code</label>
+        <input type="text" id="zipCode" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+    </div>
+    <div class="flex justify-between mt-6">
+      <button type="button" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400">Back</button>
+      <button type="button" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Next Step</button>
+    </div>
+  </section>
+
+</body>
+</html>

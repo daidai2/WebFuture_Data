@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, .form-section, .product-section, .checklist, .misc-section {
+            margin-bottom: 20px;
+        }
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .header li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .form-section input[type="text"], .form-section input[type="email"], .form-section input[type="password"] {
+            width: 45%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-section .checkbox, .form-section .submit {
+            margin: 10px 0;
+        }
+        .product-section img {
+            width: 100%;
+            height: auto;
+            background-color: #ccc;
+        }
+        .checklist ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .checklist li {
+            margin: 5px 0;
+        }
+        .misc-section .image-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .misc-section .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .radio-buttons {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li>Sign Up</li>
+                <li>Login</li>
+            </ul>
+        </div>
+
+        <div class="form-section">
+            <label for="first-name">Name</label>
+            <input type="text" id="first-name" name="first-name">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+            <div class="checkbox">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to Terms and Conditions</label>
+            </div>
+            <div class="submit">
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="product-section">
+            <div class="image-placeholder"></div>
+            <h2>$24.99</h2>
+            <h3>Product Title</h3>
+        </div>
+
+        <div class="checklist">
+            <h3>Check items:</h3>
+            <ul>
+                <li><input type="checkbox" id="item1" name="item1"><label for="item1">Check item 1</label></li>
+                <li><input type="checkbox" id="item2" name="item2"><label for="item2">Check item 2</label></li>
+                <li><input type="checkbox" id="item3" name="item3"><label for="item3">Check item 3</label></li>
+            </ul>
+            <button type="button">Buy Now</button>
+        </div>
+
+        <div class="misc-section">
+            <div class="image-placeholder"></div>
+            <p>Some text content here...</p>
+        </div>
+
+        <div class="misc-section">
+            <label for="label">Label</label>
+            <input type="text" id="label" name="label">
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox1" name="checkbox1"><label for="checkbox1">Checkbox</label>
+                <input type="checkbox" id="checkbox2" name="checkbox2"><label for="checkbox2">Checkbox</label>
+            </div>
+            <div class="radio-buttons">
+                <input type="radio" id="radio1" name="radio" value="radio1"><label for="radio1">Radio button</label>
+                <input type="radio" id="radio2" name="radio" value="radio2"><label for="radio2">Radio button</label>
+            </div>
+            <div class="image-placeholder"></div>
+            <a href="#" class="button">Button</a>
+        </div>
+    </div>
+</body>
+</html>

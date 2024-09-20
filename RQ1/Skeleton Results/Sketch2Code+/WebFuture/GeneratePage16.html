@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <section class="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6">
+
+    <!-- Header Section -->
+    <header class="mb-6">
+      <h1 class="text-2xl font-bold">Checkout</h1>
+    </header>
+
+    <!-- Shipping Address Section -->
+    <div class="shipping-address mb-6">
+      <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+      <div class="mb-4">
+        <label for="first-name" class="block font-medium">First Name</label>
+        <input type="text" id="first-name" name="firstName" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label for="last-name" class="block font-medium">Last Name</label>
+        <input type="text" id="last-name" name="lastName" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label for="company" class="block font-medium">Company</label>
+        <input type="text" id="company" name="company" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+    </div>
+
+    <!-- Shipping Service Section -->
+    <fieldset class="shipping-service mb-6">
+      <legend class="text-xl font-semibold mb-4">Shipping Service</legend>
+      <div class="mb-4">
+        <input type="radio" id="standard" name="shipping" value="standard" class="mr-2" checked>
+        <label for="standard" class="font-medium">Standard 14 days - $6.59</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" id="expedited" name="shipping" value="expedited" class="mr-2">
+        <label for="expedited" class="font-medium">Expedited 7 days - $11.97</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" id="express" name="shipping" value="express" class="mr-2">
+        <label for="express" class="font-medium">Express 3 days - $19.97</label>
+      </div>
+    </fieldset>
+
+    <!-- Programming Language Section -->
+    <div class="programming-language mb-6">
+      <div class="mb-4">
+        <label for="language-dropdown" class="block font-medium">Programming Language</label>
+        <select id="language-dropdown" name="language" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+          <option value="csharp">C#</option>
+          <option value="dropdown">Get Drop Down Here</option>
+        </select>
+      </div>
+      <div class="flex space-x-4">
+        <div>
+          <input type="checkbox" id="csharp" name="csharp" class="mr-2">
+          <label for="csharp" class="font-medium">C#</label>
+        </div>
+        <div>
+          <input type="checkbox" id="java" name="java" class="mr-2">
+          <label for="java" class="font-medium">Java</label>
+        </div>
+        <div>
+          <input type="checkbox" id="php" name="php" class="mr-2">
+          <label for="php" class="font-medium">PHP</label>
+        </div>
+        <div>
+          <input type="checkbox" id="visual-basic" name="visual-basic" class="mr-2">
+          <label for="visual-basic" class="font-medium">Visual Basic</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Miscellaneous Section -->
+    <div class="miscellaneous mb-6">
+      <div class="mb-4">
+        <label for="title" class="block font-medium">Title</label>
+        <input type="text" id="title" name="title" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block font-medium">Importance</label>
+        <div class="flex items-center">
+          <input type="radio" id="not-relevant" name="importance" value="not-relevant" class="mr-2">
+          <label for="not-relevant" class="mr-4">Not relevant</label>
+          <input type="radio" id="low" name="importance" value="low" class="mr-2">
+          <label for="low" class="mr-4">Low</label>
+          <input type="radio" id="medium" name="importance" value="medium" class="mr-2">
+          <label for="medium" class="mr-4">Medium</label>
+          <input type="radio" id="high" name="importance" value="high" class="mr-2">
+          <label for="high">High</label>
+        </div>
+      </div>
+      <div>
+        <label class="block font-medium">Check Boxes</label>
+        <div class="grid grid-cols-4 gap-4">
+          <div>
+            <input type="checkbox" id="choice1" name="choices[]" value="choice1" class="mr-2">
+            <label for="choice1">Choice 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice2" name="choices[]" value="choice2" class="mr-2" checked>
+            <label for="choice2">Choice 2</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice3" name="choices[]" value="choice3" class="mr-2">
+            <label for="choice3">Choice 3</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice4" name="choices[]" value="choice4" class="mr-2">
+            <label for="choice4">Choice 4</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice5" name="choices[]" value="choice5" class="mr-2" checked>
+            <label for="choice5">Choice 5</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice6" name="choices[]" value="choice6" class="mr-2">
+            <label for="choice6">Choice 6</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice7" name="choices[]" value="choice7" class="mr-2" checked>
+            <label for="choice7">Choice 7</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice8" name="choices[]" value="choice8" class="mr-2" checked>
+            <label for="choice8">Choice 8</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="flex justify-end space-x-4">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">OK</button>
+      <button type="reset" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cancel</button>
+    </footer>
+
+  </section>
+</body>
+</html>

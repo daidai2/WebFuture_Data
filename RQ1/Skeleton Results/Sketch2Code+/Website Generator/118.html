@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+        }
+        .checkbox-group,
+        .radio-group {
+            margin-top: 10px;
+        }
+        .checkbox-group label,
+        .radio-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <a href="#">Forgot Password</a>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+
+        <h2>Form Elements</h2>
+        <form>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="radio-group">
+                <label>Radio Buttons</label>
+                <label><input type="radio" name="relevance" value="not-relevant"> Not Relevant</label>
+                <label><input type="radio" name="relevance" value="low"> Low</label>
+                <label><input type="radio" name="relevance" value="medium"> Medium</label>
+                <label><input type="radio" name="relevance" value="high"> High</label>
+            </div>
+            <div class="checkbox-group">
+                <label>Check Boxes</label>
+                <label><input type="checkbox" name="choice1" value="1"> Choice 1</label>
+                <label><input type="checkbox" name="choice2" value="2" checked> Choice 2</label>
+                <label><input type="checkbox" name="choice3" value="3"> Choice 3</label>
+                <label><input type="checkbox" name="choice4" value="4"> Choice 4</label>
+                <label><input type="checkbox" name="choice5" value="5" checked> Choice 5</label>
+                <label><input type="checkbox" name="choice6" value="6"> Choice 6</label>
+                <label><input type="checkbox" name="choice7" value="7"> Choice 7</label>
+                <label><input type="checkbox" name="choice8" value="8" checked> Choice 8</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">OK</button>
+                <button type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

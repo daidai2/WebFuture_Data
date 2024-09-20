@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <!-- Payment Method Section -->
+  <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+    <h2 class="text-lg font-bold mb-4">Select your payment method</h2>
+    <form>
+      <div class="flex items-center mb-2">
+        <input id="credit-card" name="payment-method" type="radio" checked class="mr-2">
+        <label for="credit-card" class="text-sm">Credit Card</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input id="paypal" name="payment-method" type="radio" class="mr-2">
+        <label for="paypal" class="text-sm">Paypal</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input id="bank-transfer" name="payment-method" type="radio" class="mr-2">
+        <label for="bank-transfer" class="text-sm">Bank Transfer</label>
+      </div>
+
+      <div class="mt-4">
+        <label for="card-number" class="block text-sm font-medium text-gray-700">Card Number</label>
+        <input type="text" id="card-number" class="mt-1 p-2 border w-full rounded-md" placeholder="">
+      </div>
+
+      <div class="mt-4 flex space-x-4">
+        <div class="w-1/2">
+          <label for="expiration" class="block text-sm font-medium text-gray-700">Expiration Date</label>
+          <div class="flex space-x-2">
+            <input type="text" id="expiration-month" class="mt-1 p-2 border w-1/2 rounded-md" placeholder="MM">
+            <input type="text" id="expiration-year" class="mt-1 p-2 border w-1/2 rounded-md" placeholder="YY">
+          </div>
+        </div>
+        <div class="w-1/2">
+          <label for="ccv" class="block text-sm font-medium text-gray-700">CCV</label>
+          <input type="text" id="ccv" class="mt-1 p-2 border w-full rounded-md" placeholder="">
+        </div>
+      </div>
+
+      <button type="submit" class="mt-4 w-full bg-blue-500 text-white p-2 rounded-md">Complete</button>
+    </form>
+  </div>
+
+  <!-- Sign Up/Login Section -->
+  <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+    <div class="flex mb-4">
+      <button class="font-bold text-gray-700 w-1/2 border-b-2 border-blue-500">Sign Up</button>
+      <button class="font-bold text-gray-700 w-1/2 border-b-2 border-transparent">Login</button>
+    </div>
+
+    <form>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="first-name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="first-name" class="mt-1 p-2 border w-full rounded-md">
+        </div>
+        <div>
+          <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+          <input type="text" id="last-name" class="mt-1 p-2 border w-full rounded-md">
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+          <input type="text" id="phone" class="mt-1 p-2 border w-full rounded-md">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+          <input type="email" id="email" class="mt-1 p-2 border w-full rounded-md">
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" class="mt-1 p-2 border w-full rounded-md">
+        </div>
+        <div>
+          <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+          <input type="password" id="confirm-password" class="mt-1 p-2 border w-full rounded-md">
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center">
+        <input type="checkbox" id="terms" class="mr-2">
+        <label for="terms" class="text-sm">I agree to Terms and Conditions</label>
+      </div>
+
+      <button type="submit" class="mt-4 w-full bg-blue-500 text-white p-2 rounded-md">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- Product Catalog Section -->
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-bold">Product Catalog</h2>
+      <div class="flex">
+        <input type="text" class="p-2 border rounded-md" placeholder="Search">
+        <button class="ml-2 bg-blue-500 text-white p-2 rounded-md">Search</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Product 1 -->
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/200x200" alt="Product 1" class="mx-auto mb-4">
+        <h3 class="text-center font-bold mb-2">Product 1</h3>
+        <p class="text-center mb-2">$20.00</p>
+        <button class="w-full bg-green-500 text-white p-2 rounded-md">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/200x200" alt="Product 2" class="mx-auto mb-4">
+        <h3 class="text-center font-bold mb-2">Product 2</h3>
+        <p class="text-center mb-2">$10.00</p>
+        <button class="w-full bg-green-500 text-white p-2 rounded-md">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/200x200" alt="Product 3" class="mx-auto mb-4">
+        <h3 class="text-center font-bold mb-2">Product 3</h3>
+        <p class="text-center mb-2">$40.00</p>
+        <button class="w-full bg-green-500 text-white p-2 rounded-md">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

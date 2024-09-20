@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment and User Information Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <main class="max-w-4xl mx-auto bg-white shadow-md p-6 rounded-lg">
+    <!-- Payment Method Section -->
+    <section>
+      <div>
+        <fieldset class="mb-4">
+          <legend class="font-bold mb-2">Select your payment method</legend>
+          <div>
+            <label class="block mb-2">
+              <input type="radio" name="payment-method" value="credit-card" class="mr-2"> Credit Card
+            </label>
+            <label class="block mb-2">
+              <input type="radio" name="payment-method" value="paypal" class="mr-2"> PayPal
+            </label>
+            <label class="block mb-4">
+              <input type="radio" name="payment-method" value="bank-transfer" class="mr-2"> Bank Transfer
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <form>
+          <label for="card-number" class="block font-bold mb-2">Card Number</label>
+          <input type="text" id="card-number" name="card-number" class="w-full border-2 p-2 mb-4">
+
+          <div class="flex mb-4">
+            <div class="mr-4">
+              <label for="exp-month" class="block font-bold mb-2">Expiration date</label>
+              <select id="exp-month" name="exp-month" class="border-2 py-2 px-3 mr-2">
+                <option value="01">01</option>
+                <!-- Other months options -->
+              </select>
+              <select id="exp-year" name="exp-year" class="border-2 py-2 px-3">
+                <option value="2023">2023</option>
+                <!-- Other years options -->
+              </select>
+            </div>
+            <div>
+              <label for="ccv" class="block font-bold mb-2">CCV</label>
+              <input type="text" id="ccv" name="ccv" class="border-2 py-2 px-3">
+            </div>
+          </div>
+
+          <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Complete</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Authentication Section -->
+    <section class="mt-8">
+      <ul class="flex border-b mb-4">
+        <li class="-mb-px mr-1">
+          <a class="bg-white inline-block py-2 px-4 font-semibold" href="#">Sign Up</a>
+        </li>
+        <li class="mr-1">
+          <a class="bg-white inline-block py-2 px-4 text-gray-500 hover:text-gray-800" href="#">Login</a>
+        </li>
+      </ul>
+
+      <div>
+        <form>
+          <label for="name" class="block font-bold mb-2">Name</label>
+          <input type="text" id="name" name="name" class="w-full border-2 p-2 mb-4">
+          <label for="last-name" class="block font-bold mb-2">Last Name</label>
+          <input type="text" id="last-name" name="last-name" class="w-full border-2 p-2 mb-4">
+
+          <label for="phone" class="block font-bold mb-2">Phone</label>
+          <input type="text" id="phone" name="phone" class="w-full border-2 p-2 mb-4">
+          <label for="email" class="block font-bold mb-2">e-mail</label>
+          <input type="email" id="email" name="email" class="w-full border-2 p-2 mb-4">
+
+          <label for="password" class="block font-bold mb-2">Password</label>
+          <input type="password" id="password" name="password" class="w-full border-2 p-2 mb-4">
+          <label for="confirm-password" class="block font-bold mb-2">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" class="w-full border-2 p-2 mb-4">
+
+          <div class="flex items-center mb-4">
+            <input type="checkbox" id="terms" name="terms" class="mr-2">
+            <label for="terms" class="block">I agree to Terms and Conditions</label>
+          </div>
+
+          <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Shipping and Payment Method Section -->
+    <section class="mt-8">
+      <fieldset class="mb-4">
+        <legend class="font-bold mb-2">Forma de envío</legend>
+        <div>
+          <label class="block mb-2">
+            <input type="radio" name="shipping-method" value="terrestre" class="mr-2"> Terrestre
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="shipping-method" value="aereo" class="mr-2"> Aereo
+          </label>
+          <label class="block mb-4">
+            <input type="radio" name="shipping-method" value="maritimo" class="mr-2"> Maritimo
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend class="font-bold mb-2">Forma de pago</legend>
+        <div>
+          <label class="block mb-2">
+            <input type="radio" name="payment-method" value="tarjeta" class="mr-2"> Tarjeta (Credito/Debito)
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="payment-method" value="transferencia-bancaria" class="mr-2"> Transferencia bancaria
+          </label>
+          <label class="block mb-4">
+            <input type="radio" name="payment-method" value="metalico" class="mr-2"> Metálico
+          </label>
+        </div>
+      </fieldset>
+
+      <label for="direccion" class="block font-bold mb-2">Dirección</label>
+      <input type="text" id="direccion" name="direccion" class="w-full border-2 p-2 mb-4">
+
+      <label for="pais" class="block font-bold mb-2">País</label>
+      <select id="pais" name="pais" class="w-full border-2 p-2 mb-4">
+        <option value="mexico">Mexico</option>
+        <!-- Other countries options -->
+      </select>
+
+      <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Aceptar</button>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Product Catalog</h1>
+    <input type="text" placeholder="Search..." class="p-2 border rounded shadow-sm flex-1 mx-4" />
+    <button class="bg-blue-500 text-white p-2 rounded shadow-sm">Search</button>
+  </header>
+
+  <main class="p-4 space-y-8">
+
+    <!-- Payment Method Section -->
+    <section id="payment-method" class="bg-white p-6 rounded shadow-md">
+      <form id="payment-form">
+        <h3 class="text-xl font-semibold mb-4">Select your payment method</h3>
+        <div id="payment-options" class="mb-4">
+          <label class="block mb-2">
+            <input type="radio" name="payment-method" class="mr-2"> Credit Card
+          </label>
+          <label class="block mb-2">
+            <input type="radio" name="payment-method" class="mr-2"> Paypal
+          </label>
+          <label class="block mb-4">
+            <input type="radio" name="payment-method" class="mr-2"> Bank transfer
+          </label>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Enter your data</h3>
+        <div id="payment-details" class="space-y-4">
+          <div class="flex items-center space-x-4">
+            <label>Card Number</label>
+            <input type="text" class="flex-1 p-2 border rounded shadow-sm" placeholder="Card Number" />
+          </div>
+          <div class="flex items-center space-x-4">
+            <label>Expiration Date</label>
+            <input type="text" class="w-16 p-2 border rounded shadow-sm" placeholder="MM" />
+            <input type="text" class="w-16 p-2 border rounded shadow-sm" placeholder="YY" />
+            <label>CCV</label>
+            <input type="text" class="w-16 p-2 border rounded shadow-sm" placeholder="CCV" />
+          </div>
+          <button class="bg-green-500 p-2 text-white rounded shadow-sm">Complete</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Sign Up/Login Form Section -->
+    <section id="sign-up-login-form" class="bg-white p-6 rounded shadow-md">
+      <nav class="flex border-b mb-4">
+        <button class="p-2 hover:text-blue-500">Sign Up</button>
+        <button class="ml-4 p-2 hover:text-blue-500">Login</button>
+      </nav>
+      <form id="registration-form" class="space-y-4">
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label>Name</label>
+            <input type="text" class="w-full p-2 border rounded shadow-sm" placeholder="Name" />
+          </div>
+          <div class="flex-1">
+            <label>Last Name</label>
+            <input type="text" class="w-full p-2 border rounded shadow-sm" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label>Phone</label>
+            <input type="text" class="w-full p-2 border rounded shadow-sm" placeholder="Phone" />
+          </div>
+          <div class="flex-1">
+            <label>Email</label>
+            <input type="text" class="w-full p-2 border rounded shadow-sm" placeholder="Email" />
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label>Password</label>
+            <input type="password" class="w-full p-2 border rounded shadow-sm" placeholder="Password" />
+          </div>
+          <div class="flex-1">
+            <label>Confirm Password</label>
+            <input type="password" class="w-full p-2 border rounded shadow-sm" placeholder="Confirm Password" />
+          </div>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="terms-checkbox" class="mr-2" />
+          <label for="terms-checkbox">I agree to Terms and Conditions</label>
+        </div>
+        <button class="bg-blue-500 p-2 text-white rounded shadow-sm">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="product-catalog" class="bg-white p-6 rounded shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Product Catalog</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Product 1 -->
+        <div class="product-item bg-gray-100 p-4 rounded shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product 1" class="w-full h-40 object-cover mb-4">
+          <h3 class="text-lg font-semibold">Product 1</h3>
+          <p class="text-gray-600">$20.00</p>
+          <button class="bg-blue-500 text-white p-2 mt-4 rounded shadow-sm">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item bg-gray-100 p-4 rounded shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product 2" class="w-full h-40 object-cover mb-4">
+          <h3 class="text-lg font-semibold">Product 2</h3>
+          <p class="text-gray-600">$10.00</p>
+          <button class="bg-blue-500 text-white p-2 mt-4 rounded shadow-sm">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item bg-gray-100 p-4 rounded shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product 3" class="w-full h-40 object-cover mb-4">
+          <h3 class="text-lg font-semibold">Product 3</h3>
+          <p class="text-gray-600">$40.00</p>
+          <button class="bg-blue-500 text-white p-2 mt-4 rounded shadow-sm">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

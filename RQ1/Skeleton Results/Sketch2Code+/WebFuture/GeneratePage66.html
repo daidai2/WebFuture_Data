@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Review</title>
+  <!-- Import Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <section class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-8">
+    <!-- Header Section -->
+    <header class="text-center mb-6">
+      <h1 class="text-2xl font-bold">Write Review</h1>
+    </header>
+
+    <!-- Product Information Section -->
+    <div class="flex items-start mb-8">
+      <img src="https://placehold.co/150x150" alt="Product Image" class="w-32 h-32 object-cover mr-6">
+      <div>
+        <p class="text-lg font-semibold">Product Name</p>
+        <p class="text-gray-600 mb-2">$Price</p>
+        <span class="text-yellow-500">★★★★★</span>
+        <p class="text-gray-600">45 reviews</p>
+      </div>
+    </div>
+
+    <!-- Rating Section -->
+    <div class="mb-8">
+      <div class="flex items-center mb-2">
+        <label class="font-semibold mr-2">Rate Product:</label>
+        <div class="stars text-yellow-500">
+          ★★★★★
+        </div>
+        <p class="ml-4">Bad :(</p>
+      </div>
+    </div>
+
+    <!-- Form Section for Review -->
+    <form action="#" method="POST" class="mb-8">
+      <div class="mb-4">
+        <label for="headline" class="font-semibold">Headline</label>
+        <input type="text" name="headline" id="headline" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label for="review" class="font-semibold">Review</label>
+        <textarea name="review" id="review" class="w-full p-2 border border-gray-300 rounded mt-2 h-24"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+    </form>
+
+    <!-- Additional Content (Lower Section) -->
+    <div class="additional-content mb-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div>
+        <div class="bg-gray-200 w-full h-32 flex items-center justify-center">Image Placeholder #1</div>
+        <ul class="mt-4 space-y-2">
+          <li>Text Line #1</li>
+          <li>Text Line #2</li>
+          <li>Text Line #3</li>
+        </ul>
+      </div>
+      <div>
+        <div class="bg-gray-200 w-full h-32 flex items-center justify-center">Image Placeholder #2</div>
+        <div class="bg-gray-200 w-full h-32 flex items-center justify-center mt-4">Image Placeholder #3</div>
+        <ul class="mt-4 space-y-2">
+          <li>Additional Text Line</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Lower Section -->
+    <div class="mb-8">
+      <div class="flex items-center justify-between">
+        <label class="inline-flex items-center font-semibold">
+          <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+          Checkbox Placeholder
+        </label>
+        <button type="button" class="bg-gray-300 text-black px-4 py-2 rounded">Button Placeholder</button>
+      </div>
+      <ul class="mt-4 space-y-2">
+        <li>Detailed Description Placeholder Line 1</li>
+        <li>Detailed Description Placeholder Line 2</li>
+      </ul>
+    </div>
+
+    <!-- Form Section with Radio Buttons and Checkboxes -->
+    <form class="mb-8">
+      <div class="mb-4">
+        <label for="title" class="font-semibold">Title</label>
+        <input type="text" name="title" id="title" class="w-full p-2 border border-gray-300 rounded mt-2">
+      </div>
+      <div class="mb-4">
+        <label class="font-semibold block mb-2">Radio Buttons: Relevance</label>
+        <div class="flex items-center mb-2">
+          <input type="radio" name="relevance" id="not-relevant" class="form-radio text-blue-500 mr-2">
+          <label for="not-relevant">Not Relevant</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" name="relevance" id="low" class="form-radio text-blue-500 mr-2">
+          <label for="low">Low</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" name="relevance" id="medium" class="form-radio text-blue-500 mr-2">
+          <label for="medium">Medium</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" name="relevance" id="high" class="form-radio text-blue-500 mr-2">
+          <label for="high">High</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="font-semibold block mb-2">Checkboxes: Choices</label>
+        <div class="grid grid-cols-2 gap-2">
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 1
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 2
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 3
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 4
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 5
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 6
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 7
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 mr-2">
+            Choice 8
+          </label>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded">OK</button>
+        <button type="button" class="bg-gray-300 text-black px-4 py-2 rounded">Cancel</button>
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>

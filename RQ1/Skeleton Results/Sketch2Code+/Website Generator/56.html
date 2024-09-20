@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Prototype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .programming-languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .programming-languages div {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-container">
+        <div class="form-group">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-group">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="form-group">
+            <button type="submit">Login</button>
+        </div>
+    </div>
+
+    <!-- Programming Language Selection -->
+    <div class="form-container">
+        <h3>Select Your Programming Language</h3>
+        <div class="form-group programming-languages">
+            <div>
+                <input type="checkbox" id="csharp" name="language" value="csharp">
+                <label for="csharp">C#</label>
+            </div>
+            <div>
+                <input type="checkbox" id="java" name="language" value="java">
+                <label for="java">Java</label>
+            </div>
+            <div>
+                <input type="checkbox" id="php" name="language" value="php">
+                <label for="php">PHP</label>
+            </div>
+            <div>
+                <input type="checkbox" id="visual-basic" name="language" value="visual-basic">
+                <label for="visual-basic">Visual Basic</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="button">Get Drop Down Menu</button>
+        </div>
+    </div>
+
+    <!-- Shipping Information Form -->
+    <div class="form-container">
+        <h3>Shipping Information</h3>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="united-states">United States</option>
+                <!-- Add more country options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="state">State</label>
+            <select id="state" name="state">
+                <option value="choose">Choose</option>
+                <!-- Add more state options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+        </div>
+        <div class="form-group">
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" name="zip-code">
+        </div>
+        <div class="form-group">
+            <button type="button">Back</button>
+            <button type="submit">Next Step</button>
+        </div>
+    </div>
+
+</body>
+</html>

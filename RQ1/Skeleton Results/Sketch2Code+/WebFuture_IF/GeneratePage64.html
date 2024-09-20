@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- Top-Level Container -->
+  <div class="container mx-auto bg-white shadow-md rounded-md p-6">
+
+    <!-- Header -->
+    <header class="mb-6">
+      <div class="flex items-center mb-4">
+        <img src="https://placehold.co/100x100" alt="Profile Picture 1" class="w-20 h-20 rounded-full mr-4">
+        <div>
+          <span class="block text-lg font-semibold">Mate One</span>
+          <span class="block text-gray-500">Job Title</span>
+        </div>
+      </div>
+      <div class="flex items-center mb-4">
+        <div>
+          <span class="block text-lg font-semibold">Mate Two</span>
+          <span class="block text-gray-500">Job Title</span>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Profile Picture 2" class="w-20 h-20 rounded-full ml-4">
+      </div>
+      <div class="flex items-center">
+        <img src="https://placehold.co/100x100" alt="Profile Picture 3" class="w-20 h-20 rounded-full mr-4">
+        <div>
+          <span class="block text-lg font-semibold">Mate Three</span>
+          <span class="block text-gray-500">Job Title</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <section>
+      <!-- Shipping Address Sub-Section -->
+      <article class="mb-6">
+        <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+        <div class="mb-4">
+          <label for="first-name" class="block text-gray-700">First Name</label>
+          <input type="text" id="first-name" class="w-full border-gray-300 rounded-md p-2">
+        </div>
+        <div class="mb-4">
+          <label for="last-name" class="block text-gray-700">Last Name</label>
+          <input type="text" id="last-name" class="w-full border-gray-300 rounded-md p-2">
+        </div>
+        <div class="mb-4">
+          <label for="company" class="block text-gray-700">Company</label>
+          <input type="text" id="company" class="w-full border-gray-300 rounded-md p-2">
+        </div>
+      </article>
+
+      <!-- Shipping Service Sub-Section -->
+      <article class="mb-6">
+        <h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+        <div class="mb-2">
+          <input type="radio" id="standard" name="shipping" value="standard" class="mr-2">
+          <label for="standard" class="text-gray-700">Standard - 14 days - $6.59</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="expedited" name="shipping" value="expedited" class="mr-2">
+          <label for="expedited" class="text-gray-700">Expedited - 7 days - $1.99</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="express" name="shipping" value="express" class="mr-2">
+          <label for="express" class="text-gray-700">Express - 3 days - $19.99</label>
+        </div>
+      </article>
+
+      <!-- Additional Information Sub-Section -->
+      <article>
+        <div class="mb-4">
+          <label for="title" class="block text-gray-700">Title</label>
+          <input type="text" id="title" class="w-full border-gray-300 rounded-md p-2">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Radio Buttons</label>
+          <div class="flex items-center mb-2">
+            <input type="radio" id="not-relevant" name="relevancy" value="not-relevant" class="mr-2">
+            <label for="not-relevant" class="mr-4">Not relevant</label>
+            <input type="radio" id="low" name="relevancy" value="low" class="mr-2">
+            <label for="low" class="mr-4">Low</label>
+            <input type="radio" id="medium" name="relevancy" value="medium" class="mr-2">
+            <label for="medium" class="mr-4">Medium</label>
+            <input type="radio" id="high" name="relevancy" value="high" class="mr-2">
+            <label for="high">High</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Check Boxes</label>
+          <div class="grid grid-cols-2 gap-2 mb-2">
+            <div>
+              <input type="checkbox" id="choice1" name="choices" value="choice1" class="mr-2">
+              <label for="choice1">Choice 1</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice2" name="choices" value="choice2" class="mr-2">
+              <label for="choice2">Choice 2</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice3" name="choices" value="choice3" class="mr-2">
+              <label for="choice3">Choice 3</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice4" name="choices" value="choice4" class="mr-2">
+              <label for="choice4">Choice 4</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice5" name="choices" value="choice5" class="mr-2">
+              <label for="choice5">Choice 5</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice6" name="choices" value="choice6" class="mr-2">
+              <label for="choice6">Choice 6</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice7" name="choices" value="choice7" class="mr-2">
+              <label for="choice7">Choice 7</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice8" name="choices" value="choice8" class="mr-2">
+              <label for="choice8">Choice 8</label>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex justify-end mt-6">
+      <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-4">OK</button>
+      <button type="button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cancel</button>
+    </footer>
+
+  </div>
+
+</body>
+</html>

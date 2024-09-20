@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        header, footer {
+            background: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .post img {
+            width: 100px;
+            height: 100px;
+        }
+        .post-content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .post-content h2 {
+            margin: 0 0 10px;
+        }
+        .post-content p {
+            margin: 0;
+        }
+        .video {
+            width: 100%;
+            height: 300px;
+            background: #ddd;
+            text-align: center;
+            line-height: 300px;
+            font-size: 24px;
+            color: #333;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .form-group label {
+            display: block;
+            margin: 5px 0;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"], .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .buttons {
+            text-align: center;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Title</h1>
+        <h2>Title Page</h2>
+        <p>Subtitle or description goes here.</p>
+    </header>
+    
+    <div class="container">
+        <section class="posts">
+            <div class="post">
+                <img src="image1.jpg" alt="Post image">
+                <div class="post-content">
+                    <h2>Title Post</h2>
+                    <p>Post description or excerpt goes here.</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="image2.jpg" alt="Post image">
+                <div class="post-content">
+                    <h2>Title Post</h2>
+                    <p>Post description or excerpt goes here.</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="image3.jpg" alt="Post image">
+                <div class="post-content">
+                    <h2>Title Post</h2>
+                    <p>Post description or excerpt goes here.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="video">
+            <p>Video Section</p>
+        </section>
+        
+        <section class="form">
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="form-group">
+                    <label>Radio Buttons</label>
+                    <input type="radio" name="radio" value="not_relevant"> Not relevant
+                    <input type="radio" name="radio" value="low"> Low
+                    <input type="radio" name="radio" value="medium"> Medium
+                    <input type="radio" name="radio" value="high"> High
+                </div>
+                <div class="form-group">
+                    <label>Check Boxes</label>
+                    <input type="checkbox" name="choice1"> Choice 1
+                    <input type="checkbox" name="choice2"> Choice 2
+                    <input type="checkbox" name="choice3"> Choice 3
+                    <input type="checkbox" name="choice4"> Choice 4
+                    <input type="checkbox" name="choice5"> Choice 5
+                    <input type="checkbox" name="choice6"> Choice 6
+                    <input type="checkbox" name="choice7"> Choice 7
+                    <input type="checkbox" name="choice8"> Choice 8
+                </div>
+                <div class="buttons">
+                    <button type="submit">OK</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

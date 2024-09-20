@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="min-h-screen flex flex-col space-y-8">
+
+    <!-- Login/Signup Section -->
+    <header class="flex justify-between px-4 py-2 bg-gray-100">
+      <a href="#" class="text-blue-500">Login</a>
+      <a href="#" class="text-blue-500">Sign Up</a>
+    </header>
+
+    <section class="px-4 py-8 flex flex-col items-center">
+      <h2 class="text-2xl">Login</h2>
+      <form class="w-full max-w-sm">
+        <div class="mb-4">
+          <label for="username" class="block text-gray-700">Login</label>
+          <input type="text" id="username" class="w-full border px-3 py-2 rounded">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input type="password" id="password" class="w-full border px-3 py-2 rounded">
+        </div>
+        <div class="mb-4 flex items-center">
+          <input type="checkbox" id="remember" class="mr-2">
+          <label for="remember" class="text-gray-700">Remember me</label>
+          <a href="#" class="ml-auto text-blue-500">Forgot Password</a>
+        </div>
+        <div>
+          <button type="submit" class="w-full bg-blue-500 text-white px-3 py-2 rounded">LOGIN</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Title & Media Section -->
+    <section class="px-4 py-8 space-y-8">
+      <div class="text-center">
+        <h1 class="text-3xl">Title</h1>
+        <p class="text-xl text-gray-700">Title Page</p>
+        <p class="text-gray-600">Additional descriptive text goes here.</p>
+      </div>
+      <div class="flex justify-between">
+        <iframe class="w-1/2 h-64 bg-gray-200" src="#" frameborder="0"></iframe>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- Repeated Content Cards -->
+        <article class="border p-4">
+          <h2 class="text-xl">Title</h2>
+          <img src="https://placehold.co/300x150" alt="placeholder" class="w-full h-32 object-cover">
+          <p class="text-gray-600">Placeholder text</p>
+        </article>
+        <article class="border p-4">
+          <h2 class="text-xl">Title</h2>
+          <img src="https://placehold.co/300x150" alt="placeholder" class="w-full h-32 object-cover">
+          <p class="text-gray-600">Placeholder text</p>
+        </article>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <article class="border p-4">
+          <h2 class="text-xl">Title</h2>
+          <img src="https://placehold.co/300x150" alt="placeholder" class="w-full h-32 object-cover">
+          <p class="text-gray-600">Placeholder text</p>
+        </article>
+        <article class="border p-4">
+          <h2 class="text-xl">Title</h2>
+          <img src="https://placehold.co/300x150" alt="placeholder" class="w-full h-32 object-cover">
+          <p class="text-gray-600">Placeholder text</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Large Banner Section -->
+    <section class="px-4 py-8">
+      <img src="https://placehold.co/1200x300" alt="large placeholder" class="w-full">
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="px-4 py-8 bg-gray-100">
+      <div class="grid grid-cols-2 gap-4">
+        <ul class="space-y-2 text-gray-600">
+          <li>Footer link or text 1</li>
+          <li>Footer link or text 2</li>
+          <li>Footer link or text 3</li>
+          <li>Footer link or text 4</li>
+          <li>Footer link or text 5</li>
+        </ul>
+        <ul class="space-y-2 text-gray-600">
+          <li>Footer link or text 6</li>
+          <li>Footer link or text 7</li>
+          <li>Footer link or text 8</li>
+          <li>Footer link or text 9</li>
+          <li>Footer link or text 10</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Form & Options Section -->
+    <section class="px-4 py-8 space-y-8">
+      <form class="space-y-4">
+        <div class="flex items-center">
+          <label for="text1" class="w-20">Label</label>
+          <input type="text" id="text1" class="flex-1 border px-3 py-2 rounded">
+          <div class="ml-4 flex items-center">
+            <input type="checkbox" id="checkbox1" class="mr-2">
+            <label for="checkbox1">Checkbox 1</label>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <label for="text2" class="w-20">Label</label>
+          <input type="text" id="text2" class="flex-1 border px-3 py-2 rounded">
+          <div class="ml-4 flex items-center">
+            <input type="checkbox" id="checkbox2" class="mr-2">
+            <label for="checkbox2">Checkbox 2</label>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-500 text-white px-3 py-2 rounded">Button</button>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex flex-col space-y-2">
+            <label class="flex items-center">
+              <input type="radio" name="radio" class="mr-2">
+              Radio 1
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="radio" class="mr-2">
+              Radio 2
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="radio" class="mr-2">
+              Radio 3
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="radio" class="mr-2">
+              Radio 4
+            </label>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <label class="flex items-center">
+              <input type="checkbox" id="checkbox3" class="mr-2">
+              Checkbox 3
+            </label>
+            <label class="flex items-center">
+              <input type="checkbox" id="checkbox4" class="mr-2">
+              Checkbox 4
+            </label>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <img src="https://placehold.co/300x150" alt="placeholder" class="mx-auto">
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non risus lacus. In eu commodo nulla. Integer urna dui.</p>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product-info, .rating, .headline, .review-text, .buttons, .options {
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .rating span {
+            font-size: 1.5em;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 2em;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .rating input:checked ~ label, .rating label:hover, .rating label:hover ~ label {
+            color: gold;
+        }
+        .rating .rating-text {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 1em;
+        }
+        .review-text textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .options label {
+            margin-right: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="review-container">
+    <div class="product-info">
+        <img src="product-image.png" alt="Product Image">
+        <div>
+            <h2>Product Name</h2>
+            <p>$Price</p>
+            <p>45 reviews</p>
+        </div>
+    </div>
+
+    <div class="rating">
+        <span>Rate Product:</span>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <span class="rating-text">Bad :(</span>
+    </div>
+
+    <div class="headline">
+        <label for="headline">Headline</label>
+        <input type="text" id="headline" name="headline" style="width: 100%; padding: 10px;">
+    </div>
+
+    <div class="review-text">
+        <label for="review">Review</label>
+        <textarea id="review" name="review"></textarea>
+    </div>
+
+    <div class="options">
+        <label>Radio Buttons</label><br>
+        <label><input type="radio" name="relevance" value="0"> Not relevant</label>
+        <label><input type="radio" name="relevance" value="1"> Low</label>
+        <label><input type="radio" name="relevance" value="2"> Medium</label>
+        <label><input type="radio" name="relevance" value="3"> High</label>
+    </div>
+
+    <div class="options">
+        <label>Check Boxes</label><br>
+        <label><input type="checkbox" name="choice1" value="1"> Choice 1</label>
+        <label><input type="checkbox" name="choice2" value="2"> Choice 2</label>
+        <label><input type="checkbox" name="choice3" value="3"> Choice 3</label>
+        <label><input type="checkbox" name="choice4" value="4"> Choice 4</label>
+        <label><input type="checkbox" name="choice5" value="5"> Choice 5</label>
+        <label><input type="checkbox" name="choice6" value="6"> Choice 6</label>
+        <label><input type="checkbox" name="choice7" value="7"> Choice 7</label>
+        <label><input type="checkbox" name="choice8" value="8"> Choice 8</label>
+    </div>
+
+    <div class="buttons">
+        <button type="submit">OK</button>
+        <button type="button">Cancel</button>
+    </div>
+</div>
+
+</body>
+</html>

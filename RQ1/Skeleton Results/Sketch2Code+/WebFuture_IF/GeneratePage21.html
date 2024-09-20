@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <a href="#" class="text-blue-500">Login</a>
+    <a href="#" class="text-blue-500">Sign Up</a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto p-4">
+
+    <!-- Login Form Section -->
+    <section class="bg-white shadow rounded p-4 mb-8">
+      <h2 class="text-2xl mb-4">Login</h2>
+      <form>
+        <div class="mb-4">
+          <label for="username" class="block text-sm font-medium mb-2">Login</label>
+          <input type="text" id="username" class="w-full p-2 border border-gray-300 rounded" />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-sm font-medium mb-2">Password</label>
+          <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded" />
+        </div>
+        <div class="mb-4 flex items-center">
+          <input type="checkbox" id="remember-me" class="mr-2" />
+          <label for="remember-me" class="text-sm">Remember me</label>
+        </div>
+        <div class="mb-4">
+          <a href="#" class="text-blue-500 text-sm">Forgot Password</a>
+        </div>
+        <div>
+          <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">LOGIN</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Title Page Section -->
+    <section class="bg-white shadow rounded p-4 mb-8 flex">
+      <div class="flex-1">
+        <h1 class="text-3xl mb-2">Title</h1>
+        <h2 class="text-xl mb-4">Title Page</h2>
+        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula urna at risus pulvinar, nec tincidunt dolor suscipit.</p>
+      </div>
+      <div class="flex-1">
+        <iframe class="w-full h-64" src="https://placehold.co/400x300" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Content Grid Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <article class="bg-white shadow rounded p-4">
+        <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full mb-4">
+        <h3 class="text-lg mb-2">Title</h3>
+        <h4 class="text-md mb-2">Title Post</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="bg-white shadow rounded p-4">
+        <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full mb-4">
+        <h3 class="text-lg mb-2">Title</h3>
+        <h4 class="text-md mb-2">Title Post</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="bg-white shadow rounded p-4">
+        <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full mb-4">
+        <h3 class="text-lg mb-2">Title</h3>
+        <h4 class="text-md mb-2">Title Post</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="bg-white shadow rounded p-4">
+        <img src="https://placehold.co/100x100" alt="Thumbnail" class="w-full mb-4">
+        <h3 class="text-lg mb-2">Title</h3>
+        <h4 class="text-md mb-2">Title Post</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+    </section>
+
+    <!-- Bottom Form Section -->
+    <section class="bg-white shadow rounded p-4 mb-8">
+      <form>
+        <div class="mb-4">
+          <label for="form-title" class="block text-sm font-medium mb-2">Title</label>
+          <input type="text" id="form-title" class="w-full p-2 border border-gray-300 rounded" />
+        </div>
+
+        <fieldset class="mb-4">
+          <legend class="text-sm font-medium mb-2">Radio Buttons</legend>
+          <label class="inline-flex items-center mr-4">
+            <input type="radio" name="relevance" value="not-relevant" class="mr-2"> Not relevant
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="radio" name="relevance" value="low" class="mr-2"> Low
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="radio" name="relevance" value="medium" class="mr-2"> Medium
+          </label>
+          <label class="inline-flex items-center">
+            <input type="radio" name="relevance" value="high" class="mr-2"> High
+          </label>
+        </fieldset>
+
+        <fieldset class="mb-4">
+          <legend class="text-sm font-medium mb-2">Check Boxes</legend>
+          <label class="inline-flex items-center mr-4">
+            <input type="checkbox" name="choice1" class="mr-2"> choice1
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="checkbox" name="choice2" class="mr-2"> choice2
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="checkbox" name="choice3" class="mr-2"> choice3
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="checkbox" name="choice4" class="mr-2"> choice4
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="checkbox" name="choice5" class="mr-2"> choice5
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="checkbox" name="choice6" class="mr-2"> choice6
+          </label>
+          <label class="inline-flex items-center mr-4">
+            <input type="checkbox" name="choice7" class="mr-2"> choice7
+          </label>
+          <label class="inline-flex items-center">
+            <input type="checkbox" name="choice8" class="mr-2"> choice8
+          </label>
+        </fieldset>
+
+        <div class="flex justify-between">
+          <button type="submit" class="bg-blue-500 text-white p-2 rounded">OK</button>
+          <button type="reset" class="bg-red-500 text-white p-2 rounded">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

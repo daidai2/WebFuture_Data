@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+
+  <!-- Top section -->
+  <div class="mb-8">
+    <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-1/2 mx-auto">
+    <p class="mt-4 mb-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button class="block mx-auto px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded">Back</button>
+    <div class="mt-4 flex justify-center items-center">
+      <input type="checkbox" id="check" name="check" class="mr-2">
+      <label for="check">Checkbox</label>
+    </div>
+  </div>
+
+  <!-- Product Page -->
+  <h2 class="text-center text-xl font-bold mb-8">Product Page</h2>
+  <div class="flex justify-around">
+    <div>
+      <img src="https://placehold.co/150x150" alt="Product Image" class="mb-4">
+      <div class="flex space-x-2">
+        <img src="https://placehold.co/50x50" alt="Thumbnail 1">
+        <img src="https://placehold.co/50x50" alt="Thumbnail 2">
+        <img src="https://placehold.co/50x50" alt="Thumbnail 3">
+        <img src="https://placehold.co/50x50" alt="Thumbnail 4">
+      </div>
+    </div>
+    <div>
+      <h3 class="mb-4 font-bold">Product Name</h3>
+      <p class="mb-2">Manufacturer</p>
+      <div class="mb-4">
+        <p class="mb-2">Color</p>
+        <input type="radio" id="red" name="color" value="Red" class="mr-1">
+        <label for="red" class="mr-4">Red</label>
+        <input type="radio" id="blue" name="color" value="Blue" class="mr-1">
+        <label for="blue" class="mr-4">Blue</label>
+        <input type="radio" id="white" name="color" value="White" class="mr-1">
+        <label for="white" class="mr-4">White</label>
+      </div>
+      <div>
+        <p class="inline-block mr-4">Price: $100</p>
+        <p class="inline-block">Old Price: $200</p>
+      </div>
+      <button class="block mt-4 px-4 py-2 bg-blue-500 text-white rounded">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Additional Section -->
+  <div class="mt-12">
+    <label for="title" class="block mb-2">Title</label>
+    <input type="text" id="title" name="title" class="w-full mb-4 p-2 border">
+
+    <div class="mb-4">
+      <span>Radio Buttons</span>
+      <div class="flex mt-2">
+        <input type="radio" id="notRelevant" name="rating" value="Not Relevant" class="mr-2">
+        <label for="notRelevant">Not Relevant</label>
+        <input type="radio" id="low" name="rating" value="Low" class="ml-4 mr-2">
+        <label for="low">Low</label>
+        <input type="radio" id="medium" name="rating" value="Medium" class="ml-4 mr-2">
+        <label for="medium">Medium</label>
+        <input type="radio" id="high" name="rating" value="High" class="ml-4 mr-2">
+        <label for="high">High</label>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <span>Checkboxes</span>
+      <div class="flex mt-2">
+        <input type="checkbox" id="choice1" name="choice1" class="mr-2">
+        <label for="choice1">Choice 1</label>
+        <input type="checkbox" id="choice2" name="choice2" class="ml-4 mr-2" checked>
+        <label for="choice2">Choice 2</label>
+        <input type="checkbox" id="choice3" name="choice3" class="ml-4 mr-2">
+        <label for="choice3">Choice 3</label>
+        <input type="checkbox" id="choice4" name="choice4" class="ml-4 mr-2">
+        <label for="choice4">Choice 4</label>
+      </div>
+      <div class="flex mt-2">
+        <input type="checkbox" id="choice5" name="choice5" class="mr-2" checked>
+        <label for="choice5">Choice 5</label>
+        <input type="checkbox" id="choice6" name="choice6" class="ml-4 mr-2">
+        <label for="choice6">Choice 6</label>
+        <input type="checkbox" id="choice7" name="choice7" class="ml-4 mr-2">
+        <label for="choice7">Choice 7</label>
+        <input type="checkbox" id="choice8" name="choice8" class="ml-4 mr-2">
+        <label for="choice8">Choice 8</label>
+      </div>
+    </div>
+
+    <div class="flex justify-center space-x-4">
+      <button class="px-4 py-2 bg-green-500 text-white rounded">OK</button>
+      <button class="px-4 py-2 bg-red-500 text-white rounded">Cancel</button>
+    </div>
+  </div>
+
+</body>
+</html>

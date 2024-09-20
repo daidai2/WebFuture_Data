@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <div id="main-container" class="max-w-4xl mx-auto bg-white p-4 shadow-md">
+    <!-- Login Section -->
+    <section id="login-section" class="border-b pb-4 mb-4">
+      <nav class="flex justify-between mb-4">
+        <a href="#" class="text-blue-500">Login</a>
+        <a href="#" class="text-blue-500">Sign Up</a>
+      </nav>
+      <form id="login-form" class="space-y-4">
+        <div>
+          <label for="username" class="block text-sm font-medium">Login</label>
+          <input type="text" name="username" id="username" placeholder="Login" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium">Password</label>
+          <input type="password" name="password" id="password" placeholder="Password" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+        </div>
+        <div id="login-options" class="flex items-center justify-between">
+          <div>
+            <input type="checkbox" name="remember-me" id="remember-me" class="mr-1" />
+            <label for="remember-me" class="text-sm">Remember me</label>
+          </div>
+          <a href="#" id="forgot-password" class="text-sm text-blue-500">Forgot Password</a>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white rounded-md p-2">LOG IN</button>
+      </form>
+    </section>
+
+    <!-- Selection Section -->
+    <section id="selection-section" class="border-b pb-4 mb-4">
+      <div id="current-selection" class="flex items-center mb-4">
+        <input type="checkbox" name="csharp" id="csharp" class="mr-1" />
+        <label for="csharp" class="text-sm">C Sharp</label>
+      </div>
+      <div id="dropdown-section">
+        <select name="dropdown-menu" class="border border-gray-300 rounded-md p-2 w-full mb-4">
+          <option value="dropdown">Get Drop Down Here</option>
+        </select>
+      </div>
+      <div class="flex space-x-4">
+        <input type="checkbox" name="csharp" id="checkbox-csharp" />
+        <label for="checkbox-csharp" class="text-sm">C#</label>
+        <input type="checkbox" name="java" id="checkbox-java" />
+        <label for="checkbox-java" class="text-sm">Java</label>
+        <input type="checkbox" name="php" id="checkbox-php" />
+        <label for="checkbox-php" class="text-sm">PHP</label>
+        <input type="checkbox" name="visualbasic" id="checkbox-visualbasic" />
+        <label for="checkbox-visualbasic" class="text-sm">Visual Basic</label>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-section">
+      <form id="shipping-info-form">
+        <h2 class="text-lg font-medium mb-4">Shipping Info</h2>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <input type="text" name="first-name" placeholder="First Name" class="border border-gray-300 rounded-md p-2" />
+          <input type="text" name="last-name" placeholder="Last Name" class="border border-gray-300 rounded-md p-2" />
+          <input type="tel" name="phone" placeholder="Phone" class="border border-gray-300 rounded-md p-2" />
+          <input type="email" name="email" placeholder="E-mail" class="border border-gray-300 rounded-md p-2" />
+          <select name="country" class="border border-gray-300 rounded-md p-2">
+            <option value="us">United States</option>
+          </select>
+          <select name="state" class="border border-gray-300 rounded-md p-2">
+            <option value="choose">Choose</option>
+          </select>
+          <select name="city" class="border border-gray-300 rounded-md p-2">
+            <option value="palo-alto">Palo Alto</option>
+          </select>
+          <input type="text" name="zip" placeholder="Zip Code" class="border border-gray-300 rounded-md p-2" />
+        </div>
+        <div class="flex justify-between">
+          <button type="button" id="back-button" class="bg-gray-500 text-white rounded-md p-2">Back</button>
+          <button type="submit" id="next-step-button" class="bg-blue-500 text-white rounded-md p-2">Next Step</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>

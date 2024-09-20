@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            margin-bottom: 15px;
+        }
+        .radio-group label {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Checkout</h2>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Shipping Service</h2>
+        <div class="radio-group">
+            <input type="radio" id="standard" name="shipping-service" value="standard">
+            <label for="standard">Standard (14 days - $6.59)</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="expedited" name="shipping-service" value="expedited">
+            <label for="expedited">Expedited (7 days - $1.97)</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="express" name="shipping-service" value="express">
+            <label for="express">Express (3 days - $19.99)</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Write Review</h2>
+        <div class="form-group">
+            <label for="product-name">Product Name</label>
+            <input type="text" id="product-name" name="product-name">
+        </div>
+        <div class="form-group">
+            <label for="headline">Headline</label>
+            <input type="text" id="headline" name="headline">
+        </div>
+        <div class="form-group">
+            <label for="review">Review</label>
+            <input type="text" id="review" name="review">
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+    </div>
+
+    <div class="section">
+        <h2>Forma de envío</h2>
+        <div class="radio-group">
+            <input type="radio" id="terrestre" name="medio-transporte" value="terrestre">
+            <label for="terrestre">Terrestre</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="aereo" name="medio-transporte" value="aereo">
+            <label for="aereo">Aéreo</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="maritimo" name="medio-transporte" value="maritimo">
+            <label for="maritimo">Marítimo</label>
+        </div>
+        <h2>Forma de pago</h2>
+        <div class="radio-group">
+            <input type="radio" id="tarjeta" name="forma-pago" value="tarjeta">
+            <label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="transferencia" name="forma-pago" value="transferencia">
+            <label for="transferencia">Transferencia bancaria</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="metalico" name="forma-pago" value="metalico">
+            <label for="metalico">Metálico</label>
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+        </div>
+        <div class="form-group">
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option value="MX">México</option>
+                <option value="US">Estados Unidos</option>
+                <option value="CA">Canadá</option>
+            </select>
+        </div>
+        <button class="submit-btn" type="submit">Aceptar</button>
+    </div>
+</body>
+</html>

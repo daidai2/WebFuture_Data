@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .product-image {
+            width: 45%;
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-details {
+            width: 45%;
+        }
+        .thumbnail-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .thumbnail-container img {
+            width: 22%;
+            height: auto;
+        }
+        .product-options {
+            margin-top: 20px;
+        }
+        .team-members {
+            width: 100%;
+            margin-top: 40px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .form-elements {
+            width: 100%;
+            margin-top: 40px;
+        }
+        .form-elements label {
+            display: block;
+            margin-top: 10px;
+        }
+        .form-elements input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .form-elements .checkbox-container,
+        .form-elements .radio-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .form-elements .checkbox-container input,
+        .form-elements .radio-container input {
+            margin-right: 10px;
+        }
+        .form-elements button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Product Section -->
+        <div class="product-image">
+            <img src="main-product-image.jpg" alt="Product Image">
+            <div class="thumbnail-container">
+                <img src="thumbnail1.jpg" alt="Thumbnail 1">
+                <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                <img src="thumbnail4.jpg" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p>Manufacturer</p>
+            <div class="product-options">
+                <p>Color:</p>
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+            </div>
+            <div class="product-pricing">
+                <p>Price: $100 <span style="text-decoration: line-through;">$200</span></p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Team Members Section -->
+        <div class="team-members">
+            <div class="team-member">
+                <img src="mate1.jpg" alt="Mate One">
+                <div>
+                    <h3>Mate One</h3>
+                    <p>Job Title</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="mate2.jpg" alt="Mate Two">
+                <div>
+                    <h3>Mate Two</h3>
+                    <p>Job Title</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="mate3.jpg" alt="Mate Three">
+                <div>
+                    <h3>Mate Three</h3>
+                    <p>Job Title</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Elements Section -->
+        <div class="form-elements">
+            <label for="label1">Label</label>
+            <input type="text" id="label1">
+            <label for="label2">Label</label>
+            <input type="text" id="label2">
+            
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="checkbox1"> Checkbox 1</label>
+                <label><input type="checkbox" name="checkbox2"> Checkbox 2</label>
+                <label><input type="checkbox" name="checkbox3"> Checkbox 3</label>
+                <label><input type="checkbox" name="checkbox4"> Checkbox 4</label>
+            </div>
+            
+            <button>Button</button>
+            
+            <div class="radio-container">
+                <label><input type="radio" name="radio" value="1"> Radio 1</label>
+                <label><input type="radio" name="radio" value="2"> Radio 2</label>
+                <label><input type="radio" name="radio" value="3"> Radio 3</label>
+                <label><input type="radio" name="radio" value="4"> Radio 4</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

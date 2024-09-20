@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-6">
+  <header class="mb-6">
+    <!-- Header (not explicitly shown in wireframe) -->
+  </header>
+
+  <nav class="mb-6">
+    <!-- Navigation (to be added) -->
+  </nav>
+
+  <section>
+    <div name="ContactsSection" class="mb-6">
+      <div class="flex items-start mb-4">
+        <img src="https://placehold.co/100x100" class="rounded-full mr-4" alt="Profile Picture 1">
+        <div>
+          <p class="font-bold">Name One</p>
+          <p>Job Title</p>
+        </div>
+      </div>
+      <div class="flex items-start mb-4 justify-end">
+        <div class="text-right">
+          <p class="font-bold">Name Two</p>
+          <p>Job Title</p>
+        </div>
+        <img src="https://placehold.co/100x100" class="rounded-full ml-4" alt="Profile Picture 2">
+      </div>
+      <div class="flex items-start">
+        <img src="https://placehold.co/100x100" class="rounded-full mr-4" alt="Profile Picture 3">
+        <div>
+          <p class="font-bold">Name Three</p>
+          <p>Job Title</p>
+        </div>
+      </div>
+    </div>
+
+    <section name="CheckoutSection" class="mb-6 border-t pt-4">
+      <h2 class="text-2xl font-bold mb-4">Checkout</h2>
+      <div name="ShippingAddress" class="mb-6">
+        <p class="font-semibold">Shipping Address</p>
+        <form class="space-y-4">
+          <div class="flex items-center">
+            <label class="w-32">First Name</label>
+            <input type="text" class="form-input flex-1" placeholder="First Name">
+          </div>
+          <div class="flex items-center">
+            <label class="w-32">Last Name</label>
+            <input type="text" class="form-input flex-1" placeholder="Last Name">
+          </div>
+          <div class="flex items-center">
+            <label class="w-32">Company</label>
+            <input type="text" class="form-input flex-1" placeholder="Company">
+          </div>
+        </form>
+      </div>
+
+      <div name="ShippingService" class="mb-6">
+        <p class="font-semibold">Shipping Service</p>
+        <div class="space-y-2">
+          <div>
+            <input type="radio" name="shipping" id="standard">
+            <label for="standard">Standard 14 days - $6.59</label>
+          </div>
+          <div>
+            <input type="radio" name="shipping" id="expedited">
+            <label for="expedited">Expedited 7 days - $11.77</label>
+          </div>
+          <div>
+            <input type="radio" name="shipping" id="express">
+            <label for="express">Express 3 days - $19.97</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section name="MainAdvertisement" class="mb-6">
+      <img src="https://placehold.co/600x200" alt="Main Advertisement" class="w-full">
+    </section>
+
+    <section name="AdditionalInfo" class="mb-6">
+      <div class="flex justify-between">
+        <div class="w-1/3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="w-1/3 mx-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="w-1/3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section name="AdditionalForm" class="mb-6">
+      <form>
+        <div class="flex mb-4">
+          <label class="w-32">Label 1</label>
+          <input type="text" class="form-input flex-1" placeholder="Input 1">
+        </div>
+        <div class="flex mb-4">
+          <label class="w-32">Label 2</label>
+          <input type="text" class="form-input flex-1" placeholder="Input 2">
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+      </form>
+
+      <aside class="mt-6">
+        <div>
+          <input type="checkbox" id="checklist1">
+          <label for="checklist1">Checklist 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checklist2">
+          <label for="checklist2">Checklist 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checklist3">
+          <label for="checklist3">Checklist 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checklist4">
+          <label for="checklist4">Checklist 4</label>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="mt-6">
+      <!-- Footer (not explicitly shown in wireframe) -->
+    </footer>
+  </section>
+</body>
+</html>

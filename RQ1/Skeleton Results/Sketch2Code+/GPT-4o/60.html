@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .back-button {
+            margin: 20px 0;
+        }
+        .checkbox {
+            margin: 10px 0;
+        }
+        .product-page {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-images {
+            width: 40%;
+        }
+        .product-images img {
+            width: 100%;
+        }
+        .thumbnails img {
+            width: 24%;
+            margin: 1%;
+        }
+        .product-details {
+            width: 50%;
+        }
+        .product-details h1 {
+            font-size: 24px;
+        }
+        .product-details .price {
+            color: red;
+            font-size: 20px;
+        }
+        .product-details .old-price {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .shipping-form {
+            margin-top: 40px;
+        }
+        .shipping-form input, .shipping-form select {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+        }
+        .shipping-form button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button Section -->
+        <button class="back-button">BACK</button>
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            <label for="checkbox1">Checkbox</label>
+        </div>
+
+        <!-- Product Page Section -->
+        <div class="product-page">
+            <div class="product-images">
+                <img src="product-main.jpg" alt="Product Image">
+                <div class="thumbnails">
+                    <img src="thumb1.jpg" alt="Thumbnail 1">
+                    <img src="thumb2.jpg" alt="Thumbnail 2">
+                    <img src="thumb3.jpg" alt="Thumbnail 3">
+                    <img src="thumb4.jpg" alt="Thumbnail 4">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Product Name</h1>
+                <p>Manufacturer</p>
+                <p>Color:</p>
+                <input type="radio" id="red" name="color" value="red" checked>
+                <label for="red">Red</label><br>
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue">Blue</label><br>
+                <input type="radio" id="white" name="color" value="white">
+                <label for="white">White</label><br>
+                <p class="price">$100</p>
+                <p class="old-price">$200</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Shipping Form Section -->
+        <div class="shipping-form">
+            <h2>Forma de envío</h2>
+            <label for="transport">Medio de transporte:</label><br>
+            <input type="radio" id="terrestre" name="transport" value="terrestre">
+            <label for="terrestre">Terrestre</label><br>
+            <input type="radio" id="aereo" name="transport" value="aereo">
+            <label for="aereo">Aereo</label><br>
+            <input type="radio" id="maritimo" name="transport" value="maritimo">
+            <label for="maritimo">Marítimo</label><br>
+
+            <label for="payment">Forma de pago:</label><br>
+            <input type="radio" id="tarjeta" name="payment" value="tarjeta">
+            <label for="tarjeta">Tarjeta (Crédito/débito)</label><br>
+            <input type="radio" id="transferencia" name="payment" value="transferencia">
+            <label for="transferencia">Transferencia bancaria</label><br>
+            <input type="radio" id="metalico" name="payment" value="metalico">
+            <label for="metalico">Metálico</label><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais"><br>
+
+            <button>Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>

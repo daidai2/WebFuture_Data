@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Checkout</h1>
+
+    <!-- Shipping Address -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Shipping Address</h2>
+      <div class="mb-4">
+        <label class="block mb-1">First Name</label>
+        <input type="text" class="w-full px-4 py-2 border rounded-md" />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-1">Last Name</label>
+        <input type="text" class="w-full px-4 py-2 border rounded-md" />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-1">Company</label>
+        <input type="text" class="w-full px-4 py-2 border rounded-md" />
+      </div>
+    </div>
+
+    <!-- Shipping Service -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Shipping Service</h2>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="radio" name="shipping" class="form-radio" checked />
+          <span class="ml-2">Standard - 14 days - $6.59</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="radio" name="shipping" class="form-radio" />
+          <span class="ml-2">Expedited - 7 days - $12.97</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="radio" name="shipping" class="form-radio" />
+          <span class="ml-2">Express - 3 days - $19.97</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Dropdown and Button -->
+    <div class="mb-6">
+      <div class="flex items-center mb-4">
+        <div class="mr-4">
+          <select class="px-4 py-2 border rounded-md">
+            <option>C Sharp</option>
+          </select>
+        </div>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-md">Get Drop Down Here</button>
+      </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="mb-6">
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox" />
+          <span class="ml-2">C#</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox" />
+          <span class="ml-2">Java</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox" />
+          <span class="ml-2">PHP</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox" />
+          <span class="ml-2">Visual Basic</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Image Placeholder -->
+    <div class="mb-6">
+      <img src="https://placehold.co/300x300" alt="Image placeholder" class="w-full h-64 bg-gray-200 rounded-md" />
+    </div>
+
+    <!-- Text Placeholder -->
+    <div class="mb-6">
+      <div class="h-4 bg-gray-200 rounded mb-2"></div>
+      <div class="h-4 bg-gray-200 rounded mb-2"></div>
+      <div class="h-4 bg-gray-200 rounded"></div>
+    </div>
+
+    <!-- Radio Buttons & Checkboxes -->
+    <div class="mb-6">
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox" checked />
+          <span class="ml-2">Option 1</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox" />
+          <span class="ml-2">Option 2</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="radio" class="form-radio" />
+          <span class="ml-2">Option A</span>
+        </label>
+      </div>
+      <div class="mb-2">
+        <label class="inline-flex items-center">
+          <input type="radio" class="form-radio" />
+          <span class="ml-2">Option B</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Back and Submit Buttons -->
+    <div class="flex justify-between">
+      <button class="px-4 py-2 bg-gray-500 text-white rounded-md">Back</button>
+      <button class="px-4 py-2 bg-blue-500 text-white rounded-md">Submit</button>
+    </div>
+  </div>
+</body>
+</html>

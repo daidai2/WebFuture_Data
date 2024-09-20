@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header Section -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <div class="w-1/4">
+      <img src="https://placehold.co/150x50" alt="Logo">
+    </div>
+    <nav class="w-1/2 flex justify-end space-x-4">
+      <img src="https://placehold.co/50x50" alt="Nav 1">
+      <img src="https://placehold.co/50x50" alt="Nav 2">
+    </nav>
+  </header>
+
+  <!-- Main Banner -->
+  <section class="bg-gray-200 p-8 flex justify-center">
+    <img src="https://placehold.co/600x300" alt="Banner Image">
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Article 1 -->
+    <article class="bg-white p-4 shadow">
+      <img src="https://placehold.co/250x200" alt="Article Image 1" class="w-full h-56 object-cover mb-4">
+      <h2 class="text-xl font-bold mb-2">Article Title 1</h2>
+      <p class="mb-4">This is a brief description of the article content.</p>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Action 1</button>
+    </article>
+    <!-- Article 2 -->
+    <article class="bg-white p-4 shadow">
+      <img src="https://placehold.co/250x200" alt="Article Image 2" class="w-full h-56 object-cover mb-4">
+      <h2 class="text-xl font-bold mb-2">Article Title 2</h2>
+      <p class="mb-4">This is a brief description of the article content.</p>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Action 2</button>
+    </article>
+
+    <!-- Feature Section -->
+    <aside class="bg-white p-4 shadow col-span-1 md:col-span-2 flex justify-between items-center mt-8">
+      <img src="https://placehold.co/150x150" alt="Feature Image 1" class="w-1/2 h-auto object-cover mr-4">
+      <img src="https://placehold.co/150x150" alt="Feature Image 2" class="w-1/2 h-auto object-cover">
+    </aside>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="flex justify-center p-8">
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-8 rounded">Call to Action</button>
+  </section>
+
+  <!-- Product Section -->
+  <section class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="flex flex-col items-center">
+      <img src="https://placehold.co/250x200" alt="Product Image" class="w-full h-56 object-cover mb-4">
+      <div class="flex space-x-4">
+        <img src="https://placehold.co/100x100" alt="Product Thumb 1">
+        <img src="https://placehold.co/100x100" alt="Product Thumb 2">
+        <img src="https://placehold.co/100x100" alt="Product Thumb 3">
+        <img src="https://placehold.co/100x100" alt="Product Thumb 4">
+      </div>
+    </div>
+    <div>
+      <h3 class="text-xl font-bold mb-2">Product Name</h3>
+      <p class="mb-2">Manufacturer</p>
+      <div class="mb-4">
+        <p class="mb-2">Color:</p>
+        <label class="block">
+          <input type="radio" name="color" value="red" class="mr-2"> Red
+        </label>
+        <label class="block">
+          <input type="radio" name="color" value="blue" class="mr-2"> Blue
+        </label>
+        <label class="block">
+          <input type="radio" name="color" value="white" class="mr-2"> White
+        </label>
+      </div>
+      <div class="mb-4">
+        <p>
+          <span class="font-bold">$100</span>
+          <span class="line-through">$200</span>
+        </p>
+      </div>
+      <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="p-8 bg-white shadow">
+    <label class="block mb-2">Title: <input type="text" class="border p-2 w-full"></label>
+    <div class="mb-4">
+      <p class="mb-2">Radio Buttons:</p>
+      <label class="inline-block mr-4"><input type="radio" name="rating" value="not_relevant" class="mr-2"> Not Relevant</label>
+      <label class="inline-block mr-4"><input type="radio" name="rating" value="low" class="mr-2"> Low</label>
+      <label class="inline-block mr-4"><input type="radio" name="rating" value="medium" class="mr-2"> Medium</label>
+      <label class="inline-block mr-4"><input type="radio" name="rating" value="high" class="mr-2"> High</label>
+    </div>
+    <div class="mb-4">
+      <p class="mb-2">Checkboxes:</p>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 1</label>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 2</label>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 3</label>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 4</label>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 5</label>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 6</label>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 7</label>
+      <label class="inline-block mr-4"><input type="checkbox" class="mr-2"> Choice 8</label>
+    </div>
+    <div class="flex justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">OK</button>
+      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cancel</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white p-4 text-center">
+    © 2023 Your Company. All rights reserved.
+  </footer>
+</body>
+</html>

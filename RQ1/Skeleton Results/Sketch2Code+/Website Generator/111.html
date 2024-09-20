@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"],
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .form-group img {
+            max-width: 100%;
+            height: auto;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-group label, .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="remember-me" name="remember-me"> Remember me</label>
+        </div>
+        <div class="form-group">
+            <a href="#">Forgot Password</a>
+        </div>
+        <div class="form-group">
+            <button type="button">Login</button>
+        </div>
+
+        <h2>Simple Form</h2>
+        <div class="form-group">
+            <img src="placeholder.jpg" alt="Image placeholder">
+        </div>
+        <div class="form-group">
+            <button type="button">Back</button>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" name="checkbox"> Checkbox</label>
+        </div>
+
+        <h2>Shipping and Payment</h2>
+        <div class="form-group">
+            <label>Medio Transporte</label>
+            <div class="radio-group">
+                <label><input type="radio" name="transporte" value="terrestre"> Terrestre</label>
+                <label><input type="radio" name="transporte" value="aereo"> Aereo</label>
+                <label><input type="radio" name="transporte" value="maritimo"> Marítimo</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Forma de Pago</label>
+            <div class="radio-group">
+                <label><input type="radio" name="pago" value="tarjeta"> Tarjeta (Crédito/Débito)</label>
+                <label><input type="radio" name="pago" value="transferencia"> Transferencia bancaria</label>
+                <label><input type="radio" name="pago" value="metalico"> Metálico</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+        </div>
+        <div class="form-group">
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais">
+        </div>
+        <div class="form-group">
+            <button type="button">Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>

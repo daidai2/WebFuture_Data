@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-3xl mx-auto bg-white p-6 shadow-md rounded-md">
+    <h1 class="text-2xl font-bold text-center mb-6">Write Review</h1>
+
+    <!-- Product Info -->
+    <div class="flex items-center mb-6">
+      <img src="https://placehold.co/100x100" alt="Product image" class="w-24 h-24 object-cover">
+      <div class="ml-4">
+        <h2 class="text-xl font-semibold">Product Name</h2>
+        <p class="text-gray-600">$Price</p>
+        <div class="flex items-center">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="ml-2 text-gray-600">45 reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Rating -->
+    <div class="mb-6">
+      <h3 class="font-semibold">Rate Product</h3>
+      <div class="">
+        <div class="flex items-center mb-2">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="ml-2">Bad :(</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Form -->
+    <div class="mb-6">
+      <h3 class="font-semibold">Headline</h3>
+      <input type="text" placeholder="Headline" class="w-full p-2 border border-gray-300 rounded mb-4">
+      <h3 class="font-semibold">Review</h3>
+      <textarea placeholder="Write your review" class="w-full p-2 border border-gray-300 rounded mb-4"></textarea>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+    </div>
+
+    <!-- Product Image -->
+    <div class="mb-6">
+      <img class="w-full h-64 object-cover" src="https://placehold.co/600x400" alt="Product image">
+    </div>
+
+    <!-- Product Price and Title -->
+    <div class="text-center mb-6">
+      <p class="text-2xl font-semibold">$24.99</p>
+      <h2 class="text-xl font-bold">Product Title</h2>
+    </div>
+
+    <hr class="mb-6">
+
+    <!-- Check Items -->
+    <div>
+      <h3 class="font-semibold mb-4">Check items:</h3>
+      <div>
+        <label class="block mb-2">
+          <input type="checkbox" class="mr-2"> Check item 1
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" class="mr-2"> Check item 2
+        </label>
+        <label class="block mb-6">
+          <input type="checkbox" class="mr-2"> Check item 3
+        </label>
+      </div>
+      <button class="w-full bg-green-500 text-white px-4 py-2 rounded">Buy Now</button>
+    </div>
+
+    <!-- Additional Image -->
+    <div class="mt-12 mb-6">
+      <img class="w-full h-64 object-cover" src="https://placehold.co/600x400" alt="Additional image">
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="grid grid-cols-4 gap-4 mb-6">
+      <div class="text-center">Other</div>
+      <div class="text-center">Other</div>
+      <div class="text-center">Other</div>
+      <div class="text-center">Other</div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <div>
+        <label class="block mb-2">Label</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div>
+        <label class="block mb-2">Label</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+
+    <!-- Radio Buttons -->
+    <div class="mt-6">
+      <h3 class="font-semibold mb-4">Options</h3>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="options" class="mr-2"> Radio 1
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="options" class="mr-2"> Radio 2
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="options" class="mr-2"> Radio 3
+      </div>
+      <div class="flex items-center mb-6">
+        <input type="radio" name="options" class="mr-2"> Radio 4
+      </div>
+    </div>
+
+    <!-- Text and Checkbox -->
+    <div class="border p-4 rounded mb-6">
+      <img class="w-full h-32 object-cover mb-4" src="https://placehold.co/300x200" alt="Description image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum.</p>
+      <div class="flex items-center mt-4">
+        <input type="checkbox" class="mr-2"> Option 1
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" class="mr-2"> Option 2
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" class="mr-2"> Option 3
+      </div>
+      <div class="flex items-center mt-2">
+        <input type="checkbox" class="mr-2"> Option 4
+      </div>
+    </div>
+  </div>
+</body>
+</html>

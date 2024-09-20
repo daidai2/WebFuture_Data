@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-screen-lg mx-auto bg-white p-8 shadow rounded">
+    <div class="flex space-x-4 mb-4">
+      <select class="border rounded p-2">
+        <option>C Sharp</option>
+      </select>
+      <button class="border rounded p-2 bg-gray-200">Get Drop Down Here</button>
+    </div>
+
+    <div class="flex space-x-4 mb-4">
+      <div class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        <label>C#</label>
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        <label>Java</label>
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        <label>PHP</label>
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        <label>Visual Basic</label>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <img src="https://placehold.co/600x400" alt="Placeholder" class="w-full h-auto" />
+    </div>
+
+    <div class="space-y-2 mb-4">
+      <div class="h-4 bg-gray-300 rounded"></div>
+      <div class="h-4 bg-gray-300 rounded"></div>
+      <div class="h-4 bg-gray-300 rounded"></div>
+      <div class="h-4 bg-gray-300 rounded"></div>
+    </div>
+
+    <div class="space-y-4 mb-8">
+      <input type="text" class="border rounded w-full p-2" />
+      <input type="text" class="border rounded w-full p-2" />
+      <button class="border rounded p-2 bg-gray-200">Something</button>
+    </div>
+
+    <div class="space-y-4">
+      <div class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        <label>Option 1</label>
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        <label>Option 2</label>
+      </div>
+      <div class="flex items-center">
+        <input type="radio" name="options" class="mr-2" />
+        <label>Option A</label>
+      </div>
+      <div class="flex items-center">
+        <input type="radio" name="options" class="mr-2" />
+        <label>Option B</label>
+      </div>
+    </div>
+
+    <form class="mt-8">
+      <fieldset class="mb-4">
+        <legend class="text-lg font-semibold mb-2">Forma de envío</legend>
+        <div class="mb-2">
+          <label class="block mb-1">Medio transporte</label>
+          <div class="flex space-x-4">
+            <div class="flex items-center">
+              <input type="radio" name="transporte" class="mr-2" />
+              <label>Terrestre</label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" name="transporte" class="mr-2" />
+              <label>Aereo</label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" name="transporte" class="mr-2" />
+              <label>Maritimo</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend class="text-lg font-semibold mb-2">Forma de pago</legend>
+        <div class="mb-2">
+          <div>
+            <input type="radio" name="pago" class="mr-2" />
+            <label>Tarjeta (Crédito/Débito)</label>
+          </div>
+          <div>
+            <input type="radio" name="pago" class="mr-2" />
+            <label>Transferencia bancaria</label>
+          </div>
+          <div>
+            <input type="radio" name="pago" class="mr-2" />
+            <label>Metálico</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="mb-4">
+        <label class="block mb-1">Dirección</label>
+        <input type="text" class="border rounded w-full p-2" />
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1">País</label>
+        <select class="border rounded w-full p-2">
+          <option>País</option>
+        </select>
+      </div>
+
+      <button class="border rounded p-2 bg-gray-200">Aceptar</button>
+    </form>
+  </div>
+</body>
+</html>

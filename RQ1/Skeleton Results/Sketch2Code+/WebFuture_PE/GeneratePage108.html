@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded">
+    <h1 class="text-2xl font-bold mb-4">Checkout</h1>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Shipping Address</h2>
+      <div class="space-y-4 mb-6">
+        <input class="w-full p-2 border border-gray-300 rounded" type="text" placeholder="First Name">
+        <input class="w-full p-2 border border-gray-300 rounded" type="text" placeholder="Last Name">
+        <input class="w-full p-2 border border-gray-300 rounded" type="text" placeholder="Company">
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Shipping Service</h2>
+      <div class="space-y-2 mb-6">
+        <label class="flex items-center">
+          <input type="radio" name="shipping" class="mr-2" checked>
+          <span>Standard 14 days - $6.99</span>
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="shipping" class="mr-2">
+          <span>Expedited 7 days - $12.99</span>
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="shipping" class="mr-2">
+          <span>Express 3 days - $19.99</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-300 pt-6">
+      <h2 class="text-xl font-semibold mb-2">Write Review</h2>
+      <div class="mb-4 flex items-center">
+        <img src="https://placehold.co/50x50" alt="Product" class="w-12 h-12 object-cover mr-4">
+        <div>
+          <p class="font-semibold">Product Name</p>
+          <p>$Price</p>
+          <p>⭐⭐⭐⭐⭐ - 45 reviews</p>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1">Rate Product</label>
+        <div class="flex items-center">
+          <span class="text-xl mr-1">⭐</span>
+          <span class="text-xl mr-1">⭐</span>
+          <span class="text-xl mr-1">⭐</span>
+          <span class="text-xl mr-1">⭐</span>
+          <span class="text-xl mr-1">⭐</span>
+          <span class="text-lg text-red-500 ml-2">(Bad)</span>
+        </div>
+      </div>
+
+      <input class="w-full p-2 border border-gray-300 rounded mb-4" type="text" placeholder="Headline">
+      <textarea class="w-full p-2 border border-gray-300 rounded mb-4" placeholder="Review"></textarea>
+      <button class="w-full p-2 bg-blue-500 text-white rounded">Submit</button>
+    </div>
+  </div>
+</body>
+</html>

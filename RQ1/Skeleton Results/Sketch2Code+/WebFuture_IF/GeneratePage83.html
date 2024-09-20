@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <div class="text-xl font-bold">Title</div>
+      <div class="text-sm text-gray-600">Subtitle</div>
+    </div>
+    <button class="bg-blue-500 text-white p-3 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-6.587-3.451a1 1 0 00-1.415.917v6.733a1 1 0 001.415.917l6.587-3.451a1 1 0 000-1.834z" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Main content -->
+  <main class="container mx-auto p-4">
+
+    <!-- Top grid section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="text-lg font-semibold mb-2">Title Here</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder" class="mb-2">
+        <p class="text-gray-600">Description here</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="text-lg font-semibold mb-2">Title Here</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder" class="mb-2">
+        <p class="text-gray-600">Description here</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="text-lg font-semibold mb-2">Title Here</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder" class="mb-2">
+        <p class="text-gray-600">Description here</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="text-lg font-semibold mb-2">Title Here</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder" class="mb-2">
+        <p class="text-gray-600">Description here</p>
+      </div>
+    </section>
+
+    <!-- Large image section -->
+    <section class="mb-8">
+      <img src="https://placehold.co/1366x400" alt="Large Placeholder Image" class="w-full mb-4">
+    </section>
+
+    <!-- Text section -->
+    <section class="mb-8">
+      <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p class="mb-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="mb-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    </section>
+
+    <!-- Buttons section -->
+    <section class="flex flex-col items-center mb-8 space-y-4">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Button 1</button>
+      <button class="bg-green-500 text-white py-2 px-4 rounded">Button 2</button>
+      <button class="bg-red-500 text-white py-2 px-4 rounded">Button 3</button>
+    </section>
+
+    <!-- Form section -->
+    <section class="mb-8">
+      <div class="mb-4">
+        <label for="input1" class="block text-gray-700">Text Input 1</label>
+        <input type="text" id="input1" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4">
+        <label for="input2" class="block text-gray-700">Text Input 2</label>
+        <input type="text" id="input2" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4">
+        <label for="checkbox1" class="block text-gray-700">Checkboxes</label>
+        <div class="space-y-2">
+          <div>
+            <input type="checkbox" id="checkbox1" class="mr-2">
+            <label for="checkbox1">Checkbox 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox2" class="mr-2">
+            <label for="checkbox2">Checkbox 2</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox3" class="mr-2">
+            <label for="checkbox3">Checkbox 3</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox4" class="mr-2">
+            <label for="checkbox4">Checkbox 4</label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-8">
+        <label for="radio1" class="block text-gray-700">Radio Buttons</label>
+        <div class="space-y-2">
+          <div>
+            <input type="radio" name="radio" id="radio1" class="mr-2">
+            <label for="radio1">Radio 1</label>
+          </div>
+          <div>
+            <input type="radio" name="radio" id="radio2" class="mr-2">
+            <label for="radio2">Radio 2</label>
+          </div>
+          <div>
+            <input type="radio" name="radio" id="radio3" class="mr-2">
+            <label for="radio3">Radio 3</label>
+          </div>
+          <div>
+            <input type="radio" name="radio" id="radio4" class="mr-2">
+            <label for="radio4">Radio 4</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Another large media element -->
+    <section class="mb-8">
+      <img src="https://placehold.co/1366x400" alt="Another Large Placeholder Image" class="w-full">
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto mb-8">
+      <img src="https://placehold.co/300x100" alt="Footer Image" class="w-full mb-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <p>Column 1 content here</p>
+        <p>Column 2 content here</p>
+        <p>Column 3 content here</p>
+        <p>Column 4 content here</p>
+      </div>
+    </div>
+    <div class="container mx-auto mb-8">
+      <label for="footerInput1" class="block text-gray-400">Label 1</label>
+      <input type="text" id="footerInput1" class="w-full p-2 mb-4 text-gray-800 rounded">
+      <label for="footerInput2" class="block text-gray-400">Label 2</label>
+      <input type="text" id="footerInput2" class="w-full p-2 mb-4 text-gray-800 rounded">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded w-full">Button</button>
+    </div>
+    <div class="container mx-auto">
+      <div class="space-y-2 mb-4 text-gray-500">
+        <div>
+          <input type="checkbox" id="footerCheckbox1" class="mr-2">
+          <label for="footerCheckbox1">Checkbox 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerCheckbox2" class="mr-2">
+          <label for="footerCheckbox2">Checkbox 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerCheckbox3" class="mr-2">
+          <label for="footerCheckbox3">Checkbox 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="footerCheckbox4" class="mr-2">
+          <label for="footerCheckbox4">Checkbox 4</label>
+        </div>
+      </div>
+      <div class="space-y-2 mb-8 text-gray-500">
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio1" class="mr-2">
+          <label for="footerRadio1">Radio 1</label>
+        </div>
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio2" class="mr-2">
+          <label for="footerRadio2">Radio 2</label>
+        </div>
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio3" class="mr-2">
+          <label for="footerRadio3">Radio 3</label>
+        </div>
+        <div>
+          <input type="radio" name="footerRadio" id="footerRadio4" class="mr-2">
+          <label for="footerRadio4">Radio 4</label>
+        </div>
+      </div>
+      <img src="https://placehold.co/300x100" alt="Placeholder Footer Image" class="w-full mb-4">
+      <p class="text-gray-500">Some text content below the footer image.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

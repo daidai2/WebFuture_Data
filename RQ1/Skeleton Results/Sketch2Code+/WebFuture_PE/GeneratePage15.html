@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+  <!-- Sign Up / Login Navigation -->
+  <div class="flex justify-between border-b pb-2 mb-4">
+    <a href="#" class="text-lg font-semibold">Sign Up</a>
+    <a href="#" class="text-lg font-semibold">Login</a>
+  </div>
+
+  <!-- Sign Up Form -->
+  <div class="bg-white p-5 rounded shadow-md max-w-lg mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <label for="first_name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="first_name" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+      <div>
+        <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input type="text" id="last_name" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+        <input type="text" id="phone" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+        <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+      <div>
+        <label for="confirm_password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+        <input type="password" id="confirm_password" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+    </div>
+    <div class="mt-4">
+      <label>
+        <input type="checkbox" id="terms" class="mr-2" />
+        I agree to Terms and Conditions
+      </label>
+    </div>
+    <div class="mt-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Content Area -->
+  <div class="bg-white p-5 rounded shadow-md max-w-lg mx-auto mt-6">
+    <div class="flex justify-center items-center border border-gray-300 rounded h-32 w-32 mx-auto my-4">
+      <img src="https://placehold.co/128x128" alt="Placeholder Image" />
+    </div>
+    <div class="bg-gray-100 h-20 rounded mb-4"></div>
+    <div class="flex justify-between">
+      <button class="bg-gray-300 text-black px-4 py-2 rounded-md">Back</button>
+    </div>
+    <div class="mt-4">
+      <label>
+        <input type="checkbox" class="mr-2" checked />
+        Checkbox
+      </label>
+    </div>
+  </div>
+
+  <!-- Additional Section -->
+  <div class="bg-white p-5 rounded shadow-md max-w-lg mx-auto mt-6">
+    <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+    <input type="text" id="title" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+
+    <div class="mt-4">
+      <p class="font-medium">Radio Buttons</p>
+      <label class="mr-4">
+        <input type="radio" name="relevance" value="not_relevant" class="mr-2" />
+        Not relevant
+      </label>
+      <label class="mr-4">
+        <input type="radio" name="relevance" value="low" class="mr-2" />
+        Low
+      </label>
+      <label class="mr-4">
+        <input type="radio" name="relevance" value="medium" class="mr-2" />
+        Medium
+      </label>
+      <label class="mr-4">
+        <input type="radio" name="relevance" value="high" class="mr-2" />
+        High
+      </label>
+    </div>
+
+    <div class="mt-4">
+      <p class="font-medium">CheckBoxes</p>
+      <div class="flex flex-wrap gap-4">
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" />
+          <span>choice 1</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" checked />
+          <span>choice 2</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" />
+          <span>choice 3</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" />
+          <span>choice 4</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" checked />
+          <span>choice 5</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" />
+          <span>choice 6</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" />
+          <span>choice 7</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" checked />
+          <span>choice 8</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="mt-4 flex justify-between">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">OK</button>
+      <button class="bg-gray-300 text-black px-4 py-2 rounded-md">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>

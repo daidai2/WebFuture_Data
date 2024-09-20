@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Title Section -->
+  <div class="container mx-auto p-4">
+    <h1 class="text-4xl font-bold">Title Page</h1>
+    <div class="flex justify-between my-4">
+      <div>
+        <h2 class="text-xl font-semibold">Title</h2>
+        <p class="text-md">Description</p>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x100" alt="Video" class="rounded">
+      </div>
+    </div>
+
+    <!-- Four Blocks Section -->
+    <div class="grid grid-cols-2 gap-4">
+      <div class="bg-white p-4 shadow-md rounded">
+        <h3 class="text-lg font-bold">Title</h3>
+        <img src="https://placehold.co/100x100" alt="Image" class="my-2 rounded">
+        <p>Description</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded">
+        <h3 class="text-lg font-bold">Title</h3>
+        <img src="https://placehold.co/100x100" alt="Image" class="my-2 rounded">
+        <p>Description</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded">
+        <h3 class="text-lg font-bold">Title</h3>
+        <img src="https://placehold.co/100x100" alt="Image" class="my-2 rounded">
+        <p>Description</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded">
+        <h3 class="text-lg font-bold">Title</h3>
+        <img src="https://placehold.co/100x100" alt="Image" class="my-2 rounded">
+        <p>Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image and Form Section -->
+  <div class="container mx-auto p-4 mt-8">
+    <img src="https://placehold.co/1356x624" alt="Large Image" class="w-full h-auto rounded mb-4">
+    <form class="bg-white p-6 shadow-md rounded">
+      <!-- Input Fields -->
+      <div class="mb-4">
+        <input type="text" placeholder="Field 1" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      </div>
+      <div class="mb-4">
+        <input type="text" placeholder="Field 2" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      </div>
+      <!-- Button -->
+      <div class="mb-4">
+        <button class="w-full p-2 bg-indigo-500 text-white rounded">Submit</button>
+      </div>
+      <!-- Checkboxes -->
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600">
+          <span class="ml-2">Option 1</span>
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600">
+          <span class="ml-2">Option 2</span>
+        </label>
+      </div>
+      <!-- Radio Buttons -->
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="radio" class="form-radio h-5 w-5 text-indigo-600" name="radioOptions">
+          <span class="ml-2">Option A</span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="radio" class="form-radio h-5 w-5 text-indigo-600" name="radioOptions">
+          <span class="ml-2">Option B</span>
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <!-- Shipping Info Section -->
+  <div class="container mx-auto p-4 mt-8 bg-white shadow-md rounded">
+    <h2 class="text-2xl font-bold mb-4">Shipping Info</h2>
+    <form class="grid grid-cols-2 gap-4">
+      <input type="text" placeholder="First Name" class="p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      <input type="text" placeholder="Last Name" class="p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      <input type="text" placeholder="Phone" class="p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      <input type="email" placeholder="E-mail" class="p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      <div>
+        <select class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+          <option>United States</option>
+        </select>
+      </div>
+      <input type="text" placeholder="State" class="p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      <input type="text" placeholder="City" class="p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      <input type="text" placeholder="Zip Code" class="p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+      <div class="col-span-2 flex justify-between mt-4">
+        <button type="button" class="bg-gray-400 text-white px-4 py-2 rounded">Back</button>
+        <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded">Next Step</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

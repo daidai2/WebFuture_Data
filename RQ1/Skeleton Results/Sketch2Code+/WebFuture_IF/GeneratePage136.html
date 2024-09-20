@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold">Checkout</h1>
+  </header>
+
+  <section id="shipping-address" class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Shipping Address</h2>
+    <form>
+      <div class="flex flex-col space-y-4">
+        <div class="flex flex-col">
+          <label for="firstName" class="mb-2">First Name</label>
+          <input id="firstName" type="text" class="p-2 border border-gray-300 rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="lastName" class="mb-2">Last Name</label>
+          <input id="lastName" type="text" class="p-2 border border-gray-300 rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="company" class="mb-2">Company</label>
+          <input id="company" type="text" class="p-2 border border-gray-300 rounded">
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section id="shipping-service" class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Shipping Service</h2>
+    <form>
+      <div class="flex flex-col space-y-4">
+        <div class="flex items-center">
+          <input id="standard" type="radio" name="shipping" class="mr-2">
+          <label for="standard">Standard 14 days - $6.99</label>
+        </div>
+        <div class="flex items-center">
+          <input id="expedited" type="radio" name="shipping" class="mr-2">
+          <label for="expedited">Expedited 7 days - $11.99</label>
+        </div>
+        <div class="flex items-center">
+          <input id="express" type="radio" name="shipping" class="mr-2">
+          <label for="express">Express 3 days - $19.99</label>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section id="write-review" class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Write Review</h2>
+    <article class="mb-4">
+      <div class="flex items-center space-x-4">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24">
+        <div>
+          <p class="font-semibold">Product Name</p>
+          <p class="text-gray-700">Price</p>
+          <p class="text-gray-500">45 reviews</p>
+          <p class="text-yellow-500">★★★★☆</p>
+        </div>
+      </div>
+    </article>
+    <aside>
+      <form>
+        <div class="flex flex-col space-y-4">
+          <div>
+            <label class="mb-2 block">Rate Product</label>
+            <div class="flex items-center space-x-2 text-yellow-500">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+              <span class="text-gray-700">Bad :(</span>
+            </div>
+          </div>
+          <div>
+            <label for="headline" class="mb-2 block">Headline</label>
+            <input id="headline" type="text" class="p-2 border border-gray-300 rounded w-full">
+          </div>
+          <div>
+            <label for="review" class="mb-2 block">Review</label>
+            <textarea id="review" class="p-2 border border-gray-300 rounded w-full"></textarea>
+          </div>
+          <button type="submit" class="p-2 bg-blue-500 text-white rounded">Submit</button>
+        </div>
+      </form>
+    </aside>
+  </section>
+
+  <section id="additional-content" class="mb-8">
+    <div class="flex flex-col space-y-4">
+      <div class="flex justify-center">
+        <img src="https://placehold.co/200x200" alt="Additional Image" class="w-48 h-48">
+      </div>
+      <div>
+        <p class="text-gray-700">Placeholder for a text block.</p>
+        <hr class="my-2">
+        <hr class="my-2">
+        <hr class="my-2">
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center">
+          <input id="option1" type="checkbox" class="mr-2">
+          <label for="option1">Option 1</label>
+        </div>
+        <div class="flex items-center">
+          <input id="option2" type="checkbox" class="mr-2">
+          <label for="option2">Option 2</label>
+        </div>
+        <div class="flex items-center">
+          <input id="radioOption" type="radio" name="additional" class="mr-2">
+          <label for="radioOption">Option 3</label>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <button class="p-2 bg-gray-300 text-black rounded">Back</button>
+        <button class="p-2 bg-gray-300 text-black rounded">Button</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+        .shipping-service {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .shipping-service label {
+            margin: 0;
+        }
+        .shipping-service .cost {
+            font-weight: bold;
+        }
+        .programming-languages label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-group button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Checkout</h2>
+        </div>
+
+        <div class="section">
+            <h2>Shipping Address</h2>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Shipping Service</h2>
+            <div class="form-group">
+                <div class="shipping-service">
+                    <label>
+                        <input type="radio" name="shipping" value="standard" checked>
+                        Standard
+                    </label>
+                    <span class="cost">$6.59 - 14 days</span>
+                </div>
+                <div class="shipping-service">
+                    <label>
+                        <input type="radio" name="shipping" value="expedited">
+                        Expedited
+                    </label>
+                    <span class="cost">$11.97 - 7 days</span>
+                </div>
+                <div class="shipping-service">
+                    <label>
+                        <input type="radio" name="shipping" value="express">
+                        Express
+                    </label>
+                    <span class="cost">$19.97 - 3 days</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Programming Languages</h2>
+            <div class="form-group programming-languages">
+                <label><input type="checkbox" name="language" value="csharp"> C#</label>
+                <label><input type="checkbox" name="language" value="java"> Java</label>
+                <label><input type="checkbox" name="language" value="php"> PHP</label>
+                <label><input type="checkbox" name="language" value="vb"> Visual Basic</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Shipping Info</h2>
+            <div class="form-group">
+                <label for="first-name-info">First Name</label>
+                <input type="text" id="first-name-info" name="first-name-info">
+            </div>
+            <div class="form-group">
+                <label for="last-name-info">Last Name</label>
+                <input type="text" id="last-name-info" name="last-name-info">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">Choose</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="button">Back</button>
+            <button type="button">Next Step</button>
+        </div>
+    </div>
+</body>
+</html>

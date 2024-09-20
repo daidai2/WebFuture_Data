@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin-right: 20px;
+        }
+        .profile .details {
+            flex-grow: 1;
+        }
+        .checkout {
+            margin-top: 40px;
+        }
+        .checkout input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .shipping-service {
+            margin-top: 20px;
+        }
+        .shipping-service label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .options {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .checkboxes, .radio-buttons {
+            margin-top: 20px;
+        }
+        .checkboxes label, .radio-buttons label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons input {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="#" alt="Mate One">
+            <div class="details">
+                <h3>Mate One</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="#" alt="Mate Two">
+            <div class="details">
+                <h3>Mate Two</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="#" alt="Mate Three">
+            <div class="details">
+                <h3>Mate Three</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Company">
+
+            <div class="shipping-service">
+                <h3>Shipping Service</h3>
+                <div class="options">
+                    <input type="radio" id="standard" name="shipping" value="standard">
+                    <label for="standard">Standard - 14 days - $6.59</label>
+                </div>
+                <div class="options">
+                    <input type="radio" id="expedited" name="shipping" value="expedited">
+                    <label for="expedited">Expedited - 7 days - $11.77</label>
+                </div>
+                <div class="options">
+                    <input type="radio" id="express" name="shipping" value="express">
+                    <label for="express">Express - 3 days - $19.99</label>
+                </div>
+            </div>
+
+            <div class="radio-buttons">
+                <h3>Title</h3>
+                <label><input type="radio" name="relevance" value="not-relevant"> Not relevant</label>
+                <label><input type="radio" name="relevance" value="low"> Low</label>
+                <label><input type="radio" name="relevance" value="medium"> Medium</label>
+                <label><input type="radio" name="relevance" value="high"> High</label>
+            </div>
+
+            <div class="checkboxes">
+                <h3>Choices</h3>
+                <label><input type="checkbox" name="choice" value="1"> Choice 1</label>
+                <label><input type="checkbox" name="choice" value="2" checked> Choice 2</label>
+                <label><input type="checkbox" name="choice" value="3"> Choice 3</label>
+                <label><input type="checkbox" name="choice" value="4"> Choice 4</label>
+                <label><input type="checkbox" name="choice" value="5" checked> Choice 5</label>
+                <label><input type="checkbox" name="choice" value="6"> Choice 6</label>
+                <label><input type="checkbox" name="choice" value="7"> Choice 7</label>
+                <label><input type="checkbox" name="choice" value="8" checked> Choice 8</label>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="OK">
+                <input type="button" value="Cancel">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

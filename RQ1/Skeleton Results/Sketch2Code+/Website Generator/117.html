@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product-details, .product-actions {
+            flex: 1;
+            padding: 10px;
+        }
+        .product-details {
+            max-width: 60%;
+        }
+        .product-actions {
+            max-width: 40%;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .team-member img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .checkbox-group, .radio-group {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <img src="main-product-image.jpg" alt="Product Image" class="product-image">
+            <div>
+                <img src="thumb1.jpg" alt="Thumbnail 1" class="thumbnail">
+                <img src="thumb2.jpg" alt="Thumbnail 2" class="thumbnail">
+                <img src="thumb3.jpg" alt="Thumbnail 3" class="thumbnail">
+                <img src="thumb4.jpg" alt="Thumbnail 4" class="thumbnail">
+            </div>
+        </div>
+        <div class="product-actions">
+            <h2>Product Name</h2>
+            <p>Manufacturer</p>
+            <div class="radio-group">
+                <label><input type="radio" name="color" value="red"> Red</label><br>
+                <label><input type="radio" name="color" value="blue"> Blue</label><br>
+                <label><input type="radio" name="color" value="white"> White</label>
+            </div>
+            <p>Price: $100</p>
+            <p>Old Price: $200</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="team-member">
+            <img src="mate1.jpg" alt="Mate One">
+            <div>
+                <p>Mate One</p>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="mate2.jpg" alt="Mate Two">
+            <div>
+                <p>Mate Two</p>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="mate3.jpg" alt="Mate Three">
+            <div>
+                <p>Mate Three</p>
+                <p>Job Title</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Title</h3>
+        <div class="radio-group">
+            <label><input type="radio" name="relevance" value="not-relevant"> Not Relevant</label><br>
+            <label><input type="radio" name="relevance" value="low"> Low</label><br>
+            <label><input type="radio" name="relevance" value="medium"> Medium</label><br>
+            <label><input type="radio" name="relevance" value="high"> High</label>
+        </div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="choice1"> Choice 1</label><br>
+            <label><input type="checkbox" name="choice2"> Choice 2</label><br>
+            <label><input type="checkbox" name="choice3"> Choice 3</label><br>
+            <label><input type="checkbox" name="choice4"> Choice 4</label><br>
+            <label><input type="checkbox" name="choice5"> Choice 5</label><br>
+            <label><input type="checkbox" name="choice6"> Choice 6</label><br>
+            <label><input type="checkbox" name="choice7"> Choice 7</label><br>
+            <label><input type="checkbox" name="choice8"> Choice 8</label>
+        </div>
+        <button>OK</button>
+        <button>Cancel</button>
+    </div>
+</body>
+</html>

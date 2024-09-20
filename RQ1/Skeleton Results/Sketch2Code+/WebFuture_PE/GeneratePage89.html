@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Low Fidelity Wireframe</title>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+    <h2 class="text-lg font-semibold mb-4">Select your payment method</h2>
+    <form>
+      <div class="mb-4">
+        <label class="inline-flex items-center">
+          <input type="radio" name="payment" value="credit_card" class="form-radio text-indigo-600">
+          <span class="ml-2">Credit Card</span>
+        </label><br>
+        <label class="inline-flex items-center">
+          <input type="radio" name="payment" value="paypal" class="form-radio text-indigo-600">
+          <span class="ml-2">Paypal</span>
+        </label><br>
+        <label class="inline-flex items-center">
+          <input type="radio" name="payment" value="bank_transfer" class="form-radio text-indigo-600">
+          <span class="ml-2">Bank Transfer</span>
+        </label>
+      </div>
+
+      <div class="mb-4">
+        <label for="card_number" class="block text-sm font-semibold mb-2">Enter your data</label>
+        <input type="text" id="card_number" class="border border-gray-300 p-2 rounded w-full" placeholder="Card Number">
+      </div>
+
+      <div class="flex mb-4 space-x-2">
+        <div>
+          <label for="expiration_date" class="block text-sm font-semibold mb-2">Expiration date</label>
+          <input type="text" id="expiration_date" class="border border-gray-300 p-2 rounded w-16" placeholder="MM/YY">
+        </div>
+        <div>
+          <label for="cvv" class="block text-sm font-semibold mb-2">CVV</label>
+          <input type="text" id="cvv" class="border border-gray-300 p-2 rounded w-16" placeholder="CVV">
+        </div>
+      </div>
+
+      <button class="w-full bg-blue-500 text-white py-2 rounded">Complete</button>
+    </form>
+  </div>
+
+  <div class="mt-8">
+    <h2 class="text-xl font-semibold text-center mb-4">Mobility Solutions & Daily Living Aids</h2>
+    <p class="text-center mb-4">Making life easier</p>
+    <div class="text-center mb-4">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Find out More</button>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-2">Wheelchair Repair</h3>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Find out More</button>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-2">Community Contracts</h3>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Find out More</button>
+      </div>
+    </div>
+
+    <div class="flex justify-center mb-4">
+      <img src="https://placehold.co/150" alt="Placeholder Image" class="border border-gray-300">
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div>
+        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula accumsan mi.</p>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Find out More</button>
+      </div>
+      <div>
+        <img src="https://placehold.co/150" alt="Placeholder Image" class="border border-gray-300">
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox text-indigo-600">
+        <span class="ml-2">Option 1</span>
+      </label><br>
+      <label class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox text-indigo-600">
+        <span class="ml-2">Option 2</span>
+      </label><br>
+      <label class="inline-flex items-center">
+        <input type="radio" name="option" class="form-radio text-indigo-600">
+        <span class="ml-2">Option A</span>
+      </label><br>
+      <label class="inline-flex items-center">
+        <input type="radio" name="option" class="form-radio text-indigo-600">
+        <span class="ml-2">Option B</span>
+      </label>
+    </div>
+
+    <div class="text-center mb-4">
+      <button class="bg-gray-500 text-white py-2 px-4 rounded mr-2">Back</button>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <!-- Payment Method Section -->
+            <div class="form-section">
+                <h2>Select your payment method</h2>
+                <label><input type="radio" name="payment" value="credit-card" checked> Credit Card</label>
+                <label><input type="radio" name="payment" value="paypal"> Paypal</label>
+                <label><input type="radio" name="payment" value="bank-transfer"> Bank Transfer</label>
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number">
+
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY">
+
+                <label for="ccv">CCV</label>
+                <input type="text" id="ccv" name="ccv">
+            </div>
+
+            <!-- Sign Up Section -->
+            <div class="form-section">
+                <h2>Sign Up</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+
+                <label><input type="checkbox" name="terms"> I agree to Terms and Conditions</label>
+
+                <button type="submit">Sign Up</button>
+            </div>
+
+            <!-- Shipping Info Section -->
+            <div class="form-section">
+                <h2>Shipping Info</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="choose">Choose</option>
+                    <!-- Add state options -->
+                </select>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+
+                <div class="button-group">
+                    <button type="button">Back</button>
+                    <button type="submit">Next Step</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white p-4 shadow-sm">
+    <h1 class="text-2xl font-bold">Checkout</h1>
+  </header>
+
+  <main class="p-4">
+    <!-- Shipping Address Section -->
+    <section class="bg-white p-6 shadow-sm mb-4">
+      <h2 class="text-xl font-semibold">Shipping Address</h2>
+      <div class="mt-4">
+        <div class="mb-4">
+          <label class="block text-sm font-medium" for="first-name">First Name</label>
+          <input type="text" id="first-name" class="block w-full border rounded p-2">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium" for="last-name">Last Name</label>
+          <input type="text" id="last-name" class="block w-full border rounded p-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="company">Company</label>
+          <input type="text" id="company" class="block w-full border rounded p-2">
+        </div>
+      </div>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section class="bg-white p-6 shadow-sm mb-4">
+      <h2 class="text-xl font-semibold">Shipping Service</h2>
+      <div class="mt-4">
+        <div class="mb-2">
+          <input type="radio" id="standard" name="shipping" class="mr-2">
+          <label for="standard" class="text-sm font-medium">Standard (14 days - $6.99)</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="expedited" name="shipping" class="mr-2">
+          <label for="expedited" class="text-sm font-medium">Expedited (7 days - $1.99)</label>
+        </div>
+        <div>
+          <input type="radio" id="express" name="shipping" class="mr-2">
+          <label for="express" class="text-sm font-medium">Express (3 days - $19.99)</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wide Review Section -->
+    <section class="bg-white p-6 shadow-sm mb-4">
+      <h2 class="text-xl font-semibold">Write Review</h2>
+      <div class="mt-4 flex">
+        <img src="https://placehold.co/100x100" alt="Product Image" class="w-24 h-24 bg-gray-200 mr-4">
+        <div>
+          <p class="text-sm font-medium">Product Name</p>
+          <p class="text-sm">$ Price</p>
+          <p class="text-sm">★★★★☆ 45 reviews</p>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="mb-4">
+          <label class="block text-sm font-medium">Rate Product</label>
+          <div class="text-yellow-500">
+            ★★★☆☆
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium" for="headline">Headline</label>
+          <input type="text" id="headline" class="block w-full border rounded p-2">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium" for="review">Review</label>
+          <textarea id="review" class="block w-full border rounded p-2 h-32"></textarea>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+      </div>
+    </section>
+
+    <!-- Shipping Info Section -->
+    <section class="bg-white p-6 shadow-sm mb-4">
+      <h2 class="text-xl font-semibold">Shipping Info</h2>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium" for="shipping-first-name">First Name</label>
+          <input type="text" id="shipping-first-name" class="block w-full border rounded p-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="shipping-last-name">Last Name</label>
+          <input type="text" id="shipping-last-name" class="block w-full border rounded p-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="phone">Phone</label>
+          <input type="text" id="phone" class="block w-full border rounded p-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="email">E-mail</label>
+          <input type="text" id="email" class="block w-full border rounded p-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="country">Country</label>
+          <select id="country" class="block w-full border rounded p-2">
+            <option>United States</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="state">State</label>
+          <select id="state" class="block w-full border rounded p-2">
+            <option>California</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="city">City</label>
+          <select id="city" class="block w-full border rounded p-2">
+            <option>Palo Alto</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="zip-code">Zip Code</label>
+          <input type="text" id="zip-code" class="block w-full border rounded p-2">
+        </div>
+      </div>
+      <div class="flex justify-between mt-4">
+        <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Next Step</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white p-4 shadow-sm text-center">
+    &copy; 2023, Your Company
+  </footer>
+</body>
+</html>

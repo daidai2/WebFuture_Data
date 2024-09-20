@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-5">
+  <header class="text-center mb-5">
+    <h1 class="text-3xl font-bold">Product Page</h1>
+  </header>
+
+  <section class="product-details flex mb-5">
+    <div class="product-image w-1/2">
+      <img class="w-full h-auto" src="https://placehold.co/400" alt="Main Product Image">
+      <div class="product-thumbnails flex justify-between mt-2">
+        <img class="w-1/4 h-auto" src="https://placehold.co/100" alt="Thumbnail Image 1">
+        <img class="w-1/4 h-auto" src="https://placehold.co/100" alt="Thumbnail Image 2">
+        <img class="w-1/4 h-auto" src="https://placehold.co/100" alt="Thumbnail Image 3">
+        <img class="w-1/4 h-auto" src="https://placehold.co/100" alt="Thumbnail Image 4">
+      </div>
+    </div>
+    <aside class="product-info w-1/2 pl-5">
+      <h2 class="text-2xl font-bold">Product Name</h2>
+      <p class="text-gray-500">Manufacturer</p>
+      <div class="my-3">
+        <h3 class="font-semibold">Color</h3>
+        <div>
+          <label><input type="radio" name="color" value="red"> Red</label>
+        </div>
+        <div>
+          <label><input type="radio" name="color" value="blue"> Blue</label>
+        </div>
+        <div>
+          <label><input type="radio" name="color" value="white"> White</label>
+        </div>
+      </div>
+      <div class="my-3">
+        <p>Price: <span class="text-xl font-bold text-green-500">$400</span></p>
+        <p>Old Price: <span class="line-through text-lg">$200</span></p>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 mt-3">Add to Cart</button>
+    </aside>
+  </section>
+
+  <section class="reviews mb-5">
+    <div class="review flex mb-4">
+      <img class="w-16 h-16 mr-3" src="https://placehold.co/100" alt="Reviewer 1 Image">
+      <div>
+        <p class="font-bold">Mate One</p>
+        <p class="text-gray-500">Job Title</p>
+        <div class="border-b border-gray-300 my-1"></div>
+      </div>
+    </div>
+    <div class="review flex mb-4">
+      <div>
+        <p class="font-bold">Mate Two</p>
+        <p class="text-gray-500">Job Title</p>
+        <div class="border-b border-gray-300 my-1"></div>
+      </div>
+      <img class="w-16 h-16 ml-3" src="https://placehold.co/100" alt="Reviewer 2 Image">
+    </div>
+    <div class="review flex mb-4">
+      <img class="w-16 h-16 mr-3" src="https://placehold.co/100" alt="Reviewer 3 Image">
+      <div>
+        <p class="font-bold">Mate Three</p>
+        <p class="text-gray-500">Job Title</p>
+        <div class="border-b border-gray-300 my-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-products mb-5">
+    <div class="flex mb-4">
+      <img class="w-24 h-24" src="https://placehold.co/100" alt="Related Product 1">
+      <div class="ml-3">
+        <p class="font-bold">Related Product Info</p>
+        <div class="border-b border-gray-300 my-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="additional-options">
+    <div class="selection-options mb-5">
+      <div>
+        <label><input type="checkbox" name="option1"> Option 1</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="option2"> Option 2</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="option3"> Option 3</label>
+      </div>
+    </div>
+    <div class="navigation-buttons">
+      <button class="bg-gray-500 text-white px-4 py-2 mr-3">Back</button>
+      <button class="bg-gray-500 text-white px-4 py-2">Button</button>
+    </div>
+  </aside>
+
+  <footer class="text-center mt-5">
+    <p class="text-gray-500">&copy; 2023 Product Page</p>
+  </footer>
+</body>
+
+</html>

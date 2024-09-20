@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-4xl mx-auto">
+    <!-- Profile List Section -->
+    <div class="bg-white p-4 rounded shadow mb-8">
+      <div class="grid grid-cols-4 gap-4 mb-4">
+        <img src="https://placehold.co/100x100" alt="Profile 1" class="col-span-1">
+        <div class="col-span-3">
+          <h2 class="text-xl font-bold">Note One</h2>
+          <h3 class="text-gray-500">Job Title</h3>
+          <div class="mt-2">
+            <p class="w-full h-4 bg-gray-300 rounded mb-2"></p>
+            <p class="w-full h-4 bg-gray-300 rounded"></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-4 mb-4">
+        <div class="col-span-3">
+          <h2 class="text-xl font-bold">Note Two</h2>
+          <h3 class="text-gray-500">Job Title</h3>
+          <div class="mt-2">
+            <p class="w-full h-4 bg-gray-300 rounded mb-2"></p>
+            <p class="w-full h-4 bg-gray-300 rounded"></p>
+          </div>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Profile 2" class="col-span-1">
+      </div>
+      <div class="grid grid-cols-4 gap-4">
+        <img src="https://placehold.co/100x100" alt="Profile 3" class="col-span-1">
+        <div class="col-span-3">
+          <h2 class="text-xl font-bold">Note Three</h2>
+          <h3 class="text-gray-500">Job Title</h3>
+          <div class="mt-2">
+            <p class="w-full h-4 bg-gray-300 rounded mb-2"></p>
+            <p class="w-full h-4 bg-gray-300 rounded"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <div class="bg-white p-4 rounded shadow mb-8">
+      <h2 class="text-2xl font-bold mb-4">Checkout</h2>
+
+      <!-- Shipping Address -->
+      <h3 class="text-xl font-semibold mb-4">Shipping Address</h3>
+      <div class="grid grid-cols-1 gap-4 mb-4">
+        <input type="text" placeholder="First Name" class="p-2 border rounded">
+        <input type="text" placeholder="Last Name" class="p-2 border rounded">
+        <input type="text" placeholder="Company" class="p-2 border rounded">
+      </div>
+
+      <!-- Shipping Service -->
+      <h3 class="text-xl font-semibold mb-4">Shipping Service</h3>
+      <div class="grid gap-2 mb-4">
+        <label class="flex items-center">
+          <input type="radio" name="shipping" checked class="mr-2">
+          <span>Standard - 14 days - $6.59</span>
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="shipping" class="mr-2">
+          <span>Expedited - 7 days - $12.77</span>
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="shipping" class="mr-2">
+          <span>Express - 3 days - $19.97</span>
+        </label>
+      </div>
+
+      <div class="flex justify-between items-center">
+        <img src="https://placehold.co/100x100" alt="Checkout Image" class="w-24 h-24">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+
+      <div class="mt-4">
+        <p class="w-full h-4 bg-gray-300 rounded mb-2"></p>
+        <p class="w-full h-4 bg-gray-300 rounded mb-2"></p>
+        <p class="w-full h-4 bg-gray-300 rounded"></p>
+      </div>
+
+      <div class="mt-4">
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2"> <span>Option 1</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2"> <span>Option 2</span>
+        </label>
+        <label class="flex items-center">
+          <input type="radio" class="mr-2"> <span>Option 3</span>
+        </label>
+      </div>
+
+      <div class="flex justify-between mt-4">
+        <button class="bg-gray-200 px-4 py-2 rounded">Back</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Continue</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

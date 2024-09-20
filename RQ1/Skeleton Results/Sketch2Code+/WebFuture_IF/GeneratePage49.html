@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Header Section -->
+  <header class="bg-white p-4 shadow-md">
+    <nav class="flex justify-between items-center">
+      <div>
+        <a href="#" class="text-blue-500 px-2">Login</a>
+        <a href="#" class="text-blue-500 px-2">Sign Up</a>
+      </div>
+      <form class="flex items-center space-x-4">
+        <div class="flex flex-col">
+          <label for="login" class="text-sm">Login</label>
+          <input type="text" id="login" class="border p-2 rounded" placeholder="Username">
+        </div>
+        <div class="flex flex-col">
+          <label for="password" class="text-sm">Password</label>
+          <input type="password" id="password" class="border p-2 rounded" placeholder="Password">
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" id="remember">
+          <label for="remember" class="ml-2 text-sm">Remember me</label>
+        </div>
+        <a href="#" class="text-sm text-blue-500">Forgot Password</a>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
+      </form>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <section class="p-8">
+    <article class="mb-8">
+      <h2 class="text-2xl font-bold mb-2">Title</h2>
+      <h1 class="text-xl mb-4">Title Page</h1>
+      <iframe src="https://placehold.co/300x200" class="w-full h-64 mb-4"></iframe>
+    </article>
+    <div class="grid grid-cols-2 gap-4">
+      <!-- Content Tile 1 -->
+      <div class="bg-white p-4 shadow-md">
+        <h3 class="text-lg font-bold mb-2">Title</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder Image" class="mb-2">
+        <p class="mb-2">Type Post</p>
+        <a href="#" class="text-blue-500">Read more</a>
+      </div>
+      <!-- Content Tile 2 -->
+      <div class="bg-white p-4 shadow-md">
+        <h3 class="text-lg font-bold mb-2">Title</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder Image" class="mb-2">
+        <p class="mb-2">Type Post</p>
+        <a href="#" class="text-blue-500">Read more</a>
+      </div>
+      <!-- Content Tile 3 -->
+      <div class="bg-white p-4 shadow-md">
+        <h3 class="text-lg font-bold mb-2">Title</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder Image" class="mb-2">
+        <p class="mb-2">Type Post</p>
+        <a href="#" class="text-blue-500">Read more</a>
+      </div>
+      <!-- Content Tile 4 -->
+      <div class="bg-white p-4 shadow-md">
+        <h3 class="text-lg font-bold mb-2">Title</h3>
+        <img src="https://placehold.co/150x100" alt="Placeholder Image" class="mb-2">
+        <p class="mb-2">Type Post</p>
+        <a href="#" class="text-blue-500">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aside Section -->
+  <aside class="bg-white p-8 shadow-md">
+    <form>
+      <div class="flex mb-4">
+        <img src="https://placehold.co/100x100" alt="Placeholder Image" class="mr-4">
+        <p class="align-middle">Some text here, describing the form or providing instructions.</p>
+      </div>
+      <div class="mb-4">
+        <label for="label1" class="block text-sm mb-2">Label</label>
+        <input type="text" id="label1" class="border p-2 rounded w-full">
+      </div>
+      <div class="mb-4">
+        <label for="label2" class="block text-sm mb-2">Label</label>
+        <input type="text" id="label2" class="border p-2 rounded w-full">
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1" class="ml-2 text-sm">Checkbox</label>
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2" class="ml-2 text-sm">Checkbox</label>
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="radio" name="radio" id="radio1">
+        <label for="radio1" class="ml-2 text-sm">Radio Button</label>
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2" class="ml-2 text-sm">Radio Button</label>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+    </form>
+  </aside>
+</body>
+</html>

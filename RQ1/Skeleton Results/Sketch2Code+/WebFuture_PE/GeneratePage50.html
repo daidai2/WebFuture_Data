@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <!-- Main Container -->
+  <div class="max-w-4xl mx-auto bg-white p-6 shadow-lg">
+    <!-- Profiles Section -->
+    <div class="mb-6">
+      <!-- Mate One -->
+      <div class="flex mb-4 items-center">
+        <img src="https://placehold.co/100x100" alt="Mate One Image" class="w-24 h-24 rounded-full mr-4">
+        <div>
+          <h2 class="text-xl font-bold">Mate One</h2>
+          <p class="text-gray-600">Job Title</p>
+        </div>
+      </div>
+
+      <!-- Mate Two -->
+      <div class="flex mb-4 items-center">
+        <div>
+          <h2 class="text-xl font-bold">Mate Two</h2>
+          <p class="text-gray-600">Job Title</p>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Mate Two Image" class="w-24 h-24 rounded-full ml-4">
+      </div>
+
+      <!-- Mate Three -->
+      <div class="flex mb-4 items-center">
+        <img src="https://placehold.co/100x100" alt="Mate Three Image" class="w-24 h-24 rounded-full mr-4">
+        <div>
+          <h2 class="text-xl font-bold">Mate Three</h2>
+          <p class="text-gray-600">Job Title</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mb-6">
+
+    <!-- Checkout Section -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Checkout</h2>
+
+      <!-- Shipping Address -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">Shipping Address</h3>
+        <div class="grid grid-cols-1 gap-4">
+          <input type="text" placeholder="First Name" class="p-3 border border-gray-300 rounded-md">
+          <input type="text" placeholder="Last Name" class="p-3 border border-gray-300 rounded-md">
+          <input type="text" placeholder="Company" class="p-3 border border-gray-300 rounded-md">
+        </div>
+      </div>
+
+      <!-- Shipping Service -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">Shipping Service</h3>
+        <div class="flex flex-col space-y-2">
+          <label class="flex items-center">
+            <input type="radio" name="shipping" class="mr-2" checked>
+            <span>Standard - 14 days - $6.99</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="shipping" class="mr-2">
+            <span>Expedited - 7 days - $12.99</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="shipping" class="mr-2">
+            <span>Express - 3 days - $19.99</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="mb-6">
+
+      <!-- Shipping Info -->
+      <div>
+        <h3 class="text-lg font-semibold mb-2">Shipping Info</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <input type="text" placeholder="First Name" class="p-3 border border-gray-300 rounded-md">
+          <input type="text" placeholder="Last Name" class="p-3 border border-gray-300 rounded-md">
+          <input type="text" placeholder="Phone" class="p-3 border border-gray-300 rounded-md">
+          <input type="text" placeholder="Email" class="p-3 border border-gray-300 rounded-md">
+          <div>
+            <select class="p-3 border border-gray-300 rounded-md w-full">
+              <option>United States</option>
+            </select>
+          </div>
+          <div>
+            <select class="p-3 border border-gray-300 rounded-md w-full">
+              <option>Choose State</option>
+            </select>
+          </div>
+          <div>
+            <select class="p-3 border border-gray-300 rounded-md w-full">
+              <option>Palo Alto</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Zip Code" class="p-3 border border-gray-300 rounded-md">
+        </div>
+
+        <div class="flex justify-between">
+          <button class="p-3 bg-gray-300 text-gray-800 font-semibold rounded-md">BACK</button>
+          <button class="p-3 bg-blue-600 text-white font-semibold rounded-md">NEXT STEP</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

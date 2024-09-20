@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .payment-section, .catalog-section {
+            margin-bottom: 40px;
+        }
+        .payment-methods, .enter-data, .cta {
+            margin-bottom: 20px;
+        }
+        .cta button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .services div {
+            text-align: center;
+            width: 30%;
+        }
+        .services button {
+            padding: 5px 10px;
+        }
+        .product-catalog {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product {
+            text-align: center;
+            width: 30%;
+        }
+        .product button {
+            padding: 5px 10px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-section">
+    <h2>Select your payment method</h2>
+    <div class="payment-methods">
+        <input type="radio" id="credit-card" name="payment-method" checked>
+        <label for="credit-card">Credit Card</label><br>
+        <input type="radio" id="paypal" name="payment-method">
+        <label for="paypal">Paypal</label><br>
+        <input type="radio" id="bank-transfer" name="payment-method">
+        <label for="bank-transfer">Bank Transfer</label>
+    </div>
+    
+    <div class="enter-data">
+        <h3>Enter your data</h3>
+        <label for="card-number">Card Number</label><br>
+        <input type="text" id="card-number" name="card-number"><br>
+        <label for="expiration-date">Expiration date</label><br>
+        <input type="text" id="expiration-date-month" name="expiration-date-month" placeholder="MM">
+        /
+        <input type="text" id="expiration-date-year" name="expiration-date-year" placeholder="YY"><br>
+        <label for="ccv">CCV</label><br>
+        <input type="text" id="ccv" name="ccv">
+    </div>
+    
+    <div class="cta">
+        <button type="button">Complete</button>
+    </div>
+</div>
+
+<div class="services">
+    <div>
+        <h3>Mobility Solutions & Daily Living Aids</h3>
+        <p>Making life easier</p>
+        <button type="button">Find out More</button>
+    </div>
+    <div>
+        <h3>Wheelchair Repair</h3>
+        <button type="button">Find out More</button>
+    </div>
+    <div>
+        <h3>Community Contracts</h3>
+        <button type="button">Find out More</button>
+    </div>
+</div>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search">
+</div>
+
+<div class="catalog-section">
+    <h2>Product Catalog</h2>
+    <div class="product-catalog">
+        <div class="product">
+            <img src="placeholder.jpg" alt="Product 1">
+            <p>Product 1</p>
+            <p>$20.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="placeholder.jpg" alt="Product 2">
+            <p>Product 2</p>
+            <p>$10.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="placeholder.jpg" alt="Product 3">
+            <p>Product 3</p>
+            <p>$40.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

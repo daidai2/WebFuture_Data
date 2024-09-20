@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4">
+    <h1 class="text-3xl font-bold">Product Page</h1>
+  </header>
+
+  <!-- First Section -->
+  <section class="p-4">
+    <div class="flex justify-around">
+      <img src="https://placehold.co/150x150" alt="Product Image 1" class="w-1/3">
+      <img src="https://placehold.co/150x150" alt="Product Image 2" class="w-1/3">
+      <img src="https://placehold.co/150x150" alt="Product Image 3" class="w-1/3">
+    </div>
+
+    <div class="mt-6">
+      <p class="text-gray-700">This is a paragraph describing the products. It may contain several lines of text to provide more information about the products shown above.</p>
+      <p class="text-gray-700">Additional information about the products can be provided here.</p>
+      <p class="text-gray-700">This is another paragraph of details.</p>
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <img src="https://placehold.co/300x200" alt="Detailed Product Image">
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <button class="bg-blue-500 text-white px-6 py-2 rounded">Learn More</button>
+    </div>
+  </section>
+
+  <!-- Second Section -->
+  <section class="p-4 bg-white shadow-md">
+    <div class="flex">
+      <div class="w-1/2">
+        <img src="https://placehold.co/400x400" alt="Main Product Image">
+        <div class="flex mt-4 space-x-2">
+          <img src="https://placehold.co/100x100" alt="Thumbnail 1" class="w-1/4">
+          <img src="https://placehold.co/100x100" alt="Thumbnail 2" class="w-1/4">
+          <img src="https://placehold.co/100x100" alt="Thumbnail 3" class="w-1/4">
+          <img src="https://placehold.co/100x100" alt="Thumbnail 4" class="w-1/4">
+        </div>
+      </div>
+
+      <div class="w-1/2 pl-4">
+        <p class="text-2xl font-bold">Product Name</p>
+        <p class="text-gray-700">Manufacturer</p>
+
+        <div class="mt-4">
+          <p class="font-semibold">Color:</p>
+          <label class="block"><input type="radio" name="color" value="red"> Red</label>
+          <label class="block"><input type="radio" name="color" value="blue"> Blue</label>
+          <label class="block"><input type="radio" name="color" value="white"> White</label>
+        </div>
+
+        <div class="mt-4 flex space-x-4">
+          <div>
+            <p class="font-semibold">Price</p>
+            <p>$100</p>
+          </div>
+          <div>
+            <p class="font-semibold">Old Price</p>
+            <p>$200</p>
+          </div>
+        </div>
+
+        <button class="bg-green-500 text-white px-6 py-2 rounded mt-4">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Third Section -->
+  <section class="p-4 mt-4 bg-white shadow-md">
+    <form>
+      <fieldset class="mb-4">
+        <legend class="text-xl font-semibold">Forma de envío</legend>
+        <label class="block"><input type="radio" name="shipping" value="tren"> Terreste</label>
+        <label class="block"><input type="radio" name="shipping" value="aereo"> Aereo</label>
+        <label class="block"><input type="radio" name="shipping" value="maritimo"> Maritimo</label>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend class="text-xl font-semibold">Forma de pago</legend>
+        <label class="block"><input type="radio" name="payment" value="tarjeta"> Tarjeta (Credito/Debito)</label>
+        <label class="block"><input type="radio" name="payment" value="transferencia"> Transferencia Bancaria</label>
+        <label class="block"><input type="radio" name="payment" value="metalico"> Metálico</label>
+      </fieldset>
+
+      <div class="mb-4">
+        <label class="block font-semibold">Dirección</label>
+        <input type="text" name="address" class="border border-gray-300 p-2 w-full rounded">
+      </div>
+
+      <div class="mb-4">
+        <label class="block font-semibold">País</label>
+        <input type="text" name="country" class="border border-gray-300 p-2 w-full rounded">
+        <label class="block mt-4"><input type="checkbox" name="accept"> Accept terms</label>
+      </div>
+
+      <div class="flex justify-center">
+        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded">Aceptar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-md p-4 mt-4 flex justify-center">
+    <p class="text-gray-700">© 2023 - Powered by Your Company</p>
+  </footer>
+</body>
+</html>

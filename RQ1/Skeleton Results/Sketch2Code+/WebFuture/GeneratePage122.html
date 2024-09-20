@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+  <div class="max-w-4xl mx-auto bg-white p-4 shadow-md">
+    <!-- Checkout Section -->
+    <section class="mb-8">
+      <header class="text-2xl font-bold mb-4">Checkout</header>
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2">Shipping Address</h2>
+        <div class="mb-4">
+          <label for="first-name" class="block">First Name</label>
+          <input type="text" id="first-name" class="border border-gray-300 p-2 w-full">
+        </div>
+        <div class="mb-4">
+          <label for="last-name" class="block">Last Name</label>
+          <input type="text" id="last-name" class="border border-gray-300 p-2 w-full">
+        </div>
+        <div class="mb-4">
+          <label for="company" class="block">Company</label>
+          <input type="text" id="company" class="border border-gray-300 p-2 w-full">
+        </div>
+      </section>
+      <section>
+        <h2 class="text-xl font-semibold mb-2">Shipping Service</h2>
+        <div class="mb-4">
+          <input type="radio" id="standard" name="shipping" class="mr-2">
+          <label for="standard">Standard 14 days - $6.99</label>
+        </div>
+        <div class="mb-4">
+          <input type="radio" id="expedited" name="shipping" class="mr-2">
+          <label for="expedited">Expedited 7 days - $11.99</label>
+        </div>
+        <div>
+          <input type="radio" id="express" name="shipping" class="mr-2">
+          <label for="express">Express 3 days - $19.99</label>
+        </div>
+      </section>
+    </section>
+
+    <!-- Write Review Section -->
+    <section class="mb-8">
+      <header class="text-2xl font-bold mb-4">Write Review</header>
+      <article class="mb-8">
+        <div class="flex items-center mb-4">
+          <img src="https://placehold.co/100x100" alt="Product" class="w-16 h-16 mr-4">
+          <div>
+            <h3 class="text-lg font-semibold">Product Name</h3>
+            <p>$Price</p>
+            <p>★★★★★ 45 reviews</p>
+          </div>
+        </div>
+      </article>
+      <div class="mb-4">
+        <h2 class="text-xl font-semibold mb-2">Rate Product</h2>
+        <div class="flex items-center">
+          <span class="text-yellow-500 mr-2">★★★★★</span>
+          <span>Bad :(</span>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="headline" class="block">Headline</label>
+        <input type="text" id="headline" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div class="mb-4">
+        <label for="review" class="block">Review</label>
+        <textarea id="review" class="border border-gray-300 p-2 w-full h-24"></textarea>
+      </div>
+      <div>
+        <button class="bg-blue-500 text-white px-4 py-2">Submit</button>
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section>
+      <header class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-bold">Product Catalog</h2>
+        <div class="flex items-center">
+          <input type="text" class="border border-gray-300 p-2 mr-2" placeholder="Search">
+          <button class="bg-blue-500 text-white px-4 py-2">Search</button>
+        </div>
+      </header>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Product 1 -->
+        <article class="border border-gray-300 p-4">
+          <img src="https://placehold.co/150x150" alt="Product 1" class="w-full mb-4">
+          <h3 class="text-lg font-semibold mb-2">Product 1</h3>
+          <p class="mb-4">$20.00</p>
+          <button class="bg-green-500 text-white px-4 py-2">Add to Cart</button>
+        </article>
+        <!-- Product 2 -->
+        <article class="border border-gray-300 p-4">
+          <img src="https://placehold.co/150x150" alt="Product 2" class="w-full mb-4">
+          <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+          <p class="mb-4">$10.00</p>
+          <button class="bg-green-500 text-white px-4 py-2">Add to Cart</button>
+        </article>
+        <!-- Product 3 -->
+        <article class="border border-gray-300 p-4">
+          <img src="https://placehold.co/150x150" alt="Product 3" class="w-full mb-4">
+          <h3 class="text-lg font-semibold mb-2">Product 3</h3>
+          <p class="mb-4">$40.00</p>
+          <button class="bg-green-500 text-white px-4 py-2">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

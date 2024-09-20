@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Header Section -->
+  <header class="bg-white p-4 shadow-md">
+    <h1 class="text-xl font-bold mb-2">Write Review</h1>
+    <div class="flex items-center">
+      <img class="w-16 h-16 mr-4" src="https://placehold.co/64x64" alt="Product">
+      <div>
+        <div class="text-lg font-semibold">Product Name</div>
+        <div class="text-gray-500">$Price</div>
+      </div>
+      <div class="ml-auto text-right">
+        <div class="text-yellow-500">⭐⭐⭐⭐☆</div>
+        <div class="text-gray-500">45 reviews</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="mt-4">
+    <!-- Rate Product Section -->
+    <section class="bg-white p-4 shadow-md mb-4">
+      <h2 class="text-lg font-semibold mb-2">Rate Product</h2>
+      <div class="flex items-center">
+        <div class="flex space-x-1">
+          <span class="text-yellow-500">⭐</span>
+          <span class="text-gray-300">⭐</span>
+          <span class="text-gray-300">⭐</span>
+          <span class="text-gray-300">⭐</span>
+          <span class="text-gray-300">⭐</span>
+        </div>
+        <div class="ml-4 text-gray-500">Bad :(</div>
+      </div>
+    </section>
+
+    <!-- Review Submission Section -->
+    <section class="bg-white p-4 shadow-md mb-4">
+      <div class="mb-2">
+        <label class="block font-semibold mb-1" for="headline">Headline</label>
+        <input class="w-full p-2 border border-gray-300 rounded" type="text" id="headline">
+      </div>
+      <div class="mb-2">
+        <label class="block font-semibold mb-1" for="review">Review</label>
+        <textarea class="w-full p-2 border border-gray-300 rounded" id="review" rows="4"></textarea>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded shadow">Submit</button>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="bg-white p-4 shadow-md mb-4">
+      <img class="w-full h-64 mb-4" src="https://placehold.co/600x400" alt="Product">
+      <div class="text-lg font-semibold mb-2">$24.9</div>
+      <div class="text-xl font-bold mb-2">Product Title</div>
+      <hr class="mb-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-2">Check items:</h3>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="item1">
+          <label for="item1">Check item 1</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="item2">
+          <label for="item2">Check item 2</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="item3">
+          <label for="item3">Check item 3</label>
+        </div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded shadow">Buy Now</button>
+      </div>
+    </section>
+
+    <!-- Additional Information Section -->
+    <article class="bg-white p-4 shadow-md mb-4">
+      <img class="w-full h-64 mb-4" src="https://placehold.co/600x150" alt="Additional Info">
+      <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+      <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+      <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+    </article>
+
+    <!-- Form Section -->
+    <form class="bg-white p-4 shadow-md mb-4">
+      <div class="mb-2 flex items-center">
+        <label class="w-24 font-semibold" for="field1">Label</label>
+        <input class="flex-1 p-2 border border-gray-300 rounded" type="text" id="field1">
+      </div>
+      <div class="mb-2 flex items-center">
+        <label class="w-24 font-semibold" for="field2">Label</label>
+        <input class="flex-1 p-2 border border-gray-300 rounded" type="text" id="field2">
+      </div>
+
+      <!-- Additional Checklist Items -->
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold mb-2">Checklist items:</h3>
+        <div class="flex">
+          <div class="mr-4">
+            <div class="flex items-center mb-1">
+              <input class="mr-2" type="checkbox" id="checklist1">
+              <label for="checklist1">Checklist 1</label>
+            </div>
+            <div class="flex items-center mb-1">
+              <input class="mr-2" type="checkbox" id="checklist2">
+              <label for="checklist2">Checklist 2</label>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center mb-1">
+              <input class="mr-2" type="checkbox" id="checklist3">
+              <label for="checklist3">Checklist 3</label>
+            </div>
+            <div class="flex items-center mb-1">
+              <input class="mr-2" type="checkbox" id="checklist4">
+              <label for="checklist4">Checklist 4</label>
+            </div>
+          </div>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded shadow">Button</button>
+      </div>
+    </form>
+
+    <!-- Radio Buttons Section -->
+    <aside class="bg-white p-4 shadow-md mb-4">
+      <h3 class="text-lg font-semibold mb-2">Radio Options:</h3>
+      <div class="mb-2 flex items-center">
+        <input class="mr-2" type="radio" name="radio" id="radio1">
+        <label for="radio1">Radio 1</label>
+      </div>
+      <div class="mb-2 flex items-center">
+        <input class="mr-2" type="radio" name="radio" id="radio2">
+        <label for="radio2">Radio 2</label>
+      </div>
+      <div class="mb-2 flex items-center">
+        <input class="mr-2" type="radio" name="radio" id="radio3">
+        <label for="radio3">Radio 3</label>
+      </div>
+      <div class="mb-2 flex items-center">
+        <input class="mr-2" type="radio" name="radio" id="radio4">
+        <label for="radio4">Radio 4</label>
+      </div>
+      <div class="flex items-center mt-4">
+        <img class="w-24 h-16 mr-4" src="https://placehold.co/96x64" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

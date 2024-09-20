@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobility Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container mx-auto p-4 space-y-8">
+    <!-- Header Section -->
+    <header class="text-center">
+      <h1 class="text-2xl font-bold">Mobility Solutions & Daily Living Aids Making Life Easier</h1>
+      <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Find out More</button>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="flex space-x-4">
+      <!-- Wheelchair Repair Article -->
+      <article class="flex-1 text-center p-4 border rounded">
+        <img src="https://placehold.co/150x150" alt="Wheelchair Repair" class="mx-auto mb-4">
+        <h2 class="text-xl font-bold">Wheelchair Repair</h2>
+        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Find out More</button>
+      </article>
+
+      <!-- Community Contracts Article -->
+      <article class="flex-1 text-center p-4 border rounded">
+        <img src="https://placehold.co/150x150" alt="Community Contracts" class="mx-auto mb-4">
+        <h2 class="text-xl font-bold">Community Contracts</h2>
+        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Find out More</button>
+      </article>
+    </section>
+
+    <!-- Team Members Section -->
+    <section class="space-y-4">
+      <!-- Mate One -->
+      <article class="flex items-center space-x-4 p-4 border rounded">
+        <img src="https://placehold.co/100x100" alt="Mate One" class="w-24 h-24">
+        <div>
+          <h3 class="text-lg font-bold">Mate One</h3>
+          <p>Job Title</p>
+          <p>Additional details go here...</p>
+        </div>
+      </article>
+
+      <!-- Mate Two -->
+      <article class="flex items-center space-x-4 p-4 border rounded">
+        <div class="flex-1">
+          <h3 class="text-lg font-bold">Mate Two</h3>
+          <p>Job Title</p>
+          <p>Additional details go here...</p>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Mate Two" class="w-24 h-24">
+      </article>
+
+      <!-- Mate Three -->
+      <article class="flex items-center space-x-4 p-4 border rounded">
+        <img src="https://placehold.co/100x100" alt="Mate Three" class="w-24 h-24">
+        <div>
+          <h3 class="text-lg font-bold">Mate Three</h3>
+          <p>Job Title</p>
+          <p>Additional details go here...</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Form Section -->
+    <form class="space-y-4 p-4 border rounded">
+      <h2 class="text-xl font-bold">Forma de envio</h2>
+
+      <div>
+        <p>Método transporte:</p>
+        <label>
+          <input type="radio" name="transporte" value="terrestre">
+          Terrestre
+        </label>
+        <label>
+          <input type="radio" name="transporte" value="aereo">
+          Aéreo
+        </label>
+        <label>
+          <input type="radio" name="transporte" value="maritimo">
+          Marítimo
+        </label>
+      </div>
+
+      <div>
+        <p>Forma de pago:</p>
+        <label>
+          <input type="radio" name="pago" value="tarjeta">
+          Tarjeta (Crédito/Débito)
+        </label>
+        <label>
+          <input type="radio" name="pago" value="transferencia">
+          Transferencia bancaria
+        </label>
+        <label>
+          <input type="radio" name="pago" value="metalico">
+          Metálico
+        </label>
+      </div>
+
+      <div>
+        <label>Dirección</label>
+        <input type="text" class="w-full border rounded p-2">
+      </div>
+
+      <div>
+        <label>País</label>
+        <select class="w-full border rounded p-2">
+          <option value="">Seleccione un país</option>
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+        </select>
+      </div>
+
+      <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Aceptar</button>
+    </form>
+  </div>
+</body>
+</html>

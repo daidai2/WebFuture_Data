@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Navigation -->
+  <div class="flex justify-between items-center p-4 bg-white shadow-md mb-8">
+    <div class="flex space-x-4">
+      <button class="text-blue-500">Login</button>
+      <button class="text-gray-500">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Login Form -->
+  <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+    <form>
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2">Login</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2">Password</label>
+        <input type="password" class="w-full p-2 border border-gray-300 rounded" />
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="checkbox" id="remember_me" class="mr-2">
+        <label for="remember_me" class="text-gray-700">Remember me</label>
+      </div>
+      <div class="mb-4">
+        <a href="#" class="text-blue-500 text-sm">Forgot Password?</a>
+      </div>
+      <div class="mb-4">
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Login</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Options Section -->
+  <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md mt-8">
+    <div class="flex gap-4 mb-4">
+      <select class="border border-gray-300 p-2 rounded">
+        <option>C Sharp</option>
+      </select>
+      <button class="border border-gray-300 p-2 rounded">Get Drop Down Here</button>
+    </div>
+    <div class="flex gap-4 mb-4">
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2">
+        C#
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2">
+        Java
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2">
+        PHP
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2">
+        Visual Basic
+      </label>
+    </div>
+
+    <!-- Placeholder Image -->
+    <div class="mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder" class="border border-gray-300 rounded">
+    </div>
+
+    <!-- Placeholder for other fields -->
+    <div class="mb-4">
+      <input type="text" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+
+    <!-- Subsection for additional inputs -->
+    <div class="border-t border-gray-300 my-4"></div>
+
+    <div class="mb-4">
+      <input type="text" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+    <div class="mb-4">
+      <input type="text" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+    <div class="mb-4">
+      <input type="text" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+
+    <!-- Selection Options -->
+    <div class="mb-4">
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2">
+        <span>Option 1</span>
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2">
+        <span>Option 2</span>
+      </label>
+      <label class="flex items-center">
+        <input type="radio" name="options" class="mr-2">
+        <span>Option 3</span>
+      </label>
+      <label class="flex items-center">
+        <input type="radio" name="options" class="mr-2">
+        <span>Option 4</span>
+      </label>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex gap-4">
+      <button class="border border-gray-300 p-2 rounded">Back</button>
+      <button class="border border-gray-300 p-2 rounded">Button</button>
+    </div>
+  </div>
+</body>
+</html>

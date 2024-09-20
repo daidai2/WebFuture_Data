@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .showcase {
+            background: #333;
+            color: #fff;
+            height: 400px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .showcase h1 {
+            font-size: 55px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .btn {
+            display: inline-block;
+            color: #fff;
+            background: #77aaff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .boxes {
+            margin-top: 20px;
+        }
+        .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        .box img {
+            width: 90%;
+        }
+        .box p {
+            margin: 0;
+            padding: 0;
+        }
+        .box a {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            background: #77aaff;
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            clear: both;
+        }
+        .content img {
+            width: 100%;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            color: #666;
+        }
+        .content form {
+            margin-top: 20px;
+        }
+        .content form input[type="checkbox"] {
+            margin: 10px;
+        }
+        .content form input[type="radio"] {
+            margin: 10px;
+        }
+        .content form input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #77aaff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .content form input[type="submit"]:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Mobility Solutions & Daily Living Aids</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Making Life Easier</h1>
+            <p>Find out more</p>
+            <a href="#" class="btn">Find out More</a>
+        </div>
+    </section>
+
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <h3>Wheelchair Repair</h3>
+                <img src="wheelchair.jpg" alt="Wheelchair Repair">
+                <p>Find out more</p>
+                <a href="#" class="btn">Find out More</a>
+            </div>
+            <div class="box">
+                <h3>Community Contracts</h3>
+                <img src="community.jpg" alt="Community Contracts">
+                <p>Find out more</p>
+                <a href="#" class="btn">Find out More</a>
+            </div>
+            <div class="box">
+                <h3>Service</h3>
+                <img src="service.jpg" alt="Service">
+                <p>Find out more</p>
+                <a href="#" class="btn">Find out More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <img src="product.jpg" alt="Product Image">
+            <h2>Product Title</h2>
+            <p>$24.99</p>
+            <form>
+                <h3>Check items:</h3>
+                <input type="checkbox" name="item1" value="item1"> Check item 1<br>
+                <input type="checkbox" name="item2" value="item2"> Check item 2<br>
+                <input type="checkbox" name="item3" value="item3"> Check item 3<br>
+                <input type="submit" value="Buy now">
+            </form>
+
+            <form>
+                <label for="title">Title</label><br>
+                <input type="text" id="title" name="title"><br>
+                <h3>Radio Buttons</h3>
+                <input type="radio" name="relevance" value="not_relevant"> Not relevant<br>
+                <input type="radio" name="relevance" value="low"> Low<br>
+                <input type="radio" name="relevance" value="medium"> Medium<br>
+                <input type="radio" name="relevance" value="high"> High<br>
+
+                <h3>Check Boxes</h3>
+                <input type="checkbox" name="choice1" value="choice1"> Choice 1<br>
+                <input type="checkbox" name="choice2" value="choice2"> Choice 2<br>
+                <input type="checkbox" name="choice3" value="choice3"> Choice 3<br>
+                <input type="checkbox" name="choice4" value="choice4"> Choice 4<br>
+                <input type="checkbox" name="choice5" value="choice5"> Choice 5<br>
+                <input type="checkbox" name="choice6" value="choice6"> Choice 6<br>
+                <input type="checkbox" name="choice7" value="choice7"> Choice 7<br>
+                <input type="checkbox" name="choice8" value="choice8"> Choice 8<br>
+                <input type="submit" value="OK">
+                <input type="button" value="Cancel">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

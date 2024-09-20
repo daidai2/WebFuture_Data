@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-gray-100 p-4">
+    <div class="text-2xl font-bold">Write Review</div>
+    <div class="flex items-center mt-4">
+      <img src="https://placehold.co/60x60" alt="Product Image" class="w-15 h-15" />
+      <div class="ml-4">
+        <div class="font-semibold text-xl">Product Name</div>
+        <div class="text-gray-500">$24.99</div>
+      </div>
+      <div class="ml-auto text-right text-gray-700">
+        <div class="flex items-center">
+          <span class="text-yellow-500">★★★★☆</span>
+          <span class="ml-2 text-sm">45 reviews</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="bg-white p-6">
+    <!-- Review Form -->
+    <div class="mb-8">
+      <div class="font-semibold text-lg">Rate Product</div>
+      <div class="flex items-center mt-2">
+        <div class="flex">
+          <span class="text-yellow-500">★☆☆☆☆</span>
+        </div>
+        <span class="ml-2 text-sm text-gray-500">Bad!</span>
+      </div>
+      <div class="mt-4">
+        <label for="headline" class="block text-sm font-medium text-gray-700">Headline</label>
+        <input type="text" id="headline" name="headline" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+      </div>
+      <div class="mt-4">
+        <label for="review" class="block text-sm font-medium text-gray-700">Review</label>
+        <textarea id="review" name="review" rows="3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
+      </div>
+      <div class="mt-4 text-right">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+      </div>
+    </div>
+
+    <!-- Product Information -->
+    <div class="text-center mb-8">
+      <img src="https://placehold.co/600x400" alt="Product Main Image" class="mx-auto" />
+      <div class="mt-4 text-lg font-semibold">$24.99</div>
+      <div class="mt-1 text-2xl">PRODUCT TITLE</div>
+      <hr class="mt-4" />
+    </div>
+
+    <!-- Checklist Section -->
+    <div class="mb-8">
+      <div class="text-lg font-semibold">Check items:</div>
+      <div class="mt-2">
+        <label class="block">
+          <input type="checkbox" class="mr-2"> Check item 1
+        </label>
+        <label class="block mt-2">
+          <input type="checkbox" class="mr-2"> Check item 2
+        </label>
+        <label class="block mt-2">
+          <input type="checkbox" class="mr-2"> Check item 3
+        </label>
+      </div>
+      <div class="mt-4 text-center">
+        <button class="bg-green-500 text-white px-4 py-2 rounded-md">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 p-4">
+    <div class="text-base font-semibold mb-4">Shipping Info</div>
+    <form>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+          <input type="text" id="first-name" name="first-name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        </div>
+        <div>
+          <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+          <input type="text" id="last-name" name="last-name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+          <input type="tel" id="phone" name="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        </div>
+        <div>
+          <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+          <select id="country" name="country" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+            <option>United States</option>
+            <option>Canada</option>
+          </select>
+        </div>
+        <div>
+          <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+          <select id="state" name="state" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+            <option>California</option>
+            <option>Texas</option>
+          </select>
+        </div>
+        <div>
+          <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+          <input type="text" id="city" name="city" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        </div>
+        <div>
+          <label for="zip" class="block text-sm font-medium text-gray-700">Zip Code</label>
+          <input type="text" id="zip" name="zip" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <button class="bg-gray-400 text-white px-4 py-2 rounded-md">Back</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Next Step</button>
+      </div>
+    </form>
+  </footer>
+</body>
+</html>

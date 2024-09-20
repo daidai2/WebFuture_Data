@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-100">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-md shadow-md">
+    <h2 class="text-xl font-semibold mb-4">Select your payment method</h2>
+    <form>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="paymentMethod" class="mr-2"> Credit Card
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="paymentMethod" class="mr-2"> PayPal
+      </label>
+      <label class="flex items-center mb-6">
+        <input type="radio" name="paymentMethod" class="mr-2"> Bank Transfer
+      </label>
+
+      <h2 class="text-xl font-semibold mb-4">Enter your data</h2>
+      <div class="mb-4">
+        <label class="block mb-1">Card Number</label>
+        <input type="text" class="w-full px-4 py-2 border rounded-md">
+      </div>
+      <div class="flex items-center mb-4">
+        <div class="mr-4">
+          <label class="block mb-1">Expiration Date</label>
+          <div class="flex">
+            <input type="text" class="w-16 px-4 py-2 mr-2 border rounded-md" placeholder="MM">
+            <input type="text" class="w-16 px-4 py-2 border rounded-md" placeholder="YY">
+          </div>
+        </div>
+        <div>
+          <label class="block mb-1">CCV</label>
+          <input type="text" class="w-16 px-4 py-2 border rounded-md">
+        </div>
+      </div>
+      <button class="w-full bg-blue-500 text-white py-2 rounded-md">Complete</button>
+    </form>
+
+    <div class="mt-8">
+      <ul class="flex space-x-4 mb-4">
+        <li><button class="text-blue-500">Sign Up</button></li>
+        <li><button class="text-gray-500">Login</button></li>
+      </ul>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-1">Name</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Last Name</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Phone</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">E-mail</label>
+          <input type="email" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Password</label>
+          <input type="password" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Confirm Password</label>
+          <input type="password" class="w-full px-4 py-2 border rounded-md">
+        </div>
+
+      </div>
+      <div class="flex items-center mb-4 mt-4">
+        <input type="checkbox" class="mr-2">
+        <label>I agree to Terms and Conditions</label>
+      </div>
+      <button class="w-full bg-green-500 text-white py-2 rounded-md">Sign Up</button>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold mb-4">Shipping Info</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-1">First Name</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Last Name</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Phone</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">E-mail</label>
+          <input type="email" class="w-full px-4 py-2 border rounded-md">
+        </div>
+        <div>
+          <label class="block mb-1">Country</label>
+          <select class="w-full px-4 py-2 border rounded-md">
+            <option>United States</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1">State</label>
+          <select class="w-full px-4 py-2 border rounded-md">
+            <option>Choose</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1">City</label>
+          <select class="w-full px-4 py-2 border rounded-md">
+            <option>Palo Alto</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1">Zip Code</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-md">
+        </div>
+      </div>
+      <div class="flex justify-between mt-4">
+        <button class="bg-gray-500 text-white py-2 px-4 rounded-md">Back</button>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded-md">Next Step</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

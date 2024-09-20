@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <!-- Header and Video Section -->
+  <header class="mb-8">
+    <h1 class="text-4xl font-bold mb-4">Title</h1>
+    <h2 class="text-2xl mb-4">Title Page</h2>
+    <p class="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="w-full bg-gray-400 h-64 rounded-lg flex items-center justify-center">
+      <span class="text-4xl">▶️</span>
+    </div>
+  </header>
+
+  <!-- Articles Section -->
+  <section class="mb-8">
+    <div class="grid grid-cols-2 gap-8">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <div class="w-full bg-gray-300 h-32 rounded-lg mb-4"></div>
+        <h3 class="text-xl font-bold mb-2">Title</h3>
+        <p class="text-base mb-2">Title Part</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <div class="w-full bg-gray-300 h-32 rounded-lg mb-4"></div>
+        <h3 class="text-xl font-bold mb-2">Title</h3>
+        <p class="text-base mb-2">Title Part</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <div class="w-full bg-gray-300 h-32 rounded-lg mb-4"></div>
+        <h3 class="text-xl font-bold mb-2">Title</h3>
+        <p class="text-base mb-2">Title Part</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <div class="w-full bg-gray-300 h-32 rounded-lg mb-4"></div>
+        <h3 class="text-xl font-bold mb-2">Title</h3>
+        <p class="text-base mb-2">Title Part</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Section -->
+  <section class="mb-8">
+    <div class="w-full bg-gray-400 h-96 rounded-lg"></div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="mb-8">
+    <form>
+      <div class="mb-4">
+        <label class="block text-lg font-medium mb-2" for="title">Title</label>
+        <input class="w-full border border-gray-300 p-2 rounded-lg" type="text" id="title" name="title">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-lg font-medium mb-2">Radio Buttons</label>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="radio" id="not-relevant" name="relevance" value="not-relevant">
+          <label for="not-relevant">Not relevant</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="radio" id="low" name="relevance" value="low">
+          <label for="low">Low</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="radio" id="medium" name="relevance" value="medium">
+          <label for "medium">Medium</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="radio" id="high" name="relevance" value="high">
+          <label for="high">High</label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-lg font-medium mb-2">Checkboxes</label>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice1" name="choice1">
+          <label for="choice1">Choice 1</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice2" name="choice2">
+          <label for="choice2">Choice 2</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice3" name="choice3">
+          <label for="choice3">Choice 3</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice4" name="choice4">
+          <label for="choice4">Choice 4</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice5" name="choice5">
+          <label for="choice5">Choice 5</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice6" name="choice6">
+          <label for="choice6">Choice 6</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice7" name="choice7">
+          <label for="choice7">Choice 7</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input class="mr-2" type="checkbox" id="choice8" name="choice8">
+          <label for="choice8">Choice 8</label>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" type="submit">OK</button>
+        <button class="bg-red-500 text-white px-4 py-2 rounded-lg" type="reset">Cancel</button>
+      </div>
+    </form>
+  </section>
+
+</body>
+</html>

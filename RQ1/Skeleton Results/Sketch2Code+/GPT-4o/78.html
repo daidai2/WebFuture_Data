@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Fidelity Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .person {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .person img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin-right: 20px;
+        }
+        .person .details {
+            flex-grow: 1;
+        }
+        .checkout, .shipping-service {
+            margin: 20px 0;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+        .large-section {
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+        .small-section {
+            width: 300px;
+            height: 100px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="person">
+        <img src="placeholder.png" alt="Mate One">
+        <div class="details">
+            <h3>Mate One</h3>
+            <p>Job Title</p>
+            <p>_________________________________</p>
+        </div>
+    </div>
+
+    <div class="person">
+        <div class="details">
+            <h3>Mate Two</h3>
+            <p>Job Title</p>
+            <p>_________________________________</p>
+        </div>
+        <img src="placeholder.png" alt="Mate Two">
+    </div>
+
+    <div class="person">
+        <img src="placeholder.png" alt="Mate Three">
+        <div class="details">
+            <h3>Mate Three</h3>
+            <p>Job Title</p>
+            <p>_________________________________</p>
+        </div>
+    </div>
+
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company">
+        </div>
+    </div>
+
+    <div class="shipping-service">
+        <h2>Shipping Service</h2>
+        <div>
+            <input type="radio" id="standard" name="shipping" checked>
+            <label for="standard">Standard 14 days - $6.59</label>
+        </div>
+        <div>
+            <input type="radio" id="expedited" name="shipping">
+            <label for="expedited">Expedited 7 days - $1.77</label>
+        </div>
+        <div>
+            <input type="radio" id="express" name="shipping">
+            <label for="express">Express 3 days - $19.99</label>
+        </div>
+    </div>
+
+    <div class="large-section"></div>
+
+    <div class="form-group">
+        <label>Label</label>
+        <input type="text">
+    </div>
+    <div class="form-group">
+        <label>Label</label>
+        <input type="text">
+    </div>
+
+    <button>Button</button>
+
+    <div class="small-section"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+
+    <div>
+        <input type="radio" id="radio1" name="radio-group">
+        <label for="radio1">Radio 1</label><br>
+        <input type="radio" id="radio2" name="radio-group">
+        <label for="radio2">Radio 2</label><br>
+        <input type="radio" id="radio3" name="radio-group">
+        <label for="radio3">Radio 3</label><br>
+        <input type="radio" id="radio4" name="radio-group">
+        <label for="radio4">Radio 4</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Checkbox 1</label><br>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">Checkbox 2</label><br>
+        <input type="checkbox" id="checkbox3" checked>
+        <label for="checkbox3">Checkbox 3</label><br>
+        <input type="checkbox" id="checkbox4">
+        <label for="checkbox4">Checkbox 4</label>
+    </div>
+
+</body>
+</html>

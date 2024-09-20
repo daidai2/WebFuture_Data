@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Implementation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold text-center">Team Members</h1>
+  </header>
+
+  <section class="mb-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div class="bg-white p-4 rounded shadow-md">
+        <img src="https://placehold.co/100x100" alt="Profile 1" class="mx-auto mb-4">
+        <h2 class="text-xl font-bold text-center">Mate One</h2>
+        <p class="text-center text-gray-700">Job Title</p>
+        <p class="text-center text-gray-700 mt-2">Description line 1</p>
+        <p class="text-center text-gray-700">Description line 2</p>
+        <p class="text-center text-gray-700">Description line 3</p>
+        <p class="text-center text-gray-700">Description line 4</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow-md">
+        <h2 class="text-xl font-bold text-center">Mate Two</h2>
+        <p class="text-center text-gray-700">Job Title</p>
+        <img src="https://placehold.co/100x100" alt="Profile 2" class="mx-auto my-4">
+        <p class="text-center text-gray-700 mt-2">Description line 1</p>
+        <p class="text-center text-gray-700">Description line 2</p>
+        <p class="text-center text-gray-700">Description line 3</p>
+        <p class="text-center text-gray-700">Description line 4</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow-md">
+        <img src="https://placehold.co/100x100" alt="Profile 3" class="mx-auto mb-4">
+        <h2 class="text-xl font-bold text-center">Mate Three</h2>
+        <p class="text-center text-gray-700">Job Title</p>
+        <p class="text-center text-gray-700 mt-2">Description line 1</p>
+        <p class="text-center text-gray-700">Description line 2</p>
+        <p class="text-center text-gray-700">Description line 3</p>
+        <p class="text-center text-gray-700">Description line 4</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white p-8 rounded shadow-md mb-8">
+    <h2 class="text-xl font-bold mb-4">Checkout</h2>
+
+    <div class="mb-8">
+      <h3 class="text-lg font-bold mb-2">Shipping Address</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex flex-col">
+          <label for="first-name" class="font-semibold">First Name</label>
+          <input type="text" id="first-name" class="p-2 border rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="last-name" class="font-semibold">Last Name</label>
+          <input type="text" id="last-name" class="p-2 border rounded">
+        </div>
+        <div class="flex flex-col md:col-span-2">
+          <label for="company" class="font-semibold">Company</label>
+          <input type="text" id="company" class="p-2 border rounded">
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <h3 class="text-lg font-bold mb-2">Shipping Service</h3>
+      <div>
+        <label class="flex items-center">
+          <input type="radio" name="shipping" value="standard" class="mr-2">
+          <span class="font-semibold">Standard - 14 days - $6.59</span>
+        </label>
+        <label class="flex items-center mt-2">
+          <input type="radio" name="shipping" value="expedited" class="mr-2">
+          <span class="font-semibold">Expedited - 7 days - $17.99</span>
+        </label>
+        <label class="flex items-center mt-2">
+          <input type="radio" name="shipping" value="express" class="mr-2">
+          <span class="font-semibold">Express - 3 days - $19.99</span>
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold mb-2">Shipping Info</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex flex-col">
+          <label for="shipping-first-name" class="font-semibold">First Name</label>
+          <input type="text" id="shipping-first-name" class="p-2 border rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="shipping-last-name" class="font-semibold">Last Name</label>
+          <input type="text" id="shipping-last-name" class="p-2 border rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="phone" class="font-semibold">Phone</label>
+          <input type="text" id="phone" class="p-2 border rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="email" class="font-semibold">E-mail</label>
+          <input type="text" id="email" class="p-2 border rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="country" class="font-semibold">Country</label>
+          <select id="country" class="p-2 border rounded">
+            <option>United States</option>
+          </select>
+        </div>
+        <div class="flex flex-col">
+          <label for="state" class="font-semibold">State</label>
+          <select id="state" class="p-2 border rounded">
+            <option>Choose</option>
+          </select>
+        </div>
+        <div class="flex flex-col">
+          <label for="city" class="font-semibold">City</label>
+          <input type="text" id="city" class="p-2 border rounded">
+        </div>
+        <div class="flex flex-col">
+          <label for="zip-code" class="font-semibold">Zip Code</label>
+          <input type="text" id="zip-code" class="p-2 border rounded">
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-between mt-8">
+      <button class="px-4 py-2 bg-gray-300 rounded">Back</button>
+      <button class="px-4 py-2 bg-blue-500 text-white rounded">Next Step</button>
+    </div>
+  </section>
+
+</body>
+</html>
