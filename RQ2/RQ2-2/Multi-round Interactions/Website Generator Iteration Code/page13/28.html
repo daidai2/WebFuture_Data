@@ -12,7 +12,7 @@
     }
 
     .divider {
-      border-top: 2px solid gray;
+      border-top: 1px solid lightgray;
     }
 
     .double-divider {
@@ -24,7 +24,14 @@
       background-size: cover;
       background-position: center;
       height: 300px;
-      /* Adjust height as needed */
+    }
+
+    .dark-gray {
+      color: #333333; /* 深灰色 */
+    }
+
+    .light-gray-text {
+      color: #A9A9A9; /* 淡灰色 */
     }
   </style>
 </head>
@@ -87,14 +94,14 @@
           <h4 class="text-xl font-semibold">Title4-1-1</h4>
           <img src="pic04.jpg" alt="IMG4-1" class="w-full my-2"> <!-- Updated image -->
           <p>Text4-1</p>
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-1</button>
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button4-1</button>
         </div>
         <div class="w-full">
           <h3 class="text-2xl font-semibold">Title4-2</h3>
           <h4 class="text-xl font-semibold">Title4-2-1</h4>
           <img src="pic05.jpg" alt="IMG4-2" class="w-full my-2"> <!-- Updated image -->
           <p>Text4-2</p>
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-2</button>
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button4-2</button>
         </div>
       </div>
       <div class="col-span-2 grid grid-cols-1 gap-4">
@@ -103,39 +110,36 @@
           <p>Text4-5</p>
           <p>Label4-3</p>
         </div>
-        <div class="double-divider my-4"></div> <!-- Added divider -->
+        <div class="divider my-4"></div> <!-- Added light gray divider between Title4-5 sections -->
         <div class="bg-white p-4 w-full"> <!-- Background changed to white -->
           <h4 class="text-xl font-semibold">Title4-5</h4>
           <p>Text4-5</p>
           <p>Label4-3</p>
         </div>
-        <div class="bg-white p-4 w-full flex items-center"> <!-- Background changed to white -->
-          <img src="pic06.jpg" alt="InfoBox5" class="mr-2">
-          <div>
+        <div class="divider my-4"></div> <!-- Added light gray divider between InfoBox5 and InfoBox6 -->
+        <div class="bg-white p-4 w-full flex items-start"> <!-- Updated layout for InfoBox5 -->
+          <div class="mr-4">
             <h4 class="text-xl font-semibold">InfoBox5</h4>
             <p>Text for InfoBox5</p>
           </div>
+          <img src="pic06.jpg" alt="InfoBox5" class="w-24 h-24"> <!-- Image aligned to the right of text -->
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded ml-auto">Button</button> <!-- Button aligned below the image -->
         </div>
-        <div class="flex flex-col">
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button</button>
-        </div>
-        <div class="bg-white p-4 w-full flex items-center"> <!-- Background changed to white -->
-          <img src="pic07.jpg" alt="InfoBox6" class="mr-2">
-          <div>
+        <div class="bg-white p-4 w-full flex items-start"> <!-- Updated layout for InfoBox6 -->
+          <div class="mr-4">
             <h4 class="text-xl font-semibold">InfoBox6</h4>
             <p>Text for InfoBox6</p>
           </div>
-        </div>
-        <div class="flex flex-col">
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button</button>
+          <img src="pic07.jpg" alt="InfoBox6" class="w-24 h-24"> <!-- Image aligned to the right of text -->
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded ml-auto">Button</button> <!-- Button aligned below the image -->
         </div>
       </div>
     </section>
 
     <!-- Section 4 -->
-    <section class="bg-white p-6 mb-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <section class="bg-[#F0F0F0] p-6 mb-6 grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed background to #F0F0F0 -->
       <div class="col-span-2">
-        <h4 class="text-xl font-bold mb-4 text-center">Title5</h4>
+        <h4 class="text-xl font-bold mb-4 text-center dark-gray">Title5</h4> <!-- Changed text color to dark gray -->
         <div class="flex justify-center mb-4">
           <div class="flex flex-col space-y-4">
             <div class="flex space-x-2">
@@ -144,24 +148,24 @@
             </div>
             <textarea class="border p-2 rounded w-full mb-4" placeholder="Textarea for comments or messages"></textarea>
             <div class="text-center mb-4">
-              <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+              <button class="bg-[#ED7769] text-white px-4 py-2 rounded">Button</button> <!-- Changed button color to #ED7769 -->
             </div>
           </div>
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <p class="text-center mb-4">Text5-1</p>
+        <p class="text-center mb-4 light-gray-text">Text5-1</p> <!-- Changed text color to light gray -->
         <div class="grid grid-cols-2 gap-4">
           <div class="flex flex-col items-center h-full">
-            <a href="#" class="p-3 mb-2">Icon1</a>
-            <a href="#" class="p-3 mb-2">Icon2</a>
-            <a href="#" class="p-3 mb-2">Icon3</a>
+            <a href="#" class="p-3 mb-2 light-gray-text">Icon1</a> <!-- Changed text color to light gray -->
+            <a href="#" class="p-3 mb-2 light-gray-text">Icon2</a>
+            <a href="#" class="p-3 mb-2 light-gray-text">Icon3</a>
           </div>
           <div class="flex flex-col items-center h-full">
-            <a href="#" class="p-3 mb-2">Icon4</a>
-            <a href="#" class="p-3 mb-2">Icon5</a>
-            <a href="#" class="p-3 mb-2">Icon6</a>
-            <a href="#" class="p-3">Icon7</a>
+            <a href="#" class="p-3 mb-2 light-gray-text">Icon4</a>
+            <a href="#" class="p-3 mb-2 light-gray-text">Icon5</a>
+            <a href="#" class="p-3 mb-2 light-gray-text">Icon6</a>
+            <a href="#" class="p-3 light-gray-text">Icon7</a>
           </div>
         </div>
       </div>
@@ -171,9 +175,9 @@
   <!-- Footer Section -->
   <footer class="bg-gray-200 p-6 text-center">
     <div class="mt-4">
-      <a href="#" class="text-blue-500">Link1</a>
-      <a href="#" class="text-blue-500">Link2</a>
-      <a href="#" class="text-blue-500">Link3</a>
+      <a href="#" class="text-light-gray-text">Link1</a> <!-- Changed text color to light gray -->
+      <a href="#" class="text-light-gray-text">Link2</a>
+      <a href="#" class="text-light-gray-text">Link3</a>
     </div>
   </footer>
 </body>

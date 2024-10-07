@@ -10,45 +10,55 @@
 
   <!-- Header -->
   <header class="bg-white shadow">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">Title0</h1>
-      <div class="flex space-x-4">
-        <a href="#" class="text-blue-500">Link1</a>
-        <a href="#" class="text-blue-500">Link2</a>
-        <a href="#" class="text-blue-500">Link3</a>
-        <a href="#" class="text-blue-500">Link4</a>
-        <a href="#" class="text-blue-500">Link5</a>
-      </div>
+    <nav class="container mx-auto flex justify-center items-center p-4">
+      <!-- Links removed from here as requested -->
     </nav>
   </header>
 
   <!-- Main Content -->
   <main class="container mx-auto p-4 space-y-8">
-    <!-- Title 1 with Subtitle and Button -->
-    <section class="text-center">
-      <h1 class="text-4xl font-bold">Title1</h1>
-      <div class="flex justify-center items-center">
-        <h2 class="text-xl">Title1-1</h2>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded">Button1</button>
+
+    <!-- Label and Links Section -->
+    <section>
+      <div class="flex justify-between items-center w-full">
+        <span class="text-xl font-bold">Label1</span>
+        <div class="flex space-x-4">
+          <a href="#" class="text-blue-500">Link1</a>
+          <a href="#" class="text-blue-500">Link2</a>
+          <a href="#" class="text-blue-500">Link3</a>
+          <a href="#" class="text-blue-500">Link4</a>
+          <a href="#" class="text-blue-500">Link5</a>
+        </div>
       </div>
     </section>
 
-    <!-- Image Grid Section -->
+    <!-- Title1, Title1-1 and Button Section -->
+    <section>
+      <div class="flex justify-center items-center flex-col space-y-2">
+        <h1 class="text-4xl font-bold text-center">Title1</h1>
+        <div class="flex items-center space-x-4 justify-center">
+          <h2 class="text-xl">Title1-1</h2>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Button1</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Centered Title2 and its content -->
     <section class="text-center">
       <h2 class="text-3xl font-bold">Title2</h2>
       <h3 class="text-xl">Title2-1</h3>
       <div class="grid grid-cols-3 gap-4 mt-4">
-        <div class="border p-4">
+        <div class="flex flex-col items-center border p-4">
           <img src="https://placehold.co/200x150" alt="PIC2-1" class="mb-2">
           <p>Label2-1</p>
           <p>Text2-1</p>
         </div>
-        <div class="border p-4">
+        <div class="flex flex-col items-center border p-4">
           <img src="https://placehold.co/200x150" alt="PIC2-2" class="mb-2">
           <p>Label2-2</p>
           <p>Text2-2</p>
         </div>
-        <div class="border p-4">
+        <div class="flex flex-col items-center border p-4">
           <img src="https://placehold.co/200x150" alt="PIC2-3" class="mb-2">
           <p>Label2-3</p>
           <p>Text2-3</p>
@@ -57,26 +67,42 @@
       <p class="mt-4">Text2</p>
     </section>
 
-    <!-- Content Section 1 -->
-    <section class="text-center">
+    <!-- Content Section 1 with new titles -->
+    <section>
       <div class="grid grid-cols-2 gap-4">
         <div>
           <h3 class="text-2xl font-bold">Title3-1</h3>
           <p class="my-2">Text3-1</p>
-          <p class="my-2">Text3-3</p> <!-- 添加的 Text3-3 -->
           <button class="bg-blue-500 text-white px-4 py-2 rounded">Button3-1</button>
+          <h4 class="text-xl font-bold mt-4">Title3-1-1</h4>
         </div>
         <div>
           <h3 class="text-2xl font-bold">Title3-2</h3>
           <p class="my-2">Text3-2</p>
-          <p class="my-2">Text3-4</p> <!-- 添加的 Text3-4 -->
           <button class="bg-blue-500 text-white px-4 py-2 rounded">Button3-2</button>
+          <h4 class="text-xl font-bold mt-4">Title3-2-1</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section 2 -->
+    <section>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <h4 class="text-xl font-bold">Title4-1</h4>
+          <p class="my-2">Text4-1</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Button4-1</button>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold">Title4-2</h4>
+          <p class="my-2">Text4-2</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Button4-2</button>
         </div>
       </div>
     </section>
 
     <!-- List Section -->
-    <section class="text-center">
+    <section>
       <div class="grid grid-cols-2 gap-4">
         <div>
           <h4 class="text-xl font-bold">Title5-1</h4>

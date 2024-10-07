@@ -23,7 +23,8 @@
       background-image: url('banner.jpg');
       background-size: cover;
       background-position: center;
-      height: 300px; /* Adjust height as needed */
+      height: 300px;
+      /* Adjust height as needed */
     }
   </style>
 </head>
@@ -86,14 +87,14 @@
           <h4 class="text-xl font-semibold">Title4-1-1</h4>
           <img src="pic04.jpg" alt="IMG4-1" class="w-full my-2"> <!-- Updated image -->
           <p>Text4-1</p>
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-1</button>
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button4-1</button>
         </div>
         <div class="w-full">
           <h3 class="text-2xl font-semibold">Title4-2</h3>
           <h4 class="text-xl font-semibold">Title4-2-1</h4>
           <img src="pic05.jpg" alt="IMG4-2" class="w-full my-2"> <!-- Updated image -->
           <p>Text4-2</p>
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-2</button>
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button4-2</button>
         </div>
       </div>
       <div class="col-span-2 grid grid-cols-1 gap-4">
@@ -102,31 +103,23 @@
           <p>Text4-5</p>
           <p>Label4-3</p>
         </div>
-        <div class="double-divider my-4"></div> <!-- Added divider -->
         <div class="bg-white p-4 w-full"> <!-- Background changed to white -->
           <h4 class="text-xl font-semibold">Title4-5</h4>
           <p>Text4-5</p>
           <p>Label4-3</p>
         </div>
-        <div class="bg-white p-4 w-full flex items-center"> <!-- Background changed to white -->
-          <img src="pic06.jpg" alt="InfoBox5" class="mr-2">
-          <div>
-            <h4 class="text-xl font-semibold">InfoBox5</h4>
-            <p>Text for InfoBox5</p>
-          </div>
+        <div class="double-divider my-4"></div> <!-- Moved divider below the Title4-5 sections -->
+        <div class="bg-white p-4 w-full flex flex-col items-center"> <!-- InfoBox5 updated layout -->
+          <h4 class="text-xl font-semibold">InfoBox5</h4>
+          <p>Text for InfoBox5</p>
+          <img src="pic06.jpg" alt="InfoBox5" class="my-2"> <!-- Image below the text -->
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button</button> <!-- Button aligned to the right of image -->
         </div>
-        <div class="flex flex-col">
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button</button>
-        </div>
-        <div class="bg-white p-4 w-full flex items-center"> <!-- Background changed to white -->
-          <img src="pic07.jpg" alt="InfoBox6" class="mr-2">
-          <div>
-            <h4 class="text-xl font-semibold">InfoBox6</h4>
-            <p>Text for InfoBox6</p>
-          </div>
-        </div>
-        <div class="flex flex-col">
-          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button</button>
+        <div class="bg-white p-4 w-full flex flex-col items-center"> <!-- InfoBox6 updated layout -->
+          <h4 class="text-xl font-semibold">InfoBox6</h4>
+          <p>Text for InfoBox6</p>
+          <img src="pic07.jpg" alt="InfoBox6" class="my-2"> <!-- Image below the text -->
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button</button> <!-- Button aligned to the right of image -->
         </div>
       </div>
     </section>
@@ -171,4 +164,10 @@
   <footer class="bg-gray-200 p-6 text-center">
     <div class="mt-4">
       <a href="#" class="text-blue-500">Link1</a>
-      <a href="#" class="text-blue
+      <a href="#" class="text-blue-500">Link2</a>
+      <a href="#" class="text-blue-500">Link3</a>
+    </div>
+  </footer>
+</body>
+
+</html>
