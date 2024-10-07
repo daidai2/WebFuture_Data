@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Example</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector(".buy-now-btn").addEventListener("click", function() {
+        alert('Add Interaction');
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="container mx-auto p-4">
+<!-- Header -->
+<header class="flex justify-between mb-4">
+<nav>
+<a class="text-blue-500 mr-4" href="#">Sign Up</a>
+<a class="text-blue-500" href="#">Login</a>
+</nav>
+</header>
+<!-- Signup Form -->
+<form class="mb-4">
+<div class="flex mb-2">
+<div class="w-1/2 mr-2">
+<label class="block text-sm font-medium" for="name">Name</label>
+<input class="border border-gray-300 p-2 w-full" id="name" name="name" type="text"/>
+</div>
+<div class="w-1/2">
+<label class="block text-sm font-medium" for="lastName">Last Name</label>
+<input class="border border-gray-300 p-2 w-full" id="lastName" name="lastName" type="text"/>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="w-1/2 mr-2">
+<label class="block text-sm font-medium" for="email" id="6_2_2_1_1">E-mail</label>
+<input class="border border-gray-300 p-2 w-full" id="email" name="email" type="email"/>
+</div>
+<div class="w-1/2">
+<label class="block text-sm font-medium" for="phone" id="6_2_1_1_1">Phone</label>
+<input class="border border-gray-300 p-2 w-full" id="phone" name="phone" type="text"/>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="w-1/2 mr-2">
+<label class="block text-sm font-medium" for="password">Password</label>
+<input class="border border-gray-300 p-2 w-full" id="password" name="password" type="password"/>
+</div>
+<div class="w-1/2">
+<label class="block text-sm font-medium" for="confirm-password">Confirm Password</label>
+<input class="border border-gray-300 p-2 w-full" id="confirm-password" name="confirm-password" type="password"/>
+</div>
+</div>
+<div class="mb-4">
+<input id="terms" name="terms" type="checkbox"/>
+<label class="ml-2" for="terms">I agree to Terms and Conditions</label>
+</div>
+<div>
+<button class="bg-blue-500 text-white p-2 rounded" type="submit">Sign Up</button>
+</div>
+</form>
+<!-- Product Section -->
+<section class="mb-4">
+<button class="bg-red-500 text-white p-2 rounded">Modify Element</button>
+<div class="text-center mb-4">
+<span class="text-2xl font-bold">$24.99</span>
+<h1 class="text-xl font-semibold">Product Title</h1>
+</div>
+</section>
+<!-- Check items section -->
+<section class="mb-4">
+<h2 class="text-lg font-semibold">Check items:</h2>
+<ul>
+<li>
+<input checked="" id="item1" name="item1" type="checkbox"/>
+<label class="ml-2" for="item1">Check item 1</label>
+</li>
+<li>
+<input id="item2" name="item2" type="checkbox"/>
+<label class="ml-2" for="item2">Check item 2</label>
+</li>
+<li>
+<input id="item3" name="item3" type="checkbox"/>
+<label class="ml-2" for="item3">Check item 3</label>
+</li>
+</ul>
+</section>
+<!-- Buy Now Button -->
+<section class="mb-4">
+<button class="buy-now-btn bg-green-500 text-white p-2 rounded">Buy Now</button>
+</section>
+<!-- Additional Information Section -->
+<section class="mb-4">
+<div class="flex mb-4">
+<img alt="Additional Image" class="w-1/3 h-auto mr-4" src="https://placehold.co/300x200"/>
+<div class="w-2/3">
+<p>Placeholder text for additional information. This text can span multiple lines and provides more details about the product.</p>
+</div>
+</div>
+<div class="flex mb-4">
+<div class="w-1/2 mr-2">
+<label class="block text-sm font-medium" for="label1">Label 1</label>
+<input class="border border-gray-300 p-2 w-full mb-2" id="label1" name="label1" type="text"/>
+</div>
+<div class="w-1/2">
+<label class="block text-sm font-medium" for="label2">Label 2</label>
+<input class="border border-gray-300 p-2 w-full mb-2" id="label2" name="label2" type="text"/>
+</div>
+</div>
+<div class="mb-4">
+<input id="checkbox1" name="checkbox1" type="checkbox"/>
+<label class="ml-2" for="checkbox1">Checkbox 1</label>
+<input class="ml-4" id="checkbox2" name="checkbox2" type="checkbox"/>
+<label class="ml-2" for="checkbox2">Checkbox 2</label>
+</div>
+<div class="mb-4">
+<input id="radio1" name="radio-group" type="radio"/>
+<label class="ml-2" for="radio1">Radio 1</label>
+<input class="ml-4" id="radio2" name="radio-group" type="radio"/>
+<label class="ml-2" for="radio2">Radio 2</label>
+</div>
+<div class="mb-4">
+<button class="bg-yellow-500 text-white p-2 rounded">Button</button>
+</div>
+<div>
+<img alt="Another Image" class="w-full h-auto" src="https://placehold.co/600x400"/>
+</div>
+</section>
+</div>
+</body>
+</html>

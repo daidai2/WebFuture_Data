@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</head>
+<body class="bg-gray-100">
+
+  <div id="container" class="container mx-auto p-4 bg-white shadow-md mt-4">
+    <!-- Header Section -->
+    <header class="mb-4">
+      <h1 class="text-center text-2xl font-bold" style="font-size: 50px;">Payment Process</h1>
+    </header>
+
+    <!-- Payment Method Section -->
+    <section id="payment-method" class="mb-6">
+      <h2 class="text-lg font-semibold mb-2">Select your payment method</h2>
+      <div class="radio-group mb-4">
+        <div>
+          <input type="radio" id="credit-card" name="payment_method" value="Credit Card">
+          <label for="credit-card">Credit Card</label>
+        </div>
+        <div>
+          <input type="radio" id="paypal" name="payment_method" value="Paypal">
+          <label for="paypal">Paypal</label>
+        </div>
+        <div>
+          <input type="radio" id="bank-transfer" name="payment_method" value="Bank Transfer">
+          <label for="bank-transfer">Bank Transfer</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Data Section -->
+    <section id="payment-data" class="mb-6">
+      <h2 class="text-lg font-semibold mb-2">Enter your data</h2>
+      <div class="mb-4">
+        <label for="card-number" class="block">Card Number</label>
+        <input type="text" id="card-number" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div class="mb-4">
+        <label class="block">Expiration date</label>
+        <div class="flex space-x-2">
+          <input type="number" id="expiry-month" placeholder="MM" class="border border-gray-300 p-2 w-12">
+          <input type="number" id="expiry-year" placeholder="YY" class="border border-gray-300 p-2 w-12">
+          <input type="number" id="ccv" placeholder="CCV" class="border border-gray-300 p-2 w-12">
+        </div>
+      </div>
+      <button type="submit" id="complete-button" class="bg-blue-500 text-white px-4 py-2 rounded">Complete</button>
+    </section>
+
+    <!-- Information Section -->
+    <section id="info-section" class="mb-6">
+      <h3 class="text-xl font-semibold mb-2">Mobility Solutions & Daily Living Aids</h3>
+      <p class="mb-4">Making Life Easier</p>
+      <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded mb-4 block text-center">Find out More</a>
+
+      <article class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Wheelchair Repair</h3>
+        <img src="https://placehold.co/600x400" alt="Wheelchair Repair" class="mb-2">
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded block text-center">Find out More</a>
+      </article>
+
+      <article class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Community Contracts</h3>
+        <ul class="list-disc pl-5 mb-2">
+          <li>Short description 1</li>
+          <li>Short description 2</li>
+          <li>Short description 3</li>
+          <li>Short description 4</li>
+        </ul>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded block text-center">Find out More</a>
+      </article>
+
+      <article class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Large Multimedia Placeholder</h3>
+        <img src="https://placehold.co/600x400" alt="Large Placeholder" class="mb-2">
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded block text-center">Find out More</a>
+      </article>
+    </section>
+
+    <!-- Widgets Section -->
+    <section id="widgets">
+      <form id="additional-options" class="mb-6">
+        <div class="mb-4">
+          <label for="title" class="block">Title</label>
+          <input type="text" id="title" class="border border-gray-300 p-2 w-full">
+        </div>
+        <div class="mb-4">
+          <h4 class="font-semibold">Radio Buttons</h4>
+          <div class="flex space-x-2">
+            <div>
+              <input type="radio" id="not-relevant" name="relevance" value="Not relevant">
+              <label for="not-relevant">Not relevant</label>
+            </div>
+            <div>
+              <input type="radio" id="low" name="relevance" value="Low">
+              <label for="low">Low</label>
+            </div>
+            <div>
+              <input type="radio" id="medium" name="relevance" value="Medium">
+              <label for="medium">Medium</label>
+            </div>
+            <div>
+              <input type="radio" id="high" name="relevance" value="High">
+              <label for="high">High</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h4 class="font-semibold">Check Boxes</h4>
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <input type="checkbox" id="choice1">
+              <label for="choice1">Choice 1</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice2" checked>
+              <label for="choice2">Choice 2</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice3">
+              <label for="choice3">Choice 3</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice4">
+              <label for="choice4">Choice 4</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice5" checked>
+              <label for="choice5">Choice 5</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice6" checked>
+              <label for="choice6">Choice 6</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice7">
+              <label for="choice7">Choice 7</label>
+            </div>
+            <div>
+              <input type="checkbox" id="choice8" checked>
+              <label for="choice8">Choice 8</label>
+            </div>
+          </div>
+        </div>
+        <div class="flex space-x-2">
+          <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showAlert()">OK</button>
+          <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="mt-6 text-center">
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Element at the bottom of the page -->
+    <div class="text-center mt-4">
+      <p>Add Element</p>
+    </div>
+  </div>
+
+</body>
+</html>

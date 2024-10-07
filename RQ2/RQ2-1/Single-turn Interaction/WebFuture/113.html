@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    #body1-div1-section1-h21 {
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-4" id="body1">
+<div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md" id="body1-div1">
+<!-- Payment Method Section -->
+<section class="mb-8" id="body1-div1-section1">
+<h2 class="text-2xl font-bold mb-4" id="body1-div1-section1-h21">Select your payment method</h2>
+<div class="radio-buttons mb-6" id="body1-div1-section1-div2">
+<label class="block mb-2" id="body1-div1-section1-div2-label1">
+<input class="mr-2" id="body1-div1-section1-div2-label1-input1" name="payment-method" type="radio" value="credit-card"/> Credit Card
+        </label>
+<label class="block mb-2" id="body1-div1-section1-div2-label2">
+<input class="mr-2" id="body1-div1-section1-div2-label2-input2" name="payment-method" type="radio" value="paypal"/> Paypal
+        </label>
+<label class="block mb-6" id="body1-div1-section1-div2-label3">
+<input class="mr-2" id="body1-div1-section1-div2-label3-input3" name="payment-method" type="radio" value="bank-transfer"/> Bank transfer
+        </label>
+</div>
+<form id="body1-div1-section1-form1">
+<label class="block mb-2" for="card-number" id="body1-div1-section1-form1-label4">Card Number</label>
+<input class="w-full border p-2 mb-4" id="body1-div1-section1-form1-input4" type="text"/>
+<div class="flex space-x-4 mb-4" id="body1-div1-section1-form1-div3">
+<div id="body1-div1-section1-form1-div3-div4">
+<label class="block mb-2" for="expiration-date" id="body1-div1-section1-form1-div3-div4-label5">Expiration date</label>
+<div class="flex space-x-2" id="body1-div1-section1-form1-div3-div4-div5">
+<input class="w-20 border p-2" id="body1-div1-section1-form1-div3-div4-div5-input5" placeholder="MM" type="number"/>
+<input class="w-20 border p-2" id="body1-div1-section1-form1-div3-div4-div5-input6" placeholder="YY" type="number"/>
+</div>
+</div>
+<div id="body1-div1-section1-form1-div3-div6">
+<label class="block mb-2" for="ccv" id="body1-div1-section1-form1-div3-div6-label6">CCV</label>
+<input class="w-20 border p-2" id="body1-div1-section1-form1-div3-div6-input7" type="text"/>
+</div>
+</div>
+<button class="bg-blue-500 text-white py-2 px-4 rounded" id="body1-div1-section1-form1-button1" type="submit">Complete</button>
+</form>
+</section>
+<!-- Tabs Navigation -->
+<nav class="tabs border-b-2 mb-8" id="body1-div1-nav1">
+<a class="inline-block py-2 px-4 text-blue-500 border-b-2 border-blue-500" href="#signup" id="body1-div1-nav1-a1">Sign Up</a>
+<a class="inline-block py-2 px-4 text-gray-500" href="#login" id="body1-div1-nav1-a2">Login</a>
+</nav>
+<!-- Sign-Up and Login Section -->
+<section class="mb-8" id="body1-div1-section2">
+<form class="grid grid-cols-2 gap-4 mb-6" id="body1-div1-section2-form2">
+<div id="body1-div1-section2-form2-div7">
+<label class="block" for="name" id="body1-div1-section2-form2-div7-label7">Name</label>
+<input class="w-full border p-2" id="body1-div1-section2-form2-div7-input8" type="text"/>
+</div>
+<div id="body1-div1-section2-form2-div8">
+<label class="block" for="last-name" id="body1-div1-section2-form2-div8-label8">Last Name</label>
+<input class="w-full border p-2" id="body1-div1-section2-form2-div8-input9" type="text"/>
+</div>
+<div id="body1-div1-section2-form2-div9">
+<label class="block" for="phone" id="body1-div1-section2-form2-div9-label9">Phone</label>
+<input class="w-full border p-2" id="body1-div1-section2-form2-div9-input10" type="text"/>
+</div>
+<div id="body1-div1-section2-form2-div10">
+<label class="block" for="email" id="body1-div1-section2-form2-div10-label10">E-mail</label>
+<input class="w-full border p-2" id="body1-div1-section2-form2-div10-input11" type="email"/>
+</div>
+<div id="body1-div1-section2-form2-div11">
+<label class="block" for="password" id="body1-div1-section2-form2-div11-label11">Password</label>
+<input class="w-full border p-2" id="body1-div1-section2-form2-div11-input12" type="password"/>
+</div>
+<div id="body1-div1-section2-form2-div12">
+<label class="block" for="confirm-password" id="body1-div1-section2-form2-div12-label12">Confirm Password</label>
+<input class="w-full border p-2" id="body1-div1-section2-form2-div12-input13" type="password"/>
+</div>
+</form>
+<label class="block mb-4" id="body1-div1-section2-label13">
+<input class="mr-2" id="body1-div1-section2-label13-input14" type="checkbox"/> I agree to Terms and Conditions
+      </label>
+</section>
+<!-- Miscellaneous Options Section -->
+<section class="mb-8" id="body1-div1-section3">
+<label class="block mb-2" for="title" id="body1-div1-section3-label14">Title</label>
+<input class="w-full border p-2 mb-4" id="body1-div1-section3-input15" type="text"/>
+<div class="radio-group mb-4" id="body1-div1-section3-div13">
+<label class="block mb-2" id="body1-div1-section3-div13-label15">Radio Buttons</label>
+<label class="block mb-2" id="body1-div1-section3-div13-label16">
+<input class="mr-2" id="body1-div1-section3-div13-label16-input16" name="relevance" type="radio" value="not-relevant"/> Not relevant
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div13-label17">
+<input class="mr-2" id="body1-div1-section3-div13-label17-input17" name="relevance" type="radio" value="low"/> Low
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div13-label18">
+<input class="mr-2" id="body1-div1-section3-div13-label18-input18" name="relevance" type="radio" value="medium"/> Medium
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div13-label19">
+<input class="mr-2" id="body1-div1-section3-div13-label19-input19" name="relevance" type="radio" value="high"/> High
+        </label>
+</div>
+<div class="checkbox-group mb-4" id="body1-div1-section3-div14">
+<label class="block mb-2" id="body1-div1-section3-div14-label20">CheckBoxes</label>
+<label class="block mb-2" id="body1-div1-section3-div14-label21">
+<input class="mr-2" id="body1-div1-section3-div14-label21-input20" name="choice1" type="checkbox"/> choice1
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div14-label22">
+<input checked="" class="mr-2" id="body1-div1-section3-div14-label22-input21" name="choice2" type="checkbox"/> choice2
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div14-label23">
+<input class="mr-2" id="body1-div1-section3-div14-label23-input22" name="choice3" type="checkbox"/> choice3
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div14-label24">
+<input class="mr-2" id="body1-div1-section3-div14-label24-input23" name="choice4" type="checkbox"/> choice4
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div14-label25">
+<input checked="" class="mr-2" id="body1-div1-section3-div14-label25-input24" name="choice5" type="checkbox"/> choice5
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div14-label26">
+<input class="mr-2" id="body1-div1-section3-div14-label26-input25" name="choice6" type="checkbox"/> choice6
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div14-label27">
+<input class="mr-2" id="body1-div1-section3-div14-label27-input26" name="choice7" type="checkbox"/> choice7
+        </label>
+<label class="block mb-2" id="body1-div1-section3-div14-label28">
+<input checked="" class="mr-2" id="body1-div1-section3-div14-label28-input27" name="choice8" type="checkbox"/> choice8
+        </label>
+</div>
+</section>
+<!-- Final Action Buttons -->
+<div class="action-buttons text-right" id="body1-div1-div15">
+<button class="bg-green-500 text-white py-2 px-4 rounded mr-2" id="body1-div1-div15-button3">OK</button>
+<button class="bg-red-500 text-white py-2 px-4 rounded" id="body1-div1-div15-button4">Cancel</button>
+<button class="bg-blue-500 text-white py-2 px-4 rounded" id="6_1">Sign Up</button>
+<p id="Parent_body1-div1-div15_Next_null_Queue_2">Add Element</p>
+</div>
+</div>
+<script data-custom-scripts="true"></script>
+</body>
+</html>

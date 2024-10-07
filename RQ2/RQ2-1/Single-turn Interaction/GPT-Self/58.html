@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mockup Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: inline-block;
+            margin-bottom: 5px;
+            width: 50%;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group-checkbox {
+            display: flex;
+            align-items: center;
+        }
+        .form-group-checkbox input {
+            margin-right: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:disabled {
+            background-color: #CCCCCC;
+        }
+        .product {
+            border: 1px solid #CCCCCC;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .product-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 1.2em;
+            color: #28a745;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>Sign Up</h1>
+<form>
+<div class="form-group">
+<label for="first-name" id="6_2_2_2_1">Name</label>
+<input id="first-name" name="first-name" type="text"/>
+<span id="6_2_1_1_2">Marítimo</span>
+</div>
+<div class="form-group">
+<label for="last-name" id="6_2_2_2_2">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel"/>
+</div>
+<div class="form-group">
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div class="form-group">
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" type="password"/>
+</div>
+<div class="form-group-checkbox">
+<input id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<button class="button" type="submit">Sign Up</button>
+</form>
+<div class="product">
+<!-- 第一张图片已删除 -->
+<div class="product-title">Product Title</div>
+<div class="product-price">$24.9</div>
+<div class="checkbox-group">
+<div class="form-group-checkbox">
+<input id="item1" name="item1" type="checkbox"/>
+<label for="item1">Check item 1</label>
+</div>
+<div class="form-group-checkbox">
+<input id="item2" name="item2" type="checkbox"/>
+<label for="item2">Check item 2</label>
+</div>
+<div class="form-group-checkbox">
+<input id="item3" name="item3" type="checkbox"/>
+<label for="item3">Check item 3</label>
+</div>
+</div>
+<button class="button">Buy Now</button>
+</div>
+<h1>Shipping and Payment</h1>
+<form>
+<div class="radio-group">
+<label>Forma de envío</label>
+<div class="form-group-radio">
+<input id="terrestre" name="transporte" type="radio" value="terrestre"/>
+<label for="terrestre">Terrestre</label>
+</div>
+<div class="form-group-radio">
+<input id="aereo" name="transporte" type="radio" value="aereo"/>
+<label for="aereo">Aereo</label>
+</div>
+<div class="form-group-radio">
+<input id="maritimo" name="transporte" type="radio" value="maritimo"/>
+<label for="maritimo" id="6_2_1_2_2">Marítimo</label>
+</div>
+</div>
+<div class="radio-group">
+<label>Forma de pago</label>
+<div class="form-group-radio">
+<input id="tarjeta" name="pago" type="radio" value="tarjeta"/>
+<label for="tarjeta">Tarjeta (Crédito/débito)</label>
+</div>
+<div class="form-group-radio">
+<input id="transferencia" name="pago" type="radio" value="transferencia"/>
+<label for="transferencia">Transferencia bancaria</label>
+</div>
+<div class="form-group-radio">
+<input id="metalico" name="pago" type="radio" value="metalico"/>
+<label for="metalico">Metálico</label>
+</div>
+</div>
+<div class="form-group">
+<label for="direccion">Dirección</label>
+<input id="direccion" name="direccion" type="text"/>
+</div>
+<div class="form-group">
+<label for="pais">País</label>
+<input id="pais" name="pais" type="text"/>
+</div>
+<button class="button" type="submit">Aceptar</button>
+</form>
+</div>
+<p style="text-align: center;">Add Element</p>
+</body>
+</html>

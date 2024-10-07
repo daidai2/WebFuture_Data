@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>低保真线框图网页</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .product-page, .footer {
+            padding: 20px 0;
+        }
+        .header img, .content img, .product-page img, .footer img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .content .column {
+            width: 48%;
+        }
+        .product-page {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-page .details {
+            width: 48%;
+            display: flex;
+            align-items: center;
+        }
+        .product-page .details input[type="radio"] {
+            margin-right: 10px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .left, .footer .right {
+            width: 48%;
+        }
+        button:first-of-type {
+            background-color: #C6A7B1;
+        }
+        button:first-of-type:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<!-- Header -->
+<div class="header">
+<img alt="Header Image" src="header-image.jpg"/>
+<h1>大标题</h1>
+</div>
+<!-- Content -->
+<div class="content">
+<div class="column">
+<img alt="Image 1" src="image1.jpg"/>
+<p>一些描述文本</p>
+</div>
+<div class="column">
+<img alt="Image 2" src="image2.jpg"/>
+<p>一些描述文本</p>
+<input type="checkbox"/> 选项
+                <button>按钮</button>
+</div>
+</div>
+<!-- Product Page -->
+<div class="product-page">
+<div class="image">
+<img alt="Product Image" src="product-image.jpg"/>
+</div>
+<div class="details">
+<h2 id="6_2_2_1_1">产品名称</h2>
+<p id="6_2_1_1_1" style="margin-left: 20px;">价格：$100</p>
+<p>制造商</p>
+<p>颜色：</p>
+<input name="color" type="radio" value="red"/> 红色
+                <input name="color" type="radio" value="blue"/> 蓝色
+                <input name="color" type="radio" value="white"/> 白色
+                <p>旧价格：$200</p>
+<button>添加到购物车</button>
+<div class="related-products">
+<img alt="Related Product 1" src="related1.jpg"/>
+<img alt="Related Product 2" src="related2.jpg"/>
+<img alt="Related Product 3" src="related3.jpg"/>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="footer">
+<div class="left">
+<img alt="Footer Image" src="footer-image.jpg"/>
+</div>
+<div class="right">
+<p>一些标签文本</p>
+<input type="checkbox"/> 复选框
+                <input type="checkbox"/> 复选框
+                <p>单选按钮</p>
+<input name="footer-radio" type="radio" value="option1"/> 选项1
+                <input name="footer-radio" type="radio" value="option2"/> 选项2
+                <button>按钮</button>
+</div>
+</div>
+</div>
+</body>
+</html>

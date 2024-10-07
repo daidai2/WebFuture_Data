@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Main Container -->
+  <div class="container mx-auto p-6">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center py-4">
+      <div>
+        <h1 class="text-2xl font-bold">Title</h1>
+        <p class="text-gray-600" style="font-size: 50px;">Title Page</p>
+      </div>
+      <button class="bg-blue-500 text-white p-2 rounded">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-4.552-2.891A1 1 0 009 9.1V14a1 1 0 001.448.894l4.552-2.891a1 1 0 000-1.788z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14.109V14a9.003 9.003 0 01-7.357-7.902A9 9 0 1112 14.109z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Content Cards Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="mt-4 text-xl font-semibold">Title Card 1</h2>
+        <p class="text-gray-600 mt-2">Some descriptive text</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="https://placehold.co/200x150" alt="Placeholder Image" class="w-full h-32 object-cover">
+        <h2 class="mt-4 text-xl font-semibold">Title Card 2</h2>
+        <p class="text-gray-600 mt-2">Some descriptive text</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="https://placehold.co/200x150" alt="Placeholder Image" class="w-full h-32 object-cover">
+        <h2 class="mt-4 text-xl font-semibold">Title Card 3</h2>
+        <p class="text-gray-600 mt-2">Some descriptive text</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="https://placehold.co/200x150" alt="Placeholder Image" class="w-full h-32 object-cover">
+        <h2 class="mt-4 text-xl font-semibold">Title Card 4</h2>
+        <p class="text-gray-600 mt-2">Some descriptive text</p>
+      </div>
+    </section>
+
+    <!-- Large Image Section -->
+    <div class="my-6">
+      <img src="https://placehold.co/600x200" alt="Large Placeholder Image" class="w-full h-48 object-cover">
+    </div>
+
+    <!-- Text Content Section -->
+    <section class="my-6 bg-white p-6 rounded shadow">
+      <p class="text-gray-800 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, vero nobis. Nobis, deleniti? Tempore dolore, ut accusantium temporibus vitae voluptas.</p>
+      <p class="text-gray-800 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, vero nobis. Nobis, deleniti? Tempore dolore, ut accusantium temporibus vitae voluptas.</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="my-6">
+      <div class="bg-white p-6 rounded shadow">
+        <div class="mb-4">
+          <label for="input1" class="block text-gray-700">Label</label>
+          <input type="text" id="input1" class="mt-1 p-2 border border-gray-300 rounded w-full">
+        </div>
+        <div class="mb-4">
+          <label for="input2" class="block text-gray-700">Label</label>
+          <input type="text" id="input2" class="mt-1 p-2 border border-gray-300 rounded w-full">
+        </div>
+        <button class="bg-blue-500 text-white p-2 rounded">Button</button>
+      </div>
+    </section>
+
+    <!-- Selection Mechanism Section -->
+    <section class="my-6">
+      <div class="bg-white p-6 rounded shadow">
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="radio" name="radio" class="mr-2"> Radio 1
+          </label>
+          <label class="block text-gray-700">
+            <input type="radio" name="radio" class="mr-2"> Radio 2
+          </label>
+          <label class="block text-gray-700">
+            <input type="radio" name="radio" class="mr-2"> Radio 3
+          </label>
+          <label class="block text-gray-700">
+            <input type="radio" name="radio" class="mr-2"> Radio 4
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            <input type="checkbox" class="mr-2"> Checkbox 1
+          </label>
+          <label class="block text-gray-700">
+            <input type="checkbox" class="mr-2"> Checkbox 2
+          </label>
+          <label class="block text-gray-700">
+            <input type="checkbox" class="mr-2"> Checkbox 3
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="my-6">
+      <div>
+        <img src="https://placehold.co/1368x250" alt="Footer Image" class="w-full h-64 object-cover">
+      </div>
+      <div class="mt-6 bg-white p-6 rounded shadow grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <p class="text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, vero nobis.</p>
+        </div>
+        <div>
+          <p class="text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, vero nobis.</p>
+        </div>
+        <div>
+          <p class="text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, vero nobis.</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="bg-blue-500 text-white p-2 rounded">Button</h2>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

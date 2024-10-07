@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"], select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .shipping-service {
+            margin-top: 20px;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .rate-product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .stars {
+            display: flex;
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            font-size: 2em;
+            color: lightgray;
+            cursor: pointer;
+        }
+        .stars input:checked ~ label {
+            color: gold;
+        }
+        .stars label:hover, .stars label:hover ~ label {
+            color: gold;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            align-self: flex-end; /* Move to bottom */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h2>Checkout</h2>
+<form onsubmit="showAlert()">
+<h3>Shipping Address</h3>
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" type="text"/>
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+<label for="company">Company</label>
+<input id="company" name="company" type="text"/>
+<div class="shipping-service">
+<h3>Shipping Service</h3>
+<input id="standard" name="shipping" type="radio" value="standard"/>
+<label for="standard">Standard - 14 days - $6.59</label><br/>
+<input id="expedited" name="shipping" type="radio" value="expedited"/>
+<label for="expedited">Expedited - 7 days - $1.97</label><br/>
+<input id="express" name="shipping" type="radio" value="express"/>
+<label for="express">Express - 3 days - $19.97</label>
+</div>
+<div class="rate-product">
+<h3>Rate Product</h3>
+<div class="stars">
+<input id="star1" name="rating" type="radio" value="1"/>
+<label for="star1">★</label>
+<input id="star2" name="rating" type="radio" value="2"/>
+<label for="star2">★</label>
+<input id="star3" name="rating" type="radio" value="3"/>
+<label for="star3">★</label>
+<input id="star4" name="rating" type="radio" value="4"/>
+<label for="star4">★</label>
+<input id="star5" name="rating" type="radio" value="5"/>
+<label for="star5">★</label>
+</div>
+<label for="headline">Headline</label>
+<input id="headline" name="headline" type="text"/>
+<label for="review">Review</label>
+<input id="review" name="review" type="text"/>
+</div>
+<button class="submit-btn" id="6_1" type="submit">Submit</button>
+</form>
+</div>
+<div class="container">
+<h2>Formulario de Envío</h2>
+<form>
+<h3>Forma de Envío</h3>
+<label for="medio-transporte">Medio Transporte</label><br/>
+<input id="terrestre" name="medio-transporte" type="radio" value="terrestre"/>
+<label for="terrestre">Terrestre</label><br/>
+<input id="aereo" name="medio-transporte" type="radio" value="aereo"/>
+<label for="aereo">Aéreo</label><br/>
+<input id="maritimo" name="medio-transporte" type="radio" value="maritimo"/>
+<label for="maritimo">Marítimo</label><br/>
+<h3>Forma de Pago</h3>
+<input id="tarjeta" name="forma-pago" type="radio" value="tarjeta"/>
+<label for="tarjeta">Tarjeta (Crédito/débito)</label><br/>
+<input id="transferencia" name="forma-pago" type="radio" value="transferencia"/>
+<label for="transferencia">Transferencia bancaria</label><br/>
+<input id="metalico" name="forma-pago" type="radio" value="metalico"/>
+<label for="metalico">Metálico</label><br/>
+<label for="direccion">Dirección</label>
+<input id="direccion" name="direccion" type="text"/>
+<label for="pais">País</label>
+<select id="pais" name="pais">
+<option value="pais1">País 1</option>
+<option value="pais2">País 2</option>
+<option value="pais3">País 3</option>
+</select>
+<button class="submit-btn" type="submit">Aceptar</button>
+</form>
+</div>
+<script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 300px;
+            height: 300px;
+        }
+        .details {
+            width: 60%;
+        }
+        .details h1 {
+            font-size: 24px;
+        }
+        .details label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .price {
+            margin-top: 20px;
+        }
+        .price span {
+            margin-right: 20px;
+        }
+        .add-to-cart {
+            margin-top: 20px;
+        }
+        .add-to-cart button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .shipping-form {
+            width: 80%;
+            margin-top: 40px;
+        }
+        .shipping-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .shipping-form input, .shipping-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        .shipping-form button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .bottom-element {
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<!-- Product Page -->
+<div class="product">
+<!-- 删除了第一张图片 -->
+<div class="details">
+<h1>Product Name</h1>
+<p>Manufacturer</p>
+<label>Color:</label>
+<input name="color" type="radio" value="red"/> Red
+                <input name="color" type="radio" value="blue"/> Blue
+                <input name="color" type="radio" value="white"/> White
+                <div class="price">
+<span>Price: $100</span>
+<span>Old Price: $200</span>
+</div>
+</div>
+</div>
+<!-- Shipping and Payment Form -->
+<div class="shipping-form">
+<h2>Forma de envío</h2>
+<label>Medio transporte:</label>
+<input name="transport" type="radio" value="terrestre"/> Terrestre
+            <input name="transport" type="radio" value="aereo"/> Aereo
+            <input name="transport" type="radio" value="maritimo"/> Marítimo
+            <label>Forma de pago:</label>
+<input name="payment" type="radio" value="tarjeta"/> Tarjeta (Crédito/débito)
+            <input name="payment" type="radio" value="transferencia"/> Transferencia bancaria
+            <input name="payment" type="radio" value="metalico"/> Metálico
+            <label>Dirección:</label>
+<input name="address" type="text"/>
+<label>País:</label>
+<select name="country">
+<option value="country1">País 1</option>
+<option value="country2">País 2</option>
+<option value="country3">País 3</option>
+</select>
+<button>Aceptar</button>
+</div>
+<!-- Add to Cart 按钮移动到此处 -->
+<div class="add-to-cart">
+<button id="6_1">Add to Cart</button>
+</div>
+<!-- 添加文本 "Add Element" -->
+<div class="bottom-element">
+            Add Element
+        </div>
+</div>
+</body>
+</html>

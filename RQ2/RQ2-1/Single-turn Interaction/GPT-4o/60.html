@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #text1 p:first-child {
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-4">
+  <!-- Hyperlink at the Top -->
+  <a href="#" class="text-blue-500 underline">Add Element</a>
+
+  <!-- Top Section -->
+  <section id="section-top" class="flex flex-wrap bg-white p-4 rounded shadow mb-4">
+    <div id="placeholder1" class="w-full md:w-1/2 h-48 bg-gray-300 mb-4 md:mb-0">
+      <!-- Image removed as per instruction -->
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col md:pl-4">
+      <div id="text1" class="mb-4">
+        <p class="mb-2">Line 1 of text</p>
+        <p class="mb-2">Line 2 of text</p>
+        <p class="mb-2">Line 3 of text</p>
+      </div>
+      <button id="back-button" class="mb-4 py-2 px-4 bg-blue-500 text-white rounded">Back</button>
+      <div>
+        <input type="checkbox" id="checkbox1" class="mr-2">
+        <label for="checkbox1">Checkbox</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Middle Section -->
+  <section id="section-middle" class="flex flex-wrap bg-white p-4 rounded shadow mb-4">
+    <div id="product-image" class="w-full md:w-1/2 h-64 bg-gray-300 mb-4 md:mb-0">
+      <img src="https://placehold.co/600x600" alt="Main Product Image" class="w-full h-full object-cover">
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col md:pl-4">
+      <div id="product-details" class="mb-4">
+        <span id="product-name" class="block text-xl font-bold mb-2">Product Name</span>
+        <span id="manufacturer" class="block text-gray-600 mb-2">Manufacturer</span>
+        <span id="color-options" class="block text-gray-600 mb-4">
+          <label class="mr-2">Color:</label>
+          <label class="mr-2"><input type="radio" name="color" value="red" class="mr-1"> Red</label>
+          <label class="mr-2"><input type="radio" name="color" value="blue" class="mr-1"> Blue</label>
+          <label class="mr-2"><input type="radio" name="color" value="white" class="mr-1"> White</label>
+        </span>
+        <span id="price" class="block text-xl font-bold mb-2">$100</span>
+        <span id="old-price" class="block text-gray-600 line-through mb-4">$200</span>
+        <button id="add-to-cart-button" class="py-2 px-4 bg-green-500 text-white rounded">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Thumbnail Images -->
+    <div id="thumbnail-images" class="w-full flex justify-between mt-4">
+      <div class="w-1/5 h-20 bg-gray-300">
+        <img src="https://placehold.co/120x120" alt="Thumbnail Image 1" class="w-full h-full object-cover">
+      </div>
+      <div class="w-1/5 h-20 bg-gray-300">
+        <img src="https://placehold.co/120x120" alt="Thumbnail Image 2" class="w-full h-full object-cover">
+      </div>
+      <div class="w-1/5 h-20 bg-gray-300">
+        <img src="https://placehold.co/120x120" alt="Thumbnail Image 3" class="w-full h-full object-cover">
+      </div>
+      <div class="w-1/5 h-20 bg-gray-300">
+        <img src="https://placehold.co/120x120" alt="Thumbnail Image 4" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Section -->
+  <section id="section-bottom" class="flex flex-col bg-white p-4 rounded shadow">
+    <div id="shipping-method" class="mb-4">
+      <fieldset>
+        <legend class="text-lg font-semibold mb-2">Forma de Envío</legend>
+        <label class="mr-4"><input type="radio" name="shipping" value="train" class="mr-1"> Terrestre</label>
+        <label class="mr-4"><input type="radio" name="shipping" value="plane" class="mr-1"> Aereo</label>
+        <label class="mr-4"><input type="radio" name="shipping" value="ship" class="mr-1"> Maritimo</label>
+      </fieldset>
+    </div>
+    <div id="payment-method" class="mb-4">
+      <fieldset>
+        <legend class="text-lg font-semibold mb-2">Forma de Pago</legend>
+        <label class="mr-4"><input type="radio" name="payment" value="card" class="mr-1"> Tarjeta (Crédito/Débito)</label>
+        <label class="mr-4"><input type="radio" name="payment" value="bank" class="mr-1"> Transferencia Bancaria</label>
+        <label class="mr-4"><input type="radio" name="payment" value="cash" class="mr-1"> Efectivo</label>
+      </fieldset>
+    </div>
+    <div class="mb-4">
+      <input type="text" id="address" placeholder="Dirección" class="w-full p-2 border border-gray-300 rounded">
+    </div>
+    <div class="mb-4 flex items-center">
+      <input type="text" id="country" placeholder="País" class="w-full p-2 border border-gray-300 rounded mr-2">
+      <input type="checkbox" id="countryCheckbox" class="mr-2">
+      <label for="countryCheckbox">Checkbox</label>
+    </div>
+    <div>
+      <button id="accept-button" class="w-full py-2 px-4 bg-blue-500 text-white rounded">Aceptar</button>
+    </div>
+  </section>
+</body>
+</html>

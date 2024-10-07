@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品评论</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .product-review {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .product-info, .rating, .review-form {
+            margin-bottom: 20px;
+        }
+        .rating span {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .rating span.selected {
+            color: gold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>撰写评论</h1>
+        <div class="product-review">
+            <div class="product-info">
+                <img src="placeholder.png" alt="Product Image" style="width: 100px; float: left; margin-right: 20px;">
+                <h2>产品名称</h2>
+                <p>$价格</p>
+                <p>45 reviews</p>
+            </div>
+            <div class="rating">
+                <p>评价产品:</p>
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <p>Bad :(</p>
+            </div>
+            <div class="review-form">
+                <label for="review">评论</label>
+                <textarea id="review" name="review" rows="4"></textarea>
+                <button type="submit" onclick="showAlert()">提交</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .main-content, .footer, .form-section, .post-section, .media-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .post img {
+            width: 30%;
+            height: auto;
+        }
+        .post-content {
+            width: 65%;
+        }
+        .media-section iframe {
+            width: 100%;
+            height: 400px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section label {
+            margin-bottom: 5px;
+        }
+        .form-section input, .form-section button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .footer ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Title</h1>
+<p>Title Page</p>
+</div>
+<a href="#">Add Element</a>
+<div class="main-content">
+<div class="media-section">
+<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+</div>
+<div class="post-section">
+<div class="post">
+<img alt="Post Image 1" src="path/to/image1.jpg"/>
+<div class="post-content">
+<h2>Title</h2>
+<p>Title Post</p>
+</div>
+</div>
+<div class="post">
+<img alt="Post Image 2" src="path/to/image2.jpg"/>
+<div class="post-content">
+<h2>Title</h2>
+<p>Title Post</p>
+</div>
+</div>
+<div class="post">
+<img alt="Post Image 3" src="path/to/image3.jpg"/>
+<div class="post-content">
+<h2>Title</h2>
+<p>Title Post</p>
+</div>
+</div>
+</div>
+</div>
+<div class="form-section">
+<form action="#" method="POST">
+<label for="label2">Label</label>
+<input id="label2" name="label2" type="text"/>
+</form>
+</div>
+<div class="footer">
+<ul>
+<li><input id="radio1" name="radio" type="radio"/><label for="radio1">Radio 1</label></li>
+<li><input id="radio2" name="radio" type="radio"/><label for="radio2">Radio 2</label></li>
+<li><input id="radio3" name="radio" type="radio"/><label for="radio3">Radio 3</label></li>
+<li><input id="radio4" name="radio" type="radio"/><label for="radio4">Radio 4</label></li>
+</ul>
+<div>
+<input id="checkbox1" name="checkbox1" type="checkbox"/><label for="checkbox1">Checkbox 1</label>
+<input id="checkbox2" name="checkbox2" type="checkbox"/><label for="checkbox2">Checkbox 2</label>
+<input id="checkbox3" name="checkbox3" type="checkbox"/><label for="checkbox3">Checkbox 3</label>
+<input id="checkbox4" name="checkbox4" type="checkbox"/><label for="checkbox4">Checkbox 4</label>
+</div>
+<button id="6_1" type="submit">Button</button>
+</div>
+</div>
+</body>
+</html>

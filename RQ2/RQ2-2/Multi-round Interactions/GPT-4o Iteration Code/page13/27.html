@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM+u0A3w7P8/6/krnqZyJ0Bpb8ZbNTU5MYGqM9G" crossorigin="anonymous">
+  <style>
+    .text-shadow {
+      box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+    }
+
+    .text-rounded {
+      background-color: #4B4B4B; /* Dark gray background for text */
+      border-radius: 12px;
+      padding: 10px;
+      color: white;
+    }
+
+    .img-rounded {
+      border: 2px solid #D3D3D3;
+      border-radius: 12px;
+    }
+
+    .icon-placeholder {
+      background-color: #D3D3D3; /* Light gray for placeholder icons */
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 8px; /* Spacing between icon and text */
+    }
+  </style>
+</head>
+
+<body class="bg-white p-6"> <!-- Page background remains white -->
+  <!-- Header Section -->
+  <header class="bg-white p-6 flex flex-col items-center text-center">
+    <div class="flex space-x-8 mb-4">
+      <!-- Links color changed to gray with icons -->
+      <div class="flex items-center">
+        <div class="icon-placeholder"><i class="fas fa-home"></i></div>
+        <a href="#" class="text-gray-600">Introduction</a>
+      </div>
+      <div class="flex items-center">
+        <div class="icon-placeholder"><i class="fas fa-chart-bar"></i></div>
+        <a href="#" class="text-gray-600">Dropdown</a>
+      </div>
+      <div class="flex items-center">
+        <div class="icon-placeholder"><i class="fas fa-cog"></i></div>
+        <a href="#" class="text-gray-600">Left Sidebar</a>
+      </div>
+      <div class="flex items-center">
+        <div class="icon-placeholder"><i class="fas fa-retweet"></i></div>
+        <a href="#" class="text-gray-600">Right Sidebar</a>
+      </div>
+      <div class="flex items-center">
+        <div class="icon-placeholder"><i class="fas fa-sitemap"></i></div>
+        <a href="#" class="text-gray-600">No Sidebar</a>
+      </div>
+    </div>
+    <h1 class="text-4xl font-bold mb-2 text-orange-500" style="text-shadow: 2px 2px 5px gray;">Strongly Typed</h1> <!-- Changed Title1 text -->
+    <p class="text-lg text-gray-400">A responsive HTML5 site template. Manufactured by HTML5 UP.</p> <!-- Changed Text1 -->
+  </header>
+
+  <!-- Gray divider with slightly increased length -->
+  <div class="bg-white py-4 flex justify-center">
+    <div class="w-2/3"> <!-- Length increased -->
+      <div class="border-t-2 border-gray-300"></div>
+      <div class="border-t-2 border-gray-300 mt-2"></div>
+    </div>
+  </div>
+
+  <!-- Main Content Section -->
+  <section class="bg-white p-6 mb-6">
+    <h2 class="text-3xl font-bold mb-4 text-center text-gray-800">Gentlemen, behold! This is Strongly Typed!</h2> <!-- Changed Title2 text -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 text-center">
+        <img src="pic01.jpg" alt="IMG1" class="mx-auto mb-2"> <!-- Changed to pic01.jpg -->
+        <h3 class="text-xl font-semibold mb-2 text-gray-600">OKAY, SO WHAT IS THIS?</h3> <!-- Changed Title2-1 text -->
+        <p class="text-gray-500">This is Strongly Typed, a free, fully responsive site template by HTML5 UP. Free for personal and commercial use under the CCA 3.0 license.</p> <!-- Changed Text2-1 -->
+      </div>
+      <div class="p-4 text-center">
+        <img src="pic02.jpg" alt="IMG2" class="mx-auto mb-2"> <!-- Changed to pic02.jpg -->
+        <h3 class="text-xl font-semibold mb-2 text-gray-600">NICE! WHAT IS HTML5 UP?</h3> <!-- Changed Title2-2 text -->
+        <p class="text-gray-500">HTML5 UP is a side project of AJ’s (= me). I started it as a way to both test my responsive tools and sharpen up my coding and design skills a bit.</p> <!-- Changed Text2-2 -->
+      </div>
+      <div class="p-4 text-center">
+        <img src="pic03.jpg" alt="IMG3" class="mx-auto mb-2"> <!-- Changed to pic03.jpg -->
+        <h3 class="text-xl font-semibold mb-2 text-gray-600">WHAT'S THIS BUILT WITH?</h3> <!-- Changed Title2-3 text -->
+        <p class="text-gray-500">Responsive Tools is a simple set of tools for building responsive sites and apps. All of my templates at HTML5 UP are built using these tools.</p> <!-- Changed Text2-3 -->
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button class="bg-[#ED7769] text-white px-8 py-3 rounded">TELL ME MORE</button> <!-- Changed Button text -->
+    </div>
+  </section>
+
+  <!-- Section 2: Title3 area with banner.jpg as background -->
+  <section class="bg-cover bg-center p-6 mb-6 text-center" style="background-image: url('banner.jpg'); width: 100%; height: 300px; background-position: center;"> <!-- Ensure the background does not overlap Title2 -->
+    <h2 class="text-3xl font-bold mb-4 text-white" style="position: relative; top: 50%; transform: translateY(-50%);">Title3</h2> <!-- Title centered vertically and horizontally -->
+  </section>
+
+  <!-- Section 3 -->
+  <main class="container mx-auto mt-6 grid grid-cols-3 gap-4">
+    <!-- Left Section: Title4-1 and Title4-2 -->
+    <div class="space-y-6 col-span-2">
+      <!-- Title4-1 Subsection -->
+      <div class="bg-white p-4">
+        <h3 class="text-2xl font-semibold text-gray-800">Title4-1</h3> <!-- Changed Title4-1 color to dark gray -->
+        <img src="pic04.jpg" alt="IMG4-1" class="w-full my-2"> <!-- Changed to pic04.jpg -->
+        <h4 class="text-xl font-semibold text-gray-800">Title4-1-1</h4> <!-- Changed Title4-1-1 color to dark gray -->
+        <p class="text-gray-400">Text4-1</p> <!-- Changed Text4-1 color to light gray -->
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-1</button>
+      </div>
+      
+      <!-- Gray double-line divider between Title4-1 and Title4-2 -->
+      <div class="bg-white py-4 flex justify-center">
+        <div class="w-2/3">
+          <div class="border-t-2 border-gray-300"></div>
+          <div class="border-t-2 border-gray-300 mt-2"></div>
+        </div>
+      </div>
+
+      <!-- Title4-2 Subsection -->
+      <div class="bg-white p-4">
+        <h3 class="text-2xl font-semibold text-gray-800">Title4-2</h3> <!-- Changed Title4-2 color to dark gray -->
+        <img src="pic05.jpg" alt="IMG4-2" class="w-full my-2"> <!-- Changed to pic05.jpg -->
+        <h4 class="text-xl font-semibold text-gray-800">Title4-2-1</h4> <!-- Changed Title4-2-1 color to dark gray -->
+        <p class="text-gray-400">Text4-2</p> <!-- Changed Text4-2 color to light gray -->
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-2</button>
+      </div>
+    </div>
+
+    <!-- Right Section: InfoBox1-InfoBox5, one-column layout -->
+    <div class="space-y-6">
+      <!-- InfoBox1 -->
+      <div class="bg-white p-4" style="height: 180px;">
+        <div class="text-rounded"> <!-- Added dark gray background only for text -->
+          <h4 class="text-xl font-semibold text-white">InfoBox1</h4> <!-- Changed InfoBox1 color to white -->
+          <h5 class="text-lg font-semibold text-white">Title4-3</h5> <!-- Changed Title4-3 color to white -->
+          <p class="text-white">Text4-3</p> <!-- Changed Text4-3 color to white -->
+        </div>
+      </div>
+
+      <!-- Gray single-line divider between InfoBox1 and InfoBox2 -->
+      <div class="border-t border-gray-300"></div>
+
+      <!-- InfoBox2 -->
+      <div class="bg-white p-4" style="height: 180px;">
+        <div class="text-rounded"> <!-- Added dark gray background only for text -->
+          <h4 class="text-xl font-semibold text-white">InfoBox2</h4> <!-- Changed InfoBox2 color to white -->
+          <h5 class="text-lg font-semibold text-white">Title4-4</h5> <!-- Changed Title4-4 color to white -->
+          <p class="text-white">Text4-4</p> <!-- Changed Text4-4 color to white -->
+        </div>
+      </div>
+
+      <!-- Gray single-line divider between InfoBox2 and InfoBox3 -->
+      <div class="border-t border-gray-300"></div>
+
+      <!-- InfoBox3 -->
+      <div class="bg-white p-4" style="height: 180px;">
+        <div class="text-rounded"> <!-- Added dark gray background only for text -->
+          <h4 class="text-xl font-semibold text-white">InfoBox3</h4> <!-- Changed InfoBox3 color to white -->
+          <h5 class="text-lg font-semibold text-white">Title4-5</h5> <!-- Changed Title4-5 color to white -->
+          <p class="text-white">Text4-5</p> <!-- Changed Text4-5 color to white -->
+        </div>
+      </div>
+
+      <!-- Gray double-line divider between InfoBox3 and InfoBox4 -->
+      <div class="bg-white py-4 flex justify-center">
+        <div class="w-2/3">
+          <div class="border-t-2 border-gray-300"></div>
+          <div class="border-t-2 border-gray-300 mt-2"></div>
+        </div>
+      </div>
+
+      <!-- InfoBox4 -->
+      <div class="bg-white p-4" style="height: 180px;">
+        <h4 class="text-xl font-semibold text-gray-800">InfoBox4</h4> <!-- Changed InfoBox4 color to dark gray -->
+        <div class="flex justify-start items-center mt-2">
+          <img src="pic06.jpg" alt="Small IMG4" class="w-24 h-24 mr-4 img-rounded"> <!-- Enlarged image to double size and added rounded border -->
+          <p>Text for InfoBox4</p>
+        </div>
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-4">Button4-2</button>
+      </div>
+
+      <!-- Gray single-line divider between InfoBox4 and InfoBox5 -->
+      <div class="border-t border-gray-300"></div>
+
+      <!-- InfoBox5 -->
+      <div class="bg-white p-4" style="height: 180px;">
+        <h4 class="text-xl font-semibold text-gray-800">InfoBox5</h4> <!-- Changed InfoBox5 color to dark gray -->
+        <div class="flex justify-start items-center mt-2">
+          <img src="pic07.jpg" alt="Small IMG5" class="w-24 h-24 mr-4 img-rounded"> <!-- Enlarged image to double size and added rounded border -->
+          <p>Text for InfoBox5</p>
+        </div>
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-4">Button4-4</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- New Section: Text5-1 -->
+  <div class="text-center my-6">
+    <p class="text-lg text-gray-700">Text5-1</p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-200 p-6">
+    <!-- Centered Title5 -->
+    <h4 class="text-xl font-bold mb-4 text-center text-gray-800">Title5</h4> <!-- Changed Title5 color to dark gray -->
+
+    <div class="flex justify-between items-start"> <!-- Changed items-center to items-start -->
+      <!-- Left side: Input fields and Button, aligned with icon height -->
+      <div class="flex flex-col space-y-4 w-1/2 pr-4"> <!-- Added padding-right for spacing -->
+        <div class="flex space-x-4">
+          <input type="text" class="border p-2 rounded w-1/2" placeholder="Input1">
+          <input type="text" class="border p-2 rounded w-1/2" placeholder="Input2">
+        </div>
+        <textarea class="border p-2 rounded w-full" placeholder="Textarea for comments or messages"></textarea>
+        <div class="text-left flex-grow">
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded">Button</button>
+        </div>
+      </div>
+
+      <!-- Right side: Icons with links -->
+      <div class="grid grid-cols-2 gap-4 items-start w-1/2"> <!-- Changed items-end to items-start -->
+        <!-- First Column: Three logos with Icon texts -->
+        <div class="flex flex-col space-y-2">
+          <div class="flex items-center space-x-2">
+            <a href="#" class="text-blue-500">logo1</a>
+            <a href="#" class="bg-gray-200 p-3 rounded-full">Icon1</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="#" class="text-blue-500">logo2</a>
+            <a href="#" class="bg-gray-200 p-3 rounded-full">Icon2</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="#" class="text-blue-500">logo3</a>
+            <a href="#" class="bg-gray-200 p-3 rounded-full">Icon3</a>
+          </div>
+        </div>
+
+        <!-- Second Column: Four logos with Icon texts -->
+        <div class="flex flex-col space-y-2">
+          <div class="flex items-center space-x-2">
+            <a href="#" class="text-blue-500">logo4</a>
+            <a href="#" class="bg-gray-200 p-3 rounded-full">Icon4</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="#" class="text-blue-500">logo5</a>
+            <a href="#" class="bg-gray-200 p-3 rounded-full">Icon5</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="#" class="text-blue-500">logo6</a>
+            <a href="#" class="bg-gray-200 p-3 rounded-full">Icon6</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="#" class="text-blue-500">logo7</a>
+            <a href="#" class="bg-gray-200 p-3 rounded-full">Icon7</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gray line between content and bottom links -->
+    <div class="border-t border-gray-300 my-4"></div>
+
+    <!-- Bottom Links -->
+    <div class="mt-4 text-center">
+      <a href="#" class="text-blue-500">Link1</a>
+      <span class="mx-2">|</span>
+      <a href="#" class="text-blue-500">Link2</a>
+    </div>
+  </footer>
+</body>
+
+</html>

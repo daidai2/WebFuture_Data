@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe to HTML</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        .button:first-of-type {
+            background-color: #C6A7B1;
+        }
+        .button:first-of-type:hover {
+            background-color: #FFDEE9;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col {
+            flex: 50%;
+            padding: 10px;
+        }
+        .bottom-section {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="section">
+<h2>Select your payment method</h2>
+<label>
+<input checked="" name="payment_method" type="radio" value="credit_card"/> Credit Card
+        </label>
+<label>
+<input name="payment_method" type="radio" value="paypal"/> Paypal
+        </label>
+<label>
+<input name="payment_method" type="radio" value="bank_transfer"/> Bank Transfer
+        </label>
+</div>
+<div class="section">
+<h2>Enter your data</h2>
+<label for="card_number">Card Number</label>
+<input id="card_number" name="card_number" type="text"/>
+<label for="expiration_date">Expiration Date</label>
+<div class="row">
+<div class="col">
+<select id="exp_month" name="exp_month">
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<!-- Add other months -->
+</select>
+</div>
+<div class="col">
+<select id="exp_year" name="exp_year">
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<!-- Add other years -->
+</select>
+</div>
+</div>
+<label for="ccv">CCV</label>
+<input id="ccv" name="ccv" type="text"/>
+<button class="button">Complete</button>
+</div>
+<div class="section bottom-section">
+<h2>Sign Up / Login</h2>
+<label for="name">Name</label>
+<input id="name" name="name" type="text"/>
+<label for="last_name">Last Name</label>
+<input id="last_name" name="last_name" type="text"/>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="text"/>
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email"/>
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+<label for="confirm_password">Confirm Password</label>
+<input id="confirm_password" name="confirm_password" type="password"/>
+<label>
+<input name="terms" type="checkbox"/> I agree to Terms and Conditions
+        </label>
+<button class="button" id="6_1">Sign Up</button>
+</div>
+<div class="section">
+<label for="title">Title</label>
+<input id="title" name="title" type="text"/>
+<div class="row">
+<div class="col">
+<h3>Radio Buttons</h3>
+<label>
+<input checked="" name="relevance" type="radio" value="not_relevant"/> Not relevant
+                </label>
+<label>
+<input name="relevance" type="radio" value="low"/> Low
+                </label>
+<label>
+<input name="relevance" type="radio" value="medium"/> Medium
+                </label>
+<label>
+<input name="relevance" type="radio" value="high"/> High
+                </label>
+</div>
+<div class="col">
+<h3>Check Boxes</h3>
+<label>
+<input name="choices" type="checkbox" value="choice1"/> Choice 1
+                </label>
+<label>
+<input checked="" name="choices" type="checkbox" value="choice2"/> Choice 2
+                </label>
+<label>
+<input name="choices" type="checkbox" value="choice3"/> Choice 3
+                </label>
+<label>
+<input name="choices" type="checkbox" value="choice4"/> Choice 4
+                </label>
+<label>
+<input checked="" name="choices" type="checkbox" value="choice5"/> Choice 5
+                </label>
+<label>
+<input name="choices" type="checkbox" value="choice6"/> Choice 6
+                </label>
+<label>
+<input name="choices" type="checkbox" value="choice7"/> Choice 7
+                </label>
+<label>
+<input checked="" name="choices" type="checkbox" value="choice8"/> Choice 8
+                </label>
+</div>
+</div>
+<button class="button">OK</button>
+<button class="button" style="background-color: red;">Cancel</button>
+</div>
+</div>
+<script>
+    document.getElementById("sign-up-button").addEventListener("click", function() {
+        alert("Add Interaction");
+    });
+</script>
+</body>
+</html>

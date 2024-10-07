@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<!-- Header Section -->
+<header class="bg-white p-4 shadow-md">
+<h1 class="text-4xl font-bold mb-4">Select your payment method</h1> <!-- Font size changed to 50px -->
+<form class="space-y-4">
+<div class="flex items-center space-x-4">
+<div>
+<input id="paypal" name="paymentMethod" type="radio" value="paypal"/>
+<label for="paypal" id="6_2_2_1_1">Paypal</label>
+</div>
+<div>
+<input id="creditCard" name="paymentMethod" type="radio" value="creditCard"/>
+<label for="creditCard" id="6_2_1_1_1">Credit Card</label>
+</div>
+</div>
+<div>
+<input id="bankTransfer" name="paymentMethod" type="radio" value="bankTransfer"/>
+<label for="bankTransfer">Bank Transfer</label>
+</div>
+<div>
+<label class="block" for="cardNumber">Card Number</label>
+<input class="border p-2 w-full" id="cardNumber" type="text"/>
+</div>
+<div class="flex space-x-4">
+<div>
+<label class="block" for="expirationMonth">Expiration Date</label>
+<select class="border p-2" id="expirationMonth">
+<option>Month</option>
+<!-- Add more months here -->
+</select>
+</div>
+<div>
+<label class="block" for="expirationYear"> </label>
+<select class="border p-2" id="expirationYear">
+<option>Year</option>
+<!-- Add more years here -->
+</select>
+</div>
+<div>
+<label class="block" for="cvv">CVV</label>
+<input class="border p-2" id="cvv" type="text"/>
+</div>
+</div>
+<button class="bg-blue-500 text-white p-2 rounded" type="submit">Complete</button>
+</form>
+</header>
+<!-- Main Section -->
+<section class="p-4">
+<!-- Mobility Solutions & Daily Living Aids -->
+<article class="mb-8">
+<h2 class="text-xl font-bold">Mobility Solutions &amp; Daily Living Aids</h2>
+<h3 class="text-lg mb-2">Making Life Easier</h3>
+<!-- Deleted the first image -->
+<button class="bg-blue-500 text-white p-2 rounded">Find out More</button>
+</article>
+<!-- Wheelchair Repair -->
+<article class="mb-8">
+<h2 class="text-xl font-bold">Wheelchair Repair</h2>
+<img alt="Wheelchair Repair" class="mb-4" src="https://placehold.co/300x200"/>
+<button class="bg-blue-500 text-white p-2 rounded">Find out More</button>
+</article>
+<!-- Community Contracts -->
+<article class="mb-8">
+<h2 class="text-xl font-bold">Community Contracts</h2>
+<img alt="Community Contracts" class="mb-4" src="https://placehold.co/300x200"/>
+<button class="bg-blue-500 text-white p-2 rounded">Find out More</button>
+</article>
+</section>
+<!-- Footer Section / Product Catalog -->
+<footer class="bg-white p-4 shadow-md">
+<h2 class="text-xl font-bold mb-4">Product Catalog</h2>
+<div class="mb-4">
+<input class="border p-2 w-full md:w-auto" placeholder="Search" type="text"/>
+<button class="bg-blue-500 text-white p-2 rounded">Search</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Product 1 -->
+<div class="bg-gray-200 p-4 rounded">
+<img alt="Product 1" class="mx-auto mb-4" src="https://placehold.co/150x100"/>
+<h3 class="text-center mb-2">Product 1</h3>
+<p class="text-center mb-2">$30.00</p>
+<button class="bg-blue-500 text-white p-2 rounded w-full">Add to Cart</button>
+</div>
+<!-- Product 2 -->
+<div class="bg-gray-200 p-4 rounded">
+<img alt="Product 2" class="mx-auto mb-4" src="https://placehold.co/150x100"/>
+<h3 class="text-center mb-2">Product 2</h3>
+<p class="text-center mb-2">$10.00</p>
+<button class="bg-blue-500 text-white p-2 rounded w-full">Add to Cart</button>
+</div>
+<!-- Product 3 -->
+<div class="bg-gray-200 p-4 rounded">
+<img alt="Product 3" class="mx-auto mb-4" src="https://placehold.co/150x100"/>
+<h3 class="text-center mb-2">Product 3</h3>
+<p class="text-center mb-2">$40.00</p>
+<button class="bg-blue-500 text-white p-2 rounded w-full">Add to Cart</button>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mockup Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-container, .catalog-container, .filter-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"], .filter-container input[type="checkbox"] {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-container label {
+            display: flex;
+            align-items: center;
+        }
+        .catalog-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- Login Container -->
+<div class="login-container">
+<h2>Login</h2>
+<form action="#">
+<label for="username">Login</label>
+<input id="username" name="username" placeholder="Enter Username" type="text"/>
+<label for="password" id="6_2_1_1_1">Password</label>
+<input id="password" name="password" placeholder="Enter Password" type="password"/>
+<label id="6_2_2_1_1">
+<input id="remember" name="remember" type="checkbox"/> Remember me
+            </label>
+<a href="#">Forgot Password</a>
+<input type="submit" value="Login"/>
+</form>
+</div>
+<!-- Filter Container -->
+<div class="filter-container">
+<h2>Select Your Language</h2>
+<form action="#">
+<label>
+<input name="language" type="checkbox" value="C#"/> C#
+            </label>
+<label>
+<input name="language" type="checkbox" value="Java"/> Java
+            </label>
+<label>
+<input name="language" type="checkbox" value="PHP"/> PHP
+            </label>
+<label>
+<input name="language" type="checkbox" value="Visual Basic"/> Visual Basic
+            </label>
+</form>
+<button>Get Drop Down Here</button>
+</div>
+<!-- Product Catalog Container -->
+<div class="catalog-container">
+<h2>Product Catalog</h2>
+<div class="product">
+<h3>Product 1</h3>
+<p>$20.00</p>
+<button>Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 2" src="https://via.placeholder.com/150"/>
+<h3>Product 2</h3>
+<p>$10.00</p>
+<button>Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 3" src="https://via.placeholder.com/150"/>
+<h3>Product 3</h3>
+<p>$40.00</p>
+<h2>Add to Cart</h2>
+</div>
+</div>
+</body>
+</html>

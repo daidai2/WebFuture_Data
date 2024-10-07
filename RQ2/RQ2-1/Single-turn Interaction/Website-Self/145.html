@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .product-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        .thumbnail-images {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .thumbnail-images img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .product-description {
+            margin-top: 20px;
+        }
+        .mates {
+            display: flex;
+            flex-direction: column;
+        }
+        .mate {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+        .mate img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-top: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"],
+        .form-group button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="product.jpg" alt="Product Image" style="width:100%">
+            <div class="thumbnail-images">
+                <img src="thumb1.jpg" alt="Thumbnail 1">
+                <img src="thumb2.jpg" alt="Thumbnail 2">
+                <img src="thumb3.jpg" alt="Thumbnail 3">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1 style="font-size: 50px;">Product Name</h1>
+            <p>Manufacturer</p>
+            <div>
+                <p>Color:</p>
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+            </div>
+            <p>Price: $100 <span style="text-decoration: line-through;">$200</span></p>
+            <button>Add to Cart</button>
+            <div class="product-description">
+                <h2>Description</h2>
+                <p>Product description goes here...</p>
+            </div>
+            <div class="mates">
+                <div class="mate">
+                    <img src="mate1.jpg" alt="Mate One">
+                    <div>
+                        <h3>Mate One</h3>
+                        <p>Job Title</p>
+                    </div>
+                </div>
+                <div class="mate">
+                    <img src="mate2.jpg" alt="Mate Two">
+                    <div>
+                        <h3>Mate Two</h3>
+                        <p>Job Title</p>
+                    </div>
+                </div>
+                <div class="mate">
+                    <img src="mate3.jpg" alt="Mate Three">
+                    <div>
+                        <h3>Mate Three</h3>
+                        <p>Job Title</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Label:</label>
+                <input type="text">
+                <label>Label:</label>
+                <input type="text">
+                <label><input type="checkbox"> Checkbox</label>
+                <label><input type="checkbox"> Checkbox</label>
+                <label><input type="radio" name="option"> Radio button</label>
+                <label><input type="radio" name="option"> Radio button</label>
+                <h2>Button</h2>
+            </div>
+        </div>
+    </div>
+<p>Add Element</p>
+</body>
+</html>

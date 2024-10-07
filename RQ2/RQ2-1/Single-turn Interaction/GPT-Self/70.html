@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>表单页面</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .checkbox-group,
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group label,
+        .radio-group label {
+            margin-right: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons input {
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<a href="#">Add Element</a>
+<h1>登录页面</h1>
+<div class="form-group">
+<label for="login">Login</label>
+<input id="login" name="login" type="text"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div class="form-group">
+<label>
+<input name="remember_me" type="checkbox"/> Remember me
+            </label>
+</div>
+<div class="form-group">
+<a href="#">Forgot Password</a>
+</div>
+<div class="form-group">
+<input type="button" value="Login"/>
+</div>
+<h1>控件页面</h1>
+<div class="form-group">
+<label for="language">Language</label>
+<select id="language" name="language">
+<option value="csharp">C Sharp</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="vb">Visual Basic</option>
+</select>
+</div>
+<div class="form-group checkbox-group">
+<label><input name="language" type="checkbox" value="csharp"/> C#</label>
+<label><input name="language" type="checkbox" value="java"/> Java</label>
+<label><input name="language" type="checkbox" value="php"/> PHP</label>
+<label><input name="language" type="checkbox" value="vb"/> Visual Basic</label>
+</div>
+<div class="form-group">
+<label for="title">Title</label>
+<input id="title" name="title" type="text"/>
+</div>
+<div class="form-group radio-group">
+<label><input name="relevance" type="radio" value="not_relevant"/> Not relevant</label>
+<label><input name="relevance" type="radio" value="low"/> Low</label>
+<label><input name="relevance" type="radio" value="medium"/> Medium</label>
+<label><input name="relevance" type="radio" value="high"/> High</label>
+</div>
+<div class="form-group checkbox-group">
+<label id="6_2_1_1_1"><input name="choice" type="checkbox" value="choice1"/> Choice 1</label>
+<label id="6_2_2_1_1"><input name="choice" type="checkbox" value="choice2"/> Choice 2</label>
+<label><input name="choice" type="checkbox" value="choice3"/> Choice 3</label>
+<label><input name="choice" type="checkbox" value="choice4"/> Choice 4</label>
+<label><input name="choice" type="checkbox" value="choice5"/> Choice 5</label>
+<label><input name="choice" type="checkbox" value="choice6"/> Choice 6</label>
+<label><input name="choice" type="checkbox" value="choice7"/> Choice 7</label>
+<label><input name="choice" type="checkbox" value="choice8"/> Choice 8</label>
+</div>
+<div class="buttons">
+<h2>OK</h2>
+<h2>Cancel</h2>
+</div>
+</div>
+</body>
+</html>

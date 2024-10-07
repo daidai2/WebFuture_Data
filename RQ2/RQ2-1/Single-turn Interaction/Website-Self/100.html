@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .main, .footer, .form-section {
+            margin-bottom: 20px;
+        }
+        .header, .footer {
+            text-align: center;
+        }
+        .post, .video, .form-group {
+            margin-bottom: 20px;
+        }
+        .post img, .video img {
+            width: 100%;
+            height: auto;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group label {
+            flex-basis: 20%;
+        }
+        .form-group input {
+            flex-basis: 75%;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        function addElement() {
+            var newModule = document.createElement('div');
+            newModule.className = 'new-module';
+            newModule.innerHTML = '<p>Add Interaction</p>';
+            document.querySelector('.container').appendChild(newModule);
+        }
+
+        function goBackAndAddElement() {
+            addElement();
+            history.back();
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Add Element Link -->
+    <a href="javascript:void(0);" onclick="addElement()">Add Element</a>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Title</h1>
+        <p>Title Page</p>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main">
+        <!-- Video Section -->
+        <div class="video">
+            <img src="video-placeholder.jpg" alt="Video Placeholder">
+        </div>
+
+        <!-- Posts Section -->
+        <div class="posts">
+            <div class="post">
+                <h2>Title</h2>
+                <img src="post-placeholder.jpg" alt="Post Placeholder">
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <img src="post-placeholder.jpg" alt="Post Placeholder">
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <img src="post-placeholder.jpg" alt="Post Placeholder">
+                <p>Title Post</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+        <h2>Shipping Info</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+            </div>
+            <div class="form-actions">
+                <button type="button" onclick="goBackAndAddElement()">Back</button>
+                <button type="submit">Next Step</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

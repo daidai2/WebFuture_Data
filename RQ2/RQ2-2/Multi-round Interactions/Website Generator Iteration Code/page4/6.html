@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('overlay.png') repeat;
+      opacity: 0.5; /* Adjust the opacity as needed */
+    }
+    .black-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Black semi-transparent background */
+      z-index: 1;
+    }
+    .link-circle {
+      background-color: transparent;
+      border: 2px solid white;
+    }
+    .transparent-link {
+      background-color: transparent;
+      border: 2px solid white;
+      margin-right: -2px; /* Negative margin to prevent border doubling */
+    }
+    nav {
+      display: inline-flex;
+    }
+    .horizontal-line {
+      width: 50%;
+      border-top: 2px solid white;
+      margin: 20px 0;
+      position: relative;
+    }
+    .vertical-line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      background-color: white;
+      transform: translateX(-50%);
+    }
+    .vertical-line.up {
+      height: calc(50vh - 100px); /* Adjust as needed for correct alignment */
+    }
+    .vertical-line.down {
+      height: calc(50vh - 100px); /* Adjust as needed for correct alignment */
+    }
+  </style>
+</head>
+<body class="relative">
+
+  <div class="overlay"></div> <!-- Overlay layer -->
+  <div class="black-overlay"></div> <!-- Black semi-transparent background -->
+
+  <div id="main-container" class="min-h-screen flex flex-col items-center justify-between p-4 relative z-10">
+    <header class="w-full flex justify-center py-6 mt-6"> <!-- Adjusted to move Link1 down -->
+      <div class="w-24 h-24 rounded-full flex items-center justify-center link-circle">
+        <a href="#" class="text-lg font-medium text-white">Link1</a>
+      </div>
+    </header>
+
+    <div class="horizontal-line">
+      <div class="vertical-line up"></div>
+    </div> <!-- Horizontal line between Link1 and Title1 -->
+
+    <section id="main-content" class="text-center mx-auto my-6">
+      <h1 class="title1 text-4xl font-bold mb-4 text-white">Title1</h1>
+      <p class="text1 text-xl mb-6 text-white">Text1</p>
+    </section>
+
+    <div class="horizontal-line">
+      <div class="vertical-line down"></div>
+    </div> <!-- Horizontal line between Text1 and Link1-1 to Link1-4 -->
+
+    <nav class="w-full flex justify-center mt-6">
+      <a href="#" class="link2 px-4 py-2 rounded text-white transparent-link">Link1-1</a>
+      <a href="#" class="link3 px-4 py-2 rounded text-white transparent-link">Link1-2</a>
+      <a href="#" class="link4 px-4 py-2 rounded text-white transparent-link">Link1-3</a>
+      <a href="#" class="link5 px-4 py-2 rounded text-white transparent-link">Link1-4</a>
+    </nav>
+
+    <footer class="w-full text-center py-6">
+      <p class="text2 text-sm text-gray-300">Text1</p>
+    </footer>
+  </div>
+
+</body>
+</html>

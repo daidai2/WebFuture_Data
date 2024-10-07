@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100" id="body1">
+  <header class="bg-white p-4 shadow" id="body1-header1">
+    <h1 class="text-3xl font-bold" id="body1-header1-h11">Title Page</h1>
+  </header>
+  <section class="p-4" id="body1-section1">
+    <div class="bg-gray-200 aspect-w-16 aspect-h-9 mb-4" id="body1-section1-div1">
+
+    </div>
+  </section>
+
+  <section class="p-4 grid grid-cols-1 md:grid-cols-3 gap-4" id="body1-section2">
+    <article class="bg-white p-4 shadow-md" id="body1-section2-article1">
+      <h2 class="text-xl font-bold" id="body1-section2-article1-h21">Title</h2>
+      <img src="https://placehold.co/200x150" alt="Thumbnail" class="my-2" id="body1-section2-article1-img2">
+      <p id="body1-section2-article1-p1">Text</p>
+    </article>
+    <article class="bg-white p-4 shadow-md" id="body1-section2-article2">
+      <h2 class="text-xl font-bold" id="body1-section2-article2-h22">Title</h2>
+      <img src="https://placehold.co/200x150" alt="Thumbnail" class="my-2" id="body1-section2-article2-img3">
+      <p id="body1-section2-article2-p2">Text</p>
+    </article>
+    <article class="bg-white p-4 shadow-md" id="body1-section2-article3">
+      <h2 class="text-xl font-bold" id="body1-section2-article3-h23">Title</h2>
+      <img src="https://placehold.co/200x150" alt="Thumbnail" class="my-2" id="body1-section2-article3-img4">
+      <p id="body1-section2-article3-p3">Text</p>
+    </article>
+  </section>
+
+  <section class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4" id="body1-section3">
+    <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full h-full object-cover" id="body1-section3-img5">
+    <img src="https://placehold.co/300x200" alt="Placeholder Image" class="w-full h-full object-cover" id="body1-section3-img6">
+  </section>
+
+  <section class="p-4" id="body1-section4">
+    <div class="bg-gray-200 p-4 mb-4" id="body1-section4-div2">
+      <p class="mb-2" id="body1-section4-div2-p4">Summary text 1</p>
+      <p class="mb-2" id="body1-section4-div2-p5">Summary text 2</p>
+      <p class="mb-2" id="body1-section4-div2-p6">Summary text 3</p>
+    </div>
+    <div class="bg-gray-200 p-4 flex items-center mb-4" id="body1-section4-div3">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="mr-4" id="body1-section4-div3-img7">
+      <div id="body1-section4-div3-div4">
+        <p id="body1-section4-div3-div4-p7">Text line</p>
+        <p id="body1-section4-div3-div4-p8">Text line</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 mb-4" id="body1-section4-div5">
+      <button class="bg-[#C6A7B1] text-white py-2 px-4 rounded hover:bg-[#FFDEE9]" id="body1-section4-div5-button1" onclick="addInteractionModule()">Button</button>
+      <input type="checkbox" id="body1-section4-div5-input1" class="h-4 w-4">
+      <label for="checkbox" id="body1-section4-div5-label1">Checkbox</label>
+    </div>
+  </section>
+
+  <section class="p-4 bg-white shadow-md" id="body1-section5">
+    <form id="body1-section5-form1">
+      <div class="mb-4" id="body1-section5-form1-div6">
+        <label for="input1" class="block text-sm font-medium text-gray-700" id="body1-section5-form1-div6-label2">Label</label>
+        <input type="text" id="body1-section5-form1-div6-input2" class="mt-1 block w-full p-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+      </div>
+      <div class="mb-4" id="body1-section5-form1-div7">
+        <label for="input2" class="block text-sm font-medium text-gray-700" id="body1-section5-form1-div7-label3">Label</label>
+        <input type="text" id="body1-section5-form1-div7-input3" class="mt-1 block w-full p-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+      </div>
+      <fieldset class="mb-4" id="body1-section5-form1-fieldset1">
+        <legend class="text-sm font-medium text-gray-700" id="body1-section5-form1-fieldset1-legend1">Checkboxes</legend>
+        <div class="flex items-center" id="body1-section5-form1-fieldset1-div8">
+          <input type="checkbox" id="body1-section5-form1-fieldset1-div8-input4" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+          <label for="checkbox1" class="ml-2 text-sm text-gray-600" id="body1-section5-form1-fieldset1-div8-label4">Choice 1</label>
+        </div>
+        <div class="flex items-center" id="body1-section5-form1-fieldset1-div9">
+          <input type="checkbox" id="body1-section5-form1-fieldset1-div9-input5" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+          <label for="checkbox2" class="ml-2 text-sm text-gray-600" id="body1-section5-form1-fieldset1-div9-label5">Choice 2</label>
+        </div>
+      </fieldset>
+      <fieldset class="mb-4" id="body1-section5-form1-fieldset2">
+        <legend class="text-sm font-medium text-gray-700" id="body1-section5-form1-fieldset2-legend2">Radio buttons</legend>
+        <div class="flex items-center" id="body1-section5-form1-fieldset2-div10">
+          <input type="radio" id="body1-section5-form1-fieldset2-div10-input6" name="options" class="h-4 w-4 text-blue-600 border-gray-300">
+          <label for="option1" class="ml-2 text-sm text-gray-600" id="body1-section5-form1-fieldset2-div10-label6">Option 1</label>
+        </div>
+        <div class="flex items-center" id="body1-section5-form1-fieldset2-div11">
+          <input type="radio" id="body1-section5-form1-fieldset2-div11-input7" name="options" class="h-4 w-4 text-blue-600 border-gray-300">
+          <label for="option2" class="ml-2 text-sm text-gray-600" id="body1-section5-form1-fieldset2-div11-label7">Option 2</label>
+        </div>
+      </fieldset>
+      <div class="mb-4" id="body1-section5-form1-div12">
+        <label for="dropdown" class="block text-sm font-medium text-gray-700" id="body1-section5-form1-div12-label8">Dropdown</label>
+        <select id="body1-section5-form1-div12-select1" class="mt-1 block w-full p-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          <option id="body1-section5-form1-div12-select1-option1">Option 1</option>
+          <option id="body1-section5-form1-div12-select1-option2">Option 2</option>
+        </select>
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded" id="body1-section5-form1-button2">Submit</button>
+    </form>
+  </section>
+
+
+  <script data-custom-scripts="true">
+    function addInteractionModule() {
+      const newModule = document.createElement('div');
+      newModule.id = 'Parent_body1_Next_null_Queue_1';
+      newModule.setAttribute('name', 'add');
+      newModule.className = 'p-4 bg-gray-200 mt-4';
+      newModule.innerHTML = '<p>Add Interaction</p>';
+      document.getElementById('body1').appendChild(newModule);
+    }
+  </script>
+</body>
+</html>

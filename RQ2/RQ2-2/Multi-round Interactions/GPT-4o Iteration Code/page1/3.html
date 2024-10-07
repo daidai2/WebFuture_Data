@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    header, nav, footer {
+      background: transparent;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      background: transparent;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 80px;
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      color: white;
+      text-decoration: none;
+    }
+    h1, h2, p {
+      color: white;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <header>
+      <h1 class="text-4xl font-bold">Title1</h1>
+      <h2 class="text-2xl font-medium mt-2">Title1-1</h2>
+    </header>
+    <nav>
+      <a href="#">Link1-1</a>
+      <a href="#">Link1-2</a>
+      <a href="#">Link1-3</a>
+      <a href="#">Link1-4</a>
+      <a href="#">Link1-5</a>
+    </nav>
+    <footer class="footer">
+      <p class="text-gray-600">Text1</p>
+    </footer>
+  </section>
+</body>
+</html>

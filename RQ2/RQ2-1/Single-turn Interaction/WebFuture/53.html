@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Product Page</title>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-6" id="body1">
+
+  <header class="bg-white p-4 mb-6 flex items-center justify-between shadow" id="body1-header1">
+
+    <nav class="flex-1 text-right" id="body1-header1-nav1">
+      <a href="#" class="text-gray-600 mx-2" id="body1-header1-nav1-a1">Home</a>
+      <a href="#" class="text-gray-600 mx-2" id="body1-header1-nav1-a2">About</a>
+      <a href="#" class="text-gray-600 mx-2" id="body1-header1-nav1-a3">Contact</a>
+    </nav>
+    <div class="w-20 flex justify-center" id="body1-header1-div1">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded" id="body1-header1-div1-button1">Back</button>
+    </div>
+    <a id="Parent_body1-header1_Next_null_Queue_1" href="#" class="text-blue-500 underline">Add Element</a>
+  </header>
+
+  <section class="main-content mb-6" id="body1-section1">
+    <div class="basic-info mb-6 flex items-center" id="body1-section1-div2">
+      <input type="checkbox" id="body1-section1-div2-input1" name="remember" class="mr-2">
+      <label for="remember" class="text-gray-600" id="body1-section1-div2-label1">Remember Me</label>
+    </div>
+
+    <section class="product-page flex justify-between mb-6" id="body1-section1-section2">
+      <div class="product-image w-1/2" id="body1-section1-section2-div3">
+        <img src="https://placehold.co/300x300" alt="Product Image" id="body1-section1-section2-div3-img2">
+      </div>
+      <div class="product-details w-1/2" id="body1-section1-section2-div4">
+        <h2 class="text-2xl font-bold mb-4" id="body1-section1-section2-div4-h21">Product Name</h2>
+        <p class="text-gray-600 mb-4" id="body1-section1-section2-div4-p1">Manufacturer</p>
+        <div class="product-options mb-4" id="body1-section1-section2-div4-div5">
+          <label class="block mb-2" id="body1-section1-section2-div4-div5-label2">Colors:</label>
+          <input type="radio" id="body1-section1-section2-div4-div5-input2" name="color" value="red" class="mr-1">
+          <label for="red" class="mr-4" id="body1-section1-section2-div4-div5-label3">Red</label>
+          <input type="radio" id="body1-section1-section2-div4-div5-input3" name="color" value="blue" class="mr-1">
+          <label for="blue" class="mr-4" id="body1-section1-section2-div4-div5-label4">Blue</label>
+          <input type="radio" id="body1-section1-section2-div4-div5-input4" name="color" value="white" class="mr-1">
+          <label for="white" id="body1-section1-section2-div4-div5-label5">White</label>
+        </div>
+        <div class="mb-4" id="body1-section1-section2-div4-div6">
+          <p class="text-gray-600" id="body1-section1-section2-div4-div6-p2">Price: <span class="line-through" id="body1-section1-section2-div4-div6-p2-span1">$400</span> <span id="body1-section1-section2-div4-div6-p2-span2">$200</span></p>
+        </div>
+        <button class="bg-green-500 text-white py-2 px-4 rounded" id="body1-section1-section2-div4-button2" onclick="showAlert()">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="shipping-info bg-white p-6 shadow" id="body1-section1-section3">
+      <h3 class="text-xl font-bold mb-4" id="body1-section1-section3-h31">Shipping Information</h3>
+      <form class="shipping-form" id="body1-section1-section3-form1">
+        <div class="grid grid-cols-2 gap-4 mb-4" id="body1-section1-section3-form1-div7">
+          <input type="text" name="first_name" placeholder="First Name" class="border p-2 rounded" id="body1-section1-section3-form1-div7-input5">
+          <input type="text" name="last_name" placeholder="Last Name" class="border p-2 rounded" id="body1-section1-section3-form1-div7-input6">
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4" id="body1-section1-section3-form1-div8">
+          <input type="text" name="phone" placeholder="Phone" class="border p-2 rounded" id="body1-section1-section3-form1-div8-input7">
+          <input type="email" name="email" placeholder="E-mail" class="border p-2 rounded" id="body1-section1-section3-form1-div8-input8">
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4" id="body1-section1-section3-form1-div9">
+          <select name="country" class="border p-2 rounded" id="body1-section1-section3-form1-div9-select1">
+            <option id="body1-section1-section3-form1-div9-select1-option1">United States</option>
+          </select>
+          <select name="state" class="border p-2 rounded" id="body1-section1-section3-form1-div9-select2">
+            <option id="body1-section1-section3-form1-div9-select2-option2">California</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4" id="body1-section1-section3-form1-div10">
+          <input type="text" name="city" placeholder="City" class="border p-2 rounded" id="body1-section1-section3-form1-div10-input9">
+          <input type="text" name="zip_code" placeholder="Zip Code" class="border p-2 rounded" id="body1-section1-section3-form1-div10-input10">
+        </div>
+        <div class="flex justify-between" id="body1-section1-section3-form1-div11">
+          <button class="bg-gray-500 text-white py-2 px-4 rounded" id="body1-section1-section3-form1-div11-button3">Back</button>
+          <button class="bg-blue-500 text-white py-2 px-4 rounded" id="body1-section1-section3-form1-div11-button4">Next Step</button>
+        </div>
+      </form>
+    </section>
+  </section>
+
+  <footer class="bg-white p-4 mt-6 shadow" id="body1-footer1">
+    <!-- Footer content here -->
+  </footer>
+
+
+
+  <script data-custom-scripts="true">
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

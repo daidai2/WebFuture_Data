@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment and Info Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .section input[type="text"],
+        .section input[type="number"],
+        .section select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .section button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .section button:hover {
+            background-color: #45a049;
+        }
+        .info-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .info-box button {
+            background-color: #008CBA;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h2>Payment Method</h2>
+<div class="section">
+<label>Select your payment method</label>
+<input checked="" id="credit" name="payment" type="radio" value="credit"/>
+<label for="credit">Credit Card</label><br/>
+<input id="paypal" name="payment" type="radio" value="paypal"/>
+<label for="paypal">Paypal</label><br/>
+<input id="bank" name="payment" type="radio" value="bank"/>
+<label for="bank" id="6_2_2_2_1">Bank Transfer</label>
+<span id="6_2_1_1_1" style="margin-left: 10px;">Community Contracts</span>
+</div>
+<div class="section">
+<label for="exp-date">Expiration Date</label>
+<input id="exp-month" name="exp-month" placeholder="MM" style="width:48%; display:inline-block;" type="number"/>
+<input id="exp-year" name="exp-year" placeholder="YY" style="width:48%; display:inline-block;" type="number"/>
+<label for="ccv">CCV</label>
+<input id="ccv" name="ccv" type="text"/>
+</div>
+<div class="section">
+<button type="submit">Complete</button>
+</div>
+<div class="info-box">
+<h2>Mobility Solutions &amp; Daily Living Aids</h2>
+<p>Making Life Easier</p>
+<button>Find out More</button>
+</div>
+<div class="info-box">
+<h2>Wheelchair Repair</h2>
+<button>Find out More</button>
+</div>
+<div class="info-box">
+<h2 id="6_2_1_2_1">Community Contracts</h2>
+<button>Find out More</button>
+</div>
+<h2>Forma de envío</h2>
+<div class="section">
+<label for="transport">Medio transporte</label>
+<input checked="" id="terrestre" name="transport" type="radio" value="terrestre"/>
+<label for="terrestre">Terrestre</label><br/>
+<input id="aereo" name="transport" type="radio" value="aereo"/>
+<label for="aereo">Aereo</label><br/>
+<input id="maritimo" name="transport" type="radio" value="maritimo"/>
+<label for="maritimo">Maritimo</label>
+</div>
+<div class="section">
+<label for="payment-method">Forma de pago</label>
+<input checked="" id="tarjeta" name="payment-method" type="radio" value="tarjeta"/>
+<label for="tarjeta">Tarjeta (Crédito/débito)</label><br/>
+<input id="transferencia" name="payment-method" type="radio" value="transferencia"/>
+<label for="transferencia">Transferencia bancaria</label><br/>
+<input id="metalico" name="payment-method" type="radio" value="metalico"/>
+<label for="metalico">Metálico</label>
+</div>
+<div class="section">
+<label for="pais">País</label>
+<select id="pais" name="pais">
+<option value="country1">Country 1</option>
+<option value="country2">Country 2</option>
+</select>
+</div>
+<div class="section">
+<h2 type="submit">Aceptar</h2>
+</div>
+</div>
+</body>
+</html>

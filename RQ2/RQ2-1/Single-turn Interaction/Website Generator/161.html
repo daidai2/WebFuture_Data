@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Add event listener for Button3-1
+      document.querySelector("button.bg-blue-500:text-white:px-4:py-2:rounded").addEventListener("click", function() {
+        // Create new module with text 'Add Interaction'
+        var newModule = document.createElement("section");
+        newModule.innerHTML = '<p class="text-xl">Add Interaction</p>';
+        document.querySelector("main.container.mx-auto.p-4.space-y-8").appendChild(newModule);
+      });
+
+      // Move Button1 to the bottom of the page
+      var button1 = document.querySelector("section button.bg-blue-500:text-white:px-4:py-2:rounded");
+      document.querySelector("main.container.mx-auto.p-4.space-y-8").appendChild(button1);
+
+      // Delete the first image on the page
+      var firstImage = document.querySelector("img");
+      if (firstImage) {
+        firstImage.parentNode.removeChild(firstImage);
+      }
+    });
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+<!-- Header -->
+<header class="bg-white shadow">
+<nav class="container mx-auto flex justify-between items-center p-4">
+<a class="text-blue-500" href="#">Link1</a>
+<a class="text-blue-500" href="#">Link2</a>
+<a class="text-blue-500" href="#">Link3</a>
+<a class="text-blue-500" href="#">Link4</a>
+<a class="text-blue-500" href="#">Link5</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto p-4 space-y-8">
+<!-- Title 1 with Subtitle and Button -->
+<section>
+<h1 class="text-4xl font-bold">Title1</h1>
+<div class="flex justify-between items-center">
+<h2 class="text-xl">Title1-1</h2>
+<button class="bg-blue-500 text-white px-4 py-2 rounded" id="6_1">Button1</button>
+</div>
+</section>
+<!-- Image Grid Section -->
+<section>
+<h2 class="text-3xl font-bold">Title2</h2>
+<h3 class="text-xl">Title2-1</h3>
+<div class="grid grid-cols-3 gap-4 mt-4">
+<div class="border p-4">
+<img alt="PIC2-1" class="mb-2" src="https://placehold.co/200x150"/>
+<p>Label2-1</p>
+<p>Text2-1</p>
+</div>
+<div class="border p-4">
+<img alt="PIC2-2" class="mb-2" src="https://placehold.co/200x150"/>
+<p>Label2-2</p>
+<p>Text2-2</p>
+</div>
+<div class="border p-4">
+<img alt="PIC2-3" class="mb-2" src="https://placehold.co/200x150"/>
+<p>Label2-3</p>
+<p>Text2-3</p>
+</div>
+</div>
+<p class="mt-4">Text2</p>
+</section>
+<!-- Content Section 1 -->
+<section>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<h3 class="text-2xl font-bold">Title3-1</h3>
+<p class="my-2">Text3-1</p>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Button3-1</button>
+</div>
+<div>
+<h3 class="text-2xl font-bold">Title3-2</h3>
+<p class="my-2">Text3-2</p>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Button3-2</button>
+</div>
+</div>
+</section>
+<!-- Content Section 2 -->
+<section>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<h4 class="text-xl font-bold">Title4-1</h4>
+<p class="my-2">Text4-1</p>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Button4-1</button>
+</div>
+<div>
+<h4 class="text-xl font-bold">Title4-2</h4>
+<p class="my-2">Text4-2</p>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Button4-2</button>
+</div>
+</div>
+</section>
+<!-- List Section -->
+<section>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<h4 class="text-xl font-bold">Title5-1</h4>
+<ul class="list-disc ml-4">
+<li>Item5-1</li>
+<li>Item5-2</li>
+<li>Item5-3</li>
+</ul>
+<h4 class="text-xl font-bold">Title5-2</h4>
+<ul class="list-disc ml-4">
+<li>Item5-1</li>
+<li>Item5-2</li>
+<li>Item5-3</li>
+</ul>
+<h4 class="text-xl font-bold">Title5-3</h4>
+<ul class="list-disc ml-4">
+<li>Item5-1</li>
+<li>Item5-2</li>
+<li>Item5-3</li>
+</ul>
+</div>
+<div>
+<h4 class="text-xl font-bold">Title5-4</h4>
+<p class="my-2">Text5</p>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Button5</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-200 p-4">
+<div class="container mx-auto flex justify-center space-x-4">
+<a class="text-blue-500" href="#">FooterLink1</a>
+<a class="text-blue-500" href="#">FooterLink2</a>
+</div>
+</footer>
+</body>
+</html>

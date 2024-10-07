@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    @keyframes moveBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -1000px 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: url('bg.jpg') repeat-x;
+      background-size: cover;
+      position: relative;
+      animation: moveBackground 100s linear infinite;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: url('overlay-pattern.png') repeat top left,
+                  url('overlay.svg') no-repeat center center;
+      background-size: auto, cover;
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+    }
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 150px;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeIn 2s 3s forwards;
+    }
+    header, nav {
+      background: transparent;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s 3s forwards;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    nav a {
+      background: transparent;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 75px;
+      width: 75px;
+      height: 75px;
+      display: inline-block;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      color: white;
+      text-decoration: none;
+      opacity: 0;
+      animation: fadeIn 2s 3s forwards;
+      font-size: 1.5rem;
+    }
+    h1 {
+      color: rgba(255, 255, 255, 1);
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.75rem;
+      font-weight: normal;
+    }
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+    .footer a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <section class="container">
+    <header>
+      <h1 class="font-bold">Adam Jensen</h1>
+      <h2 class="font-medium mt-0">Security Chief  •  Cyborg  •  Never asked for this</h2>
+    </header>
+    <nav class="mt-0">
+      <a href="/profile"><i class="fab fa-twitter"></i></a> <!-- 跳转到 profile -->
+      <a href="/contact"><i class="fab fa-facebook"></i></a> <!-- 跳转到 contact -->
+      <a href="/blog"><i class="fab fa-dribbble"></i></a> <!-- 跳转到 blog -->
+      <a href="/dashboard"><i class="fab fa-github"></i></a> <!-- 跳转到 dashboard -->
+      <a href="/messages"><i class="fas fa-envelope"></i></a> <!-- 跳转到 messages -->
+    </nav>
+  </section>
+  <footer class="footer">
+    <p>© Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+  </footer>
+</body>
+</html>

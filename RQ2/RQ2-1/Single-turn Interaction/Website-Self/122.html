@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            margin-bottom: 20px;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .product-review {
+            display: flex;
+            align-items: center;
+        }
+        .product-review img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .star-rating {
+            display: flex;
+            align-items: center;
+        }
+        .star-rating span {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        .star-rating input[type="radio"] {
+            margin-left: 10px;
+        }
+        .product-catalog {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-catalog .product {
+            text-align: center;
+            width: 30%;
+        }
+        .product-catalog img {
+            width: 100%;
+            height: auto;
+        }
+        .product-catalog button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+<script>
+        function addToCart() {
+            alert('Add Interaction');
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll('.product-catalog button');
+            buttons.forEach(button => {
+                button.addEventListener('click', addToCart);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+<!-- Checkout Section -->
+<div class="section" id="checkout">
+<h2>Checkout</h2>
+<!-- Removed First Name Input Field -->
+<div class="form-group">
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="company">Company</label>
+<input id="company" name="company" type="text"/>
+</div>
+<div class="radio-group">
+<h3>Shipping Service</h3>
+<label>
+<input checked="" name="shipping-service" type="radio" value="standard"/>
+                    Standard (14 days - $6.59)
+                </label>
+<label>
+<input name="shipping-service" type="radio" value="expedited"/>
+                    Expedited (7 days - $17.97)
+                </label>
+<label>
+<input name="shipping-service" type="radio" value="express"/>
+                    Express (3 days - $19.97)
+                </label>
+</div>
+</div>
+<!-- Write Review Section -->
+<div class="section" id="write-review">
+<h2>Write Review</h2>
+<div class="product-review">
+<img alt="Product Name" src="product-image.jpg"/>
+<div>
+<h3>Product Name</h3>
+<p>$Price</p>
+<p>45 reviews</p>
+</div>
+</div>
+<div class="form-group">
+<label>Rate Product</label>
+<div class="star-rating">
+<span>★</span>
+<input name="rating" type="radio" value="1"/> Bad
+                </div>
+</div>
+<div class="form-group">
+<label for="headline">Headline</label>
+<input id="headline" name="headline" type="text"/>
+</div>
+<div class="form-group">
+<label for="review">Review</label>
+<input id="review" name="review" type="text"/>
+</div>
+</div>
+<!-- Moved Submit Button to Bottom of the Page -->
+<button id="6_1" type="submit">Submit</button>
+<!-- Product Catalog Section -->
+<div class="section" id="product-catalog">
+<h2>Product Catalog</h2>
+<div class="product-catalog">
+<div class="product">
+<img alt="Product 1" src="product1.jpg"/>
+<h3>Product 1</h3>
+<p>$20.00</p>
+<button>Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 2" src="product2.jpg"/>
+<h3>Product 2</h3>
+<p>$10.00</p>
+<button>Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 3" src="product3.jpg"/>
+<h3>Product 3</h3>
+<p>$40.00</p>
+<button>Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .form-group input[type="text"], .form-group input[type="date"], .form-group input[type="number"] {
+            width: 100%;
+            padding: 0.5em;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"], .form-group input[type="checkbox"] {
+            margin-right: 0.5em;
+        }
+        .form-group .button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #C6A7B1;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group .button:hover {
+            background-color: #FFDEE9;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 4px;
+            margin-bottom: 1em;
+        }
+        .card h4 {
+            font-size: 1em;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select your payment method</h2>
+        <div class="form-group">
+            <input type="radio" id="credit-card" name="payment-method" checked>
+            <label for="credit-card">Credit Card</label>
+            <input type="radio" id="paypal" name="payment-method">
+            <label for="paypal">Paypal</label>
+            <input type="radio" id="bank-transfer" name="payment-method">
+            <label for="bank-transfer">Bank Transfer</label>
+        </div>
+        
+        <h2>Enter your data</h2>
+        <div class="form-group">
+            <label for="expiration-date">Expiration Date</label>
+            <input type="date" id="expiration-date" name="expiration-date">
+        </div>
+        <div class="form-group">
+            <label for="ccv">CCV</label>
+            <input type="number" id="ccv" name="ccv">
+        </div>
+        
+        <div class="form-group">
+            <a href="#" class="button">Complete</a>
+        </div>
+        
+        <div class="section">
+            <h3>Mobility Solutions & Daily Living Aids</h3>
+            <h3>Making Life Easier</h3>
+            <a href="#" class="button">Find out More</a>
+        </div>
+        
+        <div class="section">
+            <div class="card">
+                <h4>Wheelchair Repair</h4>
+                <a href="#" class="button">Find out More</a>
+            </div>
+            <div class="card">
+                <h4>Community Contracts</h4>
+                <a href="#" class="button">Find out More</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="form-group">
+                <label for="label2">Label</label>
+                <input type="text" id="label2" name="label2">
+            </div>
+            <div class="form-group">
+                <a href="#" class="button">Button</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="form-group">
+                <input type="radio" id="radio1" name="options">
+                <label for="radio1">Radio 1</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="radio2" name="options">
+                <label for="radio2">Radio 2</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="radio3" name="options">
+                <label for="radio3">Radio 3</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="radio4" name="options">
+                <label for="radio4">Radio 4</label>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="form-group">
+                <input type="checkbox" id="checkbox1" name="features" checked>
+                <label for="checkbox1">Checkbox 1</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="checkbox2" name="features">
+                <label for="checkbox2">Checkbox 2</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="checkbox3" name="features" checked>
+                <label for="checkbox3">Checkbox 3</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="checkbox4" name="features">
+                <label for="checkbox4">Checkbox 4</label>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="card">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <p>Add Element</p>
+        </div>
+    </div>
+</body>
+</html>

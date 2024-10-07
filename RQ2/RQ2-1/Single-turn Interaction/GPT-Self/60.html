@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .back-button {
+            margin: 20px 0;
+        }
+        .checkbox {
+            margin: 10px 0;
+        }
+        .product-page {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-images {
+            width: 40%;
+        }
+        .product-images img {
+            width: 100%;
+        }
+        .thumbnails img {
+            width: 24%;
+            margin: 1%;
+        }
+        .product-details {
+            width: 50%;
+        }
+        .product-details h1 {
+            font-size: 50px;
+        }
+        .product-details .price {
+            color: red;
+            font-size: 20px;
+        }
+        .product-details .old-price {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .shipping-form {
+            margin-top: 40px;
+        }
+        .shipping-form input, .shipping-form select {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+        }
+        .shipping-form button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+        .inline-text {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<!-- Back Button Section -->
+<button class="back-button">BACK</button>
+<div class="checkbox">
+<input id="checkbox1" name="checkbox1" type="checkbox"/>
+<label for="checkbox1">Checkbox</label>
+</div>
+<!-- Product Page Section -->
+<div class="product-page">
+<div class="product-images">
+<img alt="Product Image" src="product-main.jpg"/>
+<div class="thumbnails">
+<img alt="Thumbnail 1" src="thumb1.jpg"/>
+<img alt="Thumbnail 2" src="thumb2.jpg"/>
+<img alt="Thumbnail 3" src="thumb3.jpg"/>
+<img alt="Thumbnail 4" src="thumb4.jpg"/>
+</div>
+</div>
+<div class="product-details">
+<h1 id="6_2_1_1_1">Product Name</h1>
+<p>Manufacturer</p>
+<p>Color:</p>
+<input checked="" id="red" name="color" type="radio" value="red"/>
+<label for="red">Red</label><br/>
+<input id="blue" name="color" type="radio" value="blue"/>
+<label for="blue">Blue</label><br/>
+<input id="white" name="color" type="radio" value="white"/>
+<label for="white">White</label><br/>
+<p class="price">$100</p>
+<p class="old-price">$200</p>
+<button>Add to Cart</button>
+</div>
+</div>
+<!-- Shipping Form Section -->
+<div class="shipping-form">
+<h2>Forma de envío</h2>
+<label for="transport">Medio de transporte:</label><br/>
+<input id="terrestre" name="transport" type="radio" value="terrestre"/>
+<label for="terrestre">Terrestre</label><br/>
+<input id="aereo" name="transport" type="radio" value="aereo"/>
+<label for="aereo">Aereo</label><br/>
+<input id="maritimo" name="transport" type="radio" value="maritimo"/>
+<label class="inline-text" for="maritimo" id="6_2_2_2_1">Marítimo</label>
+<p class="inline-text" id="6_2_1_2_1">Product Name</p><br/>
+<label for="payment">Forma de pago:</label><br/>
+<input id="tarjeta" name="payment" type="radio" value="tarjeta"/>
+<label for="tarjeta">Tarjeta (Crédito/débito)</label><br/>
+<input id="transferencia" name="payment" type="radio" value="transferencia"/>
+<label for="transferencia">Transferencia bancaria</label><br/>
+<input id="metalico" name="payment" type="radio" value="metalico"/>
+<label for="metalico">Metálico</label><br/>
+<label for="direccion">Dirección:</label>
+<input id="direccion" name="direccion" type="text"/><br/>
+<label for="pais">País:</label>
+<input id="pais" name="pais" type="text"/><br/>
+<h2>Aceptar</h2>
+</div>
+</div>
+</body>
+</html>

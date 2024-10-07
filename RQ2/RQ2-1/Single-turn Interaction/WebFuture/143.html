@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Checkout Page</title>
+<style></style>
+</head>
+<body class="bg-gray-100 p-8" id="body1">
+<section class="max-w-4xl mx-auto bg-white p-8 shadow-lg" id="body1-section1">
+<h1 class="text-2xl font-bold mb-4" id="body1-section1-h11">Checkout</h1>
+<!-- Shipping Address Section -->
+<div class="border-b pb-6 mb-6" id="body1-section1-div1">
+<h2 class="text-xl font-semibold mb-4" id="body1-section1-div1-h21">Shipping Address</h2>
+<div class="mb-4" id="body1-section1-div1-div2">
+<label class="block mb-2" id="body1-section1-div1-div2-label1">First Name</label>
+<input class="w-full p-2 border rounded" id="body1-section1-div1-div2-input1" placeholder="First Name" type="text"/>
+</div>
+<div class="mb-4" id="body1-section1-div1-div3">
+<label class="block mb-2" id="body1-section1-div1-div3-label2">Last Name</label>
+<input class="w-full p-2 border rounded" id="body1-section1-div1-div3-input2" placeholder="Last Name" type="text"/>
+</div>
+<div class="mb-4" id="body1-section1-div1-div4">
+<label class="block mb-2" id="body1-section1-div1-div4-label3">Company</label>
+<input class="w-full p-2 border rounded" id="body1-section1-div1-div4-input3" placeholder="Company" type="text"/>
+</div>
+</div>
+<!-- Shipping Service Section -->
+<section class="border-b pb-6 mb-6" id="body1-section1-section2">
+<h2 class="text-xl font-semibold mb-4" id="body1-section1-section2-h22">Shipping Service</h2>
+<form id="body1-section1-section2-form1">
+<div class="mb-4" id="body1-section1-section2-form1-div5">
+<input class="mr-2" id="body1-section1-section2-form1-div5-input4" name="shipping" type="radio"/>
+<label for="standard" id="body1-section1-section2-form1-div5-label4">Standard - 14 days - $6.99</label>
+</div>
+<div class="mb-4" id="body1-section1-section2-form1-div6">
+<input class="mr-2" id="body1-section1-section2-form1-div6-input5" name="shipping" type="radio"/>
+<label for="expedited" id="body1-section1-section2-form1-div6-label5">Expedited - 7 days - $12.99</label>
+</div>
+<div class="mb-4" id="body1-section1-section2-form1-div7">
+<input class="mr-2" id="body1-section1-section2-form1-div7-input6" name="shipping" type="radio"/>
+<label for="express" id="6_2_1_1_3">Express - 3 days - $19.99</label>
+</div>
+</form>
+</section>
+<!-- Write Review Section -->
+<section class="border-b pb-6 mb-6" id="body1-section1-section3">
+<h2 class="text-xl font-semibold mb-4" id="body1-section1-section3-h23">Write Review</h2>
+<div class="flex mb-4" id="body1-section1-section3-div8">
+<button id="Parent_body1-section1-section3-div8_Next_body1-section1-section3-div8-div9_Queue_1">Modify Element</button>
+<div class="ml-4 flex-1" id="body1-section1-section3-div8-div9">
+<span class="block text-lg font-semibold" id="body1-section1-section3-div8-div9-span1">Product Name</span>
+<span class="block text-gray-600" id="body1-section1-section3-div8-div9-span2">$Price</span>
+<span class="block text-gray-600" id="body1-section1-section3-div8-div9-span3">45 reviews</span>
+</div>
+</div>
+<div class="mb-4" id="body1-section1-section3-div10">
+<span class="block mb-2" id="body1-section1-section3-div10-span4">Rate Product</span>
+<div class="flex items-center mb-2" id="body1-section1-section3-div10-div11">
+<span class="text-yellow-400 mr-2" id="body1-section1-section3-div10-div11-span5">★★★★☆</span>
+<span class="text-gray-600" id="body1-section1-section3-div10-div11-span6">Bad :(</span>
+</div>
+</div>
+<div class="mb-4" id="body1-section1-section3-div12">
+<label class="block mb-2" id="body1-section1-section3-div12-label7">Headline</label>
+<input class="w-full p-2 border rounded" id="body1-section1-section3-div12-input7" placeholder="Headline" type="text"/>
+</div>
+<div class="mb-4" id="body1-section1-section3-div13">
+<label class="block mb-2" id="body1-section1-section3-div13-label8">Review</label>
+<textarea class="w-full p-2 border rounded" id="body1-section1-section3-div13-textarea1" placeholder="Review" rows="4"></textarea>
+</div>
+<button class="px-4 py-2 bg-blue-500 text-white rounded" id="body1-section1-section3-button1" onclick="showAlert()">Submit</button>
+</section>
+<!-- Additional Product Information Section -->
+<aside class="flex mb-6" id="body1-section1-aside1">
+<img alt="Image Placeholder" class="w-24 h-24 mr-4" id="body1-section1-aside1-img2" src="https://placehold.co/100x100"/>
+<div class="flex-1" id="body1-section1-aside1-div14">
+<p class="mb-2" id="6_2_2_2_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="mb-2" id="body1-section1-aside1-div14-p2">Praesent vitae eros eget tellus tristique bibendum.</p>
+<p class="" id="body1-section1-aside1-div14-p3">Donec rutrum sed sem quis venenatis.</p>
+</div>
+</aside>
+<!-- Checkbox Options Section -->
+<div class="mb-6" id="body1-section1-div15">
+<div class="mb-4" id="body1-section1-div15-div16">
+<input class="mr-2" id="body1-section1-div15-div16-input8" type="checkbox"/>
+<label for="cheese1" id="body1-section1-div15-div16-label9">Cheese</label>
+</div>
+<div id="body1-section1-div15-div17">
+<input class="mr-2" id="body1-section1-div15-div17-input9" type="checkbox"/>
+<label for="cheese2" id="body1-section1-div15-div17-label10">Cheese</label>
+</div>
+</div>
+<!-- Radio Button Options Section -->
+<div class="mb-6" id="body1-section1-div18">
+<div class="mb-4" id="body1-section1-div18-div19">
+<input class="mr-2" id="body1-section1-div18-div19-input10" name="option" type="radio"/>
+<label for="radio1" id="body1-section1-div18-div19-label11">RadioButton 1</label>
+</div>
+<div id="body1-section1-div18-div20">
+<input class="mr-2" id="body1-section1-div18-div20-input11" name="option" type="radio"/>
+<label for="radio2" id="body1-section1-div18-div20-label12">RadioButton 2</label>
+</div>
+</div>
+<!-- Additional Text Information Section -->
+<div id="body1-section1-div21">
+<p class="mb-2" id="6_2_2_2_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div class="flex items-center mb-2 relative" id="Parent_body1-section1-div21_Next_body1-section1-div21-p5_Queue_1">
+</div>
+<p class="inline mb-2" id="6_2_2_2_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<span class="" id="6_2_1_2_3">Express - 3 days - $19.99</span>
+<p class="mb-2" id="body1-section1-div21-p5">Praesent vitae eros eget tellus tristique bibendum.</p>
+<p class="" id="body1-section1-div21-p6">Donec rutrum sed sem quis venenatis.</p>
+</div>
+</section>
+<script data-custom-scripts="true">
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

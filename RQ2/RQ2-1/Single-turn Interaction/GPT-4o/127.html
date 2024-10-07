@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Low Fidelity Wireframe</title>
+</head>
+<body class="bg-gray-100 p-5">
+  <!-- Main Section -->
+  <section class="max-w-4xl mx-auto bg-white p-5 rounded-lg shadow-md">
+
+    <!-- Payment Method Section -->
+    <section class="mb-6">
+      <header class="mb-3 text-xl font-bold">Select your payment method</header>
+      <div>
+        <div class="mb-2">
+          <input id="credit-card" type="radio" name="payment" class="mr-2"><label for="credit-card">Credit Card</label>
+        </div>
+        <div class="mb-2">
+          <input id="paypal" type="radio" name="payment" class="mr-2"><label for="paypal">Paypal</label>
+        </div>
+        <div class="mb-2">
+          <input id="bank-transfer" type="radio" name="payment" class="mr-2"><label for="bank-transfer">Bank Transfer</label>
+        </div>
+      </div>
+
+      <header class="my-3 text-xl font-bold">Enter your data</header>
+      <form>
+        <div class="mb-3">
+          <label for="card-number" class="block mb-1">Card Number</label>
+          <input id="card-number" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+
+        <div class="flex space-x-2 mb-3">
+          <div class="flex-grow">
+            <label class="block mb-1">Expiration Date</label>
+            <div class="flex space-x-2">
+              <input type="text" class="w-1/2 px-3 py-2 border rounded" placeholder="MM">
+              <input type="text" class="w-1/2 px-3 py-2 border rounded" placeholder="YY">
+            </div>
+          </div>
+          <div>
+            <label for="ccv" class="block mb-1">CCV</label>
+            <input id="ccv" type="text" class="w-full px-3 py-2 border rounded">
+          </div>
+        </div>
+
+        <button id="complete-btn" type="button" class="bg-blue-500 text-white px-4 py-2 rounded">Complete</button>
+      </form>
+    </section>
+
+    <!-- Sign Up / Login Section -->
+    <nav class="mb-6">
+      <ul class="flex space-x-4 mb-3">
+        <li class="font-bold cursor-pointer">Sign Up</li>
+        <li class="cursor-pointer">Login</li>
+      </ul>
+      <section>
+        <form>
+          <div class="flex space-x-2 mb-3">
+            <div class="w-1/2">
+              <label for="first-name" class="block mb-1">Name</label>
+              <input id="first-name" type="text" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="w-1/2">
+              <label for="last-name" class="block mb-1">Last Name</label>
+              <input id="last-name" type="text" class="w-full px-3 py-2 border rounded">
+            </div>
+          </div>
+          <div class="flex space-x-2 mb-3">
+            <div class="w-1/2">
+              <label for="phone" class="block mb-1">Phone</label>
+              <input id="phone" type="text" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="w-1/2">
+              <label for="email" class="block mb-1">E-mail</label>
+              <input id="email" type="email" class="w-full px-3 py-2 border rounded">
+            </div>
+          </div>
+          <div class="flex space-x-2 mb-3">
+            <div class="w-1/2">
+              <label for="password" class="block mb-1">Password</label>
+              <input id="password" type="password" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="w-1/2">
+              <label for="confirm-password" class="block mb-1">Confirm Password</label>
+              <input id="confirm-password" type="password" class="w-full px-3 py-2 border rounded">
+            </div>
+          </div>
+          <div class="mb-3">
+            <input id="terms" type="checkbox" class="mr-2"><label for="terms">I agree to Terms and Conditions</label>
+          </div>
+          <button type="button" class="bg-green-500 text-white px-4 py-2 rounded">Sign Up</button>
+        </form>
+      </section>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="mb-6">
+      <article>
+        <img id="first-image" src="https://placehold.co/600x400" alt="Placeholder Image" class="w-full h-auto mb-3">
+        <p class="text-justify mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod ligula vel augue lacinia, eget condimentum felis feugiat. Suspendisse potenti. Nullam nec eleifend ligula. Sed bibendum neque at varius tincidunt. Donec sit amet semper sapien.</p>
+      </article>
+    </section>
+
+    <!-- Form Section -->
+    <section class="mb-6">
+      <div class="flex flex-col space-y-3">
+        <div>
+          <label for="label1" class="block mb-1">Label 1</label>
+          <input id="label1" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div>
+          <label for="label2" class="block mb-1">Label 2</label>
+          <input id="label2" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <button type="button" class="bg-red-500 text-white px-4 py-2 rounded">Button</button>
+      </div>
+    </section>
+
+    <!-- Options Section -->
+    <section class="mb-6">
+      <div class="flex space-x-6">
+        <div>
+          <div class="mb-2">
+            <input id="radio1" type="radio" name="option" class="mr-2"><label for="radio1">Radio 1</label>
+          </div>
+          <div class="mb-2">
+            <input id="radio2" type="radio" name="option" class="mr-2"><label for="radio2">Radio 2</label>
+          </div>
+          <div class="mb-2">
+            <input id="radio3" type="radio" name="option" class="mr-2"><label for="radio3">Radio 3</label>
+          </div>
+          <div class="mb-2">
+            <input id="radio4" type="radio" name="option" class="mr-2"><label for="radio4">Radio 4</label>
+          </div>
+        </div>
+        <div class="flex-grow">
+          <img src="https://placehold.co/400x200" alt="Placeholder Image" class="mb-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eleifend ligula.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkbox Section -->
+    <section>
+      <div class="flex space-x-6">
+        <div>
+          <div class="mb-2">
+            <input id="checkbox1" type="checkbox" class="mr-2"><label for="checkbox1">Checkbox 1</label>
+          </div>
+          <div class="mb-2">
+            <input id="checkbox2" type="checkbox" class="mr-2"><label for="checkbox2">Checkbox 2</label>
+          </div>
+          <div class="mb-2">
+            <input id="checkbox3" type="checkbox" class="mr-2"><label for="checkbox3">Checkbox 3</label>
+          </div>
+          <div class="mb-2">
+            <input id="checkbox4" type="checkbox" class="mr-2"><label for="checkbox4">Checkbox 4</label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center mt-6">
+    <p class="text-gray-600">Footer Content Here</p>
+  </footer>
+
+  <!-- JavaScript Code -->
+  <script>
+    document.getElementById('complete-btn').addEventListener('click', function() {
+      // Add a new module at the bottom with a text element containing 'Add Interaction'
+      const newModule = document.createElement('div');
+      newModule.innerHTML = '<div class="bg-white p-5 rounded-lg shadow-md mt-6"><p class="text-center">Add Interaction</p></div>';
+      document.body.appendChild(newModule);
+
+      // Change the first image on the page to a button with the text 'Modify Element'
+      const firstImage = document.getElementById('first-image');
+      const modifyButton = document.createElement('button');
+      modifyButton.textContent = 'Modify Element';
+      modifyButton.className = 'bg-purple-500 text-white px-4 py-2 rounded';
+      firstImage.parentNode.replaceChild(modifyButton, firstImage);
+
+      // Delete the first text input field on the page
+      const firstTextInput = document.querySelector('input[type="text"]');
+      if (firstTextInput) {
+        firstTextInput.parentNode.removeChild(firstTextInput);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Low-Fidelity Wireframe</title>
+  <style>
+    .custom-button {
+      background-color: #C6A7B1;
+    }
+    .custom-button:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="container mx-auto bg-white shadow-lg rounded-lg p-6">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center mb-6">
+      <a href="#" class="text-blue-600">Sign Up</a>
+      <a href="#" class="text-blue-600">Login</a>
+    </header>
+
+    <!-- Sign Up Form Section -->
+    <section class="sign-up-form mb-6">
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="name" class="block text-gray-700">Name</label>
+          <input id="name" type="text" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div>
+          <label for="lastName" class="block text-gray-700">Last Name</label>
+          <input id="lastName" type="text" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div>
+          <label for="phone" class="block text-gray-700">Phone</label>
+          <input id="phone" type="text" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700">E-mail</label>
+          <input id="email" type="email" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div>
+          <label for="password" class="block text-gray-700">Password</label>
+          <input id="password" type="password" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div>
+          <label for="confirmPassword" class="block text-gray-700">Confirm Password</label>
+          <input id="confirmPassword" type="password" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div class="col-span-2 flex items-center mt-4">
+          <input id="terms" type="checkbox" class="mr-2">
+          <label for="terms" class="text-gray-700">I agree to Terms and Conditions</label>
+        </div>
+        <div class="col-span-2">
+          <button class="custom-button text-white px-4 py-2 rounded-md mt-2">Sign Up</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-info mb-6 text-center">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Modify Element</button>
+      <span class="block text-gray-800 text-2xl mb-2">$24.9</span>
+      <span class="block text-gray-800 text-xl">PRODUCT TITLE</span>
+    </section>
+
+    <!-- Checklist Section -->
+    <section class="checklist mb-6">
+      <span class="block text-gray-700 mb-2">Check items:</span>
+      <div class="flex flex-col items-center">
+        <div class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2" checked>
+          <label>Check item 1</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2">
+          <label>Check item 2</label>
+        </div>
+        <div class="flex items-center">
+          <input type="checkbox" class="mr-2">
+          <label>Check item 3</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-action Section -->
+    <section class="call-to-action mb-6 text-center">
+      <button class="bg-green-500 text-white px-6 py-2 rounded-md">Buy Now</button>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="additional-info mb-6 text-center">
+      <img src="https://placehold.co/600x200" alt="Additional Image" class="mx-auto mb-4">
+      <article class="text-gray-700 mb-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.</p>
+      </article>
+      <form class="grid grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="label1" class="block text-gray-700">Label</label>
+          <input id="label1" type="text" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div>
+          <label for="label2" class="block text-gray-700">Label</label>
+          <input id="label2" type="text" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div class="flex flex-col mt-4">
+          <div class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2">
+            <label>Checklist 1</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2">
+            <label>Checklist 2</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2">
+            <label>Checklist 3</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="mr-2">
+            <label>Checklist 4</label>
+          </div>
+        </div>
+        <div class="col-span-2 text-center">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md mt-2">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Radio and Description Section -->
+    <section class="radio-description mb-6 text-center">
+      <div class="flex justify-center mb-4">
+        <div class="mr-4">
+          <div class="flex items-center mb-2">
+            <input type="radio" name="radio" class="mr-2">
+            <label>Radio 1</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" name="radio" class="mr-2">
+            <label>Radio 2</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input type="radio" name="radio" class="mr-2">
+            <label>Radio 3</label>
+          </div>
+          <div class="flex items-center">
+            <input type="radio" name="radio" class="mr-2">
+            <label>Radio 4</label>
+          </div>
+        </div>
+        <img src="https://placehold.co/400x200" alt="Extra Image" class="ml-4">
+      </div>
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center mt-6">
+      <p class="text-gray-600">Footer text or links go here</p>
+      <p class="text-gray-600 mt-4">Add Element</p>
+    </footer>
+  </div>
+</body>
+</html>

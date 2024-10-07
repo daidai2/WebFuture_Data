@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, .section, .product, .checkout, .shipping-info {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .checkbox-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li {
+            margin: 5px 0;
+        }
+        .shipping-info input, .shipping-info select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .shipping-info .flex {
+            justify-content: space-between;
+        }
+        .shipping-info .flex div {
+            flex: 1;
+            margin: 0 5px;
+        }
+        .shipping-info .flex div:first-child {
+            margin-left: 0;
+        }
+        .shipping-info .flex div:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mobility Solutions & Daily Living Aids</h1>
+            <a href="#" class="button">Find out More</a>
+        </div>
+        <div class="section flex">
+            <div class="box">
+                <h2>Wheelchair Repair</h2>
+                <a href="#" class="button">Find out More</a>
+            </div>
+            <div class="box">
+                <h2>Community Contracts</h2>
+                <a href="#" class="button">Find out More</a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="box">
+                <img src="placeholder.png" alt="Product Image" style="width: 100%; height: auto;">
+                <div class="product-info">
+                    <div>
+                        <p>$24.9</p>
+                        <h3>Product Title</h3>
+                    </div>
+                    <a href="#" class="button">Buy now</a>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <h2>Check items:</h2>
+            <ul class="checkbox-list">
+                <li><input type="checkbox" id="item1" name="item1" checked> <label for="item1">Check item 1</label></li>
+                <li><input type="checkbox" id="item2" name="item2"> <label for="item2">Check item 2</label></li>
+                <li><input type="checkbox" id="item3" name="item3"> <label for="item3">Check item 3</label></li>
+            </ul>
+        </div>
+        <div class="shipping-info">
+            <h2>Shipping Info</h2>
+            <form action="#" method="post">
+                <div class="flex">
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="United States">United States</option>
+                            <!-- Add other countries as needed -->
+                        </select>
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <select id="state" name="state" required>
+                            <option value="">Choose</option>
+                            <!-- Add states as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div>
+                        <label for="zip-code">Zip Code</label>
+                        <input type="text" id="zip-code" name="zip-code" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <h2 class="button" style="background-color: #6c757d;">Back</h2>
+                    <button type="submit" class="button">Next Step</button>
+                </div>
+            </form>
+        </div>
+        <p>Add Element</p>
+    </div>
+</body>
+</html>

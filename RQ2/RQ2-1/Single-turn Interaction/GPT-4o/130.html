@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobility Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Change the first image to a button
+      const firstImage = document.querySelector('img');
+      if (firstImage) {
+        const modifyButton = document.createElement('button');
+        modifyButton.textContent = 'Modify Element';
+        modifyButton.classList.add('bg-blue-500', 'text-white', 'py-2', 'px-4', 'rounded');
+        firstImage.parentNode.replaceChild(modifyButton, firstImage);
+      }
+
+      // Delete the first text input field
+      const firstTextInput = document.querySelector('input[type="text"]');
+      if (firstTextInput) {
+        firstTextInput.parentNode.removeChild(firstTextInput);
+      }
+
+      // Add event listener to "Find Out More" button
+      const findOutMoreButtons = document.querySelectorAll('button');
+      findOutMoreButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const newModule = document.createElement('section');
+          newModule.classList.add('text-center', 'mb-8');
+          newModule.innerHTML = '<p>Add Interaction</p>';
+          document.body.appendChild(newModule);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body class="font-sans m-5">
+  <!-- Header Section -->
+  <header class="text-center mb-8">
+    <h1 class="text-3xl font-bold mb-2">Mobility Solutions & Daily Living Aids</h1>
+    <h2 class="text-xl font-semibold mb-4">Making Life Easier</h2>
+    <button class="bg-blue-500 text-white py-2 px-4 rounded">Find Out More</button>
+  </header>
+
+  <!-- Main Navigation Section -->
+  <nav class="flex justify-between mb-8">
+    <div class="text-center">
+      <h3 class="text-lg font-semibold">Wheelchair Repair</h3>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded mt-2">Find Out More</button>
+    </div>
+    <div class="text-center">
+      <h3 class="text-lg font-semibold">Community Contacts</h3>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded mt-2">Find Out More</button>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <section class="flex mb-8">
+    <!-- Left Side -->
+    <div class="w-1/2">
+      <!-- First image is replaced by a button via script -->
+    </div>
+    <!-- Right Side -->
+    <div class="w-1/2 flex flex-col justify-center text-center">
+      <p class="mb-4">Descriptive lines of text</p>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded self-center">Find Out More</button>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="text-center mb-8">
+    <img src="https://placehold.co/300x150" alt="Product" class="mx-auto mb-2">
+    <div class="text-xl font-semibold text-blue-600 mb-1">$24.9</div>
+    <div class="text-lg font-medium mb-2">Product Title</div>
+    <div class="text-gray-600">Descriptive lines of text</div>
+  </section>
+
+  <!-- Checklist Section -->
+  <section class="text-center mb-8">
+    <h3 class="text-lg font-semibold mb-2">Check items:</h3>
+    <div>
+      <input type="checkbox" id="item1" class="mr-2">
+      <label for="item1">Check item 1</label>
+    </div>
+    <div>
+      <input type="checkbox" id="item2" class="mr-2">
+      <label for="item2">Check item 2</label>
+    </div>
+    <div>
+      <input type="checkbox" id="item3" class="mr-2">
+      <label for="item3">Check item 3</label>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="text-center mb-8">
+    <button class="bg-green-500 text-white py-2 px-4 rounded">Buy Now</button>
+  </section>
+
+  <!-- Additional Information Section -->
+  <section class="mb-8">
+    <img src="https://placehold.co/300x150" alt="Additional Info" class="mx-auto mb-4">
+    <p class="text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus dui vitae nulla placerat, at lacinia mi pulvinar.</p>
+    <form class="text-center">
+      <div class="mb-4">
+        <label for="input1" class="block mb-1">Label</label>
+        <!-- First text input field is removed via script -->
+      </div>
+      <div class="mb-4">
+        <label for="input2" class="block mb-1">Label</label>
+        <input type="text" id="input2" class="border py-2 px-4 rounded w-1/2">
+      </div>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+    </form>
+  </section>
+
+  <!-- Radio Buttons Section -->
+  <section class="text-center mb-8">
+    <div class="mb-4">
+      <input type="radio" id="radio1" name="radio" class="mr-2">
+      <label for="radio1">Radio 1</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" id="radio2" name="radio" class="mr-2">
+      <label for="radio2">Radio 2</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" id="radio3" name="radio" class="mr-2">
+      <label for="radio3">Radio 3</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" id="radio4" name="radio" class="mr-2">
+      <label for="radio4">Radio 4</label>
+    </div>
+    <div class="mb-4">
+      <input type="radio" id="radio5" name="radio" class="mr-2">
+      <label for="radio5">Radio 5</label>
+    </div>
+  </section>
+
+  <!-- Tertiary Image Section -->
+  <section class="text-center mb-8">
+    <img src="https://placehold.co/300x150" alt="Secondary Info" class="mx-auto mb-4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus dui vitae nulla placerat, at lacinia mi pulvinar.</p>
+  </section>
+
+  <!-- Checklist Items Section -->
+  <section class="text-center mb-8">
+    <div>
+      <input type="checkbox" id="checklist1" class="mr-2">
+      <label for="checklist1">Checklist 1</label>
+    </div>
+    <div>
+      <input type="checkbox" id="checklist2" class="mr-2">
+      <label for="checklist2">Checklist 2</label>
+    </div>
+    <div>
+      <input type="checkbox" id="checklist3" class="mr-2">
+      <label for="checklist3">Checklist 3</label>
+    </div>
+    <div>
+      <input type="checkbox" id="checklist4" class="mr-2">
+      <label for="checklist4">Checklist 4</label>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center text-gray-600 mt-8">
+    <p>&copy; 2023 Mobility Solutions. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

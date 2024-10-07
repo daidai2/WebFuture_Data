@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100" id="body1">
+  <div class="max-w-4xl mx-auto p-5 bg-white shadow-lg" id="body1-div1">
+    <!-- Header -->
+    <header class="mb-8" id="body1-div1-header1">
+      <h1 class="text-3xl font-bold" id="body1-div1-header1-h11">Checkout</h1>
+    </header>
+
+    <!-- Shipping Address Section -->
+    <section class="mb-8" id="body1-div1-section1">
+      <h2 class="text-2xl font-semibold mb-4" id="body1-div1-section1-h21">Shipping Address</h2>
+      <div class="mb-4" id="body1-div1-section1-div2">
+        <label for="first-name" class="block mb-1" id="body1-div1-section1-div2-label1">First Name</label>
+        <input id="body1-div1-section1-div2-input1" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4" id="body1-div1-section1-div3">
+        <label for="last-name" class="block mb-1" id="body1-div1-section1-div3-label2">Last Name</label>
+        <input id="body1-div1-section1-div3-input2" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4" id="body1-div1-section1-div4">
+        <label for="company" class="block mb-1" id="body1-div1-section1-div4-label3">Company</label>
+        <input id="body1-div1-section1-div4-input3" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section class="mb-8" id="body1-div1-section2">
+      <h2 class="text-2xl font-semibold mb-4" id="body1-div1-section2-h22">Shipping Service</h2>
+      <div class="mb-2" id="body1-div1-section2-div5">
+        <input type="radio" id="body1-div1-section2-div5-input4" name="shipping" class="mr-2">
+        <label for="standard" class="font-medium" id="body1-div1-section2-div5-label4">Standard (14 days - $6.99)</label>
+      </div>
+      <div class="mb-2" id="body1-div1-section2-div6">
+        <input type="radio" id="body1-div1-section2-div6-input5" name="shipping" class="mr-2">
+        <label for="expedited" class="font-medium" id="body1-div1-section2-div6-label5">Expedited (7 days - $12.99)</label>
+      </div>
+      <div class="mb-2" id="body1-div1-section2-div7">
+        <input type="radio" id="body1-div1-section2-div7-input6" name="shipping" class="mr-2">
+        <label for="express" class="font-medium" id="body1-div1-section2-div7-label6">Express (3 days - $19.99)</label>
+      </div>
+    </section>
+
+    <!-- Dropdown Section -->
+    <div class="mb-8 flex items-center space-x-4" id="body1-div1-div8">
+      <select class="p-2 border border-gray-300 rounded" id="body1-div1-div8-select1">
+        <option id="body1-div1-div8-select1-option1">C Sharp</option>
+      </select>
+      <button class="p-2 bg-blue-500 text-white rounded" id="body1-div1-div8-button1" onclick="appendNewModule()">Get Drop Down Here</button>
+    </div>
+
+    <!-- Checkbox Section -->
+    <div class="mb-8 flex items-center space-x-4" id="body1-div1-div9">
+      <div id="body1-div1-div9-div10">
+        <input type="checkbox" id="body1-div1-div9-div10-input7" class="mr-2">
+        <label for="csharp" id="body1-div1-div9-div10-label7">C#</label>
+      </div>
+      <div id="body1-div1-div9-div11">
+        <input type="checkbox" id="body1-div1-div9-div11-input8" class="mr-2">
+        <label for="java" id="body1-div1-div9-div11-label8">Java</label>
+      </div>
+      <div id="body1-div1-div9-div12">
+        <input type="checkbox" id="body1-div1-div9-div12-input9" class="mr-2">
+        <label for="php" id="body1-div1-div9-div12-label9">PHP</label>
+      </div>
+      <div id="body1-div1-div9-div13">
+        <input type="checkbox" id="body1-div1-div9-div13-input10" class="mr-2">
+        <label for="vb" id="body1-div1-div9-div13-label10">Visual Basic</label>
+      </div>
+    </div>
+
+    <!-- Large Placeholder Image -->
+    <figure class="mb-8" id="body1-div1-figure1">
+      <img src="https://placehold.co/600x200" alt="Large Placeholder Image" class="w-full h-auto border border-gray-300" id="body1-div1-figure1-img1">
+    </figure>
+
+    <!-- Text Area Section -->
+    <div class="mb-8 grid grid-cols-3 gap-4" id="body1-div1-div14">
+      <article id="body1-div1-div14-article1">
+        <p id="body1-div1-div14-article1-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis.</p>
+      </article>
+      <article id="body1-div1-div14-article2">
+        <p id="body1-div1-div14-article2-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis.</p>
+      </article>
+      <article id="body1-div1-div14-article3">
+        <p id="body1-div1-div14-article3-p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis.</p>
+      </article>
+    </div>
+
+    <!-- Form Section -->
+    <section class="mb-8" id="body1-div1-section3">
+      <div class="mb-4" id="body1-div1-section3-div15">
+        <label for="field1" class="block mb-1" id="body1-div1-section3-div15-label11">Label</label>
+        <input id="body1-div1-section3-div15-input11" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4" id="body1-div1-section3-div16">
+        <label for="field2" class="block mb-1" id="body1-div1-section3-div16-label12">Label</label>
+        <input id="body1-div1-section3-div16-input12" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4" id="body1-div1-section3-div17">
+        <button class="w-full p-2 bg-blue-500 text-white rounded" id="body1-div1-section3-div17-button2">Button</button>
+      </div>
+      <div class="flex flex-wrap space-x-4" id="body1-div1-section3-div18">
+        <div id="body1-div1-section3-div18-div19">
+          <input type="checkbox" id="body1-div1-section3-div18-div19-input13" class="mr-2">
+          <label for="checkbox1" id="body1-div1-section3-div18-div19-label13">Checkbox 1</label>
+        </div>
+        <div id="body1-div1-section3-div18-div20">
+          <input type="checkbox" id="body1-div1-section3-div18-div20-input14" class="mr-2">
+          <label for="checkbox2" id="body1-div1-section3-div18-div20-label14">Checkbox 2</label>
+        </div>
+        <div id="body1-div1-section3-div18-div21">
+          <input type="checkbox" id="body1-div1-section3-div18-div21-input15" class="mr-2">
+          <label for="checkbox3" id="body1-div1-section3-div18-div21-label15">Checkbox 3</label>
+        </div>
+        <div id="body1-div1-section3-div18-div22">
+          <input type="checkbox" id="body1-div1-section3-div18-div22-input16" class="mr-2">
+          <label for="checkbox4" id="body1-div1-section3-div18-div22-label16">Checkbox 4</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radio Button Section -->
+    <section class="mb-8" id="body1-div1-section4">
+      <h2 class="text-2xl font-semibold mb-4" id="body1-div1-section4-h23">Radio Options</h2>
+      <div class="mb-2" id="body1-div1-section4-div23">
+        <input type="radio" id="body1-div1-section4-div23-input17" name="options" class="mr-2">
+        <label for="radio1" class="font-medium" id="body1-div1-section4-div23-label17">Radio 1</label>
+      </div>
+      <div class="mb-2" id="body1-div1-section4-div24">
+        <input type="radio" id="body1-div1-section4-div24-input18" name="options" class="mr-2">
+        <label for="radio2" class="font-medium" id="body1-div1-section4-div24-label18">Radio 2</label>
+      </div>
+      <div class="mb-2" id="body1-div1-section4-div25">
+        <input type="radio" id="body1-div1-section4-div25-input19" name="options" class="mr-2">
+        <label for="radio3" class="font-medium" id="body1-div1-section4-div25-label19">Radio 3</label>
+      </div>
+      <div class="mb-2" id="body1-div1-section4-div26">
+        <input type="radio" id="body1-div1-section4-div26-input20" name="options" class="mr-2">
+        <label for="radio4" class="font-medium" id="body1-div1-section4-div26-label20">Radio 4</label>
+      </div>
+    </section>
+
+    <!-- Small Placeholder Image and Description -->
+    <figure class="mb-8" id="body1-div1-figure2">
+      <img src="https://placehold.co/300x200" alt="Small Placeholder Image" class="w-full h-auto border border-gray-300" id="body1-div1-figure2-img2">
+    </figure>
+    <p class="text-center" id="body1-div1-p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis justo ut eros vehicula, a bibendum lacus tincidunt.</p>
+  </div>
+
+
+  <script data-custom-scripts="true">
+    function appendNewModule() {
+      const newModule = document.createElement('div');
+      newModule.className = "p-4 bg-white shadow-lg mt-8";
+      newModule.id = "Parent_body1-div1_Next_null_Queue_1";
+      newModule.name = "add";
+      newModule.innerHTML = '<p id="Parent_body1-div1_Next_null_Queue_2" name="add" class="text-[50px]">Add Interaction</p>';
+      document.getElementById('body1-div1').appendChild(newModule);
+    }
+  </script>
+  <p id="Parent_body1_Next_null_Queue_1">Add Element</p>
+</body>
+</html>

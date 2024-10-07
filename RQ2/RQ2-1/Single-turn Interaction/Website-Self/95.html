@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #aaa;
+            margin-bottom: 10px;
+        }
+        .image-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .back-button, .add-to-cart-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .back-button {
+            background-color: #6c757d;
+            margin-top: 10px;
+        }
+        .add-to-cart-button {
+            background-color: #C6A7B1;
+        }
+        .add-to-cart-button:hover {
+            background-color: #FFDEE9;
+        }
+        .checkbox, .radio-button {
+            margin: 10px 0;
+        }
+        .label {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Section 1 -->
+    <div class="section">
+        <div class="image-placeholder">Image</div>
+        <div class="label">Some Text</div>
+        <button class="back-button">Back</button>
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Checkbox</label>
+        </div>
+    </div>
+
+    <!-- Product Page -->
+    <div class="section">
+        <div class="image-placeholder">Product Image</div>
+        <div class="label">Product Name</div>
+        <div class="label">Manufacturer</div>
+        <div class="label">
+            <label>Color:</label>
+            <div class="radio-button">
+                <input type="radio" id="colorRed" name="color" value="Red">
+                <label for="colorRed">Red</label>
+            </div>
+            <div class="radio-button">
+                <input type="radio" id="colorBlue" name="color" value="Blue">
+                <label for="colorBlue">Blue</label>
+            </div>
+            <div class="radio-button">
+                <input type="radio" id="colorWhite" name="color" value="White">
+                <label for="colorWhite">White</label>
+            </div>
+        </div>
+        <div class="label">
+            <label>Price: $100</label>
+        </div>
+        <div class="label">
+            <label>Old Price: $200</label>
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <div class="image-placeholder">Image</div>
+        <div class="label">Some Text</div>
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Checkbox</label>
+        </div>
+        <div class="label">
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label for="radio1">Radio Button 1</label>
+        </div>
+        <div class="label">
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">Radio Button 2</label>
+        </div>
+        <button class="back-button">Button</button>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.add-to-cart-button').addEventListener('click', function() {
+        alert('Add Interaction');
+    });
+
+    // Change the background color of the first button and add hover effect
+    var firstButton = document.querySelector('.back-button');
+    firstButton.style.backgroundColor = '#C6A7B1';
+    firstButton.addEventListener('mouseover', function() {
+        firstButton.style.backgroundColor = '#FFDEE9';
+    });
+    firstButton.addEventListener('mouseout', function() {
+        firstButton.style.backgroundColor = '#C6A7B1';
+    });
+
+    // Delete the first text input field on the page
+    var firstInput = document.querySelector('input[type="text"]');
+    if (firstInput) {
+        firstInput.remove();
+    }
+</script>
+
+</body>
+</html>

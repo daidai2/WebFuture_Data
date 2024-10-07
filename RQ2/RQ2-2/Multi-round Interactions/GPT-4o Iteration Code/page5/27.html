@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-icon {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      color: red;
+    }
+    body, .container, header, section, article, .grid-cols-2 > div {
+      background-color: white;
+    }
+    .divider {
+      border-top: 5px solid #f8bcbc;
+      width: 100%;
+      margin: 0;
+    }
+    .extended-divider {
+      border-top: 5px solid #f8bcbc;
+      width: 110%;
+      margin: 0 -5%;
+    }
+    .spacing {
+      margin-bottom: 2rem;
+    }
+    .button-spacing {
+      margin-top: 1rem;
+    }
+    .smaller-button {
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+      width: 33%;
+    }
+    .float-right-top {
+      float: right;
+      margin-left: 1rem;
+      margin-top: -8rem; /* 调整这个值来使图片向上移动 */
+    }
+    .diamond {
+      width: 100px;
+      height: 100px;
+      transform: rotate(45deg);
+      border: 2px solid gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .diamond-icon {
+      transform: rotate(-45deg);
+      color: red;
+      font-size: 2rem;
+    }
+    .row-spacing {
+      margin-bottom: 6rem; /* 增加这个值以增加行间距 */
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <div class="container mx-auto pt-20 p-4 bg-white">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center bg-white p-4 shadow mb-0">
+      <div class="text-xl font-bold relative">
+        <i class="fas fa-bars fixed-icon"></i>
+        Editorial by HTML5 UP
+      </div>
+      <nav class="space-x-4">
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon1</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon2</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon3</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon4</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon5</button>
+      </nav>
+    </header>
+    
+    <!-- Divider between Title1 and Title2 -->
+    <div class="divider"></div>
+
+    <!-- Main Content Section -->
+    <section class="mt-0">
+      <!-- First Subsection -->
+      <article class="bg-white p-12 shadow mb-0" style="width: 100%;">
+        <h1 class="text-4xl font-bold spacing">Hi, I’m Editorial <br>by HTML5 UP</h1>
+        <h2 class="text-base spacing">A FREE AND FULLY RESPONSIVE SITE TEMPLATE</h2>
+        <p class="spacing">Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+        <button class="bg-white text-pink-500 border-2 border-pink-500 px-4 py-2 rounded spacing">LEARN MORE</button>
+        <div class="mt-4">
+          <img src="pic01.jpg" alt="PIC2" class="float-right-top">
+        </div>
+      </article>
+
+      <!-- Second Subsection -->
+      <article class="bg-white p-12 shadow mb-0">
+        <h2 class="text-3xl font-bold mb-6">Erat lacinia</h2>
+        <!-- Extended Divider below Title3 -->
+        <div class="extended-divider"></div>
+        <div class="grid grid-cols-2 gap-4 row-spacing">
+          <!-- Link3-1 to Link3-2 -->
+          <div class="flex">
+            <div class="diamond">
+              <i class="fas fa-gem diamond-icon"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">Erat lacinia</h3>
+              <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="diamond">
+              <i class="fas fa-paper-plane diamond-icon"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">Sapien veroeros</h3>
+              <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 row-spacing">
+          <!-- Link3-3 to Link3-4 -->
+          <div class="flex">
+            <div class="diamond">
+              <i class="fas fa-rocket diamond-icon"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">Quam lorem ipsum</h3>
+              <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="diamond">
+              <i class="fas fa-signal diamond-icon"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold">Sed magna finibus</h3>
+              <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Third Subsection -->
+      <article class="bg-white p-6 shadow mb-0">
+        <h2 class="text-3xl font-bold mb-4">Ipsum sed dolor</h2>
+        <!-- Extended Divider below Title4 -->
+        <div class="extended-divider"></div>
+        <div class="grid grid-cols-2 gap-0">
+          <!-- PIC4-1 to PIC4-6 -->
+          <div class="p-4 rounded shadow">
+            <img src="pic01.jpg" alt="PIC4-1">
+            <h3 class="font-bold mt-4">Interdum aenean</h3>
+            <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            <button class="bg-white text-pink-500 border-2 border-pink-500 px-2 py-2 rounded mt-4 smaller-button">BUTTON4-1</button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="pic02.jpg" alt="PIC4-2">
+            <h3 class="font-bold mt-4">Nulla amet dolore</h3>
+            <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            <button class="bg-white text-pink-500 border-2 border-pink-500 px-2 py-2 rounded mt-4 smaller-button">BUTTON4-2</button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="pic03.jpg" alt="PIC4-3">
+            <h3 class="font-bold mt-4">Tempus ullamcorper</h3>
+            <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            <button class="bg-white text-pink-500 border-2 border-pink-500 px-2 py-2 rounded mt-4 smaller-button">BUTTON4-3</button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="pic04.jpg" alt="PIC4-4">
+            <h3 class="font-bold mt-4">Sed etiam facilis</h3>
+            <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            <button class="bg-white text-pink-500 border-2 border-pink-500 px-2 py-2 rounded mt-4 smaller-button">BUTTON4-4</button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="pic05.jpg" alt="PIC4-5">
+            <h3 class="font-bold mt-4">Feugiat lorem aenean</h3>
+            <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            <button class="bg-white text-pink-500 border-2 border-pink-500 px-2 py-2 rounded mt-4 smaller-button">BUTTON4-5</button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="pic06.jpg" alt="PIC4-6">
+            <h3 class="font-bold mt-4">Amet varius aliquam</h3>
+            <p class="mt-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            <button class="bg-white text-pink-500 border-2 border-pink-500 px-2 py-2 rounded mt-4 smaller-button">BUTTON4-6</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

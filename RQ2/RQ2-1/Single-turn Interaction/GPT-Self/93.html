@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Example</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, .form-section, .product-section, .checklist, .misc-section {
+            margin-bottom: 20px;
+        }
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .header li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .form-section input[type="text"], .form-section input[type="email"], .form-section input[type="password"] {
+            width: 45%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 50px; /* 修改字体大小 */
+        }
+        .form-section .checkbox, .form-section .submit {
+            margin: 10px 0;
+        }
+        .product-section img {
+            width: 100%;
+            height: auto;
+            background-color: #ccc;
+        }
+        .checklist ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .checklist li {
+            margin: 5px 0;
+        }
+        .misc-section .image-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .misc-section .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .radio-buttons {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<ul>
+<li><a href="#">Add Element</a></li> <!-- 添加超链接 -->
+<li>Sign Up</li>
+<li>Login</li>
+</ul>
+</div>
+<div class="form-section">
+<label for="first-name">Name</label>
+<input id="first-name" name="first-name" type="text"/>
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="text"/>
+<label for="email">Email</label>
+<input id="email" name="email" type="email"/>
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" type="password"/>
+<div class="checkbox">
+<input id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+</div>
+<div class="product-section">
+<div class="image-placeholder"></div>
+<h2>$24.99</h2>
+<h3>Product Title</h3>
+</div>
+<div class="checklist">
+<h3>Check items:</h3>
+<ul>
+<li><input id="item1" name="item1" type="checkbox"/><label for="item1">Check item 1</label></li>
+<li><input id="item2" name="item2" type="checkbox"/><label for="item2">Check item 2</label></li>
+<li><input id="item3" name="item3" type="checkbox"/><label for="item3">Check item 3</label></li>
+</ul>
+<button type="button">Buy Now</button>
+</div>
+<div class="misc-section">
+<div class="image-placeholder"></div>
+<p>Some text content here...</p>
+</div>
+<div class="misc-section">
+<label for="label">Label</label>
+<input id="label" name="label" type="text"/>
+<div class="checkbox">
+<input id="checkbox1" name="checkbox1" type="checkbox"/><label for="checkbox1">Checkbox</label>
+<input id="checkbox2" name="checkbox2" type="checkbox"/><label for="checkbox2">Checkbox</label>
+</div>
+<div class="radio-buttons">
+<input id="radio1" name="radio" type="radio" value="radio1"/><label for="radio1">Radio button</label>
+<input id="radio2" name="radio" type="radio" value="radio2"/><label for="radio2">Radio button</label>
+</div>
+<div class="image-placeholder"></div>
+<a class="button" href="#">Button</a>
+</div>
+<div class="submit"> <!-- 将Sign Up按钮移至页面底部 -->
+<button id="6_1" type="submit">Sign Up</button>
+</div>
+</div>
+</body>
+</html>

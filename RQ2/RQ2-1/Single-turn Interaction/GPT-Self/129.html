@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 10px;
+        }
+        .radio-group input, .checkbox-group input {
+            margin-right: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .product-review {
+            display: flex;
+            align-items: center;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating span {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="first-text">Checkout</h2>
+        <form>
+            <h3>Shipping Address</h3>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <h3>Shipping Service</h3>
+            <div class="radio-group">
+                <input type="radio" id="standard" name="shipping" value="standard">
+                <label for="standard">Standard - 14 days - $6.59</label><br>
+                <input type="radio" id="expedited" name="shipping" value="expedited">
+                <label for="expedited">Expedited - 7 days - $11.97</label><br>
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express - 3 days - $19.99</label>
+            </div>
+
+            <h3>Write Review</h3>
+            <div class="product-review">
+                <!-- 删除了第一个图像 -->
+                <div>
+                    <p>Product Name</p>
+                    <p>$Price</p>
+                    <p>45 reviews</p>
+                </div>
+            </div>
+            <label>Rate Product</label>
+            <div class="rating">
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+            </div>
+            <label for="headline">Headline</label>
+            <input type="text" id="headline" name="headline">
+            <label for="review">Review</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+            <button type="submit" class="button">Submit</button>
+        </form>
+
+        <h3>Additional Section</h3>
+        <label for="label1">Label</label>
+        <input type="text" id="label1" name="label1">
+        <label for="label2">Label</label>
+        <input type="text" id="label2" name="label2">
+        <!-- 将底部按钮更改为标题 -->
+        <h3 class="button">Button</h3>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            <label for="checkbox1">Checkbox 1</label><br>
+            <input type="checkbox" id="checkbox2" name="checkbox2">
+            <label for="checkbox2">Checkbox 2</label><br>
+            <input type="checkbox" id="checkbox3" name="checkbox3">
+            <label for="checkbox3">Checkbox 3</label><br>
+            <input type="checkbox" id="checkbox4" name="checkbox4">
+            <label for="checkbox4">Checkbox 4</label>
+        </div>
+        
+        <div class="radio-group">
+            <input type="radio" id="radio1" name="radio" value="radio1">
+            <label for="radio1">Radio 1</label><br>
+            <input type="radio" id="radio2" name="radio" value="radio2">
+            <label for="radio2">Radio 2</label><br>
+            <input type="radio" id="radio3" name="radio" value="radio3">
+            <label for="radio3">Radio 3</label><br>
+            <input type="radio" id="radio4" name="radio" value="radio4">
+            <label for="radio4">Radio 4</label>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+        </div>
+    </div>
+</body>
+</html>

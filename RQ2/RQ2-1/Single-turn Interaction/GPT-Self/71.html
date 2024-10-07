@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Fidelity Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .profile, .checkout, .catalog {
+            margin-bottom: 40px;
+        }
+        .profile-item, .catalog-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-item img, .catalog-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .checkout input[type="text"], .checkout input[type="radio"] {
+            margin-bottom: 10px;
+        }
+        .catalog-item {
+            flex-direction: column;
+            text-align: center;
+        }
+        .catalog-item img {
+            margin: 0 auto;
+        }
+        .catalog-item button {
+            margin-top: 10px;
+        }
+        .catalog-item button:first-of-type {
+            background-color: #C6A7B1;
+        }
+        .catalog-item button:first-of-type:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.catalog-item button');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const newModule = document.createElement('div');
+                    newModule.className = 'new-module';
+                    newModule.innerHTML = '<p>Add Interaction</p>';
+                    document.body.appendChild(newModule);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Profiles Section -->
+        <div class="profile">
+            <h2>Profiles</h2>
+            <div class="profile-item">
+                <img src="placeholder.png" alt="Mate One">
+                <div>
+                    <h3>Mate One</h3>
+                    <p>Job Title</p>
+                    <p>Details...</p>
+                </div>
+            </div>
+            <div class="profile-item">
+                <img src="placeholder.png" alt="Mate Two">
+                <div>
+                    <h3>Mate Two</h3>
+                    <p>Job Title</p>
+                    <p>Details...</p>
+                </div>
+            </div>
+            <div class="profile-item">
+                <img src="placeholder.png" alt="Mate Three">
+                <div>
+                    <h3>Mate Three</h3>
+                    <p>Job Title</p>
+                    <p>Details...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Checkout Section -->
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <form>
+                <div>
+                    <label>First Name</label>
+                    <input type="text" name="first_name">
+                </div>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" name="last_name">
+                </div>
+                <div>
+                    <label>Company</label>
+                    <input type="text" name="company">
+                </div>
+                <div>
+                    <h3>Shipping Service</h3>
+                    <input type="radio" name="shipping" value="standard" checked> Standard (14 days - $6.59)<br>
+                    <input type="radio" name="shipping" value="expedited"> Expedited (7 days - $11.97)<br>
+                    <input type="radio" name="shipping" value="express"> Express (3 days - $19.99)<br>
+                </div>
+            </form>
+        </div>
+
+        <!-- Product Catalog Section -->
+        <div class="catalog">
+            <h2>Product Catalog</h2>
+            <div>
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+            <div class="catalog-item">
+                <img src="placeholder.png" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="catalog-item">
+                <img src="placeholder.png" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$10.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="catalog-item">
+                <img src="placeholder.png" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$40.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

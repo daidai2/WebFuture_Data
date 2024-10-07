@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="First input field">
+    <input type="text" value="Second input field">
+    <button>Bottom-most button</button>
+    
+    <script>
+        // 删除第一个文本输入字段
+        const firstInput = document.querySelector('input[type="text"]');
+        if (firstInput) {
+            firstInput.remove();
+        }
+
+        // 将最底部的按钮变为一个标题
+        const buttons = document.querySelectorAll('button');
+        if (buttons.length > 0) {
+            const lastButton = buttons[buttons.length - 1];
+            const heading = document.createElement('h1');
+            heading.textContent = lastButton.textContent;
+            lastButton.replaceWith(heading);
+        }
+
+        // 在页面底部添加文本 "Add Element"
+        const addElementText = document.createElement('div');
+        addElementText.textContent = 'Add Element';
+        document.body.appendChild(addElementText);
+    </script>
+</body>
+</html>

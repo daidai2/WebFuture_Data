@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hover\:bg-hoverColor:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-4">
+  <header class="bg-white p-4 shadow-md">
+    <h1 class="text-xl font-bold">Checkout</h1>
+    <a href="#" id="addElementLink" class="text-blue-500">Add Element</a>
+  </header>
+
+  <main class="bg-white p-6 mt-4 shadow-md">
+    <section id="shipping-address" class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Shipping Address</h2>
+      <form>
+        <div class="grid grid-cols-1 gap-4">
+          <div>
+            <label class="block font-medium mb-1" for="shippingAddressFirstName">First Name</label>
+            <input type="text" id="shippingAddressFirstName" class="block w-full border border-gray-300 rounded p-2">
+          </div>
+          <div>
+            <label class="block font-medium mb-1" for="shippingAddressLastName">Last Name</label>
+            <input type="text" id="shippingAddressLastName" class="block w-full border border-gray-300 rounded p-2">
+          </div>
+          <div>
+            <label class="block font-medium mb-1" for="shippingAddressCompany">Company</label>
+            <input type="text" id="shippingAddressCompany" class="block w-full border border-gray-300 rounded p-2">
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="shipping-service" class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Shipping Service</h2>
+      <div>
+        <div class="mb-4">
+          <input type="radio" id="shippingServiceStandard" name="shipping_service" class="mr-2">
+          <label for="shippingServiceStandard">Standard</label>
+          <span class="block ml-6">14 days - $6.59</span>
+        </div>
+        <div class="mb-4">
+          <input type="radio" id="shippingServiceExpedited" name="shipping_service" class="mr-2">
+          <label for="shippingServiceExpedited">Expedited</label>
+          <span class="block ml-6">7 days - $12.97</span>
+        </div>
+        <div class="mb-4">
+          <input type="radio" id="shippingServiceExpress" name="shipping_service" class="mr-2">
+          <label for="shippingServiceExpress">Express</label>
+          <span class="block ml-6">3 days - $19.97</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dropdown-and-checkboxes mb-6">
+      <label for="languageDropdown" class="block font-medium mb-1">Get Drop Down Here</label>
+      <select id="languageDropdown" class="block w-full border border-gray-300 rounded p-2 mb-4">
+        <option value="csharp">C Sharp</option>
+      </select>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2"> C#
+          </label>
+          <label class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2"> Java
+          </label>
+        </div>
+        <div>
+          <label class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2"> PHP
+          </label>
+          <label class="flex items-center mb-2">
+            <input type="checkbox" class="mr-2"> Visual Basic
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="additional-elements mb-6 grid grid-cols-2 gap-4">
+      <div>
+        <button id="modifyElementButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-hoverColor">Modify Element</button>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <div class="h-4 bg-gray-200 rounded"></div>
+        <div class="h-4 bg-gray-200 rounded"></div>
+        <div class="h-4 bg-gray-200 rounded"></div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <label class="block font-medium mb-1">Label</label>
+      <input type="text" class="block w-full border border-gray-300 rounded p-2 mb-4">
+      <label class="block font-medium mb-1">Label</label>
+      <input type="text" class="block w-full border border-gray-300 rounded p-2 mb-4">
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="checkbox1" class="mr-2">
+        <label for="checkbox1">Checkbox</label>
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="checkbox2" class="mr-2">
+        <label for="checkbox2">Checkbox</label>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <button id="dynamicButton" class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <div class="flex items-center">
+        <input type="radio" id="radio1" name="new_radio_group" class="mr-2">
+        <label for="radio1">Radiobutton</label>
+      </div>
+      <div class="flex items-center">
+        <input type="radio" id="radio2" name="new_radio_group" class="mr-2">
+        <label for="radio2">Radiobutton</label>
+      </div>
+    </div>
+
+    <div class="additional-image-and-text flex justify-between items-end mb-6">
+      <img src="https://placehold.co/100x100" alt="Additional Placeholder Image">
+      <div class="flex flex-col space-y-2">
+        <div class="h-4 bg-gray-200 rounded w-36"></div>
+        <div class="h-4 bg-gray-200 rounded w-36"></div>
+        <div class="h-4 bg-gray-200 rounded w-36"></div>
+      </div>
+    </div>
+
+    <div id="dynamicModule" class="bg-gray-200 p-4 mt-4 rounded hidden">
+      Add Interaction
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('dynamicButton').addEventListener('click', function() {
+      document.getElementById('dynamicModule').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

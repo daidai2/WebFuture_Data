@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low-Fidelity Wireframe</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<!-- Payment Method Section -->
+<div class="section">
+<h2>Select your payment method</h2>
+<label><input checked="" name="payment" type="radio" value="credit_card"/> Credit Card</label>
+<label><input name="payment" type="radio" value="paypal"/> Paypal</label>
+<label><input name="payment" type="radio" value="bank_transfer"/> Bank Transfer</label>
+<h3>Enter your data</h3>
+<label for="card_number">Card Number</label>
+<input id="card_number" name="card_number" type="text"/>
+<label for="expiration_date">Expiration Date</label>
+<input id="expiration_date" name="expiration_date" placeholder="MM/YY" type="text"/>
+<label for="ccv">CCV</label>
+<input id="ccv" name="ccv" type="text"/>
+<button type="submit">Complete</button>
+</div>
+<!-- Sign Up / Login Section -->
+<div class="section">
+<h2>Sign Up / Login</h2>
+<div class="tabs">
+<button onclick="showSignUp()">Sign Up</button>
+<button onclick="showLogin()">Login</button>
+</div>
+<div class="form" id="signup">
+<label for="last_name">Last Name</label>
+<input id="last_name" name="last_name" type="text"/>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel"/>
+<label for="email">Email</label>
+<input id="email" name="email" type="email"/>
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+<label for="confirm_password">Confirm Password</label>
+<input id="confirm_password" name="confirm_password" type="password"/>
+<label><input name="terms" type="checkbox"/> I agree to Terms and Conditions</label>
+</div>
+</div>
+<!-- Additional Form Elements Section -->
+<div class="section">
+<div>
+<label>Label</label>
+<input type="text"/>
+</div>
+<div>
+<label>Label</label>
+<input type="text"/>
+</div>
+<div>
+<label><input type="checkbox"/> Checkbox</label>
+<label><input type="checkbox"/> Checkbox</label>
+</div>
+<div>
+<label><input name="option" type="radio"/> Radio Button</label>
+<label><input name="option" type="radio"/> Radio Button</label>
+</div>
+<button>Button</button>
+</div>
+<div>
+            Add Element
+        </div>
+<button id="6_1" type="submit">Sign Up</button>
+</div>
+<script>
+        function showSignUp() {
+            document.getElementById('signup').style.display = 'block';
+            document.getElementById('login').style.display = 'none';
+        }
+
+        function showLogin() {
+            document.getElementById('signup').style.display = 'none';
+            document.getElementById('login').style.display = 'block';
+        }
+
+        // Initialize to show the Sign Up form by default
+        showSignUp();
+    </script>
+</body>
+</html>

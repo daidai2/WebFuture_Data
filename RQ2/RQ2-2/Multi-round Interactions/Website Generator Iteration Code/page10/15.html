@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-custom {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+    .bg-white-section {
+      background-color: white;
+    }
+    .bg-section {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    .image-wide {
+      width: calc(100% / 3);
+      height: auto;
+    }
+  </style>
+</head>
+<body class="bg-custom">
+  <div class="bg-white-section p-8">
+    <!-- Row 1 -->
+    <div class="grid grid-cols-4 gap-1 mt-16 bg-white-section">
+      <div class="text-center image-container">
+        <img src="01.jpg" alt="PIC1-1" class="image-wide mx-auto">
+      </div>
+      <div class="text-center image-container">
+        <img src="02.jpg" alt="PIC1-2" class="image-wide mx-auto">
+        <p>Text1-2</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="02.jpg" alt="PIC1-3" class="image-wide mx-auto">
+        <p>Text1-3</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="03.jpg" alt="PIC1-4" class="image-wide mx-auto">
+        <p>Text1-4</p>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="flex space-x-1 mt-4 bg-white-section">
+      <div class="text-center image-container">
+        <img src="05.jpg" alt="PIC1-5" class="mx-auto">
+        <p class="mt-2">Text1-5</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="06.jpg" alt="PIC1-6" class="mx-auto">
+        <p class="mt-2">Text1-6</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="07.jpg" alt="PIC1-7" class="mx-auto">
+        <p class="mt-2">Text1-7</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="08.jpg" alt="PIC1-8" class="mx-auto">
+        <p class="mt-2">Text1-8</p>
+      </div>
+    </div>
+
+    <!-- Text1-1 and Icons -->
+    <section class="bg-section p-4 border rounded-md flex justify-between items-center mt-16">
+      <p class="flex-1">Text1-1</p>
+      <div class="flex flex-col items-end">
+        <div class="flex space-x-4">
+          <img src="https://placehold.co/50x50" alt="Icon1-1">
+          <img src="https://placehold.co/50x50" alt="Icon1-2">
+          <img src="https://placehold.co/50x50" alt="Icon1-3">
+          <img src="https://placehold.co/50x50" alt="Icon1-4">
+          <img src="https://placehold.co/50x50" alt="Icon1-5">
+        </div>
+        <div class="flex space-x-4 mt-2">
+          <p>Text2</p>
+          <p>Text3</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

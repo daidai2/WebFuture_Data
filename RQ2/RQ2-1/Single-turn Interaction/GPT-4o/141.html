@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low Fidelity Wireframe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const completeButton = document.querySelector('button[type="button"].complete-button');
+      completeButton.addEventListener('click', () => {
+        // Add new module with text 'Add Interaction'
+        const newModule = document.createElement('div');
+        newModule.classList.add('new-module', 'bg-gray-200', 'p-4', 'mt-4');
+        newModule.innerHTML = '<p>Add Interaction</p>';
+        document.querySelector('body').appendChild(newModule);
+
+        // Move 'Complete' button to bottom of page
+        document.querySelector('body').appendChild(completeButton);
+      });
+
+      // Change first image to button with text 'Modify Element'
+      const firstImage = document.querySelector('.image-text img');
+      const modifyButton = document.createElement('button');
+      modifyButton.textContent = 'Modify Element';
+      modifyButton.classList.add('bg-blue-500', 'text-white', 'py-2', 'px-4', 'rounded');
+      firstImage.replaceWith(modifyButton);
+    });
+  </script>
+</head>
+<body class="bg-gray-100 p-6">
+<section class="max-w-4xl mx-auto bg-white p-6 shadow-md">
+<!-- Payment Method Section -->
+<div class="payment-method mb-8">
+<h2 class="text-2xl font-bold mb-4">Select your payment method</h2>
+<form>
+<fieldset class="border p-4">
+<legend class="font-semibold mb-2">Enter your data</legend>
+<div class="mb-2">
+<label class="mr-4">
+<input class="mr-1" name="payment" type="radio" value="credit-card"/> Credit Card
+            </label>
+<label class="mr-4">
+<input class="mr-1" name="payment" type="radio" value="paypal"/> PayPal
+            </label>
+<label>
+<input class="mr-1" name="payment" type="radio" value="bank-transfer"/> Bank Transfer
+            </label>
+</div>
+<div class="mb-4">
+<label class="block mb-1">Card Number</label>
+<input class="border w-full p-2" type="text"/>
+</div>
+<div class="flex mb-4">
+<div class="mr-4">
+<label class="block mb-1">Expiration date</label>
+<input class="border p-2 mr-1 w-16" placeholder="MM" type="text"/>
+<input class="border p-2 w-24" placeholder="YYYY" type="text"/>
+</div>
+<div>
+<label class="block mb-1">CVV</label>
+<input class="border p-2 w-16" type="text"/>
+</div>
+</div>
+<button class="bg-blue-500 text-white py-2 px-4 rounded complete-button" id="6_1" type="button">Complete</button>
+</fieldset>
+</form>
+</div>
+<!-- Sign Up/Login Form -->
+<div class="auth mb-8">
+<nav class="mb-4">
+<a class="text-blue-500 mr-4" href="#">Sign Up</a>
+<a class="text-blue-500" href="#">Login</a>
+</nav>
+<form>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block mb-1">Name</label>
+<input class="border w-full p-2" type="text"/>
+</div>
+<div>
+<label class="block mb-1">Last Name</label>
+<input class="border w-full p-2" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block mb-1">Phone</label>
+<input class="border w-full p-2" type="text"/>
+</div>
+<div>
+<label class="block mb-1">E-mail</label>
+<input class="border w-full p-2" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block mb-1">Password</label>
+<input class="border w-full p-2" type="password"/>
+</div>
+<div>
+<label class="block mb-1">Confirm Password</label>
+<input class="border w-full p-2" type="password"/>
+</div>
+</div>
+<div class="mb-4">
+<label>
+<input class="mr-2" type="checkbox"/> I agree to Terms and Conditions
+          </label>
+</div>
+<button class="bg-blue-500 text-white py-2 px-4 rounded" type="button">Sign Up</button>
+</form>
+</div>
+<!-- Additional Content Section -->
+<div class="additional-content">
+<div class="image-text mb-4 flex items-center">
+<img alt="Placeholder image" class="mr-4" src="https://placehold.co/100x100"/>
+<p>Placeholder for text description</p>
+</div>
+<div class="options mb-4">
+<div class="mb-2">
+<label class="mr-4">
+<input class="mr-1" type="checkbox"/> Checkbox
+          </label>
+<label>
+<input class="mr-1" type="checkbox"/> Checkbox
+          </label>
+</div>
+<div>
+<label class="block mb-1">Label</label>
+<input class="border w-full p-2 mb-2" type="text"/>
+<label class="block mb-1">Label</label>
+<input class="border w-full p-2" type="text"/>
+</div>
+</div>
+<div class="radio-buttons mb-4">
+<div class="mb-2">
+<label class="mr-4">
+<input class="mr-1" name="options" type="radio"/> Radio button
+          </label>
+<label>
+<input class="mr-1" name="options" type="radio"/> Radio button
+          </label>
+</div>
+<p>Placeholder for additional text</p>
+</div>
+<button class="bg-blue-500 text-white py-2 px-4 rounded" type="button">Button</button>
+</div>
+</section>
+</body>
+</html>

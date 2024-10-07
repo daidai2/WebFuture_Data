@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-6" id="body1">
+  <!-- Header Section -->
+  <header class="bg-white p-4 shadow-md" id="body1-header1">
+    <h2 id="Parent_body1-header1_Next_body1-header1-h11_Queue_1">
+      <a href="#" onclick="showAlert()" id="Parent_body1-header1_Next_body1-header1-h11_Queue_1">Add Element</a>
+    </h2>
+    <h1 class="text-xl font-bold mb-2" id="body1-header1-h11">Write Review</h1>
+    <div class="flex items-center" id="body1-header1-div1">
+
+      <button id="Parent_body1-header1-div1_Next_body1-header1-div1-div2_Queue_1">Modify Element</button>
+      <div id="body1-header1-div1-div2">
+        <div class="text-lg font-semibold" id="body1-header1-div1-div2-div3">Product Name</div>
+        <div class="text-gray-500" id="body1-header1-div1-div2-div4">$Price</div>
+      </div>
+      <div class="ml-auto text-right" id="body1-header1-div1-div5">
+        <div class="text-yellow-500" id="body1-header1-div1-div5-div6">⭐⭐⭐⭐☆</div>
+        <div class="text-gray-500" id="body1-header1-div1-div5-div7">45 reviews</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="mt-4" id="body1-main1">
+    <!-- Rate Product Section -->
+    <section class="bg-white p-4 shadow-md mb-4" id="body1-main1-section1">
+      <h2 class="text-lg font-semibold mb-2" id="body1-main1-section1-h21">Rate Product</h2>
+      <div class="flex items-center" id="body1-main1-section1-div8">
+        <div class="flex space-x-1" id="body1-main1-section1-div8-div9">
+          <span class="text-yellow-500" id="body1-main1-section1-div8-div9-span1">⭐</span>
+          <span class="text-gray-300" id="body1-main1-section1-div8-div9-span2">⭐</span>
+          <span class="text-gray-300" id="body1-main1-section1-div8-div9-span3">⭐</span>
+          <span class="text-gray-300" id="body1-main1-section1-div8-div9-span4">⭐</span>
+          <span class="text-gray-300" id="body1-main1-section1-div8-div9-span5">⭐</span>
+        </div>
+        <div class="ml-4 text-gray-500" id="body1-main1-section1-div8-div10">Bad :(</div>
+      </div>
+    </section>
+
+    <!-- Review Submission Section -->
+    <section class="bg-white p-4 shadow-md mb-4" id="body1-main1-section2">
+      <div class="mb-2" id="body1-main1-section2-div11">
+        <label class="block font-semibold mb-1" for="headline" id="body1-main1-section2-div11-label1">Headline</label>
+        <input class="w-full p-2 border border-gray-300 rounded" type="text" id="body1-main1-section2-div11-input1">
+      </div>
+      <div class="mb-2" id="body1-main1-section2-div12">
+        <label class="block font-semibold mb-1" for="review" id="body1-main1-section2-div12-label2">Review</label>
+        <textarea class="w-full p-2 border border-gray-300 rounded" id="body1-main1-section2-div12-textarea1" rows="4"></textarea>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded shadow" id="body1-main1-section2-button1">Submit</button>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="bg-white p-4 shadow-md mb-4" id="body1-main1-section3">
+      <img class="w-full h-64 mb-4" src="https://placehold.co/600x400" alt="Product" id="body1-main1-section3-img2">
+      <div class="text-lg font-semibold mb-2" id="body1-main1-section3-div13">$24.9</div>
+      <div class="text-xl font-bold mb-2" id="body1-main1-section3-div14">Product Title</div>
+      <hr class="mb-4" id="body1-main1-section3-hr1">
+      <div id="body1-main1-section3-div15">
+        <h3 class="text-lg font-semibold mb-2" id="body1-main1-section3-div15-h31">Check items:</h3>
+        <div class="flex items-center mb-2" id="body1-main1-section3-div15-div16">
+          <input class="mr-2" type="checkbox" id="body1-main1-section3-div15-div16-input2">
+          <label for="item1" id="body1-main1-section3-div15-div16-label3">Check item 1</label>
+        </div>
+        <div class="flex items-center mb-2" id="body1-main1-section3-div15-div17">
+          <input class="mr-2" type="checkbox" id="body1-main1-section3-div15-div17-input3">
+          <label for="item2" id="body1-main1-section3-div15-div17-label4">Check item 2</label>
+        </div>
+        <div class="flex items-center mb-2" id="body1-main1-section3-div15-div18">
+          <input class="mr-2" type="checkbox" id="body1-main1-section3-div15-div18-input4">
+          <label for="item3" id="body1-main1-section3-div15-div18-label5">Check item 3</label>
+        </div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded shadow" id="body1-main1-section3-div15-button2" onclick="showAlert()">Buy Now</button>
+      </div>
+    </section>
+
+    <!-- Additional Information Section -->
+    <article class="bg-white p-4 shadow-md mb-4" id="body1-main1-article1">
+      <img class="w-full h-64 mb-4" src="https://placehold.co/600x150" alt="Additional Info" id="body1-main1-article1-img3">
+      <p class="mb-2" id="body1-main1-article1-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+      <p class="mb-2" id="body1-main1-article1-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+      <p class="mb-2" id="body1-main1-article1-p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+    </article>
+
+    <!-- Form Section -->
+    <form class="bg-white p-4 shadow-md mb-4" id="body1-main1-form1">
+      <div class="mb-2 flex items-center" id="body1-main1-form1-div19">
+        <label class="w-24 font-semibold" for="field1" id="body1-main1-form1-div19-label6">Label</label>
+        <input class="flex-1 p-2 border border-gray-300 rounded" type="text" id="body1-main1-form1-div19-input5">
+      </div>
+      <div class="mb-2 flex items-center" id="body1-main1-form1-div20">
+        <label class="w-24 font-semibold" for="field2" id="body1-main1-form1-div20-label7">Label</label>
+        <input class="flex-1 p-2 border border-gray-300 rounded" type="text" id="body1-main1-form1-div20-input6">
+      </div>
+
+      <!-- Additional Checklist Items -->
+      <div class="mb-4" id="body1-main1-form1-div21">
+        <h3 class="text-lg font-semibold mb-2" id="body1-main1-form1-div21-h32">Checklist items:</h3>
+        <div class="flex" id="body1-main1-form1-div21-div22">
+          <div class="mr-4" id="body1-main1-form1-div21-div22-div23">
+            <div class="flex items-center mb-1" id="body1-main1-form1-div21-div22-div23-div24">
+              <input class="mr-2" type="checkbox" id="body1-main1-form1-div21-div22-div23-div24-input7">
+              <label for="checklist1" id="body1-main1-form1-div21-div22-div23-div24-label8">Checklist 1</label>
+            </div>
+            <div class="flex items-center mb-1" id="body1-main1-form1-div21-div22-div23-div25">
+              <input class="mr-2" type="checkbox" id="body1-main1-form1-div21-div22-div23-div25-input8">
+              <label for="checklist2" id="body1-main1-form1-div21-div22-div23-div25-label9">Checklist 2</label>
+            </div>
+          </div>
+          <div id="body1-main1-form1-div21-div22-div26">
+            <div class="flex items-center mb-1" id="body1-main1-form1-div21-div22-div26-div27">
+              <input class="mr-2" type="checkbox" id="body1-main1-form1-div21-div22-div26-div27-input9">
+              <label for="checklist3" id="body1-main1-form1-div21-div22-div26-div27-label10">Checklist 3</label>
+            </div>
+            <div class="flex items-center mb-1" id="body1-main1-form1-div21-div22-div26-div28">
+              <input class="mr-2" type="checkbox" id="body1-main1-form1-div21-div22-div26-div28-input10">
+              <label for="checklist4" id="body1-main1-form1-div21-div22-div26-div28-label11">Checklist 4</label>
+            </div>
+          </div>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded shadow" id="body1-main1-form1-div21-button3">Button</button>
+      </div>
+    </form>
+
+    <!-- Radio Buttons Section -->
+    <aside class="bg-white p-4 shadow-md mb-4" id="body1-main1-aside1">
+      <h3 class="text-lg font-semibold mb-2" id="body1-main1-aside1-h33">Radio Options:</h3>
+      <div class="mb-2 flex items-center" id="body1-main1-aside1-div29">
+        <input class="mr-2" type="radio" name="radio" id="body1-main1-aside1-div29-input11">
+        <label for="radio1" id="body1-main1-aside1-div29-label12">Radio 1</label>
+      </div>
+      <div class="mb-2 flex items-center" id="body1-main1-aside1-div30">
+        <input class="mr-2" type="radio" name="radio" id="body1-main1-aside1-div30-input12">
+        <label for="radio2" id="body1-main1-aside1-div30-label13">Radio 2</label>
+      </div>
+      <div class="mb-2 flex items-center" id="body1-main1-aside1-div31">
+        <input class="mr-2" type="radio" name="radio" id="body1-main1-aside1-div31-input13">
+        <label for="radio3" id="body1-main1-aside1-div31-label14">Radio 3</label>
+      </div>
+      <div class="mb-2 flex items-center" id="body1-main1-aside1-div32">
+        <input class="mr-2" type="radio" name="radio" id="body1-main1-aside1-div32-input14">
+        <label for="radio4" id="body1-main1-aside1-div32-label15">Radio 4</label>
+      </div>
+      <div class="flex items-center mt-4" id="body1-main1-aside1-div33">
+        <img class="w-24 h-16 mr-4" src="https://placehold.co/96x64" alt="Placeholder" id="body1-main1-aside1-div33-img4">
+        <p id="body1-main1-aside1-div33-p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in efficitur libero.</p>
+      </div>
+    </aside>
+  </main>
+
+
+  <script data-custom-scripts="true">
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

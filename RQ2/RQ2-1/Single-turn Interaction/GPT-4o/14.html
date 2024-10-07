@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Add Element Link -->
+  <header class="p-4 border-b">
+    <nav class="flex justify-between items-center space-x-4">
+      <a href="#" class="text-blue-600">Add Element</a>
+      <div class="flex space-x-4">
+        <a href="#" class="text-blue-600">Login</a>
+        <a href="#" class="text-blue-600">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="p-4">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+      <div class="mb-4">
+        <label for="login" class="block text-gray-700">Login</label>
+        <input type="text" id="login" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700">Password</label>
+        <input type="password" id="password" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="checkbox" id="remember-me" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+        <label for="remember-me" class="ml-2 block text-gray-900">Remember me</label>
+      </div>
+      <div class="mb-4">
+        <a href="#" class="text-blue-600">Forgot Password</a>
+      </div>
+      <button id="loginButton" class="w-full bg-blue-600 text-white py-2 rounded-md">Login</button>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="p-4">
+    <header class="text-center mb-6">
+      <h1 class="text-2xl font-bold">Title</h1>
+      <h2 class="text-xl">Title Page</h2>
+      <p class="mt-2">Subtitle paragraph text</p>
+    </header>
+
+    <div class="flex justify-center mb-6">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="mx-auto w-2/3 h-96" frameborder="0"></iframe>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+      <!-- First image removed -->
+      <article class="bg-white p-4 rounded-lg shadow-md">
+        <header class="mb-2">
+          <h3 class="text-xl font-semibold">Title</h3>
+        </header>
+        <p class="mt-2">Text Paragraph</p>
+      </article>
+
+      <article class="bg-white p-4 rounded-lg shadow-md">
+        <header class="mb-2">
+          <h3 class="text-xl font-semibold">Title</h3>
+        </header>
+        <aside>
+          <img src="https://placehold.co/200x200" alt="Placeholder" class="w-full h-64 object-cover rounded-lg">
+        </aside>
+        <p class="mt-2">Text Paragraph</p>
+      </article>
+
+      <article class="bg-white p-4 rounded-lg shadow-md">
+        <header class="mb-2">
+          <h3 class="text-xl font-semibold">Title</h3>
+        </header>
+        <aside>
+          <img src="https://placehold.co/200x200" alt="Placeholder" class="w-full h-64 object-cover rounded-lg">
+        </aside>
+        <p class="mt-2">Text Paragraph</p>
+      </article>
+
+      <article class="bg-white p-4 rounded-lg shadow-md">
+        <header class="mb-2">
+          <h3 class="text-xl font-semibold">Title</h3>
+        </header>
+        <aside>
+          <img src="https://placehold.co/200x200" alt="Placeholder" class="w-full h-64 object-cover rounded-lg">
+        </aside>
+        <p class="mt-2">Text Paragraph</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="p-4">
+    <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+      <fieldset class="mb-4">
+        <legend class="text-xl font-bold mb-2">Forma de envio</legend>
+        <div class="space-y-2">
+          <div>
+            <input type="radio" id="terrestre" name="shipping" class="mr-2">
+            <label for="terrestre">Terrestre</label>
+          </div>
+          <div>
+            <input type="radio" id="aereo" name="shipping" class="mr-2">
+            <label for="aereo">Aereo</label>
+          </div>
+          <div>
+            <input type="radio" id="maritimo" name="shipping" class="mr-2">
+            <label for="maritimo">Marítimo</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend class="text-xl font-bold mb-2">Forma de pago</legend>
+        <div class="space-y-2">
+          <div>
+            <input type="radio" id="tarjeta" name="payment" class="mr-2">
+            <label for="tarjeta">Tarjeta (Crédito/débito)</label>
+          </div>
+          <div>
+            <input type="radio" id="transferencia" name="payment" class="mr-2">
+            <label for="transferencia">Transferencia bancaria</label>
+          </div>
+          <div>
+            <input type="radio" id="metalico" name="payment" class="mr-2">
+            <label for="metalico">Metálico</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="mb-4">
+        <label for="address" class="block text-gray-700">Dirección</label>
+        <input type="text" id="address" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+      </div>
+
+      <div class="mb-4">
+        <label for="country" class="block text-gray-700">País</label>
+        <select id="country" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+          <option value="">Select Country</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Mexico">Mexico</option>
+          <!-- Add more country options as needed -->
+        </select>
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md">Aceptar</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("loginButton").addEventListener("click", function() {
+      alert("Add Interaction");
+    });
+  </script>
+</body>
+</html>

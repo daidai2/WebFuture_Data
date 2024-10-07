@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment and Signup Forms</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            margin-bottom: 40px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+<style>
+button:hover {
+    background-color: #FFDEE9 !important;
+}
+</style></head>
+<body><a href="#">Add Element</a>
+<!-- Payment Form -->
+<form>
+<h2>Select your payment method</h2>
+<div class="form-group">
+<input id="creditCard" name="paymentMethod" type="radio" value="Credit Card"/>
+<label for="creditCard">Credit Card</label><br/>
+<input id="paypal" name="paymentMethod" type="radio" value="Paypal"/>
+<label for="paypal">Paypal</label><br/>
+<input id="bankTransfer" name="paymentMethod" type="radio" value="Bank Transfer"/>
+<label for="bankTransfer">Bank Transfer</label>
+</div>
+<h2>Enter your data</h2>
+<div class="form-group">
+<label for="cardNumber">Card Number</label>
+
+</div>
+<div class="form-group">
+<label for="expirationDate">Expiration Date</label>
+<input id="expirationMonth" max="12" min="1" name="expirationMonth" placeholder="MM" style="width: 50px;" type="number"/>
+            /
+            <input id="expirationYear" max="99" min="21" name="expirationYear" placeholder="YY" style="width: 50px;" type="number"/>
+</div>
+<div class="form-group">
+<label for="ccv">CCV</label>
+<input id="ccv" name="ccv" style="width: 80px;" type="text"/>
+</div>
+<button style="background-color: #C6A7B1;" type="submit">Complete</button>
+</form>
+<!-- Signup Form -->
+<form>
+<h2>Sign Up</h2>
+<div class="form-group">
+<label for="firstName">Name</label>
+<input id="firstName" name="firstName" type="text"/>
+</div>
+<div class="form-group">
+<label for="lastName">Last Name</label>
+<input id="lastName" name="lastName" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div class="form-group">
+<label for="confirmPassword">Confirm Password</label>
+<input id="confirmPassword" name="confirmPassword" type="password"/>
+</div>
+<div class="form-group">
+<input id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<button type="submit">Sign Up</button>
+</form>
+<!-- Shipping Form -->
+<form>
+<h2>Forma de envío</h2>
+<div class="form-group">
+<label>Medio transporte</label><br/>
+<input id="terrestre" name="medioTransporte" type="radio" value="Terrestre"/>
+<label for="terrestre">Terrestre</label><br/>
+<input id="aereo" name="medioTransporte" type="radio" value="Aereo"/>
+<label for="aereo">Aereo</label><br/>
+<input id="maritimo" name="medioTransporte" type="radio" value="Maritimo"/>
+<label for="maritimo">Maritimo</label>
+</div>
+<h2>Forma de pago</h2>
+<div class="form-group">
+<input id="tarjeta" name="formaPago" type="radio" value="Tarjeta (Crédito/débito)"/>
+<label for="tarjeta">Tarjeta (Crédito/débito)</label><br/>
+<input id="transferencia" name="formaPago" type="radio" value="Transferencia bancaria"/>
+<label for="transferencia">Transferencia bancaria</label><br/>
+<input id="metalico" name="formaPago" type="radio" value="Metálico"/>
+<label for="metalico">Metálico</label>
+</div>
+<div class="form-group">
+<label for="direccion">Dirección</label>
+<input id="direccion" name="direccion" type="text"/>
+</div>
+<div class="form-group">
+<label for="pais">País</label>
+<input id="pais" name="pais" type="text"/>
+</div>
+<button type="submit">Aceptar</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px; /* Changed font size to 50px */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group select,
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .shipping-service label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .shipping-service input[type="radio"] {
+            margin-right: 10px;
+        }
+        .languages label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Add Interaction'); // Show alert when Submit button is clicked
+        }
+    </script>
+</head>
+<body>
+<a href="#">Add Element</a> <!-- Added hyperlink at the top of the page -->
+
+<div class="container">
+    <h2>Checkout</h2>
+    <form onsubmit="handleSubmit(event)">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+
+        <div class="form-group shipping-service">
+            <label>Shipping Service</label>
+            <label><input type="radio" name="shippingService" value="standard"> Standard - 14 days - $6.59</label>
+            <label><input type="radio" name="shippingService" value="expedited"> Expedited - 7 days - $1.97</label>
+            <label><input type="radio" name="shippingService" value="express"> Express - 3 days - $19.99</label>
+        </div>
+
+        <div class="form-group languages">
+            <label>Programming Languages</label>
+            <label><input type="checkbox" name="language" value="csharp"> C#</label>
+            <label><input type="checkbox" name="language" value="java"> Java</label>
+            <label><input type="checkbox" name="language" value="php"> PHP</label>
+            <label><input type="checkbox" name="language" value="visualbasic"> Visual Basic</label>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

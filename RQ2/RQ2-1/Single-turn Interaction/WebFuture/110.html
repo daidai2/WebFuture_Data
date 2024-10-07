@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="p-6" id="body1">
+
+  <div class="max-w-7xl mx-auto" id="body1-div1">
+    <!-- Header -->
+    <header class="text-center mb-6" id="body1-div1-header1">
+      <h1 class="text-3xl font-bold" id="body1-div1-header1-h11" style="font-size: 50px;">Product Page</h1>
+    </header>
+
+    <!-- Product Section -->
+    <section class="flex flex-wrap mb-8" id="body1-div1-section1">
+      <!-- Main Product Image -->
+      <article class="w-full md:w-1/2" id="body1-div1-section1-article1">
+
+        <!-- Thumbnails -->
+        <div class="flex justify-center space-x-4" id="body1-div1-section1-article1-div2">
+          <img src="https://placehold.co/100" alt="Thumbnail Image 1" id="body1-div1-section1-article1-div2-img2">
+          <img src="https://placehold.co/100" alt="Thumbnail Image 2" id="body1-div1-section1-article1-div2-img3">
+          <img src="https://placehold.co/100" alt="Thumbnail Image 3" id="body1-div1-section1-article1-div2-img4">
+          <img src="https://placehold.co/100" alt="Thumbnail Image 4" id="body1-div1-section1-article1-div2-img5">
+        </div>
+      </article>
+
+      <!-- Product Details -->
+      <aside class="w-full md:w-1/2 pl-4" id="body1-div1-section1-aside1">
+        <h1 class="text-2xl font-bold mb-2" id="body1-div1-section1-aside1-h12">Product Name</h1>
+        <p class="mb-4" id="body1-div1-section1-aside1-p1">Manufacturer</p>
+        <div id="body1-div1-section1-aside1-div3">
+          <p class="font-bold mb-1" id="body1-div1-section1-aside1-div3-p2">Color Options:</p>
+          <label class="block" id="body1-div1-section1-aside1-div3-label1"><input type="radio" name="color" value="red" id="body1-div1-section1-aside1-div3-label1-input1"> Red</label>
+          <label class="block" id="body1-div1-section1-aside1-div3-label2"><input type="radio" name="color" value="blue" id="body1-div1-section1-aside1-div3-label2-input2"> Blue</label>
+          <label class="block mb-4" id="body1-div1-section1-aside1-div3-label3"><input type="radio" name="color" value="white" id="body1-div1-section1-aside1-div3-label3-input3"> White</label>
+        </div>
+        <p class="text-lg font-bold mb-1" id="body1-div1-section1-aside1-p3">Price: $100</p>
+        <p class="text-lg line-through mb-4" id="body1-div1-section1-aside1-p4">Old Price: $200</p>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded" id="body1-div1-section1-aside1-button1">Add to Cart</button>
+      </aside>
+    </section>
+
+    <!-- Team Members Section -->
+    <section class="mb-8" id="body1-div1-section2">
+      <div class="flex flex-wrap justify-center md:justify-start mb-4" id="body1-div1-section2-div4">
+        <!-- Team Member 1 -->
+        <div class="w-full md:w-1/3 flex items-center mb-4" id="body1-div1-section2-div4-div5">
+          <img src="https://placehold.co/150" alt="Team Member 1" class="mr-4" id="body1-div1-section2-div4-div5-img6">
+          <div id="body1-div1-section2-div4-div5-div6">
+            <p class="font-bold" id="body1-div1-section2-div4-div5-div6-p5">Mate One</p>
+            <p id="body1-div1-section2-div4-div5-div6-p6">Job Title</p>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="w-full md:w-1/3 flex items-center mb-4" id="body1-div1-section2-div4-div7">
+          <img src="https://placehold.co/150" alt="Team Member 2" class="mr-4" id="body1-div1-section2-div4-div7-img7">
+          <div id="body1-div1-section2-div4-div7-div8">
+            <p class="font-bold" id="body1-div1-section2-div4-div7-div8-p7">Mate Two</p>
+            <p id="body1-div1-section2-div4-div7-div8-p8">Job Title</p>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="w-full md:w-1/3 flex items-center" id="body1-div1-section2-div4-div9">
+          <img src="https://placehold.co/150" alt="Team Member 3" class="mr-4" id="body1-div1-section2-div4-div9-img8">
+          <div id="body1-div1-section2-div4-div9-div10">
+            <p class="font-bold" id="body1-div1-section2-div4-div9-div10-p9">Mate Three</p>
+            <p id="body1-div1-section2-div4-div9-div10-p10">Job Title</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shipping and Payment Form -->
+    <section id="body1-div1-section3">
+      <form class="space-y-4" id="body1-div1-section3-form1">
+        <h2 class="text-2xl font-bold" id="body1-div1-section3-form1-h21">Forma de envío</h2>
+        <div id="body1-div1-section3-form1-div11">
+          <p class="font-bold mb-1" id="body1-div1-section3-form1-div11-p11">Medio transporte:</p>
+          <label class="block" id="body1-div1-section3-form1-div11-label4"><input type="radio" name="transport" value="terrestre" id="body1-div1-section3-form1-div11-label4-input4"> Terreste</label>
+          <label class="block" id="body1-div1-section3-form1-div11-label5"><input type="radio" name="transport" value="aereo" id="body1-div1-section3-form1-div11-label5-input5"> Aereo</label>
+          <label class="block" id="body1-div1-section3-form1-div11-label6"><input type="radio" name="transport" value="maritimo" id="body1-div1-section3-form1-div11-label6-input6"> Maritimo</label>
+        </div>
+        <div id="body1-div1-section3-form1-div12">
+          <p class="font-bold mb-1" id="body1-div1-section3-form1-div12-p12">Forma de pago:</p>
+          <label class="block" id="body1-div1-section3-form1-div12-label7"><input type="radio" name="payment" value="tarjeta" id="body1-div1-section3-form1-div12-label7-input7"> Tarjeta (Credito/débito)</label>
+          <label class="block" id="body1-div1-section3-form1-div12-label8"><input type="radio" name="payment" value="transferencia" id="body1-div1-section3-form1-div12-label8-input8"> Transferencia bancaria</label>
+          <label class="block" id="body1-div1-section3-form1-div12-label9"><input type="radio" name="payment" value="metalico" id="body1-div1-section3-form1-div12-label9-input9"> Metálico</label>
+        </div>
+        <div id="body1-div1-section3-form1-div13">
+          <label class="block mb-1" id="body1-div1-section3-form1-div13-label10">Dirección</label>
+          <input type="text" name="address" class="w-full border rounded p-2" id="body1-div1-section3-form1-div13-input10">
+        </div>
+        <div id="body1-div1-section3-form1-div14">
+          <label class="block mb-1" id="body1-div1-section3-form1-div14-label11">País</label>
+          <select class="w-full border rounded p-2" id="body1-div1-section3-form1-div14-select1">
+            <option id="body1-div1-section3-form1-div14-select1-option1">Seleccione un país</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+
+        <h2 id="Parent_body1-div1-section3-form1_Next_null_Queue_1">Aceptar</h2>
+      </form>
+    </section>
+  </div>
+
+
+  <script data-custom-scripts="true"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .form-group .checkbox-group,
+        .form-group .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .checkbox-group label,
+        .form-group .radio-group label {
+            margin-right: 10px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .dropdown-group select {
+            padding: 8px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>Login</h1>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div class="form-group checkbox-group">
+<input id="remember-me" name="remember-me" type="checkbox"/>
+<label for="remember-me">Remember me</label>
+</div>
+<div class="form-group">
+<a href="#">Forgot Password?</a>
+</div>
+<h2>Select Language</h2>
+<div class="dropdown-group">
+<select id="language" name="language">
+<option value="csharp">C#</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="vb">Visual Basic</option>
+</select>
+<button type="button">Get Drop Down Item</button>
+</div>
+<div class="form-group checkbox-group">
+<input id="csharp" name="language" type="checkbox" value="csharp"/>
+<label for="csharp">C#</label>
+<input id="java" name="language" type="checkbox" value="java"/>
+<label for="java">Java</label>
+<input id="php" name="language" type="checkbox" value="php"/>
+<label for="php">PHP</label>
+<input id="vb" name="language" type="checkbox" value="vb"/>
+<label for="vb">Visual Basic</label>
+</div>
+<div class="form-group">
+<label for="description">Description</label>
+<input id="description" name="description" type="text"/>
+</div>
+<div class="form-group radio-group">
+<input id="option1" name="options" type="radio" value="option1"/>
+<label for="option1">Option 1</label>
+<input id="option2" name="options" type="radio" value="option2"/>
+<label for="option2">Option 2</label>
+</div>
+<div class="form-group">
+<button type="button">Button</button>
+</div>
+<div class="form-group">
+<button id="6_1" type="button">Login</button>
+</div>
+<div class="form-group">
+<button type="button">Add Element</button>
+</div>
+</div>
+</body>
+</html>

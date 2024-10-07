@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #2a2a2a; /* Lightened dark background color */
+      width: 100%;
+    }
+    .section {
+      margin-bottom: 0;
+    }
+    .fixed-section h1 {
+      color: #ffffff; /* White color for Title1 */
+      font-weight: bold;
+    }
+    .fixed-section p, 
+    .fixed-section a {
+      color: #b0b0b0; /* Gray-white color for Text1 and Links */
+    }
+    .background-image {
+      background-image: url('pic02.jpg'); /* Updated background image */
+      background-size: cover;
+      background-position: center;
+    }
+    .title2 {
+      color: #b0b0b0; /* Gray-white color for Title2 */
+      font-size: 4rem; /* Increased font size to two times */
+      font-weight: normal; /* Remove bold */
+    }
+    .title2a {
+      color: #b0b0b0; /* Gray-white color for Title2A */
+    }
+    .button-large {
+      background-color: #a0e6d1; /* Light cyan-green color */
+      padding: 1rem 2rem; /* Increase button size */
+      font-size: 1rem; /* Keep font size same */
+    }
+    .title3, .text3, .label3to8 {
+      color: #000000; /* Darkened font color */
+    }
+    .title3 {
+      font-size: 2rem; /* Increase font size */
+      font-weight: normal; /* Remove bold */
+    }
+    .bg-lightgray {
+      background-color: #f0f0f0; /* Light gray background color */
+    }
+    .title4, .text4 {
+      color: #000000; /* Matching color with Text3 */
+    }
+    .title4 {
+      font-size: 2rem; /* Increased font size */
+      font-weight: normal; /* Remove bold */
+      margin-bottom: 2rem; /* Added margin bottom */
+    }
+    .upshift {
+      margin-top: -20px; /* Shift up the items */
+    }
+    .increased-margin {
+      margin-top: 2rem; /* Increased top margin */
+      margin-bottom: 2rem; /* Increased bottom margin */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="flex flex-col min-h-screen">
+    <div class="flex">
+      <!-- Fixed Sidebar -->
+      <aside class="w-1/5 p-4 flex flex-col items-end fixed-section">
+        <img src="avatar.jpg" alt="Avatar" class="mb-2"> <!-- Updated image source -->
+        <h1 class="font-bold text-lg mb-2">Title1</h1>
+        <p class="mb-6">Text1</p> <!-- Increased space between Text1 and Link 1 -->
+        <nav class="flex flex-col space-y-2 items-end">
+          <a href="#" class="hover:underline flex items-center">Link 1<img src="https://placehold.co/16x16" alt="Icon 1" class="ml-2"></a>
+          <a href="#" class="hover:underline flex items-center">Link 2<img src="https://placehold.co/16x16" alt="Icon 2" class="ml-2"></a>
+          <a href="#" class="hover:underline flex items-center">Link 3<img src="https://placehold.co/16x16" alt="Icon 3" class="ml-2"></a>
+          <a href="#" class="hover:underline flex items-center">Link 4<img src="https://placehold.co/16x16" alt="Icon 4" class="ml-2"></a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 ml-[20%]">
+        <!-- Section 1 centered content -->
+        <section class="p-8 shadow rounded flex flex-col items-center h-96 justify-center section background-image"> <!-- Added background image -->
+          <h2 class="title2 mb-6">Title2</h2> <!-- Increased margin between elements -->
+          <h3 class="title2a mb-6">Title2A</h3> <!-- Increased margin between elements -->
+          <button class="button-large text-white rounded">Button</button>
+        </section>
+
+        <!-- Section 2 centered content with increased vertical length -->
+        <section class="p-8 shadow rounded flex flex-col items-center h-[60rem] justify-start section bg-lightgray"> <!-- Increased height and added light gray background -->
+          <h2 class="title3 mb-6">Title3</h2> <!-- Increased margin between elements and removed bold -->
+          <p class="text3 mb-6">Text3</p>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <img src="pic03.jpg" alt="PIC3" class="mb-2"> <!-- Updated image source -->
+              <p class="label3to8">Label3</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="pic04.jpg" alt="PIC4" class="mb-2"> <!-- Updated image source -->
+              <p class="label3to8">Label4</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="pic06.jpg" alt="PIC6" class="mb-2"> <!-- Updated image source -->
+              <p class="label3to8">Label5</p>
+            </div>
+            <div class="flex flex-col items-center upshift"> <!-- Added upshift class -->
+              <img src="pic03.jpg" alt="PIC3" class="mb-2"> <!-- Updated image source -->
+              <p class="label3to8">Label6</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="pic05.jpg" alt="PIC5" class="mb-2"> <!-- Updated image source -->
+              <p class="label3to8">Label7</p>
+            </div>
+            <div class="flex flex-col items-center upshift"> <!-- Added upshift class -->
+              <img src="pic07.jpg" alt="PIC7" class="mb-2"> <!-- Updated image source -->
+              <p class="label3to8">Label8</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3 centered content -->
+        <section class="p-4 shadow rounded flex flex-col items-center section bg-lightgray h-[60rem]"> <!-- Increased height and added light gray background -->
+          <h2 class="title4 mb-8">Title4</h2> <!-- Increased margin below Title4 -->
+          <figure class="bg-gray-200 h-48 flex justify-center items-center w-full increased-margin">
+            <img src="pic08.jpg" alt="PIC8"> <!-- Updated image source -->
+          </figure>
+          <p class="text4 mt-8 text-center increased-margin">Text4</p> <!-- Increased margin above Text4 and matching color -->
+        </section>
+
+        <!-- Section 4 centered content with increased vertical length -->
+        <section class="p-8 shadow rounded flex flex-col items-center h-[40rem] section bg-lightgray"> <!-- Removed margin-bottom and increased height, added light gray background -->
+          <h2 class="font-bold text-lg mb-4">Title5</h2> <!-- Centered and increased margin -->
+          <p class="mb-4 text-center">Text5</p> <!-- Centered text -->
+          <div class="w-full mb-4 flex justify-center">
+            <input type="text" class="border border-gray-300 p-2 mr-4 w-1/2" placeholder="TextInput"> <!-- Reduced width and aligned horizontally -->
+            <input type="text" class="border border-gray-300 p-2 w-1/2" placeholder="TextInput"> <!-- Reduced width and aligned horizontally -->
+          </div>
+          <textarea class="border border-gray-300 p-2 w-full mb-8 h-32" rows="8" placeholder="TextArea"></textarea> <!-- Increased height -->
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mb-8">Submit</button> <!-- Increased margin below button -->
+          <div class="flex justify-center space-x-4 mt-8"> <!-- Aligning Text6-1 and Text6-2 in a row -->
+            <p class="text-center">Text6-1</p>
+            <p class="text-center">Text6-2</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

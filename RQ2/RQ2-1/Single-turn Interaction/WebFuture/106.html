@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Example</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .grid-cols-2 {
+      display: flex;
+      gap: 4px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900" id="body1">
+<section class="max-w-2xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-8" id="body1-section1">
+<!-- Payment Method Selection -->
+<form id="body1-section1-form1">
+<fieldset class="mb-6" id="body1-section1-form1-fieldset1">
+<legend class="text-xl font-semibold mb-2" id="body1-section1-form1-fieldset1-legend1">Select your payment method</legend>
+<label class="block mb-2" id="6_2_1_1_1">
+<input id="body1-section1-form1-fieldset1-label1-input1" name="paymentMethod" type="radio" value="creditCard"/> Credit Card
+        </label>
+<label class="block mb-2" id="body1-section1-form1-fieldset1-label2">
+<input id="body1-section1-form1-fieldset1-label2-input2" name="paymentMethod" type="radio" value="paypal"/> PayPal
+        </label>
+<label class="block mb-2" id="body1-section1-form1-fieldset1-label3">
+<input id="body1-section1-form1-fieldset1-label3-input3" name="paymentMethod" type="radio" value="bankTransfer"/> Bank Transfer
+        </label>
+</fieldset>
+<!-- Card Data Input -->
+<div class="mb-6" id="body1-section1-form1-div1">
+<label class="block text-lg font-semibold mb-2" id="body1-section1-form1-div1-label4">Enter your data</label>
+<label class="block mb-2" id="body1-section1-form1-div1-label5">Card Number</label>
+<input class="w-full px-3 py-2 border rounded mb-4" id="body1-section1-form1-div1-input4" type="text"/>
+<div class="grid grid-cols-3 gap-4" id="body1-section1-form1-div1-div2">
+<div id="body1-section1-form1-div1-div2-div3">
+<label class="block mb-2" id="body1-section1-form1-div1-div2-div3-label6">Expiration date</label>
+<select class="w-full px-3 py-2 border rounded mb-2" id="body1-section1-form1-div1-div2-div3-select1">
+<option id="body1-section1-form1-div1-div2-div3-select1-option1">MM</option>
+<option id="body1-section1-form1-div1-div2-div3-select1-option2">01</option>
+<option id="body1-section1-form1-div1-div2-div3-select1-option3">02</option>
+<option id="body1-section1-form1-div1-div2-div3-select1-option4">03</option>
+<!-- Add more options as needed -->
+</select>
+<select class="w-full px-3 py-2 border rounded" id="body1-section1-form1-div1-div2-div3-select2">
+<option id="body1-section1-form1-div1-div2-div3-select2-option5">YY</option>
+<option id="body1-section1-form1-div1-div2-div3-select2-option6">23</option>
+<option id="body1-section1-form1-div1-div2-div3-select2-option7">24</option>
+<option id="body1-section1-form1-div1-div2-div3-select2-option8">25</option>
+<!-- Add more options as needed -->
+</select>
+</div>
+<div class="col-span-2" id="body1-section1-form1-div1-div2-div4">
+<label class="block mb-2" id="body1-section1-form1-div1-div2-div4-label7">CVV</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section1-form1-div1-div2-div4-input5" type="text"/>
+</div>
+</div>
+</div>
+<!-- Control Button -->
+<div class="mb-6" id="body1-section1-form1-div5">
+<button class="w-full bg-blue-500 text-white px-4 py-2 rounded" id="body1-section1-form1-div5-button1" type="submit">Continue</button>
+</div>
+</form>
+</section>
+<section class="max-w-2xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10" id="body1-section2">
+<!-- User Account Section -->
+<nav class="flex justify-between mb-6" id="body1-section2-nav1">
+<button class="text-lg font-semibold" id="body1-section2-nav1-button2">Sign Up</button>
+<button class="text-lg font-semibold" id="body1-section2-nav1-button3">Login</button>
+</nav>
+<!-- Sign Up Form -->
+<form id="body1-section2-form2">
+<div class="grid grid-cols-2 gap-4 mb-4" id="body1-section2-form2-div6">
+<div id="body1-section2-form2-div6-div7">
+<label class="block mb-2" id="body1-section2-form2-div6-div7-label8">Name</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section2-form2-div6-div7-input6" type="text"/>
+</div>
+<div id="body1-section2-form2-div6-div8">
+<label class="block mb-2" id="body1-section2-form2-div6-div8-label9">Last Name</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section2-form2-div6-div8-input7" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4" id="body1-section2-form2-div9">
+<div id="body1-section2-form2-div9-div10">
+<label class="block mb-2" id="body1-section2-form2-div9-div10-label10">Phone</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section2-form2-div9-div10-input8" type="text"/>
+</div>
+<div id="body1-section2-form2-div9-div11">
+<label class="block mb-2" id="6_2_2_2_1">E-mail</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section2-form2-div9-div11-input9" type="email"/>
+</div>
+<p id="6_2_1_2_1">Credit Card</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4" id="body1-section2-form2-div12">
+<div id="body1-section2-form2-div12-div13">
+<label class="block mb-2" id="body1-section2-form2-div12-div13-label12">Password</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section2-form2-div12-div13-input10" type="password"/>
+</div>
+<div id="body1-section2-form2-div12-div14">
+<label class="block mb-2" id="body1-section2-form2-div12-div14-label13">Confirm Password</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section2-form2-div12-div14-input11" type="password"/>
+</div>
+</div>
+<div class="mb-4" id="body1-section2-form2-div15">
+<label class="block mb-2" id="body1-section2-form2-div15-label14">
+<input id="body1-section2-form2-div15-label14-input12" type="checkbox"/> I agree to Terms and Conditions
+        </label>
+</div>
+<div id="body1-section2-form2-div16">
+<button class="w-full bg-blue-500 text-white px-4 py-2 rounded" id="body1-section2-form2-div16-button4" type="submit">Sign Up</button>
+</div>
+</form>
+</section>
+<section class="max-w-2xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10" id="body1-section3">
+<!-- Shipping Form -->
+<form id="body1-section3-form3">
+<fieldset class="mb-6" id="body1-section3-form3-fieldset2">
+<legend class="text-xl font-semibold mb-2" id="body1-section3-form3-fieldset2-legend2">Forma de envío</legend>
+<div class="mb-4" id="body1-section3-form3-fieldset2-div17">
+<p class="font-semibold" id="body1-section3-form3-fieldset2-div17-p1">Método Transporte</p>
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div17-label15">
+<input id="body1-section3-form3-fieldset2-div17-label15-input13" name="transportMethod" type="radio" value="terrestre"/> Terrestre
+          </label>
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div17-label16">
+<input id="body1-section3-form3-fieldset2-div17-label16-input14" name="transportMethod" type="radio" value="aereo"/> Aéreo
+          </label>
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div17-label17">
+<input id="body1-section3-form3-fieldset2-div17-label17-input15" name="transportMethod" type="radio" value="maritimo"/> Marítimo
+          </label>
+</div>
+<div class="mb-4" id="body1-section3-form3-fieldset2-div18">
+<p class="font-semibold" id="body1-section3-form3-fieldset2-div18-p2">Forma de pago</p>
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div18-label18">
+<input id="body1-section3-form3-fieldset2-div18-label18-input16" name="paymentForm" type="radio" value="tarjeta"/> Tarjeta (Credito/Debito)
+          </label>
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div18-label19">
+<input id="body1-section3-form3-fieldset2-div18-label19-input17" name="paymentForm" type="radio" value="transferencia"/> Transferencia bancaria
+          </label>
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div18-label20">
+<input id="body1-section3-form3-fieldset2-div18-label20-input18" name="paymentForm" type="radio" value="metalico"/> Metálico
+          </label>
+</div>
+<div class="mb-4" id="body1-section3-form3-fieldset2-div19">
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div19-label21">Dirección</label>
+<input class="w-full px-3 py-2 border rounded" id="body1-section3-form3-fieldset2-div19-input19" type="text"/>
+</div>
+<div class="mb-6" id="body1-section3-form3-fieldset2-div20">
+<label class="block mb-2" id="body1-section3-form3-fieldset2-div20-label22">País</label>
+<select class="w-full px-3 py-2 border rounded" id="body1-section3-form3-fieldset2-div20-select3">
+<option id="body1-section3-form3-fieldset2-div20-select3-option9">Seleccione un país</option>
+<option id="body1-section3-form3-fieldset2-div20-select3-option10">País 1</option>
+<option id="body1-section3-form3-fieldset2-div20-select3-option11">País 2</option>
+<!-- Add more options as needed -->
+</select>
+</div>
+<button class="w-full bg-blue-500 text-white px-4 py-2 rounded" id="body1-section3-form3-fieldset2-button5" type="submit">Aceptar</button>
+</fieldset>
+</form>
+</section>
+<script data-custom-scripts="true">
+    function addInteraction() {
+      const newModule = document.createElement('p');
+      newModule.textContent = 'Add Interaction';
+      newModule.id = 'Parent_body1_Next_null_Queue_1';
+      newModule.name = 'add';
+      newModule.className = 'p-8 bg-white shadow-lg rounded-lg mt-10 max-w-2xl mx-auto';
+      document.getElementById('body1').appendChild(newModule);
+    }
+  </script>
+<div id="Parent_body1_Next_null_Queue_1">
+</div>
+<p id="Parent_body1_Next_null_Queue_1">Add Element</p>
+</body>
+</html>

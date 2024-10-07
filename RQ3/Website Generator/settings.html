@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: black;
+      animation: backgroundFadeIn 2s forwards;
+    }
+    @keyframes backgroundFadeIn {
+      to {
+        background-color: transparent;
+        background-image: url('bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    }
+    #overlay {
+      background-image: url('overlay.png');
+      background-size: auto;
+      background-repeat: repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    #black-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .transparent-bg {
+      background-color: transparent;
+      border: 1px solid white; /* Reduced border thickness */
+      padding: 0.5rem 2.5rem; /* Increased padding for larger boxes */
+    }
+    .horizontal-line {
+      width: 50%;
+      height: 1px; /* Reduced thickness */
+      background-color: white;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .horizontal-line.top {
+      top: 50%;
+      animation: moveUp 1.5s forwards;
+    }
+    .horizontal-line.bottom {
+      top: 50%;
+      animation: moveDown 1.5s forwards;
+    }
+    .vertical-line-up, .vertical-line-down {
+      width: 1px; /* Reduced thickness */
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .vertical-line-up {
+      top: -48px; /* Adjust this position as needed */
+      height: 48px; /* Adjust this height to reach the bottom of the circle */
+    }
+    .vertical-line-down {
+      bottom: -50px; /* Adjust this position as needed */
+      height: 50px; /* Adjust this height as needed */
+    }
+    .white-text {
+      color: white;
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+    .thin-text {
+      font-weight: 300; /* Make the text thinner */
+    }
+    .underline-dotted {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+    .content {
+      opacity: 0;
+      animation: fadeIn 2s forwards 3s; /* Delay the fade-in to match the line animations */
+    }
+    .letter-spacing-wide {
+      letter-spacing: 0.2em; /* Adjust letter spacing as needed */
+    }
+    .smaller-font {
+      font-size: 0.875rem; /* Adjust font size as needed */
+    }
+    .text-smaller {
+      font-size: 0.75rem; /* Adjust font size for small text */
+    }
+    .wider-letter-spacing {
+      letter-spacing: 0.15em; /* Adjust letter spacing for footer text */
+    }
+    .larger-box {
+      padding: 0.75rem 2.5rem; /* Adjust padding to increase box size */
+    }
+    .text-wider-spacing {
+      letter-spacing: 0.1em; /* Adjust letter spacing for the main content text */
+    }
+    .increased-line-height {
+      line-height: 1.75; /* Adjust line height to increase spacing between lines */
+    }
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      width: 50%; /* Adjust width to align the navigation items */
+      margin: 0 auto;
+      border-collapse: collapse; /* Ensure borders collapse properly */
+    }
+    .nav-container a {
+      margin: 0; /* Remove margin between elements */
+      border-left: none; /* Remove left border */
+    }
+    .nav-container a:first-child {
+      border-left: 1px solid white; /* Add left border to the first element */
+    }
+    @keyframes moveUp {
+      to {
+        top: 20%; /* Adjust this to the final position */
+      }
+    }
+    @keyframes moveDown {
+      to {
+        top: 70%; /* Adjust this to the final position */
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="relative">
+
+  <div id="overlay"></div>
+  <div id="black-overlay"></div>
+
+  <div id="main-container" class="min-h-screen flex flex-col items-center justify-between p-4 relative z-10">
+    <header class="w-full flex justify-center py-10">
+      <div class="w-24 h-24 rounded-full transparent-bg flex items-center justify-center">
+        <a href="/login">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="36px" height="36px">
+            <path d="M12 2L2 12l10 10 10-10L12 2zm0 3.3l7.7 7.7-7.7 7.7-7.7-7.7 7.7-7.7z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <div class="horizontal-line top">
+      <div class="vertical-line-up"></div> <!-- Vertical line from the first horizontal line upwards -->
+    </div> <!-- First horizontal line -->
+
+    <section id="main-content" class="text-center mx-auto my-20 content"> <!-- Increased margin to increase spacing -->
+      <h1 class="title1 text-4xl mb-4 white-text bold-text letter-spacing-wide">DIMENSION</h1>
+      <p class="text1 text-smaller mb-6 white-text thin-text text-wider-spacing increased-line-height">A FULLY RESPONSIVE SITE TEMPLATE DESIGNED BY <span class="underline-dotted">HTML5 UP</span> AND RELEASED<br>FOR FREE UNDER THE <span class="underline-dotted">CREATIVE COMMONS</span> LICENSE.</p>
+    </section>
+
+    <div class="horizontal-line bottom">
+      <div class="vertical-line-down"></div> <!-- Vertical line from the second horizontal line downwards -->
+    </div> <!-- Second horizontal line -->
+
+    <nav class="nav-container mt-10 mb-16">
+      <a href="/notifications" class="link2 transparent-bg white-text thin-text smaller-font larger-box">INTRO</a>
+      <a href="/about" class="link3 transparent-bg white-text thin-text smaller-font larger-box">WORK</a>
+      <a href="/post" class="link4 transparent-bg white-text thin-text smaller-font larger-box">ABOUT</a>
+      <a href="/contact" class="link5 transparent-bg white-text thin-text smaller-font larger-box">CONTACT</a>
+    </nav>
+
+    <footer class="w-full text-center py-6">
+      <p class="text2 text-smaller white-text thin-text wider-letter-spacing">© UNTITLED. DESIGN: <span class="underline-dotted">HTML5 UP.</span></p>
+    </footer>
+  </div>
+
+</body>
+</html>

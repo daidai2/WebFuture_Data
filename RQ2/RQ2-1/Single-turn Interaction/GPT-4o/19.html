@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobility Solutions &amp; Daily Living Aids</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Show alert when "Find out More" button is clicked
+      const findOutMoreButtons = document.querySelectorAll('.find-out-more');
+      findOutMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          alert('Add Interaction');
+        });
+      });
+
+      // Change the first image to a button
+      const firstImage = document.querySelector('main img');
+      if (firstImage) {
+        const modifyButton = document.createElement('button');
+        modifyButton.textContent = 'Modify Element';
+        modifyButton.classList.add('bg-blue-400', 'text-white', 'mt-4', 'px-4', 'py-2', 'rounded', 'mx-auto');
+        firstImage.replaceWith(modifyButton);
+      }
+
+      // Move the first "Find out More" button to the bottom of the page
+      const headerButton = document.querySelector('header button');
+      const footer = document.querySelector('footer');
+      if (headerButton && footer) {
+        footer.appendChild(headerButton);
+      }
+    });
+  </script>
+</head>
+<body class="flex flex-col min-h-screen">
+<!-- Header Section -->
+<header class="bg-blue-600 text-white p-6 text-center">
+<h1 class="text-3xl font-bold">Mobility Solutions &amp; Daily Living Aids</h1>
+<h2 class="text-xl mt-2">Making Life Easier</h2>
+<button class="bg-blue-300 text-black mt-4 px-4 py-2 rounded find-out-more">Find out More</button>
+</header>
+<!-- Main Content Section -->
+<main class="flex-grow">
+<!-- Services Section -->
+<section class="py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+<article class="bg-gray-200 p-4 rounded-lg text-center">
+<h3 class="text-2xl font-bold">Wheelchair Repair</h3>
+<button class="bg-blue-400 text-white mt-4 px-4 py-2 rounded find-out-more">Find out More</button>
+</article>
+<article class="bg-gray-200 p-4 rounded-lg text-center">
+<h3 class="text-2xl font-bold">Community Contracts</h3>
+<button class="bg-blue-400 text-white mt-4 px-4 py-2 rounded find-out-more">Find out More</button>
+</article>
+</section>
+<!-- Feature Section -->
+<section class="py-10 px-6 bg-gray-50 text-center">
+<img alt="Feature Image" class="mx-auto" src="https://placehold.co/600x400"/>
+<p class="mt-4">Feature Description here.</p>
+<button class="bg-blue-400 text-white mt-4 px-4 py-2 rounded find-out-more" id="6_1">Find out More</button>
+</section>
+<!-- Team Section -->
+<section class="py-10 px-6 bg-white">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+<article>
+<img alt="Team Member 1" class="mx-auto" src="https://placehold.co/200x200"/>
+<h4 class="text-xl font-bold mt-4">Mate One</h4>
+<h5 class="text-md">Job Title</h5>
+<p class="mt-2">Description of Mate One</p>
+</article>
+<article>
+<img alt="Team Member 2" class="mx-auto" src="https://placehold.co/200x200"/>
+<h4 class="text-xl font-bold mt-4">Mate Two</h4>
+<h5 class="text-md">Job Title</h5>
+<p class="mt-2">Description of Mate Two</p>
+</article>
+<article>
+<img alt="Team Member 3" class="mx-auto" src="https://placehold.co/200x200"/>
+<h4 class="text-xl font-bold mt-4">Mate Three</h4>
+<h5 class="text-md">Job Title</h5>
+<p class="mt-2">Description of Mate Three</p>
+</article>
+</div>
+</section>
+<!-- Form Section -->
+<section class="py-10 px-6 bg-gray-100">
+<div class="max-w-lg mx-auto">
+<label class="block text-xl font-bold" for="form-title">Title</label>
+<input class="w-full mt-2 p-2 border rounded" id="form-title" type="text"/>
+<div class="mt-6">
+<span class="block text-xl font-bold">Radio Buttons</span>
+<div class="flex space-x-4 mt-2">
+<label class="inline-flex items-center">
+<input class="form-radio" name="relevance" type="radio" value="not-relevant"/>
+<span class="ml-2">Not relevant</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-radio" name="relevance" type="radio" value="low"/>
+<span class="ml-2">Low</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-radio" name="relevance" type="radio" value="medium"/>
+<span class="ml-2">Medium</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-radio" name="relevance" type="radio" value="high"/>
+<span class="ml-2">High</span>
+</label>
+</div>
+</div>
+<div class="mt-6">
+<span class="block text-xl font-bold">Check Boxes</span>
+<div class="grid grid-cols-2 gap-2 mt-2">
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice1</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice2</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice3</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice4</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice5</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice6</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice7</span>
+</label>
+<label class="inline-flex items-center">
+<input class="form-checkbox" type="checkbox"/>
+<span class="ml-2">choice8</span>
+</label>
+</div>
+</div>
+<div class="flex mt-6 space-x-4">
+<button class="bg-green-500 text-white px-4 py-2 rounded">OK</button>
+<button class="bg-red-500 text-white px-4 py-2 rounded">Cancel</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white p-4 text-center">
+    © 2023 Mobility Solutions &amp; Daily Living Aids
+    <!-- "Find out More" button will be moved here -->
+</footer>
+</body>
+</html>

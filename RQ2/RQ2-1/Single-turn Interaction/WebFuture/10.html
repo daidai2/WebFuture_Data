@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal" id="body1">
+
+  <div class="container mx-auto p-4" id="body1-div1">
+    <!-- Header Section -->
+    <header class="bg-white rounded shadow-lg p-6 mb-10" id="body1-div1-header1">
+      <img src="https://placehold.co/1366x624" alt="Banner Image" class="w-full rounded mb-6" id="body1-div1-header1-img1">
+      <h1 class="text-2xl font-bold mb-4" id="body1-div1-header1-h11">Lorem Ipsum Dolor</h1>
+      <p class="mb-2" id="body1-div1-header1-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p class="mb-2" id="body1-div1-header1-p2">Vestibulum vehicula justo et augue pulvinar sollicitudin.</p>
+      <p id="body1-div1-header1-p3">Morbi non urna sed arcu ultricies facilisis.</p>
+    </header>
+
+    <!-- Form Section -->
+    <section class="bg-white rounded shadow-lg p-6 mb-10" id="body1-div1-section1">
+      <h2 class="text-xl font-semibold mb-4" id="body1-div1-section1-h21">Select your payment method</h2>
+      <form id="body1-div1-section1-form1">
+        <!-- Payment Method Options -->
+        <div class="mb-6" id="body1-div1-section1-form1-div2">
+          <label class="block mb-2" id="body1-div1-section1-form1-div2-label1">
+            <input type="radio" name="payment-method" value="credit-card" id="body1-div1-section1-form1-div2-label1-input1">
+            Credit Card
+          </label>
+          <label class="block mb-2" id="body1-div1-section1-form1-div2-label2">
+            <input type="radio" name="payment-method" value="paypal" id="body1-div1-section1-form1-div2-label2-input2">
+            Paypal
+          </label>
+          <label class="block mb-2" id="body1-div1-section1-form1-div2-label3">
+            <input type="radio" name="payment-method" value="bank-transfer" id="body1-div1-section1-form1-div2-label3-input3">
+            Bank Transfer
+          </label>
+        </div>
+
+        <!-- Card Details -->
+        <h2 class="text-xl font-semibold mb-4" id="body1-div1-section1-form1-h22">Enter your data</h2>
+        <div class="mb-4" id="body1-div1-section1-form1-div3">
+          <label for="card-number" class="block mb-2" id="body1-div1-section1-form1-div3-label4">Card Number</label>
+          <input type="text" id="body1-div1-section1-form1-div3-input4" name="card-number" class="w-full p-2 border rounded">
+        </div>
+        <div class="flex mb-4" id="body1-div1-section1-form1-div4">
+          <div class="w-1/2 mr-2" id="body1-div1-section1-form1-div4-div5">
+            <label for="expiration-date" class="block mb-2" id="body1-div1-section1-form1-div4-div5-label5">Expiration Date</label>
+            <input type="text" id="body1-div1-section1-form1-div4-div5-input5" name="expiration-date" placeholder="MM/YY" class="w-full p-2 border rounded">
+          </div>
+          <div class="w-1/2 ml-2" id="body1-div1-section1-form1-div4-div6">
+            <label for="cvv" class="block mb-2" id="body1-div1-section1-form1-div4-div6-label6">CVV</label>
+            <input type="text" id="body1-div1-section1-form1-div4-div6-input6" name="cvv" class="w-full p-2 border rounded">
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded" id="body1-div1-section1-form1-button1">Complete</button>
+      </form>
+    </section>
+
+    <!-- Shipping Section -->
+    <section class="bg-white rounded shadow-lg p-6" id="body1-div1-section2">
+      <h2 class="text-xl font-semibold mb-4" id="body1-div1-section2-h23">Forma de envio</h2>
+      <!-- Shipping Method Options -->
+      <div class="mb-6" id="body1-div1-section2-div7">
+        <label class="block mb-2" id="body1-div1-section2-div7-label7">
+          <input type="radio" name="shipping-method" value="transport" id="body1-div1-section2-div7-label7-input7">
+          Transporte
+        </label>
+        <label class="block mb-2" id="body1-div1-section2-div7-label8">
+          <input type="radio" name="shipping-method" value="aereo" id="body1-div1-section2-div7-label8-input8">
+          Aéreo
+        </label>
+        <label class="block mb-2" id="body1-div1-section2-div7-label9">
+          <input type="radio" name="shipping-method" value="maritimo" id="body1-div1-section2-div7-label9-input9">
+          Marítimo
+        </label>
+      </div>
+
+      <h2 class="text-xl font-semibold mb-4" id="body1-div1-section2-h24">Forma de pago</h2>
+      <!-- Payment Method Options -->
+      <div class="mb-6" id="body1-div1-section2-div8">
+        <label class="block mb-2" id="body1-div1-section2-div8-label10">
+          <input type="radio" name="payment-method-shipping" value="credit-card" id="body1-div1-section2-div8-label10-input10">
+          Tarjeta (Crédito/Débito)
+        </label>
+        <label class="block mb-2" id="body1-div1-section2-div8-label11">
+          <input type="radio" name="payment-method-shipping" value="bank-transfer" id="body1-div1-section2-div8-label11-input11">
+          Transferencia bancaria
+        </label>
+        <label class="block mb-2" id="body1-div1-section2-div8-label12">
+          <input type="radio" name="payment-method-shipping" value="cash" id="body1-div1-section2-div8-label12-input12">
+          Metálico
+        </label>
+      </div>
+
+      <!-- Address Details -->
+      <div class="mb-4" id="body1-div1-section2-div9">
+        <label for="address" class="block mb-2" id="body1-div1-section2-div9-label13">Dirección</label>
+        <input type="text" id="body1-div1-section2-div9-input13" name="address" class="w-full p-2 border rounded">
+      </div>
+      <div class="mb-4" id="body1-div1-section2-div10">
+        <label for="country" class="block mb-2" id="body1-div1-section2-div10-label14">País</label>
+        <select id="body1-div1-section2-div10-select1" name="country" class="w-full p-2 border rounded">
+          <option value="" id="body1-div1-section2-div10-select1-option1">Seleccione un país</option>
+          <option value="us" id="body1-div1-section2-div10-select1-option2">United States</option>
+          <option value="mx" id="body1-div1-section2-div10-select1-option3">Mexico</option>
+          <!-- Add more countries as needed -->
+        </select>
+      </div>
+
+      <!-- Accept Button -->
+      <button type="submit" class="w-full bg-green-500 text-white p-2 rounded" id="body1-div1-section2-button2">Aceptar</button>
+    </section>
+    <p id="Parent_body1-div1_Next_null_Queue_2" class="text-center text-xl font-semibold mt-10">Add Element</p>
+  </div>
+
+
+
+  <script data-custom-scripts="true">
+    function addInteractionModule() {
+      const newModule = document.createElement('div');
+      newModule.id = 'Parent_body1-div1_Next_null_Queue_1';
+      newModule.setAttribute('name', 'add');
+      newModule.classList.add('bg-white', 'rounded', 'shadow-lg', 'p-6', 'mt-10');
+      newModule.innerHTML = '<p class="text-center text-xl font-semibold">Add Interaction</p>';
+      document.getElementById('body1-div1').appendChild(newModule);
+    }
+  </script>
+</body>
+</html>

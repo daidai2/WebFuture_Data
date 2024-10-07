@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Review</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product-info, .rating, .headline, .review-text, .buttons, .options {
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .rating span {
+            font-size: 1.5em;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 2em;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .rating input:checked ~ label, .rating label:hover, .rating label:hover ~ label {
+            color: gold;
+        }
+        .rating .rating-text {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 1em;
+        }
+        .review-text textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .options label {
+            margin-right: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        .modify-button {
+            background-color: #C6A7B1;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+        }
+        .modify-button:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+</head>
+<body>
+<div class="review-container">
+<div class="product-info">
+<button class="modify-button">Modify Element</button>
+<div>
+<h2>Product Name</h2>
+<p>$Price</p>
+<p>45 reviews</p>
+</div>
+</div>
+<div class="rating">
+<span>Rate Product:</span>
+<input id="star1" name="rating" type="radio" value="1"/><label for="star1">★</label>
+<input id="star2" name="rating" type="radio" value="2"/><label for="star2">★</label>
+<input id="star3" name="rating" type="radio" value="3"/><label for="star3">★</label>
+<input id="star4" name="rating" type="radio" value="4"/><label for="star4">★</label>
+<input id="star5" name="rating" type="radio" value="5"/><label for="star5">★</label>
+<span class="rating-text">Bad :(</span>
+</div>
+<div class="headline">
+<label for="headline">Headline</label>
+<input id="headline" name="headline" style="width: 100%; padding: 10px;" type="text"/>
+</div>
+<div class="review-text">
+<label for="review">Review</label>
+<textarea id="review" name="review"></textarea>
+</div>
+<div class="options">
+<label>Radio Buttons</label><br/>
+<label><input name="relevance" type="radio" value="0"/> Not relevant</label>
+<label><input name="relevance" type="radio" value="1"/> Low</label>
+<label><input name="relevance" type="radio" value="2"/> Medium</label>
+<label><input name="relevance" type="radio" value="3"/> High</label>
+</div>
+<div class="options">
+<label>Check Boxes</label><br/>
+<label><input name="choice1" type="checkbox" value="1"/> Choice 1</label>
+<label><input name="choice2" type="checkbox" value="2"/> Choice 2</label>
+<label><input name="choice3" type="checkbox" value="3"/> Choice 3</label>
+<label><input name="choice4" type="checkbox" value="4"/> Choice 4</label>
+<label><input name="choice5" type="checkbox" value="5"/> Choice 5</label>
+<label><input name="choice6" type="checkbox" value="6"/> Choice 6</label>
+<label><input name="choice7" type="checkbox" value="7"/> Choice 7</label>
+<label><input name="choice8" type="checkbox" value="8"/> Choice 8</label>
+</div>
+<div class="buttons">
+<button type="button">Cancel</button>
+</div>
+</div>
+<div class="buttons">
+<button id="6_1" type="submit">OK</button>
+</div>
+</body>
+</html>

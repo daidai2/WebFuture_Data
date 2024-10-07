@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header, .content, .footer {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .header a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #000;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"], .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #C6A7B1;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #FFDEE9;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .footer {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .footer .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer .form-group input[type="text"] {
+            margin-bottom: 10px;
+        }
+        .footer .form-group button {
+            align-self: flex-start;
+        }
+        .footer .options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .footer .options .checkbox-group, .footer .options .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .bottom-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div>
+<a href="#">Login</a>
+<a href="#">Sign Up</a>
+</div>
+</div>
+<div class="content">
+<h1>Title</h1>
+<div class="post">
+<h2>Title Page</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+</div>
+</div>
+<div class="footer">
+<div class="form-group">
+<label for="label1">Label</label>
+<input id="label1" type="text"/>
+</div>
+<div class="form-group">
+<label for="label2">Label</label>
+<input id="label2" type="text"/>
+</div>
+<div class="options">
+<div class="checkbox-group">
+<label><input type="checkbox"/> Checkbox 1</label>
+<label><input type="checkbox"/> Checkbox 2</label>
+<label><input type="checkbox"/> Checkbox 3</label>
+<label><input type="checkbox"/> Checkbox 4</label>
+</div>
+<div class="radio-group">
+<label><input name="radio" type="radio"/> Radio 1</label>
+<label><input name="radio" type="radio"/> Radio 2</label>
+<label><input name="radio" type="radio"/> Radio 3</label>
+<label><input name="radio" type="radio"/> Radio 4</label>
+</div>
+</div>
+</div>
+<div class="bottom-button">
+<button id="6_1" onclick="showAlert()">Button</button>
+</div>
+<script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+    </script>
+</body>
+</html>

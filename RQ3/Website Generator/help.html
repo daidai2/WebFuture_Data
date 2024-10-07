@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #e2e8f0;
+    }
+    .banner {
+      background-image: url('banner.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .menu {
+      color: #d3d3d3;
+      border: 1px solid #d3d3d3;
+      padding: 8px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen">
+    <header class="banner bg-gray-200 p-4">
+      <nav class="flex justify-center space-x-4 menu">
+        <a href="/search" class="text-gray-300">Menu1</a>
+        <a href="/terms" class="text-gray-300">Menu2</a>
+        <a href="/friends" class="text-gray-300">Menu3</a>
+        <a href="/post" class="text-gray-300">Menu4</a>
+        <a href="/settings" class="text-gray-300">Menu5</a>
+      </nav>
+      <div class="flex justify-center mt-6">
+        <div class="flex flex-col items-center w-full max-w-6xl">
+          <h1 class="text-4xl text-center text-white">Title1</h1>
+          <h2 class="text-2xl text-center mt-6 text-white">Title1-1</h2>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <section class="p-4 flex flex-col items-center">
+        <h1 class="text-3xl text-center">Title2</h1>
+        <h2 class="text-xl text-center mt-2">Title2-1</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4" onclick="location.href='/signup'">Button2</button>
+        <div class="mt-4 bg-gray-300 h-64 w-full flex items-center justify-center">PIC1</div>
+        <p class="mt-2 text-center w-full max-w-3xl">Text2</p>
+        <img src="pic01.jpg" alt="pic01" class="mt-4">
+      </section>
+
+      <section class="p-4 flex flex-col items-center">
+        <h1 class="text-3xl text-center">Title3</h1>
+        <p class="mt-2 text-center w-full max-w-3xl">Text3</p>
+        <div class="grid grid-cols-2 gap-16 mt-16">
+          <div class="flex items-center space-x-12">
+            <div class="circle flex items-center justify-center">Icon3-1</div>
+            <div class="ml-12">
+              <h3 class="text-xl">Title3-1</h3>
+              <p class="mt-2">Text3-1</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-12">
+            <div class="circle flex items-center justify-center">Icon3-2</div>
+            <div class="ml-12">
+              <h3 class="text-xl">Title3-2</h3>
+              <p class="mt-2">Text3-2</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-12">
+            <div class="circle flex items-center justify-center">Icon3-3</div>
+            <div class="ml-12">
+              <h3 class="text-xl">Title3-3</h3>
+              <p class="mt-2">Text3-3</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-12">
+            <div class="circle flex items-center justify-center">Icon3-4</div>
+            <div class="ml-12">
+              <h3 class="text-xl">Title3-4</h3>
+              <p class="mt-2">Text3-4</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-12">
+            <div class="circle flex items-center justify-center">Icon3-5</div>
+            <div class="ml-12">
+              <h3 class="text-xl">Title3-5</h3>
+              <p class="mt-2">Text3-5</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-12">
+            <div class="circle flex items-center justify-center">Icon3-6</div>
+            <div class="ml-12">
+              <h3 class="text-xl">Title3-6</h3>
+              <p class="mt-2">Text3-6</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex space-x-12 mt-16">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="location.href='/blog'">Button3-1</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="location.href='/dashboard'">Button3-2</button>
+        </div>
+      </section>
+
+      <section class="p-4 flex flex-col items-center">
+        <h1 class="text-3xl text-center">Title4</h1>
+        <div class="flex space-x-4 mt-6">
+          <div class="w-1/2 p-4 bg-gray-200 flex flex-col items-center">
+            <div class="h-64 w-full flex items-center justify-center">
+              <img src="pic02.jpg" alt="pic02" class="h-full w-full object-cover">
+            </div>
+            <div class="mt-2 text-center">
+              <h3 class="text-xl">Title4-1</h3>
+              <p class="mt-2">Text4-1</p>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2" onclick="location.href='/messages'">Button4-1</button>
+            </div>
+          </div>
+          <div class="w-1/2 p-4 bg-gray-200 flex flex-col items-center">
+            <div class="h-64 w-full flex items-center justify-center">
+              <img src="pic03.jpg" alt="pic03" class="h-full w-full object-cover">
+            </div>
+            <div class="mt-2 text-center">
+              <h3 class="text-xl">Title4-2</h3>
+              <p class="mt-2">Text4-2</p>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2" onclick="location.href='/login'">Button4-2</button>
+            </div>
+          </div>
+          <div class="w-1/2 p-4 bg-gray-200 flex flex-col items-center">
+            <div class="h-64 w-full flex items-center justify-center">
+              <img src="pic04.jpg" alt="pic04" class="h-full w-full object-cover">
+            </div>
+            <div class="mt-2 text-center">
+              <h3 class="text-xl">Title4-3</h3>
+              <p class="mt-2">Text4-3</p>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2" onclick="location.href='/reports'">Button4-3</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-4 flex flex-col items-start">
+        <h1 class="text-3xl text-center w-full">Title5</h1>
+        <p class="mt-2 text-center w-full">Text5</p>
+        <div class="mt-4 w-full flex flex-row items-start">
+          <div class="flex flex-col items-start pl-4 w-1/2">
+            <div class="flex w-full space-x-2">
+              <input type="text" class="w-1/2 p-2 border border-gray-400 rounded" placeholder="Input1">
+              <input type="text" class="w-1/2 p-2 border border-gray-400 rounded" placeholder="Input2">
+            </div>
+            <textarea class="w-full p-2 border border-gray-400 rounded mt-2" style="width: 100%;" placeholder="Textarea"></textarea>
+            <div class="mt-4 space-x-2">
+              <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="location.href='/forgot_password'">Button5-1</button>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="location.href='/admin'">Button5-2</button>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8 ml-8">
+            <div class="flex items-center space-x-4">
+              <div class="circle flex items-center justify-center">Icon5-1</div>
+              <div class="ml-4">
+                <h3 class="text-xl">Title5-1</h3>
+                <p class="mt-2">Text5-1</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="circle flex items-center justify-center">Icon5-2</div>
+              <div class="ml-4">
+                <h3 class="text-xl">Title5-2</h3>
+                <p class="mt-2">Text5-2</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="circle flex items-center justify-center">Icon5-3</div>
+              <div class="ml-4">
+                <h3 class="text-xl">Title5-3</h3>
+                <p class="mt-2">Text5-3</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="circle flex items-center justify-center">Icon5-4</div>
+              <div class="ml-4">
+                <h3 class="text-xl">Title5-4</h3>
+                <p class="mt-2">Text5-4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 p-4 mt-4 flex justify-center">
+      <div class="flex space-x-4">
+        <a href="/reset_password" class="text-gray-700">Menu5-1</a>
+        <a href="/notifications" class="text-gray-700">Menu5-2</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

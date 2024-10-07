@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #e2e8f0;
+    }
+
+    .bg-button-hover {
+      background-color: #FFDEE9;
+    }
+
+    .bg-button-normal {
+      background-color: #C6A7B1;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen" id="body1">
+  <div class="flex flex-col min-h-screen" id="body1-div1">
+    <header class="bg-gray-200 p-4" id="body1-div1-header1">
+      <nav class="flex justify-between" id="body1-div1-header1-nav1">
+        <div class="flex space-x-4" id="body1-div1-header1-nav1-div2">
+          <a href="#" class="text-gray-700" id="body1-div1-header1-nav1-div2-a1">Menu1</a>
+          <a href="#" class="text-gray-700" id="body1-div1-header1-nav1-div2-a2">Menu2</a>
+          <a href="#" class="text-gray-700" id="body1-div1-header1-nav1-div2-a3">Menu3</a>
+          <a href="#" class="text-gray-700" id="body1-div1-header1-nav1-div2-a4">Menu4</a>
+          <a href="#" class="text-gray-700" id="body1-div1-header1-nav1-div2-a5">Menu5</a>
+        </div>
+      </nav>
+      <h1 class="text-4xl text-center mt-2" id="body1-div1-header1-h11">Title1</h1>
+      <h2 class="text-2xl text-center mt-2" id="body1-div1-header1-h21">Title1-1</h2>
+    </header>
+
+    <main class="flex-grow" id="body1-div1-main1">
+      <section class="p-4" id="body1-div1-main1-section1">
+        <h1 class="text-3xl" id="body1-div1-main1-section1-h12">Title2</h1>
+        <h2 class="text-xl mt-2" id="body1-div1-main1-section1-h22">Title2-1</h2>
+        <p class="mt-2" id="body1-div1-main1-section1-p1">Text2</p>
+        <div class="mt-4 bg-gray-300 h-64 flex items-center justify-center" id="body1-div1-main1-section1-div3">PIC1</div>
+      </section>
+
+      <section class="p-4" id="body1-div1-main1-section2">
+        <h1 class="text-3xl" id="body1-div1-main1-section2-h13">Title3</h1>
+        <p class="mt-2" id="body1-div1-main1-section2-p2">Text3</p>
+        <div class="flex space-x-4 mt-4" id="body1-div1-main1-section2-div4">
+          <div class="circle flex items-center justify-center" id="body1-div1-main1-section2-div4-div5">Title3-1</div>
+          <div class="circle flex items-center justify-center" id="body1-div1-main1-section2-div4-div6">Title3-2</div>
+          <div class="circle flex items-center justify-center" id="body1-div1-main1-section2-div4-div7">Title3-3</div>
+          <div class="circle flex items-center justify-center" id="body1-div1-main1-section2-div4-div8">Title3-4</div>
+          <div class="circle flex items-center justify-center" id="body1-div1-main1-section2-div4-div9">Title3-5</div>
+          <div class="circle flex items-center justify-center" id="body1-div1-main1-section2-div4-div10">Title3-6</div>
+        </div>
+        <div class="flex space-x-4 mt-4" id="body1-div1-main1-section2-div11">
+          <button class="bg-button-normal text-white px-4 py-2 rounded hover:bg-button-hover" id="body1-div1-main1-section2-div11-button1">Button3-1</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-div1-main1-section2-div11-button2" onclick="addInteractionModule()">Button3-2</button>
+        </div>
+      </section>
+
+      <section class="p-4" id="body1-div1-main1-section3">
+        <div class="flex space-x-4" id="body1-div1-main1-section3-div12">
+          <div class="w-1/3 p-4 bg-gray-200" id="body1-div1-main1-section3-div12-div13">
+            <div class="bg-gray-300 h-64 flex items-center justify-center" id="body1-div1-main1-section3-div12-div13-div14">PIC2-1</div>
+            <h3 class="text-xl mt-2" id="body1-div1-main1-section3-div12-div13-h31">Title4-1</h3>
+            <p class="mt-2" id="body1-div1-main1-section3-div12-div13-p3">Text4-1</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2" id="body1-div1-main1-section3-div12-div13-button3">Button4-1</button>
+          </div>
+          <div class="w-1/3 p-4 bg-gray-200" id="body1-div1-main1-section3-div12-div15">
+            <div class="bg-gray-300 h-64 flex items-center justify-center" id="body1-div1-main1-section3-div12-div15-div16">PIC2-2</div>
+            <h3 class="text-xl mt-2" id="body1-div1-main1-section3-div12-div15-h32">Title4-2</h3>
+            <p class="mt-2" id="body1-div1-main1-section3-div12-div15-p4">Text4-2</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2" id="body1-div1-main1-section3-div12-div15-button4">Button4-2</button>
+          </div>
+          <div class="w-1/3 p-4 bg-gray-200" id="body1-div1-main1-section3-div12-div17">
+            <div class="bg-gray-300 h-64 flex items-center justify-center" id="body1-div1-main1-section3-div12-div17-div18">PIC2-3</div>
+            <h3 class="text-xl mt-2" id="body1-div1-main1-section3-div12-div17-h33">Title4-3</h3>
+            <p class="mt-2" id="body1-div1-main1-section3-div12-div17-p5">Text4-3</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2" id="body1-div1-main1-section3-div12-div17-button5">Button4-3</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-4" id="body1-div1-main1-section4">
+        <h1 class="text-3xl" id="body1-div1-main1-section4-h14">Title5</h1>
+        <p class="mt-2" id="body1-div1-main1-section4-p6">Text5</p>
+        <div class="mt-4" id="body1-div1-main1-section4-div19">
+          <textarea class="w-full p-2 border border-gray-400 rounded" placeholder="Textarea" id="body1-div1-main1-section4-div19-textarea1"></textarea>
+          <input type="text" class="w-full p-2 border border-gray-400 rounded mt-2" placeholder="Input Field" id="body1-div1-main1-section4-div19-input1">
+          <div class="mt-4 space-x-2" id="body1-div1-main1-section4-div19-div20">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-div1-main1-section4-div19-div20-button6">Button5-1</button>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-div1-main1-section4-div19-div20-button7">Button5-2</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 p-4 mt-4" id="body1-div1-footer1">
+      <div class="flex space-x-4" id="body1-div1-footer1-div21">
+        <a href="#" class="text-gray-700" id="body1-div1-footer1-div21-a6">Menu5-1</a>
+        <a href="#" class="text-gray-700" id="body1-div1-footer1-div21-a7">Menu5-2</a>
+      </div>
+    </footer>
+    <p id="Parent_body1-div1_Next_null_Queue_3">Add Element</p>
+  </div>
+
+
+  <script data-custom-scripts="true">
+    function addInteractionModule() {
+      var newElement = document.createElement('div');
+      newElement.id = 'Parent_body1-div1_Next_null_Queue_1';
+      newElement.setAttribute('name', 'add');
+      newElement.classList.add('p-4', 'bg-gray-100', 'mt-4');
+      newElement.innerHTML = '<p id="Parent_body1-div1_Next_null_Queue_2" name="add">Add Interaction</p>';
+      document.getElementById('body1-div1').appendChild(newElement);
+    }
+  </script>
+</body>
+</html>

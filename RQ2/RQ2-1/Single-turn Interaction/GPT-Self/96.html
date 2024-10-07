@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment and Services</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .payment-section, .services-section {
+            margin-bottom: 40px;
+        }
+        .payment-section input[type="radio"], .payment-section input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .payment-section input[type="text"], .payment-section input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .services-section .service-item {
+            margin-bottom: 20px;
+        }
+        .service-item .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+        .complete-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<a class="button" href="#">Add Element</a> <!-- 添加超链接 -->
+<div class="payment-section">
+<h2 class="first-text">Select your payment method</h2> <!-- 修改字体大小 -->
+<label>
+<input checked="" name="payment-method" type="radio" value="credit-card"/>
+                Credit Card
+            </label>
+<label>
+<input name="payment-method" type="radio" value="paypal"/>
+                Paypal
+            </label>
+<label>
+<input name="payment-method" type="radio" value="bank-transfer"/>
+                Bank Transfer
+            </label>
+<h2>Enter your data</h2>
+<label for="card-number">Card Number</label>
+<input id="card-number" name="card-number" type="text"/>
+<label for="expiration-date">Expiration date</label>
+<input id="expiration-month" name="expiration-month" placeholder="MM" style="width: 60px; display: inline-block;" type="number"/>
+            /
+            <input id="expiration-year" name="expiration-year" placeholder="YY" style="width: 60px; display: inline-block;" type="number"/>
+<input id="ccv" name="ccv" placeholder="CCV" style="width: 100px; display: inline-block; margin-left: 10px;" type="number"/>
+</div>
+<div class="services-section">
+<h2>Mobility Solutions &amp; Daily Living Aids</h2>
+<p>Making Life Easier</p>
+<a class="button" href="#">Find out More</a>
+<div class="service-item">
+<h3>Wheelchair Repair</h3>
+<a class="button" href="#">Find out More</a>
+</div>
+<div class="service-item">
+<h3>Community Contracts</h3>
+<a class="button" href="#">Find out More</a>
+</div>
+</div>
+<button class="complete-button" id="6_1" type="button">Complete</button> <!-- 移动按钮 -->
+</div>
+</body>
+</html>

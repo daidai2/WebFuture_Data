@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100" id="body1">
+
+  <!-- Header -->
+  <a href="#" id="Parent_body1_Next_body1-header1_Queue_1" class="block text-blue-500 text-xl mb-4 text-center">Add Element</a>
+  <header class="bg-white p-4 shadow-md" id="body1-header1">
+    <div class="container mx-auto flex justify-between items-center" id="body1-header1-div1">
+      <a href="#" class="font-bold text-2xl" id="body1-header1-div1-a1">Logo</a>
+      <div class="flex items-center space-x-2" id="body1-header1-div1-div2">
+        <input type="text" class="border p-2" placeholder="Search" id="body1-header1-div1-div2-input1">
+        <button class="bg-blue-500 text-white px-4 py-2" id="body1-header1-div1-div2-button1" onclick="showAddInteractionAlert()">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Catalog Section -->
+  <section id="body1-section1" class="py-8">
+    <div class="container mx-auto" id="body1-section1-div3">
+      <h2 class="text-3xl font-bold mb-4 text-center" id="body1-section1-div3-h21">Product Catalog</h2>
+      <div class="grid grid-cols-3 gap-4" id="body1-section1-div3-div4">
+        <!-- Product 1 -->
+        <div class="bg-white p-4 shadow-md text-center" id="body1-section1-div3-div4-div5">
+
+          <button id="Parent_body1-section1-div3-div4-div5_Next_body1-section1-div3-div4-div5-span1_Queue_1" class="bg-green-500 text-white px-4 py-2 mb-4 mx-auto block">Modify Element</button><span class="block text-xl font-semibold" id="body1-section1-div3-div4-div5-span1">Product 1</span>
+          <span class="block text-green-600 text-lg" id="body1-section1-div3-div4-div5-span2">$30.00</span>
+          <button class="bg-blue-500 text-white px-4 py-2 mt-2" id="body1-section1-div3-div4-div5-button2">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white p-4 shadow-md text-center" id="body1-section1-div3-div4-div6">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="mx-auto mb-4" id="body1-section1-div3-div4-div6-img2">
+          <span class="block text-xl font-semibold" id="body1-section1-div3-div4-div6-span3">Product 2</span>
+          <span class="block text-green-600 text-lg" id="body1-section1-div3-div4-div6-span4">$10.00</span>
+          <button class="bg-blue-500 text-white px-4 py-2 mt-2" id="body1-section1-div3-div4-div6-button3">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white p-4 shadow-md text-center" id="body1-section1-div3-div4-div7">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="mx-auto mb-4" id="body1-section1-div3-div4-div7-img3">
+          <span class="block text-xl font-semibold" id="body1-section1-div3-div4-div7-span5">Product 3</span>
+          <span class="block text-green-600 text-lg" id="body1-section1-div3-div4-div7-span6">$40.00</span>
+          <button class="bg-blue-500 text-white px-4 py-2 mt-2" id="body1-section1-div3-div4-div7-button4">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Page Section -->
+  <section id="body1-section2" class="py-8 bg-white">
+    <div class="container mx-auto flex" id="body1-section2-div8">
+      <!-- Main Product Image -->
+      <img src="https://placehold.co/300x300" alt="Main Product Image" class="w-1/2 pr-4" id="body1-section2-div8-img4">
+      <!-- Product Details -->
+      <div class="w-1/2 pl-4" id="body1-section2-div8-div9">
+        <h1 class="text-3xl font-bold mb-4" id="body1-section2-div8-div9-h11">Product Name</h1>
+        <p class="text-lg mb-2" id="body1-section2-div8-div9-p1">Manufacturer</p>
+        <div class="product-colors mb-4" id="body1-section2-div8-div9-div10">
+          <p class="text-lg mb-2" id="body1-section2-div8-div9-div10-p2">Colors:</p>
+          <label class="mr-2" id="body1-section2-div8-div9-div10-label1"><input type="radio" name="color" value="red" id="body1-section2-div8-div9-div10-label1-input2"> Red</label>
+          <label class="mr-2" id="body1-section2-div8-div9-div10-label2"><input type="radio" name="color" value="blue" id="body1-section2-div8-div9-div10-label2-input3"> Blue</label>
+          <label id="body1-section2-div8-div9-div10-label3"><input type="radio" name="color" value="white" id="body1-section2-div8-div9-div10-label3-input4"> White</label>
+        </div>
+        <div class="product-price mb-4" id="body1-section2-div8-div9-div11">
+          <span class="new-price text-2xl text-green-600 mr-2" id="body1-section2-div8-div9-div11-span7">$40.00</span>
+          <span class="old-price text-xl line-through" id="body1-section2-div8-div9-div11-span8">$80.00</span>
+        </div>
+        <button class="bg-blue-500 text-white px-6 py-2" id="body1-section2-div8-div9-button5">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Thumbnail Gallery -->
+    <div class="container mx-auto flex mt-8 space-x-4" id="body1-section2-div12">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16" id="body1-section2-div12-img5">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16" id="body1-section2-div12-img6">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16" id="body1-section2-div12-img7">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16" id="body1-section2-div12-img8">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 mt-auto" id="body1-footer1">
+    <p id="body1-footer1-p3">© 2023 E-commerce Website. All rights reserved.</p>
+  </footer>
+
+
+
+  <script data-custom-scripts="true">
+    function showAddInteractionAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

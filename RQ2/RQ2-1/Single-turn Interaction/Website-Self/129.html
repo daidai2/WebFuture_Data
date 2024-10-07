@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .shipping-service {
+            margin-bottom: 20px;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .review-section {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .review-section input[type="radio"] {
+            margin-right: 5px;
+        }
+        .review-section textarea {
+            width: 100%;
+            height: 100px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .rating span {
+            font-size: 1.5rem;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .checkbox-group, .radio-group {
+            margin-top: 20px;
+        }
+        .checkbox-group input, .radio-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body><a href="#">Add Element</a>
+<div class="container">
+<h1>Checkout</h1>
+<h2>Shipping Address</h2>
+<form>
+<label for="first-name">First Name</label>
+
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+<label for="company">Company</label>
+<input id="company" name="company" type="text"/>
+<h2>Shipping Service</h2>
+<div class="shipping-service">
+<input id="standard" name="shipping" type="radio" value="standard"/>
+<label for="standard">Standard 14 days - $6.59</label><br/>
+<input id="expedited" name="shipping" type="radio" value="expedited"/>
+<label for="expedited">Expedited 7 days - $11.97</label><br/>
+<input id="express" name="shipping" type="radio" value="express"/>
+<label for="express">Express 3 days - $19.99</label>
+</div>
+<h2>Write Review</h2>
+<div class="review-section">
+<div>
+<label for="product-name">Product Name</label>
+<input id="product-name" name="product-name" type="text"/>
+</div>
+<div>
+<label for="product-price">Price</label>
+<input id="product-price" name="product-price" type="text"/>
+</div>
+<div class="rating">
+<span>Rate Product:</span>
+<input id="star1" name="rating" type="radio" value="1"/>
+<label for="star1">★</label>
+<input id="star2" name="rating" type="radio" value="2"/>
+<label for="star2">★★</label>
+<input id="star3" name="rating" type="radio" value="3"/>
+<label for="star3">★★★</label>
+<input id="star4" name="rating" type="radio" value="4"/>
+<label for="star4">★★★★</label>
+<input id="star5" name="rating" type="radio" value="5"/>
+<label for="star5">★★★★★</label>
+</div>
+<div>
+<label for="review">Review</label>
+<textarea id="review" name="review"></textarea>
+</div>
+<button type="submit">Submit</button>
+</div>
+<div class="additional-section">
+<label for="label1">Label 1</label>
+<input id="label1" name="label1" type="text"/>
+<label for="label2">Label 2</label>
+<input id="label2" name="label2" type="text"/>
+<h2>Button</h2>
+<div class="radio-group">
+<input id="radio1" name="group1" type="radio" value="radio1"/>
+<label for="radio1">Radio 1</label><br/>
+<input id="radio2" name="group1" type="radio" value="radio2"/>
+<label for="radio2">Radio 2</label><br/>
+<input id="radio3" name="group1" type="radio" value="radio3"/>
+<label for="radio3">Radio 3</label><br/>
+<input id="radio4" name="group1" type="radio" value="radio4"/>
+<label for="radio4">Radio 4</label>
+</div>
+<div class="checkbox-group">
+<input id="checkbox1" name="checkbox1" type="checkbox"/>
+<label for="checkbox1">Checkbox 1</label><br/>
+<input id="checkbox2" name="checkbox2" type="checkbox"/>
+<label for="checkbox2">Checkbox 2</label><br/>
+<input id="checkbox3" name="checkbox3" type="checkbox"/>
+<label for="checkbox3">Checkbox 3</label><br/>
+<input id="checkbox4" name="checkbox4" type="checkbox"/>
+<label for="checkbox4">Checkbox 4</label>
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>

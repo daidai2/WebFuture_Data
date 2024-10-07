@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <div class="container mx-auto p-4">
+    <!-- Add Element Link -->
+    <div class="text-right">
+      <a href="#" class="text-blue-500">Add Element</a>
+    </div>
+    
+    <!-- Header -->
+    <header class="flex justify-center space-x-4 py-4">
+      <img src="https://placehold.co/50x50" alt="Icon 1" class="w-12 h-12">
+      <img src="https://placehold.co/50x50" alt="Icon 2" class="w-12 h-12">
+      <img src="https://placehold.co/50x50" alt="Icon 3" class="w-12 h-12">
+    </header>
+
+    <!-- Navigation -->
+    <nav class="text-center py-2">
+      <a href="#" class="text-blue-500 mx-2">Link 1</a>
+      <a href="#" class="text-blue-500 mx-2">Link 2</a>
+      <a href="#" class="text-blue-500 mx-2">Link 3</a>
+      <a href="#" class="text-blue-500 mx-2">Link 4</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="flex flex-wrap py-8">
+      <!-- Product Viewing Subsection -->
+      <article class="flex-1 p-4">
+        <img src="https://placehold.co/300x300" alt="Main Product Image" class="w-full h-auto mb-4">
+        <div class="flex space-x-2">
+          <img src="https://placehold.co/75x75" alt="Thumbnail 1" class="w-20 h-20">
+          <img src="https://placehold.co/75x75" alt="Thumbnail 2" class="w-20 h-20">
+          <img src="https://placehold.co/75x75" alt="Thumbnail 3" class="w-20 h-20">
+          <img src="https://placehold.co/75x75" alt="Thumbnail 4" class="w-20 h-20">
+        </div>
+      </article>
+
+      <!-- Product Details Subsection -->
+      <article class="flex-1 p-4">
+        <h2 class="text-2xl font-bold">PRODUCT NAME</h2>
+        <p class="text-lg mb-2">Manufacturer</p>
+        <div class="mb-4">
+          <span>Color:</span>
+          <label class="inline-flex items-center">
+            <input type="radio" class="form-radio" name="color" value="red">
+            <span class="ml-2">Red</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" class="form-radio" name="color" value="blue">
+            <span class="ml-2">Blue</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" class="form-radio" name="color" value="white">
+            <span class="ml-2">White</span>
+          </label>
+        </div>
+        <div class="flex items-center mb-4">
+          <span class="text-xl font-bold">$400</span>
+          <span class="line-through ml-4">$200</span>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+      </article>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-8">
+      <h3 class="text-xl font-bold mb-4">Shipping Info</h3>
+      <form class="space-y-4">
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label class="block">Last Name</label>
+            <input type="text" class="w-full border p-2">
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label class="block">Phone</label>
+            <input type="text" class="w-full border p-2">
+          </div>
+          <div class="flex-1">
+            <label class="block">Email</label>
+            <input type="email" class="w-full border p-2">
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label class="block">Country</label>
+            <select class="w-full border p-2">
+              <option>United States</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="flex-1">
+            <label class="block">State</label>
+            <select class="w-full border p-2">
+              <option>California</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label class="block">City</label>
+            <input type="text" class="w-full border p-2" value="Palo Alto">
+          </div>
+          <div class="flex-1">
+            <label class="block">Zip Code</label>
+            <input type="text" class="w-full border p-2">
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <button class="bg-gray-500 text-white px-4 py-2 rounded">Back</button>
+          <h4 class="bg-blue-500 text-white px-4 py-2 rounded">Next Step</h4>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer (if needed) -->
+    <footer class="py-4">
+      <!-- Add footer content here -->
+    </footer>
+  </div>
+</body>
+</html>

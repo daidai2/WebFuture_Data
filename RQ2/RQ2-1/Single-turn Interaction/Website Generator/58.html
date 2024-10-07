@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Wireframe Example</title>
+</head>
+<body class="font-sans bg-gray-100 p-5">
+<header class="mb-5">
+<nav class="flex justify-between">
+<div class="flex space-x-4">
+<a class="text-blue-500" href="#">Sign Up</a>
+<a class="text-blue-500" href="#">Login</a>
+</div>
+</nav>
+</header>
+<section class="bg-white p-6 rounded shadow-md mb-6" id="registration-section">
+<h2 class="text-xl font-bold mb-4">Sign Up</h2>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="name">Name</label>
+
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="last-name">Last Name</label>
+<input class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="last-name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="phone">Phone</label>
+<input class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="phone" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="email">Email</label>
+<input class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="password">Password</label>
+<input class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="password" type="password"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="confirm-password">Confirm Password</label>
+<input class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="confirm-password" type="password"/>
+</div>
+</div>
+<div class="mt-4 flex items-center">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="terms" type="checkbox"/>
+<label class="ml-2 block text-sm text-gray-900" for="terms">I agree to Terms and Conditions</label>
+</div>
+<div class="mt-4">
+<button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md" type="submit">Sign Up</button>
+</div>
+</section>
+<section class="bg-white p-6 rounded shadow-md mb-6" id="product-section">
+<div class="flex flex-col items-center">
+<button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md" type="button">Modify Element</button>
+<p class="text-xl font-bold mb-2">$24.99</p>
+<p class="text-lg mb-4">Product Title</p>
+</div>
+<div class="mb-4">
+<p class="font-bold">Check items:</p>
+<div class="flex items-center mb-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="check1" type="checkbox"/>
+<label class="ml-2 text-sm text-gray-900" for="check1">Check item 1</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="check2" type="checkbox"/>
+<label class="ml-2 text-sm text-gray-900" for="check2">Check item 2</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="check3" type="checkbox"/>
+<label class="ml-2 text-sm text-gray-900" for="check3">Check item 3</label>
+</div>
+</div>
+<div>
+<button class="w-full bg-green-500 text-white py-2 px-4 rounded-md" type="submit">Buy Now</button>
+</div>
+</section>
+<section class="bg-white p-6 rounded shadow-md" id="checkout-section">
+<h2 class="text-xl font-bold mb-4">Forma de envío</h2>
+<div class="mb-4">
+<p class="font-bold mb-2">Seleccione el tipo de transporte:</p>
+<div class="flex items-center mb-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300" id="radio1" name="transport" type="radio"/>
+<label class="ml-2 text-sm text-gray-900" for="radio1">Agencia transporte</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300" id="radio2" name="transport" type="radio"/>
+<label class="ml-2 text-sm text-gray-900" for="radio2">Tren</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300" id="radio3" name="transport" type="radio"/>
+<label class="ml-2 text-sm text-gray-900" for="radio3">Aéreo</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300" id="radio4" name="transport" type="radio"/>
+<label class="ml-2 text-sm text-gray-900" for="radio4">Marítimo</label>
+</div>
+</div>
+<h2 class="text-xl font-bold mb-4">Forma de pago</h2>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300" id="payment1" name="payment" type="radio"/>
+<label class="ml-2 text-sm text-gray-900" for="payment1">Tarjeta (Crédito/Débito)</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300" id="payment2" name="payment" type="radio"/>
+<label class="ml-2 text-sm text-gray-900" for="payment2">Transferencia bancaria</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300" id="payment3" name="payment" type="radio"/>
+<label class="ml-2 text-sm text-gray-900" for="payment3">Metálico</label>
+</div>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="address">Dirección</label>
+<input class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="address" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="country">País</label>
+<select class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="country">
+<option>Seleccione un país</option>
+<option>País 1</option>
+<option>País 2</option>
+<option>País 3</option>
+</select>
+</div>
+<div>
+<button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md" type="submit">Aceptar</button>
+</div>
+</section>
+<p>Add Element</p></body>
+</html>

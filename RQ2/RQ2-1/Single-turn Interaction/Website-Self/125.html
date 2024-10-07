@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login</title>
+<style>
+        .interaction-text {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+<nav>
+<a href="#">Login</a>
+<a href="#">Sign Up</a>
+</nav>
+<form action="/login" method="POST">
+<label for="username">Login</label>
+<input id="username" name="username" required="" type="text"/>
+<br/>
+<label for="password">Password</label>
+<input id="password" name="password" required="" type="password"/>
+<br/>
+<input id="remember" name="remember" type="checkbox"/>
+<label for="remember">Remember me</label>
+<br/>
+<a href="#">Forgot Password</a>
+<br/>
+<button id="6_1" type="submit">Login</button>
+</form>
+</div>
+<script>
+        document.getElementById('loginButton').addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Add new module with text element
+            const newModule = document.createElement('div');
+            const newText = document.createElement('p');
+            newText.textContent = 'Add Interaction';
+            newText.classList.add('interaction-text');
+            newModule.appendChild(newText);
+            document.body.appendChild(newModule);
+
+            // Move the login button to the bottom of the page
+            const form = document.querySelector('form');
+            document.body.appendChild(form);
+        });
+
+        // Change the font size of the first text element to 50px
+        document.querySelector('label[for="username"]').style.fontSize = '50px';
+    </script>
+</body>
+</html>

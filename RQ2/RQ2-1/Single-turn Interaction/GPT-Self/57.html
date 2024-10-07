@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage from Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .profile div {
+            line-height: 1.5;
+        }
+        .checkout {
+            margin-top: 40px;
+        }
+        .checkout h2 {
+            margin-bottom: 20px;
+        }
+        .checkout form {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkout label {
+            margin-bottom: 5px;
+        }
+        .checkout input {
+            margin-bottom: 20px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        .shipping-service, .payment-method {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Profiles Section -->
+    <div class="profiles">
+        <div class="profile">
+            <img src="placeholder.jpg" alt="Profile Picture">
+            <div>
+                <strong>Mate One</strong><br>
+                Job Title<br>
+                Description line 1<br>
+                Description line 2
+            </div>
+        </div>
+        <div class="profile">
+            <img src="placeholder.jpg" alt="Profile Picture">
+            <div>
+                <strong>Mate Two</strong><br>
+                Job Title<br>
+                Description line 1<br>
+                Description line 2
+            </div>
+        </div>
+        <div class="profile">
+            <img src="placeholder.jpg" alt="Profile Picture">
+            <div>
+                <strong>Mate Three</strong><br>
+                Job Title<br>
+                Description line 1<br>
+                Description line 2
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <form>
+            <!-- Removed First Name Field -->
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+            
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <div class="shipping-service">
+                <h3>Shipping Service</h3>
+                <input type="radio" id="standard" name="shipping" value="standard" checked>
+                <label for="standard">Standard (14 days - $6.99)</label><br>
+                <input type="radio" id="expedited" name="shipping" value="expedited">
+                <label for="expedited">Expedited (7 days - $12.99)</label><br>
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express (3 days - $19.99)</label>
+            </div>
+
+            <div class="payment-method">
+                <h3>Payment Method</h3>
+                <input type="radio" id="credit" name="payment" value="credit" checked>
+                <label for="credit">Credit/Debit Card</label><br>
+                <input type="radio" id="bank" name="payment" value="bank">
+                <label for="bank">Bank Transfer</label><br>
+                <input type="radio" id="cash" name="payment" value="cash">
+                <label for="cash">Cash</label>
+            </div>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <!-- Added Text at the Bottom of the Page -->
+    <p>Add Element</p>
+
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Add Interaction');
+        });
+    </script>
+
+</body>
+</html>

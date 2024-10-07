@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // JavaScript to show alert on "Search" button click
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Add Element Link -->
+  <div class="text-center py-4">
+    <a href="#" class="text-blue-500 text-xl font-semibold">Add Element</a>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="font-bold text-2xl">Logo</a>
+      <div class="flex items-center space-x-2">
+        <input type="text" class="border p-2" placeholder="Search" />
+        <button class="bg-blue-500 text-white px-4 py-2" onclick="showAlert()">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Catalog Section -->
+  <section id="product-catalog" class="py-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-center">Product Catalog</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Product 1 -->
+        <div class="bg-white p-4 shadow-md text-center">
+          <button class="bg-blue-500 text-white px-4 py-2 mt-2">Modify Element</button>
+          <span class="block text-xl font-semibold">Product 1</span>
+          <span class="block text-green-600 text-lg">$30.00</span>
+          <button class="bg-blue-500 text-white px-4 py-2 mt-2">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white p-4 shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="mx-auto mb-4">
+          <span class="block text-xl font-semibold">Product 2</span>
+          <span class="block text-green-600 text-lg">$10.00</span>
+          <button class="bg-blue-500 text-white px-4 py-2 mt-2">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white p-4 shadow-md text-center">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="mx-auto mb-4">
+          <span class="block text-xl font-semibold">Product 3</span>
+          <span class="block text-green-600 text-lg">$40.00</span>
+          <button class="bg-blue-500 text-white px-4 py-2 mt-2">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Page Section -->
+  <section id="product-page" class="py-8 bg-white">
+    <div class="container mx-auto flex">
+      <!-- Main Product Image -->
+      <img src="https://placehold.co/300x300" alt="Main Product Image" class="w-1/2 pr-4">
+      <!-- Product Details -->
+      <div class="w-1/2 pl-4">
+        <h1 class="text-3xl font-bold mb-4">Product Name</h1>
+        <p class="text-lg mb-2">Manufacturer</p>
+        <div class="product-colors mb-4">
+          <p class="text-lg mb-2">Colors:</p>
+          <label class="mr-2"><input type="radio" name="color" value="red"> Red</label>
+          <label class="mr-2"><input type="radio" name="color" value="blue"> Blue</label>
+          <label><input type="radio" name="color" value="white"> White</label>
+        </div>
+        <div class="product-price mb-4">
+          <span class="new-price text-2xl text-green-600 mr-2">$40.00</span>
+          <span class="old-price text-xl line-through">$80.00</span>
+        </div>
+        <button class="bg-blue-500 text-white px-6 py-2">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Thumbnail Gallery -->
+    <div class="container mx-auto flex mt-8 space-x-4">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16">
+      <img src="https://placehold.co/50x50" alt="Thumbnail" class="w-16 h-16">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 mt-auto">
+    <p>&copy; 2023 E-commerce Website. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

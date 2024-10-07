@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      background-image: url('./pics/bg.jpg'), url('./pics/overlay.png');
+      background-size: cover, cover;
+      background-position: center, center;
+      color: white;
+    }
+
+    .transparent-bg {
+      background-color: transparent;
+      border: 2px solid white;
+      position: relative;
+    }
+
+    .vertical-line {
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background-color: white;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .horizontal-line {
+      width: 50%;
+      height: 2px;
+      background-color: white;
+      position: relative;
+      top: 50px;
+    }
+
+    .remove-space>a:not(:first-child) {
+      margin-left: 0;
+    }
+
+    .nav-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .vertical-line-link {
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background-color: white;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .horizontal-line-link {
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      background-color: white;
+      top: -50px;
+      left: 25%;
+      transform: translateX(-50%);
+    }
+
+    .nav-link {
+      padding: 1rem 2rem;
+      border: 2px solid white;
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .rounded-tl-corner {
+      border-top-left-radius: 0.75rem;
+    }
+
+    .rounded-bl-corner {
+      border-bottom-left-radius: 0.75rem;
+    }
+
+    .rounded-tr-corner {
+      border-top-right-radius: 0.75rem;
+    }
+
+    .rounded-br-corner {
+      border-bottom-right-radius: 0.75rem;
+    }
+
+    .black-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 1;
+      z-index: 1000;
+      pointer-events: none;
+      animation: fadeOut 2s ease forwards;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes moveUp {
+      0% {
+        transform: translateY(50vh);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes moveDown {
+      0% {
+        transform: translateY(-50vh);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .vertical-line,
+    .horizontal-line {
+      animation: moveUpCustom 2.5s ease forwards;
+    }
+
+    .vertical-line-link,
+    .horizontal-line-link {
+      animation: moveDownCustom 2.5s ease forwards;
+    }
+
+    @keyframes moveUpCustom {
+      0% {
+        transform: translateY(10vh);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes moveDownCustom {
+      0% {
+        transform: translateY(-10vh);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="fade-in">
+
+  <div class="black-overlay"></div>
+
+  <div class="min-h-screen flex flex-col items-center justify-between pt-32 pb-32">
+    <header class="w-full flex flex-col items-center py-6 relative">
+      <div class="w-32 h-32 rounded-full transparent-bg flex items-center justify-center">
+        <a href="#" class="font-medium fa fa-gem text-5xl"></a>
+      </div>
+      <div class="vertical-line mt-32"></div>
+      <hr class="horizontal-line">
+    </header>
+
+    <section class="text-center mx-auto my-4">
+      <h1 class="title1 text-4xl font-bold mb-16 opacity-0" data-id="body1-div2-section1-h11" id="body1-div2-section1-h11">DIMENSION</h1>
+      <p class="text1 text-xl mb-4 opacity-0 uppercase" data-id="body1-div2-section1-p1" id="body1-div2-section1-p1">A fully responsive site template designed by HTML5 UP and released<br> for free under the Creative Commons license.</p>
+    </section>
+
+    <nav class="nav-wrapper">
+      <div class="vertical-line-link"></div>
+      <hr class="horizontal-line-link">
+      <a href="#" class="nav-link rounded-tl-corner rounded-bl-corner">INTRO</a>
+      <a href="#" class="nav-link">WORK</a>
+      <a href="#" class="nav-link">ABOUT</a>
+      <a href="#" class="nav-link rounded-tr-corner rounded-br-corner">CONTACT</a>
+    </nav>
+
+    <footer class="w-full text-center py-6">
+      <p class="text2 text-lg">© UNTITLED. DESIGN: HTML5 UP.</p>
+    </footer>
+  </div>
+
+  <script data-custom-scripts="true">
+    function ImmediateAnimateElements() {
+      document.querySelectorAll('.vertical-line, .horizontal-line').forEach(element => {
+        element.style.animation = 'moveUpCustom 2.5s ease forwards';
+      });
+      document.querySelectorAll('.vertical-line-link, .horizontal-line-link').forEach(element => {
+        element.style.animation = 'moveDownCustom 2.5s ease forwards';
+      });
+      setTimeout(() => {
+        document.getElementById('body1-div2-section1-h11').style.animation = 'fadeIn 1s ease forwards';
+        document.getElementById('body1-div2-section1-p1').style.animation = 'fadeIn 1s ease forwards';
+      }, 2500);
+    }
+    ImmediateAnimateElements();
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout and Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+            font-size: 50px; /* 改变第一个文本的字体大小 */
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="radio"], .product, .review {
+            margin-top: 5px;
+        }
+        .product, .review {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating span {
+            margin-right: 5px;
+        }
+        .star {
+            color: gold;
+        }
+        .submit-btn {
+            margin-top: 20px;
+        }
+        .product-catalog {
+            display: flex;
+        }
+        .product-catalog .product {
+            flex: 1;
+            text-align: center;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Checkout</h2>
+        <div>
+            <label>Shipping Address</label>
+            <label>First Name</label>
+            <input type="text" name="first_name">
+            <label>Last Name</label>
+            <input type="text" name="last_name">
+            <label>Company</label>
+            <input type="text" name="company">
+        </div>
+        <div>
+            <label>Shipping Service</label>
+            <input type="radio" name="shipping" value="standard" checked> Standard - 14 days - $6.59<br>
+            <input type="radio" name="shipping" value="expedited"> Expedited - 7 days - $11.97<br>
+            <input type="radio" name="shipping" value="express"> Express - 3 days - $19.99
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Write Review</h2>
+        <div class="review">
+            <div class="product">
+                <!-- 删除第一张图片 -->
+                <!-- <img src="#" alt="Product Image"> -->
+                <div>Product Name</div>
+                <div>$Price</div>
+            </div>
+            <div class="rating">
+                <span>Rate Product</span>
+                <span class="star">★</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>Bad :(</span>
+            </div>
+            <div>
+                <label>Headline</label>
+                <input type="text" name="headline">
+            </div>
+            <div>
+                <label>Review</label>
+                <input type="text" name="review">
+            </div>
+            <button class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Product Catalog</h2>
+        <input type="text" placeholder="Search">
+        <button id="searchButton">Search</button> <!-- 添加id属性以便于脚本使用 -->
+        <div class="product-catalog">
+            <div class="product">
+                <img src="#" alt="Product 1">
+                <div>Product 1</div>
+                <div>$20.00</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="#" alt="Product 2">
+                <div>Product 2</div>
+                <div>$10.00</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="#" alt="Product 3">
+                <div>Product 3</div>
+                <div>$40.00</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            alert('Add Interaction');
+        });
+    </script>
+</body>
+</html>

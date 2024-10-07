@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Review</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .product-info, .review-section, .other-section {
+            margin-bottom: 20px;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-info img {
+            display: none; /* 隐藏第一张图片 */
+        }
+        .review-section, .other-section {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .stars {
+            display: flex;
+            align-items: center;
+        }
+        .stars span {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .submit-button, .buy-now-button, .ok-button, .cancel-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .buy-now-button {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .ok-button, .cancel-button {
+            width: 100px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-control {
+            margin-bottom: 10px;
+        }
+        .checkbox-group, .radio-group {
+            margin-top: 10px;
+        }
+        .add-element {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="product-info">
+<img alt="Product Image" src="#" style="display: none;"/>
+<div>
+<h2>Product Name</h2>
+<p>$24.99</p>
+</div>
+<div>
+<div class="stars">
+<span>⭐</span>
+<span>⭐</span>
+<span>⭐</span>
+<span>⭐</span>
+<span>⭐</span>
+</div>
+<p>45 reviews</p>
+</div>
+</div>
+<div class="review-section">
+<h3>Write Review</h3>
+<div class="form-control">
+<label for="headline">Headline</label>
+<input id="headline" name="headline" type="text"/>
+</div>
+<div class="form-control">
+<label for="review">Review</label>
+<textarea id="review" name="review" rows="4"></textarea>
+</div>
+<button class="submit-button">Submit</button>
+</div>
+<div class="other-section">
+<h3>Check items:</h3>
+<div class="checkbox-group">
+<div>
+<input id="item1" name="item1" type="checkbox"/>
+<label for="item1">Check item 1</label>
+</div>
+<div>
+<input id="item2" name="item2" type="checkbox"/>
+<label for="item2">Check item 2</label>
+</div>
+<div>
+<input id="item3" name="item3" type="checkbox"/>
+<label for="item3">Check item 3</label>
+</div>
+</div>
+<button class="buy-now-button">Buy Now</button>
+</div>
+<div class="other-section">
+<h3>Radio Buttons</h3>
+<div class="radio-group">
+<div>
+<input id="not-relevant" name="relevance" type="radio"/>
+<label for="not-relevant">Not relevant</label>
+</div>
+<div>
+<input id="low" name="relevance" type="radio"/>
+<label for="low">Low</label>
+</div>
+<div>
+<input id="medium" name="relevance" type="radio"/>
+<label for="medium">Medium</label>
+</div>
+<div>
+<input id="high" name="relevance" type="radio"/>
+<label for="high">High</label>
+</div>
+</div>
+<h3 id="6_2_2_1_1">CheckBoxes</h3>
+<div class="checkbox-group">
+<div>
+<input id="choice1" name="choice1" type="checkbox"/>
+<label for="choice1">Choice 1</label>
+</div>
+<div>
+<input id="choice2" name="choice2" type="checkbox"/>
+<label for="choice2" id="6_2_1_1_1">Choice 2</label>
+</div>
+<div>
+<input id="choice3" name="choice3" type="checkbox"/>
+<label for="choice3">Choice 3</label>
+</div>
+<div>
+<input id="choice4" name="choice4" type="checkbox"/>
+<label for="choice4">Choice 4</label>
+</div>
+<div>
+<input id="choice5" name="choice5" type="checkbox"/>
+<label for="choice5">Choice 5</label>
+</div>
+<div>
+<input id="choice6" name="choice6" type="checkbox"/>
+<label for="choice6">Choice 6</label>
+</div>
+<div>
+<input id="choice7" name="choice7" type="checkbox"/>
+<label for="choice7">Choice 7</label>
+</div>
+<div>
+<input id="choice8" name="choice8" type="checkbox"/>
+<label for="choice8">Choice 8</label>
+</div>
+</div>
+<div class="buttons">
+<button class="ok-button">OK</button>
+<button class="cancel-button">Cancel</button>
+</div>
+</div>
+<div class="add-element">Add Element</div>
+</div>
+</body>
+</html>

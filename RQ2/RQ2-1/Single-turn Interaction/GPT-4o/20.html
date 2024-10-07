@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .custom-btn {
+      background-color: #C6A7B1;
+    }
+    .custom-btn:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body>
+  <div id="container" class="container mx-auto p-4">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center mb-4">
+      <img src="https://placehold.co/100x100" alt="Logo" class="w-1/2">
+      <img src="https://placehold.co/200x100" alt="Primary Image" class="w-1/2">
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="flex justify-between items-center mb-4">
+      <a href="#" class="text-blue-500">Link 1</a>
+      <a href="#" class="text-blue-500">Link 2</a>
+      <a href="#" class="text-blue-500">Link 3</a>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="flex mb-8">
+      <!-- Sidebar Section -->
+      <section id="sidebar" class="w-1/2 p-4">
+        <p class="mb-2">Placeholder Text 1</p>
+        <p class="mb-2">Placeholder Text 2</p>
+        <p class="mb-2">Placeholder Text 3</p>
+        <img src="https://placehold.co/200x100" alt="Image" class="w-full mb-4">
+        <button class="custom-btn text-white px-4 py-2 mb-2">Button</button>
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2">
+          <span>Checkbox</span>
+        </label>
+      </section>
+
+      <!-- Content Section -->
+      <section id="content" class="w-1/2 p-4">
+        <p class="mb-2">Placeholder Text 4</p>
+        <img src="https://placehold.co/200x100" alt="Image" class="w-full">
+      </section>
+    </main>
+
+    <!-- Product Section -->
+    <section id="product-page" class="flex mb-8">
+      <div class="w-1/2">
+        <img src="https://placehold.co/200x200" alt="Product Image" class="mb-2">
+        <div class="flex space-x-2">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 1">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 2">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 3">
+          <img src="https://placehold.co/50x50" alt="Thumbnail 4">
+        </div>
+      </div>
+      <div class="w-1/2">
+        <h2 class="text-xl font-bold mb-2">Product Name</h2>
+        <p class="mb-2">Manufacturer</p>
+        <div class="mb-2">
+          <label class="mr-2"><input type="radio" name="color" class="mr-1">Red</label>
+          <label class="mr-2"><input type="radio" name="color" class="mr-1">Blue</label>
+          <label class="mr-2"><input type="radio" name="color" class="mr-1">White</label>
+        </div>
+        <p class="mb-2">Price: $100</p>
+        <p class="mb-2">Old Price: $200</p>
+        <button class="bg-blue-500 text-white px-4 py-2" onclick="showAlert()">Add to Cart</button>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <footer class="p-4 border-t">
+      <div class="mb-4">
+        <label class="block mb-1">Radio Buttons</label>
+        <label class="mr-2"><input type="radio" name="relevance" class="mr-1">Not relevant</label>
+        <label class="mr-2"><input type="radio" name="relevance" class="mr-1">Low</label>
+        <label class="mr-2"><input type="radio" name="relevance" class="mr-1">Medium</label>
+        <label class="mr-2"><input type="radio" name="relevance" class="mr-1">High</label>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-1">Checkboxes</label>
+        <label class="block"><input type="checkbox" class="mr-1">Choice 1</label>
+        <label class="block"><input type="checkbox" class="mr-1" checked>Choice 2</label>
+        <label class="block"><input type="checkbox" class="mr-1">Choice 3</label>
+        <label class="block"><input type="checkbox" class="mr-1">Choice 4</label>
+        <label class="block"><input type="checkbox" class="mr-1" checked>Choice 5</label>
+        <label class="block"><input type="checkbox" class="mr-1">Choice 6</label>
+        <label class="block"><input type="checkbox" class="mr-1">Choice 7</label>
+        <label class="block"><input type="checkbox" class="mr-1">Choice 8</label>
+      </div>
+      <div class="flex justify-between">
+        <button class="bg-blue-500 text-white px-4 py-2">OK</button>
+        <button class="bg-gray-500 text-white px-4 py-2">Cancel</button>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function showAlert() {
+      alert('Add Interaction');
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      // Remove the first text input field
+      const firstTextInput = document.querySelector('input[type="text"]');
+      if (firstTextInput) {
+        firstTextInput.parentNode.removeChild(firstTextInput);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <section class="container mx-auto p-4 bg-white shadow-md">
+    <!-- Header -->
+    <header class="flex flex-wrap items-center justify-between p-4 border-b">
+      <div class="flex items-center space-x-2">
+        <label for="dropdown1" class="text-lg">C Sharp</label>
+        <select id="dropdown1" class="border p-2 rounded">
+          <option value="csharp">C Sharp</option>
+          <option value="java">Java</option>
+          <option value="php">PHP</option>
+          <option value="visual_basic">Visual Basic</option>
+        </select>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded ml-auto">Get Drop Down Here</button>
+    </header>
+
+    <!-- Checkbox Group -->
+    <div class="mt-4 flex justify-around">
+      <label><input type="checkbox" name="language" value="csharp" class="mr-2"> C#</label>
+      <label><input type="checkbox" name="language" value="java" class="mr-2"> Java</label>
+      <label><input type="checkbox" name="language" value="php" class="mr-2"> PHP</label>
+      <label><input type="checkbox" name="language" value="visual_basic" class="mr-2"> Visual Basic</label>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="mt-6">
+      <!-- Image Banner -->
+      <img id="image-banner" src="https://placehold.co/600x200" alt="Image Banner" class="w-full object-cover h-48 rounded">
+
+      <!-- Paragraph Content -->
+      <article class="mt-4 space-y-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Fusce vehicula dui vel quam.</p>
+        <p>Quisque malesuada sapien.</p>
+        <p>Etiam at varius sapien.</p>
+      </article>
+
+      <!-- Form Section -->
+      <form class="mt-6 space-y-4">
+        <input type="text" placeholder="TextField 1" class="w-full p-2 border rounded">
+        <input type="text" placeholder="TextField 2" class="w-full p-2 border rounded">
+        <input type="text" placeholder="TextField 3" class="w-full p-2 border rounded">
+        <button id="log-in-button" type="button" class="bg-green-500 text-white px-4 py-2 rounded w-full">Log In</button>
+        <!-- Checkbox Group -->
+        <fieldset class="space-y-2">
+          <label><input type="checkbox" name="checkbox1" class="mr-2"> Checkbox 1</label>
+          <label><input type="checkbox" name="checkbox2" class="mr-2"> Checkbox 2</label>
+        </fieldset>
+        <!-- Radio Button Group -->
+        <fieldset class="space-y-2">
+          <label><input type="radio" name="radio1" class="mr-2"> RadioButton 1</label>
+          <label><input type="radio" name="radio1" class="mr-2"> RadioButton 2</label>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-6">
+      <div class="text-left text-sm">1356 x 624</div>
+
+      <!-- Footer Main Content -->
+      <div class="mt-6 flex space-x-4">
+        <img src="https://placehold.co/150x150" alt="Footer Image" class="w-36 h-36 object-cover rounded">
+        <div class="flex flex-col space-y-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Fusce vehicula dui vel quam.</p>
+        </div>
+      </div>
+
+      <!-- Additional Checkbox and Radio Button Elements -->
+      <form class="mt-6 space-y-4">
+        <label class="block">Label 1
+          <input type="text" placeholder="TextField 4" class="w-full p-2 border rounded mt-1">
+        </label>
+        <label class="block">Label 2
+          <input type="text" placeholder="TextField 5" class="w-full p-2 border rounded mt-1">
+        </label>
+        <!-- Additional Checkboxes -->
+        <fieldset class="space-y-2">
+          <label><input type="checkbox" name="checkbox3" class="mr-2"> Checkbox 3</label>
+          <label><input type="checkbox" name="checkbox4" class="mr-2"> Checkbox 4</label>
+        </fieldset>
+        <!-- Additional Radio Buttons -->
+        <fieldset class="space-y-2">
+          <label><input type="radio" name="radio2" class="mr-2"> RadioButton 3</label>
+          <label><input type="radio" name="radio2" class="mr-2"> RadioButton 4</label>
+        </fieldset>
+        <button class="bg-yellow-500 text-white px-4 py-2 rounded">Button</button>
+      </form>
+
+      <!-- Bottom Image -->
+      <img src="https://placehold.co/150x150" alt="Footer Bottom Image" class="w-36 h-36 object-cover rounded mt-4">
+    </footer>
+
+    <!-- New Elements -->
+    <div id="new-elements" class="mt-4">
+      <p id="add-element" class="hidden">Add Element</p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('log-in-button').addEventListener('click', function() {
+      // Add 'Add Interaction' text at the bottom
+      let newText = document.createElement('p');
+      newText.textContent = 'Add Interaction';
+      document.getElementById('new-elements').appendChild(newText);
+
+      // Change the first image to a button
+      let imageBanner = document.getElementById('image-banner');
+      let newButton = document.createElement('button');
+      newButton.textContent = 'Modify Element';
+      newButton.classList.add('bg-red-500', 'text-white', 'px-4', 'py-2', 'rounded', 'w-full', 'h-48', 'flex', 'items-center', 'justify-center');
+      imageBanner.parentNode.replaceChild(newButton, imageBanner);
+
+      // Add 'Add Element' text at the bottom
+      let addElementText = document.getElementById('add-element');
+      addElementText.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

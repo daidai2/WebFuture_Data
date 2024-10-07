@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login Page</title>
+<style>
+        h1 {
+            font-size: 50px;
+        }
+        .remember-container {
+            display: flex;
+            align-items: center;
+        }
+        .remember-container label {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="6_2_2_1_1">Login</h1>
+<form action="/login" id="loginForm" method="post">
+<div class="remember-container">
+<label for="login" id="6_2_2_1_2">Login</label>
+<input id="login" name="login" required="" type="text"/>
+</div>
+<br/><br/>
+<label for="password">Password</label>
+<input id="password" name="password" required="" type="password"/><br/><br/>
+<div class="remember-container">
+<input id="remember" name="remember" type="checkbox"/>
+<label for="remember" id="6_2_1_1_2">Remember me</label>
+</div>
+<br/><br/>
+<a href="/forgot-password">Forgot Password</a><br/><br/>
+<button id="loginButton" type="button">Login</button>
+</form>
+<script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            // 动态添加新模块
+            var newDiv = document.createElement('div');
+            newDiv.textContent = 'Add Interaction';
+            document.body.appendChild(newDiv);
+            
+            // 提交表单
+            document.getElementById('loginForm').submit();
+        });
+    </script>
+</body>
+</html>

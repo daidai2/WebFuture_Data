@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #2a2a2a;
+      width: 100%;
+    }
+
+    .section {
+      margin-bottom: 0;
+    }
+
+    .fixed-section h1 {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .fixed-section p,
+    .fixed-section a {
+      color: #b0b0b0;
+    }
+
+    .background-image {
+      background-image: url('pic02.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .title2 {
+      color: #b0b0b0;
+      font-size: 4rem;
+      font-weight: normal;
+    }
+
+    .title2a {
+      color: #b0b0b0;
+    }
+
+    .button-large {
+      background-color: #4b9b8e;
+      padding: 1rem 3rem;
+      font-size: 1rem;
+    }
+
+    .title3,
+    .text3,
+    .label3to8 {
+      color: #000000;
+    }
+
+    .title3 {
+      font-size: 2rem;
+      font-weight: normal;
+    }
+
+    .bg-lightgray {
+      background-color: #f0f0f0;
+    }
+
+    .title4,
+    .text4 {
+      color: #000000;
+    }
+
+    .title4 {
+      font-size: 2rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+
+    .upshift {
+      margin-top: -20px;
+    }
+
+    .increased-margin {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .title5,
+    .text5,
+    .text6-1,
+    .text6-2 {
+      color: #000000;
+    }
+
+    .title5 {
+      font-size: 2.5rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+
+    .submit-button {
+      background-color: #4b9b8e;
+      padding: 1rem 3rem;
+      font-size: 1rem;
+      color: #ffffff;
+      border-radius: 0.5rem;
+    }
+
+    .active-link {
+      color: #ffffff;
+    }
+
+    .active-icon {
+      filter: brightness(0) saturate(100%) invert(72%) sepia(25%) saturate(1206%) hue-rotate(313deg) brightness(101%) contrast(101%);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <div class="flex flex-col min-h-screen">
+    <div class="flex">
+      <!-- Fixed Sidebar -->
+      <aside class="w-1/5 p-4 flex flex-col items-end fixed-section">
+        <img src="avatar.jpg" alt="Avatar" class="mb-2">
+        <h1 class="font-bold text-lg mb-2">Title1</h1>
+        <p class="mb-6">Text1</p>
+        <nav class="flex flex-col space-y-2 items-end">
+          <a id="link1" href="/login" class="hover:underline flex items-center">Link 1<img id="icon1" src="https://placehold.co/16x16" alt="Icon 1" class="ml-2"></a>
+          <a id="link2" href="/friends" class="hover:underline flex items-center">Link 2<img id="icon2" src="https://placehold.co/16x16" alt="Icon 2" class="ml-2"></a>
+          <a id="link3" href="/signup" class="hover:underline flex items-center">Link 3<img id="icon3" src="https://placehold.co/16x16" alt="Icon 3" class="ml-2"></a>
+          <a id="link4" href="/forgot_password" class="hover:underline flex items-center">Link 4<img id="icon4" src="https://placehold.co/16x16" alt="Icon 4" class="ml-2"></a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 ml-[20%]">
+        <!-- Section 1 centered content -->
+        <section id="section1" class="p-8 shadow rounded flex flex-col items-center h-96 justify-center section background-image">
+          <h2 class="title2 mb-6">Title2</h2>
+          <h3 class="title2a mb-6">Title2A</h3>
+          <button class="button-large text-white rounded" onclick="location.href='/search'">Button</button>
+        </section>
+
+        <!-- Section 2 centered content -->
+        <section id="section2" class="p-8 shadow rounded flex flex-col items-center h-[60rem] justify-start section bg-lightgray">
+          <h2 class="title3 mb-6">Title3</h2>
+          <p class="text3 mb-6">Text3</p>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <img src="pic03.jpg" alt="PIC3" class="mb-2">
+              <p class="label3to8">Label3</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="pic04.jpg" alt="PIC4" class="mb-2">
+              <p class="label3to8">Label4</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="pic06.jpg" alt="PIC6" class="mb-2">
+              <p class="label3to8">Label5</p>
+            </div>
+            <div class="flex flex-col items-center upshift">
+              <img src="pic03.jpg" alt="PIC3" class="mb-2">
+              <p class="label3to8">Label6</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="pic05.jpg" alt="PIC5" class="mb-2">
+              <p class="label3to8">Label7</p>
+            </div>
+            <div class="flex flex-col items-center upshift">
+              <img src="pic07.jpg" alt="PIC7" class="mb-2">
+              <p class="label3to8">Label8</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3 centered content -->
+        <section id="section3" class="p-4 shadow rounded flex flex-col items-center section bg-lightgray h-[60rem]">
+          <h2 class="title4 mb-8">Title4</h2>
+          <figure class="bg-gray-200 h-48 flex justify-center items-center w-full increased-margin">
+            <img src="pic08.jpg" alt="PIC8">
+          </figure>
+          <p class="text4 mt-8 text-center increased-margin">Text4</p>
+        </section>
+
+        <!-- Section 4 centered content -->
+        <section id="section4" class="p-8 shadow rounded flex flex-col items-center h-[40rem] section bg-lightgray">
+          <h2 class="title5 mb-6">Title5</h2>
+          <p class="text5 mb-6 text-center">Text5</p>
+          <div class="w-full mb-8 flex justify-center">
+            <input type="text" class="border border-gray-300 p-2 mr-4 w-1/2" placeholder="TextInput">
+            <input type="text" class="border border-gray-300 p-2 w-1/2" placeholder="TextInput">
+          </div>
+          <textarea class="border border-gray-300 p-2 w-full mb-8 h-32" rows="8" placeholder="TextArea"></textarea>
+          <button class="submit-button mb-8" onclick="location.href='/terms'">Submit</button>
+          <div class="flex justify-center space-x-4 mt-8">
+            <p class="text6-1 text-center">Text6-1</p>
+            <p class="text6-2 text-center">Text6-2</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('scroll', function() {
+      var section1 = document.getElementById('section1');
+      var section2 = document.getElementById('section2');
+      var section3 = document.getElementById('section3');
+      var section4 = document.getElementById('section4');
+
+      var link1 = document.getElementById('link1');
+      var link2 = document.getElementById('link2');
+      var link3 = document.getElementById('link3');
+      var link4 = document.getElementById('link4');
+
+      var icon1 = document.getElementById('icon1');
+      var icon2 = document.getElementById('icon2');
+      var icon3 = document.getElementById('icon3');
+      var icon4 = document.getElementById('icon4');
+
+      var sections = [section1, section2, section3, section4];
+      var links = [link1, link2, link3, link4];
+      var icons = [icon1, icon2, icon3, icon4];
+
+      sections.forEach((section, index) => {
+        var rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          links[index].classList.add('active-link');
+          icons[index].classList.add('active-icon');
+        } else {
+          links[index].classList.remove('active-link');
+          icons[index].classList.remove('active-icon');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

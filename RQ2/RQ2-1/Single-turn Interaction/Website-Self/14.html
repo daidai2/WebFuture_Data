@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .login-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .post {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+        }
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Add Element</a></li> <!-- Added hyperlink -->
+            </ul>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <form action="#">
+            <label for="login">Login</label>
+            <input type="password" id="password" name="password"> <!-- Removed first text input -->
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+            <br>
+            <a href="#">Forgot Password</a>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div class="main-content container">
+        <h1>Title Page</h1>
+        <div class="post">
+            <h2>Title Post</h2>
+            <p>Content for the first post goes here.</p>
+        </div>
+        <div class="post">
+            <h2>Title Post</h2>
+            <p>Content for the second post goes here.</p>
+        </div>
+        <div class="post">
+            <h2>Title Post</h2>
+            <p>Content for the third post goes here.</p>
+        </div>
+        <div class="post">
+            <h2>Title Post</h2>
+            <p>Content for the fourth post goes here.</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form action="#">
+            <h2>Form de Envio</h2>
+            <label for="medio-transporte">Medio Transporte:</label><br>
+            <input type="radio" id="terrestre" name="transporte" value="terrestre">
+            <label for="terrestre">Terrestre</label><br>
+            <input type="radio" id="aereo" name="transporte" value="aereo">
+            <label for="aereo">Aéreo</label><br>
+            <input type="radio" id="maritimo" name="transporte" value="maritimo">
+            <label for="maritimo">Marítimo</label><br><br>
+            <label for="forma-pago">Forma de Pago:</label><br>
+            <input type="radio" id="tarjeta" name="pago" value="tarjeta">
+            <label for="tarjeta">Tarjeta (Crédito/débito)</label><br>
+            <input type="radio" id="transferencia" name="pago" value="transferencia">
+            <label for="transferencia">Transferencia bancaria</label><br>
+            <input type="radio" id="metalico" name="pago" value="metalico">
+            <label for="metalico">Metálico</label><br><br>
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais"><br><br>
+            <h2>Aceptar</h2> <!-- Changed button to heading -->
+        </form>
+    </div>
+</body>
+</html>

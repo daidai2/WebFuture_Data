@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Form</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style></style>
+</head>
+<body class="bg-gray-100 p-6" id="body1">
+<section class="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6" id="body1-section1">
+<!-- Header Section -->
+<header class="mb-6" id="body1-section1-header1">
+<h1 class="text-2xl font-bold" id="body1-section1-header1-h11">Checkout</h1>
+</header>
+<!-- Shipping Address Section -->
+<div class="shipping-address mb-6" id="body1-section1-div1">
+<h2 class="text-xl font-semibold mb-4" id="body1-section1-div1-h21">Shipping Address</h2>
+<div class="mb-4" id="body1-section1-div1-div3">
+<label class="block font-medium" for="last-name" id="body1-section1-div1-div3-label2">Last Name</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded" id="body1-section1-div1-div3-input2" name="lastName" type="text"/>
+</div>
+<div class="mb-4" id="body1-section1-div1-div4">
+<label class="block font-medium" for="company" id="body1-section1-div1-div4-label3">Company</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded" id="body1-section1-div1-div4-input3" name="company" type="text"/>
+</div>
+</div>
+<!-- Shipping Service Section -->
+<fieldset class="shipping-service mb-6" id="body1-section1-fieldset1">
+<legend class="text-xl font-semibold mb-4" id="body1-section1-fieldset1-legend1">Shipping Service</legend>
+<div class="mb-4" id="body1-section1-fieldset1-div5">
+<input checked="" class="mr-2" id="body1-section1-fieldset1-div5-input4" name="shipping" type="radio" value="standard"/>
+<label class="font-medium" for="standard" id="body1-section1-fieldset1-div5-label4">Standard 14 days - $6.59</label>
+</div>
+<div class="mb-4" id="body1-section1-fieldset1-div6">
+<input class="mr-2" id="body1-section1-fieldset1-div6-input5" name="shipping" type="radio" value="expedited"/>
+<label class="font-medium" for="expedited" id="body1-section1-fieldset1-div6-label5">Expedited 7 days - $11.97</label>
+</div>
+<div class="mb-4" id="body1-section1-fieldset1-div7">
+<input class="mr-2" id="body1-section1-fieldset1-div7-input6" name="shipping" type="radio" value="express"/>
+<label class="font-medium" for="express" id="body1-section1-fieldset1-div7-label6">Express 3 days - $19.97</label>
+</div>
+</fieldset>
+<!-- Programming Language Section -->
+<div class="programming-language mb-6" id="body1-section1-div8">
+<div class="mb-4" id="body1-section1-div8-div9">
+<label class="block font-medium" for="language-dropdown" id="body1-section1-div8-div9-label7">Programming Language</label>
+<select class="mt-1 block w-full p-2 border border-gray-300 rounded" id="body1-section1-div8-div9-select1" name="language">
+<option id="body1-section1-div8-div9-select1-option1" value="csharp">C#</option>
+<option id="body1-section1-div8-div9-select1-option2" value="dropdown">Get Drop Down Here</option>
+</select>
+</div>
+<div class="flex space-x-4" id="body1-section1-div8-div10">
+<div id="body1-section1-div8-div10-div11">
+<input class="mr-2" id="body1-section1-div8-div10-div11-input7" name="csharp" type="checkbox"/>
+<label class="font-medium" for="csharp" id="body1-section1-div8-div10-div11-label8">C#</label>
+</div>
+<div id="body1-section1-div8-div10-div12">
+<input class="mr-2" id="body1-section1-div8-div10-div12-input8" name="java" type="checkbox"/>
+<label class="font-medium" for="java" id="body1-section1-div8-div10-div12-label9">Java</label>
+</div>
+<div id="body1-section1-div8-div10-div13">
+<input class="mr-2" id="body1-section1-div8-div10-div13-input9" name="php" type="checkbox"/>
+<label class="font-medium" for="php" id="body1-section1-div8-div10-div13-label10">PHP</label>
+</div>
+<div id="body1-section1-div8-div10-div14">
+<input class="mr-2" id="body1-section1-div8-div10-div14-input10" name="visual-basic" type="checkbox"/>
+<label class="font-medium" for="visual-basic" id="body1-section1-div8-div10-div14-label11">Visual Basic</label>
+</div>
+</div>
+</div>
+<!-- Miscellaneous Section -->
+<div class="miscellaneous mb-6" id="body1-section1-div15">
+<div class="mb-4" id="body1-section1-div15-div16">
+<label class="block font-medium" for="title" id="body1-section1-div15-div16-label12">Title</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded" id="body1-section1-div15-div16-input11" name="title" type="text"/>
+</div>
+<div class="mb-4" id="body1-section1-div15-div17">
+<label class="block font-medium" id="body1-section1-div15-div17-label13">Importance</label>
+<div class="flex items-center" id="body1-section1-div15-div17-div18">
+<input class="mr-2" id="body1-section1-div15-div17-div18-input12" name="importance" type="radio" value="not-relevant"/>
+<label class="mr-4" for="not-relevant" id="body1-section1-div15-div17-div18-label14">Not relevant</label>
+<input class="mr-2" id="body1-section1-div15-div17-div18-input13" name="importance" type="radio" value="low"/>
+<label class="mr-4" for="low" id="body1-section1-div15-div17-div18-label15">Low</label>
+<input class="mr-2" id="body1-section1-div15-div17-div18-input14" name="importance" type="radio" value="medium"/>
+<label class="mr-4" for="medium" id="body1-section1-div15-div17-div18-label16">Medium</label>
+<input class="mr-2" id="body1-section1-div15-div17-div18-input15" name="importance" type="radio" value="high"/>
+<label for="high" id="body1-section1-div15-div17-div18-label17">High</label>
+</div>
+</div>
+<div id="body1-section1-div15-div19">
+<label class="block font-medium" id="body1-section1-div15-div19-label18">Check Boxes</label>
+<div class="grid grid-cols-4 gap-4" id="body1-section1-div15-div19-div20">
+<div id="body1-section1-div15-div19-div20-div21">
+<input class="mr-2" id="body1-section1-div15-div19-div20-div21-input16" name="choices[]" type="checkbox" value="choice1"/>
+<label for="choice1" id="body1-section1-div15-div19-div20-div21-label19">Choice 1</label>
+</div>
+<div id="body1-section1-div15-div19-div20-div22">
+<input checked="" class="mr-2" id="body1-section1-div15-div19-div20-div22-input17" name="choices[]" type="checkbox" value="choice2"/>
+<label for="choice2" id="body1-section1-div15-div19-div20-div22-label20">Choice 2</label>
+</div>
+<div id="body1-section1-div15-div19-div20-div23">
+<input class="mr-2" id="body1-section1-div15-div19-div20-div23-input18" name="choices[]" type="checkbox" value="choice3"/>
+<label for="choice3" id="body1-section1-div15-div19-div20-div23-label21">Choice 3</label>
+</div>
+<div id="body1-section1-div15-div19-div20-div24">
+<input class="mr-2" id="body1-section1-div15-div19-div20-div24-input19" name="choices[]" type="checkbox" value="choice4"/>
+<label for="choice4" id="body1-section1-div15-div19-div20-div24-label22">Choice 4</label>
+</div>
+<div id="body1-section1-div15-div19-div20-div25">
+<input checked="" class="mr-2" id="body1-section1-div15-div19-div20-div25-input20" name="choices[]" type="checkbox" value="choice5"/>
+<label for="choice5" id="body1-section1-div15-div19-div20-div25-label23">Choice 5</label>
+</div>
+<div id="body1-section1-div15-div19-div20-div26">
+<input class="mr-2" id="body1-section1-div15-div19-div20-div26-input21" name="choices[]" type="checkbox" value="choice6"/>
+<label for="choice6" id="body1-section1-div15-div19-div20-div26-label24">Choice 6</label>
+</div>
+<div id="body1-section1-div15-div19-div20-div27">
+<input checked="" class="mr-2" id="body1-section1-div15-div19-div20-div27-input22" name="choices[]" type="checkbox" value="choice7"/>
+<label for="choice7" id="body1-section1-div15-div19-div20-div27-label25">Choice 7</label>
+</div>
+<div id="body1-section1-div15-div19-div20-div28">
+<input checked="" class="mr-2" id="body1-section1-div15-div19-div20-div28-input23" name="choices[]" type="checkbox" value="choice8"/>
+<label for="choice8" id="body1-section1-div15-div19-div20-div28-label26">Choice 8</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Section -->
+</section>
+<script data-custom-scripts="true"></script>
+<div id="Parent_body1_Next_null_Queue_1">
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="6_1" type="submit">OK</button>
+</div>
+<div id="Parent_body1_Next_null_Queue_2">
+    Add Element
+  </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: white;
+    }
+    body {
+      padding-top: 72px; /* Adjust this value based on the header height */
+    }
+    .full-page-section {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .bottom-link {
+      position: absolute;
+      bottom: 15%; /* Adjust the bottom position */
+      width: 100%;
+      text-align: center;
+    }
+    .link-icon {
+      display: inline-block;
+      width: 70px; /* Increased size */
+      height: 70px; /* Increased size */
+      border-radius: 50%;
+      background-color: transparent;
+      background-image: url('arrow.svg');
+      background-size: 40px 40px; /* Adjusted size of arrow */
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid white; /* White border */
+    }
+    .link-icon a {
+      display: none;
+    }
+    .white-box {
+      background-color: white;
+      width: 80%; /* Further increased width */
+      padding: 20px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0; /* Right border touching the right edge of the page */
+    }
+    .left-white-box {
+      background-color: white;
+      width: 80%; /* Further increased width */
+      padding: 20px;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0; /* Left border touching the left edge of the page */
+    }
+    .link8-border {
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      border: 2px solid white;
+      border-bottom: none;
+      background-color: transparent;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+    .form-section {
+      height: 75vh; /* Set form section height to 3/4 of its section */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-container {
+      width: 50%; /* Set form container width to 1/2 of its section */
+      height: 100%; /* Set form container height to 100% */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .footer-section {
+      background-color: #000; /* Dark black background for footer section */
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="p-4 flex justify-between items-center fixed-header">
+    <div class="text-2xl font-bold text-black">Title1</div>
+    <nav class="space-x-4">
+      <a href="#" class="text-gray-500 hover:underline">Link1</a>
+      <a href="#" class="text-gray-500 hover:underline">Link2</a>
+      <a href="#" class="text-gray-500 hover:underline">Link3</a>
+      <a href="#" class="text-gray-500 hover:underline">Link4</a>
+      <a href="#" class="text-gray-500 hover:underline">Link5</a>
+      <a href="#" class="text-gray-500 hover:underline">Link6</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="space-y-0 relative">
+
+    <!-- Section 1 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('intro.jpg');">
+      <div class="text-center text-white">
+        <h2 class="text-5xl font-bold">Title2</h2> <!-- Increased font size -->
+        <p class="mt-6 text-3xl">Text2</p> <!-- Increased font size and margin -->
+        <div class="mt-12"> <!-- Increased margin -->
+          <div class="link-icon">
+            <a href="#">Link7</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('one.jpg');">
+      <div class="text-center text-black white-box" style="top: 40%; left: auto; width: 80%;"> <!-- Further adjusted white box and moved down -->
+        <h2 class="text-4xl font-bold">Title3</h2> <!-- Increased font size -->
+        <p class="mt-4 text-2xl">Text3</p> <!-- Increased font size and margin -->
+      </div>
+      <div class="bottom-link">
+        <div class="link-icon"></div> <!-- Replaced Link8 with arrow.svg -->
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('two.jpg');">
+      <div class="text-left text-black left-white-box" style="top: 40%;"> <!-- Further adjusted white box -->
+        <h2 class="text-4xl font-bold">Title4</h2> <!-- Increased font size -->
+        <p class="mt-4 text-2xl">Text4</p> <!-- Increased font size and margin -->
+      </div>
+      <div class="bottom-link">
+        <div class="link-icon"></div> <!-- Replaced Link9 with arrow.svg -->
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="bg-white flex items-center justify-center full-page-section">
+      <div class="text-center mt-40"> <!-- Moved the entire section further down -->
+        <h2 class="text-4xl font-bold mb-8">Title5</h2> <!-- Increased font size and margin -->
+        <h3 class="mt-2 text-3xl mb-8">Title5-1</h3> <!-- Increased font size and margin -->
+        <div class="mt-8 grid grid-cols-2 gap-0 justify-center items-center"> <!-- Removed gap -->
+          <img src="01.jpg" alt="FIG5-1" class="w-48 h-48"> <!-- Adjusted image size -->
+          <img src="02.jpg" alt="FIG5-2" class="w-48 h-48"> <!-- Adjusted image size -->
+          <img src="01.jpg" alt="FIG5-3" class="w-48 h-48"> <!-- Adjusted image size -->
+          <img src="02.jpg" alt="FIG5-4" class="w-48 h-48"> <!-- Adjusted image size -->
+          <img src="01.jpg" alt="FIG5-5" class="w-48 h-48"> <!-- Adjusted image size -->
+          <img src="02.jpg" alt="FIG5-6" class="w-48 h-48"> <!-- Adjusted image size -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="bg-white flex items-center justify-center full-page-section form-section">
+      <div class="flex flex-col items-center justify-end w-full h-full p-4 form-container">
+        <h2 class="text-4xl font-bold mb-8">Title6</h2> <!-- Increased font size and margin -->
+        <p class="text-2xl mb-8">Text6</p> <!-- Added Text6 and margin -->
+        <form class="bg-white p-6 rounded shadow w-3/5 h-2/3 space-y-4"> <!-- Adjusted form width and height -->
+          <div class="flex space-x-4">
+            <input type="text" placeholder="Textbox1" class="p-2 border rounded w-1/3 text-lg"> <!-- Adjusted size -->
+            <input type="text" placeholder="Textbox2" class="p-2 border rounded w-1/3 text-lg"> <!-- Adjusted size -->
+          </div>
+          <textarea placeholder="Textarea" class="p-4 border rounded w-full h-40 text-lg"></textarea> <!-- Adjusted size -->
+          <div class="flex justify-center">
+            <button type="submit" class="bg-blue-500 text-white py-2 px-8 rounded text-lg hover:bg-blue-700">Submit</button>
+          </div>
+        </form>
+        <div class="footer-content w-full mt-8"> <!-- Footer content with margin -->
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-4">
+              <a href="#" class="hover:underline text-white">Link1</a>
+              <a href="#" class="hover:underline text-white">Link2</a>
+              <a href="#" class="hover:underline text-white">Link3</a>
+              <a href="#" class="hover:underline text-white">Link4</a>
+              <a href="#" class="hover:underline text-white">Link5</a>
+              <a href="#" class="hover:underline text-white">Link6</a>
+            </div>
+            <div class="text-right">
+              <p class="text-white">Text7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

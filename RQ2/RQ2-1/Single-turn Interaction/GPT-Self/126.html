@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .dropdown, .checkboxes, .main-content, .form, .product-catalog {
+            margin-bottom: 20px;
+        }
+        .dropdown select, .form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .checkboxes input, .product-catalog .product {
+            margin-right: 10px;
+        }
+        .main-content img {
+            width: 100%;
+            height: auto;
+        }
+        .product-catalog .product {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin-right: 3.3%;
+        }
+        .product-catalog .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product-catalog .product:last-child {
+            margin-right: 0;
+        }
+        .product-catalog .product button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="dropdown">
+<label for="languages">Languages:</label>
+<select id="languages">
+<option value="csharp">C#</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="vb">Visual Basic</option>
+</select>
+<button>Get Drop Down Here</button>
+</div>
+<div class="checkboxes">
+<label id="6_2_2_2_1"><input name="lang" type="checkbox" value="csharp"/> C#</label>
+<span id="6_2_1_1_1">$10.00</span>
+<label><input name="lang" type="checkbox" value="java"/> Java</label>
+<label><input name="lang" type="checkbox" value="php"/> PHP</label>
+<label><input name="lang" type="checkbox" value="vb"/> Visual Basic</label>
+</div>
+<div class="main-content">
+<button>Modify Element</button>
+</div>
+<div class="form">
+<input class="first-text" placeholder="Input 1" type="text"/>
+<input placeholder="Input 2" type="text"/>
+<button>Submit</button>
+</div>
+<div class="product-catalog">
+<h2>Product Catalog</h2>
+<div class="product">
+<img alt="Product 1" src="https://via.placeholder.com/150"/>
+<p>Product 1</p>
+<p>$20.00</p>
+<button>Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 2" src="https://via.placeholder.com/150"/>
+<p>Product 2</p>
+<p id="6_2_1_2_1">$10.00</p>
+<button>Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 3" src="https://via.placeholder.com/150"/>
+<p>Product 3</p>
+<p>$40.00</p>
+<button>Add to Cart</button>
+</div>
+</div>
+</div>
+</body>
+</html>

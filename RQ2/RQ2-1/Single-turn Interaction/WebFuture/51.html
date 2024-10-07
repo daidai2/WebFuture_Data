@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100" id="body1">
+  <section class="w-full max-w-5xl mx-auto p-8 bg-white shadow-md" id="body1-section1">
+    <!-- Navigation -->
+    <nav class="flex justify-between mb-8" id="body1-section1-nav1">
+      <a href="#" class="text-blue-500" id="body1-section1-nav1-a1">Sign Up</a>
+      <a href="#" class="text-blue-500" id="body1-section1-nav1-a2">Login</a>
+    </nav>
+
+    <!-- Sign-Up Form -->
+    <form class="space-y-4 mb-8" id="body1-section1-form1">
+      <div class="grid grid-cols-2 gap-4" id="body1-section1-form1-div1">
+        <div id="body1-section1-form1-div1-div2">
+          <label for="name" class="block" id="body1-section1-form1-div1-div2-label1">Name</label>
+          <input type="text" id="body1-section1-form1-div1-div2-input1" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div id="body1-section1-form1-div1-div3">
+          <label for="lastname" class="block" id="body1-section1-form1-div1-div3-label2">Last Name</label>
+          <input type="text" id="body1-section1-form1-div1-div3-input2" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4" id="body1-section1-form1-div4">
+        <div id="body1-section1-form1-div4-div5">
+          <label for="phone" class="block" id="body1-section1-form1-div4-div5-label3">Phone</label>
+          <input type="text" id="body1-section1-form1-div4-div5-input3" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div id="body1-section1-form1-div4-div6">
+          <label for="email" class="block" id="body1-section1-form1-div4-div6-label4">E-mail</label>
+          <input type="email" id="body1-section1-form1-div4-div6-input4" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4" id="body1-section1-form1-div7">
+        <div id="body1-section1-form1-div7-div8">
+          <label for="password" class="block" id="body1-section1-form1-div7-div8-label5">Password</label>
+          <input type="password" id="body1-section1-form1-div7-div8-input5" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div id="body1-section1-form1-div7-div9">
+          <label for="confirmpassword" class="block" id="body1-section1-form1-div7-div9-label6">Confirm Password</label>
+          <input type="password" id="body1-section1-form1-div7-div9-input6" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+      </div>
+      <div class="flex items-center" id="body1-section1-form1-div10">
+        <input type="checkbox" id="body1-section1-form1-div10-input7" class="mr-2">
+        <label for="terms" class="block" id="body1-section1-form1-div10-label7">I agree to Terms and Conditions</label>
+      </div>
+      <div class="text-right" id="body1-section1-form1-div11">
+        <input type="button" value="Sign Up" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" id="body1-section1-form1-div11-input8">
+      </div>
+    </form>
+
+    <!-- Product Section -->
+    <div class="mb-8" id="body1-section1-div12">
+
+      <button id="Parent_body1-section1-div12_Next_body1-section1-div12-p1_Queue_1" class="w-full h-auto mb-4 bg-[#C6A7B1] text-white p-2 rounded cursor-pointer hover:bg-[#FFDEE9]">Modify Element</button>
+      <p class="text-lg mb-2" id="body1-section1-div12-p1">$24.9</p>
+      <h2 class="text-2xl font-semibold mb-4" id="body1-section1-div12-h21">Product Title</h2>
+      <hr class="mb-4" id="body1-section1-div12-hr1">
+      <div class="space-y-2" id="body1-section1-div12-div13">
+        <label class="block" id="body1-section1-div12-div13-label8">Check items:</label>
+        <div class="flex items-center" id="body1-section1-div12-div13-div14">
+          <input type="checkbox" id="body1-section1-div12-div13-div14-input9" class="mr-2">
+          <label for="item1" class="block" id="body1-section1-div12-div13-div14-label9">Check item 1</label>
+        </div>
+        <div class="flex items-center" id="body1-section1-div12-div13-div15">
+          <input type="checkbox" id="body1-section1-div12-div13-div15-input10" class="mr-2">
+          <label for="item2" class="block" id="body1-section1-div12-div13-div15-label10">Check item 2</label>
+        </div>
+        <div class="flex items-center" id="body1-section1-div12-div13-div16">
+          <input type="checkbox" id="body1-section1-div12-div13-div16-input11" class="mr-2">
+          <label for="item3" class="block" id="body1-section1-div12-div13-div16-label11">Check item 3</label>
+        </div>
+      </div>
+      <div class="text-center mt-4" id="body1-section1-div12-div17">
+        <input type="button" value="Buy Now" class="bg-green-500 text-white px-4 py-2 rounded cursor-pointer" id="body1-section1-div12-div17-input12">
+      </div>
+    </div>
+
+    <!-- Shipping Info Section -->
+    <section id="body1-section1-section2">
+      <h3 class="text-xl font-semibold mb-4" id="body1-section1-section2-h31">Shipping Info</h3>
+      <form class="space-y-4" id="body1-section1-section2-form2">
+        <div class="grid grid-cols-2 gap-4" id="body1-section1-section2-form2-div18">
+          <div id="body1-section1-section2-form2-div18-div19">
+            <label for="firstname" class="block" id="body1-section1-section2-form2-div18-div19-label12">First Name</label>
+            <input type="text" id="body1-section1-section2-form2-div18-div19-input13" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+          <div id="body1-section1-section2-form2-div18-div20">
+            <label for="lastname" class="block" id="body1-section1-section2-form2-div18-div20-label13">Last Name</label>
+            <input type="text" id="body1-section1-section2-form2-div18-div20-input14" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4" id="body1-section1-section2-form2-div21">
+          <div id="body1-section1-section2-form2-div21-div22">
+            <label for="phone" class="block" id="body1-section1-section2-form2-div21-div22-label14">Phone</label>
+            <input type="text" id="body1-section1-section2-form2-div21-div22-input15" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+          <div id="body1-section1-section2-form2-div21-div23">
+            <label for="email" class="block" id="body1-section1-section2-form2-div21-div23-label15">E-mail</label>
+            <input type="email" id="body1-section1-section2-form2-div21-div23-input16" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4" id="body1-section1-section2-form2-div24">
+          <div id="body1-section1-section2-form2-div24-div25">
+            <label for="country" class="block" id="body1-section1-section2-form2-div24-div25-label16">Country</label>
+            <select id="body1-section1-section2-form2-div24-div25-select1" class="w-full p-2 border border-gray-300 rounded">
+              <option id="body1-section1-section2-form2-div24-div25-select1-option1">United States</option>
+            </select>
+          </div>
+          <div id="body1-section1-section2-form2-div24-div26">
+            <label for="state" class="block" id="body1-section1-section2-form2-div24-div26-label17">State</label>
+            <select id="body1-section1-section2-form2-div24-div26-select2" class="w-full p-2 border border-gray-300 rounded">
+              <option id="body1-section1-section2-form2-div24-div26-select2-option2">Choose</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4" id="body1-section1-section2-form2-div27">
+          <div id="body1-section1-section2-form2-div27-div28">
+            <label for="city" class="block" id="body1-section1-section2-form2-div27-div28-label18">City</label>
+            <input type="text" id="body1-section1-section2-form2-div27-div28-input17" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+          <div id="body1-section1-section2-form2-div27-div29">
+            <label for="zipcode" class="block" id="body1-section1-section2-form2-div27-div29-label19">Zip Code</label>
+            <input type="text" id="body1-section1-section2-form2-div27-div29-input18" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+        </div>
+        <div class="flex justify-between" id="body1-section1-section2-form2-div30">
+          <input type="button" value="Back" class="bg-gray-500 text-white px-4 py-2 rounded cursor-pointer" id="body1-section1-section2-form2-div30-input19">
+          <input type="button" value="Next Step" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" id="body1-section1-section2-form2-div30-input20">
+        </div>
+      </form>
+      <h2 id="Parent_body1-section1-section2_Next_null_Queue_1">Add Element</h2>
+    </section>
+  </section>
+
+
+  <script data-custom-scripts="true"></script>
+</body>
+</html>

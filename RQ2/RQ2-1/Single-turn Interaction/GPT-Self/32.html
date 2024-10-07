@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Review</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .product-review, .product-details, .form-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product-review img, .product-details img, .form-section img {
+            max-width: 100%;
+        }
+        .stars {
+            color: gold;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating span {
+            margin-right: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"], .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .form-group input[type="checkbox"], .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+<div class="product-review">
+<h2>Write Review</h2>
+<div class="product-info">
+<button>Modify Element</button>
+<div>
+<h3>Product Name</h3>
+<p>$Price</p>
+<div class="rating">
+<span class="stars">★★★★☆</span>
+<span>45 reviews</span>
+</div>
+</div>
+</div>
+<form>
+<div class="form-group">
+<label>Rate Product</label>
+<div class="rating">
+<span class="stars">★☆☆☆☆</span>
+<span>Bad :(</span>
+</div>
+</div>
+<div class="form-group">
+<label for="headline">Headline</label>
+<input id="headline" name="headline" type="text"/>
+</div>
+<div class="form-group">
+<label for="review">Review</label>
+<textarea id="review" name="review" rows="4"></textarea>
+</div>
+<div class="form-group">
+<button onclick="showAlert()" type="submit">Submit</button>
+</div>
+</form>
+</div>
+<div class="product-details">
+<h3>$24.99</h3>
+<h2>Product Title</h2>
+<img alt="Product Image" src="product-image-placeholder.jpg"/>
+<ul>
+<li>Check item 1</li>
+<li>Check item 2</li>
+<li>Check item 3</li>
+</ul>
+<button type="button">Buy Now</button>
+</div>
+<div class="form-section">
+<div class="form-group">
+<label for="input1">Label</label>
+<input id="input1" name="input1" type="text"/>
+</div>
+<div class="form-group">
+<label for="input2">Label</label>
+<input id="input2" name="input2" type="text"/>
+</div>
+<div class="form-group">
+<button type="button">Button</button>
+</div>
+<div class="form-group">
+<label><input name="radio" type="radio" value="1"/> Radio 1</label>
+<label><input name="radio" type="radio" value="2"/> Radio 2</label>
+<label><input name="radio" type="radio" value="3"/> Radio 3</label>
+<label><input name="radio" type="radio" value="4"/> Radio 4</label>
+</div>
+<div class="form-group">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+</div>
+<div class="form-group">
+<label id="6_2_1_1_1"><input checked="" name="checkbox1" type="checkbox"/> Checkbox 1</label>
+<label><input name="checkbox2" type="checkbox"/> Checkbox 2</label>
+<label><input checked="" name="checkbox3" type="checkbox"/> Checkbox 3</label>
+<label id="6_2_2_2_1"><input name="checkbox4" type="checkbox"/> Checkbox 4</label>
+<label id="6_2_1_2_1"><input name="checkbox1" type="checkbox"/> Checkbox 1</label>
+</div>
+</div>
+</div>
+</body>
+</html>

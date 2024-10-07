@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up &amp; Login</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions input {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .form-actions input:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+<h2>Sign Up</h2>
+<form>
+<div class="form-group">
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input id="phone" name="phone" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="email" id="6_2_1_1_1">E-mail</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" required="" type="password"/>
+</div>
+<div class="form-group">
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" required="" type="password"/>
+</div>
+<div class="form-group">
+<input id="terms" name="terms" required="" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<div class="form-actions">
+<input type="submit" value="Sign Up"/>
+</div>
+</form>
+</div>
+<div class="form-container">
+<h2>Forma de envío</h2>
+<form>
+<div class="form-group">
+<label>Medio transporte</label>
+<input id="terrestre" name="transporte" type="radio" value="terrestre"/>
+<label for="terrestre">Terrestre</label><br/>
+<input id="aereo" name="transporte" type="radio" value="aereo"/>
+<label for="aereo">Aereo</label><br/>
+<input id="maritimo" name="transporte" type="radio" value="maritimo"/>
+<label for="maritimo">Marítimo</label>
+</div>
+<div class="form-group">
+<label>Forma de pago</label>
+<input id="tarjeta" name="pago" type="radio" value="tarjeta"/>
+<label for="tarjeta">Tarjeta (Crédito/débito)</label><br/>
+<input id="transferencia" name="pago" type="radio" value="transferencia"/>
+<label for="transferencia" id="6_2_2_2_1">Transferencia bancaria</label>
+<label id="6_2_1_2_1">E-mail</label><br/>
+<input id="metalico" name="pago" type="radio" value="metalico"/>
+<label for="metalico">Metálico</label>
+</div>
+<div class="form-group">
+<label for="direccion">Dirección</label>
+<input id="direccion" name="direccion" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="pais">País</label>
+<input id="pais" name="pais" required="" type="text"/>
+</div>
+<div class="form-actions">
+<h2>Aceptar</h2>
+</div>
+</form>
+</div>
+</body>
+</html>

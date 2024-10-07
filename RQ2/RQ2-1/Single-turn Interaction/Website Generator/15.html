@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        // Add new module with 'Add Interaction' text
+        const newModule = document.createElement('div');
+        newModule.classList.add('bg-white', 'shadow-md', 'p-4', 'mt-4', 'rounded');
+        newModule.textContent = 'Add Interaction';
+        document.body.appendChild(newModule);
+        
+        // Delete the first image on the page
+        const firstImage = document.querySelector('img');
+        if (firstImage) {
+          firstImage.remove();
+        }
+
+        // Move 'High' text to the right of 'Choice 7'
+        const choice7Label = document.querySelector('label[for="choice7"]');
+        if (choice7Label) {
+          const highLabel = document.querySelector('label[for="high"]');
+          if (highLabel) {
+            choice7Label.parentNode.insertBefore(highLabel, choice7Label.nextSibling);
+          }
+        }
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 p-4">
+<header class="flex justify-between items-center p-4 bg-white shadow-md">
+<nav>
+<a class="text-blue-500 mr-4" href="#">Sign Up</a>
+<a class="text-blue-500" href="#">Login</a>
+</nav>
+</header>
+<section class="bg-white shadow-md p-4 mt-4 rounded">
+<h1 class="text-center text-2xl mb-4">Sign Up</h1>
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block" for="name">Name</label>
+<input class="w-full p-2 border rounded" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="block" for="last-name">Last Name</label>
+<input class="w-full p-2 border rounded" id="last-name" name="last-name" type="text"/>
+</div>
+<div>
+<label class="block" for="phone">Phone</label>
+<input class="w-full p-2 border rounded" id="phone" name="phone" type="tel"/>
+</div>
+<div>
+<label class="block" for="email">E-mail</label>
+<input class="w-full p-2 border rounded" id="email" name="email" type="email"/>
+</div>
+<div>
+<label class="block" for="password">Password</label>
+<input class="w-full p-2 border rounded" id="password" name="password" type="password"/>
+</div>
+<div>
+<label class="block" for="confirm-password">Confirm Password</label>
+<input class="w-full p-2 border rounded" id="confirm-password" name="confirm-password" type="password"/>
+</div>
+</div>
+<div class="flex items-center">
+<input class="mr-2" id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<button class="w-full bg-blue-500 text-white p-2 rounded" type="submit">Sign Up</button>
+</form>
+</section>
+<aside class="bg-white shadow-md p-4 mt-4 rounded">
+<div class="flex items-center mb-4">
+<img alt="Placeholder Image" class="w-24 h-24 border rounded mr-4" src="https://placehold.co/100x100"/>
+<div class="flex-1">
+<div class="bg-gray-200 h-4 mb-2"></div>
+<div class="bg-gray-200 h-4 mb-2"></div>
+<div class="bg-gray-200 h-4"></div>
+</div>
+</div>
+<button class="bg-blue-500 text-white p-2 rounded mb-4">Back</button>
+<div class="flex items-center">
+<input class="mr-2" id="additional-checkbox" type="checkbox"/>
+<label for="additional-checkbox">Checkbox</label>
+</div>
+</aside>
+<footer class="bg-white shadow-md p-4 mt-4 rounded">
+<div>
+<label class="block mb-2" for="title">Title</label>
+<input class="w-full p-2 border rounded mb-4" id="title" name="title" type="text"/>
+</div>
+<div class="mb-4">
+<span class="block mb-2">Radio Buttons</span>
+<label class="mr-4"><input name="relevance" type="radio" value="not-relevant"/> Not relevant</label>
+<label class="mr-4"><input name="relevance" type="radio" value="low"/> Low</label>
+<label class="mr-4"><input name="relevance" type="radio" value="medium"/> Medium</label>
+<label class="mr-4" for="high" id="6_2_1_1_1"><input name="relevance" type="radio" value="high"/> High</label>
+</div>
+<div class="mb-4">
+<span class="block mb-2">Checkboxes</span>
+<label class="mr-4" for="choice1"><input name="choice" type="checkbox" value="choice1"/> Choice 1</label>
+<label class="mr-4" for="choice2"><input checked="" name="choice" type="checkbox" value="choice2"/> Choice 2</label>
+<label class="mr-4" for="choice3"><input name="choice" type="checkbox" value="choice3"/> Choice 3</label>
+<label class="mr-4" for="choice4"><input checked="" name="choice" type="checkbox" value="choice4"/> Choice 4</label>
+<label class="mr-4" for="choice5"><input name="choice" type="checkbox" value="choice5"/> Choice 5</label>
+<label class="mr-4" for="choice6"><input name="choice" type="checkbox" value="choice6"/> Choice 6</label>
+<label class="mr-4" for="choice7" id="6_2_2_1_1"><input checked="" name="choice" type="checkbox" value="choice7"/> Choice 7</label>
+<label class="mr-4" for="choice8"><input name="choice" type="checkbox" value="choice8"/> Choice 8</label>
+</div>
+<div class="flex justify-end">
+<button class="bg-blue-500 text-white p-2 rounded mr-4">OK</button>
+<button class="bg-red-500 text-white p-2 rounded">Cancel</button>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Fidelity Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 1356px;
+            margin: 0 auto;
+        }
+        .top-buttons, .checkbox-group, .form-group {
+            margin-bottom: 20px;
+        }
+        button, input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+        .large-display {
+            width: 100%;
+            height: 300px;
+            background-color: #eaeaea;
+            margin-bottom: 20px;
+        }
+        .text-block {
+            height: 80px;
+            background-color: #f4f4f4;
+            margin-bottom: 20px;
+        }
+        .text-block:first-of-type {
+            font-size: 50px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .submit-button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-buttons">
+            <button>C Sharp</button>
+            <button>Get Drop Down Here</button>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="csharp" name="language"><label for="csharp">C#</label>
+            <input type="checkbox" id="java" name="language"><label for="java">Java</label>
+            <input type="checkbox" id="php" name="language"><label for="php">PHP</label>
+            <input type="checkbox" id="vb" name="language"><label for="vb">Visual Basic</label>
+        </div>
+        <div class="large-display"></div>
+        <div class="text-block"></div>
+        <div class="text-block"></div>
+        <div class="text-block"></div>
+        <div class="input-group">
+            <input type="text" placeholder="Input Field 2">
+            <button class="submit-button">Submit</button>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="extra1" name="extra"><label for="extra1">Option 1</label>
+            <input type="checkbox" id="extra2" name="extra"><label for="extra2">Option 2</label>
+        </div>
+        <div class="form-group">
+            <form>
+                <fieldset>
+                    <legend>Forma de envío</legend>
+                    <input type="radio" id="terrestre" name="transporte" value="terrestre"><label for="terrestre">Terrestre</label>
+                    <input type="radio" id="aereo" name="transporte" value="aereo"><label for="aereo">Aereo</label>
+                    <input type="radio" id="maritimo" name="transporte" value="maritimo"><label for="maritimo">Marítimo</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Forma de pago</legend>
+                    <input type="radio" id="tarjeta" name="pago" value="tarjeta"><label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+                    <input type="radio" id="transferencia" name="pago" value="transferencia"><label for="transferencia">Transferencia bancaria</label>
+                    <input type="radio" id="metalico" name="pago" value="metalico"><label for="metalico">Metálico</label>
+                </fieldset>
+                <div class="input-group">
+                    <input type="text" placeholder="Dirección">
+                    <input type="text" placeholder="País">
+                </div>
+                <h1 class="submit-button">Aceptar</h1>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

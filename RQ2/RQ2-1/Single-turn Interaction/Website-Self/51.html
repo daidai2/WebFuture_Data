@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="phone"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-item label {
+            margin: 0;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .inline-label {
+            display: flex;
+            align-items: center;
+        }
+        .inline-label label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<a href="#" id="add-element-link">Add Element</a>
+<div class="form-section">
+<div class="section-title">Sign Up</div>
+<form id="signup-form">
+<label for="name">Name</label>
+<input id="name" name="name" type="text"/>
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="phone"/>
+<div class="inline-label">
+<label for="email" id="6_2_2_2_1">Email</label>
+<label for="state" id="6_2_1_1_2">State</label>
+</div>
+<div class="inline-label">
+<input id="email" name="email" type="email"/>
+<input id="state-inline" name="state-inline" type="text"/>
+</div>
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" type="password"/>
+<div class="checkbox-item">
+<input id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<button class="button" onclick="addInteraction()" type="button">Sign Up</button>
+</form>
+</div>
+<div class="form-section">
+<div class="section-title">Product Details</div>
+<div class="product-image"></div>
+<div class="price">$24.9</div>
+<div class="product-title">Product Title</div>
+<div class="section-title">Check items:</div>
+<div class="checkbox-item">
+<input id="item1" name="item1" type="checkbox"/>
+<label for="item1">Check item 1</label>
+</div>
+<div class="checkbox-item">
+<input id="item2" name="item2" type="checkbox"/>
+<label for="item2">Check item 2</label>
+</div>
+<div class="checkbox-item">
+<input id="item3" name="item3" type="checkbox"/>
+<label for="item3">Check item 3</label>
+</div>
+<button class="button" type="button">Buy Now</button>
+</div>
+<div class="form-section">
+<div class="section-title">Shipping Info</div>
+<form>
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" type="text"/>
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+<label for="phone-shipping">Phone</label>
+<input id="phone-shipping" name="phone-shipping" type="phone"/>
+<label for="email-shipping" id="6_2_2_2_2">Email</label>
+<input id="email-shipping" name="email-shipping" type="email"/>
+<label for="country">Country</label>
+<input id="country" name="country" type="text"/>
+<label for="state" id="6_2_1_2_2">State</label>
+<input id="state" name="state" type="text"/>
+<label for="city">City</label>
+<input id="city" name="city" type="text"/>
+<label for="zip">Zip Code</label>
+<input id="zip" name="zip" type="text"/>
+<div style="display: flex; justify-content: space-between;">
+<button class="button" type="button">Back</button>
+<button class="button" type="submit">Next Step</button>
+</div>
+</form>
+</div>
+<script>
+        function addInteraction() {
+            const newSection = document.createElement('div');
+            newSection.classList.add('form-section');
+            newSection.innerHTML = '<div class="section-title">New Module</div><p>Add Interaction</p>';
+            document.body.appendChild(newSection);
+        }
+    </script>
+</body>
+</html>

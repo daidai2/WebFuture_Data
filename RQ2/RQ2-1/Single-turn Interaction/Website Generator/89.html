@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+<!-- Header -->
+<header class="mb-8">
+<h1 class="text-3xl font-bold mb-4">Select your payment method</h1>
+<form class="bg-white p-6 rounded-lg shadow-md">
+<div class="mb-6">
+<h2 class="text-lg font-semibold mb-2">Payment Method</h2>
+<div class="flex gap-4">
+<label class="block">
+<input class="mr-2" name="payment_method" type="radio" value="credit_card"/> Credit Card
+          </label>
+<label class="block">
+<input class="mr-2" name="payment_method" type="radio" value="paypal"/> Paypal
+          </label>
+<label class="block">
+<input class="mr-2" name="payment_method" type="radio" value="bank_transfer"/> Bank Transfer
+          </label>
+</div>
+</div>
+<div class="mb-6">
+<h2 class="text-lg font-semibold mb-2">Enter Your Data</h2>
+<label class="block mb-2" id="6_2_1_1_1">Card Number</label>
+<input class="w-full p-2 border rounded mb-4" placeholder="Enter card number" type="text"/>
+<label class="block mb-2">Expiration date</label>
+<div class="flex gap-4 mb-4">
+<input class="w-1/4 p-2 border rounded" placeholder="MM" type="text"/>
+<input class="w-1/4 p-2 border rounded" placeholder="YY" type="text"/>
+<input class="w-1/4 p-2 border rounded" placeholder="CCV" type="text"/>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Complete</button>
+</div>
+</form>
+</header>
+<!-- Main Section -->
+<main>
+<section class="mb-8">
+<h3 class="text-2xl font-bold mb-4" style="font-size: 50px;">Mobility Solutions &amp; Daily Living Aids</h3>
+<p>Making Life Easier</p>
+<button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Find Out More</button>
+</section>
+<section class="mb-8">
+<h3 class="text-2xl font-bold mb-4" id="6_2_2_2_1">Two Options Section</h3>
+<span id="6_2_1_2_1">Card Number</span>
+<div class="flex gap-8">
+<article class="bg-white p-6 rounded-lg shadow-md w-1/2">
+<h4 class="text-xl font-semibold mb-4">Wheelchair Repair</h4>
+<button class="bg-red-500 text-white px-4 py-2 rounded">Find Out More</button>
+</article>
+<article class="bg-white p-6 rounded-lg shadow-md w-1/2">
+<h4 class="text-xl font-semibold mb-4">Community Contracts</h4>
+<button class="bg-red-500 text-white px-4 py-2 rounded">Find Out More</button>
+</article>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-2xl font-bold mb-4">Main Picture Section</h3>
+<!-- Image section deleted -->
+</section>
+<section class="mb-8">
+<h3 class="text-2xl font-bold mb-4">Content Section with Links</h3>
+<ul class="mb-4">
+<li class="mb-2"><input class="mr-2" type="checkbox"/> Option 1</li>
+<li class="mb-2"><input class="mr-2" type="checkbox"/> Option 2</li>
+<li class="mb-2"><input class="mr-2" name="group" type="radio"/> Option A</li>
+<li class="mb-2"><input class="mr-2" name="group" type="radio"/> Option B</li>
+</ul>
+<div class="flex gap-4">
+<button class="bg-gray-500 text-white px-4 py-2 rounded">Back</button>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+</div>
+</section>
+</main>
+</body>
+</html>

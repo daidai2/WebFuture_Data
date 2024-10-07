@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 1356px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+        .text-placeholder {
+            width: 100%;
+            height: 20px;
+            background-color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-placeholder"></div>
+    <div class="text-placeholder" id="first-text" style="font-size: 50px;"></div>
+    <div class="text-placeholder"></div>
+    <div class="form-group">
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Option 1</label>
+    </div>
+    <div class="form-group">
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">Option 2</label>
+    </div>
+    <div class="form-group">
+        <input type="radio" id="radio1" name="radio-group">
+        <label for="radio1">Option 1</label>
+    </div>
+    <div class="form-group">
+        <input type="radio" id="radio2" name="radio-group">
+        <label for="radio2">Option 2</label>
+    </div>
+    <div class="form-group">
+        <label for="payment-method">Select your payment method</label>
+        <input type="radio" id="credit-card" name="payment-method" checked>
+        <label for="credit-card">Credit Card</label>
+        <input type="radio" id="paypal" name="payment-method">
+        <label for="paypal">PayPal</label>
+        <input type="radio" id="bank-transfer" name="payment-method">
+        <label for="bank-transfer">Bank Transfer</label>
+    </div>
+    <div class="form-group">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number">
+    </div>
+    <div class="form-group">
+        <label for="expiration-date">Expiration Date</label>
+        <input type="number" id="expiration-month" name="expiration-month" placeholder="MM" style="width: 60px;">
+        <input type="number" id="expiration-year" name="expiration-year" placeholder="YY" style="width: 60px;">
+        <label for="ccv">CCV</label>
+        <input type="number" id="ccv" name="ccv" style="width: 60px;">
+    </div>
+    <button class="button" onclick="completeAction()">Complete</button>
+    <div class="image-placeholder" style="margin-top: 20px;"></div>
+    <div id="new-module"></div>
+</div>
+
+<script>
+    function completeAction() {
+        var newModule = document.createElement('div');
+        newModule.innerHTML = '<div class="text-placeholder">Add Interaction</div>';
+        document.getElementById('new-module').appendChild(newModule);
+    }
+</script>
+
+</body>
+</html>

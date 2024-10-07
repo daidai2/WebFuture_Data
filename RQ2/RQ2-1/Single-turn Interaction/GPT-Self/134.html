@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group, .checkbox-group {
+            margin: 10px 0;
+        }
+        .radio-group input, .checkbox-group input {
+            margin-right: 10px;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button.secondary {
+            background-color: #6c757d;
+        }
+        button:first-of-type {
+            background-color: #C6A7B1;
+        }
+        button:first-of-type:hover {
+            background-color: #FFDEE9;
+        }
+        .signup-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .signup-form > div {
+            flex: 1 1 48%;
+        }
+        .signup-form > div.full-width {
+            flex: 1 1 100%;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="section">
+<h2>Select your payment method</h2>
+<div class="radio-group">
+<label><input checked="" name="payment" type="radio" value="credit-card"/> Credit Card</label>
+<label><input name="payment" type="radio" value="paypal"/> Paypal</label>
+<label><input name="payment" type="radio" value="bank-transfer"/> Bank Transfer</label>
+</div>
+<div>
+<h2>Enter your data</h2>
+<label for="card-number">Card Number</label>
+<input id="card-number" name="card-number" type="text"/>
+<div class="signup-form">
+<div>
+<label for="expiration-date">Expiration Date</label>
+<input id="expiration-date" name="expiration-date" type="text"/>
+</div>
+<div>
+<label for="ccv">CCV</label>
+<input id="ccv" name="ccv" type="text"/>
+</div>
+</div>
+<button>Complete</button>
+</div>
+</div>
+<div class="section">
+<h2>Sign Up / Login</h2>
+<div class="button-group">
+<button class="secondary">Login</button>
+</div>
+<form class="signup-form">
+<div>
+<label for="first-name">Name</label>
+<input id="first-name" name="first-name" type="text"/>
+</div>
+<div>
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="text"/>
+</div>
+<div>
+<label for="email">Email</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div>
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div>
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" type="password"/>
+</div>
+<div class="full-width">
+<label><input name="terms" type="checkbox"/> I agree to Terms and Conditions</label>
+</div>
+<div class="full-width">
+<button type="submit">Sign Up</button>
+</div>
+</form>
+</div>
+<div class="section">
+<h2>Other Sections</h2>
+<div class="checkbox-group">
+<label><input name="option1" type="checkbox"/> Option 1</label>
+<label><input name="option2" type="checkbox"/> Option 2</label>
+</div>
+<div class="radio-group">
+<label><input name="group1" type="radio"/> Radio 1</label>
+<label><input name="group1" type="radio"/> Radio 2</label>
+</div>
+<div class="button-group">
+<button class="secondary">Back</button>
+<button>Button</button>
+</div>
+</div>
+<div class="footer">
+<button class="secondary" id="6_1">Sign Up</button>
+<p>Add Element</p>
+</div>
+</div>
+</body>
+</html>

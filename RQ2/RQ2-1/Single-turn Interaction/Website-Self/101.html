@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .shipping-service {
+            margin-bottom: 20px;
+        }
+        .shipping-service label {
+            display: inline;
+            margin-left: 10px;
+        }
+        .review-section {
+            margin-bottom: 20px;
+        }
+        .star-rating {
+            display: flex;
+            align-items: center;
+        }
+        .star-rating span {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .star-rating span:hover,
+        .star-rating span:hover ~ span {
+            color: gold;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            padding: 10px 20px;
+        }
+        .buttons button:first-child {
+            background-color: #C6A7B1;
+        }
+        .buttons button:first-child:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.buttons button:first-child').addEventListener('click', function() {
+                alert('Add Interaction');
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="#">Add Element</a>
+    <div class="container">
+        <h2>Checkout</h2>
+        <div class="shipping-address">
+            <h3>Shipping Address</h3>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+
+        <div class="shipping-service">
+            <h3>Shipping Service</h3>
+            <input type="radio" id="standard" name="shipping" value="standard" checked>
+            <label for="standard">Standard 14 days - $6.59</label><br>
+            
+            <input type="radio" id="expedited" name="shipping" value="expedited">
+            <label for="expedited">Expedited 7 days - $11.97</label><br>
+            
+            <input type="radio" id="express" name="shipping" value="express">
+            <label for="express">Express 3 days - $19.97</label>
+        </div>
+
+        <div class="review-section">
+            <h3>Write Review</h3>
+            <div class="product-review">
+                <div class="product-info">
+                    <img src="product-image-placeholder.png" alt="Product Image" width="100">
+                    <div>
+                        <p>Product Name</p>
+                        <p>$Price</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p>45 reviews</p>
+            </div>
+            <label for="headline">Headline</label>
+            <input type="text" id="headline" name="headline">
+            <label for="review">Review</label>
+            <textarea id="review" name="review"></textarea>
+            <button type="submit">Submit</button>
+        </div>
+
+        <div class="shipping-info">
+            <h3>Shipping Info</h3>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+
+            <label for="zipCode">Zip Code</label>
+            <input type="text" id="zipCode" name="zipCode">
+        </div>
+
+        <div class="buttons">
+            <button type="button">Back</button>
+            <button type="button">Next Step</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Write Review</title>
+<!-- Import Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .text-lg {
+      font-size: 50px !important;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans" id="body1">
+<section class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-8" id="body1-section1">
+<!-- Header Section -->
+<header class="text-center mb-6" id="body1-section1-header1">
+<h1 class="text-2xl font-bold" id="body1-section1-header1-h11">Write Review</h1>
+</header>
+<!-- Product Information Section -->
+<div class="flex items-start mb-8" id="body1-section1-div1">
+<img alt="Product Image" class="w-32 h-32 object-cover mr-6" id="body1-section1-div1-img1" src="https://placehold.co/150x150"/>
+<div id="body1-section1-div1-div2">
+<p class="text-lg font-semibold" id="body1-section1-div1-div2-p1">Product Name</p>
+<p class="text-gray-600 mb-2" id="body1-section1-div1-div2-p2">$Price</p>
+<span class="text-yellow-500" id="body1-section1-div1-div2-span1">★★★★★</span>
+<p class="text-gray-600" id="body1-section1-div1-div2-p3">45 reviews</p>
+</div>
+</div>
+<!-- Rating Section -->
+<div class="mb-8" id="body1-section1-div3">
+<div class="flex items-center mb-2" id="body1-section1-div3-div4">
+<label class="font-semibold mr-2" id="body1-section1-div3-div4-label1">Rate Product:</label>
+<div class="stars text-yellow-500" id="body1-section1-div3-div4-div5">
+          ★★★★★
+        </div>
+<p class="ml-4" id="body1-section1-div3-div4-p4">Bad :(</p>
+</div>
+</div>
+<!-- Form Section for Review -->
+<form action="#" class="mb-8" id="body1-section1-form1" method="POST">
+<div class="mb-4" id="body1-section1-form1-div6">
+<label class="font-semibold" for="headline" id="body1-section1-form1-div6-label2">Headline</label>
+<input class="w-full p-2 border border-gray-300 rounded mt-2" id="body1-section1-form1-div6-input1" name="headline" type="text"/>
+</div>
+<div class="mb-4" id="body1-section1-form1-div7">
+<label class="font-semibold" for="review" id="body1-section1-form1-div7-label3">Review</label>
+<textarea class="w-full p-2 border border-gray-300 rounded mt-2 h-24" id="body1-section1-form1-div7-textarea1" name="review"></textarea>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-section1-form1-button1" onclick="addInteractionModule()" type="submit">Submit</button>
+</form>
+<!-- Additional Content (Lower Section) -->
+<div class="additional-content mb-8 grid grid-cols-1 sm:grid-cols-2 gap-6" id="body1-section1-div8">
+<div id="body1-section1-div8-div9">
+<div class="bg-gray-200 w-full h-32 flex items-center justify-center" id="body1-section1-div8-div9-div10">Image Placeholder #1</div>
+<ul class="mt-4 space-y-2" id="body1-section1-div8-div9-ul1">
+<li id="body1-section1-div8-div9-ul1-li1">Text Line #1</li>
+<li id="body1-section1-div8-div9-ul1-li2">Text Line #2</li>
+<li id="body1-section1-div8-div9-ul1-li3">Text Line #3</li>
+</ul>
+</div>
+<div id="body1-section1-div8-div11">
+<div class="bg-gray-200 w-full h-32 flex items-center justify-center" id="body1-section1-div8-div11-div12">Image Placeholder #2</div>
+<div class="bg-gray-200 w-full h-32 flex items-center justify-center mt-4" id="body1-section1-div8-div11-div13">Image Placeholder #3</div>
+<ul class="mt-4 space-y-2" id="body1-section1-div8-div11-ul2">
+<li id="body1-section1-div8-div11-ul2-li4">Additional Text Line</li>
+</ul>
+</div>
+</div>
+<!-- Lower Section -->
+<div class="mb-8" id="body1-section1-div14">
+<div class="flex items-center justify-between" id="body1-section1-div14-div15">
+<label class="inline-flex items-center font-semibold" id="body1-section1-div14-div15-label4">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-div14-div15-label4-input2" type="checkbox"/>
+          Checkbox Placeholder
+        </label>
+<button class="bg-gray-300 text-black px-4 py-2 rounded" id="body1-section1-div14-div15-button2" type="button">Button Placeholder</button>
+</div>
+<ul class="mt-4 space-y-2" id="body1-section1-div14-ul3">
+<li id="body1-section1-div14-ul3-li5">Detailed Description Placeholder Line 1</li>
+<li id="body1-section1-div14-ul3-li6">Detailed Description Placeholder Line 2</li>
+</ul>
+</div>
+<!-- Form Section with Radio Buttons and Checkboxes -->
+<form class="mb-8" id="body1-section1-form2">
+<div class="mb-4" id="body1-section1-form2-div16">
+<label class="font-semibold" for="title" id="body1-section1-form2-div16-label5">Title</label>
+<input class="w-full p-2 border border-gray-300 rounded mt-2" id="body1-section1-form2-div16-input3" name="title" type="text"/>
+</div>
+<div class="mb-4" id="body1-section1-form2-div17">
+<label class="font-semibold block mb-2" id="body1-section1-form2-div17-label6">Radio Buttons: Relevance</label>
+<div class="flex items-center mb-2" id="body1-section1-form2-div17-div18">
+<input class="form-radio text-blue-500 mr-2" id="body1-section1-form2-div17-div18-input4" name="relevance" type="radio"/>
+<label for="not-relevant" id="body1-section1-form2-div17-div18-label7">Not Relevant</label>
+</div>
+<div class="flex items-center mb-2" id="body1-section1-form2-div17-div19">
+<input class="form-radio text-blue-500 mr-2" id="body1-section1-form2-div17-div19-input5" name="relevance" type="radio"/>
+<label for="low" id="body1-section1-form2-div17-div19-label8">Low</label>
+</div>
+<div class="flex items-center mb-2" id="body1-section1-form2-div17-div20">
+<input class="form-radio text-blue-500 mr-2" id="body1-section1-form2-div17-div20-input6" name="relevance" type="radio"/>
+<label for="medium" id="body1-section1-form2-div17-div20-label9">Medium</label>
+</div>
+<div class="flex items-center mb-2" id="body1-section1-form2-div17-div21">
+<input class="form-radio text-blue-500 mr-2" id="body1-section1-form2-div17-div21-input7" name="relevance" type="radio"/>
+<label for="high" id="body1-section1-form2-div17-div21-label10">High</label>
+</div>
+</div>
+<div class="mb-4" id="body1-section1-form2-div22">
+<label class="font-semibold block mb-2" id="body1-section1-form2-div22-label11">Checkboxes: Choices</label>
+<div class="grid grid-cols-2 gap-2" id="body1-section1-form2-div22-div23">
+<label class="inline-flex items-center" id="body1-section1-form2-div22-div23-label12">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label12-input8" type="checkbox"/>
+            Choice 1
+          </label>
+<label class="inline-flex items-center" id="body1-section1-form2-div22-div23-label13">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label13-input9" type="checkbox"/>
+            Choice 2
+          </label>
+<label class="inline-flex items-center" id="body1-section1-form2-div22-div23-label14">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label14-input10" type="checkbox"/>
+            Choice 3
+          </label>
+<label class="inline-flex items-center" id="body1-section1-form2-div22-div23-label15">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label15-input11" type="checkbox"/>
+            Choice 4
+          </label>
+<label class="inline-flex items-center" id="6_2_1_1_2">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label17-input13" type="checkbox"/>
+            Choice 6
+          </label>
+<label class="inline-flex items-center" id="body1-section1-form2-div22-div23-label18">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label18-input14" type="checkbox"/>
+            Choice 7
+          </label>
+<label class="inline-flex items-center" id="6_2_2_2_1">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label19-input15" type="checkbox"/>
+            Choice 8
+          </label>
+<div id="Parent_body1-section1-form2-div22-div23_Next_null_Queue_1">
+<label class="inline-flex items-center" id="6_2_2_2_2">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label19-input15" type="checkbox"/>
+              Choice 8
+            </label>
+<label class="inline-flex items-center ml-4" id="6_2_1_2_2" name="add">
+<input class="form-checkbox text-blue-500 mr-2" id="body1-section1-form2-div22-div23-label16-input12" type="checkbox"/>
+              Choice 6
+            </label>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between" id="body1-section1-form2-div24">
+<button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-section1-form2-div24-button3" type="button">OK</button>
+<button class="bg-gray-300 text-black px-4 py-2 rounded" id="body1-section1-form2-div24-button4" type="button">Cancel</button>
+</div>
+</form>
+</section>
+<script data-custom-scripts="true">
+    function addInteractionModule() {
+      const newModule = document.createElement('div');
+      newModule.id = "Parent_body1-section1_Next_null_Queue_1";
+      newModule.setAttribute('name', 'add');
+      newModule.textContent = 'Add Interaction';
+      document.getElementById('body1-section1').appendChild(newModule);
+    }
+  </script>
+</body>
+</html>

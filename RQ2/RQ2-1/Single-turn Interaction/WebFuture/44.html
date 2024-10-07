@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-4" id="body1">
+  <header class="bg-white p-4 shadow-md" id="body1-header1">
+    <h1 class="text-xl font-bold" id="body1-header1-h11">Checkout</h1>
+    <a id="Parent_body1-header1_Next_null_Queue_1" href="#">Add Element</a>
+  </header>
+
+  <main class="bg-white p-6 mt-4 shadow-md" id="body1-main1">
+    <section id="body1-main1-section1" class="mb-6">
+      <h2 class="text-lg font-medium mb-4" id="body1-main1-section1-h21">Shipping Address</h2>
+      <form id="body1-main1-section1-form1">
+        <div class="grid grid-cols-1 gap-4" id="body1-main1-section1-form1-div1">
+          <div id="body1-main1-section1-form1-div1-div2">
+            <label class="block font-medium mb-1" for="shippingAddressFirstName" id="body1-main1-section1-form1-div1-div2-label1">First Name</label>
+            <input type="text" id="body1-main1-section1-form1-div1-div2-input1" class="block w-full border border-gray-300 rounded p-2">
+          </div>
+          <div id="body1-main1-section1-form1-div1-div3">
+            <label class="block font-medium mb-1" for="shippingAddressLastName" id="body1-main1-section1-form1-div1-div3-label2">Last Name</label>
+            <input type="text" id="body1-main1-section1-form1-div1-div3-input2" class="block w-full border border-gray-300 rounded p-2">
+          </div>
+          <div id="body1-main1-section1-form1-div1-div4">
+            <label class="block font-medium mb-1" for="shippingAddressCompany" id="body1-main1-section1-form1-div1-div4-label3">Company</label>
+            <input type="text" id="body1-main1-section1-form1-div1-div4-input3" class="block w-full border border-gray-300 rounded p-2">
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="body1-main1-section2" class="mb-6">
+      <h2 class="text-lg font-medium mb-4" id="body1-main1-section2-h22">Shipping Service</h2>
+      <div id="body1-main1-section2-div5">
+        <div class="mb-4" id="body1-main1-section2-div5-div6">
+          <input type="radio" id="body1-main1-section2-div5-div6-input4" name="shipping_service" class="mr-2">
+          <label for="shippingServiceStandard" id="body1-main1-section2-div5-div6-label4">Standard</label>
+          <span class="block ml-6" id="body1-main1-section2-div5-div6-span1">14 days - $6.59</span>
+        </div>
+        <div class="mb-4" id="body1-main1-section2-div5-div7">
+          <input type="radio" id="body1-main1-section2-div5-div7-input5" name="shipping_service" class="mr-2">
+          <label for="shippingServiceExpedited" id="body1-main1-section2-div5-div7-label5">Expedited</label>
+          <span class="block ml-6" id="body1-main1-section2-div5-div7-span2">7 days - $12.97</span>
+        </div>
+        <div class="mb-4" id="body1-main1-section2-div5-div8">
+          <input type="radio" id="body1-main1-section2-div5-div8-input6" name="shipping_service" class="mr-2">
+          <label for="shippingServiceExpress" id="body1-main1-section2-div5-div8-label6">Express</label>
+          <span class="block ml-6" id="body1-main1-section2-div5-div8-span3">3 days - $19.97</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="dropdown-and-checkboxes mb-6" id="body1-main1-div9">
+      <label for="languageDropdown" class="block font-medium mb-1" id="body1-main1-div9-label7">Get Drop Down Here</label>
+      <select id="body1-main1-div9-select1" class="block w-full border border-gray-300 rounded p-2 mb-4">
+        <option value="csharp" id="body1-main1-div9-select1-option1">C Sharp</option>
+      </select>
+      <div class="grid grid-cols-2 gap-4" id="body1-main1-div9-div10">
+        <div id="body1-main1-div9-div10-div11">
+          <label class="flex items-center mb-2" id="body1-main1-div9-div10-div11-label8">
+            <input type="checkbox" class="mr-2" id="body1-main1-div9-div10-div11-label8-input7"> C#
+          </label>
+          <label class="flex items-center mb-2" id="body1-main1-div9-div10-div11-label9">
+            <input type="checkbox" class="mr-2" id="body1-main1-div9-div10-div11-label9-input8"> Java
+          </label>
+        </div>
+        <div id="body1-main1-div9-div10-div12">
+          <label class="flex items-center mb-2" id="body1-main1-div9-div10-div12-label10">
+            <input type="checkbox" class="mr-2" id="body1-main1-div9-div10-div12-label10-input9"> PHP
+          </label>
+          <label class="flex items-center mb-2" id="body1-main1-div9-div10-div12-label11">
+            <input type="checkbox" class="mr-2" id="body1-main1-div9-div10-div12-label11-input10"> Visual Basic
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="additional-elements mb-6 grid grid-cols-2 gap-4" id="body1-main1-div13">
+      <div id="body1-main1-div13-div14">
+
+        <button id="Parent_body1-main1-div13-div14_Next_null_Queue_1" class="bg-green-500 text-white px-4 py-2 rounded">Modify Element</button>
+      </div>
+      <div class="flex flex-col space-y-4" id="body1-main1-div13-div15">
+        <div class="h-4 bg-gray-200 rounded" id="body1-main1-div13-div15-div16"></div>
+        <div class="h-4 bg-gray-200 rounded" id="body1-main1-div13-div15-div17"></div>
+        <div class="h-4 bg-gray-200 rounded" id="body1-main1-div13-div15-div18"></div>
+      </div>
+    </div>
+
+    <div class="mb-6" id="body1-main1-div19">
+      <label class="block font-medium mb-1" id="body1-main1-div19-label12">Label</label>
+      <input type="text" class="block w-full border border-gray-300 rounded p-2 mb-4" id="body1-main1-div19-input11">
+      <label class="block font-medium mb-1" id="body1-main1-div19-label13">Label</label>
+      <input type="text" class="block w-full border border-gray-300 rounded p-2 mb-4" id="body1-main1-div19-input12">
+      <div class="flex items-center mb-4" id="body1-main1-div19-div20">
+        <input type="checkbox" id="body1-main1-div19-div20-input13" class="mr-2">
+        <label for="checkbox1" id="body1-main1-div19-div20-label14">Checkbox</label>
+      </div>
+      <div class="flex items-center mb-4" id="body1-main1-div19-div21">
+        <input type="checkbox" id="body1-main1-div19-div21-input14" class="mr-2">
+        <label for="checkbox2" id="body1-main1-div19-div21-label15">Checkbox</label>
+      </div>
+    </div>
+
+    <div class="mb-6" id="body1-main1-div22">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-main1-div22-button1" onclick="addInteraction()">Button</button>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-6" id="body1-main1-div23">
+      <div class="flex items-center" id="body1-main1-div23-div24">
+        <input type="radio" id="body1-main1-div23-div24-input15" name="new_radio_group" class="mr-2">
+        <label for="radio1" id="body1-main1-div23-div24-label16">Radiobutton</label>
+      </div>
+      <div class="flex items-center" id="body1-main1-div23-div25">
+        <input type="radio" id="body1-main1-div23-div25-input16" name="new_radio_group" class="mr-2">
+        <label for="radio2" id="body1-main1-div23-div25-label17">Radiobutton</label>
+      </div>
+    </div>
+
+    <div class="additional-image-and-text flex justify-between items-end mb-6" id="body1-main1-div26">
+      <img src="https://placehold.co/100x100" alt="Additional Placeholder Image" id="body1-main1-div26-img2">
+      <div class="flex flex-col space-y-2" id="body1-main1-div26-div27">
+        <div class="h-4 bg-gray-200 rounded w-36" id="body1-main1-div26-div27-div28"></div>
+        <div class="h-4 bg-gray-200 rounded w-36" id="body1-main1-div26-div27-div29"></div>
+        <div class="h-4 bg-gray-200 rounded w-36" id="body1-main1-div26-div27-div30"></div>
+      </div>
+    </div>
+  </main>
+
+
+  <script data-custom-scripts="true">
+    function addInteraction() {
+      const newModule = document.createElement('div');
+      newModule.id = 'body1-main1-div26-div-mod';
+      newModule.setAttribute('name', 'add');
+      newModule.className = 'bg-gray-100 p-4 mt-4 shadow-md';
+      newModule.innerHTML = '<p class="text-black">Add Interaction</p>';
+
+      document.getElementById('body1-main1').appendChild(newModule);
+    }
+  </script>
+</body>
+</html>

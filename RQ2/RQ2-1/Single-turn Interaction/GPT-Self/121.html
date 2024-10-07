@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        .posts-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .post {
+            width: 30%;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .product-catalog {
+            margin: 20px;
+        }
+        .product-catalog header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-catalog .products {
+            display: flex;
+            justify-content: space-around;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .interaction {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1 style="font-size: 50px;">Title</h1>
+<p>Title Page</p>
+</header>
+<div class="video-container">
+<span>Video Placeholder</span>
+</div>
+<div class="posts-container">
+<div class="post">
+<h2>Title</h2>
+<img alt="Image 1" src="image1.jpg"/>
+<p>Title Post</p>
+</div>
+<div class="post">
+<h2>Title</h2>
+<img alt="Image 2" src="image2.jpg"/>
+<p>Title Post</p>
+</div>
+<div class="post">
+<h2>Title</h2>
+<img alt="Image 3" src="image3.jpg"/>
+<p>Title Post</p>
+</div>
+</div>
+<section class="product-catalog">
+<header>
+<h2>Product Catalog</h2>
+<input placeholder="Search" type="text"/>
+</header>
+<div class="products">
+<div class="product">
+<img alt="Product 1" src="product1.jpg"/>
+<h3>Product 1</h3>
+<p>$10.00</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 2" src="product2.jpg"/>
+<h3>Product 2</h3>
+<p>$40.00</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+<div class="product">
+<img alt="Product 3" src="product3.jpg"/>
+<h3>Product 3</h3>
+<p>$40.00</p>
+<button class="add-to-cart" id="6_1">Add to Cart</button>
+</div>
+</div>
+</section>
+<div id="interaction-container"></div>
+<script>
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            // 创建新的模块并添加到页面底部
+            const newModule = document.createElement('div');
+            newModule.className = 'interaction';
+            newModule.textContent = 'Add Interaction';
+            document.getElementById('interaction-container').appendChild(newModule);
+
+            // 将 "Add to Cart" 按钮移动到页面底部
+            document.body.appendChild(button);
+        });
+    });
+</script>
+</body>
+</html>

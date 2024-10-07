@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobility Solutions &amp; Daily Living Aids</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, .section, .product {
+            margin-bottom: 20px;
+        }
+        .header h1, .section h2, .product h3 {
+            margin: 10px 0;
+        }
+        .header button, .section button, .product button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .product img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .checkbox-list, .radio-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li, .radio-list li {
+            margin-bottom: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Mobility Solutions &amp; Daily Living Aids</h1>
+<p>Making life easier</p>
+</div>
+<div class="section">
+<div>
+<h2>Wheelchair Repair</h2>
+<button>Find out More</button>
+</div>
+<div>
+<h2>Community Contracts</h2>
+<button>Find out More</button>
+</div>
+</div>
+<!-- Removed the first image in the section -->
+<div class="product">
+<img alt="Product Image" src="path/to/product/image.jpg"/>
+<p>$24.99</p>
+<h3>Product Title</h3>
+<p>Product description goes here...</p>
+<ul class="checkbox-list">
+<li><input id="item1" type="checkbox"/><label for="item1"> Check item 1</label></li>
+<li><input id="item2" type="checkbox"/><label for="item2"> Check item 2</label></li>
+<li><input id="item3" type="checkbox"/><label for="item3"> Check item 3</label></li>
+</ul>
+<button>Buy Now</button>
+</div>
+<div class="form-section">
+<div>
+<label for="input1">Label</label>
+<input id="input1" type="text"/>
+</div>
+<ul class="radio-list">
+<li><input id="radio1" name="radio" type="radio"/><label for="radio1"> Radio button</label></li>
+<li><input id="radio2" name="radio" type="radio"/><label for="radio2"> Radio button</label></li>
+</ul>
+<button>Button</button>
+<div>
+<img alt="Another Image" src="path/to/another/image.jpg"/>
+</div>
+</div>
+<!-- Moved the "Find out More" button here -->
+<div class="footer">
+<button id="6_1">Find out More</button>
+</div>
+</div>
+<script>
+        document.getElementById('find-out-more').addEventListener('click', function() {
+            var newModule = document.createElement('div');
+            newModule.innerHTML = '<p>Add Interaction</p>';
+            document.querySelector('.container').appendChild(newModule);
+        });
+    </script>
+</body>
+</html>

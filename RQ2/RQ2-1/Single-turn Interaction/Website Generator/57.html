@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Example</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+<!-- Add Element Link at the top -->
+<div class="mb-4">
+<a class="text-blue-500 underline" href="#">Add Element</a>
+</div>
+<section class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+<!-- Team Members Section -->
+<article class="mb-8">
+<div class="flex items-center mb-6">
+<img alt="Mate One" class="w-20 h-20 mr-4" src="https://placehold.co/100x100"/>
+<div>
+<h2 class="text-xl font-semibold" id="6_2_1_1_1">Mate One</h2>
+<p class="text-gray-600">Job Title</p>
+<p class="text-gray-600">Description line 1</p>
+<p class="text-gray-600">Description line 2</p>
+</div>
+</div>
+<div class="flex items-center mb-6">
+<div class="mr-4 flex-grow">
+<h2 class="text-xl font-semibold">Mate Two</h2>
+<p class="text-gray-600">Job Title</p>
+<p class="text-gray-600">Description line 1</p>
+<p class="text-gray-600">Description line 2</p>
+</div>
+<img alt="Mate Two" class="w-20 h-20" src="https://placehold.co/100x100"/>
+</div>
+<div class="flex items-center">
+<img alt="Mate Three" class="w-20 h-20 mr-4" src="https://placehold.co/100x100"/>
+<div>
+<h2 class="text-xl font-semibold">Mate Three</h2>
+<p class="text-gray-600">Job Title</p>
+<p class="text-gray-600">Description line 1</p>
+<p class="text-gray-600">Description line 2</p>
+</div>
+</div>
+</article>
+<!-- Checkout Section -->
+<article class="mb-8">
+<h2 class="text-2xl font-bold mb-4">Checkout</h2>
+<div class="mb-4">
+<h3 class="text-xl font-semibold mb-2">Shipping Address</h3>
+<form class="space-y-4">
+<div>
+<label class="block text-gray-700" for="first-name">First Name</label>
+<input class="w-full border rounded p-2" id="first-name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="last-name">Last Name</label>
+<input class="w-full border rounded p-2" id="last-name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="company">Company</label>
+<input class="w-full border rounded p-2" id="company" type="text"/>
+</div>
+</form>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2" id="6_2_2_1_1">Shipping Service</h3>
+<div class="space-y-2">
+<div>
+<label class="inline-flex items-center">
+<input checked="" class="form-radio" name="shipping-service" type="radio"/>
+<span class="ml-2">Standard (14 days - $6.59)</span>
+</label>
+</div>
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="shipping-service" type="radio"/>
+<span class="ml-2">Expedited (7 days - $12.97)</span>
+</label>
+</div>
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="shipping-service" type="radio"/>
+<span class="ml-2">Express (3 days - $19.99)</span>
+</label>
+</div>
+</div>
+<div class="mt-2 text-xl font-semibold">Mate One</div>
+</div>
+</article>
+<!-- Spanish Form Section -->
+<article>
+<h2 class="text-2xl font-bold mb-4">Forma de envio</h2>
+<form class="space-y-4">
+<div>
+<h3 class="text-xl font-semibold mb-2">Método transporte</h3>
+<div class="space-y-2">
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="transport-method" type="radio"/>
+<span class="ml-2">Terrestre</span>
+</label>
+</div>
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="transport-method" type="radio"/>
+<span class="ml-2">Aereo</span>
+</label>
+</div>
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="transport-method" type="radio"/>
+<span class="ml-2">Marítimo</span>
+</label>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Forma de pago</h3>
+<div class="space-y-2">
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="payment-method" type="radio"/>
+<span class="ml-2">Tarjeta (Crédito/Débito)</span>
+</label>
+</div>
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="payment-method" type="radio"/>
+<span class="ml-2">Transferencia bancaria</span>
+</label>
+</div>
+<div>
+<label class="inline-flex items-center">
+<input class="form-radio" name="payment-method" type="radio"/>
+<span class="ml-2">Metálico</span>
+</label>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-gray-700" for="direccion">Direccion</label>
+<input class="w-full border rounded p-2" id="direccion" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="pais">País</label>
+<select class="w-full border rounded p-2" id="pais">
+<option value="">Seleccione un país</option>
+<option value="es">España</option>
+<option value="mx">México</option>
+<option value="ar">Argentina</option>
+</select>
+</div>
+<div>
+<button class="bg-blue-500 text-white py-2 px-4 rounded" onclick="showAlert()" type="submit">Aceptar</button>
+</div>
+</form>
+</article>
+</section>
+<script>
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

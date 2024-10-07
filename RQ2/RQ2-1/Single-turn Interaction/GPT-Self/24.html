@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page from Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .checkboxes, .radios {
+            margin: 20px 0;
+        }
+        .payment-method, .payment-details {
+            margin: 20px 0;
+        }
+        .product-catalog {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+        }
+        .search {
+            text-align: right;
+        }
+        .add-element-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: #000;
+        }
+        .payment-details button {
+            background-color: #C6A7B1;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .payment-details button:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="add-element-link">Add Element</a>
+        <div class="header">
+            <h1>Website Title</h1>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor.</p>
+            <p>Phasellus euismod libero in nulla tristique, nec posuere arcu varius.</p>
+            <div class="checkboxes">
+                <input type="checkbox" id="option1">
+                <label for="option1">Option 1</label><br>
+                <input type="checkbox" id="option2" checked>
+                <label for="option2">Option 2</label>
+            </div>
+            <div class="radios">
+                <input type="radio" id="radio1" name="radio-group">
+                <label for="radio1">Radio 1</label><br>
+                <input type="radio" id="radio2" name="radio-group" checked>
+                <label for="radio2">Radio 2</label>
+            </div>
+            <div class="payment-method">
+                <h2>Select your payment method</h2>
+                <input type="radio" id="credit-card" name="payment-method" checked>
+                <label for="credit-card">Credit Card</label><br>
+                <input type="radio" id="paypal" name="payment-method">
+                <label for="paypal">Paypal</label><br>
+                <input type="radio" id="bank-transfer" name="payment-method">
+                <label for="bank-transfer">Bank Transfer</label>
+            </div>
+            <div class="payment-details">
+                <h2>Enter your data</h2>
+                <label for="card-number">Card Number</label><br>
+                <input type="text" id="card-number" name="card-number"><br>
+                <label for="expiration-date">Expiration Date</label><br>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM / YY"><br>
+                <label for="ccv">CCV</label><br>
+                <input type="text" id="ccv" name="ccv"><br>
+                <button>Complete</button>
+            </div>
+            <div class="product-catalog">
+                <h2>Product Catalog</h2>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+                </div>
+                <div class="product">
+                    <h3>Product 1</h3>
+                    <img src="placeholder.png" alt="Product 1">
+                    <p>$20.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Product 2</h3>
+                    <img src="placeholder.png" alt="Product 2">
+                    <p>$10.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Product 3</hanger>
+                    <img src="placeholder.png" alt="Product 3">
+                    <p>$40.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

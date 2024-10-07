@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .payment-section, .services-section {
+            margin-bottom: 40px;
+        }
+        .payment-section label, .services-section label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .payment-section input[type="text"], .payment-section input[type="date"], .payment-section input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .services-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .service-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .service-item button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .service-item button:hover {
+            background-color: #0056b3;
+        }
+        .card-number-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .payment-heading {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="payment-section">
+<h2 class="payment-heading">Select Your Payment Method</h2>
+<label id="6_2_1_1_1">
+<input checked="" name="payment" type="radio" value="credit-card"/> Credit Card
+            </label>
+<label>
+<input name="payment" type="radio" value="paypal"/> PayPal
+            </label>
+<label>
+<input name="payment" type="radio" value="bank-transfer"/> Bank Transfer
+            </label>
+<div class="card-number-label">
+<label for="card-number" id="6_2_2_2_1">Card Number</label>
+<span id="6_2_1_2_1">Credit Card</span>
+</div>
+<input id="card-number" name="card-number" placeholder="Enter your card number" type="text"/>
+<label for="expiration-date">Expiration Date</label>
+<input id="expiration-date" name="expiration-date" type="date"/>
+<label for="ccv">CCV</label>
+<input id="ccv" name="ccv" placeholder="Enter CCV" type="number"/>
+<h2>Complete</h2>
+</div>
+<div class="services-section">
+<h2>Mobility Solutions &amp; Daily Living Aids</h2>
+<div class="service-item">
+<h3>Wheelchair Repair</h3>
+<button>Find out More</button>
+</div>
+<div class="service-item">
+<h3>Community Contracts</h3>
+<button>Find out More</button>
+</div>
+<div class="service-item">
+<h3>Other Services</h3>
+<button>Find out More</button>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>登录页面</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* 修改flex方向为纵向 */
+        }
+        .login-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .login-container h2 {
+            font-size: 50px; /* 修改字体大小为50px */
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        .login-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .remember-me-container {
+            display: flex;
+            align-items: center;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer-text {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+<h2 id="6_2_1_1_1">Login</h2>
+<input placeholder="Login" type="text"/>
+<input placeholder="Password" type="password"/>
+<div class="remember-me-container">
+<input id="remember-me" type="checkbox"/>
+<label for="remember-me" id="6_2_2_2_1">Remember me</label>
+<span id="6_2_1_2_1" style="margin-left: auto;">Login</span> <!-- 将Login放在Remember me右侧 -->
+</div>
+<a href="#">Forgot Password</a>
+<button>Login</button>
+</div>
+<div class="footer-text">Add Element</div> <!-- 在页面底部添加文本 -->
+</body>
+</html>

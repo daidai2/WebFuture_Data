@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-200 p-4" id="body1">
+  <!-- Header Section -->
+  <header class="bg-white p-6 shadow-md" id="body1-header1">
+    <div class="w-full h-64 bg-gray-300 mb-4" id="body1-header1-div1">
+
+    </div>
+    <nav class="flex justify-between mb-4" id="body1-header1-nav1">
+      <a href="#" class="text-blue-500" id="body1-header1-nav1-a1">Home</a>
+      <a href="#" class="text-blue-500" id="body1-header1-nav1-a2">About</a>
+      <a href="#" class="text-blue-500" id="body1-header1-nav1-a3">Services</a>
+      <a href="#" class="text-blue-500" id="body1-header1-nav1-a4">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="bg-white p-6 shadow-md mb-6" id="body1-section1">
+    <!-- Text Content -->
+    <div class="mb-6" id="body1-section1-div2">
+      <p class="mb-2" id="body1-section1-div2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p class="mb-2" id="body1-section1-div2-p2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="mb-2" id="body1-section1-div2-p3">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p class="mb-2" id="body1-section1-div2-p4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      <p class="mb-2" id="body1-section1-div2-p5">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+      <p class="mb-2" id="body1-section1-div2-p6">Mollit anim id est laborum.</p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="flex flex-col space-y-4 mb-4" id="body1-section1-div3">
+      <input type="text" class="p-2 border rounded" placeholder="Input Field 1" id="body1-section1-div3-input1">
+      <input type="text" class="p-2 border rounded" placeholder="Input Field 2" id="body1-section1-div3-input2">
+      <button class="p-2 bg-blue-500 text-white rounded" id="body1-section1-div3-button1" onclick="handleGoButtonClick()">Go</button>
+    </div>
+
+    <!-- Selection Options -->
+    <div class="space-y-2 mb-6" id="body1-section1-div4">
+      <div id="body1-section1-div4-div5">
+        <input type="checkbox" id="body1-section1-div4-div5-input3">
+        <label for="checkbox1" id="body1-section1-div4-div5-label1">Option 1</label>
+      </div>
+      <div id="body1-section1-div4-div6">
+        <input type="checkbox" id="body1-section1-div4-div6-input4">
+        <label for="checkbox2" id="body1-section1-div4-div6-label2">Option 2</label>
+      </div>
+      <div id="body1-section1-div4-div7">
+        <input type="radio" name="radio" id="body1-section1-div4-div7-input5">
+        <label for="radio1" id="body1-section1-div4-div7-label3">Option 1</label>
+      </div>
+      <div id="body1-section1-div4-div8">
+        <input type="radio" name="radio" id="body1-section1-div4-div8-input6">
+        <label for="radio2" id="body1-section1-div4-div8-label4">Option 2</label>
+      </div>
+      <div id="body1-section1-div4-div9">
+        <input type="radio" name="radio" id="body1-section1-div4-div9-input7">
+        <label for="radio3" id="body1-section1-div4-div9-label5">Option 3</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Information Section -->
+  <section class="bg-white p-6 shadow-md mb-6" id="body1-section2">
+    <h2 class="mb-4" id="body1-section2-h21">Select your payment method</h2>
+    <div class="mb-4" id="body1-section2-div10">
+      <label class="block mb-2" id="body1-section2-div10-label6">
+        <input type="radio" name="payment" class="mr-2" id="body1-section2-div10-label6-input8"> Credit Card
+      </label>
+      <label class="block mb-2" id="body1-section2-div10-label7">
+        <input type="radio" name="payment" class="mr-2" id="body1-section2-div10-label7-input9"> Paypal
+      </label>
+      <label class="block mb-2" id="body1-section2-div10-label8">
+        <input type="radio" name="payment" class="mr-2" id="body1-section2-div10-label8-input10"> Bank Transfer
+      </label>
+    </div>
+    <h2 class="mb-2" id="body1-section2-h22">Enter your data</h2>
+    <div class="mb-4" id="body1-section2-div11">
+      <label class="block mb-2" id="body1-section2-div11-label9">Card Number</label>
+      <input type="text" class="p-2 border rounded w-full" id="body1-section2-div11-input11">
+    </div>
+    <div class="mb-4 flex space-x-4" id="body1-section2-div12">
+      <div id="body1-section2-div12-div13">
+        <label class="block mb-2" id="body1-section2-div12-div13-label10">Expiration date</label>
+        <select class="p-2 border rounded" id="body1-section2-div12-div13-select1">
+          <option id="body1-section2-div12-div13-select1-option1">MM</option>
+          <option id="body1-section2-div12-div13-select1-option2">01</option>
+          <option id="body1-section2-div12-div13-select1-option3">02</option>
+          <!-- Add more months -->
+        </select>
+        <select class="p-2 border rounded" id="body1-section2-div12-div13-select2">
+          <option id="body1-section2-div12-div13-select2-option4">YY</option>
+          <option id="body1-section2-div12-div13-select2-option5">20</option>
+          <option id="body1-section2-div12-div13-select2-option6">21</option>
+          <!-- Add more years -->
+        </select>
+      </div>
+      <div id="body1-section2-div12-div14">
+        <label class="block mb-2" id="body1-section2-div12-div14-label11">CVV</label>
+        <input type="text" class="p-2 border rounded" id="body1-section2-div12-div14-input12">
+      </div>
+    </div>
+    <button class="p-2 bg-blue-500 text-white rounded w-full" id="body1-section2-button2">Complete</button>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="bg-white p-6 shadow-md" id="body1-section3">
+    <div class="flex justify-between items-center mb-6" id="body1-section3-div15">
+      <h2 class="text-xl" id="body1-section3-div15-h23">Product Catalog</h2>
+      <div class="flex space-x-2" id="body1-section3-div15-div16">
+        <input type="search" class="p-2 border rounded" placeholder="Search" id="body1-section3-div15-div16-input13">
+        <button class="p-2 bg-blue-500 text-white rounded" id="body1-section3-div15-div16-button3">Search</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-6" id="body1-section3-div17">
+      <!-- Product 1 -->
+      <div class="border p-4 flex flex-col items-center" id="body1-section3-div17-div18">
+        <div class="w-full h-64 bg-gray-300 mb-4" id="body1-section3-div17-div18-div19"></div>
+        <h3 class="mb-2" id="body1-section3-div17-div18-h31">Product 1</h3>
+        <p class="mb-2" id="body1-section3-div17-div18-p7">$30.00</p>
+        <button class="p-2 bg-blue-500 text-white rounded" id="body1-section3-div17-div18-button4">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="border p-4 flex flex-col items-center" id="body1-section3-div17-div20">
+        <div class="w-full h-64 bg-gray-300 mb-4" id="body1-section3-div17-div20-div21"></div>
+        <h3 class="mb-2" id="body1-section3-div17-div20-h32">Product 2</h3>
+        <p class="mb-2" id="body1-section3-div17-div20-p8">$10.00</p>
+        <button class="p-2 bg-blue-500 text-white rounded" id="body1-section3-div17-div20-button5">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="border p-4 flex flex-col items-center" id="body1-section3-div17-div22">
+        <div class="w-full h-64 bg-gray-300 mb-4" id="body1-section3-div17-div22-div23"></div>
+        <h3 class="mb-2" id="body1-section3-div17-div22-h33">Product 3</h3>
+        <p class="mb-2" id="body1-section3-div17-div22-p9">$40.00</p>
+        <button class="p-2 bg-blue-500 text-white rounded" id="body1-section3-div17-div22-button6">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+
+  <script data-custom-scripts="true">
+    function addInteractionModule() {
+      const newModule = document.createElement('div');
+      newModule.id = 'Parent_body1_Next_null_Queue_1';
+      newModule.setAttribute('name', 'add');
+      newModule.className = 'bg-white p-6 shadow-md mt-6';
+      newModule.innerHTML = '<p id="Parent_body1_Next_null_Queue_1-1" name="add">Add Interaction</p>';
+      document.body.appendChild(newModule);
+    }
+
+    function addElementText() {
+      const newText = document.createElement('p');
+      newText.id = 'Parent_body1_Next_null_Queue_2';
+      newText.setAttribute('name', 'add');
+      newText.className = 'text-center p-4';
+      newText.textContent = 'Add Element';
+      document.body.appendChild(newText);
+    }
+
+    function handleGoButtonClick() {
+      addInteractionModule();
+      addElementText();
+    }
+  </script>
+</body>
+</html>

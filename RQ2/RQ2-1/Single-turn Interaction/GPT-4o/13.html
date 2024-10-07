@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .custom-button {
+      background-color: #C6A7B1;
+    }
+
+    .custom-button:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+<!-- Header -->
+<header class="bg-blue-600 p-4 text-white text-center">
+<h1 class="text-2xl">Product Page</h1>
+</header>
+<!-- Main Content -->
+<main class="p-4">
+<!-- Top Banner Section -->
+<section class="flex justify-between my-4">
+<button class="custom-button text-white p-2 rounded">Modify Element</button>
+<img alt="Secondary banner image" class="w-1/3" src="https://placehold.co/150x100"/>
+<img alt="Another secondary banner image" class="w-1/3" src="https://placehold.co/150x100"/>
+</section>
+<!-- Product Section -->
+<section class="my-4" id="product-section">
+<div class="flex flex-wrap">
+<!-- Product Images -->
+<div class="product-images p-4 w-full md:w-1/2">
+<img alt="Main Product Image" class="mb-4" src="https://placehold.co/300x300"/>
+<div class="flex justify-between">
+<img alt="Thumbnail Image" class="w-1/5" src="https://placehold.co/60x60"/>
+<img alt="Thumbnail Image" class="w-1/5" src="https://placehold.co/60x60"/>
+<img alt="Thumbnail Image" class="w-1/5" src="https://placehold.co/60x60"/>
+<img alt="Thumbnail Image" class="w-1/5" src="https://placehold.co/60x60"/>
+</div>
+</div>
+<!-- Product Details -->
+<article class="product-details p-4 w-full md:w-1/2 bg-white shadow">
+<h2 class="text-xl font-semibold mb-4">Product NAME</h2>
+<h3 class="text-lg mb-2">Manufacturer</h3>
+<div class="mb-4">
+<label class="block mb-1">Color:</label>
+<input id="color1" name="color" type="radio" value="red"/> <label for="color1">Red</label><br/>
+<input id="color2" name="color" type="radio" value="blue"/> <label for="color2">Blue</label><br/>
+<input id="color3" name="color" type="radio" value="white"/> <label for="color3">White</label>
+</div>
+<div class="price-details mb-4">
+<p>Price: $100</p>
+<p>Old Price: $200</p>
+</div>
+<button class="bg-blue-600 text-white p-2 rounded">Add to Cart</button>
+</article>
+</div>
+</section>
+<!-- Form Sections -->
+<section class="my-4" id="form-sections">
+<!-- Shipping Method -->
+<div class="shipping-method mb-4 p-4 bg-white shadow">
+<h3 class="text-lg mb-2">Forma de envío</h3>
+<input id="method1" name="shipping-method" type="radio" value="tierra"/> <label for="method1">Tierra</label><br/>
+<input id="method2" name="shipping-method" type="radio" value="aereo"/> <label for="method2">Aéreo</label><br/>
+<input id="method3" name="shipping-method" type="radio" value="maritimo"/> <label for="method3">Marítimo</label>
+</div>
+<!-- Payment Method -->
+<div class="payment-method mb-4 p-4 bg-white shadow">
+<h3 class="text-lg mb-2">Forma de pago</h3>
+<input id="payment1" name="payment-method" type="radio" value="tarjeta"/> <label for="payment1">Tarjeta (Crédito/Débito)</label><br/>
+<input id="payment2" name="payment-method" type="radio" value="transferencia"/> <label for="payment2">Transferencia bancaria</label><br/>
+<input id="payment3" name="payment-method" type="radio" value="metalico"/> <label for="payment3" id="6_2_1_1_1">Metálico</label>
+</div>
+<!-- Address Input -->
+<div class="address-input mb-4 p-4 bg-white shadow">
+<label class="block mb-1">Dirección</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+<!-- Country Selection -->
+<div class="country-selection mb-4 p-4 bg-white shadow">
+<label class="block mb-1">País</label>
+<input id="country" name="country" type="checkbox"/> <label for="country" id="6_2_2_2_1">Incluir país</label> <label for="payment3" id="6_2_1_2_1">Metálico</label>
+</div>
+<!-- Submit Button -->
+<div class="submit-button p-4 bg-white shadow">
+<button class="bg-green-600 text-white p-2 rounded">Aceptar</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 p-4 text-white text-center">
+<p>© 2023 Your Company</p>
+</footer>
+</body>
+</html>

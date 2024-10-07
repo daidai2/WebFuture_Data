@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .blog-posts, .product-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .post, .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 30%;
+        }
+        .post img, .product img {
+            width: 100%;
+            height: auto;
+        }
+        .post-title, .product-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .button {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #C6A7B1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Title</h1>
+</div>
+<div class="main">
+<div class="home-page">
+<h2>Home Page</h2>
+<p>This is a description of the homepage content. It includes a main heading, a subheading, and some paragraph text.</p>
+</div>
+<div class="blog-section">
+<h2>Blog Posts</h2>
+<div class="blog-posts">
+<div class="post">
+
+<h3 class="post-title">Post Title</h3>
+<p class="post-description">This is a brief description of the blog post.</p>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<h3 class="post-title">Post Title</h3>
+<p class="post-description">This is a brief description of the blog post.</p>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<h3 class="post-title">Post Title</h3>
+<p class="post-description">This is a brief description of the blog post.</p>
+</div>
+</div>
+</div>
+<div class="product-catalog-section">
+<h2>Product Catalog</h2>
+<input class="search-bar" placeholder="Search" type="text"/>
+<div class="product-catalog">
+<div class="product">
+<img alt="Product Image" src="placeholder.jpg"/>
+<h3 class="product-title">Product 1</h3>
+<p class="product-price">$10.00</p>
+<a class="button" href="#">Add to Cart</a>
+</div>
+<div class="product">
+<img alt="Product Image" src="placeholder.jpg"/>
+<h3 class="product-title">Product 2</h3>
+<p class="product-price">$20.00</p>
+<a class="button" href="#">Add to Cart</a>
+</div>
+<div class="product">
+<img alt="Product Image" src="placeholder.jpg"/>
+<h3 class="product-title">Product 3</h3>
+<p class="product-price">$30.00</p>
+<a class="button" href="#">Add to Cart</a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>© 2024 Your Website</p>
+</div><p>Add Element</p>
+</div>
+</body>
+</html>

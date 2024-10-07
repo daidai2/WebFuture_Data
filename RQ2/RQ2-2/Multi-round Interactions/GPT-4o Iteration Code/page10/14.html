@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-image {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .bg-white-section {
+      background-color: white;
+    }
+    .image-width {
+      width: 200px;
+    }
+  </style>
+</head>
+<body class="bg-image">
+
+  <main class="p-8 space-y-8">
+    <!-- Background image section -->
+    <div class="bg-image p-8">
+      <!-- White background section -->
+      <div class="bg-white-section p-8">
+        <!-- Row 1 -->
+        <div class="grid grid-cols-4 gap-0.5 mt-16">
+          <div class="text-center">
+            <img src="https://placehold.co/200x150" alt="PIC1-1" class="mx-auto">
+          </div>
+          <div class="text-center">
+            <img src="01.jpg" alt="PIC1-2" class="mx-auto image-width">
+            <p class="mt-2">Text1-2</p>
+          </div>
+          <div class="text-center">
+            <img src="02.jpg" alt="PIC1-3" class="mx-auto image-width">
+            <p class="mt-2">Text1-3</p>
+          </div>
+          <div class="text-center">
+            <img src="03.jpg" alt="PIC1-4" class="mx-auto image-width">
+            <p class="mt-2">Text1-4</p>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid grid-cols-5 gap-0.5 mt-8">
+          <div class="text-center col-span-2 transform -translate-x-1">
+            <img src="05.jpg" alt="PIC1-5" class="mx-auto image-width">
+            <p class="mt-2">Text1-5</p>
+          </div>
+          <div class="text-center col-span-1 transform -translate-x-1">
+            <img src="06.jpg" alt="PIC1-6" class="mx-auto image-width">
+            <p class="mt-2">Text1-6</p>
+          </div>
+          <div class="text-center col-span-1 transform -translate-x-1">
+            <img src="07.jpg" alt="PIC1-7" class="mx-auto image-width">
+            <p class="mt-2">Text1-7</p>
+          </div>
+          <div class="text-center col-span-1">
+            <img src="08.jpg" alt="PIC1-8" class="mx-auto image-width">
+            <p class="mt-2">Text1-8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text1-1 with icons and texts -->
+    <section class="bg-image p-4 border rounded-md flex items-center justify-between mt-16">
+      <p class="mr-auto">Text1-1</p>
+      <div class="ml-4 flex flex-col items-center">
+        <div class="flex">
+          <img src="https://placehold.co/30x30" alt="Icon1-1" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-2" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-3" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-4" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-5" class="mx-1">
+        </div>
+        <div class="flex">
+          <p class="mx-1">Text2</p>
+          <p class="mx-1">Text3</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

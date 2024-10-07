@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .light-gray-bg {
+      background-color: #f0f0f0;
+    }
+
+    .white-bg {
+      background-color: #ffffff;
+    }
+
+    .dark-gray-text {
+      color: #808080;
+    }
+
+    .lighter-gray-text {
+      color: #b0b0b0;
+    }
+
+    .section-margin {
+      margin: 40px;
+      /* Increased the margin to create more space above Title1 */
+    }
+
+    .img-full-width {
+      width: 100%;
+    }
+
+    .text-bottom-spacing {
+      margin-bottom: 48px;
+    }
+
+    .button-style-modified {
+      border-radius: 10px;
+      width: 120px;
+      /* Reduced the width to make the button smaller */
+      height: 120px;
+    }
+
+    .line-before {
+      position: relative;
+    }
+
+    .line-before::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 60px;
+      /* Adjusted to align with the vertical line */
+      width: 34vw;
+      height: 4px;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      transform: translateY(-50%);
+    }
+
+    .line-before::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -8px;
+      height: 16px;
+      width: 1px;
+      background-color: lightgray;
+      transform: translateY(-50%);
+    }
+
+    .line-after {
+      position: relative;
+    }
+
+    .line-after::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 80px;
+      /* Adjusted from 0 to -8px to align with the vertical line */
+      width: 34vw;
+      height: 4px;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      transform: translateY(-50%);
+    }
+
+    .line-after::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -8px;
+      height: 16px;
+      width: 1px;
+      background-color: lightgray;
+      transform: translateY(-50%);
+    }
+
+    .extended-hr {
+      width: 32;
+      /* Adjusted the width for extended horizontal line */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+
+  <!-- Main Content -->
+  <div>
+    <!-- Section 1 -->
+    <section class="text-center mb-8" style="background-image: url('./pics/header.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; margin: 0; padding: 0; width: 100vw; padding-bottom: 200px;">
+      <div class="text-gray-700 hover:text-gray-900 mb-8 pt-8">
+        <span class="line-before">
+          <a href="#" data-opt="add" class="text-white">Home</a>
+        </span>
+        <a href="#" data-opt="add" class="text-white ml-4">About</a>
+        <a href="#" data-opt="add" class="text-white ml-4">Services</a>
+        <a href="#" data-opt="add" class="text-white ml-4">Contact</a>
+        <span class="line-after">
+          <a href="#" data-opt="add" class="text-white ml-4">Forums</a>
+        </span>
+      </div>
+      <h1 class="text-3xl mt-32 mb-4 text-white">Title1</h1>
+      <hr class="border-t-4 border-double border-white extended-hr w-64 mx-auto">
+      <h2 class="text-xl mt-4 mb-4 text-white">Title1-1</h2>
+      <button class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mt-4" style="background-color: #DF7366">
+        PIC
+      </button>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="text-center mt-8">
+      <h1 class="text-3xl mb-2">Title2</h1>
+      <h2 class="text-gray-500 mb-4">Text2</h2>
+      <div class="w-screen light-gray-bg p-8">
+        <div class="grid grid-cols-4 gap-4 mx-auto">
+          <div class="text-center white-bg">
+            <img src="./pics/pic01.jpg" alt="PIC2-1" class="mx-auto img-full-width">
+            <h3 class="text-lg mt-8 mb-4">Title2-1</h3>
+            <p class="text-gray-500 text-bottom-spacing">Text2-1</p>
+          </div>
+          <div class="text-center white-bg">
+            <img src="./pics/pic02.jpg" alt="PIC2-2" class="mx-auto img-full-width">
+            <h3 class="text-lg mt-8 mb-4">Title2-2</h3>
+            <p class="text-gray-500 text-bottom-spacing">Text2-2</p>
+          </div>
+          <div class="text-center white-bg">
+            <img src="./pics/pic03.jpg" alt="PIC2-3" class="mx-auto img-full-width">
+            <h3 class="text-lg mt-8 mb-4">Title2-3</h3>
+            <p class="text-gray-500 text-bottom-spacing">Text2-3</p>
+          </div>
+          <div class="text-center white-bg">
+            <img src="./pics/pic04.jpg" alt="PIC2-4" class="mx-auto img-full-width">
+            <h3 class="text-lg mt-8 mb-4">Title2-4</h3>
+            <p class="text-gray-500 text-bottom-spacing">Text2-4</p>
+          </div>
+          <div class="text-center white-bg">
+            <div class="text-center white-bg">
+              <img src="./pics/pic04.jpg" alt="PIC2-4" class="mx-auto img-full-width">
+              <h3 class="text-lg mt-8 mb-4">Title2-4</h3>
+              <p class="text-gray-500 text-bottom-spacing">Text2-4</p>
+            </div>
+            <div class="text-center white-bg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section 3 -->
+    <section class="text-center mb-8">
+      <div class="flex justify-center">
+        <img src="./pics/pic06.jpg" alt="PIC3">
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="text-center my-8">
+      <h1 class="text-3xl mb-2">Title3</h1>
+      <h2 class="dark-gray-text mb-2">Title3-1</h2>
+      <p class="lighter-gray-text mb-4">Text3</p>
+      <button class="text-white button-style-modified h-12 flex items-center justify-center mx-auto mt-16" style="background-color: #DF7366">
+        Button1
+      </button>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="text-center my-8">
+      <div class="light-gray-bg h-8 w-full"></div>
+    </section>
+    <section class="text-center my-8">
+      <h1 class="text-3xl mb-2">Title4</h1>
+      <p class="text-gray-500 mb-4">Text5</p>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="text-center">
+          <img src="./pics/pic07.jpg" alt="PIC4-1" class="mx-auto">
+          <h3 class="text-lg mt-2">Title4-1</h3>
+          <p class="text-gray-500">Text4-1</p>
+        </div>
+        <div class="text-center">
+          <img src="./pics/pic08.jpg" alt="PIC4-2" class="mx-auto">
+          <h3 class="text-lg mt-2">Title4-2</h3>
+          <p class="text-gray-500">Text4-2</p>
+        </div>
+        <div class="text-center">
+          <img src="./pics/pic09.jpg" alt="PIC4-3" class="mx-auto">
+          <h3 class="text-lg mt-2">Title4-3</h3>
+          <p class="text-gray-500">Text4-3</p>
+        </div>
+      </div>
+    </section>
+    <section class="text-center my-8"></section>
+    <div class="light-gray-bg h-8 w-full"></div>
+
+
+    <!-- Section 6 -->
+    <section style="background-color: #2B262C">
+      <div class="flex justify-around pt-16 pb-8">
+        <div class="text-center">
+          <img src="https://placehold.co/80x80" alt="IMG5" class="rounded-full mx-auto">
+        </div>
+        <div class="text-center">
+          <img src="https://placehold.co/80x80" alt="IMG5" class="rounded-full mx-auto">
+        </div>
+        <div class="text-center">
+          <img src="https://placehold.co/80x80" alt="IMG5" class="rounded-full mx-auto">
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-8 mt-4 pb-16">
+        <div class="flex flex-col justify-center items-center space-y-2">
+          <p class="text-white">Text5-1</p>
+          <p class="text-white">Text5-2</p>
+          <p class="text-white">Text5-3</p>
+          <p class="text-white">Text5-4</p>
+        </div>
+        <div class="flex flex-col justify-center items-center space-y-2">
+          <p class="text-white font-bold">Text5-5</p>
+          <p class="text-white font-bold">Text5-6</p>
+          <p class="text-white font-bold">Text5-7</p>
+          <p class="text-white font-bold">Text5-8</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 px-12">
+          <img src="./pics/pic10.jpg" alt="PIC10" class="mx-auto">
+          <img src="./pics/pic11.jpg" alt="PIC11" class="mx-auto">
+          <img src="./pics/pic12.jpg" alt="PIC12" class="mx-auto">
+          <img src="./pics/pic13.jpg" alt="PIC13" class="mx-auto">
+          <img src="./pics/pic14.jpg" alt="PIC14" class="mx-auto">
+          <img src="./pics/pic15.jpg" alt="PIC15" class="mx-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="text-center" style="background-color: #2B262C">
+      <hr class="border-t-4 border-double border-gray-300 w-3/4 mx-auto mb-8">
+      <h1 class="text-3xl mb-2 text-white">Title5</h1>
+      <h2 class="text-xl mb-4 text-gray-300">Title5-1</h2>
+      <div class="inline-flex space-x-2 mb-4 rounded-xl bg-[#302B30]">
+        <a class="text-white py-2 px-4 rounded" href="#">Option1</a>
+        <a class="text-white py-2 px-4 rounded" href="#">Option2</a>
+        <a class="text-white py-2 px-4 rounded" href="#">Option3</a>
+        <a class="text-white py-2 px-4 rounded" href="#">Option4</a>
+        <a class="text-white py-2 px-4 rounded" href="#">Option5</a>
+        <a class="text-white py-2 px-4 rounded" href="#">Option6</a>
+      </div>
+      <div class="flex justify-center space-x-4">
+        <p class="text-gray-400">Text6</p>
+        <span class="text-gray-400">Text7</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+
+  <script data-custom-scripts="true"></script>
+
+
+
+
+
+
+
+</body>
+</html>

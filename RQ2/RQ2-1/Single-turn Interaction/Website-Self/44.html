@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 10px;
+        }
+        .radio-group input, .checkbox-group input {
+            margin-right: 10px;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Add Interaction');
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+<h1>Checkout</h1>
+<form>
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" required="" type="text"/>
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" required="" type="text"/>
+<label for="company">Company</label>
+<input id="company" name="company" type="text"/>
+<div class="radio-group">
+<label id="6_2_2_2_1">Shipping Service</label>
+<label><input name="shipping" required="" type="radio" value="standard"/> Standard (14 days - $6.59)</label>
+<label><input name="shipping" type="radio" value="expedited"/> Expedited (7 days - $11.97)</label>
+<label><input name="shipping" type="radio" value="express"/> Express (3 days - $19.97)</label>
+<label id="6_2_1_1_1"><input name="shipping" type="radio" value="visual-basic"/> Visual Basic</label>
+</div>
+<div class="checkbox-group">
+<label><input name="language" type="checkbox" value="csharp"/> C#</label>
+<label><input name="language" type="checkbox" value="java"/> Java</label>
+<label><input name="language" type="checkbox" value="php"/> PHP</label>
+<label id="6_2_1_2_1"><input name="language" type="checkbox" value="visual-basic"/> Visual Basic</label>
+</div>
+<div class="button-group">
+<button type="submit">Submit</button>
+</div>
+</form>
+<div>
+            Add Element
+        </div>
+</div>
+</body>
+</html>

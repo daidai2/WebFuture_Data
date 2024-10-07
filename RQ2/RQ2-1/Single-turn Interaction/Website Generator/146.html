@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-custom {
+      background-color: #C6A7B1;
+    }
+    .hover\\:bg-custom-hover:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+  <!-- Header Section for Login and Sign up -->
+  <div class="mb-8 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-4">Login / Sign Up</h1>
+  </div>
+
+  <!-- Login Form Section -->
+  <div class="bg-white shadow-md rounded-lg p-6 mb-8 w-full max-w-md">
+    <h2 class="text-xl font-semibold mb-4">Login</h2>
+    <form action="#" method="POST">
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1" for="login">Login</label>
+        <input class="w-full px-3 py-2 border rounded focus:outline-none" type="text" id="login" name="login">
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1" for="password">Password</label>
+        <input class="w-full px-3 py-2 border rounded focus:outline-none" type="password" id="password" name="password">
+      </div>
+      <div class="mb-4 flex items-center">
+        <input type="checkbox" id="remember_me" name="remember_me" class="mr-2">
+        <label for="remember_me" class="text-sm">Remember me</label>
+      </div>
+      <div class="mb-4 flex justify-between items-center">
+        <a href="#" class="text-sm text-blue-500 hover:underline">Forgot Password</a>
+      </div>
+      <button type="submit" class="w-full py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">Login</button>
+    </form>
+  </div>
+
+  <!-- Content Section 1 -->
+  <div class="bg-white shadow-md rounded-lg p-6 mb-8 w-full max-w-md">
+    <div class="flex mb-4">
+      <button id="modify-element" class="w-24 h-24 bg-gray-200 text-black font-semibold rounded hover:bg-gray-300">Modify Element</button>
+      <p class="flex-grow">Some multiline text goes here. It could be a description or any other content that fits.</p>
+    </div>
+    <button id="back-button" class="mb-4 w-full py-2 bg-custom text-black font-semibold rounded hover:bg-custom-hover">Back</button>
+    <div>
+      <input type="checkbox" id="checkbox_1" name="checkbox_1" class="mr-2">
+      <label for="checkbox_1" class="text-sm">Checkbox</label>
+    </div>
+  </div>
+
+  <!-- Content Section 2 -->
+  <div class="bg-white shadow-md rounded-lg p-6 mb-8 w-full max-w-md">
+    <div class="flex mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 object-cover flex-shrink-0 mr-4">
+      <p class="flex-grow">Some multiline text goes here. It could be a description or any other content that fits.</p>
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium mb-1" for="input_1">Label</label>
+      <input class="w-full px-3 py-2 border rounded focus:outline-none" type="text" id="input_1" name="input_1">
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium mb-1" for="input_2">Label</label>
+      <input class="w-full px-3 py-2 border rounded focus:outline-none" type="text" id="input_2" name="input_2">
+    </div>
+    <div class="mb-4 flex flex-col">
+      <div class="flex items-center mb-2">
+        <input type="checkbox" id="checkbox_2" name="checkbox_2" class="mr-2">
+        <label for="checkbox_2" class="text-sm">Checkbox</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" id="checkbox_3" name="checkbox_3" class="mr-2">
+        <label for="checkbox_3" class="text-sm">Checkbox</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" id="radio_1" name="radiogroup" class="mr-2">
+        <label for="radio_1" class="text-sm">Radiobutton</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" id="radio_2" name="radiogroup" class="mr-2">
+        <label for="radio_2" class="text-sm">Radiobutton</label>
+      </div>
+    </div>
+    <button class="mb-4 w-full py-2 bg-gray-200 text-black font-semibold rounded hover:bg-gray-300">Button</button>
+    <div class="flex mb-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 object-cover flex-shrink-0 mr-4">
+      <p class="flex-grow">Some multiline text goes here. It could be a description or any other content that fits.</p>
+    </div>
+  </div>
+
+  <!-- New Module will be appended here -->
+  <div id="new-module-container" class="w-full max-w-md"></div>
+
+  <script>
+    document.getElementById('back-button').addEventListener('click', function() {
+      const newModule = document.createElement('div');
+      newModule.className = 'bg-white shadow-md rounded-lg p-6 mb-8';
+      newModule.innerHTML = '<p>Add Interaction</p>';
+      document.getElementById('new-module-container').appendChild(newModule);
+    });
+  </script>
+</body>
+</html>

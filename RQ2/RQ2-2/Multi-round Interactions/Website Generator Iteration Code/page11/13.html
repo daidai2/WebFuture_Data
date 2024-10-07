@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #1a1a1a; /* Dark background color */
+      width: 100%;
+    }
+    .section {
+      margin-bottom: 0;
+    }
+    .fixed-section h1 {
+      color: #ffffff; /* White color for Title1 */
+      font-weight: bold;
+    }
+    .fixed-section p, 
+    .fixed-section a {
+      color: #b0b0b0; /* Gray-white color for Text1 and Links */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="flex flex-col min-h-screen">
+    <div class="flex">
+      <!-- Fixed Sidebar -->
+      <aside class="w-1/5 p-4 flex flex-col items-end fixed-section">
+        <img src="https://placehold.co/66x66" alt="Square Image" class="mb-2">
+        <h1 class="font-bold text-lg mb-2">Title1</h1>
+        <p class="mb-6">Text1</p> <!-- Increased space between Text1 and Link 1 -->
+        <nav class="flex flex-col space-y-2 items-end">
+          <a href="#" class="hover:underline flex items-center">Link 1<img src="https://placehold.co/16x16" alt="Icon 1" class="ml-2"></a>
+          <a href="#" class="hover:underline flex items-center">Link 2<img src="https://placehold.co/16x16" alt="Icon 2" class="ml-2"></a>
+          <a href="#" class="hover:underline flex items-center">Link 3<img src="https://placehold.co/16x16" alt="Icon 3" class="ml-2"></a>
+          <a href="#" class="hover:underline flex items-center">Link 4<img src="https://placehold.co/16x16" alt="Icon 4" class="ml-2"></a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 ml-[20%]">
+        <!-- Section 1 centered content -->
+        <section class="bg-white p-8 shadow rounded flex flex-col items-center h-96 justify-center section"> <!-- Removed margin-bottom -->
+          <h2 class="font-bold text-lg mb-6">Title2</h2> <!-- Increased margin between elements -->
+          <h3 class="text-md mb-6">Title2A</h3> <!-- Increased margin between elements -->
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+        </section>
+
+        <!-- Section 2 centered content with increased vertical length -->
+        <section class="bg-white p-8 shadow rounded flex flex-col items-center h-[40rem] justify-start section"> <!-- Removed margin-bottom -->
+          <h2 class="font-bold text-lg mb-6">Title3</h2> <!-- Increased margin between elements -->
+          <p class="mb-6">Text3</p>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <img src="https://placehold.co/100x100" alt="PIC1" class="mb-2">
+              <p>Label3</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://placehold.co/100x100" alt="PIC2" class="mb-2">
+              <p>Label4</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://placehold.co/100x100" alt="PIC3" class="mb-2">
+              <p>Label5</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://placehold.co/100x100" alt="PIC4" class="mb-2">
+              <p>Label6</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://placehold.co/100x100" alt="PIC5" class="mb-2">
+              <p>Label7</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://placehold.co/100x100" alt="PIC6" class="mb-2">
+              <p>Label8</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3 centered content -->
+        <section class="bg-white p-4 shadow rounded flex flex-col items-center section"> <!-- Removed margin-bottom -->
+          <h2 class="font-bold text-lg mb-2">Title4</h2>
+          <figure class="bg-gray-200 h-48 flex justify-center items-center w-full">PIC</figure>
+          <p class="mt-2 text-center">Text4</p>
+        </section>
+
+        <!-- Section 4 centered content with increased vertical length -->
+        <section class="bg-white p-8 shadow rounded flex flex-col items-center h-[40rem] section"> <!-- Removed margin-bottom and increased height -->
+          <h2 class="font-bold text-lg mb-4">Title5</h2> <!-- Centered and increased margin -->
+          <p class="mb-4 text-center">Text5</p> <!-- Centered text -->
+          <div class="w-full mb-4 flex justify-center">
+            <input type="text" class="border border-gray-300 p-2 mr-4 w-1/2" placeholder="TextInput"> <!-- Reduced width and aligned horizontally -->
+            <input type="text" class="border border-gray-300 p-2 w-1/2" placeholder="TextInput"> <!-- Reduced width and aligned horizontally -->
+          </div>
+          <textarea class="border border-gray-300 p-2 w-full mb-8 h-32" rows="8" placeholder="TextArea"></textarea> <!-- Increased height -->
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mb-8">Submit</button> <!-- Increased margin below button -->
+          <div class="flex justify-center space-x-4 mt-8"> <!-- Aligning Text6-1 and Text6-2 in a row -->
+            <p class="text-center">Text6-1</p>
+            <p class="text-center">Text6-2</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Main Container -->
+  <div class="container mx-auto p-5">
+
+    <!-- Header Section -->
+    <header class="text-center mb-5">
+      <h1 class="text-3xl font-bold mb-4" style="font-size: 50px;">Product Page</h1>
+      <div class="grid grid-cols-2 gap-5">
+        <div>
+          <img src="https://placehold.co/600x400" alt="Main Product Image" class="w-full h-auto mb-4">
+          <div class="flex justify-between">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 1" class="w-1/5 h-auto">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 2" class="w-1/5 h-auto">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 3" class="w-1/5 h-auto">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 4" class="w-1/5 h-auto">
+          </div>
+        </div>
+        <section>
+          <h2 class="text-2xl font-bold">Product Name</h2>
+          <p>Manufacturer</p>
+          <form class="mt-4">
+            <p class="font-semibold">Color</p>
+            <div class="flex">
+              <label class="mr-2">
+                <input type="radio" name="color" value="red"> Red
+              </label>
+              <label class="mr-2">
+                <input type="radio" name="color" value="blue"> Blue
+              </label>
+              <label class="mr-2">
+                <input type="radio" name="color" value="white"> White
+              </label>
+            </div>
+            <div class="mt-4">
+              <span class="font-semibold">Price: $400</span>
+              <span class="ml-4 line-through">Old Price: $200</span>
+            </div>
+            <button type="submit" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Add to Cart</button>
+          </form>
+        </section>
+      </div>
+    </header>
+
+    <!-- Related Products Section -->
+    <div class="mb-5">
+      <article class="mb-5">
+        <img src="https://placehold.co/150x150" alt="Mate One" class="w-1/5 h-auto inline-block">
+        <p class="inline-block align-top ml-2">
+          <strong>Mate One</strong><br>Job Title
+        </p>
+      </article>
+      <article class="mb-5">
+        <img src="https://placehold.co/150x150" alt="Mate Two" class="w-1/5 h-auto inline-block">
+        <p class="inline-block align-top ml-2">
+          <strong>Mate Two</strong><br>Job Title
+        </p>
+      </article>
+      <article class="mb-5">
+        <img src="https://placehold.co/150x150" alt="Mate Three" class="w-1/5 h-auto inline-block">
+        <p class="inline-block align-top ml-2">
+          <strong>Mate Three</strong><br>Job Title
+        </p>
+      </article>
+    </div>
+
+    <!-- Featured Product Section -->
+    <section class="mb-5">
+      <img src="https://placehold.co/800x200" alt="Featured Image" class="w-full h-auto">
+    </section>
+
+    <!-- Text Information Section -->
+    <div class="mb-5 grid grid-cols-3 gap-4">
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+    <!-- Forms Section -->
+    <form class="mb-5">
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="field1">Label:</label>
+          <input type="text" id="field1" class="block w-full mt-2 border rounded px-4 py-2">
+        </div>
+        <div>
+          <label for="field2">Label:</label>
+          <input type="text" id="field2" class="block w-full mt-2 border rounded px-4 py-2">
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 1
+          </label>
+          <label class="flex items-center mt-2">
+            <input type="checkbox" class="mr-2"> Checkbox 2
+          </label>
+        </div>
+        <div>
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2"> Checkbox 3
+          </label>
+          <label class="flex items-center mt-2">
+            <input type="checkbox" class="mr-2"> Checkbox 4
+          </label>
+        </div>
+      </div>
+      <h2 class="px-4 py-2 bg-green-500 text-white rounded">Button</h2>
+    </form>
+
+    <!-- Additional Radio Section -->
+    <div class="mb-5">
+      <label class="block mb-2">
+        <input type="radio" name="option" class="mr-2"> Radio 1
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="option" class="mr-2"> Radio 2
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="option" class="mr-2"> Radio 3
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="option" class="mr-2"> Radio 4
+      </label>
+    </div>
+
+    <!-- Additional Image and Description Section -->
+    <div class="flex items-start mb-5">
+      <img src="https://placehold.co/150x150" alt="Additional Image" class="w-1/5 h-auto">
+      <p class="ml-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat, nunc eget commodo pellentesque, risus metus commodo ipsum, euismod pulvinar ipsum erat nec erat.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center mt-5">
+      <p>&copy; 2023 Product Page. All rights reserved.</p>
+    </footer>
+    <!-- Add Element Text -->
+    <div class="text-center mt-5">
+      <p>Add Element</p>
+    </div>
+  </div>
+</body>
+</html>

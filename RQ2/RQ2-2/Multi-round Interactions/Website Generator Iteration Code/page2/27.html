@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #3B82F6; /* Match the blue color */
+      position: absolute;
+      left: calc(16.66% / 2); /* Adjust position to be under Home */
+      transform: translateX(-50%);
+      top: 100%; /* Position it just below the nav */
+    }
+    .icon-large {
+      font-size: 2rem; /* Increase icon size */
+    }
+    .hover-effect {
+      text-decoration: underline dashed;
+      cursor: pointer;
+    }
+    .hover-effect:hover {
+      color: blue;
+      text-decoration: none;
+    }
+    .extended-button {
+      padding-right: 2rem; /* Extend the right boundary */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white p-6 shadow-md">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold text-center"><strong>Arcana</strong> by HTML5 UP</h1>
+    </div>
+  </header>
+
+  <nav class="text-center bg-black p-4 relative">
+    <div class="container mx-auto">
+      <a href="#" class="mx-4 text-white text-lg">Home</a>
+      <a href="#" class="mx-4 text-gray-400 text-lg">Dropdown</a>
+      <a href="#" class="mx-4 text-gray-400 text-lg">Left Sidebar</a>
+      <a href="#" class="mx-4 text-gray-400 text-lg">Right Sidebar</a>
+      <a href="#" class="mx-4 text-gray-400 text-lg">Two Sidebar</a>
+      <a href="#" class="mx-4 text-gray-400 text-lg">No Sidebar</a>
+    </div>
+    <div class="triangle"></div>
+  </nav>
+
+  <div class="bg-blue-500 h-2"></div>
+
+  <section class="py-0">
+    <div class="container mx-auto relative">
+      <div class="w-full mx-auto">
+        <img src="banner.jpg" alt="PIC1" class="w-full h-72 object-cover">
+      </div>
+      <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white flex justify-center items-center py-4">
+        <p class="text-lg mr-4"><strong>Arcana:</strong> A responsive site template freebie by <span class="underline decoration-dashed">HTML5 UP</span></p>
+        <button class="py-2 px-4 bg-blue-500 text-white rounded">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto py-8 bg-white">
+    <div class="flex justify-around items-center">
+      <div class="text-center">
+        <div class="w-24 h-24 border-2 border-gray-300 rounded-full flex items-center justify-center p-2">
+          <div class="w-20 h-20 bg-blue-400 rounded-full flex items-center justify-center">
+            <a href="#" class="text-white icon-large"><i class="fas fa-paper-plane"></i></a>
+          </div>
+        </div>
+        <h3 class="mt-6 text-xl font-bold">This Is Important</h3>
+        <p class="mt-4 text-lg">Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-24 h-24 border-2 border-gray-300 rounded-full flex items-center justify-center p-2">
+          <div class="w-20 h-20 bg-blue-400 rounded-full flex items-center justify-center">
+            <a href="#" class="text-white icon-large"><i class="fas fa-pencil-alt"></i></a>
+          </div>
+        </div>
+        <h3 class="mt-6 text-xl font-bold">Also Important</h3>
+        <p class="mt-4 text-lg">Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-24 h-24 border-2 border-gray-300 rounded-full flex items-center justify-center p-2">
+          <div class="w-20 h-20 bg-blue-400 rounded-full flex items-center justify-center">
+            <a href="#" class="text-white icon-large"><i class="fas fa-wrench"></i></a>
+          </div>
+        </div>
+        <h3 class="mt-6 text-xl font-bold">Probably Important</h3>
+        <p class="mt-4 text-lg">Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-200 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">A gigantic heading you can use for whatever</h2>
+      <hr class="border-gray-600 my-4">
+      <p class="text-xl text-gray-600">With a much smaller subtitle hanging out just below it</p>
+      <div class="grid grid-cols-2 gap-8 mt-8 bg-white py-8">
+        <div class="flex flex-col items-start">
+          <div class="flex items-center mb-4">
+            <img src="pic01.jpg" alt="PIC2-1" class="mx-auto">
+            <div class="ml-4">
+              <h3 class="text-2xl font-bold">The First Thing</h3>
+              <p class="mt-4 text-lg">Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <img src="pic02.jpg" alt="PIC2-2" class="mx-auto">
+            <div class="ml-4">
+              <h3 class="text-2xl font-bold">The Second Thing</h3>
+              <p class="mt-4 text-lg">Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="flex items-center mb-4">
+            <img src="pic03.jpg" alt="PIC2-3" class="mx-auto">
+            <div class="ml-4">
+              <h3 class="text-2xl font-bold">The Third Thing</h3>
+              <p class="mt-4 text-lg">Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <img src="pic04.jpg" alt="PIC2-4" class="mx-auto">
+            <div class="ml-4">
+              <h3 class="text-2xl font-bold">The Fourth Thing</h3>
+              <p class="mt-4 text-lg">Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full py-12 flex justify-center items-center bg-blue-400">
+    <h2 class="text-2xl font-bold mr-4 text-white">Are you ready to continue your quest?</h2>
+    <button class="py-2 px-4 bg-white text-black rounded">Insert Coin</button>
+  </section>
+
+  <section class="bg-gray-200 py-12">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Links to Stuff</h3>
+          <p class="mt-4 hover-effect">Mattis et quis rutrum</p>
+          <p class="mt-4 hover-effect">Suspendisse amet varius</p>
+          <p class="mt-4 hover-effect">Sed et dapibus quis</p>
+          <p class="mt-4 hover-effect">Rutrum accumsan dolor</p>
+          <p class="mt-4 hover-effect">Mattis rutrum accumsan</p>
+          <p class="mt-4 hover-effect">Suspendisse varius nibh</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">More Links to Stuff</h3>
+          <p class="mt-4 hover-effect">Sed et dapibus mattis</p>
+          <p class="mt-4 hover-effect">Duis neque nisi dapibus</p>
+          <p class="mt-4 hover-effect">Sed et dapibus quis</p>
+          <p class="mt-4 hover-effect">Rutrum accumsan sed</p>
+          <p class="mt-4 hover-effect">Mattis et sed accumsan</p>
+          <p class="mt-4 hover-effect">Duis neque nisi sed</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Get In Touch</h3>
+          <div class="flex space-x-4 mt-4">
+            <input type="text" class="border p-2 w-full rounded-lg" placeholder="Name">
+            <input type="text" class="border p-2 w-full rounded-lg" placeholder="Email">
+          </div>
+          <textarea class="border p-2 w-full mt-4 rounded-lg" rows="4" placeholder="Message"></textarea>
+          <button class="py-2 px-4 bg-black text-white rounded mt-4 font-bold extended-button">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-200 py-8">
+    <div class="container mx-auto text-center">
+      <div class="mt-4">
+        <a href="#" class="text-blue-500 mx-2">Link4-1</a>
+        <a href="#" class="text-blue-500 mx-2">Link4-2</a>
+        <a href="#" class="text-blue-500 mx-2">Link4-3</a>
+        <a href="#" class="text-blue-500 mx-2">Link4-4</a>
+        <a href="#" class="text-blue-500 mx-2">Link4-5</a>
+      </div>
+      <p class="mt-4">Text4</p>
+    </div>
+  </footer>
+</body>
+
+</html>

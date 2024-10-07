@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .header, .main-content, .footer {
+            margin-bottom: 20px;
+        }
+        .header, .footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .title, .title-page {
+            margin-bottom: 10px;
+        }
+        .video {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .post-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .post {
+            width: 48%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .form-section, .large-section {
+            margin-bottom: 20px;
+        }
+        .form-section input[type="text"], .form-section button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .checkbox-list, .radio-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li, .radio-list li {
+            margin-bottom: 10px;
+        }
+        .large-image {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<a href="#">Add Element</a> <!-- 添加超链接 -->
+<div class="title">Title</div>
+<div class="title-page">Title Page</div>
+</header>
+<section class="main-content">
+<div class="video">
+<!-- 删除 "Play" 按钮并移到页面底部 -->
+</div>
+<div class="post-list">
+<div class="post">
+<!-- 删除第一张图片 -->
+<h2>Title Post</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<h2>Title Post</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<h2>Title Post</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<h2>Title Post</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+</div>
+<div class="large-section">
+<div class="large-image"></div>
+</div>
+<div class="form-section">
+<input placeholder="Label" type="text"/>
+<input placeholder="Label" type="text"/>
+<button>Button</button>
+</div>
+<ul class="checkbox-list">
+<li><input type="checkbox"/> Checkbox 1</li>
+<li><input type="checkbox"/> Checkbox 2</li>
+<li><input checked="" type="checkbox"/> Checkbox 3</li>
+<li><input type="checkbox"/> Checkbox 4</li>
+</ul>
+<ul class="radio-list">
+<li><input name="radio" type="radio"/> Radio 1</li>
+<li><input name="radio" type="radio"/> Radio 2</li>
+<li><input name="radio" type="radio"/> Radio 3</li>
+<li><input name="radio" type="radio"/> Radio 4</li>
+</ul>
+</section>
+<footer class="footer">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+<button id="6_1">Play</button> <!-- 将 "Play" 按钮移到页面底部 -->
+</footer>
+</div>
+</body>
+</html>

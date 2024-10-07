@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-image {
+            flex: 1;
+            padding: 10px;
+        }
+        .product-details {
+            flex: 1;
+            padding: 10px;
+        }
+        .product-thumbnails {
+            display: flex;
+            justify-content: space-between;
+        }
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+        }
+        .team-member {
+            display: flex;
+            margin-top: 20px;
+        }
+        .member-image {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin-right: 10px;
+        }
+        .shipping-info {
+            margin-top: 20px;
+        }
+        .shipping-info input, .shipping-info select {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin: 5px;
+        }
+        .shipping-info button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .product-details h2 {
+            font-size: 50px; /* 将第一个文本的字体大小更改为50px */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="product">
+<div class="product-image">
+<button style="width: 100%; height: 100%;">Modify Element</button> <!-- 将图片更改为按钮 -->
+<div class="product-thumbnails">
+<div class="thumbnail"></div>
+<div class="thumbnail"></div>
+<div class="thumbnail"></div>
+<div class="thumbnail"></div>
+</div>
+</div>
+<div class="product-details">
+<h2>Product NAME</h2>
+<p>Manufacturer</p>
+<p>Color</p>
+<input name="color" type="radio" value="red"/> Red<br/>
+<input name="color" type="radio" value="blue"/> Blue<br/>
+<input name="color" type="radio" value="white"/> White<br/>
+<p>Price: $100</p>
+<p>Old Price: $200</p>
+<button>Add to Cart</button>
+</div>
+</div>
+<div class="team">
+<div class="team-member">
+<div class="member-image"></div>
+<div>
+<p>Mate One</p>
+<p id="6_2_1_1_1">Job Title</p>
+</div>
+</div>
+<div class="team-member">
+<div class="member-image"></div>
+<div>
+<p>Mate Two</p>
+<p id="6_2_1_2_1">Job Title</p>
+</div>
+</div>
+<div class="team-member">
+<div class="member-image"></div>
+<div style="display: flex; align-items: center;">
+<p id="6_2_2_3_1">Mate Three</p>
+<p id="6_2_1_3_1" style="margin-left: 10px;">Job Title</p> <!-- 将"Job Title"放置在"Mate Three"右侧 -->
+</div>
+</div>
+</div>
+<div class="shipping-info">
+<h2>Shipping Info</h2>
+<input placeholder="First Name" type="text"/>
+<input placeholder="Last Name" type="text"/><br/>
+<input placeholder="Phone" type="text"/>
+<input placeholder="Email" type="email"/><br/>
+<select>
+<option>Country</option>
+<option>United States</option>
+</select>
+<select>
+<option>State</option>
+<option>Choose</option>
+</select><br/>
+<input placeholder="City" type="text"/>
+<input placeholder="Zip Code" type="text"/><br/>
+<button>Back</button>
+<button>Next Step</button>
+</div>
+</div>
+</body>
+</html>

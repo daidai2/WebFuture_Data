@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up and Shipping Info</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<header>
+<nav>
+<a href="#">Sign Up</a>
+<a href="#">Login</a>
+</nav>
+</header>
+<form class="signup-form">
+<h2>Sign Up</h2>
+<div class="form-group">
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel"/>
+</div>
+<div class="form-group">
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div class="form-group">
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" type="password"/>
+</div>
+<div class="form-group">
+<input id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<button type="submit">Sign Up</button>
+</form>
+<form class="shipping-info-form">
+<h2>Shipping Info</h2>
+<div class="form-group">
+<label for="ship-first-name" id="6_2_2_1_1">First Name</label>
+<input id="ship-first-name" name="ship-first-name" type="text"/>
+<label for="zip" id="6_2_1_1_1" style="margin-left: 10px;">Zip Code</label>
+<input id="zip" name="zip" type="text"/>
+</div>
+<div class="form-group">
+<label for="ship-last-name">Last Name</label>
+<input id="ship-last-name" name="ship-last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="ship-phone">Phone</label>
+<input id="ship-phone" name="ship-phone" type="tel"/>
+</div>
+<div class="form-group">
+<label for="ship-email">E-mail</label>
+<input id="ship-email" name="ship-email" type="email"/>
+</div>
+<div class="form-group">
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="United States">United States</option>
+<!-- Add other options as needed -->
+</select>
+</div>
+<div class="form-group">
+<label for="state">State</label>
+<select id="state" name="state">
+<option value="Choose">Choose</option>
+<!-- Add other options as needed -->
+</select>
+</div>
+<div class="form-group">
+<label for="city">City</label>
+<input id="city" name="city" type="text"/>
+</div>
+<button type="button">Back</button>
+<h2>Next Step</h2>
+</form>
+</div>
+</body>
+</html>

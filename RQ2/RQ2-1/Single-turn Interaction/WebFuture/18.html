@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Write Review</title>
+  <style>
+    .bg-[canvas] {
+      background-color: #C6A7B1;
+    }
+
+    .bg-[canvas]:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 p-6" id="body1">
+  <header class="bg-white p-4 shadow mb-6" id="body1-header1">
+    <h1 class="text-2xl font-bold" id="body1-header1-h11">Write Review</h1>
+  </header>
+
+  <main class="space-y-6" id="body1-main1">
+    <!-- Product Information -->
+    <div class="bg-white p-4 shadow flex items-center" id="body1-main1-div1">
+
+      <div id="body1-main1-div1-div2">
+        <p class="text-xl font-semibold" id="body1-main1-div1-div2-p1">Product Name</p>
+        <p class="text-lg text-gray-500" id="body1-main1-div1-div2-p2">$Price</p>
+        <div class="flex items-center space-x-2 mt-2" id="body1-main1-div1-div2-div3">
+          <p class="text-lg font-medium" id="body1-main1-div1-div2-div3-p3">★★★★★</p>
+          <p class="text-sm text-gray-500" id="body1-main1-div1-div2-div3-p4">45 reviews</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rate Product -->
+    <section class="bg-white p-4 shadow" id="body1-main1-section1">
+      <h2 class="text-xl font-bold mb-4" id="body1-main1-section1-h21">Rate Product</h2>
+      <div class="flex items-center space-x-2" id="body1-main1-section1-div4">
+        <div id="body1-main1-section1-div4-div5">
+          <span class="text-2xl cursor-pointer" id="body1-main1-section1-div4-div5-span1">★</span>
+          <span class="text-2xl cursor-pointer" id="body1-main1-section1-div4-div5-span2">★</span>
+          <span class="text-2xl cursor-pointer" id="body1-main1-section1-div4-div5-span3">★</span>
+          <span class="text-2xl cursor-pointer" id="body1-main1-section1-div4-div5-span4">★</span>
+          <span class="text-2xl cursor-pointer" id="body1-main1-section1-div4-div5-span5">★</span>
+        </div>
+        <p class="text-lg text-red-500" id="body1-main1-section1-div4-p5">Bad :(</p>
+      </div>
+    </section>
+
+    <!-- Review Form -->
+    <section class="bg-white p-4 shadow space-y-4" id="body1-main1-section2">
+      <input type="text" placeholder="Headline" class="w-full px-4 py-2 border border-gray-400 rounded" id="body1-main1-section2-input1">
+      <textarea placeholder="Review" class="w-full px-4 py-2 border border-gray-400 rounded h-32" id="body1-main1-section2-textarea1"></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-main1-section2-button1">Submit</button>
+    </section>
+
+    <!-- Large Image Placeholder -->
+    <div class="bg-white p-4 shadow" id="body1-main1-div6">
+      <img src="https://placehold.co/600x400" alt="Large Product Image" class="w-full h-auto" id="body1-main1-div6-img2">
+    </div>
+
+    <!-- Product Details -->
+    <section class="bg-white p-4 shadow" id="body1-main1-section3">
+      <p class="text-3xl font-semibold" id="body1-main1-section3-p6">$24.9</p>
+      <h2 class="text-2xl font-bold mt-2" id="body1-main1-section3-h22">Product Title</h2>
+    </section>
+
+    <!-- Check Items -->
+    <section class="bg-white p-4 shadow" id="body1-main1-section4">
+      <h3 class="text-xl font-bold mb-4" id="body1-main1-section4-h31">Check items:</h3>
+      <div class="space-y-2" id="body1-main1-section4-div7">
+        <label class="flex items-center space-x-2" id="body1-main1-section4-div7-label1">
+          <input type="checkbox" class="form-checkbox" id="body1-main1-section4-div7-label1-input2">
+          <span id="body1-main1-section4-div7-label1-span6">Check item 1</span>
+        </label>
+        <label class="flex items-center space-x-2" id="body1-main1-section4-div7-label2">
+          <input type="checkbox" class="form-checkbox" id="body1-main1-section4-div7-label2-input3">
+          <span id="body1-main1-section4-div7-label2-span7">Check item 2</span>
+        </label>
+        <label class="flex items-center space-x-2" id="body1-main1-section4-div7-label3">
+          <input type="checkbox" class="form-checkbox" id="body1-main1-section4-div7-label3-input4">
+          <span id="body1-main1-section4-div7-label3-span8">Check item 3</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Buy Now Button -->
+    <div class="bg-white p-4 shadow flex justify-center" id="body1-main1-div8">
+      <button class="bg-[canvas] text-white px-4 py-2 rounded" id="body1-main1-div8-button2" onclick="addInteraction()">Buy Now</button>
+    </div>
+
+    <!-- Additional Form Elements -->
+    <div class="bg-white p-4 shadow" id="body1-main1-div9">
+      <input type="text" placeholder="Title" class="w-full px-4 py-2 border border-gray-400 rounded mb-4" id="body1-main1-div9-input5">
+      <fieldset class="mb-4" id="body1-main1-div9-fieldset1">
+        <legend class="text-lg font-semibold mb-2" id="body1-main1-div9-fieldset1-legend1">Radio Buttons</legend>
+        <div class="space-y-2" id="body1-main1-div9-fieldset1-div10">
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset1-div10-label4">
+            <input type="radio" name="relevance" class="form-radio" id="body1-main1-div9-fieldset1-div10-label4-input6">
+            <span id="body1-main1-div9-fieldset1-div10-label4-span9">Not relevant</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset1-div10-label5">
+            <input type="radio" name="relevance" class="form-radio" id="body1-main1-div9-fieldset1-div10-label5-input7">
+            <span id="body1-main1-div9-fieldset1-div10-label5-span10">Low</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset1-div10-label6">
+            <input type="radio" name="relevance" class="form-radio" id="body1-main1-div9-fieldset1-div10-label6-input8">
+            <span id="body1-main1-div9-fieldset1-div10-label6-span11">Medium</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset1-div10-label7">
+            <input type="radio" name="relevance" class="form-radio" id="body1-main1-div9-fieldset1-div10-label7-input9">
+            <span id="body1-main1-div9-fieldset1-div10-label7-span12">High</span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="mb-4" id="body1-main1-div9-fieldset2">
+        <legend class="text-lg font-semibold mb-2" id="body1-main1-div9-fieldset2-legend2">Choices</legend>
+        <div class="grid grid-cols-2 gap-2" id="body1-main1-div9-fieldset2-div11">
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label8">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label8-input10">
+            <span id="body1-main1-div9-fieldset2-div11-label8-span13">Choice 1</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label9">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label9-input11">
+            <span id="body1-main1-div9-fieldset2-div11-label9-span14">Choice 2</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label10">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label10-input12">
+            <span id="body1-main1-div9-fieldset2-div11-label10-span15">Choice 3</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label11">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label11-input13">
+            <span id="body1-main1-div9-fieldset2-div11-label11-span16">Choice 4</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label12">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label12-input14">
+            <span id="body1-main1-div9-fieldset2-div11-label12-span17">Choice 5</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label13">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label13-input15">
+            <span id="body1-main1-div9-fieldset2-div11-label13-span18">Choice 6</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label14">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label14-input16">
+            <span id="body1-main1-div9-fieldset2-div11-label14-span19">Choice 7</span>
+          </label>
+          <label class="flex items-center space-x-2" id="body1-main1-div9-fieldset2-div11-label15">
+            <input type="checkbox" class="form-checkbox" id="body1-main1-div9-fieldset2-div11-label15-input17">
+            <span id="body1-main1-div9-fieldset2-div11-label15-span20">Choice 8</span>
+          </label>
+        </div>
+      </fieldset>
+      <div class="flex space-x-4" id="body1-main1-div9-div12">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-main1-div9-div12-button3">OK</button>
+        <button class="bg-red-500 text-white px-4 py-2 rounded" id="body1-main1-div9-div12-button4">Cancel</button>
+      </div>
+    </div>
+  </main>
+
+
+  <script data-custom-scripts="true">
+    function addInteraction() {
+      const newElement = document.createElement('p');
+      newElement.id = 'Parent_body1-main1_Next_null_Queue_1';
+      newElement.name = 'add';
+      newElement.textContent = 'Add Interaction';
+      document.getElementById('body1-main1').appendChild(newElement);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-first-button {
+      background-color: #C6A7B1;
+    }
+    .bg-first-button:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <div>
+      <a href="#" class="text-blue-500 underline mr-4">Login</a>
+      <a href="#" class="text-blue-500 underline">Sign Up</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-4">
+    <!-- Login Section -->
+    <section class="bg-white p-6 rounded shadow my-6">
+      <h1 class="text-2xl font-bold mb-4">Login</h1>
+      <form id="login-form">
+        <div class="mb-4">
+          <label class="block mb-2">Login</label>
+          <!-- Removed the first input field as per the requirements -->
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2">Password</label>
+          <input type="password" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div class="mb-4 flex items-center">
+          <input type="checkbox" id="remember" class="mr-2">
+          <label for="remember" class="mr-4">Remember me</label>
+          <a href="#" class="text-blue-500 underline">Forget Password</a>
+        </div>
+        <button type="button" id="login-button" class="bg-first-button text-white p-2 rounded w-full">LOGIN</button>
+      </form>
+    </section>
+
+    <!-- Title and Featured Image Section -->
+    <section class="my-6">
+      <h1 class="text-3xl font-bold mb-4">Title</h1>
+      <h2 class="text-xl font-bold mb-4">Title Page</h2>
+      <div class="flex justify-between mb-6">
+        <img src="https://placehold.co/400x300" alt="Video Thumbnail" class="w-1/2">
+        <div class="w-1/2 text-center flex items-center justify-center">
+          <button class="bg-blue-500 text-white p-2 rounded-full w-16 h-16 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+              <path d="M5.884 4.147l6 3.5a1 1 0 0 1 0 1.706l-6 3.5A1 1 0 0 1 5 12.5V3.5a1 1 0 0 1 1.884-.353z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="mb-6">
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-1/2 p-2">
+          <article class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-bold mb-2">Title</h2>
+            <img src="https://placehold.co/300x200" alt="Article Thumbnail" class="mb-2">
+            <p>Title text for each grid item</p>
+          </article>
+        </div>
+        <div class="w-1/2 p-2">
+          <article class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-bold mb-2">Title</h2>
+            <img src="https://placehold.co/300x200" alt="Article Thumbnail" class="mb-2">
+            <p>Title text for each grid item</p>
+          </article>
+        </div>
+        <div class="w-1/2 p-2">
+          <article class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-bold mb-2">Title</h2>
+            <img src="https://placehold.co/300x200" alt="Article Thumbnail" class="mb-2">
+            <p>Title text for each grid item</p>
+          </article>
+        </div>
+        <div class="w-1/2 p-2">
+          <article class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-bold mb-2">Title</h2>
+            <img src="https://placehold.co/300x200" alt="Article Thumbnail" class="mb-2">
+            <p>Title text for each grid item</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Banner Section -->
+    <section class="mb-6">
+      <img src="https://placehold.co/1200x300" alt="Banner Image">
+    </section>
+
+    <!-- Text Section -->
+    <section class="mb-6">
+      <div class="flex flex-wrap -mx-2 text-center">
+        <div class="w-1/3 p-2">
+          <p>Title text for each grid item</p>
+        </div>
+        <div class="w-1/3 p-2">
+          <p>Title text for each grid item</p>
+        </div>
+        <div class="w-1/3 p-2">
+          <p>Title text for each grid item</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="mb-6">
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-1/2 p-2">
+          <div class="mb-4">
+            <label class="block mb-2">Label</label>
+            <input type="text" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2">Label</label>
+            <input type="text" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+          <button class="bg-blue-500 text-white p-2 rounded w-full">Button</button>
+        </div>
+        <div class="w-1/2 p-2">
+          <div class="mb-4">
+            <input type="checkbox" id="checkbox1" class="mr-2">
+            <label for="checkbox1">Checkbox 1</label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" id="checkbox2" class="mr-2">
+            <label for="checkbox2">Checkbox 2</label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" id="checkbox3" class="mr-2">
+            <label for="checkbox3">Checkbox 3</label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" id="checkbox4" class="mr-2">
+            <label for="checkbox4">Checkbox 4</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radio Button Section -->
+    <section class="mb-6">
+      <div class="mb-4">
+        <input type="radio" id="radio1" name="options" class="mr-2">
+        <label for="radio1">Radio 1</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" id="radio2" name="options" class="mr-2">
+        <label for="radio2">Radio 2</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" id="radio3" name="options" class="mr-2">
+        <label for="radio3">Radio 3</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" id="radio4" name="options" class="mr-2">
+        <label for="radio4">Radio 4</label>
+      </div>
+    </section>
+
+    <!-- Single Content Section -->
+    <section class="mb-6">
+      <img src="https://placehold.co/400x400" alt="Test Image" class="mb-2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra nisl nec enim commodo dapibus. Fusce nec eros quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra nisl nec enim commodo dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra nisl nec enim commodo dapibus.</p>
+    </section>
+
+    <!-- New Section for Add Interaction -->
+    <section id="interaction-section" class="mb-6 hidden">
+      <p class="text-center text-xl font-bold">Add Interaction</p>
+    </section>
+  </main>
+
+  <footer class="bg-white shadow p-4">
+    <div class="text-center">
+      <p>Footer Content</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('login-button').addEventListener('click', function() {
+      // Add new section for interaction
+      document.getElementById('interaction-section').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

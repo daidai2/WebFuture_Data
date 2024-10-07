@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .dropdown, .checkbox-group, .form-group, .button-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            background-color: #C6A7B1;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .button-group button:hover {
+            background-color: #FFDEE9;
+        }
+        .dropdown button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<!-- Programming Languages Section -->
+<div class="section">
+<h2>Select Programming Language</h2>
+<div class="dropdown">
+<label for="languages">Languages:</label>
+<select id="languages">
+<option value="csharp">C#</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="vb">Visual Basic</option>
+</select>
+</div>
+<div class="checkbox-group">
+<label><input name="lang" type="checkbox" value="csharp"/> C#</label>
+<label><input name="lang" type="checkbox" value="java"/> Java</label>
+<label><input name="lang" type="checkbox" value="php"/> PHP</label>
+<label><input name="lang" type="checkbox" value="vb"/> Visual Basic</label>
+</div>
+</div>
+<!-- Shipping Information Section -->
+<div class="section">
+<h2>Shipping Info</h2>
+<div class="form-group">
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel"/>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div class="form-group">
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="us">United States</option>
+<!-- Add more countries as needed -->
+</select>
+</div>
+<div class="form-group">
+<label for="state">State</label>
+<select id="state" name="state">
+<option value="ca">California</option>
+<!-- Add more states as needed -->
+</select>
+</div>
+<div class="form-group">
+<label for="city">City</label>
+<input id="city" name="city" type="text"/>
+</div>
+<div class="form-group">
+<label for="zip">Zip Code</label>
+<input id="zip" name="zip" type="text"/>
+</div>
+<div class="button-group">
+<button onclick="addInteraction()" type="button">Back</button>
+<button type="submit">Next Step</button>
+</div>
+</div>
+<!-- New Interaction Section -->
+<div id="new-interaction"></div>
+<!-- Moved Get Drop Down Here Button -->
+<div class="section">
+<button id="6_1" onclick="getDropDownValue()">Get Drop Down Here</button>
+</div>
+</div>
+<script>
+    function getDropDownValue() {
+        const select = document.getElementById('languages');
+        alert('Selected language: ' + select.value);
+    }
+
+    function addInteraction() {
+        const newInteractionDiv = document.getElementById('new-interaction');
+        const interactionElement = document.createElement('div');
+        interactionElement.innerText = 'Add Interaction';
+        newInteractionDiv.appendChild(interactionElement);
+    }
+</script>
+</body>
+</html>

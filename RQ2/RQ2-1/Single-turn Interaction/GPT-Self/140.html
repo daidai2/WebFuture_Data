@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>线框图示例页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 1356px;
+            height: 624px;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .dropdown, .button, .checkbox, .textbox, .radiobutton, .img-placeholder {
+            margin-bottom: 20px;
+        }
+        .img-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+        .bottom-text {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="dropdown">
+        <label for="languages" class="first-text">编程语言:</label>
+        <select id="languages">
+            <option value="csharp">C#</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="vb">Visual Basic</option>
+        </select>
+    </div>
+
+    <div class="button">
+        <button onclick="showAlert()">Get Drop Down Here</button>
+    </div>
+
+    <div class="checkbox">
+        <label><input type="checkbox" name="language" value="csharp"> C#</label>
+        <label><input type="checkbox" name="language" value="java"> Java</label>
+        <label><input type="checkbox" name="language" value="php"> PHP</label>
+        <label><input type="checkbox" name="language" value="vb"> Visual Basic</label>
+    </div>
+
+    <div class="img-placeholder">图片占位符</div>
+
+    <div class="textbox">
+        <input type="text" placeholder="文本输入框1">
+        <input type="text" placeholder="文本输入框2">
+    </div>
+
+    <div class="button">
+        <button>按钮</button>
+    </div>
+
+    <div class="checkbox">
+        <label><input type="checkbox"> 选项1</label>
+        <label><input type="checkbox" checked> 选项2</label>
+    </div>
+
+    <div class="radiobutton">
+        <label><input type="radio" name="option"> 选项A</label>
+        <label><input type="radio" name="option" checked> 选项B</label>
+        <label><input type="radio" name="option"> 选项C</label>
+    </div>
+
+    <div class="button-group">
+        <button>Back</button>
+        <button>BACK</button>
+        <button>Button</button>
+    </div>
+    
+    <div class="bottom-text">Add Element</div>
+</div>
+
+<script>
+    function showAlert() {
+        alert('Add Interaction');
+    }
+</script>
+
+</body>
+</html>

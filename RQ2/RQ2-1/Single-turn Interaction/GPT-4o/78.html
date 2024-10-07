@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Change the first image to a button
+      var firstImage = document.querySelector("header img");
+      if (firstImage) {
+        var button = document.createElement("button");
+        button.textContent = "Modify Element";
+        button.classList.add("bg-blue-500", "text-white", "px-4", "py-2");
+        firstImage.replaceWith(button);
+      }
+
+      // Add a text 'Add Element' at the bottom of the page
+      var addElementText = document.createElement("p");
+      addElementText.textContent = "Add Element";
+      document.body.appendChild(addElementText);
+
+      // Add event listener to the button to add new module
+      var mainButton = document.querySelector("button.w-full.bg-blue-500");
+      if (mainButton) {
+        mainButton.addEventListener("click", function() {
+          var newModule = document.createElement("div");
+          newModule.classList.add("p-5", "bg-white", "mt-5", "shadow");
+          var newTextElement = document.createElement("p");
+          newTextElement.textContent = "Add Interaction";
+          newModule.appendChild(newTextElement);
+          document.body.appendChild(newModule);
+        });
+      }
+    });
+  </script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header Section -->
+  <header class="p-5 bg-white shadow">
+    <div class="flex items-center mb-5">
+      <img src="https://placehold.co/100x100" alt="Person 1" class="w-24 h-24 mr-4">
+      <div>
+        <h2 class="text-xl font-bold">Name One</h2>
+        <p class="text-gray-700">Job Title</p>
+      </div>
+    </div>
+    <div class="flex items-center mb-5">
+      <div class="flex-1"></div>
+      <div class="flex items-center">
+        <div class="mr-4">
+          <h2 class="text-xl font-bold">Name Two</h2>
+          <p class="text-gray-700">Job Title</p>
+        </div>
+        <img src="https://placehold.co/100x100" alt="Person 2" class="w-24 h-24">
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="https://placehold.co/100x100" alt="Person 3" class="w-24 h-24 mr-4">
+      <div>
+        <h2 class="text-xl font-bold">Name Three</h2>
+        <p class="text-gray-700">Job Title</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Checkout Section -->
+  <section id="checkout" class="p-5 bg-white mt-5 shadow">
+    <h2 class="text-2xl font-bold mb-4">Checkout</h2>
+
+    <!-- Shipping Address -->
+    <div class="shipping-address mb-6">
+      <h3 class="text-xl font-semibold mb-4">Shipping Address</h3>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="first-name" class="block mb-1">First Name</label>
+          <input type="text" id="first-name" class="w-full border px-2 py-1">
+        </div>
+        <div>
+          <label for="last-name" class="block mb-1">Last Name</label>
+          <input type="text" id="last-name" class="w-full border px-2 py-1">
+        </div>
+        <div class="col-span-2">
+          <label for="company" class="block mb-1">Company</label>
+          <input type="text" id="company" class="w-full border px-2 py-1">
+        </div>
+      </div>
+    </div>
+
+    <!-- Shipping Service -->
+    <div class="shipping-service mb-6">
+      <h3 class="text-xl font-semibold mb-4">Shipping Service</h3>
+      <div>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="shipping-service" class="mr-2" checked>
+          <span>Standard - 14 days - $6.59</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="shipping-service" class="mr-2">
+          <span>Expedited - 7 days - $1.97</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="shipping-service" class="mr-2">
+          <span>Express - 3 days - $19.97</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Large Image -->
+    <div class="large-image mb-6">
+      <img src="https://placehold.co/600x200" alt="Large Promotional" class="w-full">
+    </div>
+
+    <!-- Text Blocks -->
+    <article class="text-blocks mb-6">
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
+
+    <!-- Form Elements -->
+    <section id="form-elements" class="mb-6">
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="form-label-1" class="block mb-1">Label</label>
+          <input type="text" id="form-label-1" class="w-full border px-2 py-1">
+        </div>
+        <div>
+          <label for="form-label-2" class="block mb-1">Label</label>
+          <input type="text" id="form-label-2" class="w-full border px-2 py-1">
+        </div>
+      </div>
+      <button class="w-full bg-blue-500 text-white px-4 py-2">Button</button>
+    </section>
+
+    <!-- Additional Options -->
+    <section id="additional-options" class="grid grid-cols-2 gap-4">
+      <!-- Checkboxes -->
+      <div>
+        <h3 class="text-lg font-medium">Checkboxes</h3>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2">
+          <span>Checkbox 1</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2">
+          <span>Checkbox 2</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2">
+          <span>Checkbox 3</span>
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2">
+          <span>Checkbox 4</span>
+        </label>
+      </div>
+
+      <!-- Radio Buttons -->
+      <div>
+        <h3 class="text-lg font-medium">Radio Options</h3>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="additional-radio" class="mr-2">
+          <span>Radio 1</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="additional-radio" class="mr-2">
+          <span>Radio 2</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="additional-radio" class="mr-2">
+          <span>Radio 3</span>
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="radio" name="additional-radio" class="mr-2">
+          <span>Radio 4</span>
+        </label>
+        <div class="flex items-center mt-4">
+          <img src="https://placehold.co/100x100" alt="Additional Placeholder" class="w-24 h-24 mr-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec facilisis sapien.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-white p-4 shadow-sm">
+    <h1 class="text-2xl font-bold">Title</h1>
+    <p class="text-sm text-gray-600">Subtitle</p>
+    <nav class="mt-4">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-blue-500">Nav Item 1</a></li>
+        <li><a href="#" class="text-blue-500">Nav Item 2</a></li>
+        <li><a href="#" class="text-blue-500">Nav Item 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="p-4">
+    <section class="flex justify-between">
+      <div class="w-1/2">
+        <h2 class="text-xl font-bold">Page Title</h2>
+        <p class="text-gray-600">This is a brief description beneath the page title.</p>
+      </div>
+      <div class="w-1/2">
+        <div class="relative">
+          <img src="https://placehold.co/300x200" alt="Video" class="w-full">
+          <button class="absolute inset-0 flex items-center justify-center text-white text-3xl">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-3 gap-4 mt-4">
+      <article class="bg-white p-4 shadow-sm">
+        <h3 class="font-bold">Article Title 1</h3>
+        <img src="https://placehold.co/150x100" alt="Article 1" class="my-2">
+        <p class="text-gray-600">Brief text for article 1.</p>
+      </article>
+      <article class="bg-white p-4 shadow-sm">
+        <h3 class="font-bold">Article Title 2</h3>
+        <img src="https://placehold.co/150x100" alt="Article 2" class="my-2">
+        <p class="text-gray-600">Brief text for article 2.</p>
+      </article>
+      <article class="bg-white p-4 shadow-sm">
+        <h3 class="font-bold">Article Title 3</h3>
+        <img src="https://placehold.co/150x100" alt="Article 3" class="my-2">
+        <p class="text-gray-600">Brief text for article 3.</p>
+      </article>
+    </section>
+
+    <section class="flex justify-center gap-4 mt-4">
+      <img src="https://placehold.co/300x200" alt="Large Image 1">
+      <img src="https://placehold.co/300x200" alt="Large Image 2">
+    </section>
+
+    <section class="mt-4">
+      <div class="flex">
+        <div class="w-1/2">
+          <p class="mb-4">Some detailed text goes here.</p>
+          <p class="mb-4">Another line of text.</p>
+          <p class="mb-4">More details in the text.</p>
+        </div>
+        <div class="w-1/2">
+          <img src="https://placehold.co/100x100" alt="Small Image" class="float-right mb-4">
+        </div>
+      </div>
+    </section>
+
+    <section class="flex items-center gap-4 mt-4">
+      <input type="text" class="border border-gray-300 p-2" placeholder="Input Field">
+      <label><input type="checkbox"> Checkbox</label>
+    </section>
+
+    <section class="mt-4">
+      <button class="bg-blue-500 text-white p-2">Button</button>
+    </section>
+  </main>
+
+  <section class="bg-white p-4 mt-8 shadow-sm">
+    <h2 class="text-xl font-bold">Shipping Info</h2>
+    <form class="grid grid-cols-2 gap-4 mt-4">
+      <div>
+        <label>First Name</label>
+        <input type="text" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type="text" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div>
+        <label>Phone</label>
+        <input type="text" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div>
+        <label>E-mail</label>
+        <input type="text" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div>
+        <label>Country</label>
+        <select class="border border-gray-300 p-2 w-full">
+          <option>United States</option>
+        </select>
+      </div>
+      <div>
+        <label>State</label>
+        <select class="border border-gray-300 p-2 w-full">
+          <option>Choose</option>
+        </select>
+      </div>
+      <div>
+        <label>City</label>
+        <input type="text" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div>
+        <label>Zip Code</label>
+        <input type="text" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div class="col-span-2 flex justify-between mt-4">
+        <button class="bg-gray-500 text-white p-2">Back</button>
+        <button class="bg-blue-500 text-white p-2">Next Step</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+    Footer Content
+  </footer>
+
+<script>
+  document.querySelector('button.bg-blue-500').addEventListener('click', function() {
+    const newModule = document.createElement('div');
+    newModule.classList.add('p-4', 'mt-4', 'bg-white', 'shadow-sm');
+    newModule.innerHTML = '<p>Add Interaction</p>';
+    document.querySelector('main').appendChild(newModule);
+  });
+</script>
+
+<script>
+  document.querySelector('img').outerHTML = '<button class="bg-blue-500 text-white p-2">Modify Element</button>';
+</script>
+
+<script>
+  const button = document.querySelector('button.bg-blue-500');
+  button.style.backgroundColor = '#C6A7B1';
+  button.addEventListener('mouseover', function() {
+    button.style.backgroundColor = '#FFDEE9';
+  });
+  button.addEventListener('mouseout', function() {
+    button.style.backgroundColor = '#C6A7B1';
+  });
+</script>
+</body>
+
+</html>

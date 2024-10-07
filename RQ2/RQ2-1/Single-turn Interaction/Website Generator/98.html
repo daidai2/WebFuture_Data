@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Wireframe Page</title>
+<style>
+    .inline-label {
+      display: flex;
+      align-items: center;
+    }
+    .inline-label label:first-child {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-4">
+<div class="max-w-md mx-auto bg-white p-6 mt-6 rounded shadow">
+<nav class="flex justify-between mb-4">
+<a class="text-blue-500" href="#">Login</a>
+<a class="text-blue-500" href="#">Sign Up</a>
+</nav>
+<form>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="login">Login</label>
+<input class="w-full p-2 border rounded" id="login" type="text"/>
+</div>
+<div class="mb-4 inline-label">
+<label class="block text-gray-700 mb-2" for="password" id="6_2_2_2_1">Password</label>
+<label class="block text-gray-700 mb-2" for="label1" id="6_2_1_1_1">Label 1</label>
+<input class="w-full p-2 border rounded" id="password" type="password"/>
+</div>
+<div class="mb-4 flex items-center">
+<input class="mr-2" id="remember" type="checkbox"/>
+<label class="text-gray-700" for="remember">Remember me</label>
+</div>
+<div class="mb-4">
+<a class="text-blue-500" href="#">Forgot Password</a>
+</div>
+<button class="w-full bg-blue-500 text-white p-2 rounded">LOGIN</button>
+</form>
+</div>
+<div class="max-w-md mx-auto bg-white p-6 mt-6 rounded shadow">
+<div class="mb-4 flex justify-between">
+<div class="w-1/2 pr-2">
+<label class="block text-gray-700 mb-2" for="dropdown">C Sharp</label>
+<select class="w-full p-2 border rounded">
+<option>C#</option>
+<option>Java</option>
+<option>PHP</option>
+<option>Visual Basic</option>
+</select>
+</div>
+<div class="w-1/2 pl-2">
+<button class="w-full bg-blue-500 text-white p-2 rounded" onclick="addInteraction()" type="button">Get Drop Down Here</button>
+</div>
+</div>
+<form>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="checkboxes">Programming Languages</label>
+<div class="flex flex-wrap gap-4">
+<div>
+<input class="mr-2" id="csharp" type="checkbox"/>
+<label for="csharp">C#</label>
+</div>
+<div>
+<input class="mr-2" id="java" type="checkbox"/>
+<label for="java">Java</label>
+</div>
+<div>
+<input class="mr-2" id="php" type="checkbox"/>
+<label for="php">PHP</label>
+</div>
+<div>
+<input class="mr-2" id="vb" type="checkbox"/>
+<label for="vb">Visual Basic</label>
+</div>
+</div>
+</div>
+<div class="mb-4">
+<button class="w-full bg-green-500 text-white p-2 rounded" type="button">Modify Element</button>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="text1" id="6_2_1_2_1">Label 1</label>
+<input class="w-full p-2 border rounded" id="text1" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="text2">Label 2</label>
+<input class="w-full p-2 border rounded" id="text2" type="text"/>
+</div>
+<div class="mb-4">
+<div>
+<input class="mr-2" id="checkbox1" type="checkbox"/>
+<label for="checkbox1">Checkbox 1</label>
+</div>
+<div>
+<input class="mr-2" id="checkbox2" type="checkbox"/>
+<label for="checkbox2">Checkbox 2</label>
+</div>
+</div>
+<div class="mb-4">
+<div>
+<input class="mr-2" id="radio1" name="radio" type="radio"/>
+<label for="radio1">RadioButton 1</label>
+</div>
+<div>
+<input class="mr-2" id="radio2" name="radio" type="radio"/>
+<label for="radio2">RadioButton 2</label>
+</div>
+</div>
+<button class="w-full bg-blue-500 text-white p-2 rounded">Button</button>
+<div class="mt-4">
+<img alt="Image Placeholder" class="w-full rounded" src="https://placehold.co/250x250"/>
+</div>
+</form>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const firstImage = document.querySelector("img");
+      if (firstImage) {
+        const button = document.createElement("button");
+        button.className = "w-full bg-green-500 text-white p-2 rounded";
+        button.textContent = "Modify Element";
+        firstImage.replaceWith(button);
+      }
+    });
+
+    function addInteraction() {
+      const newDiv = document.createElement("div");
+      newDiv.className = "max-w-md mx-auto bg-white p-6 mt-6 rounded shadow";
+      const newText = document.createElement("p");
+      newText.textContent = "Add Interaction";
+      newDiv.appendChild(newText);
+      document.body.appendChild(newDiv);
+    }
+  </script>
+</body>
+</html>

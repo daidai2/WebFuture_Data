@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const button1 = document.querySelector('button.bg-blue-500');
+      button1.addEventListener('click', function () {
+        alert('Add Interaction');
+        button1.classList.remove('bg-blue-500');
+        button1.classList.add('bg-[#C6A7B1]', 'hover:bg-[#FFDEE9]');
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 p-4">
+
+  <!-- First Section -->
+  <div class="image-section mb-8">
+    <div class="flex space-x-4 mb-4">
+      <img src="https://placehold.co/100x100" alt="Image 1" class="w-24 h-24">
+      <img src="https://placehold.co/100x100" alt="Image 2" class="w-24 h-24">
+    </div>
+    <div class="space-y-2 mb-4">
+      <p>Text Line 1</p>
+      <p>Text Line 2</p>
+      <p>Text Line 3</p>
+    </div>
+    <img src="https://placehold.co/100x100" alt="Image 3" class="w-24 h-24 mb-4">
+    <div class="space-y-2">
+      <p>Text Line 4</p>
+      <p>Text Line 5</p>
+      <p>Text Line 6</p>
+    </div>
+  </div>
+
+  <!-- Second Section -->
+  <div class="button-check mb-8">
+    <div class="flex items-center space-x-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
+      <input type="checkbox">
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Button 2</button>
+  </div>
+
+  <!-- Third Section (Product Page) -->
+  <article class="product-page mb-8">
+    <img src="https://placehold.co/200x200" alt="Main Product" class="w-48 h-48 mb-4">
+    <div class="flex space-x-2 mb-4">
+      <img src="https://placehold.co/50x50" alt="Thumbnail 1" class="w-12 h-12">
+      <img src="https://placehold.co/50x50" alt="Thumbnail 2" class="w-12 h-12">
+      <img src="https://placehold.co/50x50" alt="Thumbnail 3" class="w-12 h-12">
+    </div>
+    <div class="product-details">
+      <p>Product Name</p>
+      <p>Manufacturer</p>
+      <p>Color:</p>
+      <label><input type="radio" name="color" value="red"> Red</label>
+      <label><input type="radio" name="color" value="blue"> Blue</label>
+      <label><input type="radio" name="color" value="white"> White</label>
+      <p>Price: $400</p>
+      <p>Discounted Price: $200</p>
+      <button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Add to Cart</button>
+    </div>
+  </article>
+
+  <!-- Fourth Section -->
+  <section class="additional-info">
+    <div class="flex space-x-4 mb-4">
+      <img src="https://placehold.co/100x100" alt="Additional Info" class="w-24 h-24">
+      <div class="space-y-2">
+        <p>Text Line 1</p>
+        <p>Text Line 2</p>
+      </div>
+    </div>
+    <label class="block mb-2"><input type="checkbox"> Label 1</label>
+    <label class="block mb-2"><input type="checkbox"> Label 2</label>
+    <label class="block mb-2"><input type="radio" name="option"> Option 1</label>
+    <label class="block mb-2"><input type="radio" name="option"> Option 2</label>
+    <img src="https://placehold.co/100x100" alt="Logo" class="w-24 h-24 mt-4">
+  </section>
+
+  <!-- Added Text -->
+  <p class="mt-8">Add Element</p>
+
+</body>
+</html>

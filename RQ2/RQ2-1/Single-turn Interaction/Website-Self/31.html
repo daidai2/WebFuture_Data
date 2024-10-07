@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header-image {
+            width: 100%;
+            height: 300px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+        .text-block {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .checkbox-group,
+        .radio-group {
+            margin-bottom: 20px;
+        }
+        .checkbox-group input,
+        .radio-group input {
+            margin-right: 10px;
+        }
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-group label {
+            margin-bottom: 5px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-image"></div>
+        <a href="#">Add Element</a>
+        <div class="text-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+        </div>
+        <div class="form-group">
+            <label for="input1">Label</label>
+            <input type="text" id="input1" name="input1">
+        </div>
+        <div class="form-group">
+            <label for="input2">Label</label>
+            <input type="text" id="input2" name="input2">
+        </div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="checkbox1"> Checkbox 1</label>
+            <label><input type="checkbox" name="checkbox2"> Checkbox 2</label>
+            <label><input type="checkbox" name="checkbox3" checked> Checkbox 3</label>
+            <label><input type="checkbox" name="checkbox4"> Checkbox 4</label>
+        </div>
+        <div class="radio-group">
+            <label><input type="radio" name="radio" value="1"> Radio 1</label>
+            <label><input type="radio" name="radio" value="2"> Radio 2</label>
+            <label><input type="radio" name="radio" value="3"> Radio 3</label>
+            <label><input type="radio" name="radio" value="4" checked> Radio 4</label>
+        </div>
+        <div class="form-group">
+            <button class="button">Button</button>
+        </div>
+        <div class="header-image"></div>
+        <div class="text-block">
+            <p>Select your payment method:</p>
+            <div class="radio-group">
+                <label><input type="radio" name="payment" value="credit" checked> Credit Card</label>
+                <label><input type="radio" name="payment" value="paypal"> Paypal</label>
+                <label><input type="radio" name="payment" value="bank"> Bank Transfer <span>Radio 3</span></label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number">
+        </div>
+        <div class="form-group">
+            <label for="expiration-date">Expiration Date</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM / YY">
+        </div>
+        <div class="form-group">
+            <label for="ccv">CCV</label>
+            <input type="text" id="ccv" name="ccv">
+        </div>
+        <h2 class="form-group">Complete</h2>
+    </div>
+</body>
+</html>

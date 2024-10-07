@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Fidelity Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .header, .product, .checkboxes, .buttons {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+        .full-width {
+            width: 100%;
+        }
+        .checkboxes div, .buttons div {
+            margin: 10px 0;
+        }
+        .header button:first-of-type {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Add Element</a>
+    <div class="container">
+        <div class="header">
+            <button>Sign Up</button>
+            <button>Login</button>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Phone">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to Terms and Conditions</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="product">
+            <img src="product-image.jpg" alt="Product Image" class="full-width">
+            <h2>$24.9</h2>
+            <h3>Product Title</h3>
+        </div>
+        <div class="checkboxes">
+            <h4>Check items:</h4>
+            <div>
+                <input type="checkbox" id="item1">
+                <label for="item1">Check item 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="item2">
+                <label for="item2">Check item 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="item3">
+                <label for="item3">Check item 3</label>
+            </div>
+            <button>Buy Now</button>
+        </div>
+        <div class="other-options">
+            <h4>Other options:</h4>
+            <div>
+                <input type="checkbox" id="opt1">
+                <label for="opt1">Option 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="opt2">
+                <label for="opt2">Option 2</label>
+            </div>
+            <div>
+                <input type="radio" name="radioGroup" id="radio1">
+                <label for="radio1">Radio 1</label>
+            </div>
+            <div>
+                <input type="radio" name="radioGroup" id="radio2">
+                <label for="radio2">Radio 2</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <div>
+                <button>Back</button>
+                <button>Button</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

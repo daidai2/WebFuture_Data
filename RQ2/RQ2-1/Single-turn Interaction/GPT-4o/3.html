@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<!-- Header Section -->
+<header class="bg-white p-4 shadow-md">
+<div class="flex justify-between items-center">
+<a class="text-indigo-600" href="#">Add Element</a>
+<div class="flex justify-center">
+<img alt="Logo" class="w-full max-w-xs" src="https://placehold.co/350x150"/>
+</div>
+</div>
+</header>
+<!-- Navigation Section -->
+<nav class="bg-gray-200 py-2 shadow">
+<div class="container mx-auto flex justify-center space-x-4">
+<a class="text-gray-600" href="#">Home</a>
+<a class="text-gray-600" href="#">About</a>
+<a class="text-gray-600" href="#">Services</a>
+<a class="text-gray-600" href="#">Contact</a>
+</div>
+</nav>
+<!-- Main Content Section -->
+<main class="container mx-auto p-4">
+<!-- Content Section -->
+<section class="bg-white p-4 shadow-md mb-4" id="ContentSection">
+<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+<p class="mb-2">Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+<p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+</section>
+<!-- Payment Section -->
+<section class="bg-white p-4 shadow-md mb-4" id="PaymentSection">
+<h2 class="text-lg font-semibold mb-4">Select your payment method</h2>
+<form>
+<div class="mb-4">
+<label class="inline-flex items-center">
+<input class="form-radio text-indigo-600" name="payment_method" type="radio" value="credit_card"/>
+<span class="ml-2">Credit Card</span>
+</label>
+<label class="inline-flex items-center ml-4">
+<input class="form-radio text-indigo-600" name="payment_method" type="radio" value="paypal"/>
+<span class="ml-2">PayPal</span>
+</label>
+<label class="inline-flex items-center ml-4" id="6_2_1_1_1">
+<input class="form-radio text-indigo-600" name="payment_method" type="radio" value="bank_transfer"/>
+<span class="ml-2" id="6_2_1_2_1">Bank Transfer</span>
+</label>
+</div>
+<h3 class="text-md font-semibold mb-2">Enter your data</h3>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="card_number">Card Number</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="card_number" type="text"/>
+</div>
+<div class="flex space-x-4 mb-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="expiry_month">Expiration Month</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="expiry_month" type="text"/>
+</div>
+<div class="flex items-center">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="expiry_year" id="6_2_2_3_1">Expiration Year</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="expiry_year" type="text"/>
+</div>
+<span class="ml-4" id="6_2_1_3_1">Bank Transfer</span>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="cvv">CVV</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="cvv" type="text"/>
+</div>
+</div>
+<h2 class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md">Complete</h2>
+</form>
+</section>
+<!-- Shipping Info Section -->
+<section class="bg-white p-4 shadow-md mb-4" id="ShippingInfoSection">
+<h2 class="text-lg font-semibold mb-4">Shipping Info</h2>
+<form>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="first_name">First Name</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="first_name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="last_name">Last Name</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="last_name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="phone">Phone</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="phone" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="email">E-mail</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="country">Country</label>
+<select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="country">
+<option>United States</option>
+<option>Canada</option>
+<option>Mexico</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="state">State</label>
+<select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="state">
+<option>Choose</option>
+<option>California</option>
+<option>Texas</option>
+<option>Florida</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="city">City</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="city" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="zip_code">Zip Code</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" id="zip_code" type="text"/>
+</div>
+</div>
+<div class="flex justify-between">
+<button class="bg-gray-300 hover:bg-gray-400 text-gray-700 rounded-md py-2 px-4" type="button">Back</button>
+<button class="bg-indigo-600 hover:bg-indigo-700 text-white rounded-md py-2 px-4" type="submit">Next Step</button>
+</div>
+</form>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .login-section,
+        .dropdown-section,
+        .checkbox-section,
+        .form-section {
+            margin-bottom: 40px;
+        }
+        .login-section input[type="text"],
+        .login-section input[type="password"],
+        .form-section input[type="text"],
+        .form-section input[type="password"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        .login-section input[type="checkbox"],
+        .form-section input[type="checkbox"],
+        .form-section input[type="radio"] {
+            margin-right: 10px;
+        }
+        .login-section button,
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-section .checkbox-group,
+        .form-section .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section .checkbox-group label,
+        .form-section .radio-group label {
+            display: flex;
+            align-items: center;
+        }
+        .wireframe {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .new-module {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .container h2:first-of-type {
+            font-size: 50px;
+        }
+    </style>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginButton = document.querySelector('.login-section button');
+            loginButton.addEventListener('click', function() {
+                const newModule = document.createElement('div');
+                newModule.className = 'new-module';
+                newModule.innerText = 'Add Interaction';
+                document.querySelector('.container').appendChild(newModule);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+<div class="dropdown-section">
+<h2>Dropdown</h2>
+<label for="language">Get Drop Down Here</label>
+<select id="language" name="language">
+<option value="csharp">C#</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="vb">Visual Basic</option>
+</select>
+</div>
+<div class="checkbox-section">
+<h2>Checkboxes</h2>
+<label><input name="language" type="checkbox" value="csharp"/> C#</label>
+<label><input name="language" type="checkbox" value="java"/> Java</label>
+<label><input name="language" type="checkbox" value="php"/> PHP</label>
+<label><input name="language" type="checkbox" value="vb"/> Visual Basic</label>
+</div>
+<div class="form-section">
+<h2>Form Elements</h2>
+<div class="wireframe">Image Placeholder</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+<label for="label1">Label</label>
+<input id="label1" name="label1" type="text"/>
+<label for="label2">Label</label>
+<input id="label2" name="label2" type="password"/>
+<button type="button">Button</button>
+<div class="radio-group">
+<label><input name="radio" type="radio" value="1"/> Radio 1</label>
+<label><input name="radio" type="radio" value="2"/> Radio 2</label>
+<label><input name="radio" type="radio" value="3"/> Radio 3</label>
+<label><input name="radio" type="radio" value="4"/> Radio 4</label>
+</div>
+<div class="checkbox-group">
+<label><input name="checkbox" type="checkbox" value="1"/> Checkbox 1</label>
+<label><input name="checkbox" type="checkbox" value="2"/> Checkbox 2</label>
+<label><input name="checkbox" type="checkbox" value="3"/> Checkbox 3</label>
+<label><input name="checkbox" type="checkbox" value="4"/> Checkbox 4</label>
+</div>
+</div>
+<div class="login-section">
+<h2>Login</h2>
+<label for="username">Login</label>
+<input id="username" name="username" type="text"/>
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+<label>
+<input id="remember-me" name="remember-me" type="checkbox"/> Remember me
+            </label>
+<a href="#">Forgot Password</a>
+<button id="6_1" type="button">Login</button>
+</div>
+</div>
+</body>
+</html>

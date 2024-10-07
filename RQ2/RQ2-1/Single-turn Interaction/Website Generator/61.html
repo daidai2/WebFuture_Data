@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Wireframe Example</title>
+</head>
+<body class="bg-gray-100 p-6">
+<section class="bg-white p-6 rounded-lg shadow-md mb-6" id="payment-method">
+<h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+<form>
+<div class="mb-4">
+<label class="block mb-2">
+<input class="mr-2" name="paymentMethod" type="radio" value="creditCard"/> Credit Card
+        </label>
+<label class="block mb-2">
+<input class="mr-2" name="paymentMethod" type="radio" value="paypal"/> PayPal
+        </label>
+<label class="block mb-2">
+<input class="mr-2" name="paymentMethod" type="radio" value="bankTransfer"/> Bank Transfer
+        </label>
+</div>
+<div class="mb-4">
+<label class="block mb-2" for="cardNumber">Card Number</label>
+<input class="w-full p-2 border rounded-md" id="cardNumber" placeholder="Card Number" type="text"/>
+</div>
+<div class="mb-4 flex">
+<div class="mr-2">
+<label class="block mb-2" for="expirationMonth">Expiration Date</label>
+<input class="w-12 p-2 border rounded-md" id="expirationMonth" placeholder="MM" type="text"/>
+</div>
+<span class="self-center mx-2">/</span>
+<div class="mr-2">
+<label class="sr-only" for="expirationYear">Expiration Year</label>
+<input class="w-12 p-2 border rounded-md" id="expirationYear" placeholder="YY" type="text"/>
+</div>
+<div>
+<label class="block mb-2" for="cvv">CVV</label>
+<input class="w-16 p-2 border rounded-md" id="cvv" placeholder="CVV" type="text"/>
+</div>
+</div>
+<button class="w-full bg-[#C6A7B1] text-white p-2 rounded-md hover:bg-[#FFDEE9]" type="button">Complete</button>
+</form>
+</section>
+<section class="bg-white p-6 rounded-lg shadow-md mb-6" id="additional-info">
+<div class="mb-4">
+<h3 class="text-lg font-bold mb-2">Mobility Solutions &amp; Daily Living Aids</h3>
+<p class="mb-2">Making Life Easier</p>
+</div>
+<div class="flex space-x-4 mb-4">
+<div class="w-1/3" id="wheelchair-repair">
+<h4 class="text-md font-bold mb-2">Wheelchair Repair</h4>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+</div>
+<div class="w-1/3" id="community-contracts">
+<h4 class="text-md font-bold mb-2">Community Contracts</h4>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+</div>
+<div class="w-1/3" id="additional-info">
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md">Modify Element</button>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md">Find out More</button>
+</div>
+</div>
+</section>
+<form class="bg-white p-6 rounded-lg shadow-md">
+<fieldset class="mb-4">
+<legend class="text-lg font-bold mb-4">Formulario de envío</legend>
+<div class="mb-4">
+<label class="block mb-2">Medio transporte</label>
+<label class="block mb-1">
+<input class="mr-2" id="terrestre" name="medioTransporte" type="radio" value="terrestre"/> Terrestre
+        </label>
+<label class="block mb-1">
+<input class="mr-2" id="aereo" name="medioTransporte" type="radio" value="aereo"/> Aéreo
+        </label>
+<label class="block mb-1">
+<input class="mr-2" id="maritimo" name="medioTransporte" type="radio" value="maritimo"/> Marítimo
+        </label>
+</div>
+<fieldset class="mb-4">
+<legend class="text-md font-medium mb-2">Forma de pago</legend>
+<label class="block mb-1">
+<input class="mr-2" id="tarjeta" name="formaPago" type="radio" value="tarjeta"/> Tarjeta (Crédito/Debito)
+        </label>
+<label class="block mb-1">
+<input class="mr-2" id="transferencia" name="formaPago" type="radio" value="transferencia"/> Transferencia bancaria
+        </label>
+<label class="block mb-1">
+<input class="mr-2" id="metalico" name="formaPago" type="radio" value="metalico"/> Metálico
+        </label>
+</fieldset>
+<div class="mb-4">
+<label class="block mb-2" for="direccion">Dirección</label>
+<input class="w-full p-2 border rounded-md" id="direccion" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block mb-2" for="pais">País</label>
+<select class="w-full p-2 border rounded-md" id="pais">
+<option value="option1">Option 1</option>
+</select>
+</div>
+<button class="w-full bg-blue-500 text-white p-2 rounded-md" type="button">Aceptar</button>
+</fieldset>
+</form>
+</body>
+</html>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md" id="6_1">Find out More</button>

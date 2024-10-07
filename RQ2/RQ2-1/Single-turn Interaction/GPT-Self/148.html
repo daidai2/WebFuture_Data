@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>低保真线框图实现</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .title {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .title h1 {
+            margin: 0;
+            font-size: 50px; /* 修改字体大小为50px */
+        }
+        .title h2 {
+            margin: 0 0 0 20px; /* 增加左边距以调整间距 */
+            font-size: 2em;
+            color: #666;
+        }
+        .links {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: 20px 0;
+        }
+        .links .link {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 1em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .links .link:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="link">Add Element</a> <!-- 在页面顶部添加超链接 -->
+    </div>
+    <div class="title">
+        <h1>Title1</h1>
+        <h2>Title1-1</h2>
+    </div>
+    <div class="links">
+        <a href="#" class="link">Link1-1</a>
+        <a href="#" class="link">Link1-2</a>
+        <a href="#" class="link">Link1-3</a>
+        <a href="#" class="link">Link1-4</a>
+        <a href="#" class="link">Link1-5</a>
+    </div>
+    <div class="text">
+        Text1
+    </div>
+</body>
+</html>

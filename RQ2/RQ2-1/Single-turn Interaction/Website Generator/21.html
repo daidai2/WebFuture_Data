@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .hover\:bg-custom-hover:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+<!-- Header -->
+<header class="bg-white shadow p-4 flex justify-between">
+<a class="text-blue-500" href="#">Login</a>
+<a class="text-blue-500" href="#">Sign Up</a>
+</header>
+<!-- Login Section -->
+<section class="p-8" id="login-section">
+<div class="bg-white p-6 rounded shadow-md max-w-md mx-auto">
+<h2 class="text-2xl mb-4">Login</h2>
+<form>
+<!-- Removed the first text input field for 'username' -->
+<div class="mb-4">
+<label class="block mb-1" for="password">Password</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="password" type="password"/>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="remember-me" type="checkbox"/>
+<label for="remember-me">Remember me</label>
+</div>
+<div class="mb-4">
+<a class="text-blue-500" href="#">Forgot Password</a>
+</div>
+<!-- Button moved to the bottom of the page -->
+</form>
+</div>
+</section>
+<!-- Home Content Section -->
+<section class="p-8" id="home-content">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl mb-4">Title</h2>
+<div class="bg-white p-6 rounded shadow-md mb-8">
+<h3 class="text-2xl mb-2">Title Page</h3>
+<img alt="Video Placeholder" class="w-full h-64 mb-4 object-cover" src="https://placehold.co/600x400"/>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+<article class="bg-gray-200 p-4 rounded shadow">
+<h4 class="text-xl mb-2">Title</h4>
+<img alt="Placeholder Image" class="mb-2" src="https://placehold.co/200x150"/>
+<p>Title Post</p>
+</article>
+<article class="bg-gray-200 p-4 rounded shadow">
+<h4 class="text-xl mb-2">Title</h4>
+<img alt="Placeholder Image" class="mb-2" src="https://placehold.co/200x150"/>
+<p>Title Post</p>
+</article>
+<article class="bg-gray-200 p-4 rounded shadow">
+<h4 class="text-xl mb-2">Title</h4>
+<img alt="Placeholder Image" class="mb-2" src="https://placehold.co/200x150"/>
+<p>Title Post</p>
+</article>
+<article class="bg-gray-200 p-4 rounded shadow">
+<h4 class="text-xl mb-2">Title</h4>
+<img alt="Placeholder Image" class="mb-2" src="https://placehold.co/200x150"/>
+<p>Title Post</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- Form Sidebar Section -->
+<aside class="p-8">
+<div class="bg-white p-6 rounded shadow-md max-w-md mx-auto">
+<form>
+<div class="mb-4">
+<label class="block mb-1" for="form-title">Title</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="form-title" type="text"/>
+</div>
+<div class="mb-4">
+<p class="mb-1">Radio Buttons</p>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="not-relevant" name="relevance" type="radio"/>
+<label for="not-relevant">Not relevant</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="low" name="relevance" type="radio"/>
+<label for="low">Low</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="medium" name="relevance" type="radio"/>
+<label for="medium">Medium</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="high" name="relevance" type="radio"/>
+<label for="high">High</label>
+</div>
+</div>
+<div class="mb-4">
+<p class="mb-1">Checkboxes</p>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="choice1" type="checkbox"/>
+<label for="choice1">Choice 1</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="choice2" type="checkbox"/>
+<label for="choice2">Choice 2</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="choice3" type="checkbox"/>
+<label for="choice3">Choice 3</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="choice4" type="checkbox"/>
+<label for="choice4">Choice 4</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="choice5" type="checkbox"/>
+<label for="choice5">Choice 5</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="choice6" type="checkbox"/>
+<label for="choice6">Choice 6</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="choice7" type="checkbox"/>
+<label for="choice7">Choice 7</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="choice8" type="checkbox"/>
+<label for="choice8">Choice 8</label>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="bg-blue-500 text-white p-2 rounded mr-2" type="submit">OK</button>
+<button class="bg-gray-500 text-white p-2 rounded" type="button">Cancel</button>
+</div>
+</form>
+</div>
+</aside>
+<!-- Footer -->
+<footer class="bg-white shadow p-4 flex justify-center mt-8">
+<span>Footer content goes here</span>
+</footer>
+<!-- Login Button moved to the bottom of the page -->
+<div class="flex justify-center mt-4">
+<button class="w-full bg-[#C6A7B1] text-white p-2 rounded hover:bg-custom-hover" id="6_1" type="submit">Login</button>
+</div>
+</body>
+</html>

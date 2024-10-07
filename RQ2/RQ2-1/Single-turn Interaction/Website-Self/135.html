@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Layout</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video {
+            width: 100%;
+            text-align: center;
+        }
+        .video iframe {
+            width: 80%;
+            height: 400px;
+        }
+        .post {
+            width: 48%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .post button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .post button:hover {
+            background-color: #0056b3;
+        }
+        .form-section {
+            margin-top: 40px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .form-section form input,
+        .form-section form textarea,
+        .form-section form button {
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .form-section form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section form button:hover {
+            background-color: #0056b3;
+        }
+        .checkbox-group,
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkbox-group label,
+        .radio-group label {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group label input,
+        .radio-group label input {
+            margin-right: 10px;
+        }
+        .new-module {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Title Page</h1>
+<p>Subtitle or description goes here.</p>
+</div>
+<div class="main-content">
+<div class="video">
+<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<button type="button">Modify Element</button>
+<p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet erat placerat, placerat sapien eu, bibendum ligula.</p>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<img alt="Placeholder Image" src="https://via.placeholder.com/400x200"/>
+<p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet erat placerat, placerat sapien eu, bibendum ligula.</p>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<img alt="Placeholder Image" src="https://via.placeholder.com/400x200"/>
+<p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet erat placerat, placerat sapien eu, bibendum ligula.</p>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<img alt="Placeholder Image" src="https://via.placeholder.com/400x200"/>
+<p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet erat placerat, placerat sapien eu, bibendum ligula.</p>
+</div>
+</div>
+<div class="form-section">
+<h2>Form Section</h2>
+<form action="#" id="mainForm" method="POST">
+<input placeholder="Enter text here" type="text"/>
+<textarea placeholder="Enter message here"></textarea>
+<div class="checkbox-group">
+<label><input type="checkbox"/> Option 1</label>
+<label><input type="checkbox"/> Option 2</label>
+<label><input type="checkbox"/> Option 3</label>
+</div>
+<div class="radio-group">
+<label><input name="radio-group" type="radio"/> Option A</label>
+<label><input name="radio-group" type="radio"/> Option B</label>
+<label><input name="radio-group" type="radio"/> Option C</label>
+</div>
+<button id="6_1" type="submit">Submit</button>
+</form>
+</div>
+</div>
+<script>
+    document.getElementById('submitButton').addEventListener('click', function(event) {
+        event.preventDefault();
+        var newModule = document.createElement('div');
+        newModule.className = 'new-module';
+        newModule.textContent = 'Add Interaction';
+        document.body.appendChild(newModule);
+    });
+</script>
+</body>
+</html>

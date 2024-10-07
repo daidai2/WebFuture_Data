@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .shadow-box {
+      box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+    }
+
+    .border-rounded {
+      border: 2px solid #D3D3D3;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body class="bg-white p-6"> <!-- Page background remains white -->
+  <!-- Header Section -->
+  <header class="bg-white p-6 flex flex-col items-center text-center">
+    <div class="flex space-x-8 mb-4">
+      <!-- Links color changed to gray -->
+      <a href="#" class="text-gray-600">Menu</a>
+      <a href="#" class="text-gray-600">Service</a>
+      <a href="#" class="text-gray-600">Work</a>
+      <a href="#" class="text-gray-600">Client</a>
+      <a href="#" class="text-gray-600">About</a>
+    </div>
+    <h1 class="text-4xl font-bold mb-2 text-orange-500" style="text-shadow: 2px 2px 5px gray;">Title1</h1>
+    <p class="text-lg text-gray-600">Text1</p> <!-- Text1 color changed to gray -->
+  </header>
+
+  <!-- Gray divider with slightly increased length -->
+  <div class="bg-white py-4 flex justify-center">
+    <div class="w-2/3"> <!-- Length increased -->
+      <div class="border-t-2 border-gray-300"></div>
+      <div class="border-t-2 border-gray-300 mt-2"></div>
+    </div>
+  </div>
+
+  <!-- Main Content Section -->
+  <section class="bg-white p-6 mb-6">
+    <h2 class="text-3xl font-bold mb-4 text-center">Title2</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 text-center">
+        <img src="pic01.jpg" alt="IMG1" class="mx-auto mb-2"> <!-- Changed to pic01.jpg -->
+        <h3 class="text-xl font-semibold mb-2 text-gray-600">Title2-1</h3>
+        <p class="text-gray-500">Text2-1</p>
+      </div>
+      <div class="p-4 text-center">
+        <img src="pic02.jpg" alt="IMG2" class="mx-auto mb-2"> <!-- Changed to pic02.jpg -->
+        <h3 class="text-xl font-semibold mb-2 text-gray-600">Title2-2</h3>
+        <p class="text-gray-500">Text2-2</p>
+      </div>
+      <div class="p-4 text-center">
+        <img src="pic03.jpg" alt="IMG3" class="mx-auto mb-2"> <!-- Changed to pic03.jpg -->
+        <h3 class="text-xl font-semibold mb-2 text-gray-600">Title2-3</h3>
+        <p class="text-gray-500">Text2-3</p>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button class="bg-[#ED7769] text-white px-8 py-3 rounded">Button</button>
+    </div>
+  </section>
+
+  <!-- Section 2: Title3 area with banner.jpg as background -->
+  <section class="bg-cover bg-center p-6 mb-6 text-center" style="background-image: url('banner.jpg'); width: 100%; height: 300px; background-position: center;"> <!-- Ensure the background does not overlap Title2 -->
+    <h2 class="text-3xl font-bold mb-4 text-white" style="position: relative; top: 50%; transform: translateY(-50%);">Title3</h2> <!-- Title centered vertically and horizontally -->
+  </section>
+
+  <!-- Section 3 -->
+  <main class="container mx-auto mt-6 grid grid-cols-3 gap-4">
+    <!-- Left Section: Title4-1 and Title4-2 -->
+    <div class="space-y-6 col-span-2">
+      <!-- Title4-1 Subsection -->
+      <div class="bg-white p-4">
+        <h3 class="text-2xl font-semibold">Title4-1</h3>
+        <img src="pic04.jpg" alt="IMG4-1" class="w-full my-2"> <!-- Changed to pic04.jpg -->
+        <h4 class="text-xl font-semibold">Title4-1-1</h4>
+        <p>Text4-1</p>
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-1</button>
+      </div>
+      
+      <!-- Gray double-line divider between Title4-1 and Title4-2 -->
+      <div class="bg-white py-4 flex justify-center">
+        <div class="w-2/3">
+          <div class="border-t-2 border-gray-300"></div>
+          <div class="border-t-2 border-gray-300 mt-2"></div>
+        </div>
+      </div>
+
+      <!-- Title4-2 Subsection -->
+      <div class="bg-white p-4">
+        <h3 class="text-2xl font-semibold">Title4-2</h3>
+        <img src="pic05.jpg" alt="IMG4-2" class="w-full my-2"> <!-- Changed to pic05.jpg -->
+        <h4 class="text-xl font-semibold">Title4-2-1</h4>
+        <p>Text4-2</p>
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-2</button>
+      </div>
+    </div>
+
+    <!-- Right Section: InfoBox1-InfoBox5, one-column layout -->
+    <div class="space-y-6">
+      <!-- InfoBox1 -->
+      <div class="bg-gray-800 text-white rounded-lg shadow-box p-4" style="height: 180px;"> <!-- Dark gray background, white text, rounded corners, shadow added -->
+        <h4 class="text-xl font-semibold">InfoBox1</h4>
+        <h5 class="text-lg font-semibold">Title4-3</h5>
+        <p>Text4-3</p>
+      </div>
+
+      <!-- Gray single-line divider between InfoBox1 and InfoBox2 -->
+      <div class="border-t border-gray-300"></div>
+
+      <!-- InfoBox2 -->
+      <div class="bg-gray-800 text-white rounded-lg shadow-box p-4" style="height: 180px;"> <!-- Dark gray background, white text, rounded corners, shadow added -->
+        <h4 class="text-xl font-semibold">InfoBox2</h4>
+        <h5 class="text-lg font-semibold">Title4-4</h5>
+        <p>Text4-4</p>
+      </div>
+
+      <!-- Gray single-line divider between InfoBox2 and InfoBox3 -->
+      <div class="border-t border-gray-300"></div>
+
+      <!-- InfoBox3 -->
+      <div class="bg-gray-800 text-white rounded-lg shadow-box p-4" style="height: 180px;"> <!-- Dark gray background, white text, rounded corners, shadow added -->
+        <h4 class="text-xl font-semibold">InfoBox3</h4>
+        <h5 class="text-lg font-semibold">Title4-5</h5>
+        <p>Text4-5</p>
+      </div>
+
+      <!-- Gray double-line divider between InfoBox3 and InfoBox4 -->
+      <div class="bg-white py-4 flex justify-center">
+        <div class="w-2/3">
+          <div class="border-t-2 border-gray-300"></div>
+          <div class="border-t-2 border-gray-300 mt-2"></div>
+        </div>
+      </div>
+
+      <!-- InfoBox4 -->
+      <div class="bg-white p-4" style="height: 180px;"> <!-- Background changed to white and height increased -->
+        <h4 class="text-xl font-semibold">InfoBox4</h4>
+        <div class="flex justify-start items-center mt-2">
+          <img src="pic06.jpg" alt="Small IMG4" class="w-16 h-16 mr-4 border-rounded"> <!-- Enlarged image and added rounded border -->
+          <p>Text for InfoBox4</p>
+        </div>
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-4">Button4-2</button>
+      </div>
+
+      <!-- Gray single-line divider between InfoBox4 and InfoBox5 -->
+      <div class="border-t border-gray-300"></div>
+
+      <!-- InfoBox5 -->
+      <div class="bg-white p-4" style="height: 180px;"> <!-- Background changed to white and height increased -->
+        <h4 class="text-xl font-semibold">InfoBox5</h4>
+        <div class="flex justify-start items-center mt-2">
+          <img src="pic07.jpg" alt="Small IMG5" class="w-16 h-16 mr-4 border-rounded"> <!-- Enlarged image and added rounded border -->
+          <p>Text for InfoBox5</p>
+        </div>
+        <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-4">Button4-4</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-200 p-6">
+    <!-- Centered Title5 -->
+    <h4 class="text-xl font-bold mb-4 text-center">Title5</h4>
+
+    <div class="flex justify-between items-center">
+      <!-- Left side: Input fields and Button, aligned with icon height -->
+      <div class="flex flex-col space-y-4 w-1/2">
+        <div class="flex space-x-4">
+          <input type="text" class="border p-2 rounded w-1/2" placeholder="Input1">
+          <input type="text" class="border p-2 rounded w-1/2" placeholder="Input2">
+        </div>
+        <textarea class="border p-2 rounded w-full" placeholder="Textarea for comments or messages"></textarea>
+        <div class="text-left">
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded">Button</button>
+        </div>
+      </div>
+
+      <!-- Right side: Icons -->
+      <div class="grid grid-cols-2 gap-4 items-end w-1/2">
+        <!-- First Column: Icon1 (Double Height) -->
+        <div class="flex flex-col space-y-4">
+          <a href="#" class="bg-gray-200 p-6 rounded-full">Icon1</a>
+          <a href="#" class="bg-gray-200 p-3 rounded-full">Icon2</a>
+          <a href="#" class="bg-gray-200 p-3 rounded-full">Icon3</a>
+        </div>
+        <!-- Second Column: Icon4, Icon5, Icon6, Icon7 (Equal Height) -->
+        <div class="flex flex-col space-y-4">
+          <a href="#" class="bg-gray-200 p-3 rounded-full">Icon4</a>
+          <a href="#" class="bg-gray-200 p-3 rounded-full">Icon5</a>
+          <a href="#" class="bg-gray-200 p-3 rounded-full">Icon6</a>
+          <a href="#" class="bg-gray-200 p-3 rounded-full">Icon7</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Links -->
+    <div class="mt-4 text-center">
+      <a href="#" class="text-blue-500">Link1</a>
+      <span class="mx-2">|</span>
+      <a href="#" class="text-blue-500">Link2</a>
+    </div>
+  </footer>
+</body>
+
+</html>

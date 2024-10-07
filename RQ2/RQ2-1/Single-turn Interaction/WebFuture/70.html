@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 font-sans" id="body1">
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4" id="body1-header1">
+    <div class="container mx-auto flex justify-between items-center" id="body1-header1-div1">
+      <nav id="body1-header1-div1-nav1">
+        <ul class="flex space-x-4" id="body1-header1-div1-nav1-ul1">
+          <li id="body1-header1-div1-nav1-ul1-li1"><a href="#" class="text-gray-700 hover:text-gray-900" id="body1-header1-div1-nav1-ul1-li1-a1" style="font-size: 50px;">Login</a></li>
+          <li id="body1-header1-div1-nav1-ul1-li2"><a href="#" class="text-gray-700 hover:text-gray-900" id="body1-header1-div1-nav1-ul1-li2-a2">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container mx-auto my-8" id="body1-main1">
+    <!-- Login Section -->
+    <section id="body1-main1-section1" class="bg-white p-6 rounded shadow-md mb-8">
+      <form class="login-form" id="body1-main1-section1-form1">
+        <div class="mb-4" id="body1-main1-section1-form1-div2">
+          <label class="block text-gray-700" id="body1-main1-section1-form1-div2-label1">Login</label>
+          <input type="text" class="w-full mt-2 p-2 border rounded" placeholder="Username" id="body1-main1-section1-form1-div2-input1">
+        </div>
+        <div class="mb-4" id="body1-main1-section1-form1-div3">
+          <label class="block text-gray-700" id="body1-main1-section1-form1-div3-label2">Password</label>
+          <input type="password" class="w-full mt-2 p-2 border rounded" placeholder="Password" id="body1-main1-section1-form1-div3-input2">
+        </div>
+        <div class="mb-4 flex items-center" id="body1-main1-section1-form1-div4">
+          <input type="checkbox" class="mr-2" id="body1-main1-section1-form1-div4-input3">
+          <label class="text-gray-700" id="body1-main1-section1-form1-div4-label3">Remember me</label>
+          <a href="#" class="ml-auto text-blue-500 hover:underline" id="body1-main1-section1-form1-div4-a3">Forgot Password</a>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded" id="body1-main1-section1-form1-button1" onclick="addInteraction()">LOGIN</button>
+      </form>
+    </section>
+
+    <!-- Form Options Section -->
+    <section id="body1-main1-section2" class="bg-white p-6 rounded shadow-md">
+      <!-- Dropdown and Checkboxes -->
+      <div class="flex mb-4" id="body1-main1-section2-div5">
+        <div class="dropdown mr-4" id="body1-main1-section2-div5-div6">
+          <label class="block text-gray-700 mb-2" id="body1-main1-section2-div5-div6-label4">C#</label>
+          <input type="checkbox" class="mt-2" id="body1-main1-section2-div5-div6-input4">
+        </div>
+        <div class="dropdown" id="body1-main1-section2-div5-div7">
+          <label class="block text-gray-700 mb-2" id="body1-main1-section2-div5-div7-label5">Get Drop Down Here</label>
+          <select class="mt-2 p-2 border rounded" id="body1-main1-section2-div5-div7-select1">
+            <option value="csharp" id="body1-main1-section2-div5-div7-select1-option1">C#</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Checkboxes Group -->
+      <div class="checkbox-group flex mb-4 space-x-4" id="body1-main1-section2-div8">
+        <label id="body1-main1-section2-div8-label6"><input type="checkbox" class="mr-2" id="body1-main1-section2-div8-label6-input5">C#</label>
+        <label id="body1-main1-section2-div8-label7"><input type="checkbox" class="mr-2" id="body1-main1-section2-div8-label7-input6">Java</label>
+        <label id="body1-main1-section2-div8-label8"><input type="checkbox" class="mr-2" id="body1-main1-section2-div8-label8-input7">PHP</label>
+        <label id="body1-main1-section2-div8-label9"><input type="checkbox" class="mr-2" id="body1-main1-section2-div8-label9-input8">Visual Basic</label>
+      </div>
+
+      <!-- Title and Radio Buttons -->
+      <div class="input-title mb-4" id="body1-main1-section2-div9">
+        <label class="block text-gray-700" id="body1-main1-section2-div9-label10">Title</label>
+        <input type="text" class="w-full mt-2 p-2 border rounded" placeholder="title" id="body1-main1-section2-div9-input9">
+      </div>
+      <div class="radio-buttons mb-4" id="body1-main1-section2-div10">
+        <label class="block mb-2 text-gray-700" id="body1-main1-section2-div10-label11">Radio Buttons</label>
+        <label class="block" id="body1-main1-section2-div10-label12"><input type="radio" name="relevance" class="mr-2" id="body1-main1-section2-div10-label12-input10">Not relevant</label>
+        <label class="block" id="body1-main1-section2-div10-label13"><input type="radio" name="relevance" class="mr-2" id="body1-main1-section2-div10-label13-input11">Low</label>
+        <label class="block" id="body1-main1-section2-div10-label14"><input type="radio" name="relevance" class="mr-2" id="body1-main1-section2-div10-label14-input12">Medium</label>
+        <label class="block" id="body1-main1-section2-div10-label15"><input type="radio" name="relevance" class="mr-2" id="body1-main1-section2-div10-label15-input13">High</label>
+      </div>
+
+      <!-- Check Boxes Group -->
+      <div class="checkbox-list mb-4" id="body1-main1-section2-div11">
+        <label class="block mb-2 text-gray-700" id="body1-main1-section2-div11-label16">Check Boxes</label>
+        <div class="grid grid-cols-2 gap-4" id="body1-main1-section2-div11-div12">
+          <label id="body1-main1-section2-div11-div12-label17"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label17-input14">choice1</label>
+          <label id="body1-main1-section2-div11-div12-label18"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label18-input15">choice2</label>
+          <label id="body1-main1-section2-div11-div12-label19"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label19-input16">choice3</label>
+          <label id="body1-main1-section2-div11-div12-label20"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label20-input17">choice4</label>
+          <label id="body1-main1-section2-div11-div12-label21"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label21-input18">choice5</label>
+          <label id="body1-main1-section2-div11-div12-label22"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label22-input19">choice6</label>
+          <label id="body1-main1-section2-div11-div12-label23"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label23-input20">choice7</label>
+          <label id="body1-main1-section2-div11-div12-label24"><input type="checkbox" class="mr-2" id="body1-main1-section2-div11-div12-label24-input21">choice8</label>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="action-buttons text-right" id="body1-main1-section2-div13">
+        <button class="bg-blue-500 text-white p-2 rounded mr-2" id="body1-main1-section2-div13-button2">OK</button>
+        <button class="bg-gray-500 text-white p-2 rounded" id="body1-main1-section2-div13-button3">Cancel</button>
+      </div>
+    </section>
+  </main>
+
+
+  <script data-custom-scripts="true">
+    function addInteraction() {
+      const newElement = document.createElement('p');
+      newElement.id = 'Parent_body1_Next_null_Queue_1';
+      newElement.name = 'add';
+      newElement.className = 'text-xl p-4';
+      newElement.innerText = 'Add Interaction';
+      document.body.appendChild(newElement);
+    }
+  </script>
+  <p id="Parent_body1_Next_null_Queue_2">Add Element</p>
+</body>
+</html>

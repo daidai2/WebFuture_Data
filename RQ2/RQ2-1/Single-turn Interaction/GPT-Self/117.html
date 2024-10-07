@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-details, .product-options {
+            width: 45%;
+        }
+        .product-thumbnails img {
+            width: 20%;
+            margin-right: 5px;
+        }
+        .product-options {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .mates {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .mate {
+            width: 30%;
+            text-align: center;
+        }
+        .mate img {
+            width: 100%;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+        .form-section div {
+            margin-bottom: 10px;
+        }
+        /* 添加第一个文本的字体大小 */
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Product Page</h1>
+
+    <div class="container">
+        <div class="product-details">
+            <!-- 删除第一张图片 -->
+            <!--<img src="product.jpg" alt="Product Image">-->
+            <div class="product-thumbnails">
+                <img src="thumb1.jpg" alt="Thumbnail 1">
+                <img src="thumb2.jpg" alt="Thumbnail 2">
+                <img src="thumb3.jpg" alt="Thumbnail 3">
+                <img src="thumb4.jpg" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-options">
+            <h2>Product Name</h2>
+            <p>Manufacturer: </p>
+            <p>Color:</p>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">Red</label><br>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">Blue</label><br>
+            <input type="radio" id="white" name="color" value="white">
+            <label for="white">White</label><br><br>
+            <p>Price: $100</p>
+            <p>Old Price: $200</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="mates">
+        <div class="mate">
+            <img src="mate1.jpg" alt="Mate One">
+            <p>Mate One</p>
+            <p>Job Title</p>
+        </div>
+        <div class="mate">
+            <p>Mate Two</p>
+            <p>Job Title</p>
+        </div>
+        <div class="mate">
+            <img src="mate2.jpg" alt="Mate Three">
+            <p>Mate Three</p>
+            <p>Job Title</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Form Section</h2>
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <p>Radio Buttons:</p>
+            <input type="radio" id="not_relevant" name="relevance" value="not_relevant">
+            <label for="not_relevant">Not Relevant</label><br>
+            <input type="radio" id="low" name="relevance" value="low">
+            <label for="low">Low</label><br>
+            <input type="radio" id="medium" name="relevance" value="medium">
+            <label for="medium">Medium</label><br>
+            <input type="radio" id="high" name="relevance" value="high">
+            <label for="high">High</label>
+        </div>
+        <div>
+            <p>Checkboxes:</p>
+            <input type="checkbox" id="choice1" name="choice1">
+            <label for="choice1">Choice 1</label><br>
+            <input type="checkbox" id="choice2" name="choice2" checked>
+            <label for="choice2">Choice 2</label><br>
+            <input type="checkbox" id="choice3" name="choice3">
+            <label for="choice3">Choice 3</label><br>
+            <input type="checkbox" id="choice4" name="choice4">
+            <label for="choice4">Choice 4</label><br>
+            <input type="checkbox" id="choice5" name="choice5" checked>
+            <label for="choice5">Choice 5</label><br>
+            <input type="checkbox" id="choice6" name="choice6">
+            <label for="choice6">Choice 6</label><br>
+            <input type="checkbox" id="choice7" name="choice7">
+            <label for="choice7">Choice 7</label><br>
+            <input type="checkbox" id="choice8" name="choice8" checked>
+            <label for="choice8">Choice 8</label>
+        </div>
+        <div>
+            <h2>OK</h2>
+            <h2>Cancel</h2>
+        </div>
+    </div>
+
+</body>
+</html>

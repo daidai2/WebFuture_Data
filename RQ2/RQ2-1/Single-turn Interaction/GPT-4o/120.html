@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+<header class="mb-6">
+<nav class="pb-6 border-b">
+<ul class="flex justify-between items-center">
+<li><a class="text-blue-500" href="#">Add Element</a></li>
+<div class="flex space-x-4">
+<li><a class="text-blue-500" href="#">Home</a></li>
+<li><a class="text-blue-500" href="#">About</a></li>
+<li><a class="text-blue-500" href="#">Contact</a></li>
+</div>
+</ul>
+</nav>
+</header>
+<section class="bg-white p-6 rounded shadow-md mb-6">
+<h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+<form>
+<div class="mb-4">
+<label class="block mb-2">
+<input class="mr-2" name="payment-method" type="radio" value="credit-card"/>
+          Credit Card
+        </label>
+<label class="block mb-2">
+<input class="mr-2" name="payment-method" type="radio" value="paypal"/>
+          PayPal
+        </label>
+<label class="block mb-4">
+<input class="mr-2" name="payment-method" type="radio" value="bank-transfer"/>
+          Bank Transfer
+        </label>
+</div>
+<h2 class="text-xl font-bold mb-4">Enter your data</h2>
+<div class="mb-4">
+<label class="block mb-2">Card Number</label>
+<input class="w-full p-2 border rounded" type="text"/>
+</div>
+<div class="flex mb-4 space-x-2">
+<div>
+<label class="block mb-2">Expiration Date</label>
+<input class="w-20 p-2 border rounded mr-2" placeholder="MM" type="text"/>
+<input class="w-20 p-2 border rounded" placeholder="YYYY" type="text"/>
+</div>
+<div>
+<label class="block mb-2">CCV</label>
+<input class="w-20 p-2 border rounded" type="text"/>
+</div>
+</div>
+<button class="w-full bg-blue-500 text-white p-2 rounded" type="submit">Complete Payment</button>
+</form>
+</section>
+<section class="bg-white p-6 rounded shadow-md mb-6">
+<nav class="mb-6">
+<ul class="flex space-x-4">
+<li class="cursor-pointer font-bold">Sign Up</li>
+<li class="cursor-pointer">Login</li>
+</ul>
+</nav>
+<form>
+<div class="flex space-x-2 mb-4">
+<div class="w-1/2">
+<label class="block mb-2">Name</label>
+<input class="w-full p-2 border rounded" type="text"/>
+</div>
+<div class="w-1/2">
+<label class="block mb-2">Last Name</label>
+<input class="w-full p-2 border rounded" type="text"/>
+</div>
+</div>
+<div class="flex space-x-2 mb-4">
+<div class="w-1/2">
+<label class="block mb-2">Phone</label>
+<input class="w-full p-2 border rounded" type="text"/>
+</div>
+<div class="w-1/2">
+<label class="block mb-2">Email</label>
+<input class="w-full p-2 border rounded" type="email"/>
+</div>
+</div>
+<div class="flex space-x-2 mb-4">
+<div class="w-1/2">
+<label class="block mb-2">Password</label>
+<input class="w-full p-2 border rounded" type="password"/>
+</div>
+<div class="w-1/2">
+<label class="block mb-2">Confirm Password</label>
+<input class="w-full p-2 border rounded" type="password"/>
+</div>
+</div>
+<div class="mb-4">
+<label class="inline-flex items-center">
+<input class="mr-2" type="checkbox"/>
+          I agree to Terms and Conditions
+        </label>
+</div>
+<button class="w-full bg-blue-500 text-white p-2 rounded" type="submit">Sign Up</button>
+</form>
+</section>
+<section class="bg-white p-6 rounded shadow-md">
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-xl font-bold">Product Catalog</h2>
+<button class="bg-blue-500 text-white p-2 rounded">Search</button>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="text-center">
+<img alt="Product 1" class="mx-auto mb-2" src="https://placehold.co/100x100"/>
+<p class="font-bold">Product 1</p>
+<p>$20.00</p>
+<button class="bg-blue-500 text-white p-2 rounded mt-2">Add to Cart</button>
+</div>
+<div class="text-center">
+<img alt="Product 2" class="mx-auto mb-2" src="https://placehold.co/100x100"/>
+<p class="font-bold">Product 2</p>
+<p>$10.00</p>
+<button class="bg-blue-500 text-white p-2 rounded mt-2">Add to Cart</button>
+</div>
+<div class="text-center">
+<img alt="Product 3" class="mx-auto mb-2" src="https://placehold.co/100x100"/>
+<p class="font-bold">Product 3</p>
+<p>$40.00</p>
+<button class="bg-blue-500 text-white p-2 rounded mt-2">Add to Cart</button>
+</div>
+</div>
+</section>
+<footer class="mt-6 text-center">
+    © 2023 Your Company Name
+    <div class="mt-2">
+<input class="p-2 border rounded mr-2 w-1/4" placeholder="Search" type="text"/>
+<button class="bg-blue-500 text-white p-2 rounded" id="6_1">Search</button>
+</div>
+</footer>
+</body>
+</html>

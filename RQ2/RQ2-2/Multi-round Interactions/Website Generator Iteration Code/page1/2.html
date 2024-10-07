@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>线框页面</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .transparent {
+      background-color: transparent;
+      border: none;
+    }
+  </style>
+</head>
+<body class="flex flex-col justify-between min-h-screen bg-gray-100">
+  <section class="transparent p-10 w-full max-w-5xl mx-auto mt-20">
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold">Title1</h1>
+      <h2 class="text-2xl font-medium mt-2">Title1-1</h2>
+    </header>
+
+    <nav class="flex justify-center space-x-8 mb-8">
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center">Link1-1</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center">Link1-2</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center">Link1-3</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center">Link1-4</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center">Link1-5</a>
+    </nav>
+  </section>
+
+  <footer class="text-center p-4 transparent">
+    <p class="text-gray-600">Text1</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+<div class="max-w-4xl mx-auto bg-white p-6 shadow-md rounded-lg">
+<!-- Header -->
+<header class="mb-8">
+<h1 class="text-5xl font-bold mb-4">Profile Section</h1>
+</header>
+<!-- Profiles Section -->
+<section class="mb-8 space-y-8" id="profiles">
+<!-- Profile 1 -->
+<div class="flex items-start space-x-4">
+<div>
+<h3 class="text-lg font-semibold">Note One</h3>
+<h4 class="text-md text-gray-600">Job Title</h4>
+<p class="text-gray-600">Additional information about the first profile.</p>
+</div>
+</div>
+<!-- Profile 2 -->
+<div class="flex items-start space-x-4">
+<div>
+<h3 class="text-lg font-semibold">Note Two</h3>
+<h4 class="text-md text-gray-600">Job Title</h4>
+<p class="text-gray-600">Additional information about the second profile.</p>
+</div>
+<img alt="Profile 2" class="w-24 h-24" src="https://placehold.co/100x100"/>
+</div>
+<!-- Profile 3 -->
+<div class="flex items-start space-x-4">
+<img alt="Profile 3" class="w-24 h-24" src="https://placehold.co/100x100"/>
+<div>
+<h3 class="text-lg font-semibold">Note Three</h3>
+<h4 class="text-md text-gray-600">Job Title</h4>
+<p class="text-gray-600">Additional information about the third profile.</p>
+</div>
+</div>
+</section>
+<!-- Checkout Section -->
+<section id="checkout">
+<h2 class="text-xl font-bold mb-4">Checkout</h2>
+<form>
+<!-- Shipping Address -->
+<fieldset class="border border-gray-300 p-4 mb-4" id="shipping-address">
+<legend class="text-lg font-semibold">Shipping Address</legend>
+<div class="mb-4">
+<label class="block text-gray-700" for="first-name">First Name</label>
+<input class="border border-gray-300 p-2 w-full rounded" id="first-name" name="first-name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700" for="last-name">Last Name</label>
+<input class="border border-gray-300 p-2 w-full rounded" id="last-name" name="last-name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="company">Company</label>
+<input class="border border-gray-300 p-2 w-full rounded" id="company" name="company" type="text"/>
+</div>
+</fieldset>
+<!-- Shipping Service -->
+<fieldset class="border border-gray-300 p-4 mb-4" id="shipping-service">
+<legend class="text-lg font-semibold">Shipping Service</legend>
+<div class="mb-2">
+<label class="flex items-center">
+<input class="mr-2" name="shipping-service" type="radio" value="standard"/>
+              Standard - 14 days - $6.59
+            </label>
+</div>
+<div class="mb-2">
+<label class="flex items-center">
+<input class="mr-2" name="shipping-service" type="radio" value="expedited"/>
+              Expedited - 7 days - $11.77
+            </label>
+</div>
+<div>
+<label class="flex items-center">
+<input class="mr-2" name="shipping-service" type="radio" value="express"/>
+              Express - 3 days - $19.77
+            </label>
+</div>
+</fieldset>
+<!-- Summary Image -->
+<div class="mb-4 text-center">
+<img alt="Summary Image" class="mx-auto" src="https://placehold.co/300x200"/>
+</div>
+<!-- Bottom Section -->
+<div class="space-y-4">
+<div class="flex items-center space-x-2">
+<input id="terms" name="terms" type="checkbox"/>
+<label class="text-gray-700" for="terms">Agree to terms</label>
+</div>
+<div class="flex items-center space-x-2">
+<input id="newsletter" name="newsletter" type="checkbox"/>
+<label class="text-gray-700" for="newsletter">Subscribe to newsletter</label>
+</div>
+<div class="flex items-center space-x-2">
+<input id="promo" name="promo" type="radio" value="yes"/>
+<label class="text-gray-700" for="promo">Get promotional updates</label>
+</div>
+</div>
+<div class="flex justify-between mt-6">
+<button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">Submit</button>
+</div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="mt-8">
+<p class="text-gray-600 text-center">© 2023 Company Name. All rights reserved.</p>
+<div class="text-center mt-4">
+<button class="bg-gray-400 text-white px-4 py-2 rounded" id="6_1" type="button">Back</button>
+</div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Layout</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header, .content, footer {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: #eee;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .post {
+            flex: 1 1 calc(33% - 20px);
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .form-section, .checkbox-section, .radio-section {
+            margin: 20px 0;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkbox-section, .radio-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group, .radio-group {
+            flex: 1 1 calc(50% - 20px);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1 style="font-size: 50px;">Title</h1>
+<p>Subtitle or page description goes here.</p>
+</header>
+<div class="hero">
+</div>
+<div class="content">
+<div class="posts">
+<div class="post">
+<h2>Title Post 1</h2>
+<p id="6_2_2_4_1">Post content goes here.</p><label id="6_2_1_1_3">Label 2</label>
+</div>
+<div class="post">
+<h2>Title Post 2</h2>
+<p id="6_2_2_4_2">Post content goes here.</p><label id="6_2_1_2_3">Label 2</label>
+</div>
+<div class="post">
+<h2>Title Post 3</h2>
+<p id="6_2_2_4_3">Post content goes here.</p><label id="6_2_1_3_3">Label 2</label>
+</div>
+</div>
+<div class="form-section">
+<div class="form-group">
+<label for="label1">Label 1</label>
+<input id="label1" type="text"/>
+</div>
+<div class="form-group">
+<label for="label2" id="6_2_1_4_3">Label 2</label>
+<input id="label2" type="text"/>
+</div>
+<button type="button">Button</button>
+</div>
+<div class="checkbox-section">
+<div class="checkbox-group">
+<input id="checkbox1" type="checkbox"/>
+<label for="checkbox1">Checkbox 1</label>
+</div>
+<div class="checkbox-group">
+<input id="checkbox2" type="checkbox"/>
+<label for="checkbox2">Checkbox 2</label>
+</div>
+<div class="checkbox-group">
+<input id="checkbox3" type="checkbox"/>
+<label for="checkbox3">Checkbox 3</label>
+</div>
+<div class="checkbox-group">
+<input id="checkbox4" type="checkbox"/>
+<label for="checkbox4">Checkbox 4</label>
+</div>
+</div>
+<div class="radio-section">
+<div class="radio-group">
+<input id="radio1" name="radio-group" type="radio"/>
+<label for="radio1">Radio 1</label>
+</div>
+<div class="radio-group">
+<input id="radio2" name="radio-group" type="radio"/>
+<label for="radio2">Radio 2</label>
+</div>
+<div class="radio-group">
+<input id="radio3" name="radio-group" type="radio"/>
+<label for="radio3">Radio 3</label>
+</div>
+<div class="radio-group">
+<input id="radio4" name="radio-group" type="radio"/>
+<label for="radio4">Radio 4</label>
+</div>
+</div>
+</div>
+<footer>
+<p>Footer content goes here.</p>
+</footer>
+</div>
+</body>
+</html>

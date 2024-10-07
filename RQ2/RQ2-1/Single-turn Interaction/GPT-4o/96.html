@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low Fidelity Wireframe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .custom-btn {
+      background-color: #C6A7B1;
+    }
+
+    .custom-btn:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+<!-- Payment Form Section -->
+<section class="bg-white p-6 shadow-md mb-6">
+<form>
+<fieldset class="mb-4">
+<legend class="text-xl font-semibold mb-2">Select your payment method</legend>
+<label class="block mb-2">
+<input class="mr-2" name="payment_method" type="radio" value="credit_card"/> Credit Card
+        </label>
+<label class="block mb-2">
+<input class="mr-2" name="payment_method" type="radio" value="paypal"/> Paypal
+        </label>
+<label class="block mb-4">
+<input class="mr-2" name="payment_method" type="radio" value="bank_transfer"/> Bank Transfer
+        </label>
+</fieldset>
+<fieldset>
+<legend class="text-xl font-semibold mb-2">Enter your data</legend>
+<label class="block mb-2">Card Number</label>
+<input class="w-full p-2 mb-4 border rounded" placeholder="Card Number" type="text"/>
+<div class="flex items-end mb-4">
+<div class="mr-4">
+<label class="block mb-2">Expiration Date</label>
+<input class="w-16 p-2 border rounded mr-2" placeholder="MM" type="text"/>
+<input class="w-16 p-2 border rounded" placeholder="YY" type="text"/>
+</div>
+<div>
+<label class="block mb-2">CVV</label>
+<input class="w-16 p-2 border rounded" placeholder="CVV" type="text"/>
+</div>
+</div>
+<button class="custom-btn text-white px-4 py-2 rounded" type="submit">Complete</button>
+</fieldset>
+</form>
+</section>
+<!-- Promotional Section -->
+<section class="bg-white p-6 shadow-md mb-6">
+<h2 class="text-2xl font-bold mb-2">Mobility Solutions &amp; Daily Living Aids</h2>
+<h3 class="text-lg font-semibold mb-4">Making Life Easier</h3>
+</section>
+<!-- Services Section -->
+<section class="bg-white p-6 shadow-md mb-6">
+<div class="flex justify-between">
+<div class="mr-6">
+<h3 class="text-xl font-semibold mb-2">Wheelchair Repair</h3>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Community Contracts</h3>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+</div>
+</div>
+</section>
+<!-- Featured Image and CTA Section -->
+<section class="bg-white p-6 shadow-md mb-6 flex">
+<img alt="Featured Image" class="mr-6" src="https://placehold.co/100x100"/>
+<div>
+<p class="mb-4">Descriptive text about the feature</p>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Find Out More</button>
+</div>
+</section>
+<!-- Mixed Content Section -->
+<section class="bg-white p-6 shadow-md">
+<img alt="Placeholder Image" class="mb-4" src="https://placehold.co/100x100"/>
+<div class="mb-4 flex items-center">
+<label class="flex-1">Label</label>
+<input class="ml-4" type="checkbox"/> Checkbox Option
+    </div>
+<div class="mb-4 flex items-center">
+<input class="mr-2" type="checkbox"/> Checkbox
+    </div>
+<div class="mb-4 flex items-center">
+<input class="mr-2" type="radio"/> Radio Button Option
+    </div>
+<div class="mb-4 flex items-center">
+<input class="mr-2" type="radio"/> Radio Button
+    </div>
+<button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+<div class="mt-4">
+<img alt="Additional Image" src="https://placehold.co/100x100"/>
+</div>
+</section>
+<!-- Find Out More Button Moved Here -->
+<button class="bg-blue-500 text-white px-4 py-2 rounded mt-6" id="6_1">Find Out More</button>
+</body>
+</html>

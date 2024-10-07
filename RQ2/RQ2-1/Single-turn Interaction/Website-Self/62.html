@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .title-page {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video-section {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .post {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .large-image {
+            width: 100%;
+            height: 300px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+        .form-section {
+            margin: 20px 0;
+        }
+        .form-section input, 
+        .form-section select, 
+        .form-section button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-page">
+            <a href="#">Add Element</a>
+            <h1>Title Page</h1>
+            <p>This is the title page with some introductory text.</p>
+        </div>
+        <div class="video-section">
+            <div class="video-placeholder">
+                <img src="https://via.placeholder.com/150" alt="Video Placeholder">
+            </div>
+        </div>
+        <div class="posts">
+            <div class="post">
+                <h2>Title</h2>
+                <div class="post-image" style="background-color: #ccc; height: 100px;"></div>
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <div class="post-image" style="background-color: #ccc; height: 100px;"></div>
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <div class="post-image" style="background-color: #ccc; height: 100px;"></div>
+                <p>Title Post</p>
+            </div>
+            <div class="post">
+                <h2>Title</h2>
+                <div class="post-image" style="background-color: #ccc; height: 100px;"></div>
+                <p>Title Post</p>
+            </div>
+        </div>
+        <div class="large-image"></div>
+        <div class="form-section">
+            <h2>Forma de envío</h2>
+            <label>Medio transporte</label>
+            <div>
+                <input type="radio" name="transporte" value="Terrestre"> Terrestre<br>
+                <input type="radio" name="transporte" value="Aereo"> Aereo<br>
+                <input type="radio" name="transporte" value="Marítimo"> Marítimo
+            </div>
+            <h2>Forma de pago</h2>
+            <div>
+                <input type="radio" name="pago" value="Tarjeta"> Tarjeta (Crédito/débito)<br>
+                <input type="radio" name="pago" value="Transferencia"> Transferencia bancaria<br>
+                <input type="radio" name="pago" value="Metalico"> Metálico
+            </div>
+            <select name="pais">
+                <option value="">País</option>
+                <option value="pais1">País 1</option>
+                <option value="pais2">País 2</option>
+            </select>
+            <h2>Aceptar</h2>
+        </div>
+        <div class="footer">
+            <p>Footer content here</p>
+        </div>
+    </div>
+</body>
+</html>

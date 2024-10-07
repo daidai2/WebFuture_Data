@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-custom {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+    .bg-white-section {
+      background-color: white;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .bg-section {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+    .image-container {
+      position: relative; /* 使半透明背景定位相对于图片 */
+      opacity: 0;
+      transition: opacity 1s ease-in-out 1s;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    .image-wide {
+      width: calc(100% / 3);
+      height: auto;
+    }
+    .text-small {
+      font-size: 0.875rem; /* Small font size */
+      color: #d3d3d3; /* Light gray color */
+    }
+    .red-bg {
+      background-color: #ffcccc;
+      position: relative;
+      width: calc(100% / 3);
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+    .red-bg .title {
+      font-size: 1.5rem; /* Title font size */
+      font-weight: bold; /* 加粗 */
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+    .red-bg .text {
+      font-size: 1rem; /* Text font size */
+      color: #ffffff;
+    }
+    .wide-bg {
+      width: 100%;
+    }
+    .semi-transparent-bg {
+      background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+      width: 25%; /* 宽度为图片宽度的四分之一 */
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .fade-in {
+      opacity: 1 !important;
+    }
+    .bold-white {
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 0.75rem; /* Smaller font size */
+    }
+    .smaller-text {
+      font-size: 0.75rem; /* Smaller font size */
+      color: #d3d3d3;
+    }
+    .icon-small {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body class="bg-custom">
+  <div class="bg-white-section p-8">
+    <!-- Row 1 -->
+    <div class="grid grid-cols-4 gap-1 mt-16 bg-white-section">
+      <div class="text-center red-bg">
+        <div>
+          <div class="title">Title1</div>
+          <div class="text">Text1</div>
+        </div>
+      </div>
+      <div class="text-center image-container">
+        <img src="02.jpg" alt="PIC1-2" class="image-wide mx-auto">
+        <div class="semi-transparent-bg"></div>
+        <p class="text-small">Text1-2</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="02.jpg" alt="PIC1-3" class="image-wide mx-auto">
+        <div class="semi-transparent-bg"></div>
+        <p class="text-small">Text1-3</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="03.jpg" alt="PIC1-4" class="image-wide mx-auto">
+        <div class="semi-transparent-bg"></div>
+        <p class="text-small">Text1-4</p>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="flex space-x-1 mt-4 bg-white-section">
+      <div class="text-center image-container">
+        <img src="05.jpg" alt="PIC1-5" class="mx-auto">
+        <div class="semi-transparent-bg"></div>
+        <p class="mt-2 text-small">Text1-5</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="06.jpg" alt="PIC1-6" class="mx-auto">
+        <div class="semi-transparent-bg"></div>
+        <p class="mt-2 text-small">Text1-6</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="07.jpg" alt="PIC1-7" class="mx-auto">
+        <div class="semi-transparent-bg"></div>
+        <p class="mt-2 text-small">Text1-7</p>
+      </div>
+      <div class="text-center image-container">
+        <img src="08.jpg" alt="PIC1-8" class="mx-auto">
+        <div class="semi-transparent-bg"></div>
+        <p class="mt-2 text-small">Text1-8</p>
+      </div>
+    </div>
+
+    <!-- Text1-1 and Icons -->
+    <section class="bg-section p-4 border rounded-md flex justify-between items-center mt-16 wide-bg">
+      <p class="flex-1 text-small">
+        This is <span class="bold-white">Parallelism</span>, a responsive portfolio site template by <span class="bold-white">HTML5 UP</span>. Free for personal and commercial use under the <span class="bold-white">Creative Commons Attribution</span> license.
+      </p>
+      <div class="flex flex-col items-end">
+        <div class="flex space-x-4">
+          <img src="https://img.icons8.com/ios-glyphs/24/000000/twitter--v1.png" alt="Twitter" class="icon-small">
+          <img src="https://img.icons8.com/ios-glyphs/24/000000/instagram-new.png" alt="Instagram" class="icon-small">
+          <img src="https://img.icons8.com/ios-glyphs/24/000000/facebook-new.png" alt="Facebook" class="icon-small">
+          <img src="https://img.icons8.com/ios-glyphs/24/000000/dribbble.png" alt="Dribbble" class="icon-small">
+          <img src="https://img.icons8.com/ios-glyphs/24/000000/new-post.png" alt="Email" class="icon-small">
+        </div>
+        <div class="flex space-x-4 mt-2">
+          <p class="smaller-text">© UntitledDesign</p>
+          <p class="smaller-text">HTML5 UP</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector('.bg-white-section').classList.add('fade-in');
+      const imageContainers = document.querySelectorAll('.image-container');
+      imageContainers.forEach((container, index) => {
+        setTimeout(() => {
+          container.classList.add('fade-in');
+        }, 1000 * (index + 1));
+      });
+    });
+  </script>
+</body>
+</html>

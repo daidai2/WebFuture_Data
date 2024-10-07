@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: white;
+    }
+    body {
+      padding-top: 72px;
+    }
+    .full-page-section {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .bottom-link {
+      position: absolute;
+      bottom: 15%;
+      width: 100%;
+      text-align: center;
+    }
+    .link-icon {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: transparent;
+      background-image: url('arrow.svg');
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid white;
+    }
+    .link-icon a {
+      display: none;
+    }
+    .white-box {
+      background-color: white;
+      width: 80%;
+      padding: 20px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+    }
+    .left-white-box {
+      background-color: white;
+      width: 80%;
+      padding: 20px;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+    }
+    .link8-border {
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      border: 2px solid white;
+      border-bottom: none;
+      background-color: transparent;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+    .form-section {
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-container {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .footer-section {
+      background-color: #000;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .submit-button {
+      background-color: green;
+      border-radius: 9999px;
+      padding: 0.5rem 2rem;
+      text-align: center;
+      color: white;
+      font-size: 1.125rem;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="p-4 flex justify-between items-center fixed-header">
+    <div class="text-2xl font-bold text-black">Title1</div>
+    <nav class="space-x-4">
+      <a href="/notifications" class="text-gray-500 hover:underline">Link1</a>
+      <a href="/comments" class="text-gray-500 hover:underline">Link2</a>
+      <a href="/profile" class="text-gray-500 hover:underline">Link3</a>
+      <a href="/terms" class="text-gray-500 hover:underline">Link4</a>
+      <a href="/post" class="text-gray-500 hover:underline">Link5</a>
+      <a href="/admin" class="text-gray-500 hover:underline">Link6</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="space-y-0 relative">
+
+    <!-- Section 1 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('intro.jpg');">
+      <div class="text-center text-white">
+        <h2 class="text-5xl font-bold">Title2</h2>
+        <p class="mt-6 text-3xl">Text2</p>
+        <div class="mt-12">
+          <div class="link-icon">
+            <a href="/login">Link7</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('one.jpg');">
+      <div class="text-center text-black white-box" style="top: 40%; left: auto; width: 80%;">
+        <h2 class="text-4xl font-bold">Title3</h2>
+        <p class="mt-4 text-2xl">Text3</p>
+      </div>
+      <div class="bottom-link">
+        <div class="link-icon"></div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('two.jpg');">
+      <div class="text-left text-black left-white-box" style="top: 40%;">
+        <h2 class="text-4xl font-bold">Title4</h2>
+        <p class="mt-4 text-2xl">Text4</p>
+      </div>
+      <div class="bottom-link">
+        <div class="link-icon"></div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="bg-white flex items-center justify-center full-page-section">
+      <div class="text-center mt-40">
+        <h2 class="text-4xl font-bold mb-8">Title5</h2>
+        <h3 class="mt-2 text-3xl mb-8">Title5-1</h3>
+        <div class="mt-8 grid grid-cols-2 gap-0 justify-center items-center">
+          <img src="01.jpg" alt="FIG5-1" class="w-48 h-48">
+          <img src="02.jpg" alt="FIG5-2" class="w-48 h-48">
+          <img src="01.jpg" alt="FIG5-3" class="w-48 h-48">
+          <img src="02.jpg" alt="FIG5-4" class="w-48 h-48">
+          <img src="01.jpg" alt="FIG5-5" class="w-48 h-48">
+          <img src="02.jpg" alt="FIG5-6" class="w-48 h-48">
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="bg-white flex items-center justify-center full-page-section form-section">
+      <div class="flex flex-col items-center justify-end w-full h-full p-4 form-container" style="margin-top: 40px;">
+        <h2 class="text-4xl font-bold mb-8">Title6</h2>
+        <p class="text-2xl mb-8">Text6</p>
+        <form class="bg-white p-6 rounded shadow w-3/5 h-2/3 space-y-4">
+          <div class="flex space-x-4">
+            <input type="text" placeholder="Textbox1" class="p-2 border rounded w-2/5 text-lg">
+            <input type="text" placeholder="Textbox2" class="p-2 border rounded w-2/5 text-lg">
+          </div>
+          <textarea placeholder="Textarea" class="p-4 border rounded w-full h-40 text-lg"></textarea>
+          <div class="flex justify-center">
+            <button type="submit" class="submit-button" onclick="location.href='/logout'">Submit</button>
+          </div>
+        </form>
+        <div class="footer-content w-full mt-8">
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-4">
+              <a href="/reports" class="hover:underline text-white">Link1</a>
+              <a href="/blog" class="hover:underline text-white">Link2</a>
+              <a href="/friends" class="hover:underline text-white">Link3</a>
+              <a href="/reset_password" class="hover:underline text-white">Link4</a>
+              <a href="/signup" class="hover:underline text-white">Link5</a>
+              <a href="/help" class="hover:underline text-white">Link6</a>
+            </div>
+            <div class="text-right">
+              <p class="text-white">Text7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

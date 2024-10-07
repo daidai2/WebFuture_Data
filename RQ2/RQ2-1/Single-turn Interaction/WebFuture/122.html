@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-4" id="body1">
+  <div class="max-w-4xl mx-auto bg-white p-4 shadow-md" id="body1-div1">
+    <!-- Checkout Section -->
+    <section class="mb-8" id="body1-div1-section1">
+      <header class="text-2xl font-bold mb-4" id="body1-div1-section1-header1" style="font-size:50px;">Checkout</header>
+      <section class="mb-8" id="body1-div1-section1-section2">
+        <h2 class="text-xl font-semibold mb-2" id="body1-div1-section1-section2-h21">Shipping Address</h2>
+        <div class="mb-4" id="body1-div1-section1-section2-div2">
+          <label for="first-name" class="block" id="body1-div1-section1-section2-div2-label1">First Name</label>
+          <input type="text" id="body1-div1-section1-section2-div2-input1" class="border border-gray-300 p-2 w-full">
+        </div>
+        <div class="mb-4" id="body1-div1-section1-section2-div3">
+          <label for="last-name" class="block" id="body1-div1-section1-section2-div3-label2">Last Name</label>
+          <input type="text" id="body1-div1-section1-section2-div3-input2" class="border border-gray-300 p-2 w-full">
+        </div>
+        <div class="mb-4" id="body1-div1-section1-section2-div4">
+          <label for="company" class="block" id="body1-div1-section1-section2-div4-label3">Company</label>
+          <input type="text" id="body1-div1-section1-section2-div4-input3" class="border border-gray-300 p-2 w-full">
+        </div>
+      </section>
+      <section id="body1-div1-section1-section3">
+        <h2 class="text-xl font-semibold mb-2" id="body1-div1-section1-section3-h22">Shipping Service</h2>
+        <div class="mb-4" id="body1-div1-section1-section3-div5">
+          <input type="radio" id="body1-div1-section1-section3-div5-input4" name="shipping" class="mr-2">
+          <label for="standard" id="body1-div1-section1-section3-div5-label4">Standard 14 days - $6.99</label>
+        </div>
+        <div class="mb-4" id="body1-div1-section1-section3-div6">
+          <input type="radio" id="body1-div1-section1-section3-div6-input5" name="shipping" class="mr-2">
+          <label for="expedited" id="body1-div1-section1-section3-div6-label5">Expedited 7 days - $11.99</label>
+        </div>
+        <div id="body1-div1-section1-section3-div7">
+          <input type="radio" id="body1-div1-section1-section3-div7-input6" name="shipping" class="mr-2">
+          <label for="express" id="body1-div1-section1-section3-div7-label6">Express 3 days - $19.99</label>
+        </div>
+      </section>
+    </section>
+
+    <!-- Write Review Section -->
+    <section class="mb-8" id="body1-div1-section4">
+      <header class="text-2xl font-bold mb-4" id="body1-div1-section4-header2">Write Review</header>
+      <article class="mb-8" id="body1-div1-section4-article1">
+        <div class="flex items-center mb-4" id="body1-div1-section4-article1-div8">
+          <img src="https://placehold.co/100x100" alt="Product" class="w-16 h-16 mr-4" id="body1-div1-section4-article1-div8-img1">
+          <div id="body1-div1-section4-article1-div8-div9">
+            <h3 class="text-lg font-semibold" id="body1-div1-section4-article1-div8-div9-h31">Product Name</h3>
+            <p id="body1-div1-section4-article1-div8-div9-p1">$Price</p>
+            <p id="body1-div1-section4-article1-div8-div9-p2">★★★★★ 45 reviews</p>
+          </div>
+        </div>
+      </article>
+      <div class="mb-4" id="body1-div1-section4-div10">
+        <h2 class="text-xl font-semibold mb-2" id="body1-div1-section4-div10-h23">Rate Product</h2>
+        <div class="flex items-center" id="body1-div1-section4-div10-div11">
+          <span class="text-yellow-500 mr-2" id="body1-div1-section4-div10-div11-span1">★★★★★</span>
+          <span id="body1-div1-section4-div10-div11-span2">Bad :(</span>
+        </div>
+      </div>
+      <div class="mb-4" id="body1-div1-section4-div12">
+        <label for="headline" class="block" id="body1-div1-section4-div12-label7">Headline</label>
+        <input type="text" id="body1-div1-section4-div12-input7" class="border border-gray-300 p-2 w-full">
+      </div>
+      <div class="mb-4" id="body1-div1-section4-div13">
+        <label for="review" class="block" id="body1-div1-section4-div13-label8">Review</label>
+        <textarea id="body1-div1-section4-div13-textarea1" class="border border-gray-300 p-2 w-full h-24"></textarea>
+      </div>
+      <div id="body1-div1-section4-div14">
+        <button class="bg-blue-500 text-white px-4 py-2" id="body1-div1-section4-div14-button1" onclick="showAddInteraction()">Submit</button>
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="body1-div1-section5">
+      <header class="flex justify-between items-center mb-4" id="body1-div1-section5-header3">
+        <h2 class="text-2xl font-bold" id="body1-div1-section5-header3-h24">Product Catalog</h2>
+        <div class="flex items-center" id="body1-div1-section5-header3-div15">
+          <input type="text" class="border border-gray-300 p-2 mr-2" placeholder="Search" id="body1-div1-section5-header3-div15-input8">
+          <button class="bg-blue-500 text-white px-4 py-2" id="body1-div1-section5-header3-div15-button2">Search</button>
+        </div>
+      </header>
+      <div class="grid grid-cols-3 gap-4" id="body1-div1-section5-div16">
+        <!-- Product 1 -->
+        <article class="border border-gray-300 p-4" id="body1-div1-section5-div16-article2">
+          <img src="https://placehold.co/150x150" alt="Product 1" class="w-full mb-4" id="body1-div1-section5-div16-article2-img2">
+          <h3 class="text-lg font-semibold mb-2" id="body1-div1-section5-div16-article2-h32">Product 1</h3>
+          <p class="mb-4" id="body1-div1-section5-div16-article2-p3">$20.00</p>
+          <button class="bg-green-500 text-white px-4 py-2" id="body1-div1-section5-div16-article2-button3">Add to Cart</button>
+        </article>
+        <!-- Product 2 -->
+        <article class="border border-gray-300 p-4" id="body1-div1-section5-div16-article3">
+          <img src="https://placehold.co/150x150" alt="Product 2" class="w-full mb-4" id="body1-div1-section5-div16-article3-img3">
+          <h3 class="text-lg font-semibold mb-2" id="body1-div1-section5-div16-article3-h33">Product 2</h3>
+          <p class="mb-4" id="body1-div1-section5-div16-article3-p4">$10.00</p>
+          <button class="bg-green-500 text-white px-4 py-2" id="body1-div1-section5-div16-article3-button4">Add to Cart</button>
+        </article>
+        <!-- Product 3 -->
+        <article class="border border-gray-300 p-4" id="body1-div1-section5-div16-article4">
+          <img src="https://placehold.co/150x150" alt="Product 3" class="w-full mb-4" id="body1-div1-section5-div16-article4-img4">
+          <h3 class="text-lg font-semibold mb-2" id="body1-div1-section5-div16-article4-h34">Product 3</h3>
+          <p class="mb-4" id="body1-div1-section5-div16-article4-p5">$40.00</p>
+          <button class="bg-green-500 text-white px-4 py-2" id="body1-div1-section5-div16-article4-button5">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+    <div id="Parent_body1-div1_Next_null_Queue_1" class="text-center">
+      Add Element
+    </div>
+  </div>
+
+
+  <script data-custom-scripts="true">
+    function showAddInteraction() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

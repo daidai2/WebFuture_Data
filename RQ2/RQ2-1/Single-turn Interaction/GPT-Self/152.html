@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>线框图实现</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header, .section, .footer {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header .nav-buttons button {
+            margin-left: 10px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section-title {
+            margin-top: 0;
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        .content-wrapper .content {
+            flex-basis: 48%;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .image-grid .image-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<img alt="Logo" src="logo.png"/>
+<div class="nav-buttons">
+<button id="button1">按钮1</button>
+<button id="button2">按钮2</button>
+<button>按钮3</button>
+<button>按钮4</button>
+<button>按钮5</button>
+</div>
+</div>
+<div class="section">
+<h1 class="section-title">Title1</h1>
+</div>
+<div class="section">
+<div class="content-wrapper">
+<div class="content">
+<h2>Title2</h2>
+<h3>Title2-1</h3>
+<p>Text2</p>
+<button>Button2</button>
+</div>
+<div class="content">
+<img alt="PIC2" src="pic2.png" style="width: 100%;"/>
+</div>
+</div>
+</div>
+<div class="section">
+<h2 class="section-title">Title3</h2>
+<div class="grid-container">
+<div class="grid-item">
+<a href="#">Link3-1</a>
+<p>Text3-1</p>
+</div>
+<div class="grid-item">
+<a href="#">Link3-2</a>
+<p>Text3-2</p>
+</div>
+<div class="grid-item">
+<a href="#">Link3-3</a>
+<p>Text3-3</p>
+</div>
+<div class="grid-item">
+<a href="#">Link3-4</a>
+<p>Text3-4</p>
+</div>
+</div>
+</div>
+<div class="section">
+<h2 class="section-title">Title4</h2>
+<div class="image-grid">
+<div class="image-item">
+<img alt="PIC4-1" src="pic4-1.png" style="width: 100%;"/>
+<h3>Title4-1</h3>
+<p>Text4-1</p>
+<button>Button4-1</button>
+</div>
+<div class="image-item">
+<img alt="PIC4-2" src="pic4-2.png" style="width: 100%;"/>
+<h3>Title4-2</h3>
+<p>Text4-2</p>
+<button>Button4-2</button>
+</div>
+<div class="image-item">
+<img alt="PIC4-3" src="pic4-3.png" style="width: 100%;"/>
+<h3>Title4-3</h3>
+<p>Text4-3</p>
+<button>Button4-3</button>
+</div>
+<div class="image-item">
+<img alt="PIC4-4" src="pic4-4.png" style="width: 100%;"/>
+<h3>Title4-4</h3>
+<p>Text4-4</p>
+<button>Button4-4</button>
+</div>
+<div class="image-item">
+<img alt="PIC4-5" src="pic4-5.png" style="width: 100%;"/>
+<h3>Title4-5</h3>
+<p>Text4-5</p>
+<button>Button4-5</button>
+</div>
+<div class="image-item">
+<img alt="PIC4-6" src="pic4-6.png" style="width: 100%;"/>
+<h3>Title4-6</h3>
+<p>Text4-6</p>
+<button>Button4-6</button>
+</div>
+</div>
+</div>
+<div class="footer">
+<button id="6_1">按钮1</button>
+<p>Add Element</p>
+</div>
+<script>
+    document.getElementById('button2').addEventListener('click', function() {
+        alert('Add Interaction');
+    });
+</script>
+</body>
+</html>

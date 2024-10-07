@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .product .image {
+            width: 300px;
+            height: 300px;
+            background-color: #eaeaea;
+            margin-right: 20px;
+        }
+        .product .details {
+            max-width: 400px;
+        }
+        .product .thumbnails {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .product .thumbnail {
+            width: 60px;
+            height: 60px;
+            background-color: #eaeaea;
+        }
+        .product .details h2 {
+            margin: 0;
+        }
+        .product .details .colors {
+            margin: 10px 0;
+        }
+        .product .details .price {
+            margin: 10px 0;
+            color: red;
+        }
+        .product .details .old-price {
+            text-decoration: line-through;
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member .photo {
+            width: 100px;
+            height: 100px;
+            background-color: #eaeaea;
+            margin-bottom: 10px;
+        }
+        .shipping-info {
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .shipping-info form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .shipping-info label {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .shipping-info input, .shipping-info select {
+            width: calc(50% - 10px);
+            margin: 5px;
+            padding: 10px;
+        }
+        .shipping-info .actions {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<a href="#" id="add-element">Add Element</a>
+<div class="product">
+<div class="image"></div>
+<div class="details">
+<h2>Product Name</h2>
+<p>Manufacturer</p>
+<div class="colors">
+<label>
+<input checked="" name="color" type="radio" value="red"/> Red
+                    </label>
+<label>
+<input name="color" type="radio" value="blue"/> Blue
+                    </label>
+<label>
+<input name="color" type="radio" value="white"/> White
+                    </label>
+</div>
+<div class="price">
+<span>$100</span>
+<span class="old-price">$200</span>
+</div>
+<div class="thumbnails">
+<div class="thumbnail"></div>
+<div class="thumbnail"></div>
+<div class="thumbnail"></div>
+</div>
+</div>
+</div>
+<div class="team">
+<div class="team-member">
+<div class="photo"></div>
+<div>Mate One</div>
+<div>Job Title</div>
+</div>
+<div class="team-member">
+<div class="photo"></div>
+<div>Mate Two</div>
+<div>Job Title</div>
+</div>
+<div class="team-member">
+<div class="photo"></div>
+<div>Mate Three</div>
+<div>Job Title</div>
+</div>
+</div>
+<div class="shipping-info">
+<form>
+<label>First Name</label>
+<input name="first-name" type="text"/>
+<label>Last Name</label>
+<input name="last-name" type="text"/>
+<label>Phone</label>
+<input name="phone" type="text"/>
+<label>Email</label>
+<input name="email" type="email"/>
+<label>Country</label>
+<select name="country">
+<option value="us">United States</option>
+</select>
+<label>State</label>
+<select name="state">
+<option value="">Choose</option>
+</select>
+<label>City</label>
+<input name="city" type="text"/>
+<label>Zip Code</label>
+<input name="zip-code" type="text"/>
+<div class="actions">
+<button id="back-button" type="button">Back</button>
+<button type="submit">Next Step</button>
+</div>
+</form>
+</div>
+<button id="6_1">Add to Cart</button>
+</div>
+<script>
+        document.getElementById('back-button').addEventListener('click', function() {
+            var newModule = document.createElement('div');
+            newModule.innerHTML = '<div class="new-module"><p>Add Interaction</p></div>';
+            document.querySelector('.container').appendChild(newModule);
+        });
+
+        document.getElementById('add-element').addEventListener('click', function(event) {
+            event.preventDefault();
+            var newModule = document.createElement('div');
+            newModule.innerHTML = '<div class="new-module"><p>Add Interaction</p></div>';
+            document.querySelector('.container').appendChild(newModule);
+        });
+    </script>
+</body>
+</html>

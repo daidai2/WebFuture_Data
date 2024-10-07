@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-custom {
+      background-color: #C6A7B1;
+    }
+
+    .hover\:bg-custom:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+
+<body id="body1">
+  <!-- Header -->
+  <header class="flex justify-between p-6 bg-gray-100 shadow" id="body1-header1">
+    <a href="#" id="Parent_body1-header1_Next_body1-header1-h31_Queue_1">Add Element</a>
+    <h3 id="body1-header1-h31"><a href="#" id="body1-header1-h31-a1">Login</a></h3>
+    <h3 id="body1-header1-h32"><a href="#" id="body1-header1-h32-a2">Sign Up</a></h3>
+  </header>
+
+  <!-- Login Section -->
+  <section id="body1-section1" class="p-6">
+    <div id="body1-section1-div1" class="max-w-md mx-auto bg-white shadow p-6 rounded">
+      <label class="block mb-2" id="body1-section1-div1-label1">Login</label>
+      <input type="text" class="w-full p-2 mb-4 border rounded" placeholder="Login" id="body1-section1-div1-input1">
+
+      <label class="block mb-2" id="body1-section1-div1-label2">Password</label>
+      <input type="password" class="w-full p-2 mb-4 border rounded" placeholder="Password" id="body1-section1-div1-input2">
+
+      <div class="flex items-center mb-4" id="body1-section1-div1-div2">
+        <input type="checkbox" id="body1-section1-div1-div2-input3" class="mr-2">
+        <label for="remember-me" id="body1-section1-div1-div2-label3">Remember me</label>
+      </div>
+
+      <a href="#" class="block mb-4 text-blue-500" id="body1-section1-div1-a3">Forgot Password</a>
+
+      <button class="w-full py-2 bg-custom text-white rounded hover:bg-custom" id="body1-section1-div1-button1">LOGIN</button>
+    </div>
+  </section>
+
+  <!-- Preferences Section -->
+  <aside id="body1-aside1" class="p-6 bg-gray-100 shadow">
+    <div class="flex items-center mb-4" id="body1-aside1-div3">
+      <label class="mr-2" id="body1-aside1-div3-label4">C Sharp</label>
+      <input type="checkbox" class="mr-4" id="body1-aside1-div3-input4">
+      <button class="py-1 px-4 bg-blue-500 text-white rounded hover:bg-blue-400" id="body1-aside1-div3-button2" onclick="addModule()">Get Drop Down Here</button>
+    </div>
+
+    <div class="flex items-center mb-4" id="body1-aside1-div4">
+      <label class="mr-2" id="body1-aside1-div4-label5">C#</label>
+      <input type="checkbox" class="mr-4" id="body1-aside1-div4-input5">
+      <label class="mr-2" id="body1-aside1-div4-label6">Java</label>
+      <input type="checkbox" class="mr-4" id="body1-aside1-div4-input6">
+    </div>
+
+    <div class="flex items-center mb-4" id="body1-aside1-div5">
+      <label class="mr-2" id="body1-aside1-div5-label7">PHP</label>
+      <input type="checkbox" class="mr-4" id="body1-aside1-div5-input7">
+      <label class="mr-2" id="body1-aside1-div5-label8">Visual Basic</label>
+      <input type="checkbox" id="body1-aside1-div5-input8">
+    </div>
+  </aside>
+
+  <!-- Product Catalog Section -->
+  <section id="body1-section2" class="p-6">
+    <div class="flex justify-between items-center mb-6" id="body1-section2-div6">
+      <h2 id="body1-section2-div6-h21">Product Catalog</h2>
+      <div id="body1-section2-div6-div7">
+        <input type="search" class="p-2 border rounded" placeholder="Search" id="body1-section2-div6-div7-input9">
+      </div>
+    </div>
+
+    <div id="body1-section2-div8" class="grid grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="bg-white shadow p-4 rounded" id="body1-section2-div8-div9">
+        <img src="https://placehold.co/150x150" alt="Product 1 Image" class="mb-4" id="body1-section2-div8-div9-img1">
+        <p class="mb-2" id="body1-section2-div8-div9-p1">Product 1</p>
+        <p class="mb-2" id="body1-section2-div8-div9-p2">$20.00</p>
+        <button class="w-full py-2 bg-blue-500 text-white rounded" id="body1-section2-div8-div9-button3">ADD TO CART</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white shadow p-4 rounded" id="body1-section2-div8-div10">
+        <img src="https://placehold.co/150x150" alt="Product 2 Image" class="mb-4" id="body1-section2-div8-div10-img2">
+        <p class="mb-2" id="body1-section2-div8-div10-p3">Product 2</p>
+        <p class="mb-2" id="body1-section2-div8-div10-p4">$10.00</p>
+        <button class="w-full py-2 bg-blue-500 text-white rounded" id="body1-section2-div8-div10-button4">ADD TO CART</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white shadow p-4 rounded" id="body1-section2-div8-div11">
+        <img src="https://placehold.co/150x150" alt="Product 3 Image" class="mb-4" id="body1-section2-div8-div11-img3">
+        <p class="mb-2" id="body1-section2-div8-div11-p5">Product 3</p>
+        <p class="mb-2" id="body1-section2-div8-div11-p6">$40.00</p>
+        <button class="w-full py-2 bg-blue-500 text-white rounded" id="body1-section2-div8-div11-button5">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+
+  <script data-custom-scripts="true">
+    function addModule() {
+      const newModule = document.createElement('div');
+      newModule.id = 'Parent_body1_Next_null_Queue_1';
+      newModule.name = 'add';
+      newModule.className = 'p-6 bg-gray-100 shadow';
+      newModule.innerHTML = '<p id="Parent_body1_Next_null_Queue_1-p1" name="add">Add Interaction</p>';
+      document.getElementById('body1').appendChild(newModule);
+    }
+  </script>
+</body>
+</html>

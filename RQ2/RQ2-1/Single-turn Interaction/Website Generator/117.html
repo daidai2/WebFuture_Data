@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('button.bg-blue-500').addEventListener('click', function () {
+        const interactionModule = document.createElement('div');
+        interactionModule.textContent = 'Add Interaction';
+        interactionModule.className = 'mt-8 p-4 bg-gray-100 text-center';
+        document.body.appendChild(interactionModule);
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="container mx-auto p-4">
+<!-- Add Element Link -->
+<div class="text-right mb-4">
+<a class="text-blue-500 underline" href="#">Add Element</a>
+</div>
+<!-- Header -->
+<header class="text-center mb-4">
+<h1 class="text-3xl font-bold">Product Page</h1>
+</header>
+<!-- Main Product Section -->
+<section class="flex mb-8">
+<!-- Product Image Container -->
+<div class="w-1/2">
+<img alt="Main Product Image" class="w-full mb-4" src="https://placehold.co/500x500"/>
+<div class="flex space-x-2">
+<img alt="Thumbnail Image 1" class="w-1/4" src="https://placehold.co/100x100"/>
+<img alt="Thumbnail Image 2" class="w-1/4" src="https://placehold.co/100x100"/>
+<img alt="Thumbnail Image 3" class="w-1/4" src="https://placehold.co/100x100"/>
+<img alt="Thumbnail Image 4" class="w-1/4" src="https://placehold.co/100x100"/>
+</div>
+</div>
+<!-- Product Details Container -->
+<div class="w-1/2 pl-8">
+<h2 class="text-xl font-semibold mb-2">Product Name</h2>
+<h3 class="text-lg font-medium mb-2">Manufacturer</h3>
+<div class="mb-4">
+<span class="font-medium">Color:</span>
+<div>
+<input class="mr-2" id="red" name="color" type="radio" value="red"/>
+<label for="red">Red</label><br/>
+<input class="mr-2" id="blue" name="color" type="radio" value="blue"/>
+<label for="blue">Blue</label><br/>
+<input class="mr-2" id="white" name="color" type="radio" value="white"/>
+<label for="white">White</label>
+</div>
+</div>
+<div class="mb-4 flex items-center">
+<span class="text-xl font-bold">$100</span>
+<span class="text-gray-500 line-through ml-4">$200</span>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2">Add to Cart</button>
+</div>
+</section>
+<!-- Team Members Section -->
+<section class="mb-8">
+<div class="flex mb-4">
+<img alt="Mate One Image" class="w-24 h-24" src="https://placehold.co/150x150"/>
+<div class="pl-4">
+<h4 class="text-lg font-medium">Mate One</h4>
+<p class="text-gray-600">Job Title</p>
+</div>
+</div>
+<div class="flex mb-4">
+<div class="pl-4">
+<h4 class="text-lg font-medium">Mate Two</h4>
+<p class="text-gray-600">Job Title</p>
+</div>
+<img alt="Mate Two Image" class="w-24 h-24" src="https://placehold.co/150x150"/>
+</div>
+<div class="flex mb-4">
+<img alt="Mate Three Image" class="w-24 h-24" src="https://placehold.co/150x150"/>
+<div class="pl-4">
+<h4 class="text-lg font-medium">Mate Three</h4>
+<p class="text-gray-600">Job Title</p>
+</div>
+</div>
+</section>
+<!-- User Input Section -->
+<section>
+<form class="space-y-4">
+<div>
+<label class="block text-lg font-medium" for="title">Title</label>
+<input class="border border-gray-300 p-2 w-full" id="title" name="title" type="text"/>
+</div>
+<fieldset>
+<legend class="text-lg font-medium">Radio Buttons</legend>
+<div class="flex space-x-4">
+<label>
+<input class="mr-2" name="relevance" type="radio" value="not_relevant"/> Not relevant
+            </label>
+<label>
+<input class="mr-2" name="relevance" type="radio" value="low"/> Low
+            </label>
+<label>
+<input class="mr-2" name="relevance" type="radio" value="medium"/> Medium
+            </label>
+<label>
+<input class="mr-2" name="relevance" type="radio" value="high"/> High
+            </label>
+</div>
+</fieldset>
+<fieldset>
+<legend class="text-lg font-medium">Check Boxes</legend>
+<div class="grid grid-cols-2 gap-2">
+<label>
+<input class="mr-2" name="choice1" type="checkbox"/> Choice 1
+            </label>
+<label>
+<input checked="" class="mr-2" name="choice2" type="checkbox"/> Choice 2
+            </label>
+<label>
+<input class="mr-2" name="choice3" type="checkbox"/> Choice 3
+            </label>
+<label>
+<input class="mr-2" name="choice4" type="checkbox"/> Choice 4
+            </label>
+<label>
+<input checked="" class="mr-2" name="choice5" type="checkbox"/> Choice 5
+            </label>
+<label>
+<input class="mr-2" name="choice6" type="checkbox"/> Choice 6
+            </label>
+<label>
+<input class="mr-2" name="choice7" type="checkbox"/> Choice 7
+            </label>
+<label>
+<input checked="" class="mr-2" name="choice8" type="checkbox"/> Choice 8
+            </label>
+</div>
+</fieldset>
+<div class="flex space-x-4">
+<button class="bg-red-500 text-white px-4 py-2" type="reset">Cancel</button>
+</div>
+</form>
+</section>
+<div class="flex space-x-4 mt-8">
+<button class="bg-green-500 text-white px-4 py-2" id="6_1" type="submit">OK</button>
+</div>
+</div>
+</body>
+</html>

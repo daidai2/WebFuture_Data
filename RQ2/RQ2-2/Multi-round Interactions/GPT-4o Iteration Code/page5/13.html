@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-icon {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+    }
+    body, .container, header, section, article, .grid-cols-2 > div {
+      background-color: white;
+    }
+    .divider {
+      border-top: 5px solid #f8bcbc;
+      width: 100%;
+      margin: 0;
+    }
+    .extended-divider {
+      border-top: 5px solid #f8bcbc;
+      width: 110%;
+      margin: 0 -5%;
+    }
+    .spacing {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <div class="container mx-auto pt-20 p-4 bg-white">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center bg-white p-4 shadow mb-0">
+      <div class="text-xl font-bold relative">
+        <img src="https://placehold.co/30x30" alt="Fixed Icon" class="fixed-icon">
+        Title1
+      </div>
+      <nav class="space-x-4">
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon1</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon2</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon3</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon4</button>
+        <button class="p-1 bg-gray-200 rounded text-sm">Icon5</button>
+      </nav>
+    </header>
+    
+    <!-- Divider between Title1 and Title2 -->
+    <div class="divider"></div>
+
+    <!-- Main Content Section -->
+    <section class="mt-0">
+      <!-- First Subsection -->
+      <article class="bg-white p-12 shadow mb-0" style="width: 100%;">
+        <h1 class="text-4xl font-bold spacing">Title2</h1>
+        <h2 class="text-base spacing">Title2-1</h2>
+        <p class="spacing">Text2</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded spacing">Button2</button>
+        <div class="mt-4">
+          <img src="https://placehold.co/300x200" alt="PIC2" class="float-right ml-4">
+        </div>
+      </article>
+
+      <!-- Second Subsection -->
+      <article class="bg-white p-12 shadow mb-0">
+        <h2 class="text-3xl font-bold mb-6">Title3</h2>
+        <!-- Extended Divider below Title3 -->
+        <div class="extended-divider"></div>
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Link3-1 to Link3-2 -->
+          <div class="flex">
+            <img src="https://placehold.co/200x200" alt="Link3-1" class="w-1/2">
+            <div class="ml-4">
+              <h3 class="font-bold">Title3-1</h3>
+              <p>Text3-1</p>
+            </div>
+          </div>
+          <div class="flex">
+            <img src="https://placehold.co/200x200" alt="Link3-2" class="w-1/2">
+            <div class="ml-4">
+              <h3 class="font-bold">Title3-2</h3>
+              <p>Text3-2</p>
+            </div>
+          </div>
+          <!-- Link3-3 to Link3-4 -->
+          <div class="flex">
+            <img src="https://placehold.co/200x200" alt="Link3-3" class="w-1/2">
+            <div class="ml-4">
+              <h3 class="font-bold">Title3-3</h3>
+              <p>Text3-3</p>
+            </div>
+          </div>
+          <div class="flex">
+            <img src="https://placehold.co/200x200" alt="Link3-4" class="w-1/2">
+            <div class="ml-4">
+              <h3 class="font-bold">Title3-4</h3>
+              <p>Text3-4</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Third Subsection -->
+      <article class="bg-white p-6 shadow mb-0">
+        <h2 class="text-3xl font-bold mb-4">Title4</h2>
+        <!-- Extended Divider below Title4 -->
+        <div class="extended-divider"></div>
+        <div class="grid grid-cols-2 gap-0">
+          <!-- PIC4-1 to PIC4-6 -->
+          <div class="p-4 rounded shadow">
+            <img src="https://placehold.co/300x200" alt="PIC4-1">
+            <h3 class="font-bold mt-2">Title4-1</h3>
+            <p>Text4-1</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">BUTTON4-1</button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="https://placehold.co/300x200" alt="PIC4-2">
+            <h3 class="font-bold mt-2">Title4-2</h3>
+            <p>Text4-2</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">BUTTON4-2"></button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="https://placehold.co/300x200" alt="PIC4-3">
+            <h3 class="font-bold mt-2">Title4-3</h3>
+            <p>Text4-3</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">BUTTON4-3"></button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="https://placehold.co/300x200" alt="PIC4-4">
+            <h3 class="font-bold mt-2">Title4-4</h3>
+            <p>Text4-4</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">BUTTON4-4"></button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="https://placehold.co/300x200" alt="PIC4-5">
+            <h3 class="font-bold mt-2">Title4-5</h3>
+            <p>Text4-5</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">BUTTON4-5"></button>
+          </div>
+          <div class="p-4 rounded shadow">
+            <img src="https://placehold.co/300x200" alt="PIC4-6">
+            <h3 class="font-bold mt-2">Title4-6</h3>
+            <p>Text4-6</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">BUTTON4-6"></button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

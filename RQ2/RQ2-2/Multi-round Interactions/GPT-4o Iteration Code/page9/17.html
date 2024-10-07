@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .content-bg {
+      background-color: white;
+    }
+    .bg-img {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .text-white {
+      color: white;
+    }
+    .text-lg-title2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .text-lg-text2 {
+      font-size: 1.5rem;
+    }
+    .large-image {
+      max-width: 800px;
+    }
+    .button-custom {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+    }
+    .text-lg-title3 {
+      font-size: 1.25rem;
+    }
+    .medium-image {
+      max-width: 350px;
+    }
+    .input-custom {
+      border: 1px solid gray;
+      background-color: #f0f0f0;
+    }
+    .label-bg {
+      background-color: #f0f0f0;
+    }
+    .link-custom {
+      font-size: smaller;
+      font-weight: bold;
+      color: gray;
+    }
+    .contact-bg {
+      background-color: #f0f0f0;
+    }
+    .submit-button-custom {
+      background-color: #f0f0f0;
+      color: gray;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="py-40 shadow-md flex flex-col items-center justify-center relative bg-img">
+    <div class="text-center mb-12 bg-img">
+      <h1 class="text-6xl font-bold mb-12 text-white">Title1</h1>
+      <h2 class="text-3xl text-gray-600 mb-12 text-white">Text1</h2>
+    </div>
+    <nav class="absolute bottom-8 flex justify-between w-full px-24 bg-img">
+      <div class="flex space-x-16">
+        <a href="#" class="text-xl text-white">Home</a>
+        <a href="#" class="text-xl text-white">About</a>
+        <a href="#" class="text-xl text-white">Services</a>
+      </div>
+      <div class="flex space-x-4">
+        <img src="https://placehold.co/40x40" alt="Icon1-1">
+        <img src="https://placehold.co/40x40" alt="Icon1-2">
+        <img src="https://placehold.co/40x40" alt="Icon1-3">
+        <img src="https://placehold.co/40x40" alt="Icon1-4">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="my-0 mx-auto max-w-screen-lg p-6 shadow-md content-bg">
+    <h1 class="text-lg-title2 text-center mt-16">Title2</h1>
+    <p class="text-lg-text2 text-center my-8">Text2</p>
+    <div class="flex justify-center my-8">
+      <img src="https://placehold.co/800x600" alt="PIC2" class="w-full large-image">
+    </div>
+    <div class="text-center">
+      <button class="px-8 py-2 button-custom rounded">Button1</button>
+    </div>
+  </section>
+
+  <!-- Sub Content Sections -->
+  <section class="my-0 mx-auto max-w-screen-lg p-6 shadow-md content-bg">
+    <div class="grid grid-cols-2 gap-16">
+
+      <!-- Sub-content Row 1 -->
+      <div class="text-center">
+        <div class="mb-4">Indicator 1</div>
+        <h3 class="text-lg-title3 font-semibold mb-8">Title3-1</h3>
+        <img src="https://placehold.co/350x250" alt="PIC3-1" class="mb-8 mx-auto medium-image">
+        <button class="px-6 py-2 button-custom rounded">Button3-1</button>
+      </div>
+      <div class="text-center">
+        <div class="mb-4">Indicator 2</div>
+        <h3 class="text-lg-title3 font-semibold mb-8">Title3-2</h3>
+        <img src="https://placehold.co/350x250" alt="PIC3-2" class="mb-8 mx-auto medium-image">
+        <button class="px-6 py-2 button-custom rounded">Button3-2</button>
+      </div>
+
+      <!-- Sub-content Row 2 -->
+      <div class="text-center">
+        <div class="mb-4">Indicator 3</div>
+        <h3 class="text-lg-title3 font-semibold mb-8">Title3-3</h3>
+        <img src="https://placehold.co/350x250" alt="PIC3-3" class="mb-8 mx-auto medium-image">
+        <button class="px-6 py-2 button-custom rounded">Button3-3</button>
+      </div>
+      <div class="text-center">
+        <div class="mb-4">Indicator 4</div>
+        <h3 class="text-lg-title3 font-semibold mb-8">Title3-4</h3>
+        <img src="https://placehold.co/350x250" alt="PIC3-4" class="mb-8 mx-auto medium-image">
+        <button class="px-6 py-2 button-custom rounded">Button3-4"></button>
+      </div>
+
+      <!-- Sub-content Row 3 -->
+      <div class="text-center">
+        <div class="mb-4">Indicator 5</div>
+        <h3 class="text-lg-title3 font-semibold mb-8">Title3-5</h3>
+        <img src="https://placehold.co/350x250" alt="PIC3-5" class="mb-8 mx-auto medium-image">
+        <button class="px-6 py-2 button-custom rounded">Button3-5</button>
+      </div>
+      <div class="text-center">
+        <div class="mb-4">Indicator 6</div>
+        <h3 class="text-lg-title3 font-semibold mb-8">Title3-6</h3>
+        <img src="https://placehold.co/350x250" alt="PIC3-6" class="mb-8 mx-auto medium-image">
+        <button class="px-6 py-2 button-custom rounded">Button3-6</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="my-0 mx-auto max-w-screen-lg p-6 shadow-md content-bg">
+    <div class="grid grid-cols-2 gap-8 label-bg">
+      <!-- Form Inputs -->
+      <div>
+        <label class="block mb-2">Label1</label>
+        <input type="text" class="block w-full mb-4 p-2 border border-gray-300 rounded input-custom">
+
+        <label class="block mb-2">Label2</label>
+        <input type="text" class="block w-full mb-4 p-2 border border-gray-300 rounded input-custom">
+
+        <label class="block mb-2">Label3</label>
+        <textarea class="block w-full mb-4 p-2 border border-gray-300 rounded input-custom" rows="4"></textarea>
+
+        <button class="px-6 py-2 submit-button-custom rounded">Submit</button>
+      </div>
+
+      <!-- Contact Details & Social Media Links -->
+      <div class="flex flex-col space-y-16">
+        <div class="flex space-x-4 items-center contact-bg">
+          <h3 class="text-lg font-semibold content-bg p-2 contact-bg">Title4-1</h3>
+          <p class="ml-4 content-bg p-2 contact-bg">Text4-1</p>
+        </div>
+        <div class="flex space-x-4 items-center contact-bg">
+          <h3 class="text-lg font-semibold content-bg p-2 contact-bg">Title4-2</h3>
+          <p class="ml-4 content-bg p-2 contact-bg">Text4-2</p>
+        </div>
+        <div class="flex space-x-4 items-center contact-bg">
+          <h3 class="text-lg font-semibold content-bg p-2 contact-bg">Title4-3</h3>
+          <p class="ml-4 content-bg p-2 contact-bg">Text4-3</p>
+        </div>
+        <div class="flex items-center content-bg p-2 contact-bg">
+          <h3 class="text-lg font-semibold contact-bg">Title4-4</h3>
+          <div class="flex space-x-4 ml-4 contact-bg">
+            <img src="https://placehold.co/40x40" class="rounded-full contact-bg" alt="Social Icon">
+            <img src="https://placehold.co/40x40" class="rounded-full contact-bg" alt="Social Icon">
+            <img src="https://placehold.co/40x40" class="rounded-full contact-bg" alt="Social Icon">
+            <img src="https://placehold.co/40x40" class="rounded-full contact-bg" alt="Social Icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="p-6 shadow-md text-center bg-img">
+    <div class="flex justify-center space-x-4">
+      <a href="#" class="link-custom">Link7</a>
+      <a href="#" class="link-custom">Link8</a>
+    </div>
+  </footer>
+
+</body>
+</html>

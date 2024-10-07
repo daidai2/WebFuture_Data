@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .team, .checkout, .catalog {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #000;
+        }
+        .team-member, .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-member img, .product img {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            margin-right: 20px;
+        }
+        .team-member div, .product div {
+            flex-grow: 1;
+        }
+        .checkout input, .checkout label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .shipping-service {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="#" alt="Mate One">
+            <div>
+                <h3>Mate One</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="#" alt="Mate Two">
+            <div>
+                <h3>Mate Two</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="#" alt="Mate Three">
+            <div>
+                <h3>Mate Three</h3>
+                <p>Job Title</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <form>
+            <!-- Removed the first text input field -->
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+            
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+            
+            <div class="shipping-service">
+                <p>Shipping Service</p>
+                <input type="radio" id="standard" name="shipping" value="standard">
+                <label for="standard">Standard - 14 days - $6.59</label><br>
+                
+                <input type="radio" id="expedited" name="shipping" value="expedited">
+                <label for="expedited">Expedited - 7 days - $12.97</label><br>
+                
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express - 3 days - $19.97</label>
+            </div>
+        </form>
+    </div>
+
+    <div class="catalog">
+        <h2>Product Catalog</h2>
+        <div class="product">
+            <img src="#" alt="Product 1">
+            <div>
+                <h3>Product 1</h3>
+                <p>$20.00</p>
+                <h3>Add to Cart</h3> <!-- Changed the button to a heading -->
+            </div>
+        </div>
+        <div class="product">
+            <img src="#" alt="Product 2">
+            <div>
+                <h3>Product 2</h3>
+                <p>$10.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="#" alt="Product 3">
+            <div>
+                <h3>Product 3</h3>
+                <p>$40.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added text at the bottom of the page -->
+    <p>Add Element</p>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .custom-font-size {
+      font-size: 50px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.submit-btn').addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Add Interaction');
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 p-4">
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md mb-4">
+    <h1 class="text-2xl font-bold custom-font-size">Write Review</h1>
+  </header>
+
+  <!-- Main Section -->
+  <section class="bg-white p-4 shadow-md mb-4">
+    <!-- Product Info -->
+    <div class="product-info mb-4">
+      <div class="flex items-center mb-2">
+        <!-- Removed the first image -->
+        <div>
+          <h2 class="text-xl font-semibold">Product Name</h2>
+          <p class="text-gray-600">$Price</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="text-yellow-500">★★★★☆</span>
+          <span class="text-gray-800">(45 reviews)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Form -->
+    <form class="review-form mb-4">
+      <div class="mb-4">
+        <label class="block text-gray-700">Rate Product:</label>
+        <span class="text-yellow-500">☆☆☆☆☆</span> <span>Bad :(</span>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Headline</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Headline">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Review</label>
+        <textarea class="w-full border border-gray-300 p-2 rounded" placeholder="Write your review here..."></textarea>
+      </div>
+      <div class="flex justify-end">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded submit-btn">Submit</button>
+      </div>
+    </form>
+
+    <!-- Additional Content -->
+    <div class="additional-content">
+      <div class="flex justify-between mb-4">
+        <img src="https://placehold.co/100x100" alt="Additional Image 1" class="mr-4">
+        <img src="https://placehold.co/100x100" alt="Additional Image 2">
+      </div>
+      <div class="mb-4">
+        <p class="text-gray-600">Additional text block content.</p>
+      </div>
+      <div>
+        <input type="checkbox" id="additionalCheckbox" class="mr-2">
+        <label for="additionalCheckbox">Option</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white p-4 shadow-md mt-4">
+    <div class="flex items-center mb-4">
+      <img src="https://placehold.co/50x50" alt="Footer Image" class="mr-4">
+      <p class="text-gray-600">Footer text line here.</p>
+    </div>
+    <div class="flex justify-between items-center">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded mr-2">Back</button>
+      <button class="bg-gray-400 text-white px-4 py-2 rounded mr-2">Back</button>
+      <button class="bg-green-500 text-white px-4 py-2 rounded">Button</button>
+    </div>
+  </footer>
+</body>
+</html>

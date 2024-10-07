@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .no-margin {
+      margin: 0 !important;
+    }
+    .purple-bg {
+      background-color: purple;
+    }
+    .dark-blue-bg {
+      background-color: darkblue;
+    }
+    .deep-pink-bg {
+      background-color: deeppink;
+    }
+    .white-border {
+      border: 2px solid white;
+    }
+    .text-light-gray {
+      color: lightgray;
+    }
+    .button2-style {
+      background-color: purple;
+      color: white;
+      border: 2px solid white;
+      border-radius: 0 15px 15px 0;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4 no-margin">
+    <div class="container mx-auto no-margin">
+      <!-- Links in dark background area -->
+      <div class="flex justify-center mb-4 space-x-4 no-margin">
+        <a href="#" class="text-white">Link1</a>
+        <a href="#" class="text-gray-400">Link2</a>
+        <a href="#" class="text-gray-400">Link3</a>
+        <a href="#" class="text-gray-400">Link4</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <div class="flex no-margin">
+    <!-- Navigation -->
+    <nav class="hidden">
+      <!-- Navigation hidden as per request -->
+    </nav>
+
+    <!-- Main Content -->
+    <main class="w-full p-8 no-margin">
+      <!-- Section 1 -->
+      <section class="mb-0 mt-0 no-margin purple-bg p-8">
+        <h2 class="text-2xl mb-4 text-white">Title2</h2>
+        <p class="mb-4 text-light-gray">Text2</p>
+        <button class="button2-style px-4 py-2">Button2</button>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="grid gap-0 grid-cols-1 mb-0 no-margin">
+        <article class="dark-blue-bg p-8 shadow flex items-center w-full">
+          <img src="pic01.jpg" class="object-cover h-full w-1/3 mr-8" alt="Placeholder Image">
+          <div class="w-2/3">
+            <h3 class="text-xl mb-4 text-white">Title3-1</h3>
+            <p class="mb-4 text-light-gray">Text3-1</p>
+            <button class="bg-blue-500 text-white px-4 py-2">Button3-1</button>
+          </div>
+        </article>
+
+        <article class="dark-blue-bg p-8 shadow flex items-center w-full">
+          <img src="pic02.jpg" class="object-cover h-full w-1/3 mr-8" alt="Placeholder Image">
+          <div class="w-2/3">
+            <h3 class="text-xl mb-4 text-white">Title3-2</h3>
+            <p class="mb-4 text-light-gray">Text3-2</p>
+            <button class="bg-blue-500 text-white px-4 py-2">Button3-2</button>
+          </div>
+        </article>
+
+        <article class="dark-blue-bg p-8 shadow flex items-center w-full">
+          <img src="pic03.jpg" class="object-cover h-full w-1/3 mr-8" alt="Placeholder Image">
+          <div class="w-2/3">
+            <h3 class="text-xl mb-4 text-white">Title3-3</h3>
+            <p class="mb-4 text-light-gray">Text3-3</p>
+            <button class="bg-blue-500 text-white px-4 py-2">Button3-3</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-0 no-margin deep-pink-bg p-8">
+        <h3 class="text-2xl mb-12 text-white">Title4</h3>
+        <p class="mb-8 text-white">Text4</p>
+        <div class="grid gap-0 grid-cols-2 md:grid-cols-2">
+          <div class="flex items-center deep-pink-bg p-8 shadow w-full white-border">
+            <img src="https://placehold.co/33x33" class="rounded-full object-cover mr-8" alt="Placeholder Image">
+            <div class="w-2/3">
+              <h4 class="text-lg mb-4">Title4-1</h4>
+              <p>Text4-1</p>
+            </div>
+          </div>
+          <div class="flex items-center deep-pink-bg p-8 shadow w-full white-border">
+            <img src="https://placehold.co/33x33" class="rounded-full object-cover mr-8" alt="Placeholder Image">
+            <div class="w-2/3">
+              <h4 class="text-lg mb-4">Title4-2</h4>
+              <p>Text4-2</p>
+            </div>
+          </div>
+          <div class="flex items-center deep-pink-bg p-8 shadow w-full white-border">
+            <img src="https://placehold.co/33x33" class="rounded-full object-cover mr-8" alt="Placeholder Image">
+            <div class="w-2/3">
+              <h4 class="text-lg mb-4">Title4-3</h4>
+              <p>Text4-3</p>
+            </div>
+          </div>
+          <div class="flex items-center deep-pink-bg p-8 shadow w-full white-border">
+            <img src="https://placehold.co/33x33" class="rounded-full object-cover mr-8" alt="Placeholder Image">
+            <div class="w-2/3">
+              <h4 class="text-lg mb-4">Title4-4</h4>
+              <p>Text4-4</p>
+            </div>
+          </div>
+          <div class="flex items-center deep-pink-bg p-8 shadow w-full white-border">
+            <img src="https://placehold.co/33x33" class="rounded-full object-cover mr-8" alt="Placeholder Image">
+            <div class="w-2/3">
+              <h4 class="text-lg mb-4">Title4-5</h4>
+              <p>Text4-5</p>
+            </div>
+          </div>
+          <div class="flex items-center deep-pink-bg p-8 shadow w-full white-border">
+            <img src="https://placehold.co/33x33" class="rounded-full object-cover mr-8" alt="Placeholder Image">
+            <div class="w-2/3">
+              <h4 class="text-lg mb-4">Title4-6</h4>
+              <p>Text4-6</p>
+            </div>
+          </div>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-4">Button</button>
+      </section>
+
+      <!-- Section 4: Form Section -->
+      <section class="mb-0 flex no-margin purple-bg p-8">
+        <div class="flex-1">
+          <h3 class="text-2xl mb-4 text-white">Title5</h3>
+          <p class="mb-4 text-white">Text5</p>
+          <form class="space-y-4">
+            <div class="flex space-x-4">
+              <label for="input-1" class="block text-white">Label5-1</label>
+              <label for="input-2" class="block ml-8 text-white">Label5-2</label>
+            </div>
+            <div class="flex space-x-4">
+              <input type="text" id="input-1" class="w-1/4 p-2 border border-gray-300">
+              <input type="text" id="input-2" class="w-1/4 p-2 border border-gray-300 ml-8">
+            </div>
+            <div>
+              <label for="textarea" class="block text-white">Label5-3</label>
+              <textarea id="textarea" class="w-1/2 p-2 border border-gray-300"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2">Button4</button>
+          </form>
+        </div>
+        <div class="flex flex-col ml-8">
+          <div class="mb-4">
+            <h4 class="text-lg mb-2 text-white">Title5-1</h4>
+            <p class="text-base text-white">Text5-1</p>
+          </div>
+          <div class="mb-4">
+            <h4 class="text-lg mb-2 text-white">Title5-2</h4>
+            <p class="text-base text-white">Text5-2</p>
+          </div>
+          <div class="mb-4">
+            <h4 class="text-lg mb-2 text-white">Title5-3</h4>
+            <p class="text-base text-white">Text5-3</p>
+          </div>
+          <div>
+            <h4 class="text-lg mb-2 text-white">Title5-4</h4>
+            <div class="flex space-x-2 mt-2">
+              <img src="https://placehold.co/20x20" class="object-cover" alt="Icon1">
+              <img src="https://placehold.co/20x20" class="object-cover" alt="Icon2">
+              <img src="https://placehold.co/20x20" class="object-cover" alt="Icon3">
+              <img src="https://placehold.co/20x20" class="object-cover" alt="Icon4">
+              <img src="https://placehold.co/20x20" class="object-cover" alt="Icon5">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-8 no-margin">
+    <div class="container mx-auto">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-blue-500">LinkA</a></li>
+        <li><a href="#" class="text-blue-500">LinkB</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

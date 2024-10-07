@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Example</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector("button:text('Login')").addEventListener("click", function() {
+        // Add Interaction Module
+        const interactionModule = document.createElement('div');
+        interactionModule.className = 'mt-4';
+        interactionModule.innerHTML = '<p class="text-center text-lg">Add Interaction</p>';
+        document.body.appendChild(interactionModule);
+
+        // Add Element
+        const addElement = document.createElement('p');
+        addElement.className = 'text-center text-lg mt-4';
+        addElement.textContent = 'Add Element';
+        document.body.appendChild(addElement);
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+<section class="max-w-2xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-8">
+<!-- Payment Method Selection -->
+<form>
+<fieldset class="mb-6">
+<legend class="text-xl font-semibold mb-2">Select your payment method</legend>
+<label class="block mb-2" id="6_2_1_1_1">
+<input name="paymentMethod" type="radio" value="creditCard"/> Credit Card
+        </label>
+<label class="block mb-2">
+<input name="paymentMethod" type="radio" value="paypal"/> PayPal
+        </label>
+<label class="block mb-2">
+<input name="paymentMethod" type="radio" value="bankTransfer"/> Bank Transfer
+        </label>
+</fieldset>
+<!-- Card Data Input -->
+<div class="mb-6">
+<label class="block text-lg font-semibold mb-2">Enter your data</label>
+<label class="block mb-2">Card Number</label>
+<input class="w-full px-3 py-2 border rounded mb-4" type="text"/>
+<div class="grid grid-cols-3 gap-4">
+<div>
+<label class="block mb-2">Expiration date</label>
+<select class="w-full px-3 py-2 border rounded mb-2">
+<option>MM</option>
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<!-- Add more options as needed -->
+</select>
+<select class="w-full px-3 py-2 border rounded">
+<option>YY</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<!-- Add more options as needed -->
+</select>
+</div>
+<div class="col-span-2">
+<label class="block mb-2">CVV</label>
+<input class="w-full px-3 py-2 border rounded" type="text"/>
+</div>
+</div>
+</div>
+<!-- Control Button -->
+<div class="mb-6">
+<button class="w-full bg-blue-500 text-white px-4 py-2 rounded" type="submit">Continue</button>
+</div>
+</form>
+</section>
+<section class="max-w-2xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
+<!-- User Account Section -->
+<nav class="flex justify-between mb-6">
+<button class="text-lg font-semibold">Sign Up</button>
+<button class="text-lg font-semibold">Login</button>
+</nav>
+<!-- Sign Up Form -->
+<form>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block mb-2">Name</label>
+<input class="w-full px-3 py-2 border rounded" type="text"/>
+</div>
+<div>
+<label class="block mb-2">Last Name</label>
+<input class="w-full px-3 py-2 border rounded" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block mb-2">Phone</label>
+<input class="w-full px-3 py-2 border rounded" type="text"/>
+</div>
+<div>
+<label class="block mb-2" id="6_2_2_1_1">E-mail</label>
+<input class="w-full px-3 py-2 border rounded" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block mb-2">Password</label>
+<input class="w-full px-3 py-2 border rounded" type="password"/>
+</div>
+<div>
+<label class="block mb-2">Confirm Password</label>
+<input class="w-full px-3 py-2 border rounded" type="password"/>
+</div>
+</div>
+<div class="mb-4">
+<label class="block mb-2">
+<input type="checkbox"/> I agree to Terms and Conditions
+        </label>
+</div>
+<div>
+<button class="w-full bg-blue-500 text-white px-4 py-2 rounded" type="submit">Sign Up</button>
+</div>
+</form>
+</section>
+<section class="max-w-2xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
+<!-- Shipping Form -->
+<form>
+<fieldset class="mb-6">
+<legend class="text-xl font-semibold mb-2">Forma de envío</legend>
+<div class="mb-4">
+<p class="font-semibold">Método Transporte</p>
+<label class="block mb-2">
+<input name="transportMethod" type="radio" value="terrestre"/> Terrestre
+          </label>
+<label class="block mb-2">
+<input name="transportMethod" type="radio" value="aereo"/> Aéreo
+          </label>
+<label class="block mb-2">
+<input name="transportMethod" type="radio" value="maritimo"/> Marítimo
+          </label>
+</div>
+<div class="mb-4">
+<p class="font-semibold">Forma de pago</p>
+<label class="block mb-2">
+<input name="paymentForm" type="radio" value="tarjeta"/> Tarjeta (Credito/Debito)
+          </label>
+<label class="block mb-2">
+<input name="paymentForm" type="radio" value="transferencia"/> Transferencia bancaria
+          </label>
+<label class="block mb-2">
+<input name="paymentForm" type="radio" value="metalico"/> Metálico
+          </label>
+</div>
+<div class="mb-4">
+<label class="block mb-2">Dirección</label>
+<input class="w-full px-3 py-2 border rounded" type="text"/>
+</div>
+<div class="mb-6">
+<label class="block mb-2">País</label>
+<select class="w-full px-3 py-2 border rounded">
+<option>Seleccione un país</option>
+<option>País 1</option>
+<option>País 2</option>
+<!-- Add more options as needed -->
+</select>
+</div>
+<button class="w-full bg-blue-500 text-white px-4 py-2 rounded" type="submit">Aceptar</button>
+</fieldset>
+</form>
+</section>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Write Review</title>
+<style></style>
+</head>
+<body class="bg-gray-100 p-4" id="body1">
+<section class="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden" id="body1-section1">
+<!-- Review Header -->
+<header class="p-4 border-b" id="body1-section1-header1">
+<div class="flex items-center" id="body1-section1-header1-div1">
+<button class="bg-blue-500 text-white px-4 py-2 rounded-lg" id="Parent_body1-section1-header1-div1_Next_body1-section1-header1-div1-div2_Queue_1">Modify Element</button>
+<div class="ml-4" id="body1-section1-header1-div1-div2">
+<span class="block text-lg font-bold" id="body1-section1-header1-div1-div2-span1">Product Name</span>
+<span class="block text-gray-500" id="body1-section1-header1-div1-div2-span2">$Price</span>
+<div class="flex items-center mt-2" id="body1-section1-header1-div1-div2-div3">
+<span class="text-yellow-400" id="6_2_2_2_1">★★★★★</span>
+<span class="ml-2 text-gray-600" id="body1-section1-header1-div1-div2-div3-span4">(45 reviews)</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Review Form -->
+<form class="p-4" id="body1-section1-form1">
+<div id="body1-section1-form1-div4">
+<label class="block text-gray-700 font-bold" for="rating" id="body1-section1-form1-div4-label1">Rate Product</label>
+<div class="flex items-center mt-2" id="body1-section1-form1-div4-div5">
+<input class="mx-1" id="body1-section1-form1-div4-div5-input1" name="rating" type="radio"/><label class="mx-1" for="star1" id="6_2_2_2_2">★</label>
+<input class="mx-1" id="body1-section1-form1-div4-div5-input2" name="rating" type="radio"/><label class="mx-1" for="star2" id="6_2_2_2_3">★</label>
+<input class="mx-1" id="body1-section1-form1-div4-div5-input3" name="rating" type="radio"/><label class="mx-1" for="star3" id="6_2_2_2_4">★</label>
+<input class="mx-1" id="body1-section1-form1-div4-div5-input4" name="rating" type="radio"/><label class="mx-1" for="star4" id="6_2_2_2_5">★</label>
+<input class="mx-1" id="body1-section1-form1-div4-div5-input5" name="rating" type="radio"/><label class="mx-1" for="star5" id="6_2_2_2_6">★</label>
+<span class="ml-2 text-gray-700" id="6_2_1_1_6">Transferencia bancaria</span>
+</div>
+</div>
+<div class="mt-4" id="body1-section1-form1-div6">
+<label class="block text-gray-700 font-bold" for="headline" id="body1-section1-form1-div6-label7">Headline</label>
+<input class="w-full border rounded-lg p-2 mt-1" id="body1-section1-form1-div6-input6" placeholder="Enter review headline" type="text"/>
+</div>
+<div class="mt-4" id="body1-section1-form1-div7">
+<label class="block text-gray-700 font-bold" for="review" id="body1-section1-form1-div7-label8">Review</label>
+<textarea class="w-full border rounded-lg p-2 mt-1" id="body1-section1-form1-div7-textarea1" placeholder="Write your review" rows="4"></textarea>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4" id="body1-section1-form1-button1" type="submit">Submit</button>
+</form>
+<!-- Content Section -->
+<section class="p-4 grid grid-cols-2 gap-4 border-t" id="body1-section1-section2">
+<div id="body1-section1-section2-div8">
+<img alt="Image 1" class="w-full h-full object-cover" id="body1-section1-section2-div8-img2" src="https://placehold.co/200x200"/>
+</div>
+<div id="body1-section1-section2-div9">
+<img alt="Image 2" class="w-full h-full object-cover" id="body1-section1-section2-div9-img3" src="https://placehold.co/200x200"/>
+</div>
+<div class="col-span-2" id="body1-section1-section2-div10">
+<p class="text-gray-700" id="body1-section1-section2-div10-p1">Additional content or description goes here.</p>
+<img alt="Image 3" class="w-full h-full object-cover mt-4" id="body1-section1-section2-div10-img4" src="https://placehold.co/200x200"/>
+</div>
+<div class="flex items-center" id="body1-section1-section2-div11">
+<input class="mr-2" id="body1-section1-section2-div11-input7" type="checkbox"/>
+<label class="text-gray-700" for="option1" id="body1-section1-section2-div11-label9">Option</label>
+</div>
+<button class="bg-green-500 text-white px-4 py-2 rounded-lg" id="body1-section1-section2-button2" onclick="showAlert()">Button</button>
+</section>
+<!-- Additional Options -->
+<aside class="p-4 border-t" id="body1-section1-aside1">
+<h3 class="text-lg font-bold" id="body1-section1-aside1-h31">Forma de envío</h3>
+<div class="mt-2" id="body1-section1-aside1-div12">
+<input class="mr-2" id="body1-section1-aside1-div12-input8" name="transport" type="radio"/><label class="text-gray-700" for="trans1" id="body1-section1-aside1-div12-label10">Terrestre</label><br id="body1-section1-aside1-div12-br1"/>
+<input class="mr-2" id="body1-section1-aside1-div12-input9" name="transport" type="radio"/><label class="text-gray-700" for="trans2" id="body1-section1-aside1-div12-label11">Aéreo</label><br id="body1-section1-aside1-div12-br2"/>
+<input class="mr-2" id="body1-section1-aside1-div12-input10" name="transport" type="radio"/><label class="text-gray-700" for="trans3" id="body1-section1-aside1-div12-label12">Marítimo</label>
+</div>
+<h3 class="text-lg font-bold mt-4" id="body1-section1-aside1-h32">Forma de pago</h3>
+<div class="mt-2" id="body1-section1-aside1-div13">
+<input class="mr-2" id="body1-section1-aside1-div13-input11" name="payment" type="radio"/><label class="text-gray-700" for="pay1" id="body1-section1-aside1-div13-label13">Tarjeta (Crédito/Débito)</label><br id="body1-section1-aside1-div13-br3"/>
+<input class="mr-2" id="body1-section1-aside1-div13-input12" name="payment" type="radio"/><label class="text-gray-700" for="pay2" id="6_2_1_2_6">Transferencia bancaria</label><br id="body1-section1-aside1-div13-br4"/>
+<input class="mr-2" id="body1-section1-aside1-div13-input13" name="payment" type="radio"/><label class="text-gray-700" for="pay3" id="body1-section1-aside1-div13-label15">Metálico</label>
+</div>
+<div class="mt-4" id="body1-section1-aside1-div14">
+<label class="text-gray-700 font-bold" for="address" id="body1-section1-aside1-div14-label16">Dirección</label>
+<input class="w-full border rounded-lg p-2 mt-1" id="body1-section1-aside1-div14-input14" type="text"/>
+</div>
+<div class="mt-4" id="body1-section1-aside1-div15">
+<label class="text-gray-700 font-bold" for="country" id="body1-section1-aside1-div15-label17">País</label>
+<select class="w-full border rounded-lg p-2 mt-1" id="body1-section1-aside1-div15-select1">
+<option id="body1-section1-aside1-div15-select1-option1">Seleccione un país</option>
+<option id="body1-section1-aside1-div15-select1-option2">País 1</option>
+<option id="body1-section1-aside1-div15-select1-option3">País 2</option>
+</select>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4" id="body1-section1-aside1-button3">Aceptar</button>
+</aside>
+</section>
+<script data-custom-scripts="true">
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

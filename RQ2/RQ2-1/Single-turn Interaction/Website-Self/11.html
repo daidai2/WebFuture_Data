@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product button {
+            width: 150px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .product-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .rating {
+            font-size: 20px;
+        }
+        .rate-product, .headline, .review, .submit {
+            margin-bottom: 20px;
+        }
+        .stars {
+            display: flex;
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            font-size: 24px;
+            cursor: pointer;
+            color: gray;
+        }
+        .stars input:checked ~ label,
+        .stars input:hover ~ label {
+            color: gold;
+        }
+        .bad {
+            margin-left: 10px;
+            color: red;
+        }
+        .product-title {
+            margin: 20px 0;
+            font-size: 50px;
+        }
+        .check-items {
+            margin-bottom: 20px;
+        }
+        .buy-now {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#">Add Element</a>
+
+<div class="container">
+    <h1>Write Review</h1>
+    <div class="product">
+        <button>Modify Element</button>
+        <div class="product-details">
+            <div>Product NAME</div>
+            <div>$Price</div>
+        </div>
+        <div class="rating">★★★☆☆ 45 reviews</div>
+    </div>
+    
+    <div class="rate-product">
+        <label for="rating">Rate Product</label>
+        <div class="stars">
+            <input type="radio" name="star" id="star1"><label for="star1">★</label>
+            <input type="radio" name="star" id="star2"><label for="star2">★</label>
+            <input type="radio" name="star" id="star3"><label for="star3">★</label>
+            <input type="radio" name="star" id="star4"><label for="star4">★</label>
+            <input type="radio" name="star" id="star5"><label for="star5">★</label>
+        </div>
+        <span class="bad">Bad :(</span>
+    </div>
+    
+    <div class="headline">
+        <label for="headline">Headline</label>
+        <input type="text" id="headline" name="headline">
+    </div>
+    
+    <div class="review">
+        <label for="review">Review</label>
+        <textarea id="review" name="review" rows="4"></textarea>
+    </div>
+    
+    <button class="submit">Submit</button>
+    
+    <div class="product-title">$24.9</div>
+    <div class="product-title">Product TITLE</div>
+    
+    <div class="check-items">
+        <label>Check items:</label><br>
+        <input type="checkbox" id="item1"><label for="item1"> Check item 1</label><br>
+        <input type="checkbox" id="item2"><label for="item2"> Check item 2</label><br>
+        <input type="checkbox" id="item3"><label for="item3"> Check item 3</label>
+    </div>
+    
+    <a href="#" class="buy-now">Buy Now</a>
+</div>
+
+</body>
+</html>

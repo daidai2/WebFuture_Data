@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe WebPage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="bg-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">TITLE</h1>
+      <h2 class="text-xl">Title Page</h2>
+    </div>
+  </header>
+
+  <nav class="bg-gray-200 p-4 shadow-md">
+    <div class="container mx-auto">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-blue-600">Link 1</a></li>
+        <li><a href="#" class="text-blue-600">Link 2</a></li>
+        <li><a href="#" class="text-blue-600">Link 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="main-content container mx-auto mt-6 p-4 bg-white shadow-md">
+    <div class="flex flex-col md:flex-row justify-between mb-6">
+      <div class="video-section p-4">
+        <img src="https://placehold.co/200x150" alt="Video Placeholder" class="w-full h-auto">
+      </div>
+      <div class="articles-section flex flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
+        <article class="p-4 border rounded-md shadow-sm">
+          <h3 class="font-bold text-xl mb-2">Title</h3>
+          <p>Placeholder for textual content</p>
+          <img src="https://placehold.co/150x100" alt="Content Image 1" class="mt-2">
+        </article>
+        <article class="p-4 border rounded-md shadow-sm">
+          <h3 class="font-bold text-xl mb-2">Title</h3>
+          <p>Placeholder for textual content</p>
+          <img src="https://placehold.co/150x100" alt="Content Image 2" class="mt-2">
+        </article>
+        <article class="p-4 border rounded-md shadow-sm">
+          <h3 class="font-bold text-xl mb-2">Title</h3>
+          <p>Placeholder for textual content</p>
+          <img src="https://placehold.co/150x100" alt="Content Image 3" class="mt-2">
+        </article>
+        <article class="p-4 border rounded-md shadow-sm">
+          <h3 class="font-bold text-xl mb-2">Title</h3>
+          <p>Placeholder for textual content</p>
+          <img src="https://placehold.co/150x100" alt="Content Image 4" class="mt-2">
+        </article>
+      </div>
+    </div>
+    <div class="large-banner mb-6">
+      <img src="https://placehold.co/1366x624" alt="Large Banner" class="w-full">
+    </div>
+    <article class="text-block mb-6">
+      <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat ex eu dolor suscipit, vitae dapibus mi aliquam.</p>
+      <p class="mb-2">Sed in lacus a leo facilisis dictum. Integer pretium turpis ac purus dapibus ornare.</p>
+      <p class="mb-2">Nam quis leo a magna dictum lobortis. Nulla at ultricies enim. Integer pretium arcu nec nisi consectetur, id laoreet erat luctus. <span>Correo</span></p>
+    </article>
+    <form class="form-section bg-gray-100 p-4 rounded-md shadow-md">
+      <!-- Removed the first text input field here -->
+      <div class="mb-4">
+        <label for="country" class="block font-bold mb-1">País</label>
+        <select id="country" class="w-full p-2 border rounded-md">
+          <option value="">Select Country</option>
+          <option value="country1">Country 1</option>
+          <option value="country2">Country 2</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label for="shipping" class="block font-bold mb-1">Forma de envio</label>
+        <div>
+          <input type="radio" id="shipping1" name="shipping" value="option1">
+          <label for="shipping1">Pacto transporte</label>
+        </div>
+        <div>
+          <input type="radio" id="shipping2" name="shipping" value="option2">
+          <label for="shipping2">Correo</label>
+        </div>
+        <div>
+          <input type="radio" id="shipping3" name="shipping" value="option3">
+          <label for="shipping3">Aereo</label>
+        </div>
+        <div>
+          <input type="radio" id="shipping4" name="shipping" value="option4">
+          <label for="shipping4">Maritimo</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="payment" class="block font-bold mb-1">Forma de pago</label>
+        <div>
+          <input type="radio" id="payment1" name="payment" value="credit_debit">
+          <label for="payment1">Tarjeta (Crédito/Débito)</label>
+        </div>
+        <div>
+          <input type="radio" id="payment2" name="payment" value="bank_transfer">
+          <label for="payment2">Transferencia bancaria</label>
+        </div>
+        <div>
+          <input type="radio" id="payment3" name="payment" value="cash">
+          <label for="payment3">Efectivo</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <h3 class="bg-blue-600 text-white py-2 px-4 rounded-md">Aceptar</h3>
+      </div>
+    </form>
+  </section>
+
+  <footer class="bg-gray-800 text-white p-4 text-center mt-6">
+    <div class="container mx-auto">
+      <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

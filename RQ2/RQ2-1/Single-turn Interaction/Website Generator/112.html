@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div id="main-container" class="max-w-screen-lg mx-auto bg-white ring-1 ring-gray-300 p-4">
+
+    <!-- Header Section -->
+    <header class="mb-4">
+      <h1 class="text-2xl font-bold">Wireframe Page</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="mb-4 flex items-center space-x-4">
+      <select id="language-dropdown" class="border p-2">
+        <option>C Sharp</option>
+      </select>
+      <button id="get-dropdown" class="bg-blue-500 text-white px-4 py-2">Get Drop Down Here</button>
+      <div class="checkbox-container flex items-center space-x-2">
+        <label><input type="checkbox" id="csharp" class="mr-1"> C#</label>
+        <label><input type="checkbox" id="java" class="mr-1"> Java</label>
+        <label><input type="checkbox" id="php" class="mr-1"> PHP</label>
+        <label><input type="checkbox" id="visual-basic" class="mr-1"> Visual Basic</label>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="main-content" class="mb-4">
+      <!-- Removed the first image -->
+      <div class="text-placeholder">
+        <p class="mb-2">Placeholder text for multiple paragraphs</p>
+        <p class="mb-2">Placeholder text for multiple paragraphs</p>
+        <p class="mb-2">Placeholder text for multiple paragraphs</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-section" class="mb-4">
+      <input type="text" id="input1" placeholder="Input Field 1" class="border p-2 mb-2 w-full">
+      <input type="text" id="input2" placeholder="Input Field 2" class="border p-2 mb-2 w-full">
+      <input type="text" id="input3" placeholder="Input Field 3" class="border p-2 mb-2 w-full">
+      <button id="submit-button" class="bg-green-500 text-white px-4 py-2">Submit</button>
+    </section>
+
+    <!-- List Section -->
+    <aside id="list-section" class="mb-4">
+      <label class="block"><input type="checkbox" id="chk1" class="mr-1"> Checkbox Entry 1</label>
+      <label class="block"><input type="checkbox" id="chk2" class="mr-1"> Checkbox Entry 2</label>
+      <label class="block"><input type="radio" name="option" id="option1" class="mr-1"> Radio Entry 1</label>
+      <label class="block"><input type="radio" name="option" id="option2" class="mr-1"> Radio Entry 2</label>
+      <label class="block"><input type="radio" name="option" id="option3" class="mr-1"> Radio Entry 3</label>
+    </aside>
+
+    <!-- Resolution Section -->
+    <section id="resolution" class="mb-4">
+      <h5 class="text-gray-500">1356 x 624</h5>
+    </section>
+
+    <!-- Shipping Form Section -->
+    <section id="shipping-form-section" class="mb-4">
+      <h5 class="font-bold">Forma de envío <span class="ml-2">C#</span></h5>
+      <label class="block"><input type="radio" name="shipping-method" id="shipping-method-transport" class="mr-1"> Medio transporte</label>
+      <label class="block"><input type="radio" name="shipping-method" id="shipping-method-land" class="mr-1"> Terrestre</label>
+      <label class="block"><input type="radio" name="shipping-method" id="shipping-method-air" class="mr-1"> Aéreo</label>
+      <label class="block"><input type="radio" name="shipping-method" id="shipping-method-sea" class="mr-1"> Marítimo</label>
+    </section>
+
+    <!-- Payment Form Section -->
+    <section id="payment-form-section" class="mb-4">
+      <h5 class="font-bold">Forma de pago</h5>
+      <label class="block"><input type="checkbox" id="payment-method-card" class="mr-1"> Tarjeta (Crédito/Débito)</label>
+      <label class="block"><input type="radio" name="payment-method" id="payment-method-bank" class="mr-1"> Transferencia bancaria</label>
+      <label class="block"><input type="radio" name="payment-method" id="payment-method-cash" class="mr-1"> Metálico</label>
+    </section>
+
+    <!-- Address Section -->
+    <section id="address-section" class="mb-4">
+      <h5 class="font-bold">Dirección</h5>
+      <input type="text" id="address-input" class="border p-2 w-full">
+    </section>
+
+    <!-- Country Dropdown Section -->
+    <section id="country-dropdown" class="mb-4">
+      <h5 class="font-bold">País</h5>
+      <select id="country-dropdown-input" class="border p-2 w-full">
+        <option>Country Dropdown</option>
+      </select>
+    </section>
+
+    <!-- Accept Button Section changed to a heading -->
+    <section id="accept-button" class="mb-4">
+      <h5 id="accept-button-element" class="bg-blue-500 text-white px-4 py-2">Aceptar</h5>
+    </section>
+
+  </div>
+</body>
+</html>

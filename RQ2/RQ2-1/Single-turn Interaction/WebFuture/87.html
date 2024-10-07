@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-4" id="body1">
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md mb-4" id="body1-header1">
+    <h1 class="text-2xl font-bold" id="body1-header1-h11" style="font-size: 50px;">Write Review</h1>
+  </header>
+
+  <!-- Main Section -->
+  <section class="bg-white p-4 shadow-md mb-4" id="body1-section1">
+    <!-- Product Info -->
+    <div class="product-info mb-4" id="body1-section1-div1">
+      <div class="flex items-center mb-2" id="body1-section1-div1-div2">
+
+        <div id="body1-section1-div1-div2-div3">
+          <h2 class="text-xl font-semibold" id="body1-section1-div1-div2-div3-h21">Product Name</h2>
+          <p class="text-gray-600" id="body1-section1-div1-div2-div3-p1">$Price</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between" id="body1-section1-div1-div4">
+        <div id="body1-section1-div1-div4-div5">
+          <span class="text-yellow-500" id="body1-section1-div1-div4-div5-span1">★★★★☆</span>
+          <span class="text-gray-800" id="body1-section1-div1-div4-div5-span2">(45 reviews)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Form -->
+    <form class="review-form mb-4" id="body1-section1-form1">
+      <div class="mb-4" id="body1-section1-form1-div6">
+        <label class="block text-gray-700" id="body1-section1-form1-div6-label1">Rate Product:</label>
+        <span class="text-yellow-500" id="body1-section1-form1-div6-span3">☆☆☆☆☆</span> <span id="body1-section1-form1-div6-span4">Bad :(</span>
+      </div>
+      <div class="mb-4" id="body1-section1-form1-div7">
+        <label class="block text-gray-700" id="body1-section1-form1-div7-label2">Headline</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Headline" id="body1-section1-form1-div7-input1">
+      </div>
+      <div class="mb-4" id="body1-section1-form1-div8">
+        <label class="block text-gray-700" id="body1-section1-form1-div8-label3">Review</label>
+        <textarea class="w-full border border-gray-300 p-2 rounded" placeholder="Write your review here..." id="body1-section1-form1-div8-textarea1"></textarea>
+      </div>
+      <div class="flex justify-end" id="body1-section1-form1-div9">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-section1-form1-div9-button1" onclick="showAlert()">Submit</button>
+      </div>
+    </form>
+
+    <!-- Additional Content -->
+    <div class="additional-content" id="body1-section1-div10">
+      <div class="flex justify-between mb-4" id="body1-section1-div10-div11">
+        <img src="https://placehold.co/100x100" alt="Additional Image 1" class="mr-4" id="body1-section1-div10-div11-img2">
+        <img src="https://placehold.co/100x100" alt="Additional Image 2" id="body1-section1-div10-div11-img3">
+      </div>
+      <div class="mb-4" id="body1-section1-div10-div12">
+        <p class="text-gray-600" id="body1-section1-div10-div12-p2">Additional text block content.</p>
+      </div>
+      <div id="body1-section1-div10-div13">
+        <input type="checkbox" id="body1-section1-div10-div13-input2" class="mr-2">
+        <label for="additionalCheckbox" id="body1-section1-div10-div13-label4">Option</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white p-4 shadow-md mt-4" id="body1-footer1">
+    <div class="flex items-center mb-4" id="body1-footer1-div14">
+      <img src="https://placehold.co/50x50" alt="Footer Image" class="mr-4" id="body1-footer1-div14-img4">
+      <p class="text-gray-600" id="body1-footer1-div14-p3">Footer text line here.</p>
+    </div>
+    <div class="flex justify-between items-center" id="body1-footer1-div15">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded mr-2" id="body1-footer1-div15-button2">Back</button>
+      <button class="bg-gray-400 text-white px-4 py-2 rounded mr-2" id="body1-footer1-div15-button3">Back</button>
+      <button class="bg-green-500 text-white px-4 py-2 rounded" id="body1-footer1-div15-button4">Button</button>
+    </div>
+  </footer>
+
+
+  <script data-custom-scripts="true">
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

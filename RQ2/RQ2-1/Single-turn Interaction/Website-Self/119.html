@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 1356px;
+            margin: auto;
+        }
+        .dropdown, .button {
+            margin-bottom: 20px;
+            display: block;
+        }
+        .checkboxes, .radios {
+            margin-bottom: 20px;
+        }
+        .large-box {
+            width: 100%;
+            height: 200px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .small-box {
+            width: 100%;
+            height: 40px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .title, .submit-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+<script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('.dropdown button').addEventListener('click', showAlert);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+<div class="dropdown">
+<label for="programming-language">Programming Language</label>
+<select id="programming-language">
+<option value="csharp">C#</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="vb">Visual Basic</option>
+</select>
+<button>Get Drop Down Here</button>
+</div>
+<div class="checkboxes">
+<label><input name="language" type="checkbox" value="csharp"/> C#</label>
+<label><input name="language" type="checkbox" value="java"/> Java</label>
+<label><input name="language" type="checkbox" value="php"/> PHP</label>
+<label><input name="language" type="checkbox" value="vb"/> Visual Basic</label>
+</div>
+<div class="large-box"></div>
+<div class="small-box"></div>
+<div class="small-box"></div>
+<div class="small-box"></div>
+<div class="title">
+<label for="title">Title</label>
+<input id="title" type="text"/>
+</div>
+<div class="radios">
+<label>Relevance</label><br/>
+<label><input name="relevance" type="radio" value="not-relevant"/> Not Relevant</label>
+<label><input name="relevance" type="radio" value="low"/> Low</label>
+<label><input name="relevance" type="radio" value="medium"/> Medium</label>
+<label><input name="relevance" type="radio" value="high"/> High</label>
+</div>
+<div class="checkboxes">
+<label>Choices</label><br/>
+<label><input name="choice" type="checkbox" value="choice1"/> Choice 1</label>
+<label><input checked="" name="choice" type="checkbox" value="choice2"/> Choice 2</label>
+<label><input name="choice" type="checkbox" value="choice3"/> Choice 3</label>
+<label><input name="choice" type="checkbox" value="choice4"/> Choice 4</label>
+<label><input checked="" name="choice" type="checkbox" value="choice5"/> Choice 5</label>
+<label><input name="choice" type="checkbox" value="choice6"/> Choice 6</label>
+<label><input name="choice" type="checkbox" value="choice7"/> Choice 7</label>
+<label><input checked="" name="choice" type="checkbox" value="choice8"/> Choice 8</label>
+</div>
+<div class="submit-buttons">
+<button>OK</button>
+<button>Cancel</button>
+</div>
+<div class="button">
+<button id="6_1">Button</button>
+</div>
+<div class="footer-text">
+            Add Element
+        </div>
+</div>
+</body>
+</html>

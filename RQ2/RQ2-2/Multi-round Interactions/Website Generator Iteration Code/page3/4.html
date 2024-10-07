@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Fixed header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    main {
+      margin-top: 64px; /* Adjust this value based on header height */
+    }
+    section {
+      height: calc(100vh - 64px); /* Full height minus header height */
+      width: 100vw; /* Full width */
+      margin: 0; /* No margin */
+      padding: 0; /* No padding */
+    }
+    .form-container {
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <div class="text-2xl font-bold">Title1</div>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Link1</a>
+      <a href="#" class="hover:underline">Link2</a>
+      <a href="#" class="hover:underline">Link3</a>
+      <a href="#" class="hover:underline">Link4</a>
+      <a href="#" class="hover:underline">Link5</a>
+      <a href="#" class="hover:underline">Link6</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="space-y-0"> <!-- No spacing between sections -->
+
+    <!-- Section 1 -->
+    <section class="bg-white flex flex-col justify-center items-center">
+      <h2 class="text-xl font-bold">Title2</h2>
+      <p class="mt-2">Text2</p>
+      <div class="mt-4 flex justify-center">
+        <a href="https://link7.com" class="text-blue-500 underline">Link7</a>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="bg-white flex flex-col justify-center items-center">
+      <h2 class="text-xl font-bold">Title3</h2>
+      <p class="mt-2">Text3</p>
+      <div class="mt-4 flex justify-center">
+        <a href="https://link8.com" class="text-blue-500 underline">Link8</a>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="bg-white flex flex-col justify-center items-center">
+      <h2 class="text-xl font-bold">Title4</h2>
+      <p class="mt-2">Text4</p>
+      <div class="mt-4 flex justify-center">
+        <a href="https://link9.com" class="text-blue-500 underline">Link9</a>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="bg-white flex flex-col justify-center items-center">
+      <h2 class="text-xl font-bold">Title5</h2>
+      <h3 class="mt-2">Title5-1</h3>
+      <div class="mt-4 grid grid-cols-2 gap-0"> <!-- No gap between images -->
+        <img src="https://placehold.co/150x150" alt="FIG5-1" class="w-32 h-32">
+        <img src="https://placehold.co/150x150" alt="FIG5-2" class="w-32 h-32">
+        <img src="https://placehold.co/150x150" alt="FIG5-3" class="w-32 h-32">
+        <img src="https://placehold.co/150x150" alt="FIG5-4" class="w-32 h-32">
+        <img src="https://placehold.co/150x150" alt="FIG5-5" class="w-32 h-32">
+        <img src="https://placehold.co/150x150" alt="FIG5-6" class="w-32 h-32">
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="bg-white flex flex-col justify-center items-center relative">
+      <h2 class="text-2xl font-bold">Title6</h2>
+      <div class="form-container">
+        <form class="space-y-4">
+          <div class="flex space-x-4">
+            <input type="text" placeholder="Textbox1" class="p-2 border rounded w-1/2">
+            <input type="text" placeholder="Textbox2" class="p-2 border rounded w-1/2">
+          </div>
+          <textarea placeholder="Textarea" class="p-2 border rounded w-full h-24"></textarea>
+          <div class="flex justify-center">
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="flex justify-between">
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">Link1</a>
+        <a href="#" class="hover:underline">Link2</a>
+        <a href="#" class="hover:underline">Link3</a>
+        <a href="#" class="hover:underline">Link4</a>
+        <a href="#" class="hover:underline">Link5</a>
+        <a href="#" class="hover:underline">Link6</a>
+      </div>
+      <div>
+        <span>Text10</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

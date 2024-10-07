@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="container mx-auto p-4">
+    <!-- Add Element Link at the Top -->
+    <a href="#" class="text-blue-500 underline mb-4 block">Add Element</a>
+    
+    <!-- Header -->
+    <header class="mb-6">
+      <!-- Removed the first image -->
+      <h1 class="text-2xl font-bold mb-2">Header Title</h1>
+      <p class="mb-4">
+        This is the introduction paragraph of the page. It provides an overview of the content and relevance of the page.
+        <!-- Added "Choice 1" to the right of the paragraph -->
+        <span class="ml-2 font-bold">Choice 1</span>
+      </p>
+    </header>
+
+    <!-- Content Section -->
+    <section class="mb-8">
+      <!-- Input Fields -->
+      <div class="mb-4">
+        <input type="text" placeholder="Input 1" class="border rounded w-full p-2 mb-2">
+        <input type="text" placeholder="Input 2" class="border rounded w-full p-2">
+      </div>
+      <!-- Button -->
+      <div class="mb-4">
+        <button class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+      </div>
+      <!-- Checkboxes -->
+      <div class="mb-4">
+        <div class="mb-2">
+          <input type="checkbox" id="checkbox1" class="mr-2">
+          <label for="checkbox1">Checkbox 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox2" class="mr-2">
+          <label for="checkbox2">Checkbox 2</label>
+        </div>
+      </div>
+      <!-- Radio Buttons -->
+      <div class="mb-4">
+        <div class="mb-2">
+          <input type="radio" id="radio1" name="radioGroup" class="mr-2">
+          <label for="radio1">Radio 1</label>
+        </div>
+        <div>
+          <input type="radio" id="radio2" name="radioGroup" class="mr-2">
+          <label for="radio2">Radio 2</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section>
+      <h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+      <!-- Payment Radio Buttons -->
+      <div class="mb-4">
+        <div class="mb-2">
+          <input type="radio" id="payment1" name="paymentGroup" class="mr-2">
+          <label for="payment1">Credit Card</label>
+        </div>
+        <div class="mb-2">
+          <input type="radio" id="payment2" name="paymentGroup" class="mr-2">
+          <label for="payment2">Paypal</label>
+        </div>
+        <div>
+          <input type="radio" id="payment3" name="paymentGroup" class="mr-2">
+          <label for="payment3">Bank Transfer</label>
+        </div>
+      </div>
+      <!-- Card Details -->
+      <h3 class="text-lg font-bold mb-4">Enter your data</h3>
+      <div class="mb-4">
+        <input type="text" placeholder="Card Number" class="border rounded w-full p-2 mb-2">
+        <div class="flex items-center">
+          <label for="expiry" class="mr-2">Expiration Date</label>
+          <input type="text" placeholder="MM" class="border rounded p-2 w-16 mr-2">
+          <input type="text" placeholder="YYYY" class="border rounded p-2 w-20 mr-2">
+          <label for="cvv" class="mr-2">CVV</label>
+          <input type="text" placeholder="CVV" class="border rounded p-2 w-16">
+        </div>
+      </div>
+      <!-- Complete Button -->
+      <div class="mb-4">
+        <button class="bg-green-500 text-white py-2 px-4 rounded">Complete</button>
+      </div>
+      <!-- Additional Form Fields -->
+      <div class="mb-4">
+        <label for="title" class="block mb-2 font-bold">Title</label>
+        <input type="text" id="title" class="border rounded w-full p-2 mb-4">
+        <!-- Relevance Radio Buttons -->
+        <div class="mb-4">
+          <span class="block mb-2 font-bold">Radio Buttons</span>
+          <div class="mb-2">
+            <input type="radio" id="relevance1" name="relevanceGroup" class="mr-2">
+            <label for="relevance1">Not relevant</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="relevance2" name="relevanceGroup" class="mr-2">
+            <label for="relevance2">Low</label>
+          </div>
+          <div class="mb-2">
+            <input type="radio" id="relevance3" name="relevanceGroup" class="mr-2">
+            <label for="relevance3">Medium</label>
+          </div>
+          <div>
+            <input type="radio" id="relevance4" name="relevanceGroup" class="mr-2">
+            <label for="relevance4">High</label>
+          </div>
+        </div>
+        <!-- Checkboxes -->
+        <div class="mb-4">
+          <span class="block mb-2 font-bold">Checkboxes</span>
+          <div class="mb-2">
+            <input type="checkbox" id="choice1" class="mr-2">
+            <label for="choice1">Choice 1</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" id="choice2" class="mr-2">
+            <label for="choice2">Choice 2</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" id="choice3" class="mr-2">
+            <label for="choice3">Choice 3</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" id="choice4" class="mr-2">
+            <label for="choice4">Choice 4</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" id="choice5" class="mr-2">
+            <label for="choice5">Choice 5</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" id="choice6" class="mr-2">
+            <label for="choice6">Choice 6</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" id="choice7" class="mr-2">
+            <label for="choice7">Choice 7</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice8" class="mr-2">
+            <label for="choice8">Choice 8</label>
+          </div>
+        </div>
+        <!-- Action Buttons -->
+        <div class="flex space-x-2">
+          <button class="bg-blue-500 text-white py-2 px-4 rounded">OK</button>
+          <button class="bg-gray-500 text-white py-2 px-4 rounded">Cancel</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

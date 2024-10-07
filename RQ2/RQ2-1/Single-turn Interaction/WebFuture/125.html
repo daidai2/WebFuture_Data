@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen" id="body1">
+  <div id="body1-div1" class="w-full max-w-3xl bg-white shadow-md rounded-lg p-5">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center py-4 border-b" id="body1-div1-header1">
+      <nav id="body1-div1-header1-nav1">
+        <a href="#" class="text-blue-600 font-bold" id="body1-div1-header1-nav1-a1">Login</a>
+        <a href="#" class="text-blue-600 ml-4 font-bold" id="body1-div1-header1-nav1-a2">Sign Up</a>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="body1-div1-section1" class="mt-5">
+      <!-- Login Form Section -->
+      <section id="body1-div1-section1-section2" class="mb-10">
+
+        <div class="mb-4" id="body1-div1-section1-section2-div3">
+          <label class="block text-gray-700" id="body1-div1-section1-section2-div3-label2">Password</label>
+          <input type="password" name="password" placeholder="Password" class="mt-1 p-2 w-full border rounded-md" id="body1-div1-section1-section2-div3-input2">
+        </div>
+        <div class="flex items-center mb-4" id="body1-div1-section1-section2-div4">
+          <input type="checkbox" name="remember" id="body1-div1-section1-section2-div4-input3" class="mr-2">
+          <label for="remember" class="text-gray-700" id="body1-div1-section1-section2-div4-label3">Remember me</label>
+        </div>
+        <div class="mb-4" id="body1-div1-section1-section2-div5">
+          <a href="#forgot-password" class="text-blue-600 block" id="body1-div1-section1-section2-div5-a3">Forgot Password</a>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-md w-full" id="body1-div1-section1-section2-button1">Login</button>
+      </section>
+
+      <!-- Generic Form Section -->
+      <section id="body1-div1-section1-section3" class="mb-10">
+        <img src="https://placehold.co/100x100" alt="Image" class="float-left mr-4" id="body1-div1-section1-section3-img1">
+        <textarea name="text" id="body1-div1-section1-section3-textarea1" rows="4" class="w-full border rounded-md mb-4"></textarea>
+        <div class="flex items-center" id="body1-div1-section1-section3-div6">
+          <button type="button" class="bg-gray-600 text-white py-2 px-4 rounded-md mr-4" id="body1-div1-section1-section3-div6-button2">Back</button>
+          <input type="checkbox" name="genericCheckbox" id="body1-div1-section1-section3-div6-input4" class="mr-2">
+          <label for="genericCheckbox" class="text-gray-700" id="body1-div1-section1-section3-div6-label4" style="font-size:50px;">checkbox</label>
+        </div>
+      </section>
+
+      <!-- Product Catalog Section -->
+      <section id="body1-div1-section1-section4">
+        <header class="text-2xl font-bold mb-4" id="body1-div1-section1-section4-header2">Product Catalog</header>
+        <div class="mb-4 flex" id="body1-div1-section1-section4-div7">
+          <input type="text" name="search" placeholder="Search" class="flex-grow p-2 border rounded-md mr-2" id="body1-div1-section1-section4-div7-input5">
+          <button type="button" class="bg-blue-600 text-white py-2 px-4 rounded-md" id="body1-div1-section1-section4-div7-button3">Search</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="body1-div1-section1-section4-div8">
+          <!-- Product 1 -->
+          <article class="border p-4 rounded-md" id="body1-div1-section1-section4-div8-article1">
+            <img src="https://placehold.co/100x100" alt="Product Image" class="w-full mb-4" id="body1-div1-section1-section4-div8-article1-img2">
+            <h2 class="text-lg font-bold" id="body1-div1-section1-section4-div8-article1-h21">Product 1</h2>
+            <p class="text-gray-700 mb-4" id="body1-div1-section1-section4-div8-article1-p1">$20.00</p>
+            <button type="button" class="bg-green-600 text-white py-2 px-4 rounded-md w-full" id="body1-div1-section1-section4-div8-article1-button4">Add to Cart</button>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="border p-4 rounded-md" id="body1-div1-section1-section4-div8-article2">
+            <img src="https://placehold.co/100x100" alt="Product Image" class="w-full mb-4" id="body1-div1-section1-section4-div8-article2-img3">
+            <h2 class="text-lg font-bold" id="body1-div1-section1-section4-div8-article2-h22">Product 2</h2>
+            <p class="text-gray-700 mb-4" id="body1-div1-section1-section4-div8-article2-p2">$10.00</p>
+            <button type="button" class="bg-green-600 text-white py-2 px-4 rounded-md w-full" id="body1-div1-section1-section4-div8-article2-button5">Add to Cart</button>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="border p-4 rounded-md" id="body1-div1-section1-section4-div8-article3">
+            <img src="https://placehold.co/100x100" alt="Product Image" class="w-full mb-4" id="body1-div1-section1-section4-div8-article3-img4">
+            <h2 class="text-lg font-bold" id="body1-div1-section1-section4-div8-article3-h23">Product 3</h2>
+            <p class="text-gray-700 mb-4" id="body1-div1-section1-section4-div8-article3-p3">$40.00</p>
+            <button type="button" class="bg-green-600 text-white py-2 px-4 rounded-md w-full" id="body1-div1-section1-section4-div8-article3-button6">Add to Cart</button>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="mt-10 text-center text-gray-500 text-sm" id="body1-div1-footer1">
+      © 2023 Your Company. All rights reserved.
+    </footer>
+  </div>
+
+
+  <script data-custom-scripts="true"></script>
+</body>
+</html>

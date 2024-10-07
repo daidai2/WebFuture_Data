@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .rating {
+            color: gold;
+            margin-left: 10px;
+        }
+        .rating span {
+            margin-right: 5px;
+        }
+        .review-section {
+            margin-bottom: 20px;
+        }
+        .review-section textarea {
+            width: 100%;
+            height: 100px;
+        }
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 20px 0;
+        }
+        .checklist {
+            margin-bottom: 20px;
+        }
+        .checklist input {
+            margin-right: 10px;
+        }
+        .buy-now {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }
+        .shipping-section, .payment-section {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function handleBuyNowClick() {
+            alert('Add Interaction');
+            var firstImage = document.querySelector('img');
+            if (firstImage) {
+                firstImage.remove();
+            }
+            var newLink = document.createElement('a');
+            newLink.href = '#';
+            newLink.textContent = 'Add Element';
+            document.body.insertBefore(newLink, document.body.firstChild);
+        }
+        window.onload = function() {
+            document.querySelector('.buy-now').addEventListener('click', handleBuyNowClick);
+        }
+    </script>
+</head>
+<body>
+    <h1>Write Review</h1>
+    <div class="product-info">
+        <img src="placeholder.jpg" alt="Product Image">
+        <div>
+            <div>Product NAME</div>
+            <div class="price">$24.9</div>
+            <div class="rating">
+                <span>★★★☆☆</span> 45 reviews
+            </div>
+        </div>
+    </div>
+    <div class="review-section">
+        <h2>Rate Product</h2>
+        <div class="rating">
+            <span>★☆☆☆☆</span> Bad :(
+        </div>
+        <h2>Headline</h2>
+        <input type="text" placeholder="Headline">
+        <h2>Review</h2>
+        <textarea placeholder="Write your review here"></textarea>
+        <button>Submit</button>
+    </div>
+    <div class="checklist">
+        <h2>Check items:</h2>
+        <div><input type="checkbox" checked> Check item 1</div>
+        <div><input type="checkbox"> Check item 2</div>
+        <div><input type="checkbox"> Check item 3</div>
+    </div>
+    <button class="buy-now">Buy Now</button>
+    
+    <div class="shipping-section">
+        <h2>Forma de Envio</h2>
+        <div><input type="radio" name="shipping" value="terrestre"> Terrestre</div>
+        <div><input type="radio" name="shipping" value="aereo"> Aereo</div>
+        <div><input type="radio" name="shipping" value="maritimo"> Marítimo</div>
+    </div>
+    <div class="payment-section">
+        <h2>Forma de Pago</h2>
+        <div><input type="radio" name="payment" value="tarjeta"> Tarjeta (Crédito/débito)</div>
+        <div><input type="radio" name="payment" value="transferencia"> Transferencia bancaria</div>
+        <div><input type="radio" name="payment" value="metalico"> Metálico</div>
+        <h2>Dirección</h2>
+        <input type="text" placeholder="Dirección">
+        <h2>País</h2>
+        <input type="text" placeholder="País">
+    </div>
+    <button>Aceptar</button>
+</body>
+</html>

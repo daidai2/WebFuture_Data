@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            margin-bottom: 15px;
+        }
+        .radio-group label {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .link {
+            display: block;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+<a class="link" href="#">Add Element</a>
+<div class="section">
+<h2>Checkout</h2>
+<div class="form-group">
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="company">Company</label>
+<input id="company" name="company" type="text"/>
+</div>
+</div>
+<div class="section">
+<h2>Shipping Service</h2>
+<div class="radio-group">
+<input id="standard" name="shipping-service" type="radio" value="standard"/>
+<label for="standard">Standard (14 days - $6.59)</label>
+</div>
+<div class="radio-group">
+<input id="expedited" name="shipping-service" type="radio" value="expedited"/>
+<label for="expedited">Expedited (7 days - $1.97)</label>
+</div>
+<div class="radio-group">
+<input id="express" name="shipping-service" type="radio" value="express"/>
+<label for="express">Express (3 days - $19.99)</label>
+</div>
+</div>
+<div class="section">
+<h2>Write Review</h2>
+<div class="form-group">
+<label for="product-name">Product Name</label>
+<input id="product-name" name="product-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="headline">Headline</label>
+<input id="headline" name="headline" type="text"/>
+</div>
+<div class="form-group">
+<label for="review">Review</label>
+<input id="review" name="review" type="text"/>
+</div>
+</div>
+<div class="section">
+<h2>Forma de envío</h2>
+<div class="radio-group">
+<input id="terrestre" name="medio-transporte" type="radio" value="terrestre"/>
+<label for="terrestre">Terrestre</label>
+</div>
+<div class="radio-group">
+<input id="aereo" name="medio-transporte" type="radio" value="aereo"/>
+<label for="aereo">Aéreo</label>
+</div>
+<div class="radio-group">
+<input id="maritimo" name="medio-transporte" type="radio" value="maritimo"/>
+<label for="maritimo">Marítimo</label>
+</div>
+<h2>Forma de pago</h2>
+<div class="radio-group">
+<input id="tarjeta" name="forma-pago" type="radio" value="tarjeta"/>
+<label for="tarjeta">Tarjeta (Crédito/Débito)</label>
+</div>
+<div class="radio-group">
+<input id="transferencia" name="forma-pago" type="radio" value="transferencia"/>
+<label for="transferencia">Transferencia bancaria</label>
+</div>
+<div class="radio-group">
+<input id="metalico" name="forma-pago" type="radio" value="metalico"/>
+<label for="metalico">Metálico</label>
+</div>
+<div class="form-group">
+<label for="direccion">Dirección</label>
+<input id="direccion" name="direccion" type="text"/>
+</div>
+<div class="form-group">
+<label for="pais">País</label>
+<select id="pais" name="pais">
+<option value="MX">México</option>
+<option value="US">Estados Unidos</option>
+<option value="CA">Canadá</option>
+</select>
+</div>
+</div>
+<button class="submit-btn" id="6_1" type="submit">Submit</button>
+<script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            alert('Add Interaction');
+        });
+
+        // Move the submit button to the bottom
+        document.body.appendChild(document.getElementById('submit-btn'));
+    </script>
+</body>
+</html>

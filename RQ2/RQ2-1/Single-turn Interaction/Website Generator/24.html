@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('button').addEventListener('click', () => {
+        // Add a new module with 'Add Interaction' text
+        const newModule = document.createElement('div');
+        newModule.className = 'bg-white p-6 shadow-md mb-6';
+        newModule.innerHTML = '<p class="mb-2">Add Interaction</p>';
+        document.body.appendChild(newModule);
+
+        // Add 'Add Element' text at the bottom of the page
+        const newTextElement = document.createElement('p');
+        newTextElement.className = 'mb-2';
+        newTextElement.textContent = 'Add Element';
+        document.body.appendChild(newTextElement);
+
+        // Remove the first image on the page
+        const firstImage = document.querySelector('img');
+        if (firstImage) {
+          firstImage.parentElement.removeChild(firstImage);
+        }
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-gray-200 p-4">
+  <!-- Header Section -->
+  <header class="bg-white p-6 shadow-md">
+    <div class="w-full h-64 bg-gray-300 mb-4">
+      <img src="https://placehold.co/1356x624" alt="Banner Image" class="w-full h-full object-cover">
+    </div>
+    <nav class="flex justify-between mb-4">
+      <a href="#" class="text-blue-500">Home</a>
+      <a href="#" class="text-blue-500">About</a>
+      <a href="#" class="text-blue-500">Services</a>
+      <a href="#" class="text-blue-500">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="bg-white p-6 shadow-md mb-6">
+    <!-- Text Content -->
+    <div class="mb-6">
+      <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p class="mb-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="mb-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p class="mb-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      <p class="mb-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+      <p class="mb-2">Mollit anim id est laborum.</p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="flex flex-col space-y-4 mb-4">
+      <input type="text" class="p-2 border rounded" placeholder="Input Field 1">
+      <input type="text" class="p-2 border rounded" placeholder="Input Field 2">
+      <button class="p-2 bg-blue-500 text-white rounded">Go</button>
+    </div>
+
+    <!-- Selection Options -->
+    <div class="space-y-2 mb-6">
+      <div>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Option 1</label>
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">Option 2</label>
+      </div>
+      <div>
+        <input type="radio" name="radio" id="radio1">
+        <label for="radio1">Option 1</label>
+      </div>
+      <div>
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2">Option 2</label>
+      </div>
+      <div>
+        <input type="radio" name="radio" id="radio3">
+        <label for="radio3">Option 3</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Information Section -->
+  <section class="bg-white p-6 shadow-md mb-6">
+    <h2 class="mb-4">Select your payment method</h2>
+    <div class="mb-4">
+      <label class="block mb-2">
+        <input type="radio" name="payment" class="mr-2"> Credit Card
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="payment" class="mr-2"> Paypal
+      </label>
+      <label class="block mb-2">
+        <input type="radio" name="payment" class="mr-2"> Bank Transfer
+      </label>
+    </div>
+    <h2 class="mb-2">Enter your data</h2>
+    <div class="mb-4">
+      <label class="block mb-2">Card Number</label>
+      <input type="text" class="p-2 border rounded w-full">
+    </div>
+    <div class="mb-4 flex space-x-4">
+      <div>
+        <label class="block mb-2">Expiration date</label>
+        <select class="p-2 border rounded">
+          <option>MM</option>
+          <option>01</option>
+          <option>02</option>
+          <!-- Add more months -->
+        </select>
+        <select class="p-2 border rounded">
+          <option>YY</option>
+          <option>20</option>
+          <option>21</option>
+          <!-- Add more years -->
+        </select>
+      </div>
+      <div>
+        <label class="block mb-2">CVV</label>
+        <input type="text" class="p-2 border rounded">
+      </div>
+    </div>
+    <button class="p-2 bg-blue-500 text-white rounded w-full">Complete</button>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="bg-white p-6 shadow-md">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl">Product Catalog</h2>
+      <div class="flex space-x-2">
+        <input type="search" class="p-2 border rounded" placeholder="Search">
+        <button class="p-2 bg-blue-500 text-white rounded">Search</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="border p-4 flex flex-col items-center">
+        <div class="w-full h-64 bg-gray-300 mb-4"></div>
+        <h3 class="mb-2">Product 1</h3>
+        <p class="mb-2">$30.00</p>
+        <button class="p-2 bg-blue-500 text-white rounded">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="border p-4 flex flex-col items-center">
+        <div class="w-full h-64 bg-gray-300 mb-4"></div>
+        <h3 class="mb-2">Product 2</h3>
+        <p class="mb-2">$10.00</p>
+        <button class="p-2 bg-blue-500 text-white rounded">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="border p-4 flex flex-col items-center">
+        <div class="w-full h-64 bg-gray-300 mb-4"></div>
+        <h3 class="mb-2">Product 3</h3>
+        <p class="mb-2">$40.00</p>
+        <button class="p-2 bg-blue-500 text-white rounded">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

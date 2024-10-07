@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Layout</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 1356px;
+            margin: 0 auto;
+        }
+        header {
+            height: 150px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        header .logo {
+            width: 300px;
+            height: 100px;
+            background-color: #ccc;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        main {
+            margin: 20px 0;
+        }
+        .banner {
+            height: 300px;
+            background-color: #e0e0e0;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .form-section {
+            margin: 20px 0;
+        }
+        .form-section input, .form-section button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+        .form-section label {
+            display: block;
+            margin-top: 20px;
+        }
+        .checkboxes, .radios {
+            margin: 20px 0;
+        }
+        .checkboxes label, .radios label {
+            display: block;
+        }
+        .bottom-section {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo"></div>
+<nav>
+<a href="#">C#</a>
+<a href="#">Java</a>
+<a href="#">PHP</a>
+<a href="#">Visual Basic</a>
+</nav>
+</header>
+<main>
+<div class="banner"></div>
+<div class="content">
+<p>Placeholder text for the main content.</p>
+<p>Additional content lines to simulate a real webpage.</p>
+<p>Further placeholder text for design consistency.</p>
+</div>
+<div class="form-section">
+<label for="input1">Label 1</label>
+<input id="input1" placeholder="Input field 1" type="text"/>
+<label for="input2">Label 2</label>
+<input id="input2" placeholder="Input field 2" type="text"/>
+<button id="6_1" type="button">Button</button>
+</div>
+<div class="checkboxes">
+<label><input type="checkbox"/> Checkbox 1</label>
+<label><input type="checkbox"/> Checkbox 2</label>
+<label><input checked="" type="checkbox"/> Checkbox 3</label>
+<label><input type="checkbox"/> Checkbox 4</label>
+</div>
+<div class="radios">
+<label><input name="radio-group" type="radio"/> Radio 1</label>
+<label><input name="radio-group" type="radio"/> Radio 2</label>
+<label><input name="radio-group" type="radio"/> Radio 3</label>
+<label><input name="radio-group" type="radio"/> Radio 4</label>
+</div>
+<div class="bottom-section"></div>
+</main>
+</div>
+<script>
+    document.getElementById('actionButton').addEventListener('click', function() {
+        alert('Add Interaction');
+        
+        const bottomSection = document.querySelector('.bottom-section');
+        
+        // Add new text at the bottom of the page
+        const newText = document.createElement('p');
+        newText.textContent = 'Add Element';
+        bottomSection.appendChild(newText);
+        
+        // Move the button to the bottom of the page
+        bottomSection.appendChild(this);
+    });
+</script>
+</body>
+</html>

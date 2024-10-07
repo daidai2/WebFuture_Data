@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Signup Form</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 100%;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group label, .radio-group label {
+            margin-right: 10px;
+        }
+        .bottom-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<a href="#" id="addElement">Add Element</a>
+<h1>Sign Up</h1>
+<div class="form-group">
+<label for="name">First Name</label>
+<input id="name" name="name" type="text"/>
+</div>
+<div class="form-group">
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div class="form-group">
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" type="password"/>
+</div>
+<div class="form-group">
+<input id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<div class="form-group form-actions">
+<button id="signUpBtn" type="button">Sign Up</button>
+</div>
+<h2>Login</h2>
+<div class="form-group">
+<input id="checkbox1" name="checkbox1" type="checkbox"/>
+<label for="checkbox1">Checkbox</label>
+</div>
+<h2>Title</h2>
+<div class="form-group">
+<label for="title">Title</label>
+<input id="title" name="title" type="text"/>
+</div>
+<div class="form-group radio-group">
+<label>Relevance:</label>
+<input id="not-relevant" name="relevance" type="radio" value="not-relevant"/>
+<label for="not-relevant">Not relevant</label>
+<input id="low" name="relevance" type="radio" value="low"/>
+<label for="low">Low</label>
+<input id="medium" name="relevance" type="radio" value="medium"/>
+<label for="medium">Medium</label>
+<input id="high" name="relevance" type="radio" value="high"/>
+<label for="high">High</label>
+</div>
+<div class="form-group checkbox-group">
+<label>Choices:</label>
+<input id="choice1" name="choices" type="checkbox" value="choice1"/>
+<label for="choice1">Choice 1</label>
+<input id="choice2" name="choices" type="checkbox" value="choice2"/>
+<label for="choice2">Choice 2</label>
+<input id="choice3" name="choices" type="checkbox" value="choice3"/>
+<label for="choice3">Choice 3</label>
+<input id="choice4" name="choices" type="checkbox" value="choice4"/>
+<label for="choice4">Choice 4</label>
+<input id="choice5" name="choices" type="checkbox" value="choice5"/>
+<label for="choice5">Choice 5</label>
+<input id="choice6" name="choices" type="checkbox" value="choice6"/>
+<label for="choice6">Choice 6</label>
+<input id="choice7" name="choices" type="checkbox" value="choice7"/>
+<label for="choice7">Choice 7</label>
+<input id="choice8" name="choices" type="checkbox" value="choice8"/>
+<label for="choice8">Choice 8</label>
+</div>
+<div class="form-group form-actions">
+<button type="button">OK</button>
+<button type="button">Cancel</button>
+</div>
+<div class="bottom-actions">
+<button id="6_1" type="button">Back</button>
+</div>
+</div>
+<script>
+    document.getElementById('signUpBtn').addEventListener('click', function() {
+        var newModule = document.createElement('div');
+        newModule.className = 'form-group';
+        newModule.innerHTML = '<label>Add Interaction</label>';
+        document.querySelector('.container').appendChild(newModule);
+    });
+
+    document.getElementById('addElement').addEventListener('click', function(e) {
+        e.preventDefault();
+        var newElement = document.createElement('div');
+        newElement.className = 'form-group';
+        newElement.innerHTML = '<label>New Element</label>';
+        document.querySelector('.container').insertBefore(newElement, document.querySelector('.container').firstChild.nextSibling);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+!DOCTYPE html
+html lang=en
+
+head
+  meta charset=UTF-8
+  meta name=viewport content=width=device-width, initial-scale=1.0
+  titleLow-Fidelity Wireframetitle
+  script src=httpscdn.tailwindcss.comscript
+  style
+    .header-bg {
+      background-image url('header.jpg');
+      background-size cover;
+      background-position center;
+    }
+
+    .text-white {
+      color white;
+      font-weight 300;
+    }
+
+    .text-start {
+      font-size 1.5rem;
+      color white;
+      font-weight 300;
+    }
+
+    .bg-light-red {
+      background-color #f28b82;
+    }
+
+    .text-dark-gray {
+      color #4a4a4a;
+    }
+
+    .bg-black {
+      background-color black;
+    }
+
+    .text-black {
+      color white;
+    }
+
+    .text-gray-white {
+      color #d3d3d3;
+    }
+
+    .bg-white {
+      background-color white;
+    }
+
+    .text-custom-white {
+      color white;
+    }
+  style
+head
+
+body
+
+  !-- Header and Section 1 --
+  header class=header-bg bg-gray-200 p-4
+    nav class=flex justify-center items-center
+      div class=flex space-x-4
+        a href=profile class=text-gray-700 hovertext-gray-900 text-whiteHomea
+        a href=about class=text-gray-700 hovertext-gray-900 text-whiteAbouta
+        a href=admin class=text-gray-700 hovertext-gray-900 text-whiteServicesa
+        a href=help class=text-gray-700 hovertext-gray-900 text-whiteContacta
+        a href=search class=text-gray-700 hovertext-gray-900 text-whiteForumsa
+      div
+    nav
+    section id=section1 class=text-center my-32
+      h1 class=text-5xl mb-16 text-whiteTitle1h1
+      h2 class=text-2xl mb-4 text-whiteTitle1-1h2
+      div class=flex justify-center items-center
+        div class=w-24 h-24 rounded-full bg-light-red flex items-center justify-center
+          span class=text-startStartspan
+        div
+      div
+    section
+  header
+
+  !-- Main Content --
+  div class=container mx-auto p-4
+    !-- Section 2 --
+    section id=section2 class=text-center my-24
+      h1 class=text-4xl mb-12Title2h1
+      h2 class=text-2xl mb-6 text-dark-grayText2h2
+      div class=grid grid-cols-4 gap-8
+        div class=text-center
+          img src=pic01.jpg alt=PIC2-1 class=mb-4
+          h3 class=text-lg mt-4Title2-1h3
+          p class=mt-2 text-dark-grayText2-1p
+        div
+        div class=text-center
+          img src=pic02.jpg alt=PIC2-2 class=mb-4
+          h3 class=text-lg mt-4Title2-2h3
+          p class=mt-2 text-dark-grayText2-2p
+        div
+        div class=text-center
+          img src=pic03.jpg alt=PIC2-3 class=mb-4
+          h3 class=text-lg mt-4Title2-3h3
+          p class=mt-2 text-dark-grayText2-3p
+        div
+        div class=text-center
+          img src=pic04.jpg alt=PIC2-4 class=mb-4
+          h3 class=text-lg mt-4Title2-4h3
+          p class=mt-2 text-dark-grayText2-4p
+        div
+      div
+    section
+
+    !-- Section 3 --
+    section id=section3 class=text-center my-8
+      div class=flex justify-center
+        img src=pic06.jpg alt=PIC3
+      div
+    section
+
+    !-- Section 4 --
+    section id=section4 class=bg-white text-center my-16
+      h1 class=text-3xl mb-8Title3h1
+      h2 class=text-xl mb-8 text-dark-grayTitle3-1h2
+      p class=mb-8 text-dark-grayText3p
+      button class=bg-light-red text-white py-2 px-8 rounded onclick=location.href='friends'Button1button
+    section
+
+    !-- Section 5 --
+    section id=section5 class=bg-black text-custom-white text-center my-16
+      h1 class=text-3xl mb-8Title4h1
+      p class=mb-16 text-2xl text-dark-grayText5p
+      div class=grid grid-cols-3 gap-8
+        div class=text-center mb-4
+          img src=pic07.jpg alt=PIC4-1 class=mb-4
+          h3 class=text-lg mt-4Title4-1h3
+          p class=mt-2 text-dark-grayText4-1p
+        div
+        div class=text-center mb-4
+          img src=pic08.jpg alt=PIC4-2 class=mb-4
+          h3 class=text-lg mt-4Title4-2h3
+          p class=mt-2 text-dark-grayText4-2p
+        div
+        div class=text-center mb-4
+          img src=pic09.jpg alt=PIC4-3 class=mb-4
+          h3 class=text-lg mt-4Title4-3h3
+          p class=mt-2 text-dark-grayText4-3p
+        div
+      div
+    section
+
+    !-- Section 6 --
+    section id=section6 class=bg-black text-custom-white my-8
+      div class=flex justify-around
+        div class=text-center
+          img src=httpsplacehold.co80x80 alt=IMG5 class=rounded-full mx-auto mb-4
+          div class=flex flex-col space-y-8
+            spanText5-1-1span
+            spanText5-1-2span
+            spanText5-1-3span
+            spanText5-1-4span
+          div
+        div
+        div class=text-center
+          img src=httpsplacehold.co80x80 alt=IMG5 class=rounded-full mx-auto mb-4
+          div class=flex flex-col space-y-8
+            spanText5-2-1span
+            spanText5-2-2span
+            spanText5-2-3span
+            spanText5-2-4span
+          div
+        div
+        div class=text-center
+          img src=httpsplacehold.co80x80 alt=IMG5 class=rounded-full mx-auto mb-4
+          div class=grid grid-cols-2 gap-2
+            img src=pic10.jpg alt=Square Image 1 class=w-full
+            img src=pic11.jpg alt=Square Image 2 class=w-full
+            img src=pic12.jpg alt=Square Image 3 class=w-full
+            img src=pic13.jpg alt=Square Image 4 class=w-full
+            img src=pic14.jpg alt=Square Image 5 class=w-full
+            img src=pic15.jpg alt=Square Image 6 class=w-full
+          div
+        div
+      div
+    section
+  div
+
+  !-- Footer --
+  footer class=bg-black text-custom-white p-4
+    nav class=flex justify-center items-center mb-12
+      a href=blog class=text-custom-white hovertext-gray-300 text-3xlTitle6a
+    nav
+    div class=flex justify-center items-center mb-12
+      p class=text-2xl text-custom-whiteText6p
+    div
+    div class=flex justify-center mb-12 space-x-2
+      img src=httpsplacehold.co50x50 alt=Icon6-1 class=rounded-full bg-gray-400
+      img src=httpsplacehold.co50x50 alt=Icon6-2 class=rounded-full bg-gray-400
+      img src=httpsplacehold.co50x50 alt=Icon6-3 class=rounded-full bg-gray-400
+      img src=httpsplacehold.co50x50 alt=Icon6-4 class=rounded-full bg-gray-400
+      img src=httpsplacehold.co50x50 alt=Icon6-5 class=rounded-full bg-gray-400
+      img src=httpsplacehold.co50x50 alt=Icon6-6 class=rounded-full bg-gray-400
+    div
+    div class=flex justify-center space-x-8
+      p class=text-xl text-gray-whiteText6-1p
+      p class=text-xl text-gray-whiteText6-2p
+    div
+  footer
+
+body
+
+html

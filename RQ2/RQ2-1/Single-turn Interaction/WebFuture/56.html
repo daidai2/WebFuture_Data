@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-4" id="body1">
+
+  <div id="body1-div1" class="max-w-4xl mx-auto bg-white p-4 shadow-md">
+    <!-- Login Section -->
+    <section id="body1-div1-section1" class="border-b pb-4 mb-4">
+      <nav class="flex justify-between mb-4" id="body1-div1-section1-nav1">
+        <a href="#" class="text-blue-500" id="body1-div1-section1-nav1-a1">Login</a>
+        <a href="#" class="text-blue-500" id="body1-div1-section1-nav1-a2">Sign Up</a>
+      </nav>
+      <form id="body1-div1-section1-form1" class="space-y-4">
+        <div id="body1-div1-section1-form1-div2">
+          <label for="username" class="block text-sm font-medium" id="body1-div1-section1-form1-div2-label1">Login</label>
+          <input type="text" name="username" id="body1-div1-section1-form1-div2-input1" placeholder="Login" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div id="body1-div1-section1-form1-div3">
+          <label for="password" class="block text-sm font-medium" id="body1-div1-section1-form1-div3-label2">Password</label>
+          <input type="password" name="password" id="body1-div1-section1-form1-div3-input2" placeholder="Password" class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div id="body1-div1-section1-form1-div4" class="flex items-center justify-between">
+          <div id="body1-div1-section1-form1-div4-div5">
+            <input type="checkbox" name="remember-me" id="body1-div1-section1-form1-div4-div5-input3" class="mr-1">
+            <label for="remember-me" class="text-sm" id="body1-div1-section1-form1-div4-div5-label3">Remember me</label>
+          </div>
+          <a href="#" id="body1-div1-section1-form1-div4-a3" class="text-sm text-blue-500">Forgot Password</a>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white rounded-md p-2" id="body1-div1-section1-form1-button1">LOG IN</button>
+      </form>
+    </section>
+
+    <!-- Selection Section -->
+    <section id="body1-div1-section2" class="border-b pb-4 mb-4">
+      <div id="body1-div1-section2-div6" class="flex items-center mb-4">
+        <input type="checkbox" name="csharp" id="body1-div1-section2-div6-input4" class="mr-1">
+        <label for="csharp" class="text-sm" id="body1-div1-section2-div6-label4">C Sharp</label>
+      </div>
+      <div id="body1-div1-section2-div7">
+        <select name="dropdown-menu" class="border border-gray-300 rounded-md p-2 w-full mb-4" id="body1-div1-section2-div7-select1">
+          <option value="dropdown" id="body1-div1-section2-div7-select1-option1">Get Drop Down Here</option>
+        </select>
+      </div>
+      <div class="flex space-x-4" id="body1-div1-section2-div8">
+        <input type="checkbox" name="csharp" id="body1-div1-section2-div8-input5">
+        <label for="checkbox-csharp" class="text-sm" id="body1-div1-section2-div8-label5">C#</label>
+        <input type="checkbox" name="java" id="body1-div1-section2-div8-input6">
+        <label for="checkbox-java" class="text-sm" id="body1-div1-section2-div8-label6">Java</label>
+        <input type="checkbox" name="php" id="body1-div1-section2-div8-input7">
+        <label for="checkbox-php" class="text-sm" id="body1-div1-section2-div8-label7">PHP</label>
+        <input type="checkbox" name="visualbasic" id="body1-div1-section2-div8-input8">
+        <label for="checkbox-visualbasic" class="text-sm" id="body1-div1-section2-div8-label8">Visual Basic</label>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="body1-div1-section3">
+      <form id="body1-div1-section3-form2">
+        <h2 class="text-lg font-medium mb-4" id="body1-div1-section3-form2-h21">Shipping Info</h2>
+        <div class="grid grid-cols-2 gap-4 mb-4" id="body1-div1-section3-form2-div9">
+          <input type="text" name="first-name" placeholder="First Name" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-input9">
+          <input type="text" name="last-name" placeholder="Last Name" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-input10">
+          <input type="tel" name="phone" placeholder="Phone" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-input11">
+          <input type="email" name="email" placeholder="E-mail" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-input12">
+          <select name="country" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-select2">
+            <option value="us" id="body1-div1-section3-form2-div9-select2-option2">United States</option>
+          </select>
+          <select name="state" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-select3">
+            <option value="choose" id="body1-div1-section3-form2-div9-select3-option3">Choose</option>
+          </select>
+          <select name="city" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-select4">
+            <option value="palo-alto" id="body1-div1-section3-form2-div9-select4-option4">Palo Alto</option>
+          </select>
+          <input type="text" name="zip" placeholder="Zip Code" class="border border-gray-300 rounded-md p-2" id="body1-div1-section3-form2-div9-input13">
+        </div>
+        <div class="flex justify-between" id="body1-div1-section3-form2-div10">
+          <button type="button" id="body1-div1-section3-form2-div10-button2" class="bg-gray-500 text-white rounded-md p-2">Back</button>
+
+        </div>
+      </form>
+    </section>
+    <h2 id="Parent_body1-div1_Next_null_Queue_1">Next Step</h2>
+  </div>
+
+
+
+  <script data-custom-scripts="true"></script>
+  <p id="Parent_body1_Next_null_Queue_1">Add Element</p>
+</body>
+</html>

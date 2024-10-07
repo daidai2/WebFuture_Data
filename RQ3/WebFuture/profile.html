@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .white-bg {
+      background-color: white;
+    }
+
+    .gray-bg {
+      background-color: #f0f0f0;
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .btn-custom {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+
+    .btn-gray {
+      background-color: #f0f0f0;
+      color: gray;
+      border: 1px solid gray;
+    }
+
+    .input-custom {
+      background-color: #f0f0f0;
+      border: 1px solid gray;
+    }
+
+    .footer-link {
+      font-size: 0.875rem;
+      font-weight: bold;
+      color: gray;
+    }
+
+    .gray-bg {
+      background-color: #f0f0f0;
+    }
+
+    .arrow-container {
+      display: flex;
+      justify-content: center;
+      margin-top: -24px;
+    }
+
+    .arrow-circle {
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+    }
+
+    .arrow-icon {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="py-32 shadow-md flex flex-col items-center justify-between" style="background: url('bg.jpg') no-repeat center center fixed; background-size: cover;">
+    <div class="text-center">
+      <h1 class="text-6xl font-bold mb-8 text-white">Title1</h1>
+      <h2 class="text-3xl mb-8 text-white">Text1</h2>
+      <div class="arrow-container">
+        <div class="arrow-circle">
+          <img src="arrow-icon.png" alt="Arrow" class="arrow-icon">
+        </div>
+      </div>
+    </div>
+    <nav class="flex justify-between w-full max-w-screen-lg mt-16">
+      <div class="flex space-x-6 ml-16">
+        <a href="/logout" class="text-white text-lg">Home</a>
+        <a href="/notifications" class="text-white text-lg">About</a>
+        <a href="/home" class="text-white text-lg">Services</a>
+      </div>
+      <div class="flex space-x-6 mr-16">
+        <a href="/help" class="text-gray-700 text-lg"><img src="https://placehold.co/20x20" alt="Icon1-1"></a>
+        <a href="/post" class="text-gray-700 text-lg"><img src="https://placehold.co/20x20" alt="Icon1-2"></a>
+        <a href="/contact" class="text-gray-700 text-lg"><img src="https://placehold.co/20x20" alt="Icon1-3"></a>
+        <a href="/signup" class="text-gray-700 text-lg"><img src="https://placehold.co/20x20" alt="Icon1-4"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="mx-auto max-w-screen-lg p-6 shadow-md white-bg">
+    <h1 class="text-4xl font-bold text-center mb-12 mt-16">Title2</h1>
+    <p class="text-2xl text-center my-4">Text2</p>
+    <div class="flex justify-center my-8">
+      <img src="pic01.jpg" alt="PIC2" class="w-full max-w-2xl">
+    </div>
+    <div class="text-center">
+      <button class="px-8 py-2 btn-custom rounded" onclick="window.location.assign('/login')">Button1</button>
+    </div>
+  </section>
+
+  <!-- Sub Content Sections -->
+  <section class="mx-auto max-w-screen-lg p-6 shadow-md white-bg">
+    <div class="grid grid-cols-2 gap-8">
+
+      <!-- Sub-content Row 1 -->
+      <div class="text-center">
+        <div class="mb-6">
+          <div class="mb-4">Indicator 1</div>
+          <h3 class="text-xl font-semibold mb-6">Title3-1</h3>
+          <img src="pic02.jpg" alt="PIC3-1" class="mx-auto mb-6">
+          <button class="px-6 py-2 btn-custom rounded" onclick="window.location.assign('/dashboard')">Button3-1</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="mb-6">
+          <div class="mb-4">Indicator 2</div>
+          <h3 class="text-xl font-semibold mb-6">Title3-2</h3>
+          <img src="pic03.jpg" alt="PIC3-2" class="mx-auto mb-6">
+          <button class="px-6 py-2 btn-custom rounded" onclick="window.location.assign('/tags')">Button3-2</button>
+        </div>
+      </div>
+
+      <!-- Sub-content Row 2 -->
+      <div class="text-center">
+        <div class="mb-6">
+          <div class="mb-4">Indicator 3</div>
+          <h3 class="text-xl font-semibold mb-6">Title3-3</h3>
+          <img src="pic04.jpg" alt="PIC3-3" class="mx-auto mb-6">
+          <button class="px-6 py-2 btn-custom rounded" onclick="window.location.assign('/forgot_password')">Button3-3"&gt;</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="mb-6">
+          <div class="mb-4">Indicator 4</div>
+          <h3 class="text-xl font-semibold mb-6">Title3-4</h3>
+          <img src="pic05.jpg" alt="PIC3-4" class="mx-auto mb-6">
+          <button class="px-6 py-2 btn-custom rounded" onclick="window.location.assign('/login')">Button3-4"&gt;</button>
+        </div>
+      </div>
+
+      <!-- Sub-content Row 3 -->
+      <div class="text-center">
+        <div class="mb-6">
+          <div class="mb-4">Indicator 5</div>
+          <h3 class="text-xl font-semibold mb-6">Title3-5</h3>
+          <img src="pic06.jpg" alt="PIC3-5" class="mx-auto mb-6">
+          <button class="px-6 py-2 btn-custom rounded" onclick="window.location.assign('/index')">Button3-5"&gt;</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="mb-6">
+          <div class="mb-4">Indicator 6</div>
+          <h3 class="text-xl font-semibold mb-6">Title3-6"&gt;</h3>
+          <img src="pic07.jpg" alt="PIC3-6" class="mx-auto mb-6">
+          <button class="px-6 py-2 btn-custom rounded" onclick="window.location.assign('/analytics')">Button3-6"&gt;</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="mx-auto max-w-screen-lg p-6 shadow-md gray-bg">
+    <div class="grid grid-cols-2 gap-8">
+      <!-- Form Inputs -->
+      <div>
+        <label class="block mb-2">Label1</label>
+        <input type="text" class="block w-full mb-4 p-2 input-custom rounded">
+
+        <label class="block mb-2">Label2</label>
+        <input type="text" class="block w-full mb-4 p-2 input-custom rounded">
+
+        <label class="block mb-2">Label3</label>
+        <textarea class="block w-full mb-4 p-2 input-custom rounded" rows="4"></textarea>
+
+        <button class="px-6 py-2 btn-gray rounded" onclick="window.location.assign('/post')">Submit</button>
+      </div>
+
+      <!-- Contact Details & Social Media Links -->
+      <div class="flex flex-col justify-between gray-bg">
+        <div class="flex items-start space-x-8">
+          <h3 class="text-lg font-semibold">Title4-1</h3>
+          <p>Text4-1</p>
+        </div>
+        <div class="flex items-start space-x-8 gray-bg">
+          <h3 class="text-lg font-semibold">Title4-2</h3>
+          <p>Text4-2</p>
+        </div>
+        <div class="flex items-start space-x-8 mt-4 gray-bg">
+          <h3 class="text-lg font-semibold">Title4-3</h3>
+          <p>Text4-3</p>
+        </div>
+        <div class="flex items-start space-x-8 mt-6 gray-bg">
+          <h3 class="text-lg font-semibold">Title4-4</h3>
+          <div class="flex space-x-4">
+            <img src="https://placehold.co/40x40" alt="Social Icon" class="rounded-full">
+            <img src="https://placehold.co/40x40" alt="Social Icon" class="rounded-full">
+            <img src="https://placehold.co/40x40" alt="Social Icon" class="rounded-full">
+            <img src="https://placehold.co/40x40" alt="Social Icon" class="rounded-full">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="py-6 shadow-md text-center" style="background: url('bg.jpg') no-repeat center center fixed; background-size: cover;">
+    <div class="flex justify-center space-x-4">
+      <a href="/about" class="footer-link">Link7</a>
+      <a href="/signup" class="footer-link">Link8</a>
+    </div>
+  </footer>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .payment-method, .services, .product-catalog {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .payment-method input, .payment-method button {
+            display: block;
+            margin: 10px 0;
+        }
+        .services div, .product-catalog div {
+            margin: 10px 0;
+        }
+        .product-catalog img {
+            width: 100px;
+            height: 100px;
+        }
+        .product {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<section class="payment-method">
+<h2>Select your payment method</h2>
+<label><input name="payment" type="radio" value="credit-card"/> Credit Card</label>
+<label><input name="payment" type="radio" value="paypal"/> PayPal</label>
+<label><input name="payment" type="radio" value="bank-transfer"/> Bank Transfer</label>
+<h3 id="6_2_2_1_1" style="font-size: 50px;">Enter your data</h3> $40.00
+<input placeholder="Card Number" type="text"/>
+<input placeholder="Expiration Date" type="text"/>
+<input placeholder="CCV" type="text"/>
+<button>Complete</button>
+</section>
+<section class="services">
+<h2>Mobility Solutions &amp; Daily Living Aids</h2>
+<p>Making life easier</p>
+<button>Find out more</button>
+<div>
+<h3>Wheelchair Repair</h3>
+<button>Find out more</button>
+</div>
+<div>
+<h3>Community Contracts</h3>
+<button>Find out more</button>
+</div>
+</section>
+<section class="product-catalog">
+<h2>Product Catalog</h2>
+<input placeholder="Search" type="text"/>
+<div class="product">
+<p>Product 1</p>
+<p>$20.00</p>
+<button>Add to cart</button>
+</div>
+<div class="product">
+<img alt="Product 2" src="product2.png"/>
+<p>Product 2</p>
+<p>$10.00</p>
+<button>Add to cart</button>
+</div>
+<div class="product">
+<img alt="Product 3" src="product3.png"/>
+<p>Product 3</p>
+<p id="6_2_1_1_1">$40.00</p>
+<button>Add to cart</button>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("button[type='submit']").addEventListener("click", function(event) {
+        event.preventDefault();
+        alert("Add Interaction");
+    });
+});
+</script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal p-8">
+  <header class="mb-6">
+    <a href="#" class="text-blue-500 mr-4">Add Element</a>
+    <div class="flex justify-between items-center mb-4">
+      <div>
+        <a href="#" class="text-blue-500 mr-4">Login</a>
+        <a href="#" class="text-blue-500">Sign Up</a>
+      </div>
+    </div>
+    <form class="bg-white p-4 shadow-md rounded">
+      <div class="mb-4">
+        <label for="login" class="block text-gray-700">Login</label>
+        <input type="text" id="login" class="border rounded w-full py-2 px-3 text-gray-700">
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700">Password</label>
+        <input type="password" id="password" class="border rounded w-full py-2 px-3 text-gray-700">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+        <label>
+          <input type="checkbox" class="mr-2"> Remember me
+        </label>
+        <a href="#" class="text-blue-500">Forgot Password</a>
+      </div>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
+    </form>
+  </header>
+  <nav class="mb-6 flex justify-between items-center bg-white p-4 shadow-md rounded">
+    <div>
+      <label for="language" class="block text-gray-700">C Sharp</label>
+      <select id="language" class="border rounded py-2 px-3 text-gray-700">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select>
+    </div>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Drop Down Here</button>
+  </nav>
+  <main class="bg-white p-6 shadow-md rounded">
+    <section class="mb-6">
+      <div class="mb-4">
+        <label class="block text-gray-700">
+          <input type="checkbox" class="mr-2"> C#
+        </label>
+        <label class="block text-gray-700">
+          <input type="checkbox" class="mr-2"> Java
+        </label>
+        <label class="block text-gray-700">
+          <input type="checkbox" class="mr-2"> PHP
+        </label>
+        <label class="block text-gray-700">
+          <input type="checkbox" class="mr-2"> Visual Basic
+        </label>
+      </div>
+      <article class="flex flex-col items-center">
+        
+        <div class="mb-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </article>
+    </section>
+    <div class="mb-6 grid grid-cols-3 gap-4">
+      <div>
+        <label class="block text-gray-700 mb-2">Label</label>
+        <input type="text" class="border rounded w-full py-2 px-3 text-gray-700">
+      </div>
+      <div class="flex flex-col items-start">
+        <label class="block text-gray-700 mb-2">Label</label>
+        <input type="text" class="border rounded w-full py-2 px-3 text-gray-700">
+      </div>
+      <div class="flex flex-col space-y-2">
+        <label class="block text-gray-700 flex items-center">
+          <input type="checkbox" class="mr-2"> Checkbox 1
+        </label>
+        <label class="block text-gray-700 flex items-center">
+          <input type="checkbox" class="mr-2"> Checkbox 2
+        </label>
+        <label class="block text-gray-700 flex items-center">
+          <input type="checkbox" class="mr-2"> Checkbox 3
+        </label>
+        <label class="block text-gray-700 flex items-center">
+          <input type="checkbox" class="mr-2"> Checkbox 4
+        </label>
+      </div>
+    </div>
+    <div class="mb-6 flex items-center">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
+    </div>
+    <div class="flex items-start">
+      <div class="mr-4">
+        <label class="block text-gray-700 flex items-center mb-2">
+          <input type="radio" name="radio" class="mr-2"> Radio 1
+        </label>
+        <label class="block text-gray-700 flex items-center mb-2">
+          <input type="radio" name="radio" class="mr-2"> Radio 2
+        </label>
+        <label class="block text-gray-700 flex items-center mb-2">
+          <input type="radio" name="radio" class="mr-2"> Radio 3
+        </label>
+        <label class="block text-gray-700 flex items-center mb-2">
+          <input type="radio" name="radio" class="mr-2"> Radio 4
+        </label>
+      </div>
+      <div>
+        <img src="https://placehold.co/200x150" alt="placeholder" class="mb-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

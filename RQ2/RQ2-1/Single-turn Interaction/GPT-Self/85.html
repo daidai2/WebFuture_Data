@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .mate {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .mate img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .mate button {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .checkout, .shipping {
+            margin-top: 40px;
+        }
+        .shipping input {
+            margin-right: 10px;
+        }
+        .shipping-service {
+            margin-top: 20px;
+        }
+        .shipping-service label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            margin-right: 10px;
+        }
+        h2 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mate">
+        <button>Modify Element</button>
+        <div>
+            <h2>Mate One</h2>
+            <p>Job Title</p>
+            <p>Additional Info</p>
+        </div>
+    </div>
+    <div class="mate">
+        <img src="placeholder.png" alt="Mate Two" style="order: 2;">
+        <div>
+            <h2>Mate Two</h2>
+            <p>Job Title</p>
+            <p>Additional Info</p>
+        </div>
+    </div>
+    <div class="mate">
+        <img src="placeholder.png" alt="Mate Three">
+        <div>
+            <h2>Mate Three</h2>
+            <p>Job Title</p>
+            <p>Additional Info</p>
+        </div>
+    </div>
+
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <div class="shipping">
+            <h3>Shipping Address</h3>
+            <label>
+                Last Name:
+                <input type="text" name="last_name">
+            </label>
+            <label>
+                Company:
+                <input type="text" name="company">
+            </label>
+        </div>
+        <div class="shipping-service">
+            <h3>Shipping Service</h3>
+            <label>
+                <input type="radio" name="shipping_service" value="standard" checked>
+                Standard (14 days - $6.59)
+            </label>
+            <label>
+                <input type="radio" name="shipping_service" value="expedited">
+                Expedited (7 days - $14.99)
+            </label>
+            <label>
+                <input type="radio" name="shipping_service" value="express">
+                Express (3 days - $19.99)
+            </label>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button>Back</button>
+        <button>Next</button>
+    </div>
+</body>
+</html>

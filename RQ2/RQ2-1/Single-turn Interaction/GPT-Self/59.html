@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Review</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-container, .shipping-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product-info, .rating, .headline, .review, .submit, .shipping-info, .payment-method, .address, .country, .accept {
+            margin-bottom: 15px;
+        }
+        .product-info img {
+            width: 100px;
+            height: 100px;
+        }
+        .rating-stars span {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .bottom-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="review-container">
+<h1>Write Review</h1>
+<div class="product-info">
+<!-- 第一张图片已经被删除 -->
+<div>
+<h2>Product Name</h2>
+<p>$Price</p>
+<p>45 reviews</p>
+</div>
+</div>
+<div class="rating">
+<p>Rate Product</p>
+<div class="rating-stars">
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>Bad :(</span>
+</div>
+</div>
+<div class="headline">
+<label for="headline">Headline</label>
+<input id="headline" name="headline" type="text"/>
+</div>
+<div class="review">
+<label for="review">Review</label>
+<textarea id="review" name="review"></textarea>
+</div>
+</div>
+<div class="shipping-container">
+<h2>Forma de envío</h2>
+<div class="shipping-info">
+<p>Medio transporte</p>
+<label><input name="transporte" type="radio" value="terrestre"/> Terrestre</label><br/>
+<label><input name="transporte" type="radio" value="aereo"/> Aereo</label><br/>
+<label><input name="transporte" type="radio" value="maritimo"/> Marítimo</label>
+</div>
+<div class="payment-method">
+<p>Forma de pago</p>
+<label><input name="pago" type="radio" value="tarjeta"/> Tarjeta (Crédito/débito)</label><br/>
+<label><input name="pago" type="radio" value="transferencia"/> Transferencia bancaria</label><br/>
+<label><input name="pago" type="radio" value="metalico"/> Metálico</label>
+</div>
+<div class="address">
+<label for="direccion">Dirección</label>
+<input id="direccion" name="direccion" type="text"/>
+</div>
+<div class="country">
+<label for="pais">País</label>
+<input id="pais" name="pais" type="text"/>
+</div>
+</div>
+<div class="bottom-button">
+<button id="6_1" type="button">Submit</button>
+</div>
+<script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            var newModule = document.createElement('div');
+            newModule.innerHTML = '<p>Add Interaction</p>';
+            document.body.appendChild(newModule);
+        });
+    </script>
+</body>
+</html>

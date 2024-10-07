@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('button').addEventListener('click', function() {
+        // Add "Add Interaction" text element
+        let addInteraction = document.createElement('div');
+        addInteraction.innerText = 'Add Interaction';
+        addInteraction.style.fontSize = '50px';  // Set the font size to 50px
+        document.body.appendChild(addInteraction);
+
+        // Add "Add Element" text element
+        let addElement = document.createElement('div');
+        addElement.innerText = 'Add Element';
+        document.body.appendChild(addElement);
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-4xl mx-auto p-5 bg-white shadow-lg">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold">Checkout</h1>
+    </header>
+
+    <!-- Shipping Address Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Shipping Address</h2>
+      <div class="mb-4">
+        <label for="first-name" class="block mb-1">First Name</label>
+        <input id="first-name" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label for="last-name" class="block mb-1">Last Name</label>
+        <input id="last-name" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label for="company" class="block mb-1">Company</label>
+        <input id="company" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Shipping Service</h2>
+      <div class="mb-2">
+        <input type="radio" id="standard" name="shipping" class="mr-2">
+        <label for="standard" class="font-medium">Standard (14 days - $6.99)</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" id="expedited" name="shipping" class="mr-2">
+        <label for="expedited" class="font-medium">Expedited (7 days - $12.99)</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" id="express" name="shipping" class="mr-2">
+        <label for="express" class="font-medium">Express (3 days - $19.99)</label>
+      </div>
+    </section>
+
+    <!-- Dropdown Section -->
+    <div class="mb-8 flex items-center space-x-4">
+      <select class="p-2 border border-gray-300 rounded">
+        <option>C Sharp</option>
+      </select>
+      <button class="p-2 bg-blue-500 text-white rounded">Get Drop Down Here</button>
+    </div>
+
+    <!-- Checkbox Section -->
+    <div class="mb-8 flex items-center space-x-4">
+      <div>
+        <input type="checkbox" id="csharp" class="mr-2">
+        <label for="csharp">C#</label>
+      </div>
+      <div>
+        <input type="checkbox" id="java" class="mr-2">
+        <label for="java">Java</label>
+      </div>
+      <div>
+        <input type="checkbox" id="php" class="mr-2">
+        <label for="php">PHP</label>
+      </div>
+      <div>
+        <input type="checkbox" id="vb" class="mr-2">
+        <label for="vb">Visual Basic</label>
+      </div>
+    </div>
+
+    <!-- Large Placeholder Image -->
+    <figure class="mb-8">
+      <img src="https://placehold.co/600x200" alt="Large Placeholder Image" class="w-full h-auto border border-gray-300">
+    </figure>
+
+    <!-- Text Area Section -->
+    <div class="mb-8 grid grid-cols-3 gap-4">
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis.</p>
+      </article>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis.</p>
+      </article>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis.</p>
+      </article>
+    </div>
+
+    <!-- Form Section -->
+    <section class="mb-8">
+      <div class="mb-4">
+        <label for="field1" class="block mb-1">Label</label>
+        <input id="field1" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <label for="field2" class="block mb-1">Label</label>
+        <input id="field2" type="text" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4">
+        <button class="w-full p-2 bg-blue-500 text-white rounded">Button</button>
+      </div>
+      <div class="flex flex-wrap space-x-4">
+        <div>
+          <input type="checkbox" id="checkbox1" class="mr-2">
+          <label for="checkbox1">Checkbox 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox2" class="mr-2">
+          <label for="checkbox2">Checkbox 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox3" class="mr-2">
+          <label for="checkbox3">Checkbox 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox4" class="mr-2">
+          <label for="checkbox4">Checkbox 4</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radio Button Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Radio Options</h2>
+      <div class="mb-2">
+        <input type="radio" id="radio1" name="options" class="mr-2">
+        <label for="radio1" class="font-medium">Radio 1</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" id="radio2" name="options" class="mr-2">
+        <label for="radio2" class="font-medium">Radio 2</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" id="radio3" name="options" class="mr-2">
+        <label for="radio3" class="font-medium">Radio 3</label>
+      </div>
+      <div class="mb-2">
+        <input type="radio" id="radio4" name="options" class="mr-2">
+        <label for="radio4" class="font-medium">Radio 4</label>
+      </div>
+    </section>
+
+    <!-- Small Placeholder Image and Description -->
+    <figure class="mb-8">
+      <img src="https://placehold.co/300x200" alt="Small Placeholder Image" class="w-full h-auto border border-gray-300">
+    </figure>
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis justo ut eros vehicula, a bibendum lacus tincidunt.</p>
+  </div>
+</body>
+</html>

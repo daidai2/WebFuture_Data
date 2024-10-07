@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .profile .info {
+            line-height: 1.6;
+        }
+        .checkout-section {
+            margin-top: 40px;
+        }
+        .checkout-section h2 {
+            margin-bottom: 20px;
+        }
+        .checkout-section .form-group {
+            margin-bottom: 15px;
+        }
+        .checkout-section .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .checkout-section .form-group input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .checkout-section .shipping-service {
+            margin-top: 20px;
+        }
+        .checkout-section .shipping-service label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .checkout-section .shipping-service input[type="radio"] {
+            margin-right: 10px;
+        }
+        .button-section {
+            margin-top: 20px;
+        }
+        .button-section button {
+            padding: 10px 20px;
+        }
+    </style>
+    <script>
+        function handleSubmit() {
+            // Show alert
+            alert('Add Interaction');
+
+            // Add text at the bottom of the page
+            const newText = document.createElement('p');
+            newText.textContent = 'Add Element';
+            document.body.appendChild(newText);
+
+            // Change the first image to a button
+            const firstImage = document.querySelector('.profile img');
+            if (firstImage) {
+                const newButton = document.createElement('button');
+                newButton.textContent = 'Modify Element';
+                firstImage.replaceWith(newButton);
+            }
+        }
+
+        window.onload = function() {
+            document.querySelector('.button-section button').addEventListener('click', handleSubmit);
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Profile Section -->
+    <div class="profile">
+        <img src="profile1.jpg" alt="Mate One">
+        <div class="info">
+            <h3>Mate One</h3>
+            <p>Job Title</p>
+            <p>Contact Information</p>
+            <p>Additional Info</p>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="profile2.jpg" alt="Mate Two">
+        <div class="info">
+            <h3>Mate Two</h3>
+            <p>Job Title</p>
+            <p>Contact Information</p>
+            <p>Additional Info</p>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="profile3.jpg" alt="Mate Three">
+        <div class="info">
+            <h3>Mate Three</h3>
+            <p>Job Title</p>
+            <p>Contact Information</p>
+            <p>Additional Info</p>
+        </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <div class="checkout-section">
+        <h2>Checkout</h2>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company">
+        </div>
+
+        <div class="shipping-service">
+            <h3>Shipping Service</h3>
+            <label>
+                <input type="radio" name="shipping" value="standard" checked>
+                Standard - 14 days - $6.59
+            </label>
+            <label>
+                <input type="radio" name="shipping" value="expedited">
+                Expedited - 7 days - $11.99
+            </label>
+            <label>
+                <input type="radio" name="shipping" value="express">
+                Express - 3 days - $19.99
+            </label>
+        </div>
+
+        <div class="button-section">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .header a, .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            background-color: #ffffff;
+        }
+        .section img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(33.333% - 10px);
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .form input, .form textarea, .form button {
+            padding: 10px;
+            border: 1px solid #ced4da;
+        }
+        .form button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        #add-element {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        #dynamic-modules {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Title1</h1>
+        <a href="#">Link1-1</a>
+        <a href="#">Link1-2</a>
+        <a href="#">Link1-3</a>
+        <a href="#">Link1-4</a>
+        <a href="#">Link1-5</a>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Title2</h2>
+            <p>Text2</p>
+        </div>
+        <div class="section">
+            <h2>Title3</h2>
+            <p>Text3</p>
+            <img src="pic3-1.jpg" alt="PIC3-1">
+        </div>
+        <div class="section">
+            <h2>Title4</h2>
+            <p>Text4</p>
+            <img src="pic4-1.jpg" alt="PIC4-1">
+        </div>
+        <div class="section">
+            <h2>Title5</h2>
+            <h3>Title5-1</h3>
+            <div class="gallery">
+                <img src="pic5-1.jpg" alt="PIC5-1">
+                <img src="pic5-2.jpg" alt="PIC5-2">
+                <img src="pic5-3.jpg" alt="PIC5-3">
+                <img src="pic5-4.jpg" alt="PIC5-4">
+                <img src="pic5-5.jpg" alt="PIC5-5">
+                <img src="pic5-6.jpg" alt="PIC5-6">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Title6</h2>
+            <h3>Title6-1</h3>
+            <form class="form">
+                <input type="text" placeholder="TextInput">
+                <input type="text" placeholder="TextInput">
+                <textarea placeholder="TextArea"></textarea>
+                <button type="button" id="button6">Button6</button>
+            </form>
+        </div>
+    </div>
+    <div id="dynamic-modules"></div>
+    <div id="add-element">Add Element</div>
+    <div class="footer">
+        <a href="#">Link7-1</a>
+        <a href="#">Link7-2</a>
+        <a href="#">Link7-3</a>
+        <a href="#">Link7-4</a>
+        <a href="#">Link7-5</a>
+        <p>Text7-1 Text7-2</p>
+    </div>
+    <script>
+        document.getElementById('button6').addEventListener('click', function() {
+            var newModule = document.createElement('div');
+            newModule.classList.add('section');
+            newModule.innerHTML = '<p>Add Interaction</p>';
+            document.getElementById('dynamic-modules').appendChild(newModule);
+        });
+    </script>
+</body>
+</html>

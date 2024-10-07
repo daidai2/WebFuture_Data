@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <!-- Top Section -->
+  <section id="top-section" class="mb-8">
+    <div class="flex items-start">
+      <div id="image-container" class="w-1/3 p-2">
+        <!-- Changed the image to a button -->
+        <button id="modify-element-button" class="bg-red-500 text-white px-4 py-2 rounded">Modify Element</button>
+      </div>
+      <div id="lines-container" class="flex-1 px-2 space-y-2">
+        <!-- Changed the font size of the first text -->
+        <div class="h-4 bg-gray-300 rounded" style="font-size: 50px;"></div>
+        <div class="h-4 bg-gray-300 rounded"></div>
+        <div class="h-4 bg-gray-300 rounded"></div>
+      </div>
+    </div>
+    <div class="flex items-center mt-4">
+      <button id="back-button" class="bg-blue-500 text-white px-4 py-2 rounded">BACK</button>
+      <div id="checkbox-container" class="ml-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Checkbox</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Page Section -->
+  <section id="product-page" class="mb-8">
+    <div class="flex">
+      <div id="main-image-container" class="w-1/3 p-2">
+        <img src="https://placehold.co/300x300" alt="Main Product Image" class="w-full">
+      </div>
+      <aside id="product-details" class="flex-1 p-2">
+        <h2 id="product-name" class="text-2xl font-bold mb-2">Product Name</h2>
+        <h3 id="manufacturer" class="text-xl mb-4">Manufacturer</h3>
+        <div id="color-options" class="mb-4">
+          <p>Color:</p>
+          <label class="inline-flex items-center">
+            <input type="radio" name="color" class="form-radio">
+            <span class="ml-2">Red</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" name="color" class="form-radio">
+            <span class="ml-2">Blue</span>
+          </label>
+          <label class="inline-flex items-center ml-4">
+            <input type="radio" name="color" class="form-radio">
+            <span class="ml-2">White</span>
+          </label>
+        </div>
+        <div id="price-info" class="mb-4">
+          <p class="text-xl">Price: $400</p>
+          <p class="text-xl line-through">Old Price: $200</p>
+        </div>
+        <button id="add-to-cart" class="bg-green-500 text-white px-4 py-2 rounded">ADD TO CART</button>
+      </aside>
+    </div>
+    <div id="thumbnail-container" class="flex space-x-2 mt-4">
+      <img src="https://placehold.co/50x50" alt="Thumbnail 1" class="w-16 h-16">
+      <img src="https://placehold.co/50x50" alt="Thumbnail 2" class="w-16 h-16">
+      <img src="https://placehold.co/50x50" alt="Thumbnail 3" class="w-16 h-16">
+      <img src="https://placehold.co/50x50" alt="Thumbnail 4" class="w-16 h-16">
+    </div>
+  </section>
+
+  <!-- Bottom Section -->
+  <section id="bottom-section">
+    <div class="flex items-start mb-4">
+      <div id="image-container-bottom" class="w-1/3 p-2">
+        <img src="https://placehold.co/150x150" alt="Placeholder Image" class="w-full">
+      </div>
+      <div id="lines-container-bottom" class="flex-1 px-2 space-y-2">
+        <div class="h-4 bg-gray-300 rounded"></div>
+        <div class="h-4 bg-gray-300 rounded"></div>
+        <div class="h-4 bg-gray-300 rounded"></div>
+      </div>
+    </div>
+    <div id="labels-container" class="flex items-center mb-4">
+      <label class="flex-1 p-2">Label</label>
+      <div id="checkboxes-container" class="p-2">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox">
+          <span class="ml-2">Checkbox</span>
+        </label>
+      </div>
+    </div>
+    <div class="flex items-center mb-4">
+      <label class="flex-1 p-2">Label</label>
+      <div id="radiobutton-container" class="p-2 space-y-2">
+        <label class="inline-flex items-center">
+          <input type="radio" name="radio" class="form-radio">
+          <span class="ml-2">Radio Button</span>
+        </label>
+        <!-- Added Checkbox text to the right of Radio Button -->
+        <label class="inline-flex items-center ml-4">
+          <input type="radio" name="radio" class="form-radio">
+          <span class="ml-2">Radio Button</span>
+          <span class="ml-2">Checkbox</span>
+        </label>
+      </div>
+    </div>
+    <div id="text-lines-container" class="p-2 space-y-2">
+      <div class="h-4 bg-gray-300 rounded"></div>
+      <div class="h-4 bg-gray-300 rounded"></div>
+      <div class="h-4 bg-gray-300 rounded"></div>
+    </div>
+    <div class="flex items-center mt-4">
+      <button id="generic-button" class="bg-blue-500 text-white px-4 py-2 rounded">BUTTON</button>
+      <div id="image-container-small" class="ml-4">
+        <img src="https://placehold.co/80x80" alt="Small Image" class="w-16 h-16">
+      </div>
+    </div>
+  </section>
+</body>
+</html>

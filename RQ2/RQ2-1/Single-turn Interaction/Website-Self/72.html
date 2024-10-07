@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 50px; /* Changed font size */
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #4cae4c;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .product-price {
+            font-weight: bold;
+            color: #333;
+        }
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .catalog-item {
+            width: calc(33.333% - 20px);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        .catalog-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .catalog-item button {
+            padding: 10px;
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .catalog-item button:hover {
+            background-color: #4cae4c;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: calc(100% - 100px);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .search-bar button {
+            width: 100px;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to Terms and Conditions</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+
+        <h2>Product</h2>
+        <div class="product">
+            <div class="product-details"> <!-- Removed the first image -->
+                <div class="product-price">$24.99</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Check items:</label>
+            <div><input type="checkbox"> Check item 1</div>
+            <div><input type="checkbox"> Check item 2</div>
+            <div><input type="checkbox"> Check item 3</div>
+        </div>
+        <div class="form-group">
+            <button type="button">Buy Now</button>
+        </div>
+
+        <h2>Product Catalog</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button type="button">Search</button>
+        </div>
+        <div class="catalog">
+            <div class="catalog-item">
+                <img src="placeholder.png" alt="Product 1">
+                <div>Product 1</div>
+                <div>$20.00</div>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="catalog-item">
+                <img src="placeholder.png" alt="Product 2">
+                <div>Product 2</div>
+                <div>$10.00</div>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="catalog-item">
+                <img src="placeholder.png" alt="Product 3">
+                <div>Product 3</div>
+                <div>$40.00</div>
+                <button type="button">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Added text at the bottom of the page -->
+        <p>Add Element</p>
+    </div>
+</body>
+</html>

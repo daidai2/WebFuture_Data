@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Basic Form Page</title>
+</head>
+<body>
+<div class="form-page">
+<button onclick="modifyElement()" type="button">Modify Element</button>
+<form action="/submit" method="POST">
+<textarea cols="50" name="description" placeholder="Enter description here" rows="4"></textarea>
+<br/>
+<input id="checkbox" name="checkbox" type="checkbox"/>
+<label for="checkbox">Check box</label>
+</form>
+</div>
+<div id="back-button-container">
+<button id="6_1" onclick="goBack()" type="button">Back</button>
+</div>
+<script>
+        function goBack() {
+            const newModule = document.createElement('div');
+            newModule.innerHTML = '<p>Add Interaction</p>';
+            document.body.appendChild(newModule);
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        function modifyElement() {
+            // Functionality for the 'Modify Element' button
+            alert('Modify Element button clicked');
+        }
+    </script>
+</body>
+</html>

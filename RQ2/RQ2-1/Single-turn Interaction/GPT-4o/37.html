@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    #header-text {
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="max-w-3xl mx-auto p-4 space-y-4" id="container">
+<!-- Header -->
+<header class="text-center text-2xl font-bold" id="header-text">
+      Checkout
+    </header>
+<!-- Shipping Address Section -->
+<section class="space-y-2" id="shipping-address">
+<h2 class="text-xl font-semibold">Shipping Address</h2>
+<div class="space-y-2">
+<div>
+<label class="block" for="first-name">First Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="first-name" type="text"/>
+</div>
+<div>
+<label class="block" for="last-name" id="6_2_1_1_1">Last Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="last-name" type="text"/>
+</div>
+<div>
+<label class="block" for="company">Company</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="company" type="text"/>
+</div>
+</div>
+</section>
+<!-- Shipping Service Section -->
+<section class="space-y-2" id="shipping-service">
+<h2 class="text-xl font-semibold">Shipping Service</h2>
+<div class="space-y-2">
+<div class="flex items-center">
+<input class="mr-2" id="standard" name="shipping" type="radio"/>
+<label for="standard">Standard <br/> 14 days - $6.99</label>
+</div>
+<div class="flex items-center">
+<input class="mr-2" id="expedited" name="shipping" type="radio"/>
+<label for="expedited">Expedited <br/> 7 days - $12.99</label>
+</div>
+<div class="flex items-center">
+<input class="mr-2" id="express" name="shipping" type="radio"/>
+<label for="express">Express <br/> 3 days - $19.99</label>
+</div>
+</div>
+</section>
+<!-- Dropdown Container -->
+<div class="flex space-x-4" id="dropdown-container">
+<select class="p-2 border border-gray-300 rounded">
+<option>C Sharp</option>
+</select>
+<button class="p-2 bg-blue-500 text-white rounded">Get Drop Down Here</button>
+</div>
+<!-- Checkbox Options -->
+<div class="flex space-x-4" id="checkbox-options">
+<div>
+<input class="mr-2" id="csharp" type="checkbox"/>
+<label for="csharp">C#</label>
+</div>
+<div class="flex items-center space-x-2">
+<input class="mr-2" id="java" type="checkbox"/>
+<label for="java" id="6_2_2_2_1">Java</label>
+<label for="last-name-inline" id="6_2_1_2_1">Last Name</label>
+</div>
+<div>
+<input class="mr-2" id="php" type="checkbox"/>
+<label for="php">PHP</label>
+</div>
+<div>
+<input class="mr-2" id="vb" type="checkbox"/>
+<label for="vb">Visual Basic</label>
+</div>
+</div>
+<!-- Image Placeholder -->
+<div class="my-4" id="image-placeholder">
+<img alt="Placeholder Image" class="mx-auto" src="https://placehold.co/300x200"/>
+</div>
+<!-- Additional Text Input -->
+<div class="my-4" id="additional-text">
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+<!-- List Container -->
+<div class="my-4" id="list-container">
+<p class="border-b border-gray-300"></p>
+<p class="border-b border-gray-300"></p>
+<p class="border-b border-gray-300"></p>
+</div>
+<!-- Checkbox and Radio Options -->
+<div class="my-4 space-y-2" id="additional-options">
+<div>
+<input class="mr-2" id="option1" type="checkbox"/>
+<label for="option1">Option 1</label>
+</div>
+<div>
+<input class="mr-2" id="option2" type="checkbox"/>
+<label for="option2">Option 2</label>
+</div>
+<div>
+<input class="mr-2" id="radio1" name="radio-options" type="radio"/>
+<label for="radio1">Option 1</label>
+</div>
+<div>
+<input class="mr-2" id="radio2" name="radio-options" type="radio"/>
+<label for="radio2">Option 2</label>
+</div>
+<div>
+<input class="mr-2" id="radio3" name="radio-options" type="radio"/>
+<label for="radio3">Option 3</label>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<nav class="flex justify-between mt-6" id="navigation-buttons">
+<button class="p-2 bg-gray-300 rounded">Back</button>
+<div class="flex space-x-4">
+<button class="p-2 bg-gray-300 rounded">Back</button>
+<button class="p-2 bg-blue-500 text-white rounded">Button</button>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="mt-6 text-center">
+      Add Element
+    </footer>
+</div>
+</body>
+</html>

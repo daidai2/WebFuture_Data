@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-image {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .bg-white-section {
+      background-color: white;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+    .image-width {
+      width: 200px;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+    .image-width-large {
+      width: 400px;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+    .text-gray-light {
+      color: lightgray;
+      font-size: smaller;
+    }
+    .bg-light-red {
+      background-color: lightcoral;
+      position: relative;
+      color: white;
+      text-align: left;
+    }
+    .bg-light-red .title1 {
+      font-size: x-large;
+      font-weight: bold;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+    .bg-light-red .text1 {
+      position: absolute;
+      top: 70px;
+      left: 30px;
+    }
+    .transparent-black-bg {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 25%;
+      height: 25%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .small-white-text {
+      font-size: small;
+      color: white;
+    }
+    .border-none {
+      border: none;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-image">
+
+  <main class="p-8 space-y-8">
+    <!-- Background image section -->
+    <div class="bg-image p-8">
+      <!-- White background section -->
+      <div class="bg-white-section p-8">
+        <!-- Row 1 -->
+        <div class="grid grid-cols-4 gap-0.5 mt-16">
+          <div class="text-center bg-light-red">
+            <div class="title1">Title1</div>
+            <div class="text1">Text1</div>
+          </div>
+          <div class="text-center relative">
+            <img src="01.jpg" alt="PIC1-2" class="mx-auto image-width hidden">
+            <div class="transparent-black-bg" style="width: 50px;">
+              <p class="small-white-text">Text1-2</p>
+            </div>
+          </div>
+          <div class="text-center relative">
+            <img src="02.jpg" alt="PIC1-3" class="mx-auto image-width-large hidden">
+            <div class="transparent-black-bg" style="width: 100px;">
+              <p class="small-white-text">Text1-3</p>
+            </div>
+          </div>
+          <div class="text-center relative">
+            <img src="03.jpg" alt="PIC1-4" class="mx-auto image-width hidden">
+            <div class="transparent-black-bg" style="width: 50px;">
+              <p class="small-white-text">Text1-4</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid grid-cols-5 gap-0.5 mt-8">
+          <div class="text-center col-span-2 transform -translate-x-1 relative">
+            <img src="05.jpg" alt="PIC1-5" class="mx-auto image-width-large hidden">
+            <div class="transparent-black-bg" style="width: 100px;">
+              <p class="small-white-text">Text1-5</p>
+            </div>
+          </div>
+          <div class="text-center col-span-1 transform -translate-x-1 relative">
+            <img src="06.jpg" alt="PIC1-6" class="mx-auto image-width hidden">
+            <div class="transparent-black-bg" style="width: 50px;">
+              <p class="small-white-text">Text1-6</p>
+            </div>
+          </div>
+          <div class="text-center col-span-1 transform -translate-x-1 relative">
+            <img src="07.jpg" alt="PIC1-7" class="mx-auto image-width hidden">
+            <div class="transparent-black-bg" style="width: 50px;">
+              <p class="small-white-text">Text1-7</p>
+            </div>
+          </div>
+          <div class="text-center col-span-1 relative">
+            <img src="08.jpg" alt="PIC1-8" class="mx-auto image-width hidden">
+            <div class="transparent-black-bg" style="width: 50px;">
+              <p class="small-white-text">Text1-8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text1-1 with icons and texts -->
+    <section class="bg-image p-4 border-none rounded-md flex items-center justify-between mt-16">
+      <p class="mr-auto text-gray-light">Text1-1</p>
+      <div class="ml-4 flex flex-col items-center">
+        <div class="flex">
+          <img src="https://placehold.co/30x30" alt="Icon1-1" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-2" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-3" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-4" class="mx-1">
+          <img src="https://placehold.co/30x30" alt="Icon1-5" class="mx-1">
+        </div>
+        <div class="flex">
+          <p class="mx-1 text-gray-light border-none">Text2</p>
+          <p class="mx-1 text-gray-light border-none">Text3</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector('.bg-white-section').style.opacity = 1;
+      setTimeout(() => {
+        document.querySelectorAll('.hidden').forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.remove('hidden');
+            el.style.opacity = 1;
+          }, index * 500);
+        });
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

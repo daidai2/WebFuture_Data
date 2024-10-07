@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review and Catalog Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100" id="body1">
+
+  <div class="container mx-auto p-4" id="body1-div1">
+    <!-- Header Section -->
+    <header class="bg-white p-4 rounded shadow mb-4" id="body1-div1-header1">
+      <h1 class="text-xl font-bold mb-2" id="body1-div1-header1-h11">Write Review</h1>
+      <div class="flex items-center space-x-4" id="body1-div1-header1-div2">
+        <div class="w-20 h-20 bg-gray-200 flex items-center justify-center" id="body1-div1-header1-div2-div3">
+
+        </div>
+        <div class="flex flex-col" id="body1-div1-header1-div2-div4">
+          <span class="text-lg font-bold" id="body1-div1-header1-div2-div4-span1">Product Name</span>
+          <span class="text-gray-600" id="body1-div1-header1-div2-div4-span2">$ Price</span>
+        </div>
+        <div class="ml-auto text-right" id="body1-div1-header1-div2-div5">
+          <div class="flex items-center space-x-2" id="body1-div1-header1-div2-div5-div6">
+            <span id="body1-div1-header1-div2-div5-div6-span3">⭐⭐⭐⭐⭐</span>
+            <span class="text-gray-600" id="body1-div1-header1-div2-div5-div6-span4">45 reviews</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Review Form Section -->
+    <section class="bg-white p-4 rounded shadow mb-4" id="body1-div1-section1">
+      <div class="mb-4" id="body1-div1-section1-div7">
+        <h2 class="font-bold text-lg" id="body1-div1-section1-div7-h21">Rate Product</h2>
+        <div class="flex items-center space-x-2" id="body1-div1-section1-div7-div8">
+          <span id="body1-div1-section1-div7-div8-span5">⭐⭐⭐⭐⭐</span>
+          <span class="text-gray-600" id="body1-div1-section1-div7-div8-span6">Bad :(</span>
+        </div>
+      </div>
+      <div class="mb-4" id="body1-div1-section1-div9">
+        <label for="headline" class="block mb-2" id="body1-div1-section1-div9-label1">Headline</label>
+        <input type="text" id="body1-div1-section1-div9-input1" class="w-full p-2 border rounded" placeholder="Write your headline">
+      </div>
+      <div class="mb-4" id="body1-div1-section1-div10">
+        <label for="review" class="block mb-2" id="body1-div1-section1-div10-label2">Review</label>
+        <textarea id="body1-div1-section1-div10-textarea1" class="w-full p-2 border rounded" rows="4" placeholder="Write your review"></textarea>
+      </div>
+      <div class="text-right" id="body1-div1-section1-div11">
+        <input type="submit" value="Submit" class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer" id="body1-div1-section1-div11-input2">
+      </div>
+    </section>
+
+    <!-- Product Information Section -->
+    <article class="bg-white p-4 rounded shadow mb-4 text-center" id="body1-div1-article1">
+      <div class="w-full flex justify-center" id="body1-div1-article1-div12">
+        <img src="https://placehold.co/420x240" alt="Main Product Image" class="w-96 h-auto bg-gray-200" id="body1-div1-article1-div12-img2">
+      </div>
+      <div class="my-4" id="body1-div1-article1-div13">
+        <span class="text-2xl font-bold" id="body1-div1-article1-div13-span7">$24.99</span>
+        <h1 class="text-2xl font-semibold mt-2" id="body1-div1-article1-div13-h12">Product Title</h1>
+      </div>
+      <hr class="border-gray-300" id="body1-div1-article1-hr1">
+    </article>
+
+    <!-- Checklist Section -->
+    <aside class="bg-white p-4 rounded shadow mb-4" id="body1-div1-aside1">
+      <h2 class="font-bold text-lg mb-2" id="body1-div1-aside1-h22">Check Items:</h2>
+      <div class="flex items-center space-x-2 mb-2" id="body1-div1-aside1-div14">
+        <input type="checkbox" id="body1-div1-aside1-div14-input3">
+        <label for="item1" id="body1-div1-aside1-div14-label3">Check item 1</label>
+      </div>
+      <div class="flex items-center space-x-2 mb-2" id="body1-div1-aside1-div15">
+        <input type="checkbox" id="body1-div1-aside1-div15-input4">
+        <label for="item2" id="body1-div1-aside1-div15-label4">Check item 2</label>
+      </div>
+      <div class="flex items-center space-x-2 mb-4" id="body1-div1-aside1-div16">
+        <input type="checkbox" id="body1-div1-aside1-div16-input5">
+        <label for="item3" id="body1-div1-aside1-div16-label5">Check item 3</label>
+      </div>
+      <div class="text-center" id="body1-div1-aside1-div17">
+        <button class="px-4 py-2 bg-green-500 text-white rounded" id="body1-div1-aside1-div17-button1">Buy Now</button>
+      </div>
+    </aside>
+
+    <!-- Product Catalog Section -->
+    <section class="bg-white p-4 rounded shadow" id="body1-div1-section2">
+      <header class="flex items-center justify-between mb-4" id="body1-div1-section2-header2">
+        <h2 class="font-bold text-lg" id="body1-div1-section2-header2-h23">Product Catalog</h2>
+        <div class="flex items-center space-x-2" id="body1-div1-section2-header2-div18">
+          <input type="text" class="p-2 border rounded" placeholder="search" id="body1-div1-section2-header2-div18-input6">
+          <button class="px-4 py-2 bg-blue-500 text-white rounded" id="body1-div1-section2-header2-div18-button2">Search</button>
+        </div>
+      </header>
+      <div class="grid grid-cols-3 gap-4" id="body1-div1-section2-div19">
+        <!-- Product 1 -->
+        <div class="bg-gray-200 p-4 rounded shadow text-center" id="body1-div1-section2-div19-div20">
+          <div class="h-32 bg-white mb-2 flex items-center justify-center" id="body1-div1-section2-div19-div20-div21">
+            <img src="https://placehold.co/120x120" alt="Product 1 Image" id="body1-div1-section2-div19-div20-div21-img3">
+          </div>
+          <h3 class="font-semibold mb-2" id="body1-div1-section2-div19-div20-h31">Product 1</h3>
+          <span class="block text-lg mb-2" id="body1-div1-section2-div19-div20-span8">$20.00</span>
+          <button class="px-4 py-2 bg-blue-500 text-white rounded" id="body1-div1-section2-div19-div20-button3" onclick="showAlert()">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-gray-200 p-4 rounded shadow text-center" id="body1-div1-section2-div19-div22">
+          <div class="h-32 bg-white mb-2 flex items-center justify-center" id="body1-div1-section2-div19-div22-div23">
+            <img src="https://placehold.co/120x120" alt="Product 2 Image" id="body1-div1-section2-div19-div22-div23-img4">
+          </div>
+          <h3 class="font-semibold mb-2" id="body1-div1-section2-div19-div22-h32">Product 2</h3>
+          <span class="block text-lg mb-2" id="body1-div1-section2-div19-div22-span9">$10.00</span>
+          <button class="px-4 py-2 bg-blue-500 text-white rounded" id="body1-div1-section2-div19-div22-button4" onclick="showAlert()">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-gray-200 p-4 rounded shadow text-center" id="body1-div1-section2-div19-div24">
+          <div class="h-32 bg-white mb-2 flex items-center justify-center" id="body1-div1-section2-div19-div24-div25">
+            <img src="https://placehold.co/120x120" alt="Product 3 Image" id="body1-div1-section2-div19-div24-div25-img5">
+          </div>
+          <h3 class="font-semibold mb-2" id="body1-div1-section2-div19-div24-h33">Product 3</h3>
+          <span class="block text-lg mb-2" id="body1-div1-section2-div19-div24-span10">$40.00</span>
+          <button class="px-4 py-2 bg-blue-500 text-white rounded" id="body1-div1-section2-div19-div24-button5" onclick="showAlert()">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <script data-custom-scripts="true">
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+  <div id="Parent_body1_Next_null_Queue_1">Add Element</div>
+</body>
+</html>

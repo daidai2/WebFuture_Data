@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #overlay {
+      background-image: url('overlay.png');
+      background-size: auto;
+      background-repeat: repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    #black-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .transparent-bg {
+      background-color: transparent;
+      border: 1px solid white; /* Reduced border thickness */
+      margin-right: -1px; /* Adjusted to solve overlapping issues */
+    }
+    .transparent-bg:last-child {
+      margin-right: 0; /* Last element does not need negative margin */
+    }
+    .horizontal-line {
+      width: 50%;
+      height: 1px; /* Reduced thickness */
+      background-color: white;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .horizontal-line.top {
+      top: 50%;
+      animation: moveUp 1s forwards;
+    }
+    .horizontal-line.bottom {
+      top: 50%;
+      animation: moveDown 1s forwards;
+    }
+    .vertical-line-up, .vertical-line-down {
+      width: 1px; /* Reduced thickness */
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .vertical-line-up {
+      top: -48px; /* Adjust this position as needed */
+      height: 48px; /* Adjust this height to reach the bottom of the circle */
+    }
+    .vertical-line-down {
+      bottom: -50px; /* Adjust this position as needed */
+      height: 50px; /* Adjust this height as needed */
+    }
+    .white-text {
+      color: white;
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+    .thin-text {
+      font-weight: 300; /* Make the text thinner */
+    }
+    .content {
+      opacity: 0;
+      animation: fadeIn 1s forwards 1s;
+    }
+    @keyframes moveUp {
+      to {
+        top: 10%; /* Adjust this to the final position */
+      }
+    }
+    @keyframes moveDown {
+      to {
+        top: 80%; /* Adjust this to the final position */
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 relative">
+
+  <div id="overlay"></div>
+  <div id="black-overlay"></div>
+
+  <div id="main-container" class="min-h-screen flex flex-col items-center justify-between p-4 relative z-10">
+    <header class="w-full flex justify-center py-10">
+      <div class="w-24 h-24 rounded-full transparent-bg flex items-center justify-center">
+        <a href="#" class="text-lg font-medium white-text">Link1</a>
+      </div>
+    </header>
+
+    <div class="horizontal-line top">
+      <div class="vertical-line-up"></div> <!-- Vertical line from the first horizontal line upwards -->
+    </div> <!-- First horizontal line -->
+
+    <section id="main-content" class="text-center mx-auto my-16 content">
+      <h1 class="title1 text-4xl mb-4 white-text bold-text">Title1</h1>
+      <p class="text1 text-xl mb-6 white-text thin-text">Text1</p> <!-- Changed to thinner text -->
+    </section>
+
+    <div class="horizontal-line bottom">
+      <div class="vertical-line-down"></div> <!-- Vertical line from the second horizontal line downwards -->
+    </div> <!-- Second horizontal line -->
+
+    <nav class="w-full flex justify-center mt-10 mb-16 content">
+      <a href="#" class="link2 px-4 py-2 transparent-bg white-text thin-text">Link1-1</a> <!-- Changed to thinner text -->
+      <a href="#" class="link3 px-4 py-2 transparent-bg white-text thin-text">Link1-2</a> <!-- Changed to thinner text -->
+      <a href="#" class="link4 px-4 py-2 transparent-bg white-text thin-text">Link1-3</a> <!-- Changed to thinner text -->
+      <a href="#" class="link5 px-4 py-2 transparent-bg white-text thin-text">Link1-4</a> <!-- Changed to thinner text -->
+    </nav>
+
+    <footer class="w-full text-center py-6 content">
+      <p class="text2 text-sm white-text thin-text">Text1</p> <!-- Changed to thinner text -->
+    </footer>
+  </div>
+
+</body>
+</html>

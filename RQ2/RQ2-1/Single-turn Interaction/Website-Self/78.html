@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin-right: 20px;
+        }
+        .checkout {
+            margin-top: 20px;
+        }
+        .checkout div {
+            margin-bottom: 10px;
+        }
+        .shipping-service {
+            margin-top: 20px;
+        }
+        .shipping-service div {
+            margin-bottom: 10px;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .large-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            margin-top: 20px;
+        }
+        .form-elements div {
+            margin-bottom: 10px;
+        }
+        .radio-buttons, .checkboxes {
+            margin-top: 20px;
+        }
+        .radio-buttons div, .checkboxes div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" id="add-element">Add Element</a> <!-- Added hyperlink -->
+        <div class="profile">
+            <div>
+                <h2>Mate One</h2>
+                <p>Job Title</p>
+                <p>---</p>
+                <p>---</p>
+            </div>
+        </div> <!-- Removed first image -->
+        <div class="profile">
+            <div>
+                <h2>Mate Two</h2>
+                <p>Job Title</p>
+                <p>---</p>
+                <p>---</p>
+            </div>
+            <img src="#" alt="Mate Two">
+        </div>
+        <div class="profile">
+            <img src="#" alt="Mate Three">
+            <div>
+                <h2>Mate Three</h2>
+                <p>Job Title</p>
+                <p>---</p>
+                <p>---</p>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div>
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+        </div>
+
+        <div class="shipping-service">
+            <h3>Shipping Service</h3>
+            <div>
+                <input type="radio" id="standard" name="shipping" value="standard">
+                <label for="standard">Standard - 14 days - $6.59</label>
+            </div>
+            <div>
+                <input type="radio" id="expedited" name="shipping" value="expedited">
+                <label for="expedited">Expedited - 7 days - $11.77</label>
+            </div>
+            <div>
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express - 3 days - $19.99</label>
+            </div>
+        </div>
+
+        <div class="large-image"></div>
+
+        <div class="form-elements">
+            <div>
+                <label for="label1">Label</label>
+                <input type="text" id="label1" name="label1">
+            </div>
+            <div>
+                <label for="label2">Label</label>
+                <input type="text" id="label2" name="label2">
+            </div>
+            <div>
+                <button type="button" onclick="showAlert()">Button</button> <!-- Added onclick event -->
+            </div>
+        </div>
+
+        <div class="radio-buttons">
+            <div>
+                <input type="radio" id="radio1" name="radio" value="1">
+                <label for="radio1">Radio 1</label>
+            </div>
+            <div>
+                <input type="radio" id="radio2" name="radio" value="2">
+                <label for="radio2">Radio 2</label>
+            </div>
+            <div>
+                <input type="radio" id="radio3" name="radio" value="3">
+                <label for="radio3">Radio 3</label>
+            </div>
+            <div>
+                <input type="radio" id="radio4" name="radio" value="4">
+                <label for="radio4">Radio 4</label>
+            </div>
+        </div>
+
+        <div class="checkboxes">
+            <div>
+                <input type="checkbox" id="checkbox1" name="checkbox1">
+                <label for="checkbox1">Checkbox 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2" name="checkbox2">
+                <label for="checkbox2">Checkbox 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox3" name="checkbox3">
+                <label for="checkbox3">Checkbox 3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox4" name="checkbox4">
+                <label for="checkbox4">Checkbox 4</label>
+            </div>
+        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+        </div>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+    </script>
+</body>
+</html>

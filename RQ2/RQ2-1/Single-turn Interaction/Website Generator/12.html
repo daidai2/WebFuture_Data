@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobility Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+  <!-- Header Section -->
+  <header class="text-center py-6 bg-blue-600 text-white">
+    <h1 class="text-5xl mb-4">Mobility Solutions & Daily Living Aids Making Life Easier</h1>
+    <button class="bg-white text-blue-600 py-2 px-4 rounded">Find out More</button>
+  </header>
+
+  <!-- Main Feature Section -->
+  <section id="main-feature" class="my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Wheelchair Repair Feature -->
+    <div id="wheelchair-repair-feature" class="bg-white p-6 rounded shadow-md">
+      <h2 class="text-2xl mb-4">Wheelchair Repair</h2>
+      <img src="https://placehold.co/300x200" alt="Placeholder Image" class="mb-4">
+      <p class="mb-4">Find out more about our wheelchair repair services.</p>
+      <button class="bg-blue-600 text-white py-2 px-4 rounded">Find out More</button>
+    </div>
+    <!-- Community Contracts Feature -->
+    <div id="community-contracts-feature" class="bg-white p-6 rounded shadow-md">
+      <h2 class="text-2xl mb-4">Community Contracts</h2>
+      <p class="mb-4">Learn about our community contracts and how they benefit you.</p>
+      <button class="bg-blue-600 text-white py-2 px-4 rounded">Find out More</button>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team-section" class="my-8 space-y-6">
+    <div class="profile bg-white p-6 rounded shadow-md flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 rounded-full">
+      <div>
+        <h3 class="text-xl mb-2">Mate One</h3>
+        <p class="text-gray-600">Job Title</p>
+        <p class="text-gray-600 mt-2">Description of Mate One's role.</p>
+      </div>
+    </div>
+    <div class="profile bg-white p-6 rounded shadow-md flex items-center space-x-4">
+      <div class="flex-1">
+        <h3 class="text-xl mb-2">Mate Two</h3>
+        <p class="text-gray-600">Job Title</p>
+        <p class="text-gray-600 mt-2">Description of Mate Two's role. <span class="text-gray-600">Metodo de pago</span></p>
+      </div>
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 rounded-full">
+    </div>
+    <div class="profile bg-white p-6 rounded shadow-md flex items-center space-x-4">
+      <img src="https://placehold.co/100x100" alt="Placeholder Image" class="w-24 h-24 rounded-full">
+      <div>
+        <h3 class="text-xl mb-2">Mate Three</h3>
+        <p class="text-gray-600">Job Title</p>
+        <p class="text-gray-600 mt-2">Description of Mate Three's role.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <aside class="my-8 p-6 bg-white rounded shadow-md">
+    <h4 class="text-xl mb-4">Forma de envío</h4>
+    <div class="mb-4">
+      <label class="block mb-2">Método de transporte</label>
+      <input type="radio" name="shipping" value="postal" class="mr-2">Postal
+      <input type="radio" name="shipping" value="aereo" class="mr-2 ml-4">Aéreo
+      <input type="radio" name="shipping" value="maritimo" class="mr-2 ml-4">Marítimo
+    </div>
+    <h4 class="text-xl mb-4">Forma de pago</h4>
+    <div class="mb-4">
+      <label class="block mb-2">Metodo de pago</label>
+      <input type="radio" name="payment" value="tarjeta" class="mr-2">Tarjeta (Credito/Debito)
+      <input type="radio" name="payment" value="transferencia" class="mr-2 ml-4">Transferencia bancaria
+      <input type="radio" name="payment" value="metalico" class="mr-2 ml-4">Metálico
+    </div>
+    <div class="mb-4">
+      <label for="direccion" class="block mb-2">Dirección</label>
+      <input type="text" id="direccion" name="direccion" class="w-full p-2 border rounded">
+    </div>
+    <div class="mb-4">
+      <label for="pais" class="block mb-2">País</label>
+      <select id="pais" name="pais" class="w-full p-2 border rounded">
+        <option value="">Seleccione un país</option>
+        <option value="us">Estados Unidos</option>
+        <option value="mx">México</option>
+        <option value="es">España</option>
+      </select>
+    </div>
+    <button class="bg-blue-600 text-white py-2 px-4 rounded">Aceptar</button>
+  </aside>
+  
+  <!-- Add Element text -->
+  <footer class="text-center mt-8">
+    <p>Add Element</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low Fidelity Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header, .video, .content, .form {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        .header h1, .header p, .content h2, .content p, .form label {
+            margin: 10px 0;
+        }
+        .post {
+            display: flex;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .post img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .form input, .form select {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .form input[type="radio"], .form input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .inline-labels {
+            display: flex;
+            align-items: center;
+        }
+        .inline-labels label {
+            margin-right: 10px;
+        }
+        .form label:first-of-type {
+            font-size: 50px;
+        }
+    </style>
+<script>
+        function addInteraction() {
+            var container = document.createElement('div');
+            container.className = 'interaction';
+            var textElement = document.createElement('p');
+            textElement.textContent = 'Add Interaction';
+            container.appendChild(textElement);
+            document.body.appendChild(container);
+        }
+        window.onload = function() {
+            document.querySelector('button[type="submit"]').onclick = function(event) {
+                event.preventDefault();
+                addInteraction();
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Title</h1>
+<p>Title Page</p>
+</div>
+<div class="video">
+<p>Video Placeholder</p>
+</div>
+<div class="content">
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<div>
+<h2>Title</h2>
+<p>Title Post</p>
+</div>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<div>
+<h2>Title</h2>
+<p>Title Post</p>
+</div>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<div>
+<h2>Title</h2>
+<p>Title Post</p>
+</div>
+</div>
+<div class="post">
+<img alt="Post Image" src="placeholder.jpg"/>
+<div>
+<h2>Title</h2>
+<p>Title Post</p>
+</div>
+</div>
+</div>
+<div class="form">
+<label>Forma de envío</label>
+<label><input name="transport" type="radio" value="terrestre"/> Terrestre</label>
+<label><input name="transport" type="radio" value="aereo"/> Aereo</label>
+<label><input name="transport" type="radio" value="maritimo"/> Marítimo</label>
+<label>Forma de pago</label>
+<div class="inline-labels">
+<label id="6_2_2_1_1"><input name="payment" type="radio" value="transferencia"/> Transferencia bancaria</label>
+<label id="6_2_1_1_1"><input name="payment" type="radio" value="tarjeta"/> Tarjeta (Crédito/débito)</label>
+</div>
+<label><input name="payment" type="radio" value="metalico"/> Metálico</label>
+<label>Dirección</label>
+<input name="direccion" type="text"/>
+<label>País</label>
+<select name="pais">
+<option value="pais1">País 1</option>
+<option value="pais2">País 2</option>
+<option value="pais3">País 3</option>
+</select>
+<button type="submit">Aceptar</button>
+</div>
+</div>
+</body>
+</html>

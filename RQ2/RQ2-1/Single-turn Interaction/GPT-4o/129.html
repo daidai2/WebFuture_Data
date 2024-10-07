@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .large-font {
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+<header class="bg-white py-4 shadow-md">
+<h1 class="text-center text-2xl font-bold large-font">Checkout</h1>
+</header>
+<main class="max-w-2xl mx-auto py-6">
+<section class="bg-white p-6 rounded shadow-md mb-6">
+<h2 class="text-xl font-bold mb-4">Shipping Address</h2>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700">First Name</label>
+<input class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="First Name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700">Last Name</label>
+<input class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Last Name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700">Company</label>
+<input class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Company" type="text"/>
+</div>
+</section>
+<section class="bg-white p-6 rounded shadow-md mb-6">
+<h2 class="text-xl font-bold mb-4">Shipping Service</h2>
+<div class="mb-4">
+<input class="mr-2" name="shipping" type="radio"/>
+<label class="text-sm font-medium text-gray-700">Standard 14 days - $6.99</label>
+</div>
+<div class="mb-4">
+<input class="mr-2" name="shipping" type="radio"/>
+<label class="text-sm font-medium text-gray-700">Expedited 7 days - $14.99</label>
+</div>
+<div class="mb-4">
+<input class="mr-2" name="shipping" type="radio"/>
+<label class="text-sm font-medium text-gray-700">Express 3 days - $19.99</label>
+</div>
+</section>
+<section class="bg-white p-6 rounded shadow-md mb-6">
+<h2 class="text-xl font-bold mb-4">Write Review</h2>
+<article class="flex items-center mb-4">
+<img alt="Product Image" class="rounded mr-4" src="https://placehold.co/100x100"/>
+<div>
+<h3 class="text-lg font-bold">Product Name</h3>
+<p class="text-gray-500">$Price</p>
+<p class="text-yellow-500 text-sm">★★★★★</p>
+<p class="text-sm text-gray-600">45 reviews</p>
+</div>
+</article>
+<p class="text-sm font-medium text-gray-700 mb-2">Rate Product</p>
+<div class="flex items-center mb-4">
+<div class="flex items-center mr-4">
+<span class="text-yellow-500">★★★★★</span>
+</div>
+<p class="text-sm text-gray-500">(Bad :( )</p>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700">Headline</label>
+<input class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Headline" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700">Review</label>
+<textarea class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Review" rows="3"></textarea>
+</div>
+</section>
+<figure class="bg-white p-6 rounded shadow-md mb-6">
+<img alt="Ad Image" class="w-full rounded block mb-4" src="https://placehold.co/600x200"/>
+</figure>
+<section class="bg-white p-6 rounded shadow-md mb-6">
+<div class="columns-3 mb-4">
+<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+</section>
+<section class="bg-white p-6 rounded shadow-md mb-6">
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700">Label 1</label>
+<input class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Label 1" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700">Label 2</label>
+<input class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Label 2" type="text"/>
+</div>
+<div class="mb-4">
+<div class="mb-2">
+<input class="mr-2" name="radio" type="radio"/>
+<label class="text-sm font-medium text-gray-700">Radio 1</label>
+</div>
+<div class="mb-2">
+<input class="mr-2" name="radio" type="radio"/>
+<label class="text-sm font-medium text-gray-700">Radio 2</label>
+</div>
+<div class="mb-2">
+<input class="mr-2" name="radio" type="radio"/>
+<label class="text-sm font-medium text-gray-700">Radio 3</label>
+</div>
+<div class="mb-4">
+<input class="mr-2" name="radio" type="radio"/>
+<label class="text-sm font-medium text-gray-700">Radio 4</label>
+</div>
+</div>
+<figure class="bg-white mb-6">
+<img alt="Secondary Image" class="w-full rounded block mb-4" src="https://placehold.co/600x200"/>
+<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non erat nec lectus malesuada commodo.</figcaption>
+</figure>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<input class="mr-2" type="checkbox"/>
+<label class="text-sm font-medium text-gray-700">Checkbox 1</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" type="checkbox"/>
+<label class="text-sm font-medium text-gray-700">Checkbox 2</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" type="checkbox"/>
+<label class="text-sm font-medium text-gray-700">Checkbox 3</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" type="checkbox"/>
+<label class="text-sm font-medium text-gray-700">Checkbox 4</label>
+</div>
+</div>
+</section>
+<button class="bg-blue-500 text-white py-2 px-4 rounded mb-6" id="6_1">Submit</button>
+<p class="text-center text-sm font-medium text-gray-700">Add Element</p>
+</main>
+<footer class="bg-white py-4 text-center shadow-md mt-6">
+<p class="text-sm font-medium text-gray-700">Footer Content</p>
+</footer>
+</body>
+</html>

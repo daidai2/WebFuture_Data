@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low Fidelity Wireframe Example</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product-grid div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 30%;
+        }
+        .product-page {
+            padding: 20px;
+        }
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-details img {
+            max-width: 40%;
+        }
+        .form-section {
+            padding: 20px;
+        }
+        .form-section div {
+            margin-bottom: 10px;
+        }
+        .form-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-section input[type="text"], 
+        .form-section select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-section input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+<div class="hero-section">
+
+</div>
+<div class="product-grid">
+<div>
+<img alt="Product 1" src="product1.jpg"/>
+<p>Product 1 Description</p>
+</div>
+<div>
+<img alt="Product 2" src="product2.jpg"/>
+<p>Product 2 Description</p>
+</div>
+<div>
+<img alt="Product 3" src="product3.jpg"/>
+<p>Product 3 Description</p>
+</div>
+</div>
+<div class="product-page">
+<div class="product-details">
+<img alt="Product Large" src="product-large.jpg"/>
+<div>
+<h2>Product Name</h2>
+<p>Manufacturer</p>
+<p>Color:</p>
+<label><input name="color" type="radio" value="red"/> Red</label>
+<label><input name="color" type="radio" value="blue"/> Blue</label>
+<label><input name="color" type="radio" value="white"/> White</label>
+<p>Price: $100</p>
+<p>Old Price: $200</p>
+<button>Add to Cart</button>
+</div>
+</div>
+</div>
+<div class="form-section">
+<div>
+<label for="name">Name</label>
+<input id="name" name="name" type="text"/>
+</div>
+<div>
+<label for="options">Options</label>
+<select id="options" name="options">
+<option value="option1">Option 1</option>
+<option value="option2">Option 2</option>
+<option value="option3">Option 3</option>
+</select>
+</div>
+<div>
+<label><input name="checkbox1" type="checkbox"/> Checkbox 1</label>
+</div>
+<div>
+<label><input name="checkbox2" type="checkbox"/> Checkbox 2</label>
+</div>
+<div>
+<button type="button">Back</button>
+<h3>Submit</h3>
+</div>
+</div>
+<p>Add Element</p></body>
+</html>

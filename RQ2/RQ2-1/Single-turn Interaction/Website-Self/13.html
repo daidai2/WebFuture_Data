@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .product-listing, .product-detail, .form-section {
+            margin-bottom: 50px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+        }
+        .product-detail img {
+            max-width: 50%;
+        }
+        .form-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section label {
+            margin-top: 10px;
+        }
+        .form-section input, .form-section select {
+            padding: 5px;
+            margin-top: 5px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<!-- Product Listing Section -->
+<div class="product-listing">
+<h1>Product Listing</h1>
+<div class="product">
+<p>Product Name 1</p>
+</div>
+<div class="product">
+<img alt="Product 2" src="product2.jpg"/>
+<p>Product Name 2</p>
+</div>
+<div class="product">
+<img alt="Product 3" src="product3.jpg"/>
+<p>Product Name 3</p>
+</div>
+</div>
+<!-- Product Detail Section -->
+<div class="product-detail">
+<h1>Product Detail</h1>
+<img alt="Product Detail" src="product-detail.jpg"/>
+<p><strong>Product Name:</strong> Amazing Product</p>
+<p><strong>Manufacturer:</strong> Top Manufacturer</p>
+<p><strong>Color:</strong></p>
+<label><input name="color" type="radio" value="red"/> Red</label>
+<label><input name="color" type="radio" value="blue"/> Blue</label>
+<label><input name="color" type="radio" value="white"/> White</label>
+<p><strong>Price:</strong> $100</p>
+<p><strong>Old Price:</strong> $200</p>
+</div>
+<!-- Shipping and Payment Form -->
+<div class="form-section">
+<h1>Shipping and Payment</h1>
+<label for="transport">Shipping Method:</label>
+<select id="transport" name="transport">
+<option value="terrestrial">Terrestrial</option>
+<option value="aerial">Aerial</option>
+<option value="maritime">Maritime</option>
+</select>
+<label for="payment">Payment Method:</label>
+<select id="payment" name="payment">
+<option value="card">Credit/Debit Card</option>
+<option value="bank">Bank Transfer</option>
+<option value="cash">Cash</option>
+</select>
+<label for="address">Address:</label>
+<input id="address" name="address" type="text"/>
+<label for="country">Country:</label>
+<select id="country" name="country">
+<option value="country1">Country 1</option>
+<option value="country2">Country 2</option>
+<option value="country3">Country 3</option>
+</select>
+<button>Accept</button>
+</div>
+<button id="6_1">Add to Cart</button>
+</div>
+</body>
+</html>

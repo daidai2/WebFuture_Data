@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Review Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .custom-button {
+      background-color: #C6A7B1;
+    }
+    .custom-button:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+<section class="max-w-4xl mx-auto bg-white shadow-md rounded-md p-6">
+<!-- Header Section -->
+<header class="flex items-center justify-between mb-6">
+<!-- Removed the first image -->
+<div>
+<h2 class="text-2xl font-bold">Product Name</h2>
+<p class="text-xl text-gray-500">$24.9</p>
+</div>
+<div>
+<div class="flex items-center">
+<span class="text-yellow-500">★ ★ ★ ★ ☆</span>
+<span class="ml-2 text-gray-600">45 reviews</span>
+</div>
+</div>
+</header>
+<!-- Review Section -->
+<section class="mb-6">
+<div class="mb-4">
+<h3 class="text-xl font-semibold">Rate Product</h3>
+<!-- Star Rating Div -->
+<div class="flex items-center">
+<span class="text-yellow-500">★ ★ ★ ☆ ☆</span>
+<span class="ml-2 text-gray-600">3.0</span>
+</div>
+</div>
+<form class="space-y-4">
+<input class="w-full p-2 border border-gray-300 rounded-md" placeholder="Headline" type="text"/>
+<textarea class="w-full p-2 border border-gray-300 rounded-md h-24" placeholder="Review"></textarea>
+</form>
+</section>
+<!-- Product Details Section -->
+<article class="text-center mb-6">
+<img alt="Product Image" class="mx-auto mb-4" src="https://placehold.co/300x300"/>
+<p class="text-xl text-gray-600 mb-2">$24.9</p>
+<h1 class="text-3xl font-bold">Product Title</h1>
+<hr class="my-4"/>
+</article>
+<!-- Checklist Section -->
+<aside class="mb-6">
+<p class="text-lg font-semibold mb-2">Check items:</p>
+<div class="flex flex-col space-y-2">
+<label class="flex items-center">
+<input class="mr-2" type="checkbox"/> Check Item 1
+        </label>
+<label class="flex items-center">
+<input class="mr-2" type="checkbox"/> Check Item 2
+        </label>
+<label class="flex items-center">
+<input class="mr-2" type="checkbox"/> Check Item 3
+        </label>
+</div>
+<button class="bg-green-500 text-white px-4 py-2 mt-4 rounded-md w-full">Buy Now</button>
+</aside>
+<!-- Additional Elements Section -->
+<section class="mt-8">
+<div class="flex justify-between items-start mb-6">
+<img alt="Placeholder Image" class="w-24 h-24" src="https://placehold.co/100x100"/>
+<input class="p-2 border border-gray-300 rounded-md" placeholder="Additional Input" type="text"/>
+</div>
+<div class="space-y-4">
+<div class="flex flex-col space-y-2">
+<label class="flex items-center">
+<input class="mr-2" type="checkbox"/> Checkbox Text Item
+          </label>
+<label class="flex items-center">
+<input class="mr-2" name="radioGroup" type="radio"/> Radio Button Text Item 1
+          </label>
+<label class="flex items-center">
+<input class="mr-2" name="radioGroup" type="radio"/> Radio Button Text Item 2
+          </label>
+</div>
+<div class="flex space-x-2">
+<button class="custom-button text-white px-4 py-2 rounded-md">Back</button>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md">Next</button>
+<button class="bg-purple-500 text-white px-4 py-2 rounded-md">Button</button>
+</div>
+</div>
+</section>
+<!-- Moved the Submit button here -->
+<section class="mt-8">
+<form>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md w-full" id="6_1" type="submit">Submit</button>
+</form>
+</section>
+</section>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+        }
+        .checkbox-group,
+        .radio-group {
+            margin-top: 10px;
+        }
+        .checkbox-group label,
+        .radio-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .medium-text {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<a href="#add-element">Add Element</a>
+<div class="container">
+<h2>Login</h2>
+<form>
+<div class="form-group">
+<label for="login">Login</label>
+<input id="login" name="login" type="text"/>
+</div>
+<div class="form-group">
+<label for="password" id="6_2_2_2_1">Password</label>
+<input id="password" name="password" type="password"/>
+<span class="medium-text" id="6_2_1_1_1">Medium</span>
+</div>
+<div class="form-group">
+<input id="remember" name="remember" type="checkbox"/>
+<label for="remember">Remember me</label>
+</div>
+<a href="#">Forgot Password</a>
+<div class="form-group">
+<button onclick="addInteraction()" type="button">Login</button>
+</div>
+</form>
+<h2>Form Elements</h2>
+<form>
+<div class="form-group">
+<label for="title">Title</label>
+<input id="title" name="title" type="text"/>
+</div>
+<div class="radio-group">
+<label>Radio Buttons</label>
+<label><input name="relevance" type="radio" value="not-relevant"/> Not Relevant</label>
+<label><input name="relevance" type="radio" value="low"/> Low</label>
+<label id="6_2_1_2_1"><input name="relevance" type="radio" value="medium"/> Medium</label>
+<label><input name="relevance" type="radio" value="high"/> High</label>
+</div>
+<div class="checkbox-group">
+<label>Check Boxes</label>
+<label><input name="choice1" type="checkbox" value="1"/> Choice 1</label>
+<label><input checked="" name="choice2" type="checkbox" value="2"/> Choice 2</label>
+<label><input name="choice3" type="checkbox" value="3"/> Choice 3</label>
+<label><input name="choice4" type="checkbox" value="4"/> Choice 4</label>
+<label><input checked="" name="choice5" type="checkbox" value="5"/> Choice 5</label>
+<label><input name="choice6" type="checkbox" value="6"/> Choice 6</label>
+<label><input name="choice7" type="checkbox" value="7"/> Choice 7</label>
+<label><input checked="" name="choice8" type="checkbox" value="8"/> Choice 8</label>
+</div>
+<div class="form-group">
+<button type="submit">OK</button>
+<button type="button">Cancel</button>
+</div>
+</form>
+</div>
+<div class="hidden" id="add-element">
+<p>Add Interaction</p>
+</div>
+<script>
+        function addInteraction() {
+            var newModule = document.getElementById('add-element');
+            newModule.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .large-text {
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <div class="container mx-auto p-4">
+    <!-- Header Section -->
+    <header class="flex items-start mb-4">
+      <img src="https://placehold.co/150x150" alt="Large Placeholder Image" class="w-32 h-32 mr-4">
+      <div class="flex-1">
+        <p class="mb-2 large-text">Text Line 1</p>
+        <p class="mb-2">Text Line 2</p>
+        <p class="mb-2">Text Line 3</p>
+        <button class="bg-blue-500 text-white px-4 py-2">BACK</button>
+      </div>
+      <div class="ml-4">
+        <input type="checkbox" id="main-checkbox" class="mr-2">
+        <label for="main-checkbox">Checkbox</label>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="mb-4">
+      <h2 class="text-center mb-4">PRODUCT PAGE</h2>
+      <div class="flex">
+        <!-- Product Display -->
+        <div class="w-1/2">
+          <img src="https://placehold.co/300x300" alt="Main Product Image" class="w-full mb-4">
+          <div class="flex justify-between">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 1" class="w-1/4">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 2" class="w-1/4">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 3" class="w-1/4">
+            <img src="https://placehold.co/100x100" alt="Thumbnail 4" class="w-1/4">
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <aside class="w-1/2 px-4">
+          <h1 class="mb-2">PRODUCT NAME</h1>
+          <p class="mb-2">Manufacturer</p>
+          <div class="mb-2">
+            <p>Color:</p>
+            <input type="radio" id="color-red" name="color" value="red" class="mr-2">
+            <label for="color-red" class="mr-4">Red</label>
+            <input type="radio" id="color-blue" name="color" value="blue" class="mr-2">
+            <label for="color-blue" class="mr-4">Blue</label>
+            <input type="radio" id="color-white" name="color" value="white" class="mr-2">
+            <label for="color-white">White</label>
+          </div>
+          <p class="mb-2">Price: $100</p>
+          <p class="mb-4">Old Price: $200</p>
+          <button class="bg-green-500 text-white px-4 py-2">Add to Cart</button>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <form class="bg-white p-4 border rounded">
+      <!-- Removed the first text input field -->
+      <fieldset class="mb-4">
+        <legend class="mb-2">Radio Buttons</legend>
+        <div class="flex items-center mb-2">
+          <input type="radio" id="not-relevant" name="relevance" class="mr-2">
+          <label for="not-relevant" class="mr-4">Not relevant</label>
+          <input type="radio" id="low" name="relevance" class="mr-2">
+          <label for="low" class="mr-4">Low</label>
+          <input type="radio" id="medium" name="relevance" class="mr-2">
+          <label for="medium" class="mr-4">Medium</label>
+          <input type="radio" id="high" name="relevance" class="mr-2">
+          <label for="high">High</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend class="mb-2">Checkboxes</legend>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <input type="checkbox" id="choice1" class="mr-2">
+            <label for="choice1">Choice 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice2" class="mr-2">
+            <label for="choice2">Choice 2</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice3" class="mr-2">
+            <label for="choice3">Choice 3</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice4" class="mr-2">
+            <label for="choice4">Choice 4</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice5" class="mr-2">
+            <label for="choice5">Choice 5</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice6" class="mr-2">
+            <label for="choice6">Choice 6</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice7" class="mr-2">
+            <label for="choice7">Choice 7</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice8" class="mr-2">
+            <label for="choice8">Choice 8</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="flex justify-between">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2">OK</button>
+        <!-- Changed the bottom-most button to a heading -->
+        <h2 class="bg-gray-300 text-black px-4 py-2">Cancel</h2>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

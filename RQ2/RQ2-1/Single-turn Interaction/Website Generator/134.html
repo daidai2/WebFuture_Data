@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Wireframe Page</title>
+</head>
+<body class="bg-gray-100 p-6">
+<div class="max-w-4xl mx-auto bg-white shadow-md p-6 rounded-lg">
+<!-- Payment Method Selection -->
+<section class="mb-8">
+<h2 class="text-xl font-bold mb-4">Select your payment method</h2>
+<form class="space-y-4">
+<div>
+<input id="credit-card" name="payment-method" type="radio" value="credit-card"/>
+<label class="ml-2" for="credit-card">Credit Card</label>
+</div>
+<div>
+<input id="paypal" name="payment-method" type="radio" value="paypal"/>
+<label class="ml-2" for="paypal">PayPal</label>
+</div>
+<div>
+<input id="bank-transfer" name="payment-method" type="radio" value="bank-transfer"/>
+<label class="ml-2" for="bank-transfer">Bank Transfer</label>
+</div>
+<h2 class="text-xl font-bold mt-8 mb-4">Enter your data</h2>
+<div>
+<label class="block mb-2" for="card-number">Card Number</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="card-number" type="text"/>
+</div>
+<div class="flex space-x-4">
+<div class="flex-1">
+<label class="block mb-2" for="expiry-date">Expiration Date</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="expiry-date" type="text"/>
+</div>
+<div class="flex-1">
+<label class="block mb-2" for="cvv">CVV</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="cvv" type="text"/>
+</div>
+</div>
+</form>
+</section>
+<!-- Sign Up/Login -->
+<nav class="flex space-x-8 mb-8">
+<button class="px-4 py-2 bg-blue-500 text-white rounded sign-up-btn">Sign Up</button>
+<button class="px-4 py-2 bg-gray-200 text-gray-600 rounded">Login</button>
+</nav>
+<section class="mb-8">
+<form class="space-y-4">
+<div class="flex space-x-4">
+<div>
+<label class="block mb-2" for="first-name">Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="first-name" type="text"/>
+</div>
+<div>
+<label class="block mb-2" for="last-name">Last Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="last-name" type="text"/>
+</div>
+</div>
+<div class="flex space-x-4">
+<div>
+<label class="block mb-2" for="phone">Phone</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="phone" type="text"/>
+</div>
+<div>
+<label class="block mb-2" for="email">E-mail</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="email" type="email"/>
+</div>
+</div>
+<div class="flex space-x-4">
+<div>
+<label class="block mb-2" for="password">Password</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="password" type="password"/>
+</div>
+<div>
+<label class="block mb-2" for="confirm-password">Confirm Password</label>
+<input class="w-full p-2 border border-gray-300 rounded" id="confirm-password" type="password"/>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div>
+<input id="terms" type="checkbox"/>
+<label class="ml-2" for="terms">I agree to Terms and Conditions</label>
+</div>
+<button class="px-4 py-2 bg-blue-500 text-white rounded sign-up-btn" type="submit">Sign Up</button>
+</div>
+</form>
+</section>
+<!-- Miscellaneous Section -->
+<section>
+<button class="px-4 py-2 bg-blue-500 text-white rounded mb-4">Modify Element</button>
+<h3 class="text-lg font-bold mb-2">Title</h3>
+<p class="mb-4">Lorem ipsum text</p>
+<div class="mb-4">
+<div>
+<input id="checkbox1" type="checkbox"/>
+<label class="ml-2" for="checkbox1">Checkbox 1</label>
+</div>
+<div>
+<input id="checkbox2" type="checkbox"/>
+<label class="ml-2" for="checkbox2">Checkbox 2</label>
+</div>
+</div>
+<div class="mb-4">
+<input id="radio1" name="generic-radio" type="radio"/>
+<label class="ml-2" for="radio1">Radio 1</label>
+</div>
+<div class="flex space-x-4">
+<button class="px-4 py-2 bg-gray-300 rounded">Back</button>
+<button class="px-4 py-2 bg-blue-500 text-white rounded">Next</button>
+</div>
+</section>
+<button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded" id="6_1" type="submit">Complete</button>
+</div>
+<script>
+    document.querySelectorAll('.sign-up-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        alert('Add Interaction');
+      });
+    });
+  </script>
+</body>
+</html>

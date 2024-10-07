@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .posts {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .post {
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container div {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .buttons button:first-child {
+            background-color: #C6A7B1;
+        }
+        .buttons button:first-child:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Title Page</h1>
+            <a href="#">Add Element</a>
+        </header>
+        <div class="video">
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="posts">
+            <div class="post">
+                <h2>Title Post 1</h2>
+                <p>Some content here...</p>
+            </div>
+            <div class="post">
+                <h2>Title Post 2</h2>
+                <p>Some content here...</p>
+            </div>
+            <div class="post">
+                <h2>Title Post 3</h2>
+                <p>Some content here...</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <div>
+                <label>Radio Buttons</label><br>
+                <input type="radio" id="not_relevant" name="relevance" value="not_relevant">
+                <label for="not_relevant">Not relevant</label>
+                <input type="radio" id="low" name="relevance" value="low">
+                <label for="low">Low</label>
+                <input type="radio" id="medium" name="relevance" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="high" name="relevance" value="high">
+                <label for="high">High</label>
+            </div>
+            <div>
+                <label>Check Boxes</label><br>
+                <input type="checkbox" id="choice1" name="choices" value="choice1">
+                <label for="choice1">Choice 1</label>
+                <input type="checkbox" id="choice2" name="choices" value="choice2" checked>
+                <label for="choice2">Choice 2</label>
+                <input type="checkbox" id="choice3" name="choices" value="choice3">
+                <label for="choice3">Choice 3</label>
+                <input type="checkbox" id="choice4" name="choices" value="choice4">
+                <label for="choice4">Choice 4</label><br>
+                <input type="checkbox" id="choice5" name="choices" value="choice5" checked>
+                <label for="choice5">Choice 5</label>
+                <input type="checkbox" id="choice6" name="choices" value="choice6">
+                <label for="choice6">Choice 6</label>
+                <input type="checkbox" id="choice7" name="choices" value="choice7">
+                <label for="choice7">Choice 7</label>
+                <input type="checkbox" id="choice8" name="choices" value="choice8" checked>
+                <label for="choice8">Choice 8</label>
+            </div>
+            <div class="buttons">
+                <button type="submit">OK</button>
+                <button type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

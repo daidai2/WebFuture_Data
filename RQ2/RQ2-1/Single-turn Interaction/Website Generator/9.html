@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <header class="text-center mb-8">
+    <h1 class="text-4xl font-bold">Checkout</h1>
+  </header>
+
+  <section class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow">
+    <!-- Shipping Address -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Shipping Address</h2>
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1">First Name</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded">
+      </div>
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1">Last Name</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Company</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded">
+      </div>
+    </div>
+
+    <!-- Shipping Service -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Shipping Service</h2>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="shipping" class="mr-2">
+        <label class="mr-4">Standard</label>
+        <span class="text-gray-500">14 days - $6.59</span>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="shipping" class="mr-2">
+        <label class="mr-4">Expedited</label>
+        <span class="text-gray-500">7 days - $11.97</span>
+      </div>
+      <div class="flex items-center">
+        <input type="radio" name="shipping" class="mr-2">
+        <label class="mr-4">Express</label>
+        <span class="text-gray-500">3 days - $19.97</span>
+      </div>
+    </div>
+
+    <!-- Programming Languages Selection -->
+    <div class="mb-8">
+      <div class="flex mb-4">
+        <select class="border border-gray-300 p-2 rounded mr-4">
+          <option>C Sharp</option>
+        </select>
+        <button id="getDropdownButton" class="bg-blue-500 text-white px-4 py-2 rounded">Get Drop Down Here</button>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="mr-4">C#</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="mr-4">Java</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="mr-4">PHP</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="mr-4">Visual Basic</label>
+      </div>
+    </div>
+
+    <!-- Form of Shipment -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Forma de envío</h2>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="shipment" class="mr-2">
+        <label class="mr-4">Terrestre</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="shipment" class="mr-2">
+        <label class="mr-4">Aéreo</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="shipment" class="mr-2">
+        <label class="mr-4">Marítimo</label>
+      </div>
+    </div>
+
+    <!-- Form of Payment -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Forma de pago</h2>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="payment" class="mr-2">
+        <label class="mr-4">Tarjeta (Crédito/Débito)</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="payment" class="mr-2">
+        <label class="mr-4">Transferencia bancaria</label>
+      </div>
+      <div class="flex items-center mb-2">
+        <input type="radio" name="payment" class="mr-2">
+        <label class="mr-4">Metálico</label>
+      </div>
+    </div>
+
+    <!-- Address and Country -->
+    <div class="mb-8">
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1">Dirección</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">País</label>
+        <select class="w-full border border-gray-300 p-2 rounded">
+          <option>Select Country</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button class="bg-green-500 text-white px-6 py-2 rounded-lg">Aceptar</button>
+    </div>
+  </section>
+
+  <!-- JavaScript to handle the dynamic addition and style changes -->
+  <script>
+    document.getElementById('getDropdownButton').addEventListener('click', function() {
+      // Add new module with text 'Add Interaction'
+      const newModule = document.createElement('div');
+      newModule.classList.add('text-center', 'mt-8');
+      newModule.innerHTML = '<p class="text-xl font-bold">Add Interaction</p>';
+      document.body.appendChild(newModule);
+
+      // Add text 'Add Element' at the bottom of the page
+      const addElementText = document.createElement('p');
+      addElementText.classList.add('text-center', 'text-xl', 'mt-4');
+      addElementText.textContent = 'Add Element';
+      document.body.appendChild(addElementText);
+    });
+
+    // Change the background color of the first button and add hover effect
+    const firstButton = document.getElementById('getDropdownButton');
+    firstButton.style.backgroundColor = '#C6A7B1';
+    firstButton.addEventListener('mouseover', function() {
+      firstButton.style.backgroundColor = '#FFDEE9';
+    });
+    firstButton.addEventListener('mouseout', function() {
+      firstButton.style.backgroundColor = '#C6A7B1';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .title-shadow {
+      text-shadow: 1px 1px 2px gray;
+    }
+
+    .divider {
+      border-top: 2px solid gray;
+    }
+
+    .double-divider {
+      border-top: 3px double gray;
+    }
+
+    .banner-bg {
+      background-image: url('banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px; /* Adjust height as needed */
+    }
+  </style>
+</head>
+
+<body class="bg-white p-6">
+  <!-- Header Section -->
+  <header class="bg-white p-6 flex flex-col items-center text-center">
+    <div class="flex space-x-8 mb-4">
+      <a href="#" class="p-3 text-gray-600">Menu</a>
+      <a href="#" class="p-3 text-gray-600">Service</a>
+      <a href="#" class="p-3 text-gray-600">Work</a>
+      <a href="#" class="p-3 text-gray-600">Client</a>
+      <a href="#" class="p-3 text-gray-600">About</a>
+    </div>
+    <h1 class="text-4xl font-bold mb-2 text-orange-500 title-shadow">Title1</h1>
+    <p class="text-lg text-gray-600">Text1</p>
+    <div class="double-divider mb-4"></div>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav class="bg-gray-200 py-4"></nav>
+
+  <!-- Main Content Section -->
+  <main class="container mx-auto mt-6">
+    <!-- Section 1 -->
+    <section class="bg-white p-6 mb-6">
+      <h2 class="text-3xl font-bold mb-4 text-center">Title2</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-4 text-center">
+          <img src="pic01.jpg" alt="IMG1" class="mx-auto mb-2">
+          <h3 class="font-semibold text-gray-600">Title2-1</h3>
+          <p class="text-gray-400">Text2-1</p>
+        </div>
+        <div class="p-4 text-center">
+          <img src="pic02.jpg" alt="IMG2" class="mx-auto mb-2">
+          <h3 class="font-semibold text-gray-600">Title2-2</h3>
+          <p class="text-gray-400">Text2-2</p>
+        </div>
+        <div class="p-4 text-center">
+          <img src="pic03.jpg" alt="IMG3" class="mx-auto mb-2">
+          <h3 class="font-semibold text-gray-600">Title2-3</h3>
+          <p class="text-gray-400">Text2-3</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button class="bg-[#ED7769] text-white px-6 py-3 rounded">Button</button>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="banner-bg p-6 mb-6 text-center flex flex-col justify-center items-center w-full">
+      <h2 class="text-3xl font-bold mb-4 text-white">Title3</h2>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="bg-white p-6 mb-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="space-y-6">
+        <div class="w-full">
+          <h3 class="text-2xl font-semibold">Title4-1</h3>
+          <h4 class="text-xl font-semibold">Title4-1-1</h4>
+          <img src="https://placehold.co/200x150" alt="IMG4-1" class="w-full my-2">
+          <p>Text4-1</p>
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-1</button>
+        </div>
+        <div class="w-full">
+          <h3 class="text-2xl font-semibold">Title4-2</h3>
+          <h4 class="text-xl font-semibold">Title4-2-1</h4>
+          <img src="https://placehold.co/200x150" alt="IMG4-2" class="w-full my-2">
+          <p>Text4-2</p>
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2">Button4-2</button>
+        </div>
+      </div>
+      <div class="col-span-2 grid grid-cols-1 gap-4">
+        <div class="bg-gray-100 p-4 w-full">
+          <h4 class="text-xl font-semibold">Title4-5</h4>
+          <p>Text4-5</p>
+          <p>Label4-3</p>
+        </div>
+        <div class="bg-gray-100 p-4 w-full">
+          <h4 class="text-xl font-semibold">Title4-5</h4>
+          <p>Text4-5</p>
+          <p>Label4-3</p>
+        </div>
+        <div class="bg-gray-100 p-4 w-full flex items-center">
+          <img src="pic06.jpg" alt="InfoBox5" class="mr-2">
+          <div>
+            <h4 class="text-xl font-semibold">InfoBox5</h4>
+            <p>Text for InfoBox5</p>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button</button>
+        </div>
+        <div class="bg-gray-100 p-4 w-full flex items-center">
+          <img src="pic07.jpg" alt="InfoBox6" class="mr-2">
+          <div>
+            <h4 class="text-xl font-semibold">InfoBox6</h4>
+            <p>Text for InfoBox6</p>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <button class="bg-[#ED7769] text-white px-4 py-2 rounded mt-2 ml-auto">Button</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="bg-white p-6 mb-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="col-span-2">
+        <h4 class="text-xl font-bold mb-4 text-center">Title5</h4>
+        <div class="flex justify-center mb-4">
+          <div class="flex flex-col space-y-4">
+            <div class="flex space-x-2">
+              <input type="text" class="border p-2 rounded" placeholder="Input1">
+              <input type="text" class="border p-2 rounded" placeholder="Input2">
+            </div>
+            <textarea class="border p-2 rounded w-full mb-4" placeholder="Textarea for comments or messages"></textarea>
+            <div class="text-center mb-4">
+              <button class="bg-blue-500 text-white px-4 py-2 rounded">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <p class="text-center mb-4">Text5-1</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col items-center h-full">
+            <a href="#" class="p-3 mb-2">Icon1</a>
+            <a href="#" class="p-3 mb-2">Icon2</a>
+            <a href="#" class="p-3 mb-2">Icon3</a>
+          </div>
+          <div class="flex flex-col items-center h-full">
+            <a href="#" class="p-3 mb-2">Icon4</a>
+            <a href="#" class="p-3 mb-2">Icon5</a>
+            <a href="#" class="p-3 mb-2">Icon6</a>
+            <a href="#" class="p-3">Icon7</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-200 p-6 text-center">
+    <div class="mt-4">
+      <a href="#" class="text-blue-500">Link1</a>
+      <a href="#" class="text-blue-500">Link2</a>
+      <a href="#" class="text-blue-500">Link3</a>
+    </div>

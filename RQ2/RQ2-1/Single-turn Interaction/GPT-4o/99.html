@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low-Fidelity Wireframe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .large-text {
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+<section class="max-w-xl mx-auto p-4 bg-white shadow-md">
+<!-- Header -->
+<header class="text-center mb-6">
+<h1 class="text-2xl font-bold large-text">Select your payment method</h1>
+</header>
+<!-- Navigation Tabs -->
+<nav class="mb-6">
+<ul class="flex justify-between">
+<li class="flex-1 text-center">
+<a class="text-blue-500" href="#">Sign Up</a>
+</li>
+<li class="flex-1 text-center">
+<a class="text-blue-500" href="#">Login</a>
+</li>
+</ul>
+</nav>
+<!-- Payment Form -->
+<form class="mb-6">
+<div class="mb-4">
+<h2 class="font-bold mb-2">Payment Method</h2>
+<label class="block mb-2">
+<input class="mr-2" name="payment_method" type="radio" value="credit_card"/> Credit Card
+        </label>
+<label class="block mb-2">
+<input class="mr-2" name="payment_method" type="radio" value="paypal"/> Paypal
+        </label>
+<label class="block mb-2">
+<input class="mr-2" name="payment_method" type="radio" value="bank_transfer"/> Bank Transfer
+        </label>
+</div>
+<div class="mb-4">
+<h2 class="font-bold mb-2">Enter your data</h2>
+<div class="flex mb-2">
+<label class="block mb-2" id="6_2_2_3_1">Card Number</label>
+<label class="block mb-2 ml-4" id="6_2_1_1_1">Password</label>
+</div>
+<input class="w-full p-2 border border-gray-300 rounded mb-2" type="text"/>
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label>Expiration date</label>
+<div class="flex">
+<select class="w-1/2 p-2 border border-gray-300 rounded mr-2">
+<option>MM</option>
+</select>
+<select class="w-1/2 p-2 border border-gray-300 rounded">
+<option>YY</option>
+</select>
+</div>
+</div>
+<div class="flex-1">
+<label>CCV</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+</div>
+</div>
+<button class="w-full bg-blue-500 text-white py-2 rounded">Complete</button>
+</form>
+<!-- Sign Up Form -->
+<form>
+<div class="mb-4">
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label>Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+<div class="flex-1">
+<label>Last Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label>Phone</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+<div class="flex-1">
+<label>e-mail</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="email"/>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label id="6_2_1_2_1">Password</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="password"/>
+</div>
+<div class="flex-1">
+<label id="6_2_1_3_1">Confirm Password</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="password"/>
+</div>
+</div>
+<div class="mb-2">
+<label><input class="mr-2" type="checkbox"/> I agree to Terms and Conditions</label>
+</div>
+<h2 class="w-full bg-blue-500 text-white py-2 rounded">Sign Up</h2>
+</div>
+</form>
+<!-- Shipping Information Form -->
+<form>
+<div class="mb-4">
+<h2 class="font-bold mb-4">Shipping Info</h2>
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label>First Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+<div class="flex-1">
+<label>Last Name</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label>Phone</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+<div class="flex-1">
+<label>e-mail</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="email"/>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label>Country</label>
+<select class="w-full p-2 border border-gray-300 rounded">
+<option>United States</option>
+</select>
+</div>
+<div class="flex-1">
+<label>State</label>
+<select class="w-full p-2 border border-gray-300 rounded">
+<option>Choose</option>
+</select>
+</div>
+</div>
+<div class="flex mb-2">
+<div class="flex-1 mr-2">
+<label>City</label>
+<select class="w-full p-2 border border-gray-300 rounded">
+<option>Palo Alto</option>
+</select>
+</div>
+<div class="flex-1">
+<label>Zip Code</label>
+<input class="w-full p-2 border border-gray-300 rounded" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex justify-between">
+<button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+<button class="bg-blue-500 text-white py-2 px-4 rounded">Next Step</button>
+</div>
+</form>
+</section>
+</body>
+</html>

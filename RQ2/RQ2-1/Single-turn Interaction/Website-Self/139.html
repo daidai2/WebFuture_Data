@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .login-signup {
+            display: flex;
+            justify-content: space-between;
+        }
+        .login-signup a {
+            text-decoration: none;
+            color: blue;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: darkblue;
+        }
+        .back-button {
+            background-color: grey;
+            color: white;
+        }
+        .back-button:hover {
+            background-color: darkgrey;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        /* New style for first text */
+        .first-text {
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        // JavaScript to handle the alert and removing the first text input field
+        document.addEventListener("DOMContentLoaded", function() {
+            // Alert on "Back" button click
+            document.querySelectorAll('.back-button').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    alert('Add Interaction');
+                });
+            });
+
+            // Remove the first text input field
+            const firstTextInput = document.querySelector('input[type="text"]');
+            if (firstTextInput) {
+                firstTextInput.parentElement.remove();
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-signup">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="password" class="first-text">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <a href="#">Forgot Password</a>
+            <div class="form-group">
+                <button type="button" class="button">Login</button>
+            </div>
+        </form>
+
+        <div class="image-placeholder">
+            Image Placeholder
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="button back-button">Back</button>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="checkbox-1" name="checkbox-1">
+            <label for="checkbox-1">Checkbox</label>
+        </div>
+
+        <div class="image-placeholder">
+            Image Placeholder
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="button back-button">Back</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="checkbox-2" name="checkbox-2">
+            <label for="checkbox-2">Checkbox</label>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="checkbox-3" name="checkbox-3">
+            <label for="checkbox-3">Checkbox</label>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="radio" id="radio-1" name="radio-group">
+            <label for="radio-1">Radio</label>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="button back-button">Back</button>
+            <button type="button" class="button">Button</button>
+        </div>
+    </div>
+</body>
+</html>

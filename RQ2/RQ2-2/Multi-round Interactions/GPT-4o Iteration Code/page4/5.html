@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #overlay {
+      background-image: url('overlay.png');
+      background-size: auto;
+      background-repeat: repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    #black-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .transparent-bg {
+      background-color: transparent;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 relative">
+
+  <div id="overlay"></div>
+  <div id="black-overlay"></div>
+
+  <div id="main-container" class="min-h-screen flex flex-col items-center justify-between p-4 relative z-10">
+    <header class="w-full flex justify-center py-10">
+      <div class="w-24 h-24 rounded-full transparent-bg flex items-center justify-center">
+        <a href="#" class="text-lg font-medium">Link1</a>
+      </div>
+    </header>
+
+    <section id="main-content" class="text-center mx-auto my-16">
+      <h1 class="title1 text-4xl font-bold mb-4">Title1</h1>
+      <p class="text1 text-xl mb-6">Text1</p>
+    </section>
+
+    <nav class="w-full flex justify-center mt-10 mb-16">
+      <a href="#" class="link2 px-4 py-2 transparent-bg text-white">Link1-1</a>
+      <a href="#" class="link3 px-4 py-2 transparent-bg text-white ml-0">Link1-2</a>
+      <a href="#" class="link4 px-4 py-2 transparent-bg text-white ml-0">Link1-3</a>
+      <a href="#" class="link5 px-4 py-2 transparent-bg text-white ml-0">Link1-4</a>
+    </nav>
+
+    <footer class="w-full text-center py-6">
+      <p class="text2 text-sm text-gray-600">Text1</p>
+    </footer>
+  </div>
+
+</body>
+</html>

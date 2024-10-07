@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>线框页面</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .transparent {
+      background-color: transparent;
+      border: none;
+    }
+    .border-white {
+      border: 2px solid white;
+    }
+    .text-white {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .title1 {
+      color: white;
+      font-size: 9rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="flex flex-col justify-between min-h-screen bg-gray-100">
+  <section class="transparent p-10 w-full max-w-5xl mx-auto mt-40">
+    <header class="text-center mb-4">
+      <h1 class="title1">Title1</h1>
+      <h2 class="text-xl mt-2 mb-2 text-white">Title1-1</h2>
+    </header>
+
+    <nav class="flex justify-center space-x-8 mb-8 mt-4">
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center border-white text-white">Link1-1</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center border-white text-white">Link1-2</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center border-white text-white">Link1-3</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center border-white text-white">Link1-4</a>
+      <a href="#" class="flex justify-center items-center w-20 h-20 transparent rounded-full text-center border-white text-white">Link1-5</a>
+    </nav>
+  </section>
+
+  <footer class="text-center p-4 transparent">
+    <p class="text-white">Text1</p>
+  </footer>
+</body>
+</html>

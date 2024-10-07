@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-6" id="body1">
+  <header class="text-center mb-8" id="body1-header1">
+    <h1 class="text-4xl font-bold" id="body1-header1-h11">Checkout</h1>
+  </header>
+
+  <section class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow" id="body1-section1">
+    <!-- Shipping Address -->
+    <div class="mb-8" id="body1-section1-div1">
+      <h2 class="text-2xl font-semibold mb-4" id="body1-section1-div1-h21">Shipping Address</h2>
+      <div class="mb-4" id="body1-section1-div1-div2">
+        <label class="block text-sm font-medium mb-1" id="body1-section1-div1-div2-label1">First Name</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded" id="body1-section1-div1-div2-input1">
+      </div>
+      <div class="mb-4" id="body1-section1-div1-div3">
+        <label class="block text-sm font-medium mb-1" id="body1-section1-div1-div3-label2">Last Name</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded" id="body1-section1-div1-div3-input2">
+      </div>
+      <div id="body1-section1-div1-div4">
+        <label class="block text-sm font-medium mb-1" id="body1-section1-div1-div4-label3">Company</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded" id="body1-section1-div1-div4-input3">
+      </div>
+    </div>
+
+    <!-- Shipping Service -->
+    <div class="mb-8" id="body1-section1-div5">
+      <h2 class="text-2xl font-semibold mb-4" id="body1-section1-div5-h22">Shipping Service</h2>
+      <div class="flex items-center mb-2" id="body1-section1-div5-div6">
+        <input type="radio" name="shipping" class="mr-2" id="body1-section1-div5-div6-input4">
+        <label class="mr-4" id="body1-section1-div5-div6-label4">Standard</label>
+        <span class="text-gray-500" id="body1-section1-div5-div6-span1">14 days - $6.59</span>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div5-div7">
+        <input type="radio" name="shipping" class="mr-2" id="body1-section1-div5-div7-input5">
+        <label class="mr-4" id="body1-section1-div5-div7-label5">Expedited</label>
+        <span class="text-gray-500" id="body1-section1-div5-div7-span2">7 days - $11.97</span>
+      </div>
+      <div class="flex items-center" id="body1-section1-div5-div8">
+        <input type="radio" name="shipping" class="mr-2" id="body1-section1-div5-div8-input6">
+        <label class="mr-4" id="body1-section1-div5-div8-label6">Express</label>
+        <span class="text-gray-500" id="body1-section1-div5-div8-span3">3 days - $19.97</span>
+      </div>
+    </div>
+
+    <!-- Programming Languages Selection -->
+    <div class="mb-8" id="body1-section1-div9">
+      <div class="flex mb-4" id="body1-section1-div9-div10">
+        <select class="border border-gray-300 p-2 rounded mr-4" id="body1-section1-div9-div10-select1">
+          <option id="body1-section1-div9-div10-select1-option1">C Sharp</option>
+        </select>
+        <button class="bg-[#C6A7B1] hover:bg-[#FFDEE9] text-white px-4 py-2 rounded" id="body1-section1-div9-div10-button1">Get Drop Down Here</button>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div9-div11">
+        <input type="checkbox" class="mr-2" id="body1-section1-div9-div11-input7">
+        <label class="mr-4" id="body1-section1-div9-div11-label7">C#</label>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div9-div12">
+        <input type="checkbox" class="mr-2" id="body1-section1-div9-div12-input8">
+        <label class="mr-4" id="body1-section1-div9-div12-label8">Java</label>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div9-div13">
+        <input type="checkbox" class="mr-2" id="body1-section1-div9-div13-input9">
+        <label class="mr-4" id="body1-section1-div9-div13-label9">PHP</label>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div9-div14">
+        <input type="checkbox" class="mr-2" id="body1-section1-div9-div14-input10">
+        <label class="mr-4" id="body1-section1-div9-div14-label10">Visual Basic</label>
+      </div>
+    </div>
+
+    <!-- Form of Shipment -->
+    <div class="mb-8" id="body1-section1-div15">
+      <h2 class="text-2xl font-semibold mb-4" id="body1-section1-div15-h23">Forma de envío</h2>
+      <div class="flex items-center mb-2" id="body1-section1-div15-div16">
+        <input type="radio" name="shipment" class="mr-2" id="body1-section1-div15-div16-input11">
+        <label class="mr-4" id="body1-section1-div15-div16-label11">Terrestre</label>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div15-div17">
+        <input type="radio" name="shipment" class="mr-2" id="body1-section1-div15-div17-input12">
+        <label class="mr-4" id="body1-section1-div15-div17-label12">Aéreo</label>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div15-div18">
+        <input type="radio" name="shipment" class="mr-2" id="body1-section1-div15-div18-input13">
+        <label class="mr-4" id="body1-section1-div15-div18-label13">Marítimo</label>
+      </div>
+    </div>
+
+    <!-- Form of Payment -->
+    <div class="mb-8" id="body1-section1-div19">
+      <h2 class="text-2xl font-semibold mb-4" id="body1-section1-div19-h24">Forma de pago</h2>
+      <div class="flex items-center mb-2" id="body1-section1-div19-div20">
+        <input type="radio" name="payment" class="mr-2" id="body1-section1-div19-div20-input14">
+        <label class="mr-4" id="body1-section1-div19-div20-label14">Tarjeta (Crédito/Débito)</label>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div19-div21">
+        <input type="radio" name="payment" class="mr-2" id="body1-section1-div19-div21-input15">
+        <label class="mr-4" id="body1-section1-div19-div21-label15">Transferencia bancaria</label>
+      </div>
+      <div class="flex items-center mb-2" id="body1-section1-div19-div22">
+        <input type="radio" name="payment" class="mr-2" id="body1-section1-div19-div22-input16">
+        <label class="mr-4" id="body1-section1-div19-div22-label16">Metálico</label>
+      </div>
+    </div>
+
+    <!-- Address and Country -->
+    <div class="mb-8" id="body1-section1-div23">
+      <div class="mb-4" id="body1-section1-div23-div24">
+        <label class="block text-sm font-medium mb-1" id="body1-section1-div23-div24-label17">Dirección</label>
+        <input type="text" class="w-full border border-gray-300 p-2 rounded" id="body1-section1-div23-div24-input17">
+      </div>
+      <div id="body1-section1-div23-div25">
+        <label class="block text-sm font-medium mb-1" id="body1-section1-div23-div25-label18">País</label>
+        <select class="w-full border border-gray-300 p-2 rounded" id="body1-section1-div23-div25-select2">
+          <option id="body1-section1-div23-div25-select2-option2">Select Country</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center" id="body1-section1-div26">
+      <button class="bg-green-500 text-white px-6 py-2 rounded-lg" id="body1-section1-div26-button2">Aceptar</button>
+    </div>
+  </section>
+
+
+  <script data-custom-scripts="true">
+    function addInteraction() {
+      const newDiv = document.createElement('div');
+      newDiv.id = 'Parent_body1_Next_null_Queue_1';
+      newDiv.setAttribute('name', 'add');
+      newDiv.textContent = 'Add Interaction';
+      document.body.appendChild(newDiv);
+    }
+  </script>
+  <div id="Parent_body1_Next_null_Queue_2">Add Element</div>
+</body>
+</html>

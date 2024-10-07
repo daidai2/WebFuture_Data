@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .product-info {
+            display: flex;
+            align-items: center;
+        }
+        .product-info img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .product-info div {
+            flex-grow: 1;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .rating span {
+            margin-left: 10px;
+        }
+        .rate-product {
+            margin-top: 20px;
+        }
+        .rate-product label {
+            margin-right: 10px;
+        }
+        .rate-product span {
+            margin-left: 10px;
+            color: red;
+        }
+        .review-form {
+            margin-top: 20px;
+        }
+        .review-form input,
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .review-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #45a049;
+        }
+        .shipping-payment-form {
+            margin-top: 40px;
+        }
+        .shipping-payment-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .shipping-payment-form input[type="text"],
+        .shipping-payment-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .shipping-payment-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .shipping-payment-form button:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="review-container">
+    <h1>Write Review</h1>
+
+    <div class="product-info">
+        <img src="product-image-placeholder.png" alt="Product Image">
+        <div>
+            <h2>Product Name</h2>
+            <p>$Price</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+                <span>45 reviews</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="rate-product">
+        <h3>Rate Product</h3>
+        <label>
+            <input type="radio" name="rating" value="1"> ★
+        </label>
+        <label>
+            <input type="radio" name="rating" value="2"> ★★
+        </label>
+        <label>
+            <input type="radio" name="rating" value="3"> ★★★
+        </label>
+        <label>
+            <input type="radio" name="rating" value="4"> ★★★★
+        </label>
+        <label>
+            <input type="radio" name="rating" value="5"> ★★★★★
+        </label>
+        <span>Bad :(</span>
+    </div>
+
+    <div class="review-form">
+        <h3>Headline</h3>
+        <!-- Deleted the first text input field -->
+        <h3>Review</h3>
+        <textarea rows="4" placeholder="Write your review"></textarea>
+        <button type="submit">Submit</button>
+    </div>
+
+    <div class="shipping-payment-form">
+        <h3>Forma de envío</h3>
+        <label>Medio transporte</label>
+        <label>
+            <input type="radio" name="transporte" value="terrestre"> Terrestre
+        </label>
+        <label>
+            <input type="radio" name="transporte" value="aereo"> Aéreo
+        </label>
+        <label>
+            <input type="radio" name="transporte" value="maritimo"> Marítimo
+        </label>
+
+        <h3>Forma de pago</h3>
+        <label>
+            <input type="radio" name="pago" value="tarjeta"> Tarjeta (Crédito/débito)
+        </label>
+        <label>
+            <input type="radio" name="pago" value="transferencia"> Transferencia bancaria
+        </label>
+        <label>
+            <input type="radio" name="pago" value="metalico"> Metálico
+        </label>
+
+        <label>Dirección</label>
+        <input type="text" placeholder="Dirección">
+
+        <label>País</label>
+        <select>
+            <option value="mx">México</option>
+            <option value="us">Estados Unidos</option>
+            <option value="ca">Canadá</option>
+            <option value="es">España</option>
+        </select>
+
+        <!-- Change the bottom-most button to a heading -->
+        <h3>Aceptar</h3>
+    </div>
+
+    <!-- Add "Add Element" text at the bottom of the page -->
+    <p>Add Element</p>
+</div>
+
+</body>
+</html>

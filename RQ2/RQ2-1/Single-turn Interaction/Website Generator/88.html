@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <header class="bg-white p-4 shadow mb-8">
+    <div class="flex justify-between items-center">
+      <img src="https://via.placeholder.com/100x50" alt="Logo" class="block">
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700">Link 1</a>
+        <a href="#" class="text-gray-700">Link 2</a>
+        <a href="#" class="text-gray-700">Link 3</a>
+      </nav>
+      <button class="bg-blue-500 text-white px-3 py-1 rounded">Search</button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto">
+    <section class="mb-8">
+      <div class="flex space-x-4">
+        <!-- Removed first image -->
+        <div class="space-y-4">
+          <input type="text" class="block w-full p-2 border border-gray-300 rounded" placeholder="Text Field">
+          <button class="bg-gray-300 px-4 py-2 rounded">Back</button>
+          <label>
+            <input type="checkbox" class="mr-2">
+            Checkbox
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h1 class="text-2xl font-bold mb-4">Product Page</h1>
+      <div class="flex space-x-8">
+        <div>
+          <img src="https://via.placeholder.com/250" alt="Main Product Image" class="mb-4">
+          <div class="flex space-x-2">
+            <img src="https://via.placeholder.com/50" alt="Thumbnail Image">
+            <img src="https://via.placeholder.com/50" alt="Thumbnail Image">
+            <img src="https://via.placeholder.com/50" alt="Thumbnail Image">
+            <img src="https://via.placeholder.com/50" alt="Thumbnail Image">
+          </div>
+        </div>
+        <div>
+          <div class="text-xl mb-2">Product Name</div>
+          <div class="text-gray-600 mb-2">Manufacturer</div>
+          <div class="mb-4">
+            <label class="block mb-2">Colors:</label>
+            <label class="block">
+              <input type="radio" name="color" class="mr-2"> Red
+            </label>
+            <label class="block">
+              <input type="radio" name="color" class="mr-2"> Blue
+            </label>
+            <label class="block">
+              <input type="radio" name="color" class="mr-2"> White
+            </label>
+          </div>
+          <div class="mb-4">
+            <div class="text-lg">Price: $300</div>
+            <div class="text-sm text-gray-500 line-through">Old Price: $200</div>
+          </div>
+          <button class="bg-green-500 text-white px-6 py-2 rounded">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <div class="flex space-x-4 mb-4">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" class="w-1/4">
+        <div class="w-3/4">
+          <input type="text" class="block w-full p-2 border border-gray-300 rounded mb-4" placeholder="Text Field">
+        </div>
+      </div>
+      <div class="space-y-4">
+        <label class="block">
+          <input type="checkbox" class="mr-2"> Checkbox 1
+        </label>
+        <label class="block">
+          <input type="checkbox" class="mr-2"> Checkbox 2
+        </label>
+        <label class="block">
+          <input type="checkbox" class="mr-2"> Checkbox 3
+        </label>
+        <label class="block">
+          <input type="radio" name="option" class="mr-2"> Radio Option
+        </label>
+      </div>
+      <div class="flex space-x-4 mt-4">
+        <button class="bg-gray-300 px-4 py-2 rounded">Back</button>
+        <h2 class="text-xl font-bold px-4 py-2">Submit</h2> <!-- Changed button to heading -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white p-4 shadow mt-8">
+    <div class="text-center space-x-4">
+      <a href="#" class="text-gray-700">Footer Link 1</a>
+      <a href="#" class="text-gray-700">Footer Link 2</a>
+      <a href="#" class="text-gray-700">Footer Link 3</a>
+    </div>
+    <div class="text-center mt-4">Add Element</div> <!-- Added "Add Element" text -->
+  </footer>
+</body>
+</html>

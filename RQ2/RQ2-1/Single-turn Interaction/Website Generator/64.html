@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<header class="p-4 bg-gray-50">
+<h2 class="text-xl font-bold mb-4">Team Members Section</h2>
+<div class="flex items-center mb-4">
+<img alt="Mate One" class="w-16 h-16" src="https://placehold.co/80"/>
+<div class="ml-4">
+<h3 class="font-semibold">Mate One</h3>
+<p id="6_2_1_1_1">Job Title</p>
+</div>
+</div>
+<div class="flex items-center mb-4">
+<div class="mr-4">
+<h3 class="font-semibold">Mate Two</h3>
+<p id="6_2_1_2_1">Job Title</p>
+</div>
+<img alt="Mate Two" class="w-16 h-16" src="https://placehold.co/80"/>
+</div>
+<div class="flex items-center">
+<img alt="Mate Three" class="w-16 h-16" src="https://placehold.co/80"/>
+<div class="ml-4">
+<h3 class="font-semibold">Mate Three</h3>
+<p id="6_2_1_3_1">Job Title</p>
+</div>
+</div>
+</header>
+<section class="p-4">
+<h2 class="text-xl font-bold mb-4">Checkout Section</h2>
+<form class="mb-6">
+<h3 class="text-lg font-semibold mb-2">Shipping Address</h3>
+<div class="mb-2">
+<label class="block text-sm font-medium text-gray-700" for="first_name">First Name</label>
+<input class="block w-full mt-1 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="first_name" type="text"/>
+</div>
+<div class="mb-2">
+<label class="block text-sm font-medium text-gray-700" for="last_name">Last Name</label>
+<input class="block w-full mt-1 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="last_name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="company">Company</label>
+<input class="block w-full mt-1 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="company" type="text"/>
+</div>
+<h3 class="text-lg font-semibold mb-2">Shipping Service</h3>
+<div class="flex items-center mb-2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="standard" name="shipping" type="radio" value="standard"/>
+<label class="ml-3 block text-sm font-medium text-gray-700" for="standard">Standard (14 days - $6.59)</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="expedited" name="shipping" type="radio" value="expedited"/>
+<label class="ml-3 block text-sm font-medium text-gray-700" for="expedited">Expedited (7 days - $1.97)</label>
+</div>
+<div class="flex items-center mb-6">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="express" name="shipping" type="radio" value="express"/>
+<label class="ml-3 block text-sm font-medium text-gray-700" for="express">Express (3 days - $19.97)</label>
+</div>
+<h3 class="text-lg font-semibold mb-2">Title and Relevance</h3>
+<div class="mb-2">
+<label class="block text-sm font-medium text-gray-700" for="title">Title</label>
+<input class="block w-full mt-1 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="title" type="text"/>
+</div>
+<h4 class="text-md font-semibold mb-2">Relevance</h4>
+<div class="flex items-center mb-2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="not_relevant" name="relevance" type="radio" value="not_relevant"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="not_relevant">Not relevant</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="low" name="relevance" type="radio" value="low"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="low">Low</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="medium" name="relevance" type="radio" value="medium"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="medium">Medium</label>
+</div>
+<div class="flex items-center mb-6">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="high" name="relevance" type="radio" value="high"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="high">High</label>
+</div>
+<h3 class="text-lg font-semibold mb-2">Choices</h3>
+<div class="flex flex-wrap mb-6">
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice1" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice1">Choice 1</label>
+</div>
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice2" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice2">Choice 2</label>
+</div>
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice3" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice3">Choice 3</label>
+</div>
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice4" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice4">Choice 4</label>
+</div>
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice5" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice5" id="6_2_2_4_1">Choice 5</label>
+<span class="ml-2 block text-sm font-medium text-gray-700" id="6_2_1_4_1">Job Title</span>
+</div>
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice6" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice6">Choice 6</label>
+</div>
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice7" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice7">Choice 7</label>
+</div>
+<div class="flex items-center mb-2 w-1/2">
+<input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" id="choice8" type="checkbox"/>
+<label class="ml-2 block text-sm font-medium text-gray-700" for="choice8">Choice 8</label>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="bg-blue-500 text-white py-2 px-4 rounded-md mr-2" type="submit">OK</button>
+<button class="bg-gray-300 text-black py-2 px-4 rounded-md" type="reset">Cancel</button>
+</div>
+</form>
+<h3 class="text-lg font-semibold mb-2">Add Element</h3>
+</section>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            border-bottom: 1px solid #000;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .product-review {
+            display: flex;
+            align-items: center;
+        }
+        .product-review img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .rating input {
+            margin-right: 5px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        #first-name {
+            font-size: 50px; /* 修改第一个文本的字体大小为50px */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var cancelButton = document.querySelector('button[type="button"]:contains("Cancel")');
+            cancelButton.addEventListener('click', function() {
+                alert('Add Interaction'); // 点击Cancel按钮时显示警报
+            });
+        };
+    </script>
+</head>
+<body>
+
+<h2>Checkout</h2>
+
+<div class="section">
+    <h3>Shipping Address</h3>
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="first-name">
+    
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="last-name">
+    
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company">
+</div>
+
+<div class="section">
+    <h3>Shipping Service</h3>
+    <label>
+        <input type="radio" name="shipping" value="standard" checked>
+        Standard 14 days - $6.59
+    </label>
+    <label>
+        <input type="radio" name="shipping" value="expedited">
+        Expedited 7 days - $1.97
+    </label>
+    <label>
+        <input type="radio" name="shipping" value="express">
+        Express 3 days - $19.97
+    </label>
+</div>
+
+<div class="section">
+    <h3>Write Review</h3>
+    <div class="product-review">
+        <img src="placeholder.jpg" alt="Product Image">
+        <div>
+            <p>Product Name</p>
+            <p>$Price</p>
+            <p>45 reviews</p>
+        </div>
+    </div>
+    
+    <div class="rating">
+        <p>Rate Product</p>
+        <label>
+            <input type="radio" name="rating" value="1">
+            1 Star
+        </label>
+        <label>
+            <input type="radio" name="rating" value="2">
+            2 Stars
+        </label>
+        <label>
+            <input type="radio" name="rating" value="3">
+            3 Stars
+        </label>
+        <label>
+            <input type="radio" name="rating" value="4">
+            4 Stars
+        </label>
+        <label>
+            <input type="radio" name="rating" value="5">
+            5 Stars
+        </label>
+    </div>
+    
+    <label for="headline">Headline</label>
+    <input type="text" id="headline" name="headline">
+    
+    <label for="review">Review</label>
+    <textarea id="review" name="review" rows="4"></textarea>
+    
+    <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="button" id="cancel-button">Cancel</button>
+    </div>
+</div>
+
+<div class="section">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title">
+    
+    <div>
+        <label>Radio Buttons</label>
+        <label><input type="radio" name="relevance" value="not-relevant"> Not relevant</label>
+        <label><input type="radio" name="relevance" value="low"> Low</label>
+        <label><input type="radio" name="relevance" value="medium"> Medium</label>
+        <label><input type="radio" name="relevance" value="high"> High</label>
+    </div>
+    
+    <div>
+        <label>Check Boxes</label>
+        <label><input type="checkbox" name="choice1"> Choice1</label>
+        <label><input type="checkbox" name="choice2"> Choice2</label>
+        <label><input type="checkbox" name="choice3"> Choice3</label>
+        <label><input type="checkbox" name="choice4"> Choice4</label>
+        <label><input type="checkbox" name="choice5"> Choice5</label>
+        <label><input type="checkbox" name="choice6"> Choice6</label>
+        <label><input type="checkbox" name="choice7"> Choice7</label>
+        <label><input type="checkbox" name="choice8"> Choice8</label>
+    </div>
+    
+    <div class="buttons">
+        <button type="button">OK</button>
+        <button type="button" id="cancel-button-2">Cancel</button>
+    </div>
+</div>
+
+<p style="text-align: center; margin-top: 20px;">Add Element</p> <!-- 在页面底部添加文本 -->
+
+</body>
+</html>

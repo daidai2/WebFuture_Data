@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Fidelity Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .payment-method, .sign-up, .product-catalog {
+            margin-bottom: 40px;
+        }
+        .payment-method label, .sign-up label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+        }
+        .payment-method input, .sign-up input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .payment-method button, .sign-up button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sign-up .terms {
+            display: flex;
+            align-items: center;
+        }
+        .sign-up .terms input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .product-catalog .product {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin-right: 3.3%;
+        }
+        .product-catalog .product:last-child {
+            margin-right: 0;
+        }
+        .product-catalog img {
+            max-width: 100%;
+        }
+        .product-catalog button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Add Element Link at the top of the page -->
+<a href="#" id="add-element">Add Element</a>
+
+<div class="container">
+    <!-- Payment Method Section -->
+    <div class="payment-method">
+        <h2>Select your payment method</h2>
+        <label><input type="radio" name="payment" value="credit-card" checked> Credit Card</label>
+        <label><input type="radio" name="payment" value="paypal"> Paypal</label>
+        <label><input type="radio" name="payment" value="bank-transfer"> Bank Transfer</label>
+
+        <h2>Enter your data</h2>
+        <label>Card Number</label>
+        <input type="text" name="card-number" placeholder="Card Number">
+        <label>Expiration Date</label>
+        <input type="text" name="expiration-date" placeholder="MM/YY">
+        <label>CCV</label>
+        <input type="text" name="ccv" placeholder="CCV">
+        
+        <button>Complete</button>
+    </div>
+
+    <!-- Sign Up Section -->
+    <div class="sign-up">
+        <h2>Sign Up</h2>
+        <label>Name</label>
+        <input type="text" name="first-name" placeholder="Name">
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+        <label>Phone</label>
+        <input type="text" name="phone" placeholder="Phone">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Email">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Password">
+        <label>Confirm Password</label>
+        <input type="password" name="confirm-password" placeholder="Confirm Password">
+
+        <div class="terms">
+            <input type="checkbox" name="terms">
+            <label>I agree to Terms and Conditions</label>
+        </div>
+        
+        <button id="sign-up-btn">Sign Up</button>
+    </div>
+
+    <!-- Product Catalog Section -->
+    <div class="product-catalog">
+        <h2>Product Catalog</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <p>Product 1</p>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <p>Product 2</p>
+            <p>$10.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <p>Product 3</p>
+            <p>$40.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Show alert when Sign Up button is clicked
+    document.getElementById('sign-up-btn').onclick = function() {
+        alert('Add Interaction');
+    };
+
+    // Delete the first image on the page
+    document.querySelector('.product-catalog img').remove();
+</script>
+
+</body>
+</html>

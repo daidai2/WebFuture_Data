@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hover\:bg-pink-100:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100" id="body1">
+  <header class="bg-white p-4 shadow-sm" id="body1-header1">
+    <h1 class="text-2xl font-bold" id="body1-header1-h11">Title</h1>
+    <p class="text-sm text-gray-600" id="body1-header1-p1">Subtitle</p>
+    <nav class="mt-4" id="body1-header1-nav1">
+      <ul class="flex space-x-4" id="body1-header1-nav1-ul1">
+        <li id="body1-header1-nav1-ul1-li1"><a href="#" class="text-blue-500" id="body1-header1-nav1-ul1-li1-a1">Nav Item 1</a></li>
+        <li id="body1-header1-nav1-ul1-li2"><a href="#" class="text-blue-500" id="body1-header1-nav1-ul1-li2-a2">Nav Item 2</a></li>
+        <li id="body1-header1-nav1-ul1-li3"><a href="#" class="text-blue-500" id="body1-header1-nav1-ul1-li3-a3">Nav Item 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="p-4" id="body1-main1">
+    <section class="flex justify-between" id="body1-main1-section1">
+      <div class="w-1/2" id="body1-main1-section1-div1">
+        <h2 class="text-xl font-bold" id="body1-main1-section1-div1-h21">Page Title</h2>
+        <p class="text-gray-600" id="body1-main1-section1-div1-p2">This is a brief description beneath the page title.</p>
+      </div>
+      <div class="w-1/2" id="body1-main1-section1-div2">
+        <div class="relative" id="body1-main1-section1-div2-div3">
+
+          <button class="absolute inset-0 flex items-center justify-center text-white text-3xl" id="body1-main1-section1-div2-div3-button1">▶</button>
+          <button id="Parent_body1-main1-section1-div2-div3_Next_null_Queue_1" class="w-full">Modify Element</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-3 gap-4 mt-4" id="body1-main1-section2">
+      <article class="bg-white p-4 shadow-sm" id="body1-main1-section2-article1">
+        <h3 class="font-bold" id="body1-main1-section2-article1-h31">Article Title 1</h3>
+        <img src="https://placehold.co/150x100" alt="Article 1" class="my-2" id="body1-main1-section2-article1-img2">
+        <p class="text-gray-600" id="body1-main1-section2-article1-p3">Brief text for article 1.</p>
+      </article>
+      <article class="bg-white p-4 shadow-sm" id="body1-main1-section2-article2">
+        <h3 class="font-bold" id="body1-main1-section2-article2-h32">Article Title 2</h3>
+        <img src="https://placehold.co/150x100" alt="Article 2" class="my-2" id="body1-main1-section2-article2-img3">
+        <p class="text-gray-600" id="body1-main1-section2-article2-p4">Brief text for article 2.</p>
+      </article>
+      <article class="bg-white p-4 shadow-sm" id="body1-main1-section2-article3">
+        <h3 class="font-bold" id="body1-main1-section2-article3-h33">Article Title 3</h3>
+        <img src="https://placehold.co/150x100" alt="Article 3" class="my-2" id="body1-main1-section2-article3-img4">
+        <p class="text-gray-600" id="body1-main1-section2-article3-p5">Brief text for article 3.</p>
+      </article>
+    </section>
+
+    <section class="flex justify-center gap-4 mt-4" id="body1-main1-section3">
+      <img src="https://placehold.co/300x200" alt="Large Image 1" id="body1-main1-section3-img5">
+      <img src="https://placehold.co/300x200" alt="Large Image 2" id="body1-main1-section3-img6">
+    </section>
+
+    <section class="mt-4" id="body1-main1-section4">
+      <div class="flex" id="body1-main1-section4-div4">
+        <div class="w-1/2" id="body1-main1-section4-div4-div5">
+          <p class="mb-4" id="body1-main1-section4-div4-div5-p6">Some detailed text goes here.</p>
+          <p class="mb-4" id="body1-main1-section4-div4-div5-p7">Another line of text.</p>
+          <p class="mb-4" id="body1-main1-section4-div4-div5-p8">More details in the text.</p>
+        </div>
+        <div class="w-1/2" id="body1-main1-section4-div4-div6">
+          <img src="https://placehold.co/100x100" alt="Small Image" class="float-right mb-4" id="body1-main1-section4-div4-div6-img7">
+        </div>
+      </div>
+    </section>
+
+    <section class="flex items-center gap-4 mt-4" id="body1-main1-section5">
+      <input type="text" class="border border-gray-300 p-2" placeholder="Input Field" id="body1-main1-section5-input1">
+      <label id="body1-main1-section5-label1"><input type="checkbox" id="body1-main1-section5-label1-input2"> Checkbox</label>
+    </section>
+
+    <section class="mt-4" id="body1-main1-section6">
+      <button class="bg-blue-500 text-white p-2 hover:bg-pink-100" id="body1-main1-section6-button2" onclick="addInteraction()">Button</button>
+    </section>
+  </main>
+
+  <section class="bg-white p-4 mt-8 shadow-sm" id="body1-section7">
+    <h2 class="text-xl font-bold" id="body1-section7-h22">Shipping Info</h2>
+    <form class="grid grid-cols-2 gap-4 mt-4" id="body1-section7-form1">
+      <div id="body1-section7-form1-div7">
+        <label id="body1-section7-form1-div7-label2">First Name</label>
+        <input type="text" class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div7-input3">
+      </div>
+      <div id="body1-section7-form1-div8">
+        <label id="body1-section7-form1-div8-label3">Last Name</label>
+        <input type="text" class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div8-input4">
+      </div>
+      <div id="body1-section7-form1-div9">
+        <label id="body1-section7-form1-div9-label4">Phone</label>
+        <input type="text" class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div9-input5">
+      </div>
+      <div id="body1-section7-form1-div10">
+        <label id="body1-section7-form1-div10-label5">E-mail</label>
+        <input type="text" class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div10-input6">
+      </div>
+      <div id="body1-section7-form1-div11">
+        <label id="body1-section7-form1-div11-label6">Country</label>
+        <select class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div11-select1">
+          <option id="body1-section7-form1-div11-select1-option1">United States</option>
+        </select>
+      </div>
+      <div id="body1-section7-form1-div12">
+        <label id="body1-section7-form1-div12-label7">State</label>
+        <select class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div12-select2">
+          <option id="body1-section7-form1-div12-select2-option2">Choose</option>
+        </select>
+      </div>
+      <div id="body1-section7-form1-div13">
+        <label id="body1-section7-form1-div13-label8">City</label>
+        <input type="text" class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div13-input7">
+      </div>
+      <div id="body1-section7-form1-div14">
+        <label id="body1-section7-form1-div14-label9">Zip Code</label>
+        <input type="text" class="border border-gray-300 p-2 w-full" id="body1-section7-form1-div14-input8">
+      </div>
+      <div class="col-span-2 flex justify-between mt-4" id="body1-section7-form1-div15">
+        <button class="bg-gray-500 text-white p-2" id="body1-section7-form1-div15-button3">Back</button>
+        <button class="bg-blue-500 text-white p-2" id="body1-section7-form1-div15-button4">Next Step</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center p-4 mt-8" id="body1-footer1">
+    Footer Content
+  </footer>
+
+
+  <script data-custom-scripts="true">
+    function addInteraction() {
+      const newDiv = document.createElement('div');
+      newDiv.innerHTML = `<p id="Parent_body1_Next_null_Queue_1" name="add">Add Interaction</p>`;
+      document.body.appendChild(newDiv);
+    }
+  </script>
+</body>
+</html>

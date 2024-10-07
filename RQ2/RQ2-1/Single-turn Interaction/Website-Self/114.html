@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px 0;
+        }
+        .title {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .main-content, .sidebar {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main-content .post, .sidebar .widget {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+        }
+        .main-content .video {
+            flex: 1 1 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ddd;
+            margin: 10px 0;
+        }
+        .main-content .video button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .form {
+            margin: 20px 0;
+        }
+        .form input[type="text"], .form input[type="submit"], .form input[type="button"] {
+            display: block;
+            margin: 10px 0;
+        }
+        .form .radio-buttons, .form .checkboxes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="title">
+<h1 style="font-size: 50px;">Title Page</h1>
+<p>Subtitle or description goes here.</p>
+</div>
+<div class="main-content">
+<div class="video">
+<button>Play Video</button>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<p>Content for the post goes here. Choice 1</p>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<p>Content for the post goes here. Choice 1</p>
+</div>
+<div class="post">
+<h2>Title Post</h2>
+<p>Content for the post goes here. Choice 1</p>
+</div>
+</div>
+<div class="sidebar">
+<div class="widget">
+<h2>Title</h2>
+<p>Content for the widget goes here.</p>
+</div>
+<div class="widget">
+<h2>Title</h2>
+<p>Content for the widget goes here.</p>
+</div>
+</div>
+<div class="form">
+<label for="title">Title</label>
+<input id="title" name="title" type="text"/>
+<div class="radio-buttons">
+<p>Radio Buttons:</p>
+<input id="not-relevant" name="relevance" type="radio" value="not-relevant"/>
+<label for="not-relevant">Not relevant</label>
+<input id="low" name="relevance" type="radio" value="low"/>
+<label for="low">Low</label>
+<input id="medium" name="relevance" type="radio" value="medium"/>
+<label for="medium">Medium</label>
+<input id="high" name="relevance" type="radio" value="high"/>
+<label for="high">High</label>
+</div>
+<div class="checkboxes">
+<p>Checkboxes:</p>
+<input id="choice1" name="choice1" type="checkbox"/>
+<label for="choice1">Choice 1</label>
+<input id="choice2" name="choice2" type="checkbox"/>
+<label for="choice2">Choice 2</label>
+<input id="choice3" name="choice3" type="checkbox"/>
+<label for="choice3">Choice 3</label>
+<input id="choice4" name="choice4" type="checkbox"/>
+<label for="choice4">Choice 4</label>
+<input id="choice5" name="choice5" type="checkbox"/>
+<label for="choice5">Choice 5</label>
+<input id="choice6" name="choice6" type="checkbox"/>
+<label for="choice6">Choice 6</label>
+<input id="choice7" name="choice7" type="checkbox"/>
+<label for="choice7">Choice 7</label>
+<input id="choice8" name="choice8" type="checkbox"/>
+<label for="choice8">Choice 8</label>
+</div>
+<input type="submit" value="OK"/>
+<input type="button" value="Cancel"/>
+</div>
+</div>
+<p>Add Element</p></body>
+</html>

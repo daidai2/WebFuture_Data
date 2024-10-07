@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .new-button-hover:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-5">
+  <!-- Header -->
+  <header class="mb-5">
+    <div class="bg-gray-300 h-48 w-full flex justify-center items-center">
+      <img src="https://placehold.co/1366x264" alt="Banner Image">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="mb-5">
+    <ul class="flex justify-around bg-gray-200 p-3">
+      <li><a href="#" class="text-gray-700">Link 1</a></li>
+      <li><a href="#" class="text-gray-700">Link 2</a></li>
+      <li><a href="#" class="text-gray-700">Link 3</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Form Section 1 -->
+  <section id="form-section-1" class="mb-5 p-5">
+    <div class="mb-3">
+      <input type="text" placeholder="Text Input 1" class="bg-white border border-gray-300 p-2 w-full mb-2">
+      <input type="text" placeholder="Text Input 2" class="bg-white border border-gray-300 p-2 w-full">
+    </div>
+    <div class="mb-3">
+      <button id="mainButton" class="bg-blue-500 text-white p-2 w-full">Button</button>
+    </div>
+    <div class="flex flex-col space-y-2">
+      <label class="flex items-center space-x-2">
+        <input type="checkbox" class="form-checkbox">
+        <span>Checkbox 1</span>
+      </label>
+      <label class="flex items-center space-x-2">
+        <input type="checkbox" class="form-checkbox">
+        <span>Checkbox 2</span>
+      </label>
+      <label class="flex items-center space-x-2">
+        <input type="radio" name="selection" class="form-radio">
+        <span>Option 1</span>
+      </label>
+      <label class="flex items-center space-x-2">
+        <input type="radio" name="selection" class="form-radio">
+        <span>Option 2</span>
+      </label>
+    </div>
+  </section>
+
+  <!-- Main Form Section 2 -->
+  <section id="form-section-2" class="mb-5 p-5 bg-white shadow-md rounded-md">
+    <h2 class="text-lg font-bold mb-3">Select your payment method</h2>
+    <article class="mb-3">
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="radio" name="payment" class="form-radio">
+        <span>Credit Card</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="radio" name="payment" class="form-radio">
+        <span>Paypal</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="radio" name="payment" class="form-radio">
+        <span>Bank Transfer</span>
+      </label>
+    </article>
+    <article class="mb-3">
+      <label class="block mb-2">Enter your data</label>
+      <input type="text" placeholder="Card Number" class="bg-white border border-gray-300 p-2 w-full mb-2">
+      <div class="flex space-x-2 mb-2">
+        <input type="text" placeholder="MM" class="bg-white border border-gray-300 p-2 w-1/3">
+        <input type="text" placeholder="YY" class="bg-white border border-gray-300 p-2 w-1/3">
+        <input type="text" placeholder="CVV" class="bg-white border border-gray-300 p-2 w-1/3">
+      </div>
+      <button class="bg-green-500 text-white p-2 w-full">Complete</button>
+    </article>
+  </section>
+
+  <!-- Aside Section -->
+  <aside class="mb-5 p-5">
+    <div class="flex mb-3">
+      <img src="https://placehold.co/150x150" alt="Additional Image" class="w-16 h-16 mr-3">
+      <div>
+        <p>Text Line 1</p>
+        <p>Text Line 2</p>
+        <p>Text Line 3</p>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label class="flex items-center space-x-2">
+        <input type="checkbox" class="form-checkbox">
+        <span>Checkbox</span>
+      </label>
+      <label class="flex items-center space-x-2">
+        <input type="checkbox" class="form-checkbox">
+        <span>Checkbox</span>
+      </label>
+    </div>
+    <div class="mb-3">
+      <label class="flex items-center space-x-2">
+        <input type="radio" name="options" class="form-radio">
+        <span>RadioButton</span>
+      </label>
+      <label class="flex items-center space-x-2">
+        <input type="radio" name="options" class="form-radio">
+        <span>RadioButton</span>
+      </label>
+    </div>
+    <div class="flex items-center">
+      <img src="https://placehold.co/50x50" alt="Small Image" class="w-8 h-8 mr-3">
+      <span>Small text description</span>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 p-3 text-center">
+    <p>&copy; 2023 Company Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('mainButton').addEventListener('click', function() {
+      // Add new module at the bottom of the page
+      var newModule = document.createElement('div');
+      newModule.classList.add('p-5', 'bg-white', 'shadow-md', 'rounded-md', 'mt-5');
+      newModule.innerHTML = '<p class="text-gray-700">Add Interaction</p>';
+      document.body.appendChild(newModule);
+
+      // Change background color of the first button
+      var firstButton = document.querySelector('button');
+      firstButton.style.backgroundColor = '#C6A7B1';
+      firstButton.classList.add('new-button-hover');
+
+      // Delete the first text input field
+      var firstInput = document.querySelector('input[type="text"]');
+      if (firstInput) {
+        firstInput.remove();
+      }
+    });
+  </script>
+</body>
+</html>

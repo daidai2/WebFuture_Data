@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low-Fidelity Wireframe</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .pic {
+            background-color: #eee;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .grid-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+<script>
+        function addInteraction() {
+            const newSection = document.createElement('div');
+            newSection.classList.add('section');
+            newSection.innerHTML = '<div class="content">Add Interaction</div>';
+            document.body.appendChild(newSection);
+        }
+
+        window.onload = function() {
+            const button2 = document.querySelector('button:contains("Button2")');
+            button2.addEventListener('click', addInteraction);
+
+            const button3_2 = document.querySelector('button:contains("Button3-2")');
+            const newSection = document.createElement('div');
+            newSection.classList.add('section');
+            newSection.appendChild(button3_2);
+            document.body.appendChild(newSection);
+
+            const addElementText = document.createElement('div');
+            addElementText.classList.add('section');
+            addElementText.innerHTML = '<div class="content">Add Element</div>';
+            document.body.appendChild(addElementText);
+        };
+    </script>
+</head>
+<body>
+<div class="navbar">
+<a href="#">Link1</a>
+<a href="#">Link2</a>
+<a href="#">Link3</a>
+<a href="#">Link4</a>
+<a href="#">Link5</a>
+</div>
+<div class="section">
+<div class="title">Title1</div>
+<div class="subtitle">Title1-1</div>
+</div>
+<div class="section">
+<div class="subtitle">Label2</div>
+<div class="content">Text2</div>
+<div class="title">Title2</div>
+<div class="content">Text2-1</div>
+<button class="button">Button2</button>
+</div>
+<div class="section">
+<div class="subtitle">Label3</div>
+<div class="pic">PIC3</div>
+<div class="title">Title3</div>
+<div class="content">Text3</div>
+<div class="grid-container">
+<div class="grid-item">
+<div class="title">Title3-1</div>
+<div class="content">Text3-1</div>
+<a href="#">Link3-1</a>
+</div>
+<div class="grid-item">
+<div class="title">Title3-2</div>
+<div class="content">Text3-2</div>
+<a href="#">Link3-2</a>
+</div>
+<div class="grid-item">
+<div class="title">Title3-3</div>
+<div class="content">Text3-3</div>
+<a href="#">Link3-3</a>
+</div>
+<div class="grid-item">
+<div class="title">Title3-4</div>
+<div class="content">Text3-4</div>
+<a href="#">Link3-4</a>
+</div>
+<div class="grid-item">
+<div class="title">Title3-5</div>
+<div class="content">Text3-5</div>
+<a href="#">Link3-5</a>
+</div>
+<div class="grid-item">
+<div class="title">Title3-6</div>
+<div class="content">Text3-6</div>
+<a href="#">Link3-6</a>
+</div>
+</div>
+<button class="button">Button3-1</button>
+<button class="button" id="6_1">Button3-2</button>
+</div>
+<div class="section">
+<div class="subtitle">Label4</div>
+<div class="grid-container">
+<div class="grid-item">
+<div class="pic">PIC4-1</div>
+<div class="title">Title4-1</div>
+<div class="content">Text4-1</div>
+</div>
+<div class="grid-item">
+<div class="pic">PIC4-2</div>
+<div class="title">Title4-2</div>
+<div class="content">Text4-2</div>
+</div>
+<div class="grid-item">
+<div class="pic">PIC4-3</div>
+<div class="title">Title4-3</div>
+<div class="content">Text4-3</div>
+</div>
+</div>
+<button class="button">Button4-1</button>
+<button class="button">Button4-2</button>
+<button class="button">Button4-3</button>
+</div>
+<div class="section">
+<div class="subtitle">Label5</div>
+<div class="title">Title5</div>
+<div class="content">Text5</div>
+<div class="form-group">
+<input placeholder="TextInput" type="text"/>
+</div>
+<div class="form-group">
+<input placeholder="TextInput" type="text"/>
+</div>
+<div class="form-group">
+<textarea placeholder="TextArea"></textarea>
+</div>
+<button class="button">Button5-1</button>
+<button class="button">Button5-2</button>
+<div class="grid-container">
+<div class="grid-item">
+<div class="title">Title5-1</div>
+<div class="content">Text5-1</div>
+<a href="#">Link5-1</a>
+</div>
+<div class="grid-item">
+<div class="title">Title5-2</div>
+<div class="content">Text5-2</div>
+<a href="#">Link5-2</a>
+</div>
+<div class="grid-item">
+<div class="title">Title5-3</div>
+<div class="content">Text5-3</div>
+<a href="#">Link5-3</a>
+</div>
+<div class="grid-item">
+<div class="title">Title5-4</div>
+<div class="content">Text5-4</div>
+<a href="#">Link5-4</a>
+</div>
+</div>
+<div class="grid-container">
+<div class="grid-item">
+<div class="content">Text5-5</div>
+</div>
+<div class="grid-item">
+<div class="content">Text5-6</div>
+</div>
+</div>
+</div>
+</body>
+</html>

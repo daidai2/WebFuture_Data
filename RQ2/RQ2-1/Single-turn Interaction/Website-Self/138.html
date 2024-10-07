@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .product-images {
+            width: 50%;
+        }
+        .product-images img {
+            width: 100%;
+        }
+        .product-thumbnails {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-thumbnails img {
+            width: 24%;
+            cursor: pointer;
+        }
+        .product-details {
+            width: 45%;
+        }
+        .product-details h1, .product-details h2 {
+            margin: 0;
+        }
+        .product-options label {
+            display: block;
+            margin: 10px 0;
+        }
+        .price {
+            margin: 20px 0;
+        }
+        .price span {
+            margin-left: 10px;
+            text-decoration: line-through;
+            color: red;
+        }
+        .add-to-cart {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            width: fit-content;
+        }
+        .team-section {
+            margin: 40px 0;
+            width: 100%;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .buttons div {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" style="align-self: flex-start;">Add Element</a>
+        <div class="product-main">
+            <div class="product-images">
+                <!-- Removed the first image as requested -->
+                <div class="product-thumbnails">
+                    <img src="thumbnail1.jpg" alt="Thumbnail 1">
+                    <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                    <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Product Name</h1>
+                <h2>Manufacturer</h2>
+                <div class="product-options">
+                    <label>Color:</label>
+                    <label><input type="radio" name="color" value="red"> Red</label>
+                    <label><input type="radio" name="color" value="blue"> Blue</label>
+                    <label><input type="radio" name="color" value="white"> White</label>
+                </div>
+                <div class="price">
+                    $100 <span>$200</span>
+                </div>
+                <div class="add-to-cart">Add to Cart</div>
+            </div>
+        </div>
+        <div class="team-section">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Mate One">
+                <div>
+                    <h3>Mate One</h3>
+                    <p>Job Title</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Mate Two">
+                <div>
+                    <h3>Mate Two</h3>
+                    <p>Job Title</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Mate Three">
+                <div>
+                    <h3>Mate Three</h3>
+                    <p>Job Title</p>
+                </div>
+            </div>
+        </div>
+        <h2>Button</h2> <!-- Changed from button to heading -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Review Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .bg-toggle-button {
+      background-color: #C6A7B1;
+    }
+
+    .bg-toggle-button:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6" id="body1">
+<section class="max-w-4xl mx-auto bg-white shadow-md rounded-md p-6" id="body1-section1">
+<!-- Header Section -->
+<header class="flex items-center justify-between mb-6" id="body1-section1-header1">
+<div id="body1-section1-header1-div1">
+<h2 class="text-2xl font-bold" id="body1-section1-header1-div1-h21">Product Name</h2>
+<p class="text-xl text-gray-500" id="body1-section1-header1-div1-p1">$24.9</p>
+</div>
+<div id="body1-section1-header1-div2">
+<div class="flex items-center" id="body1-section1-header1-div2-div3">
+<span class="text-yellow-500" id="body1-section1-header1-div2-div3-span1">★ ★ ★ ★ ☆</span>
+<span class="ml-2 text-gray-600" id="body1-section1-header1-div2-div3-span2">45 reviews</span>
+</div>
+</div>
+</header>
+<!-- Review Section -->
+<section class="mb-6" id="body1-section1-section2">
+<div class="mb-4" id="body1-section1-section2-div4">
+<h3 class="text-xl font-semibold" id="body1-section1-section2-div4-h31">Rate Product</h3>
+<!-- Star Rating Div -->
+<div class="flex items-center" id="body1-section1-section2-div4-div5">
+<span class="text-yellow-500" id="body1-section1-section2-div4-div5-span3">★ ★ ★ ☆ ☆</span>
+<span class="ml-2 text-gray-600" id="body1-section1-section2-div4-div5-span4">3.0</span>
+</div>
+</div>
+<form class="space-y-4" id="body1-section1-section2-form1">
+<input class="w-full p-2 border border-gray-300 rounded-md" id="body1-section1-section2-form1-input1" placeholder="Headline" type="text"/>
+<textarea class="w-full p-2 border border-gray-300 rounded-md h-24" id="body1-section1-section2-form1-textarea1" placeholder="Review"></textarea>
+</form>
+</section>
+<!-- Product Details Section -->
+<article class="text-center mb-6" id="body1-section1-article1">
+<img alt="Product Image" class="mx-auto mb-4" id="body1-section1-article1-img2" src="https://placehold.co/300x300"/>
+<p class="text-xl text-gray-600 mb-2" id="body1-section1-article1-p2">$24.9</p>
+<h1 class="text-3xl font-bold" id="body1-section1-article1-h11">Product Title</h1>
+<hr class="my-4" id="body1-section1-article1-hr1"/>
+</article>
+<!-- Checklist Section -->
+<aside class="mb-6" id="body1-section1-aside1">
+<p class="text-lg font-semibold mb-2" id="body1-section1-aside1-p3">Check items:</p>
+<div class="flex flex-col space-y-2" id="body1-section1-aside1-div6">
+<label class="flex items-center" id="body1-section1-aside1-div6-label1">
+<input class="mr-2" id="body1-section1-aside1-div6-label1-input2" type="checkbox"/> Check Item 1
+        </label>
+<label class="flex items-center" id="body1-section1-aside1-div6-label2">
+<input class="mr-2" id="body1-section1-aside1-div6-label2-input3" type="checkbox"/> Check Item 2
+        </label>
+<label class="flex items-center" id="body1-section1-aside1-div6-label3">
+<input class="mr-2" id="body1-section1-aside1-div6-label3-input4" type="checkbox"/> Check Item 3
+        </label>
+</div>
+<button class="bg-green-500 text-white px-4 py-2 mt-4 rounded-md w-full" id="body1-section1-aside1-button2">Buy Now</button>
+</aside>
+<!-- Additional Elements Section -->
+<section class="mt-8" id="body1-section1-section3">
+<div class="flex justify-between items-start mb-6" id="body1-section1-section3-div7">
+<img alt="Placeholder Image" class="w-24 h-24" id="body1-section1-section3-div7-img3" src="https://placehold.co/100x100"/>
+<input class="p-2 border border-gray-300 rounded-md" id="body1-section1-section3-div7-input5" placeholder="Additional Input" type="text"/>
+</div>
+<div class="space-y-4" id="body1-section1-section3-div8">
+<div class="flex flex-col space-y-2" id="body1-section1-section3-div8-div9">
+<label class="flex items-center" id="body1-section1-section3-div8-div9-label4">
+<input class="mr-2" id="body1-section1-section3-div8-div9-label4-input6" type="checkbox"/> Checkbox Text Item
+          </label>
+<label class="flex items-center" id="body1-section1-section3-div8-div9-label5">
+<input class="mr-2" id="body1-section1-section3-div8-div9-label5-input7" name="radioGroup" type="radio"/> Radio Button Text Item 1
+          </label>
+<label class="flex items-center" id="body1-section1-section3-div8-div9-label6">
+<input class="mr-2" id="body1-section1-section3-div8-div9-label6-input8" name="radioGroup" type="radio"/> Radio Button Text Item 2
+          </label>
+</div>
+<div class="flex space-x-2" id="body1-section1-section3-div8-div10">
+<button class="bg-toggle-button text-white px-4 py-2 rounded-md" id="body1-section1-section3-div8-div10-button3">Back</button>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md" id="body1-section1-section3-div8-div10-button4">Next</button>
+<button class="bg-purple-500 text-white px-4 py-2 rounded-md" id="body1-section1-section3-div8-div10-button5">Button</button>
+</div>
+</div>
+</section>
+<button class="bg-blue-500 text-white px-4 py-2 rounded-md" id="6_1">Submit</button>
+</section>
+<script data-custom-scripts="true"></script>
+</body>
+</html>

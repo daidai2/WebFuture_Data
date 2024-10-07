@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .team-member .details {
+            flex: 1;
+        }
+        .checkout-section {
+            margin-top: 40px;
+        }
+        .checkout-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkout-section form .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .checkout-section form .form-group label {
+            flex: 1;
+        }
+        .checkout-section form .form-group input {
+            flex: 2;
+        }
+        .shipping-service,
+        .shipping-info {
+            margin-top: 20px;
+        }
+        .shipping-service label,
+        .shipping-info label {
+            display: block;
+        }
+        .shipping-service input[type="radio"] {
+            margin-right: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#">Add Element</a>
+
+    <div class="team-section">
+        <div class="team-member">
+            <img src="placeholder.jpg" alt="Mate One">
+            <div class="details">
+                <h2 class="first-text">Mate One</h2>
+                <p>Job Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="placeholder.jpg" alt="Mate Two">
+            <div class="details">
+                <h2>Mate Two</h2>
+                <p>Job Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="placeholder.jpg" alt="Mate Three">
+            <div class="details">
+                <h2>Mate Three</h2>
+                <p>Job Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-section">
+        <h2>Checkout</h2>
+        <form>
+            <h3>Shipping Address</h3>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+
+            <h3>Shipping Service</h3>
+            <div class="shipping-service">
+                <label>
+                    <input type="radio" name="shipping" value="standard">
+                    Standard - 14 days - $6.59
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="expedited">
+                    Expedited - 7 days - $11.97
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="express">
+                    Express - 3 days - $19.97
+                </label>
+            </div>
+
+            <h3>Shipping Info</h3>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" value="United States">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+            </div>
+
+            <div class="buttons">
+                <button type="button">Back</button>
+                <h3>Next Step</h3>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

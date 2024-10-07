@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 修改第一个文本的字体大小 */
+        p:first-of-type {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>这是第一个文本</p>
+    <img src="example.jpg" alt="Example Image">
+    <button id="signup">Sign Up</button>
+
+    <script>
+        document.getElementById('signup').addEventListener('click', function() {
+            // 显示浏览器警告框
+            alert('Add Interaction');
+            
+            // 修改第一个文本的字体大小
+            document.querySelector('p:first-of-type').style.fontSize = '50px';
+            
+            // 删除页面上的第一张图片
+            var firstImage = document.querySelector('img');
+            if (firstImage) {
+                firstImage.remove();
+            }
+        });
+    </script>
+</body>
+</html>

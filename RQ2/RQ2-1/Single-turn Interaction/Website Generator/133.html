@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Example</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("getDropdownButton").addEventListener("click", function() {
+        alert('Add Interaction');
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 font-sans">
+<!-- Main Container -->
+<div class="container mx-auto p-4">
+<!-- Header Section -->
+<header class="bg-white p-4 mb-4 shadow">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<!-- Removed first text input field -->
+<select class="border p-2 mr-2">
+<option>Options</option>
+</select>
+</div>
+</div>
+</header>
+<!-- Navigation Section -->
+<nav class="bg-white p-4 mb-4 shadow">
+<div class="flex space-x-4">
+<div>
+<input id="csharp" type="checkbox"/>
+<label for="csharp">C#</label>
+</div>
+<div>
+<input id="java" type="checkbox"/>
+<label for="java">Java</label>
+</div>
+<div>
+<input id="php" type="checkbox"/>
+<label for="php">PHP</label>
+</div>
+<div>
+<input id="vb" type="checkbox"/>
+<label for="vb">Visual Basic</label>
+</div>
+</div>
+</nav>
+<!-- Main Content Section -->
+<main class="bg-white p-4 mb-4 shadow">
+<!-- Banner Image -->
+<section class="mb-4">
+<img alt="Banner" class="w-full" src="https://placehold.co/600x150"/>
+</section>
+<!-- Text Content -->
+<section class="mb-4">
+<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</section>
+<!-- Form Section -->
+<section class="mb-4">
+<div class="mb-2">
+<label class="block" for="input2">Label</label>
+<input class="border p-2 w-full" id="input2" type="text"/>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2">Go</button>
+</section>
+<!-- Checkboxes and Radio Buttons -->
+<section class="mb-4">
+<div class="mb-2">
+<input id="checkbox1" type="checkbox"/>
+<label for="checkbox1">Checkbox 1</label>
+</div>
+<div class="mb-2">
+<input id="checkbox2" type="checkbox"/>
+<label for="checkbox2">Checkbox 2</label>
+</div>
+<div class="mb-2">
+<input id="checkbox3" type="checkbox"/>
+<label for="checkbox3">Checkbox 3</label>
+</div>
+<div class="mb-2">
+<input id="checkbox4" type="checkbox"/>
+<label for="checkbox4">Checkbox 4</label>
+</div>
+<div class="mt-4">
+<input id="radio1" name="radio-group" type="radio"/>
+<label for="radio1">Radio 1</label><br/>
+<input id="radio2" name="radio-group" type="radio"/>
+<label for="radio2">Radio 2</label><br/>
+<input id="radio3" name="radio-group" type="radio"/>
+<label for="radio3">Radio 3</label><br/>
+<input id="radio4" name="radio-group" type="radio"/>
+<label for="radio4">Radio 4</label>
+</div>
+</section>
+<!-- Large Image with Description -->
+<section class="mb-4">
+<img alt="Large Image" class="w-full" src="https://placehold.co/1356x624"/>
+<p class="text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="bg-white p-4 shadow">
+<div class="text-small text-center">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2 mt-4" id="6_1">Get Drop Down Here</button>
+</footer>
+</div>
+</body>
+</html>

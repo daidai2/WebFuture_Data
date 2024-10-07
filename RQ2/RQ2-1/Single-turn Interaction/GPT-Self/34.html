@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .product-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .product-gallery img {
+            width: 30%;
+            border: 1px solid #ccc;
+        }
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .product-info {
+            width: 60%;
+        }
+        .product-info h1 {
+            margin: 0;
+            font-size: 50px; /* 修改字体大小 */
+        }
+        .product-info p {
+            margin: 10px 0;
+        }
+        .product-options {
+            width: 35%;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .product-options label, .product-options input {
+            display: block;
+            margin: 10px 0;
+        }
+        .product-options .price {
+            font-size: 24px;
+            color: red;
+        }
+        .product-options .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .add-to-cart {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: #fff;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .form-section {
+            margin: 20px 0;
+        }
+        .form-section label, .form-section input, .form-section button {
+            display: block;
+            margin: 10px 0;
+        }
+        .bottom-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-gallery">
+            <img src="placeholder.jpg" alt="Product Image 1">
+            <img src="placeholder.jpg" alt="Product Image 2">
+            <img src="placeholder.jpg" alt="Product Image 3">
+        </div>
+        <div class="product-details">
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <p>Manufacturer</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+            </div>
+            <div class="product-options">
+                <label for="color">Color</label>
+                <input type="radio" name="color" value="red" checked> Red<br>
+                <input type="radio" name="color" value="blue"> Blue<br>
+                <input type="radio" name="color" value="white"> White<br>
+                <p class="price">$100</p>
+                <p class="old-price">$200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="form-section">
+            <label for="label1">Label</label>
+            <!-- 删除第一个文本输入字段 -->
+            <label for="label2">Label</label>
+            <input type="text" id="label2">
+            <button>Button</button>
+        </div>
+        <div class="form-section">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Checkbox 1</label>
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Checkbox 2</label>
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3">Checkbox 3</label>
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4">Checkbox 4</label>
+        </div>
+        <div class="form-section">
+            <input type="radio" name="radio" value="radio1" checked> Radio 1<br>
+            <input type="radio" name="radio" value="radio2"> Radio 2<br>
+            <input type="radio" name="radio" value="radio3"> Radio 3<br>
+            <input type="radio" name="radio" value="radio4"> Radio 4<br>
+            <img src="placeholder.jpg" alt="Sample Image" style="width: 100%; margin-top: 20px;">
+        </div>
+        <!-- 添加 "Add Element" 文本 -->
+        <div class="bottom-text">
+            Add Element
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('./pics/bg.jpg'), url('./pics/overlay.png');
+      background-size: cover, cover;
+      background-position: center, center;
+      color: white;
+    }
+
+    .transparent-bg {
+      background-color: transparent;
+      border: 2px solid white;
+      position: relative;
+    }
+
+    .vertical-line {
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background-color: white;
+      left: 50%;
+    }
+
+    .horizontal-line {
+      width: 50%;
+      height: 2px;
+      background-color: white;
+      position: relative;
+      top: 50px;
+    }
+
+    .remove-space>a:not(:first-child) {
+      margin-left: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="min-h-screen flex flex-col items-center justify-between pt-32 pb-32">
+    <header class="w-full flex flex-col items-center py-6 relative">
+      <div class="w-32 h-32 rounded-full transparent-bg flex items-center justify-center">
+        <a href="#" class="text-lg font-medium">Link1</a>
+      </div>
+      <div class="vertical-line mt-32"></div>
+      <hr class="horizontal-line">
+    </header>
+
+    <section class="text-center mx-auto my-6">
+      <h1 class="title1 text-4xl font-bold mb-4">Title1</h1>
+      <p class="text1 text-xl mb-6">Text1</p>
+    </section>
+
+    <nav class="remove-space flex justify-center mt-6">
+      <a href="#" class="link2 px-6 py-4 bg-transparent border border-white rounded text-2xl text-white flex items-center justify-center">Link1-1</a>
+      <a href="#" class="link3 px-6 py-4 bg-transparent border border-white rounded text-2xl text-white flex items-center justify-center">Link1-2</a>
+      <a href="#" class="link4 px-6 py-4 bg-transparent border border-white rounded text-2xl text-white flex items-center justify-center">Link1-3</a>
+      <a href="#" class="link5 px-6 py-4 bg-transparent border border-white rounded text-2xl text-white flex items-center justify-center">Link1-4</a>
+    </nav>
+
+    <footer class="w-full text-center py-6">
+      <p class="text2 text-lg">Text1</p>
+    </footer>
+  </div>
+
+  <script data-custom-scripts="true"></script>
+
+
+</body>
+</html>

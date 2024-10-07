@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('button:contains("Button 1")').addEventListener('click', () => {
+        const newModule = document.createElement('div');
+        newModule.classList.add('mb-6');
+        newModule.innerHTML = '<p class="text-lg">Add Interaction</p>';
+        document.body.appendChild(newModule);
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-5xl mx-auto bg-white p-6 shadow-md">
+    <!-- Header Section -->
+    <header class="text-center mb-6">
+      <img src="https://placehold.co/600x200" alt="Header Image" class="mx-auto mb-4">
+      <h1 class="text-3xl font-bold">Header Title</h1>
+      <p class="text-lg text-gray-600 mb-4">Subtitle</p>
+      <button class="bg-gray-800 text-white py-2 px-4 rounded mb-2">Button 1</button>
+      <button class="bg-gray-800 text-white py-2 px-4 rounded">Button 2</button>
+    </header>
+
+    <!-- Payment Selection Section -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Select your payment method</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block mb-2">Payment Method</label>
+          <label class="block">
+            <input type="radio" name="payment_method" class="mr-2">
+            Credit Card
+          </label>
+          <label class="block">
+            <input type="radio" name="payment_method" class="mr-2">
+            PayPal
+          </label>
+          <label class="block">
+            <input type="radio" name="payment_method" class="mr-2">
+            Bank Transfer
+          </label>
+        </div>
+        <div class="flex mb-4">
+          <div class="flex-1 mr-2">
+            <label class="block mb-2">Expiration Date</label>
+            <input type="text" placeholder="MM" class="w-full border border-gray-300 rounded p-2">
+          </div>
+          <div class="flex-1">
+            <label class="block mb-2">CVV</label>
+            <input type="text" class="w-full border border-gray-300 rounded p-2">
+          </div>
+        </div>
+        <button class="bg-green-500 text-white py-2 px-4 rounded">Complete</button>
+      </form>
+    </section>
+
+    <!-- Details Section -->
+    <section class="mb-6">
+      <div class="flex mb-4">
+        <img src="https://placehold.co/150x150" alt="Detail Image" class="mr-4">
+        <div>
+          <p class="text-lg">Detail Text</p>
+          <label class="block">
+            <input type="checkbox" class="mr-2">
+            Checkbox 1
+          </label>
+          <label class="block">
+            <input type="checkbox" class="mr-2">
+            Checkbox 2
+          </label>
+          <label class="block">
+            <input type="radio" name="detail_option" class="mr-2">
+            Radio Button 1
+          </label>
+        </div>
+      </div>
+      <div class="text-right">
+        <button class="bg-gray-800 text-white py-2 px-4 rounded">Back</button>
+        <button class="bg-gray-800 text-white py-2 px-4 rounded ml-2">Submit</button>
+      </div>
+    </section>
+  </div>
+  <!-- Added Text Element -->
+  <p class="text-lg">Add Element</p>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+<header class="text-center mb-8">
+<h1 class="text-2xl font-bold" style="font-size: 50px;">Checkout</h1>
+<a class="text-blue-500 underline" href="#">Add Element</a>
+</header>
+<main class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+<section class="mb-8" id="shippingAddress">
+<h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="firstName">First Name</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="firstName" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="lastName">Last Name</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="lastName" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="company">Company</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="company" type="text"/>
+</div>
+</section>
+<section class="mb-8" id="shippingService">
+<h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="standard" name="shippingOption" type="radio"/>
+<label class="text-sm font-medium" for="standard">Standard</label>
+<span class="ml-auto text-sm">14 days - $6.59</span>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="expedited" name="shippingOption" type="radio"/>
+<label class="text-sm font-medium" for="expedited" id="6_2_1_1_1">Expedited</label>
+<span class="ml-auto text-sm">7 days - $1.77</span>
+</div>
+<div class="flex items-center">
+<input class="mr-2" id="express" name="shippingOption" type="radio"/>
+<label class="text-sm font-medium" for="express">Express</label>
+<span class="ml-auto text-sm">3 days - $19.99</span>
+</div>
+</section>
+<div class="flex items-center mb-8" id="dropdowns">
+<select class="mr-4 p-2 border border-gray-300 rounded-md" id="languageDropdown" name="language">
+<option>C Sharp</option>
+</select>
+<button class="px-4 py-2 bg-blue-500 text-white rounded-md" id="getDropdown">Get Drop Down Here</button>
+</div>
+<form class="mb-8" id="checkboxes">
+<div class="flex items-center mb-2">
+<input class="mr-2" id="csharp" type="checkbox"/>
+<label class="text-sm font-medium" for="csharp">C#</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="java" type="checkbox"/>
+<label class="text-sm font-medium" for="java">Java</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="php" type="checkbox"/>
+<label class="text-sm font-medium" for="php">PHP</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="vb" type="checkbox"/>
+<label class="text-sm font-medium" for="vb">Visual Basic</label>
+</div>
+</form>
+<section class="mb-8" id="shippingInfo">
+<h2 class="text-xl font-semibold mb-4">Shipping Info</h2>
+<div class="mb-4 grid grid-cols-2 gap-x-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="firstNameShipping">First Name</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="firstNameShipping" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="lastNameShipping">Last Name</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="lastNameShipping" type="text"/>
+</div>
+</div>
+<div class="mb-4 flex items-center">
+<label class="block text-sm font-medium text-gray-700" for="phone" id="6_2_2_2_1">Phone</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="phone" type="text"/>
+<span class="ml-4 text-sm font-medium text-gray-700" id="6_2_1_2_1">Expedited</span>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="email">E-mail</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="email" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="country">Country</label>
+<select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="country">
+<option>United States</option>
+</select>
+</div>
+<div class="mb-4 grid grid-cols-2 gap-x-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="state">State</label>
+<select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="state">
+<option>Choose</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="city">City</label>
+<select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="city">
+<option>Palo Alto</option>
+</select>
+</div>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700" for="zipCode">Zip Code</label>
+<input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="zipCode" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-x-4">
+<button class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md">BACK</button>
+<button class="px-4 py-2 bg-blue-500 text-white rounded-md">NEXT STEP</button>
+</div>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Low Fidelity Wireframe</title>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-5" id="body1">
+  <!-- Main Section -->
+  <section class="max-w-4xl mx-auto bg-white p-5 rounded-lg shadow-md" id="body1-section1">
+
+    <!-- Payment Method Section -->
+    <section class="mb-6" id="body1-section1-section2">
+      <header class="mb-3 text-xl font-bold" id="body1-section1-section2-header1">Select your payment method</header>
+      <div id="body1-section1-section2-div1">
+        <div class="mb-2" id="body1-section1-section2-div1-div2">
+          <input id="body1-section1-section2-div1-div2-input1" type="radio" name="payment" class="mr-2"><label for="credit-card" id="body1-section1-section2-div1-div2-label1">Credit Card</label>
+        </div>
+        <div class="mb-2" id="body1-section1-section2-div1-div3">
+          <input id="body1-section1-section2-div1-div3-input2" type="radio" name="payment" class="mr-2"><label for="paypal" id="body1-section1-section2-div1-div3-label2">Paypal</label>
+        </div>
+        <div class="mb-2" id="body1-section1-section2-div1-div4">
+          <input id="body1-section1-section2-div1-div4-input3" type="radio" name="payment" class="mr-2"><label for="bank-transfer" id="body1-section1-section2-div1-div4-label3">Bank Transfer</label>
+        </div>
+      </div>
+
+      <header class="my-3 text-xl font-bold" id="body1-section1-section2-header2">Enter your data</header>
+      <form id="body1-section1-section2-form1">
+        <div class="mb-3" id="body1-section1-section2-form1-div5">
+          <label for="card-number" class="block mb-1" id="body1-section1-section2-form1-div5-label4">Card Number</label>
+
+        </div>
+
+        <div class="flex space-x-2 mb-3" id="body1-section1-section2-form1-div6">
+          <div class="flex-grow" id="body1-section1-section2-form1-div6-div7">
+            <label class="block mb-1" id="body1-section1-section2-form1-div6-div7-label5">Expiration Date</label>
+            <div class="flex space-x-2" id="body1-section1-section2-form1-div6-div7-div8">
+              <input type="text" class="w-1/2 px-3 py-2 border rounded" placeholder="MM" id="body1-section1-section2-form1-div6-div7-div8-input5">
+              <input type="text" class="w-1/2 px-3 py-2 border rounded" placeholder="YY" id="body1-section1-section2-form1-div6-div7-div8-input6">
+            </div>
+          </div>
+          <div id="body1-section1-section2-form1-div6-div9">
+            <label for="ccv" class="block mb-1" id="body1-section1-section2-form1-div6-div9-label6">CCV</label>
+            <input id="body1-section1-section2-form1-div6-div9-input7" type="text" class="w-full px-3 py-2 border rounded">
+          </div>
+        </div>
+
+        <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" id="body1-section1-section2-form1-button1" onclick="addInteractionModule()">Complete</button>
+      </form>
+    </section>
+
+    <!-- Sign Up / Login Section -->
+    <nav class="mb-6" id="body1-section1-nav1">
+      <ul class="flex space-x-4 mb-3" id="body1-section1-nav1-ul1">
+        <li class="font-bold cursor-pointer" id="body1-section1-nav1-ul1-li1">Sign Up</li>
+        <li class="cursor-pointer" id="body1-section1-nav1-ul1-li2">Login</li>
+      </ul>
+      <section id="body1-section1-nav1-section3">
+        <form id="body1-section1-nav1-section3-form2">
+          <div class="flex space-x-2 mb-3" id="body1-section1-nav1-section3-form2-div10">
+            <div class="w-1/2" id="body1-section1-nav1-section3-form2-div10-div11">
+              <label for="first-name" class="block mb-1" id="body1-section1-nav1-section3-form2-div10-div11-label7">Name</label>
+              <input id="body1-section1-nav1-section3-form2-div10-div11-input8" type="text" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="w-1/2" id="body1-section1-nav1-section3-form2-div10-div12">
+              <label for="last-name" class="block mb-1" id="body1-section1-nav1-section3-form2-div10-div12-label8">Last Name</label>
+              <input id="body1-section1-nav1-section3-form2-div10-div12-input9" type="text" class="w-full px-3 py-2 border rounded">
+            </div>
+          </div>
+          <div class="flex space-x-2 mb-3" id="body1-section1-nav1-section3-form2-div13">
+            <div class="w-1/2" id="body1-section1-nav1-section3-form2-div13-div14">
+              <label for="phone" class="block mb-1" id="body1-section1-nav1-section3-form2-div13-div14-label9">Phone</label>
+              <input id="body1-section1-nav1-section3-form2-div13-div14-input10" type="text" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="w-1/2" id="body1-section1-nav1-section3-form2-div13-div15">
+              <label for="email" class="block mb-1" id="body1-section1-nav1-section3-form2-div13-div15-label10">E-mail</label>
+              <input id="body1-section1-nav1-section3-form2-div13-div15-input11" type="email" class="w-full px-3 py-2 border rounded">
+            </div>
+          </div>
+          <div class="flex space-x-2 mb-3" id="body1-section1-nav1-section3-form2-div16">
+            <div class="w-1/2" id="body1-section1-nav1-section3-form2-div16-div17">
+              <label for="password" class="block mb-1" id="body1-section1-nav1-section3-form2-div16-div17-label11">Password</label>
+              <input id="body1-section1-nav1-section3-form2-div16-div17-input12" type="password" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="w-1/2" id="body1-section1-nav1-section3-form2-div16-div18">
+              <label for="confirm-password" class="block mb-1" id="body1-section1-nav1-section3-form2-div16-div18-label12">Confirm Password</label>
+              <input id="body1-section1-nav1-section3-form2-div16-div18-input13" type="password" class="w-full px-3 py-2 border rounded">
+            </div>
+          </div>
+          <div class="mb-3" id="body1-section1-nav1-section3-form2-div19">
+            <input id="body1-section1-nav1-section3-form2-div19-input14" type="checkbox" class="mr-2"><label for="terms" id="body1-section1-nav1-section3-form2-div19-label13">I agree to Terms and Conditions</label>
+          </div>
+          <button type="button" class="bg-green-500 text-white px-4 py-2 rounded" id="body1-section1-nav1-section3-form2-button2">Sign Up</button>
+        </form>
+      </section>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="mb-6" id="body1-section1-section4">
+      <article id="body1-section1-section4-article1">
+
+        <button id="Parent_body1-section1-section4-article1_Next_body1-section1-section4-article1-p1_Queue_1">Modify Element</button>
+        <p class="text-justify mb-3" id="body1-section1-section4-article1-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod ligula vel augue lacinia, eget condimentum felis feugiat. Suspendisse potenti. Nullam nec eleifend ligula. Sed bibendum neque at varius tincidunt. Donec sit amet semper sapien.</p>
+      </article>
+    </section>
+
+    <!-- Form Section -->
+    <section class="mb-6" id="body1-section1-section5">
+      <div class="flex flex-col space-y-3" id="body1-section1-section5-div20">
+        <div id="body1-section1-section5-div20-div21">
+          <label for="label1" class="block mb-1" id="body1-section1-section5-div20-div21-label14">Label 1</label>
+          <input id="body1-section1-section5-div20-div21-input15" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div id="body1-section1-section5-div20-div22">
+          <label for="label2" class="block mb-1" id="body1-section1-section5-div20-div22-label15">Label 2</label>
+          <input id="body1-section1-section5-div20-div22-input16" type="text" class="w-full px-3 py-2 border rounded">
+        </div>
+        <button type="button" class="bg-red-500 text-white px-4 py-2 rounded" id="body1-section1-section5-div20-button3">Button</button>
+      </div>
+    </section>
+
+    <!-- Options Section -->
+    <section class="mb-6" id="body1-section1-section6">
+      <div class="flex space-x-6" id="body1-section1-section6-div23">
+        <div id="body1-section1-section6-div23-div24">
+          <div class="mb-2" id="body1-section1-section6-div23-div24-div25">
+            <input id="body1-section1-section6-div23-div24-div25-input17" type="radio" name="option" class="mr-2"><label for="radio1" id="body1-section1-section6-div23-div24-div25-label16">Radio 1</label>
+          </div>
+          <div class="mb-2" id="body1-section1-section6-div23-div24-div26">
+            <input id="body1-section1-section6-div23-div24-div26-input18" type="radio" name="option" class="mr-2"><label for="radio2" id="body1-section1-section6-div23-div24-div26-label17">Radio 2</label>
+          </div>
+          <div class="mb-2" id="body1-section1-section6-div23-div24-div27">
+            <input id="body1-section1-section6-div23-div24-div27-input19" type="radio" name="option" class="mr-2"><label for="radio3" id="body1-section1-section6-div23-div24-div27-label18">Radio 3</label>
+          </div>
+          <div class="mb-2" id="body1-section1-section6-div23-div24-div28">
+            <input id="body1-section1-section6-div23-div24-div28-input20" type="radio" name="option" class="mr-2"><label for="radio4" id="body1-section1-section6-div23-div24-div28-label19">Radio 4</label>
+          </div>
+        </div>
+        <div class="flex-grow" id="body1-section1-section6-div23-div29">
+          <img src="https://placehold.co/400x200" alt="Placeholder Image" class="mb-3" id="body1-section1-section6-div23-div29-img2">
+          <p id="body1-section1-section6-div23-div29-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eleifend ligula.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkbox Section -->
+    <section id="body1-section1-section7">
+      <div class="flex space-x-6" id="body1-section1-section7-div30">
+        <div id="body1-section1-section7-div30-div31">
+          <div class="mb-2" id="body1-section1-section7-div30-div31-div32">
+            <input id="body1-section1-section7-div30-div31-div32-input21" type="checkbox" class="mr-2"><label for="checkbox1" id="body1-section1-section7-div30-div31-div32-label20">Checkbox 1</label>
+          </div>
+          <div class="mb-2" id="body1-section1-section7-div30-div31-div33">
+            <input id="body1-section1-section7-div30-div31-div33-input22" type="checkbox" class="mr-2"><label for="checkbox2" id="body1-section1-section7-div30-div31-div33-label21">Checkbox 2</label>
+          </div>
+          <div class="mb-2" id="body1-section1-section7-div30-div31-div34">
+            <input id="body1-section1-section7-div30-div31-div34-input23" type="checkbox" class="mr-2"><label for="checkbox3" id="body1-section1-section7-div30-div31-div34-label22">Checkbox 3</label>
+          </div>
+          <div class="mb-2" id="body1-section1-section7-div30-div31-div35">
+            <input id="body1-section1-section7-div30-div31-div35-input24" type="checkbox" class="mr-2"><label for="checkbox4" id="body1-section1-section7-div30-div31-div35-label23">Checkbox 4</label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center mt-6" id="body1-footer1">
+    <p class="text-gray-600" id="body1-footer1-p3">Footer Content Here</p>
+  </footer>
+
+
+  <script data-custom-scripts="true">
+    function addInteractionModule() {
+      const interactionDiv = document.createElement('section');
+      interactionDiv.innerHTML = '<p id="Parent_body1-section1_Next_null_Queue_1" name="add">Add Interaction</p>';
+      document.getElementById('body1').appendChild(interactionDiv);
+    }
+  </script>
+</body>
+</html>

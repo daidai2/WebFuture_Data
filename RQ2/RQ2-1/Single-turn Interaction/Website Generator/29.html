@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low-Fidelity Wireframe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</head>
+<body class="bg-gray-100">
+<header class="flex justify-between items-center p-4 bg-white shadow">
+<div>
+<a class="text-blue-500 mr-4" href="#">Sign Up</a>
+<a class="text-blue-500" href="#">Login</a>
+</div>
+</header>
+<section class="max-w-7xl mx-auto p-8 bg-white shadow my-8">
+<form class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-gray-700" for="name">Name</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm" id="name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="last-name">Last Name</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm" id="last-name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="phone">Phone</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm" id="phone" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="email">E-mail</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-gray-700" for="password">Password</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm" id="password" type="password"/>
+</div>
+<div>
+<label class="block text-gray-700" for="confirm-password">Confirm Password</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm" id="confirm-password" type="password"/>
+</div>
+<div class="col-span-2 flex items-center">
+<input class="mr-2" id="terms" type="checkbox"/>
+<label class="text-gray-700" for="terms">I agree to Terms and Conditions</label>
+</div>
+<div class="col-span-2 text-right">
+<button class="bg-blue-500 text-white px-4 py-2 rounded shadow" type="submit">Sign Up</button>
+</div>
+</form>
+<aside class="my-8 flex">
+<img alt="Placeholder" class="w-1/3 mr-4" src="https://placehold.co/200x200"/>
+<div>
+<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div class="flex items-center">
+<input class="mr-2" id="back-checkbox" type="checkbox"/>
+<label class="text-gray-700" for="back-checkbox">Checkbox</label>
+</div>
+</div>
+</aside>
+<div class="my-8">
+<img alt="Large Placeholder" class="w-full mb-4" src="https://placehold.co/600x200"/>
+<p class="text-gray-700 mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id ante et lorem sollicitudin rutrum ut a ex. Curabitur in dui lobortis, placerat lorem eget, hendrerit risus. Suspendisse potenti. Aliquam rutrum ante ac mollis placerat. Integer ex leo, tincidunt et dignissim vel, porta vitae eros.
+      </p>
+</div>
+<div class="my-8 flex">
+<div class="mr-4">
+<label class="block text-gray-700" for="field1">Label</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm mb-4" id="field1" type="text"/>
+<label class="block text-gray-700" for="field2">Label</label>
+<input class="mt-1 block w-full border-gray-300 rounded shadow-sm mb-4" id="field2" type="text"/>
+<button class="bg-blue-500 text-white px-4 py-2 rounded shadow">Button</button>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="radio1" name="radio-group" type="radio"/>
+<label class="text-gray-700" for="radio1">Radio 1</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="radio2" name="radio-group" type="radio"/>
+<label class="text-gray-700" for="radio2">Radio 2</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="radio3" name="radio-group" type="radio"/>
+<label class="text-gray-700" for="radio3">Radio 3</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="radio4" name="radio-group" type="radio"/>
+<label class="text-gray-700" for="radio4">Radio 4</label>
+</div>
+<img alt="Small Placeholder" class="mb-4" src="https://placehold.co/200x200"/>
+</div>
+<div>
+<p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+</div>
+<div class="ml-4">
+<div class="flex items-center mb-4">
+<input class="mr-2" id="checkbox1" type="checkbox"/>
+<label class="text-gray-700" for="checkbox1">Checkbox 1</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="checkbox2" type="checkbox"/>
+<label class="text-gray-700" for="checkbox2">Checkbox 2</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="checkbox3" type="checkbox"/>
+<label class="text-gray-700" for="checkbox3">Checkbox 3</label>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="checkbox4" type="checkbox"/>
+<label class="text-gray-700" for="checkbox4">Checkbox 4</label>
+</div>
+</div>
+</div>
+</section>
+<footer class="p-4 bg-white shadow mt-8">
+<p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.</p>
+<button class="bg-gray-300 text-black px-4 py-2 rounded shadow mb-4" id="6_1" onclick="showAlert()">Back</button>
+<p class="text-gray-700">Add Element</p>
+</footer>
+</body>
+</html>

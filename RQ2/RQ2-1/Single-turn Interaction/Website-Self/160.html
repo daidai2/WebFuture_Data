@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Layout</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, section, footer {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        .content div {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="nav-links">
+<a href="#">Link1</a>
+<a href="#">Link2</a>
+<a href="#">Link3</a>
+<a href="#">Link4</a>
+<a href="#">Link5</a>
+</div>
+</header>
+<section class="hero">
+<h1>Title1</h1>
+<h2>Title1-1</h2>
+</section>
+<section>
+<h2>Title2</h2>
+<div class="content">
+<div>
+<img alt="PIC2-1" src="PIC2-1.png"/>
+<h3>Title2-1</h3>
+<p>Text2-1</p>
+</div>
+<div>
+<img alt="PIC2-2" src="PIC2-2.png"/>
+<h3>Title2-2</h3>
+<p>Text2-2</p>
+</div>
+<div>
+<img alt="PIC2-3" src="PIC2-3.png"/>
+<h3>Title2-3</h3>
+<p>Text2-3</p>
+</div>
+</div>
+<div class="content">
+<button id="button2">Button2</button>
+</div>
+</section>
+<section>
+<h2>Title3</h2>
+</section>
+<section>
+<h2>Title4-1</h2>
+<div class="content">
+<div>
+<img alt="PIC4-1" src="PIC4-1.png"/>
+<p>Text4-1</p>
+<button id="6_1">Button4-1</button>
+</div>
+<div>
+<h3>Label4-1</h3>
+<h4>Title4-3</h4>
+<p>Text4-3</p>
+</div>
+<div>
+<h3>Label4-2</h3>
+<h4>Title4-5</h4>
+<p>Text4-5</p>
+</div>
+</div>
+</section>
+<section>
+<h2>Title4-2</h2>
+<div class="content">
+<div>
+<img alt="PIC4-2" src="PIC4-2.png"/>
+<h4>Title4-2-1</h4>
+<p>Text4-2</p>
+<button>Button4-2</button>
+</div>
+<div>
+<h4>Title4-6</h4>
+<img alt="PIC4-3" src="PIC4-3.png"/>
+<p>Text4-6</p>
+<button>Button4-3</button>
+</div>
+<div>
+<h4>Title4-7</h4>
+<img alt="PIC4-4" src="PIC4-4.png"/>
+<p>Text4-7</p>
+</div>
+</div>
+</section>
+<section>
+<h2>Title5</h2>
+<div class="content">
+<div>
+<label for="textInput1">TextInput</label>
+<input id="textInput1" type="text"/>
+</div>
+<div>
+<label for="textInput2">TextInput</label>
+<input id="textInput2" type="text"/>
+</div>
+<div>
+<label for="textArea">TextArea</label>
+<textarea id="textArea"></textarea>
+</div>
+</div>
+<div class="content">
+<button>Button5</button>
+</div>
+</section>
+<footer>
+<div class="footer-links">
+<div>
+<h4>Title5</h4>
+<ul>
+<li><a href="#">Link5-1</a></li>
+<li><a href="#">Link5-2</a></li>
+<li><a href="#">Link5-3</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a href="#">Link5-4</a></li>
+<li><a href="#">Link5-5</a></li>
+<li><a href="#">Link5-6</a></li>
+<li><a href="#">Link5-7</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-labels">
+<p>Label6-1</p>
+<p>Label6-2</p>
+</div>
+</footer>
+<script>
+        document.getElementById('button2').addEventListener('click', function() {
+            alert('Add Interaction');
+
+            // Delete the first text input field on the page
+            var textInput1 = document.getElementById('textInput1');
+            if (textInput1) {
+                textInput1.parentNode.removeChild(textInput1);
+            }
+
+            // Move button "Button4-1" to the bottom of the page
+            var button4_1 = document.getElementById('button4-1');
+            if (button4_1) {
+                document.body.appendChild(button4_1);
+            }
+        });
+    </script>
+</body>
+</html>

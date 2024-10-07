@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4 h-32 flex items-center">
+    <div class="container mx-auto flex flex-col justify-center h-full">
+      <!-- Links Section -->
+      <div class="flex justify-center space-x-4 items-center h-full">
+        <a href="/notifications" class="text-white">WELCOME</a>
+        <a href="/dashboard" class="text-gray-400">WHO WE ARE</a>
+        <a href="/analytics" class="text-gray-400">WHAT WE DO</a>
+        <a href="/login" class="text-gray-400">GET IN TOUCH</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <div class="flex">
+    <!-- Main Content -->
+    <main class="w-full">
+      <!-- Section 1 -->
+      <section class="bg-purple-500 p-8">
+        <h2 class="text-3xl text-white font-bold mb-4">Hyperspace</h2>
+        <p class="mb-4 text-gray-300">Just another fine responsive site template designed by HTML5 UP<br>and released for free under the Creative Commons.</p>
+        <button class="bg-purple-500 text-white px-4 py-2 mb-20 border border-white rounded-l-full rounded-r-full" onclick="window.location.assign('/index')">LEARN MORE</button>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="grid gap-0 grid-cols-1">
+        <article class="bg-blue-700 p-8 shadow flex items-center w-full h-80">
+          <img src="pic01.jpg" class="h-full w-auto object-cover" alt="pic01">
+          <div class="ml-6">
+            <h3 class="text-2xl text-white mb-4">Sed ipsum dolor</h3>
+            <p class="mb-4 text-gray-300">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+            <button class="bg-blue-700 text-white px-4 py-2 border border-white rounded-l-full rounded-r-full" onclick="window.location.assign('/categories')">LEARN MORE</button>
+          </div>
+        </article>
+
+        <article class="bg-blue-700 p-8 shadow flex items-center w-full h-80">
+          <img src="pic02.jpg" class="h-full w-auto object-cover" alt="pic02">
+          <div class="ml-6">
+            <h3 class="text-2xl text-white mb-4">Feugiat consequat</h3>
+            <p class="mb-4 text-gray-300">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+            <button class="bg-blue-700 text-white px-4 py-2 border border-white rounded-l-full rounded-r-full" onclick="window.location.assign('/signup')">LEARN MORE</button>
+          </div>
+        </article>
+
+        <article class="bg-blue-700 p-8 shadow flex items-center w-full h-80">
+          <img src="pic03.jpg" class="h-full w-auto object-cover" alt="pic03">
+          <div class="ml-6">
+            <h3 class="text-2xl text-white mb-4">Ultricies aliquam</h3>
+            <p class="mb-4 text-gray-300">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+            <button class="bg-blue-700 text-white px-4 py-2 border border-white rounded-l-full rounded-r-full" onclick="window.location.assign('/forgot_password')">LEARN MORE</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="bg-pink-800 p-8">
+        <h3 class="text-2xl text-white font-bold mb-6">What we do</h3>
+        <p class="mb-8 text-white font-bold">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+        <div class="grid grid-cols-2 grid-rows-3 gap-0">
+          <div class="flex items-center bg-pink-800 border border-white p-6 shadow w-full h-64">
+            <div class="relative w-12 h-12">
+              <img src="https://placehold.co/33x33/FFFFFF/FFFFFF" class="rounded-full absolute inset-0 w-full h-full" alt="Code Icon">
+              <span class="text-pink-800 absolute inset-0 flex items-center justify-center font-bold">Code</span>
+            </div>
+            <div class="ml-6">
+              <h4 class="text-lg text-white font-bold">Lorem ipsum amet</h4>
+              <p class="text-gray-200">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-pink-800 border border-white p-6 shadow w-full h-64">
+            <div class="relative w-12 h-12">
+              <img src="https://placehold.co/33x33/FFFFFF/FFFFFF" class="rounded-full absolute inset-0 w-full h-full" alt="Lock Icon">
+              <span class="text-pink-800 absolute inset-0 flex items-center justify-center font-bold">Lock</span>
+            </div>
+            <div class="ml-6">
+              <h4 class="text-lg text-white font-bold">Aliquam sed nullam</h4>
+              <p class="text-gray-200">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-pink-800 border border-white p-6 shadow w-full h-64">
+            <div class="relative w-12 h-12">
+              <img src="https://placehold.co/33x33/FFFFFF/FFFFFF" class="rounded-full absolute inset-0 w-full h-full" alt="Settings Icon">
+              <span class="text-pink-800 absolute inset-0 flex items-center justify-center font-bold">Settings</span>
+            </div>
+            <div class="ml-6">
+              <h4 class="text-lg text-white font-bold">Sed erat ullam corper</h4>
+              <p class="text-gray-200">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-pink-800 border border-white p-6 shadow w-full h-64">
+            <div class="relative w-12 h-12">
+              <img src="https://placehold.co/33x33/FFFFFF/FFFFFF" class="rounded-full absolute inset-0 w-full h-full" alt="Computer Icon">
+              <span class="text-pink-800 absolute inset-0 flex items-center justify-center font-bold">Computer</span>
+            </div>
+            <div class="ml-6">
+              <h4 class="text-lg text-white font-bold">Veroeros quis lorem</h4>
+              <p class="text-gray-200">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-pink-800 border border-white p-6 shadow w-full h-64">
+            <div class="relative w-12 h-12">
+              <img src="https://placehold.co/33x33/FFFFFF/FFFFFF" class="rounded-full absolute inset-0 w-full h-full" alt="Link Icon">
+              <span class="text-pink-800 absolute inset-0 flex items-center justify-center font-bold">Link</span>
+            </div>
+            <div class="ml-6">
+              <h4 class="text-lg text-white font-bold">Urna quis bibendum</h4>
+              <p class="text-gray-200">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-pink-800 border border-white p-6 shadow w-full h-64">
+            <div class="relative w-12 h-12">
+              <img src="https://placehold.co/33x33/FFFFFF/FFFFFF" class="rounded-full absolute inset-0 w-full h-full" alt="Diamond Icon">
+              <span class="text-pink-800 absolute inset-0 flex items-center justify-center font-bold">Diamond</span>
+            </div>
+            <div class="ml-6">
+              <h4 class="text-lg text-white font-bold">Aliquam urna dapibus</h4>
+              <p class="text-gray-200">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+            </div>
+          </div>
+        </div>
+        <button class="bg-pink-800 text-white px-4 py-2 mt-4 border border-white rounded-l-full rounded-r-full" onclick="window.location.assign('/index')">LEARN MORE</button>
+      </section>
+
+      <!-- Section 4: Form Section -->
+      <section class="flex bg-purple-700 p-8">
+        <div class="w-3/4">
+          <h3 class="text-2xl text-white font-bold mb-2">Get in touch</h3>
+          <p class="mb-4 text-gray-200">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+          <form class="space-y-4">
+            <div class="flex space-x-4">
+              <label for="input-1" class="block text-white font-bold">Name</label>
+              <label for="input-2" class="block ml-48 text-white font-bold">Email</label>
+            </div>
+            <div class="flex space-x-4">
+              <input type="text" class="w-1/4 p-2 border border-purple-400 bg-purple-600 text-white">
+              <input type="text" class="w-1/4 p-2 border border-purple-400 bg-purple-600 text-white">
+            </div>
+            <div>
+              <label for="textarea" class="block text-white font-bold">Message</label>
+              <textarea class="w-9/20 p-2 border border-purple-400 bg-purple-600 text-white"></textarea>
+            </div>
+            <button type="submit" class="bg-purple-700 text-white px-4 py-2 border border-white rounded-l-full rounded-r-full" onclick="window.location.assign('/reports')">SEND MESSAGE</button>
+          </form>
+        </div>
+        <div class="w-1/4 flex flex-col space-y-4 ml-4">
+          <div>
+            <h4 class="text-lg text-white font-bold mb-2">Address</h4>
+            <p class="text-gray-200">12345 Somewhere Road #654<br>Nashville, TN 00000-0000<br>USA</p>
+          </div>
+          <div>
+            <h4 class="text-lg text-white font-bold mb-2">Email</h4>
+            <p class="text-gray-200">user@untitled.tld</p>
+          </div>
+          <div>
+            <h4 class="text-lg text-white font-bold mb-2">Phone</h4>
+            <p class="text-gray-200">(000) 000-0000</p>
+          </div>
+          <div>
+            <h4 class="text-lg text-white font-bold mb-2">Social</h4>
+            <div class="flex space-x-2 mt-2">
+              <img src="icons/twitter.png" class="rounded-full" alt="Twitter">
+              <img src="icons/facebook.png" class="rounded-full" alt="Facebook">
+              <img src="icons/github.png" class="rounded-full" alt="GitHub">
+              <img src="icons/instagram.png" class="rounded-full" alt="Instagram">
+              <img src="icons/linkedin.png" class="rounded-full" alt="LinkedIn">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-purple-900 text-white py-8">
+    <div class="container mx-auto">
+      <ul class="flex space-x-4">
+        <li><a href="/analytics" class="text-gray-400 text-sm">© Untitled. All rights reserved.</a></li>
+        <li><a href="/index" class="text-gray-400 text-sm">Design: HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+
+</body></html>

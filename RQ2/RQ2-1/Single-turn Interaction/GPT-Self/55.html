@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Implementation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header, section, footer {
+            margin: 20px 0;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subtitle {
+            font-size: 18px;
+        }
+        .video {
+            width: 100%;
+            height: 300px;
+            background: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video::before {
+            content: "▶";
+            font-size: 50px;
+        }
+        .post-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .post {
+            width: calc(50% - 20px);
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .post img {
+            width: 100%;
+            height: 150px;
+            background: #ccc;
+        }
+        .large-image {
+            width: 100%;
+            height: 400px;
+            background: #ccc;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .form-group label {
+            display: block;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .form-group input[type="checkbox"], .form-group input[type="radio"] {
+            width: auto;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+        }
+        .form-actions-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-actions-bottom button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="title">Title</div>
+<div class="subtitle">Title Page</div>
+<a href="#" id="add-element">Add Element</a>
+</header>
+<section>
+<div class="video"></div>
+</section>
+<section>
+<div class="post-list">
+<div class="post">
+<button type="button">Modify Element</button>
+<div class="title">Title</div>
+<div class="subtitle">Title Post</div>
+</div>
+<div class="post">
+<img alt="Post Image" src="#"/>
+<div class="title">Title</div>
+<div class="subtitle">Title Post</div>
+</div>
+<div class="post">
+<img alt="Post Image" src="#"/>
+<div class="title">Title</div>
+<div class="subtitle">Title Post</div>
+</div>
+<div class="post">
+<img alt="Post Image" src="#"/>
+<div class="title">Title</div>
+<div class="subtitle">Title Post</div>
+</div>
+</div>
+</section>
+<section>
+<div class="large-image"></div>
+</section>
+<section>
+<form>
+<div class="form-group">
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div class="form-group">
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="United States">United States</option>
+</select>
+</div>
+<div class="form-group">
+<label for="state">State</label>
+<select id="state" name="state">
+<option value="">Choose</option>
+</select>
+</div>
+<div class="form-group">
+<label for="city">City</label>
+<input id="city" name="city" type="text"/>
+</div>
+<div class="form-group">
+<label for="zip-code">Zip Code</label>
+<input id="zip-code" name="zip-code" type="text"/>
+</div>
+<div class="form-actions">
+<button type="submit">Next Step</button>
+</div>
+<div class="form-actions-bottom">
+<button id="6_1" type="button">Back</button>
+</div>
+</form>
+</section>
+<footer>
+<div class="form-group">
+<input id="option1" name="option1" type="checkbox"/>
+<label for="option1">Option 1</label>
+</div>
+<div class="form-group">
+<input id="option2" name="option2" type="checkbox"/>
+<label for="option2">Option 2</label>
+</div>
+<div class="form-group">
+<input id="radio1" name="radio-group" type="radio"/>
+<label for="radio1">Radio 1</label>
+</div>
+<div class="form-group">
+<input id="radio2" name="radio-group" type="radio"/>
+<label for="radio2">Radio 2</label>
+</div>
+</footer>
+</div>
+</body>
+</html>

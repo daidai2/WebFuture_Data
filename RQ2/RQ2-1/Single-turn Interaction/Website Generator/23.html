@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout and Product Catalog</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .custom-font-size {
+      font-size: 50px;
+    }
+  </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Add event listener for the Search button
+      document.querySelector('button.ml-2').addEventListener('click', function () {
+        // Create new module with text "Add Interaction"
+        const newModule = document.createElement('div');
+        newModule.classList.add('p-4', 'border', 'bg-white', 'mt-4');
+        const newText = document.createElement('p');
+        newText.textContent = 'Add Interaction';
+        newModule.appendChild(newText);
+        document.body.appendChild(newModule);
+      });
+
+      // Move "PRODUCT 1" to the right of "C#"
+      const csLabel = document.querySelector('label[for="standard"]');
+      if (csLabel) {
+        const productText = document.createElement('span');
+        productText.textContent = 'PRODUCT 1';
+        csLabel.parentNode.insertBefore(productText, csLabel.nextSibling);
+      }
+
+      // Change the font size of the first text to 50px
+      const firstText = document.querySelector('body section:nth-child(1) h1');
+      if (firstText) {
+        firstText.classList.add('custom-font-size');
+      }
+    });
+  </script>
+</head>
+<body class="p-6 bg-gray-100">
+<section class="mb-8">
+<header class="mb-6">
+<h1 class="text-3xl font-bold">Checkout</h1>
+</header>
+<div class="mb-6">
+<h2 class="text-2xl font-semibold mb-4">Shipping Address</h2>
+<div class="mb-4">
+<label class="block text-lg">First Name</label>
+<input class="border p-2 w-full" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-lg">Last Name</label>
+<input class="border p-2 w-full" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-lg">Company</label>
+<input class="border p-2 w-full" type="text"/>
+</div>
+</div>
+<div class="mb-6">
+<h2 class="text-2xl font-semibold mb-4">Shipping Service</h2>
+<div class="mb-4">
+<input class="mr-2" id="standard" name="shipping" type="radio"/>
+<label class="text-lg" for="standard">Standard - 14 days - $6.59</label>
+</div>
+<div class="mb-4">
+<input class="mr-2" id="expedited" name="shipping" type="radio"/>
+<label class="text-lg" for="expedited">Expedited - 7 days - $14.97</label>
+</div>
+<div class="mb-4">
+<input class="mr-2" id="express" name="shipping" type="radio"/>
+<label class="text-lg" for="express">Express - 3 days - $19.97</label>
+</div>
+</div>
+<div class="mb-6 flex items-center">
+<input checked="" class="mr-2" type="checkbox"/>
+<label class="text-lg mr-4" id="6_2_2_1_1">C#</label>
+<button class="p-2 border bg-gray-200">Get Drop Down Here</button>
+</div>
+<div class="mb-6">
+<div class="flex items-center mb-2">
+<input class="mr-2" type="checkbox"/>
+<label class="text-lg" id="6_2_2_1_2">C#</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" type="checkbox"/>
+<label class="text-lg">Java</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" type="checkbox"/>
+<label class="text-lg">PHP</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" type="checkbox"/>
+<label class="text-lg">Visual Basic</label>
+</div>
+</div>
+</section>
+<section>
+<header class="mb-6">
+<h1 class="text-3xl font-bold">Product Catalog</h1>
+</header>
+<div class="mb-6 flex justify-end">
+<input class="border p-2" placeholder="Search" type="text"/>
+<button class="ml-2 p-2 border bg-blue-500 text-white">Search</button>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<article class="p-4 border bg-white">
+<img alt="Product 1" class="w-full mb-4" src="https://placehold.co/200"/>
+<h3 class="text-xl font-semibold mb-2" id="6_2_1_1_2">PRODUCT 1</h3>
+<p class="text-lg mb-2">$20.00</p>
+<button class="p-2 border bg-blue-500 text-white w-full">ADD TO CART</button>
+</article>
+<article class="p-4 border bg-white">
+<img alt="Product 2" class="w-full mb-4" src="https://placehold.co/200"/>
+<h3 class="text-xl font-semibold mb-2">PRODUCT 2</h3>
+<p class="text-lg mb-2">$10.00</p>
+<button class="p-2 border bg-blue-500 text-white w-full">ADD TO CART</button>
+</article>
+<article class="p-4 border bg-white">
+<img alt="Product 3" class="w-full mb-4" src="https://placehold.co/200"/>
+<h3 class="text-xl font-semibold mb-2">PRODUCT 3</h3>
+<p class="text-lg mb-2">$40.00</p>
+<button class="p-2 border bg-blue-500 text-white w-full">ADD TO CART</button>
+</article>
+</div>
+</section>
+</body>
+</html>

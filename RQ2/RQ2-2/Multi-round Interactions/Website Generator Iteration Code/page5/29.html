@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-icon {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+    }
+    .custom-button {
+      color: #FF7F7F;
+      border: 2px solid #FF7F7F;
+      background-color: #FFFFFF;
+      width: 20%; /* Reduce button width */
+      font-size: 0.875rem; /* equivalent to text-sm */
+    }
+    .custom-button-2 {
+      color: #FF7F7F;
+      border: 2px solid #FF7F7F;
+      background-color: #FFFFFF;
+    }
+    .divider {
+      border-top: 4px solid #FF7F7F;
+      margin: 0;
+    }
+    .short-divider {
+      border-top: 4px solid #FF7F7F;
+      width: 120px; /* Shorten the divider */
+      margin: 20px 0;
+    }
+    .text-base { /* Adjusting the font size for Title2-1 */
+      font-size: 1rem;
+    }
+    .text-5xl { /* Adjusting the font size for Title2 */
+      font-size: 3rem;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      filter: grayscale(100%);
+    }
+    .diamond {
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      border: 2px solid gray;
+      transform: rotate(45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .diamond img {
+      transform: rotate(-45deg);
+      width: 40px;
+      height: 40px;
+      color: red;
+    }
+    .large-image {
+      width: 100%; /* Adjust as needed to make the image larger */
+      height: auto;
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <div class="container mx-auto p-4 bg-white">
+    <!-- Fixed Icon -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Octicons-three-bars.svg" alt="Bars" class="fixed-icon" style="color: red;"> <!-- Change to red bars icon -->
+
+    <!-- Header Section -->
+    <header class="flex justify-between items-center bg-white p-4 shadow mt-8">
+      <div class="text-xl font-bold">Editorial by HTML5 UP</div> <!-- Change Title1 -->
+      <nav class="space-x-4">
+        <button class="p-1 bg-gray-200 rounded text-sm">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Twitter_bird_logo_2012.svg" alt="Twitter" class="icon">
+        </button>
+        <button class="p-1 bg-gray-200 rounded text-sm">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
+        </button>
+        <button class="p-1 bg-gray-200 rounded text-sm">
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg" alt="Snapchat" class="icon">
+        </button>
+        <button class="p-1 bg-gray-200 rounded text-sm">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
+        </button>
+        <button class="p-1 bg-gray-200 rounded text-sm">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo_Monogram.svg" alt="Medium" class="icon">
+        </button>
+      </nav>
+    </header>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Main Content Section -->
+    <section class="mt-0">
+      <!-- First Subsection -->
+      <article class="bg-white p-6 shadow flex">
+        <div class="w-full flex-1 mr-8 mt-8">
+          <h1 class="text-5xl font-bold mb-8">Hi, I’m Editorial<br> by HTML5 UP</h1> <!-- Change Title2 with a line break -->
+          <h2 class="text-base mb-6">A FREE AND FULLY RESPONSIVE SITE TEMPLATE</h2> <!-- Change Title2-1 -->
+          <p class="mb-8">Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p> <!-- Change Text -->
+          <button class="custom-button-2 py-2 px-4 rounded">LEARN MORE</button> <!-- Change Button2 -->
+        </div>
+        <div class="w-full flex-1">
+          <img src="pic01.jpg" alt="PIC2" class="large-image ml-4"> <!-- Enlarged image -->
+        </div>
+      </article>
+
+      <!-- Second Subsection -->
+      <article class="bg-white p-6 shadow flex flex-col">
+        <h2 class="text-3xl font-bold mb-8">Erat lacinia</h2> <!-- Change Title3 -->
+        <div class="short-divider mt-4 mb-4"></div> <!-- Shortened divider -->
+        <div class="grid grid-cols-2 w-full mt-8">
+          <!-- Link3-1 to Link3-4 -->
+          <div class="bg-white p-6 m-0 flex">
+            <div class="diamond">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Octicons-terminal.svg" alt="Diamond" class="icon" style="color: red;">
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold mt-4 mb-2">Erat lacinia</h3> <!-- Change Title3-1 -->
+              <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text3-1 -->
+            </div>
+          </div>
+          <div class="bg-white p-6 m-0 flex">
+            <div class="diamond">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Octicons-mark-github.svg" alt="Paper-plane" class="icon" style="color: red;">
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold mt-4 mb-2">Sapien veroeros</h3> <!-- Change Title3-2 -->
+              <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text3-2 -->
+            </div>
+          </div>
+          <div class="bg-white p-6 m-0 flex">
+            <div class="diamond">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Octicons-beaker.svg" alt="Rocket" class="icon" style="color: red;">
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold mt-4 mb-2">Quam lorem ipsum</h3> <!-- Change Title3-3 -->
+              <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text3-3 -->
+            </div>
+          </div>
+          <div class="bg-white p-6 m-0 flex">
+            <div class="diamond">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Octicons-pulse.svg" alt="Signal" class="icon" style="color: red;">
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold mt-4 mb-2">Sed magna finibus</h3> <!-- Change Title3-4 -->
+              <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text3-4 -->
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Third Subsection -->
+      <article class="bg-white p-6 shadow flex flex-col">
+        <h2 class="text-3xl font-bold mb-8">Ipsum sed dolor</h2> <!-- Change Title4 -->
+        <div class="short-divider mt-4 mb-4"></div> <!-- Shortened divider -->
+        <div class="grid grid-cols-2 w-full mt-8">
+          <!-- PIC4-1 to PIC4-6 -->
+          <div class="bg-white p-6 m-0">
+            <img src="pic01.jpg" alt="PIC4-1" class="large-image mb-4"> <!-- Enlarged image -->
+            <h3 class="font-bold mt-4 mb-2">Interdum aenean</h3> <!-- Change Title4-1 -->
+            <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text4-1 -->
+            <button class="custom-button py-2 rounded">MORE</button> <!-- Change Button4-1 -->
+          </div>
+          <div class="bg-white p-6 m-0">
+            <img src="pic02.jpg" alt="PIC4-2" class="large-image mb-4"> <!-- Enlarged image -->
+            <h3 class="font-bold mt-4 mb-2">Nulla amet dolore</h3> <!-- Change Title4-2 -->
+            <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text4-2 -->
+            <button class="custom-button py-2 rounded">MORE</button> <!-- Change Button4-2 -->
+          </div>
+          <div class="bg-white p-6 m-0">
+            <img src="pic03.jpg" alt="PIC4-3" class="large-image mb-4"> <!-- Enlarged image -->
+            <h3 class="font-bold mt-4 mb-2">Tempus ullamcorper</h3> <!-- Change Title4-3 -->
+            <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text4-3 -->
+            <button class="custom-button py-2 rounded">MORE</button> <!-- Change Button4-3 -->
+          </div>
+          <div class="bg-white p-6 m-0">
+            <img src="pic04.jpg" alt="PIC4-4" class="large-image mb-4"> <!-- Enlarged image -->
+            <h3 class="font-bold mt-4 mb-2">Sed etiam facilis</h3> <!-- Change Title4-4 -->
+            <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text4-4 -->
+            <button class="custom-button py-2 rounded">MORE</button> <!-- Change Button4-4 -->
+          </div>
+          <div class="bg-white p-6 m-0">
+            <img src="pic05.jpg" alt="PIC4-5" class="large-image mb-4"> <!-- Enlarged image -->
+            <h3 class="font-bold mt-4 mb-2">Feugiat lorem aenean</h3> <!-- Change Title4-5 -->
+            <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text4-5 -->
+            <button class="custom-button py-2 rounded">MORE</button> <!-- Change Button4-5 -->
+          </div>
+          <div class="bg-white p-6 m-0">
+            <img src="pic06.jpg" alt="PIC4-6" class="large-image mb-4"> <!-- Enlarged image -->
+            <h3 class="font-bold mt-4 mb-2">Amet varius aliquam</h3> <!-- Change Title4-6 -->
+            <p class="mb-4">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> <!-- Change Text4-6 -->
+            <button class="custom-button py-2 rounded">MORE</button> <!-- Change Button4-6 -->
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

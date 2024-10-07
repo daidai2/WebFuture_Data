@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .btn-custom {
+      background-color: #C6A7B1;
+    }
+    .btn-custom:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body>
+  <main class="p-6 bg-gray-100">
+    <!-- Header -->
+    <h1 class="text-2xl font-bold mb-6">Checkout</h1>
+
+    <!-- Shipping Address Section -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="first-name">First Name</label>
+          <input class="border border-gray-300 p-2 w-full" type="text" id="first-name" name="first-name">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="last-name">Last Name</label>
+          <input class="border border-gray-300 p-2 w-full" type="text" id="last-name" name="last-name">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="company">Company</label>
+          <input class="border border-gray-300 p-2 w-full" type="text" id="company" name="company">
+        </div>
+      </form>
+    </section>
+
+    <!-- Shipping Service Section -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Shipping Service</h2>
+      <div class="mb-4">
+        <input type="radio" id="standard" name="shipping" value="standard" class="mr-2">
+        <label for="standard">Standard (14 days - $6.99)</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" id="expedited" name="shipping" value="expedited" class="mr-2">
+        <label for="expedited">Expedited (7 days - $11.99)</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" id="express" name="shipping" value="express" class="mr-2">
+        <label for="express">Express (3 days - $19.99)</label>
+      </div>
+    </section>
+
+    <!-- Write Review Section -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Write Review</h2>
+      <div class="flex items-center mb-4">
+        <button class="bg-blue-500 text-white p-2 rounded">Modify Element</button>
+      </div>
+      <form>
+        <label class="block font-semibold mb-2">Rate Product</label>
+        <div class="flex items-center mb-4">
+          <input type="radio" id="star1" name="rating" value="1" class="mr-1">
+          <label for="star1">★</label>
+          <input type="radio" id="star2" name="rating" value="2" class="mr-1">
+          <label for="star2">★</label>
+          <input type="radio" id="star3" name="rating" value="3" class="mr-1">
+          <label for="star3">★</label>
+          <input type="radio" id="star4" name="rating" value="4" class="mr-1">
+          <label for="star4">★</label>
+          <input type="radio" id="star5" name="rating" value="5" class="mr-1">
+          <label for="star5">★</label>
+          <span class="ml-2">Bad :(</span>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="headline">Headline</label>
+          <input class="border border-gray-300 p-2 w-full" type="text" id="headline" name="headline">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="review">Review</label>
+          <textarea class="border border-gray-300 p-2 w-full" id="review" name="review"></textarea>
+        </div>
+        <button class="bg-blue-500 text-white p-2 rounded">Submit</button>
+      </form>
+    </section>
+
+    <!-- Additional Elements Section -->
+    <section>
+      <div class="mb-4">
+        <input class="border border-gray-300 p-2 w-full" type="text" placeholder="Additional Field">
+      </div>
+      <ul class="mb-4">
+        <li class="mb-2"><input type="checkbox" class="mr-2"> Option 1</li>
+        <li class="mb-2"><input type="checkbox" class="mr-2"> Option 2</li>
+        <li class="mb-2"><input type="radio" class="mr-2" name="additional"> Option 3</li>
+      </ul>
+      <div class="flex space-x-4">
+        <button id="backButton" class="bg-gray-500 text-white p-2 rounded">Back</button>
+        <button class="bg-blue-500 text-white p-2 rounded">Button</button>
+      </div>
+      <div id="newModuleContainer"></div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("backButton").addEventListener("click", function() {
+      const newModuleContainer = document.getElementById("newModuleContainer");
+      const newModule = document.createElement("div");
+      newModule.className = "mt-6 p-4 bg-white shadow rounded";
+      newModule.innerHTML = "<p class='text-lg'>Add Interaction</p>";
+      newModuleContainer.appendChild(newModule);
+    });
+
+    // Change the background color and hover color of the first button
+    const firstButton = document.querySelector("button");
+    firstButton.classList.add("btn-custom");
+  </script>
+</body>
+</html>

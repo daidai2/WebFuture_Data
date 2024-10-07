@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style></style>
+</head>
+<body class="bg-gray-100" id="body1">
+<!-- Main Wrapper -->
+<div class="container mx-auto p-4" id="body1-div1">
+<!-- Header Section -->
+<header class="flex items-center justify-between mb-4" id="body1-div1-header1">
+<div class="flex items-center" id="body1-div1-header1-div2">
+<label class="mr-2 text-4xl" for="language" id="body1-div1-header1-div2-label1">C Sharp</label>
+<select class="border rounded p-2" id="body1-div1-header1-div2-select1">
+<option id="body1-div1-header1-div2-select1-option1">C Sharp</option>
+</select>
+</div>
+</header>
+<!-- Body Section -->
+<section class="mb-8" id="body1-div1-section1">
+<div class="mb-4" id="body1-div1-section1-div3">
+<label class="block mb-2" id="body1-div1-section1-div3-label2">Select Programming Languages:</label>
+<div class="space-x-4" id="body1-div1-section1-div3-div4">
+<label id="body1-div1-section1-div3-div4-label3"><input class="mr-2" id="body1-div1-section1-div3-div4-label3-input1" type="checkbox"/>C#</label>
+<label id="body1-div1-section1-div3-div4-label4"><input class="mr-2" id="body1-div1-section1-div3-div4-label4-input2" type="checkbox"/>Java</label>
+<label id="body1-div1-section1-div3-div4-label5"><input class="mr-2" id="body1-div1-section1-div3-div4-label5-input3" type="checkbox"/>PHP</label>
+<label id="body1-div1-section1-div3-div4-label6"><input class="mr-2" id="body1-div1-section1-div3-div4-label6-input4" type="checkbox"/>Visual Basic</label>
+</div>
+</div>
+<div class="mb-8" id="body1-div1-section1-div5">
+<img alt="Placeholder" class="mx-auto border border-gray-300" id="body1-div1-section1-div5-img1" src="https://placehold.co/600x300"/>
+</div>
+<div class="mb-4" id="body1-div1-section1-div6">
+<p class="border-b border-gray-300 mb-2" id="body1-div1-section1-div6-p1"></p>
+<p class="border-b border-gray-300 mb-2" id="body1-div1-section1-div6-p2"></p>
+<p class="border-b border-gray-300 mb-2" id="body1-div1-section1-div6-p3"></p>
+<p class="border-b border-gray-300 mb-2" id="body1-div1-section1-div6-p4"></p>
+</div>
+<div class="mb-8" id="body1-div1-section1-div7">
+<input class="block border rounded p-2 mb-2 w-full" id="body1-div1-section1-div7-input5" placeholder="Input 1" type="text"/>
+<input class="block border rounded p-2 mb-2 w-full" id="body1-div1-section1-div7-input6" placeholder="Input 2" type="text"/>
+<button class="bg-green-500 text-white py-2 px-4 rounded mt-2" id="body1-div1-section1-div7-button2" onclick="showAlert()">
+          Go
+        </button>
+</div>
+<div class="mb-4" id="body1-div1-section1-div8">
+<label id="body1-div1-section1-div8-label7"><input class="mr-2" id="body1-div1-section1-div8-label7-input7" type="checkbox"/>Option 1</label><br id="body1-div1-section1-div8-br1"/>
+<label id="body1-div1-section1-div8-label8"><input class="mr-2" id="body1-div1-section1-div8-label8-input8" type="checkbox"/>Option 2</label><br id="body1-div1-section1-div8-br2"/>
+<label id="body1-div1-section1-div8-label9"><input class="mr-2" id="body1-div1-section1-div8-label9-input9" name="radio-btn" type="radio"/>Option A</label><br id="body1-div1-section1-div8-br3"/>
+<label id="body1-div1-section1-div8-label10"><input class="mr-2" id="body1-div1-section1-div8-label10-input10" name="radio-btn" type="radio"/>Option B</label>
+</div>
+<div class="text-center text-gray-500 mt-4" id="body1-div1-section1-div9">1356 x 624</div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-white p-4 rounded shadow" id="body1-div1-footer1">
+<h2 class="text-lg font-bold mb-4" id="body1-div1-footer1-h21">Shipping Info</h2>
+<form class="grid grid-cols-2 gap-4" id="body1-div1-footer1-form1">
+<input class="border rounded p-2 w-full" id="body1-div1-footer1-form1-input11" placeholder="First Name" type="text"/>
+<input class="border rounded p-2 w-full" id="body1-div1-footer1-form1-input12" placeholder="Last Name" type="text"/>
+<input class="border rounded p-2 w-full" id="body1-div1-footer1-form1-input13" placeholder="Phone" type="text"/>
+<input class="border rounded p-2 w-full" id="body1-div1-footer1-form1-input14" placeholder="E-mail" type="text"/>
+<select class="border rounded p-2 w-full" id="body1-div1-footer1-form1-select2">
+<option id="body1-div1-footer1-form1-select2-option2">United States</option>
+</select>
+<select class="border rounded p-2 w-full" id="body1-div1-footer1-form1-select3">
+<option id="body1-div1-footer1-form1-select3-option3">Choose</option>
+</select>
+<select class="border rounded p-2 w-full" id="body1-div1-footer1-form1-select4">
+<option id="body1-div1-footer1-form1-select4-option4">Palo Alto</option>
+</select>
+<input class="border rounded p-2 w-full" id="body1-div1-footer1-form1-input15" placeholder="Zip Code" type="text"/>
+<div class="col-span-2 flex justify-between mt-4" id="body1-div1-footer1-form1-div10">
+<button class="bg-gray-500 text-white py-2 px-4 rounded" id="body1-div1-footer1-form1-div10-button3" type="button">
+            BACK
+          </button>
+<button class="bg-blue-500 text-white py-2 px-4 rounded" id="body1-div1-footer1-form1-div10-button4" type="button">
+            NEXT STEP
+          </button>
+</div>
+</form>
+</footer>
+<button class="bg-blue-500 text-white py-2 px-4 rounded mt-2" id="6_1">
+      Get Drop Down Here
+    </button>
+</div>
+<script data-custom-scripts="true">
+    function showAlert() {
+      alert('Add Interaction');
+    }
+  </script>
+</body>
+</html>

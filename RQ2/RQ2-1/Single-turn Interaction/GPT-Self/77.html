@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Low-Fidelity Wireframe Example</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-form, .dropdown-menu, .product-catalog {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+            width: 300px;
+        }
+        .login-form input, .login-form button, .dropdown-menu input, .dropdown-menu button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .product-catalog {
+            width: 80%;
+        }
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+        }
+        .product button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+        .bottom-buttons {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .bottom-buttons button {
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Login Form -->
+<div class="login-form">
+<h2 class="first-text">Login</h2>
+<input placeholder="Login" type="text"/>
+<input placeholder="Password" type="password"/>
+<label>
+<input type="checkbox"/> Remember me
+        </label>
+<a href="#">Forgot Password</a>
+<button>Login</button>
+</div>
+<!-- Dropdown Menu -->
+<div class="dropdown-menu">
+<h2>Select Language</h2>
+<label>
+<input type="checkbox"/> C#
+        </label>
+<label>
+<input type="checkbox"/> Java
+        </label>
+<label>
+<input type="checkbox"/> PHP
+        </label>
+<label>
+<input type="checkbox"/> Visual Basic
+        </label>
+<button>Get Drop Down Menu</button>
+</div>
+<!-- Product Catalog -->
+<div class="product-catalog">
+<h2>Product Catalog</h2>
+<div class="product">
+<button>Modify Element</button>
+<p>Product 1</p>
+<p>$20.00</p>
+</div>
+<div class="product">
+<img alt="Product 2" src="#"/>
+<p>Product 2</p>
+<p>$10.00</p>
+</div>
+<div class="product">
+<img alt="Product 3" src="#"/>
+<p>Product 3</p>
+<p>$40.00</p>
+</div>
+</div>
+<!-- Bottom Buttons -->
+<div class="bottom-buttons">
+<button id="6_1">Add to Cart</button>
+</div>
+</body>
+</html>

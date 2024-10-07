@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    body {
+      padding-top: 72px; /* Adjust this value based on the header height */
+    }
+    .full-page-section {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center fixed-header">
+    <div class="text-2xl font-bold">Title1</div>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Link1</a>
+      <a href="#" class="hover:underline">Link2</a>
+      <a href="#" class="hover:underline">Link3</a>
+      <a href="#" class="hover:underline">Link4</a>
+      <a href="#" class="hover:underline">Link5</a>
+      <a href="#" class="hover:underline">Link6</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="space-y-0">
+
+    <!-- Section 1 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('/mnt/data/intro.jpg');">
+      <div class="text-center text-white">
+        <h2 class="text-2xl font-bold">Title2</h2>
+        <p class="mt-2">Text2</p>
+        <div class="mt-4">
+          <a href="#" class="text-blue-500 hover:underline">Link7</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('/mnt/data/one.jpg');">
+      <div class="flex flex-col justify-between items-start w-full p-4 text-white" style="margin-left: 10%;">
+        <div class="text-left">
+          <h2 class="text-2xl font-bold">Title3</h2>
+          <p class="mt-2">Text3</p>
+        </div>
+        <div class="text-center mt-4 self-center">
+          <a href="#" class="text-blue-500 hover:underline">Link8</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="flex items-center justify-center full-page-section" style="background-image: url('/mnt/data/two.jpg');">
+      <div class="flex flex-col justify-between items-end w-full p-4 text-white" style="margin-right: 30%;">
+        <div class="text-left">
+          <h2 class="text-2xl font-bold">Title4</h2>
+          <p class="mt-2">Text4</p>
+        </div>
+        <div class="text-center mt-4 self-center">
+          <a href="#" class="text-blue-500 hover:underline">Link9</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="bg-white flex items-center justify-center full-page-section">
+      <div class="text-center">
+        <h2 class="text-xl font-bold">Title5</h2>
+        <h3 class="mt-2">Title5-1</h3>
+        <div class="mt-4 grid grid-cols-2 gap-0 justify-center items-center">
+          <img src="https://placehold.co/150x150" alt="FIG5-1" class="w-32 h-32">
+          <img src="https://placehold.co/150x150" alt="FIG5-2" class="w-32 h-32">
+          <img src="https://placehold.co/150x150" alt="FIG5-3" class="w-32 h-32">
+          <img src="https://placehold.co/150x150" alt="FIG5-4" class="w-32 h-32">
+          <img src="https://placehold.co/150x150" alt="FIG5-5" class="w-32 h-32">
+          <img src="https://placehold.co/150x150" alt="FIG5-6" class="w-32 h-32">
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="bg-white flex items-center justify-center full-page-section">
+      <div class="flex flex-col items-center justify-end w-full h-full p-4">
+        <h2 class="text-2xl font-bold mb-4">Title6</h2>
+        <form class="bg-white p-6 rounded shadow w-1/2 space-y-4">
+          <div class="flex space-x-4">
+            <input type="text" placeholder="Textbox1" class="p-2 border rounded w-1/2 text-lg">
+            <input type="text" placeholder="Textbox2" class="p-2 border rounded w-1/2 text-lg">
+          </div>
+          <textarea placeholder="Textarea" class="p-4 border rounded w-full h-32 text-lg"></textarea>
+          <div class="flex justify-center">
+            <button type="submit" class="bg-blue-500 text-white py-2 px-8 rounded text-lg hover:bg-blue-700">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="flex justify-between">
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">Link1</a>
+        <a href="#" class="hover:underline">Link2</a>
+        <a href="#" class="hover:underline">Link3</a>
+        <a href="#" class="hover:underline">Link4</a>
+        <a href="#" class="hover:underline">Link5</a>
+        <a href="#" class="hover:underline">Link6</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

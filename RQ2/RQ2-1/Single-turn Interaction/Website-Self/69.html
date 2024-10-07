@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wireframe Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        header, footer {
+            background: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .post img {
+            width: 100px;
+            height: 100px;
+        }
+        .post-content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .post-content h2 {
+            margin: 0 0 10px;
+        }
+        .post-content p {
+            margin: 0;
+        }
+        .video {
+            width: 100%;
+            height: 300px;
+            background: #ddd;
+            text-align: center;
+            line-height: 300px;
+            font-size: 24px;
+            color: #333;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .form-group label {
+            display: block;
+            margin: 5px 0;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"], .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .buttons {
+            text-align: center;
+        }
+        .buttons h3 {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Title</h1>
+<h2>Title Page</h2>
+<p>Subtitle or description goes here.</p>
+</header>
+<div class="container">
+<section class="posts">
+<div class="post">
+<img alt="Post image" src="image1.jpg"/>
+<div class="post-content">
+<h2 id="6_2_2_3_1">Title Post</h2>
+<p id="6_2_1_1_3">Post description or excerpt goes here.</p>
+</div>
+</div>
+<div class="post">
+<img alt="Post image" src="image2.jpg"/>
+<div class="post-content">
+<h2 id="6_2_2_3_2">Title Post</h2>
+<p id="6_2_1_2_3">Post description or excerpt goes here.</p>
+</div>
+</div>
+<div class="post">
+<img alt="Post image" src="image3.jpg"/>
+<div class="post-content">
+<h2 id="6_2_2_3_3">Title Post</h2>
+<p id="6_2_1_3_3">Post description or excerpt goes here.</p>
+</div>
+</div>
+</section>
+<section class="video">
+<p>Video Section</p>
+</section>
+<section class="form">
+<form>
+<div class="form-group">
+<label>Radio Buttons</label>
+<input name="radio" type="radio" value="not_relevant"/> Not relevant
+                    <input name="radio" type="radio" value="low"/> Low
+                    <input name="radio" type="radio" value="medium"/> Medium
+                    <input name="radio" type="radio" value="high"/> High
+                </div>
+<div class="form-group">
+<label>Check Boxes</label>
+<input name="choice1" type="checkbox"/> Choice 1
+                    <input name="choice2" type="checkbox"/> Choice 2
+                    <input name="choice3" type="checkbox"/> Choice 3
+                    <input name="choice4" type="checkbox"/> Choice 4
+                    <input name="choice5" type="checkbox"/> Choice 5
+                    <input name="choice6" type="checkbox"/> Choice 6
+                    <input name="choice7" type="checkbox"/> Choice 7
+                    <input name="choice8" type="checkbox"/> Choice 8
+                </div>
+<div class="buttons">
+<h3>OK</h3>
+<h3>Cancel</h3>
+</div>
+</form>
+</section>
+</div>
+<footer>
+<p>Footer Content</p>
+</footer>
+</body>
+</html>

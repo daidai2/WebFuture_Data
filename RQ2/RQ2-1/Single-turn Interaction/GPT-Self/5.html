@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Solutions & Daily Living Aids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .card {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        form label {
+            flex: 1 1 100%;
+        }
+        form input, form select {
+            flex: 1 1 calc(50% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form .full-width {
+            flex: 1 1 100%;
+        }
+        form .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        form .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+        .bottom-text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2 class="first-text">Mobility Solutions & Daily Living Aids</h2>
+            <p>Making Life Easier</p>
+            <a href="#" class="button">Find Out More</a>
+        </div>
+
+        <div class="section row">
+            <div class="card">
+                <h3>Wheelchair Repair</h3>
+                <img src="placeholder.png" alt="Wheelchair Repair">
+                <a href="#" class="button">Find Out More</a>
+            </div>
+            <div class="card">
+                <h3>Community Contracts</h3>
+                <img src="placeholder.png" alt="Community Contracts">
+                <a href="#" class="button">Find Out More</a>
+            </div>
+        </div>
+
+        <div class="section row">
+            <div class="card">
+                <h3>Mate One</h3>
+                <p>Job Title</p>
+                <img src="placeholder.png" alt="Mate One">
+            </div>
+            <div class="card">
+                <h3>Mate Two</h3>
+                <p>Job Title</p>
+                <img src="placeholder.png" alt="Mate Two">
+            </div>
+            <div class="card">
+                <h3>Mate Three</h3>
+                <p>Job Title</p>
+                <img src="placeholder.png" alt="Mate Three">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Shipping Info</h2>
+            <form>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+                
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email">
+                
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="united-states">United States</option>
+                </select>
+                
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">Choose</option>
+                </select>
+                
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+                
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+                
+                <div class="buttons full-width">
+                    <button type="button">Back</button>
+                    <button type="submit">Next Step</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="section">
+            <h2>Next Step</h2> <!-- Changed from button to heading -->
+        </div>
+        
+        <div class="bottom-text">
+            Add Element
+        </div>
+    </div>
+</body>
+</html>

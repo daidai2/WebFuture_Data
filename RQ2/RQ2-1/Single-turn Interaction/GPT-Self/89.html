@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment and Information</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .payment-method, .form-section, .info-section {
+            margin-bottom: 20px;
+        }
+        .payment-method label, .form-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-section input[type="text"], .form-section input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-section input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .info-section {
+            text-align: center;
+        }
+        .info-section div {
+            margin-bottom: 10px;
+        }
+        .info-section div a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+        }
+        .info-section div a:hover {
+            background-color: #007bb5;
+        }
+        .bottom-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .expiration-option {
+            display: flex;
+            align-items: center;
+        }
+        .expiration-option label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1 style="font-size: 50px;">Select Your Payment Method</h1>
+<div class="payment-method">
+<label>
+<input checked="" name="payment" type="radio" value="credit-card"/> Credit Card
+            </label>
+<label>
+<input name="payment" type="radio" value="paypal"/> Paypal
+            </label>
+<label>
+<input name="payment" type="radio" value="bank-transfer"/> Bank Transfer
+            </label>
+</div>
+<h2>Enter Your Data</h2>
+<div class="form-section">
+<label for="card-number">Card Number</label>
+<input id="card-number" name="card-number" placeholder="Card Number" type="text"/>
+<div class="expiration-option">
+<label for="expiration-date" id="6_2_2_2_1">Expiration Date</label>
+<input id="expiration-date" name="expiration-date" placeholder="MM / YY" type="text"/>
+<label for="option-2" id="6_2_1_1_1">Option 2</label>
+</div>
+<label for="ccv">CCV</label>
+<input id="ccv" name="ccv" placeholder="CCV" type="number"/>
+<input type="submit" value="Complete"/>
+</div>
+<h2>Information Sections</h2>
+<div class="info-section">
+<div>
+<h3>Mobility Solutions &amp; Daily Living Aids</h3>
+<p>Making life easier</p>
+<a href="#">Find out more</a>
+</div>
+<div>
+<h3>Wheelchair Repair</h3>
+<a href="#">Find out more</a>
+</div>
+<div>
+<h3>Community Contacts</h3>
+<a href="#">Find out more</a>
+</div>
+</div>
+<div class="form-section">
+<label>
+<input name="option1" type="checkbox"/> Option 1
+            </label>
+<label id="6_2_1_2_1">
+<input name="option2" type="checkbox"/> Option 2
+            </label>
+<label>
+<input name="choice" type="radio" value="choice1"/> Choice 1
+            </label>
+<label>
+<input name="choice" type="radio" value="choice2"/> Choice 2
+            </label>
+<input type="submit" value="Back"/>
+<input type="submit" value="Button"/>
+</div>
+<div class="bottom-text">Add Element</div>
+</div>
+</body>
+</html>

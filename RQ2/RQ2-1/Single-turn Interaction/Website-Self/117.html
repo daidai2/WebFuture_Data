@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product-details, .product-actions {
+            flex: 1;
+            padding: 10px;
+        }
+        .product-details {
+            max-width: 60%;
+        }
+        .product-actions {
+            max-width: 40%;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .team-member img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .checkbox-group, .radio-group {
+            margin: 10px 0;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="product-details">
+<h1>Product Name</h1>
+<img alt="Product Image" class="product-image" src="main-product-image.jpg"/>
+<div>
+<img alt="Thumbnail 1" class="thumbnail" src="thumb1.jpg"/>
+<img alt="Thumbnail 2" class="thumbnail" src="thumb2.jpg"/>
+<img alt="Thumbnail 3" class="thumbnail" src="thumb3.jpg"/>
+<img alt="Thumbnail 4" class="thumbnail" src="thumb4.jpg"/>
+</div>
+</div>
+<div class="product-actions">
+<h2>Product Name</h2>
+<p>Manufacturer</p>
+<div class="radio-group">
+<label><input name="color" type="radio" value="red"/> Red</label><br/>
+<label><input name="color" type="radio" value="blue"/> Blue</label><br/>
+<label><input name="color" type="radio" value="white"/> White</label>
+</div>
+<p>Price: $100</p>
+<p>Old Price: $200</p>
+<button>Add to Cart</button>
+</div>
+</div>
+<div class="container">
+<div class="team-member">
+<img alt="Mate One" src="mate1.jpg"/>
+<div>
+<p>Mate One</p>
+<p>Job Title</p>
+</div>
+</div>
+<div class="team-member">
+<img alt="Mate Two" src="mate2.jpg"/>
+<div>
+<p>Mate Two</p>
+<p>Job Title</p>
+</div>
+</div>
+<div class="team-member">
+<img alt="Mate Three" src="mate3.jpg"/>
+<div>
+<p>Mate Three</p>
+<p>Job Title</p>
+</div>
+</div>
+</div>
+<div class="container">
+<h3>Title</h3>
+<div class="radio-group">
+<label><input name="relevance" type="radio" value="not-relevant"/> Not Relevant</label><br/>
+<label><input name="relevance" type="radio" value="low"/> Low</label><br/>
+<label><input name="relevance" type="radio" value="medium"/> Medium</label><br/>
+<label><input name="relevance" type="radio" value="high"/> High</label>
+</div>
+<div class="checkbox-group">
+<label><input name="choice1" type="checkbox"/> Choice 1</label><br/>
+<label><input name="choice2" type="checkbox"/> Choice 2</label><br/>
+<label><input name="choice3" type="checkbox"/> Choice 3</label><br/>
+<label><input name="choice4" type="checkbox"/> Choice 4</label><br/>
+<label><input name="choice5" type="checkbox"/> Choice 5</label><br/>
+<label><input name="choice6" type="checkbox"/> Choice 6</label><br/>
+<label><input name="choice7" type="checkbox"/> Choice 7</label><br/>
+<label><input name="choice8" type="checkbox"/> Choice 8</label>
+</div>
+<button>Cancel</button>
+</div>
+<div class="container">
+<button id="6_1">OK</button>
+</div>
+</body>
+</html>

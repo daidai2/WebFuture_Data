@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Shipping Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+        }
+        .form-section {
+            margin-bottom: 30px;
+        }
+        .form-section h2 {
+            margin-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 20%;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 75%;
+            padding: 5px;
+        }
+        .form-group.checkbox {
+            justify-content: flex-start;
+        }
+        .form-group.checkbox label {
+            width: auto;
+            text-align: left;
+        }
+        .form-group.checkbox input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="first-name">Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to Terms and Conditions</label>
+            </div>
+            <div class="button-group">
+                <button type="button" onclick="changeFontSize()">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Shipping Info</h2>
+            <div class="form-group">
+                <label for="shipping-first-name">First Name</label>
+                <input type="text" id="shipping-first-name" name="shipping-first-name">
+            </div>
+            <div class="form-group">
+                <label for="shipping-last-name">Last Name</label>
+                <input type="text" id="shipping-last-name" name="shipping-last-name">
+            </div>
+            <div class="form-group">
+                <label for="shipping-phone">Phone</label>
+                <input type="text" id="shipping-phone" name="shipping-phone">
+            </div>
+            <div class="form-group">
+                <label for="shipping-email">E-mail</label>
+                <input type="email" id="shipping-email" name="shipping-email">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                    <!-- Add other countries as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">Choose</option>
+                    <!-- Add states as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code">
+            </div>
+            <div class="button-group">
+                <button type="button" onclick="showAlert()">Back</button>
+                <button type="button">Next Step</button>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px; font-size: 50px;">
+        Add Element
+    </div>
+    <script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+
+        function changeFontSize() {
+            document.querySelector('h2').style.fontSize = '50px';
+        }
+    </script>
+</body>
+</html>

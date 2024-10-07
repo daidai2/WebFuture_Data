@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low Fidelity Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .custom-bg-hover:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="flex justify-between p-6 bg-gray-100 shadow">
+    <h3><a href="#">Login</a></h3>
+    <h3><a href="#">Sign Up</a></h3>
+  </header>
+
+  <!-- Add Element Link -->
+  <div class="flex justify-between p-6 bg-gray-100 shadow">
+    <a href="#" id="add-element" class="text-blue-500">Add Element</a>
+  </div>
+
+  <!-- Login Section -->
+  <section id="login-section" class="p-6">
+    <div id="login-form" class="max-w-md mx-auto bg-white shadow p-6 rounded">
+      <label class="block mb-2">Login</label>
+      <input type="text" class="w-full p-2 mb-4 border rounded" placeholder="Login">
+
+      <label class="block mb-2">Password</label>
+      <input type="password" class="w-full p-2 mb-4 border rounded" placeholder="Password">
+
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="remember-me" class="mr-2">
+        <label for="remember-me">Remember me</label>
+      </div>
+
+      <a href="#" class="block mb-4 text-blue-500">Forgot Password</a>
+
+      <button class="w-full py-2 bg-blue-500 text-white rounded">LOGIN</button>
+    </div>
+  </section>
+
+  <!-- Preferences Section -->
+  <aside id="languages-section" class="p-6 bg-gray-100 shadow">
+    <div class="flex items-center mb-4">
+      <label class="mr-2">C Sharp</label>
+      <input type="checkbox" class="mr-4">
+      <button id="get-drop-down" class="py-1 px-4 bg-blue-500 text-white rounded custom-bg-hover">Get Drop Down Here</button>
+    </div>
+
+    <div class="flex items-center mb-4">
+      <label class="mr-2">C#</label>
+      <input type="checkbox" class="mr-4">
+      <label class="mr-2">Java</label>
+      <input type="checkbox" class="mr-4">
+    </div>
+
+    <div class="flex items-center mb-4">
+      <label class="mr-2">PHP</label>
+      <input type="checkbox" class="mr-4">
+      <label class="mr-2">Visual Basic</label>
+      <input type="checkbox">
+    </div>
+  </aside>
+
+  <!-- Product Catalog Section -->
+  <section id="product-catalog-section" class="p-6">
+    <div class="flex justify-between items-center mb-6">
+      <h2>Product Catalog</h2>
+      <div>
+        <input type="search" class="p-2 border rounded" placeholder="Search">
+      </div>
+    </div>
+
+    <div id="product-list" class="grid grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="bg-white shadow p-4 rounded">
+        <img src="https://placehold.co/150x150" alt="Product 1 Image" class="mb-4">
+        <p class="mb-2">Product 1</p>
+        <p class="mb-2">$20.00</p>
+        <button class="w-full py-2 bg-blue-500 text-white rounded">ADD TO CART</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white shadow p-4 rounded">
+        <img src="https://placehold.co/150x150" alt="Product 2 Image" class="mb-4">
+        <p class="mb-2">Product 2</p>
+        <p class="mb-2">$10.00</p>
+        <button class="w-full py-2 bg-blue-500 text-white rounded">ADD TO CART</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white shadow p-4 rounded">
+        <img src="https://placehold.co/150x150" alt="Product 3 Image" class="mb-4">
+        <p class="mb-2">Product 3</p>
+        <p class="mb-2">$40.00</p>
+        <button class="w-full py-2 bg-blue-500 text-white rounded">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('get-drop-down').style.backgroundColor = '#C6A7B1';
+
+    document.getElementById('get-drop-down').addEventListener('click', function() {
+      const newModule = document.createElement('div');
+      newModule.classList.add('p-6', 'bg-gray-100', 'shadow', 'mt-4');
+      newModule.innerHTML = '<p>Add Interaction</p>';
+      document.body.appendChild(newModule);
+    });
+
+    document.getElementById('add-element').addEventListener('click', function() {
+      const newElement = document.createElement('p');
+      newElement.textContent = 'New element added at the top of the page.';
+      document.body.insertBefore(newElement, document.body.firstChild);
+    });
+  </script>
+</body>
+
+</html>

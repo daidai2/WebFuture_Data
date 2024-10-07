@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style></style>
+</head>
+
+<body class="bg-gray-100 p-8" id="body1">
+  <!-- Header -->
+  <a id="Parent_body1_Next_body1-header1_Queue_1" href="#" class="block text-center mb-4 text-blue-500">Add Element</a>
+  <header class="text-center mb-8" id="body1-header1">
+    <h1 class="text-3xl font-bold" id="body1-header1-h11">Write Review</h1>
+  </header>
+
+  <!-- First Section: Write Review Form -->
+  <section class="bg-white p-6 rounded-lg shadow-md mb-8" id="body1-section1">
+    <div class="flex items-center mb-4" id="body1-section1-div1">
+
+      <div id="body1-section1-div1-div2">
+        <span class="block font-bold text-lg" id="body1-section1-div1-div2-span1">Product Name</span>
+        <span class="block text-gray-600" id="body1-section1-div1-div2-span2">$Price</span>
+        <span class="block text-yellow-500" id="body1-section1-div1-div2-span3">★★★★☆</span>
+        <span class="block text-gray-600" id="body1-section1-div1-div2-span4">45 reviews</span>
+      </div>
+    </div>
+    <form id="body1-section1-form1">
+      <div class="mb-4" id="body1-section1-form1-div3">
+        <label for="rating" class="block font-bold mb-2" id="body1-section1-form1-div3-label1">Rate Product:</label>
+        <div id="body1-section1-form1-div3-div4" class="flex items-center">
+          <label class="mr-2" id="body1-section1-form1-div3-div4-label2">1 <input type="radio" name="rating" value="1" class="mx-1" id="body1-section1-form1-div3-div4-label2-input1"></label>
+          <label class="mr-2" id="body1-section1-form1-div3-div4-label3">2 <input type="radio" name="rating" value="2" class="mx-1" id="body1-section1-form1-div3-div4-label3-input2"></label>
+          <label class="mr-2" id="body1-section1-form1-div3-div4-label4">3 <input type="radio" name="rating" value="3" class="mx-1" id="body1-section1-form1-div3-div4-label4-input3"></label>
+          <label class="mr-2" id="body1-section1-form1-div3-div4-label5">4 <input type="radio" name="rating" value="4" class="mx-1" id="body1-section1-form1-div3-div4-label5-input4"></label>
+          <label class="mr-2" id="body1-section1-form1-div3-div4-label6">5 <input type="radio" name="rating" value="5" class="mx-1" id="body1-section1-form1-div3-div4-label6-input5"></label>
+          <span class="ml-2" id="body1-section1-form1-div3-div4-span5">(Bad :(</span>
+        </div>
+      </div>
+      <div class="mb-4" id="body1-section1-form1-div5">
+        <label for="headline" class="block font-bold mb-2" id="body1-section1-form1-div5-label7">Headline:</label>
+        <input type="text" id="body1-section1-form1-div5-input6" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div class="mb-4" id="body1-section1-form1-div6">
+        <label for="review" class="block font-bold mb-2" id="body1-section1-form1-div6-label8">Review:</label>
+        <textarea id="body1-section1-form1-div6-textarea1" class="w-full p-2 border border-gray-300 rounded"></textarea>
+      </div>
+      <button type="submit" class="bg-[#C6A7B1] text-white py-2 px-4 rounded hover:bg-[#FFDEE9]" id="body1-section1-form1-button1">Submit</button>
+    </form>
+  </section>
+
+  <!-- Second Section: Related Content -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8" id="body1-section2">
+    <article class="bg-white p-4 rounded-lg shadow-md" id="body1-section2-article1">
+      <img src="https://placehold.co/150x150" alt="Related Product 1" class="w-full mb-4" id="body1-section2-article1-img2">
+      <h3 class="font-bold mb-2" id="body1-section2-article1-h31">Related Product 1</h3>
+      <p id="body1-section2-article1-p1">Summary</p>
+    </article>
+    <article class="bg-white p-4 rounded-lg shadow-md" id="body1-section2-article2">
+      <img src="https://placehold.co/150x150" alt="Related Product 2" class="w-full mb-4" id="body1-section2-article2-img3">
+      <h3 class="font-bold mb-2" id="body1-section2-article2-h32">Related Product 2</h3>
+      <p id="body1-section2-article2-p2">Summary</p>
+    </article>
+    <article class="bg-white p-4 rounded-lg shadow-md" id="body1-section2-article3">
+      <img src="https://placehold.co/150x150" alt="Related Product 3" class="w-full mb-4" id="body1-section2-article3-img4">
+      <h3 class="font-bold mb-2" id="body1-section2-article3-h33">Related Product 3</h3>
+      <p id="body1-section2-article3-p3">Summary</p>
+    </article>
+  </section>
+
+  <!-- Third Section: Product Catalog -->
+  <section class="bg-white p-6 rounded-lg shadow-md" id="body1-section3">
+    <div class="flex justify-between items-center mb-6" id="body1-section3-div7">
+      <h2 class="text-2xl font-bold" id="body1-section3-div7-h21">Product Catalog</h2>
+      <input type="search" placeholder="Search" class="p-2 border border-gray-300 rounded" id="body1-section3-div7-input7">
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="body1-section3-div8">
+      <article class="flex flex-col items-center bg-white p-4 rounded-lg shadow-md" id="body1-section3-div8-article4">
+        <img src="https://placehold.co/150x150" alt="Product 1" class="w-full mb-4" id="body1-section3-div8-article4-img5">
+        <h3 class="font-bold mb-2" id="body1-section3-div8-article4-h34">Product 1</h3>
+        <span class="text-gray-600" id="body1-section3-div8-article4-span6">$30.00</span>
+        <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded" id="body1-section3-div8-article4-button2">Add to Cart</button>
+      </article>
+      <article class="flex flex-col items-center bg-white p-4 rounded-lg shadow-md" id="body1-section3-div8-article5">
+        <img src="https://placehold.co/150x150" alt="Product 2" class="w-full mb-4" id="body1-section3-div8-article5-img6">
+        <h3 class="font-bold mb-2" id="body1-section3-div8-article5-h35">Product 2</h3>
+        <span class="text-gray-600" id="body1-section3-div8-article5-span7">$10.00</span>
+        <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded" id="body1-section3-div8-article5-button3">Add to Cart</button>
+      </article>
+      <article class="flex flex-col items-center bg-white p-4 rounded-lg shadow-md" id="body1-section3-div8-article6">
+        <img src="https://placehold.co/150x150" alt="Product 3" class="w-full mb-4" id="body1-section3-div8-article6-img7">
+        <h3 class="font-bold mb-2" id="body1-section3-div8-article6-h36">Product 3</h3>
+        <span class="text-gray-600" id="body1-section3-div8-article6-span8">$40.00</span>
+        <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded" id="body1-section3-div8-article6-button4">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+
+  <script data-custom-scripts="true"></script>
+</body>
+</html>

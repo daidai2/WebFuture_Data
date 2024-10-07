@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .payment-method, .sign-up, .product-catalog {
+            margin-bottom: 40px;
+        }
+        .payment-method input[type="text"], .sign-up input[type="text"], .sign-up input[type="email"], .sign-up input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+        }
+        .payment-method label, .sign-up label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .payment-method button, .sign-up button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .payment-method button:hover, .sign-up button:hover {
+            background-color: #45a049;
+        }
+        .product-catalog .product {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin-right: 1.5%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .product-catalog .product:last-child {
+            margin-right: 0;
+        }
+        .product-catalog button {
+            padding: 5px 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .product-catalog button:hover {
+            background-color: #007B9E;
+        }
+        /* Add the font size change */
+        .payment-method h2 {
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        function addInteraction() {
+            alert('Add Interaction');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="payment-method">
+        <h2>Select your payment method</h2>
+        <label>
+            <input type="radio" name="payment-method" value="credit-card" checked>
+            Credit Card
+        </label>
+        <label>
+            <input type="radio" name="payment-method" value="paypal">
+            PayPal
+        </label>
+        <label>
+            <input type="radio" name="payment-method" value="bank-transfer">
+            Bank Transfer
+        </label>
+        <label>Enter your data</label>
+        <input type="text" name="card-number" placeholder="Card Number">
+        <label>Expiration date</label>
+        <input type="text" name="expiration-date" placeholder="MM/YY" style="width: 50px;">
+        <input type="text" name="ccv" placeholder="CCV" style="width: 50px;">
+        <button onclick="addInteraction()">Complete</button>
+    </div>
+
+    <div class="sign-up">
+        <h2>Sign Up</h2>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="First Name">
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+        <label>Phone</label>
+        <input type="text" name="phone" placeholder="Phone Number">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Email">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Password">
+        <label>Confirm Password</label>
+        <input type="password" name="confirm-password" placeholder="Confirm Password">
+        <label>
+            <input type="checkbox" name="terms">
+            I agree to Terms and Conditions
+        </label>
+        <button>Sign Up</button>
+    </div>
+
+    <div class="product-catalog">
+        <h2>Product Catalog</h2>
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>$10.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>$40.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Add Element at the bottom -->
+    <div>
+        <p>Add Element</p>
+    </div>
+
+</body>
+</html>

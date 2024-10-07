@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .custom-button {
+      background-color: #C6A7B1;
+    }
+    .custom-button:hover {
+      background-color: #FFDEE9;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+<!-- Header -->
+<header class="bg-white shadow-md p-4 flex justify-between items-center">
+<a class="text-blue-500 mr-4" href="#">Add Element</a>
+<h1 class="text-2xl font-bold">Sign Up</h1>
+<nav>
+<a class="text-blue-500 mr-4" href="#">Sign Up</a>
+<a class="text-blue-500" href="#">Login</a>
+</nav>
+</header>
+<!-- Main Section -->
+<section class="mt-8 mx-auto max-w-3xl p-4 bg-white shadow-md">
+<!-- Sign-Up Form -->
+<div class="mb-8">
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block text-gray-700" for="firstName" id="6_2_2_2_1">First Name</label>
+<input class="w-full mt-1 p-2 border rounded" id="firstName" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="lastName" id="6_2_1_1_1">Forma de envío</label>
+<input class="w-full mt-1 p-2 border rounded" id="lastName" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block text-gray-700" for="phone">Phone</label>
+<input class="w-full mt-1 p-2 border rounded" id="phone" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700" for="email">Email</label>
+<input class="w-full mt-1 p-2 border rounded" id="email" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block text-gray-700" for="password">Password</label>
+<input class="w-full mt-1 p-2 border rounded" id="password" type="password"/>
+</div>
+<div>
+<label class="block text-gray-700" for="confirmPassword">Confirm Password</label>
+<input class="w-full mt-1 p-2 border rounded" id="confirmPassword" type="password"/>
+</div>
+</div>
+<div class="flex items-center mb-4">
+<input class="mr-2" id="terms" type="checkbox"/>
+<label class="text-gray-700" for="terms">I agree to Terms and Conditions</label>
+</div>
+<button class="w-full custom-button text-white p-2 rounded">Sign Up</button>
+</div>
+<!-- Additional Section -->
+<div class="mb-8">
+<div class="flex items-center mb-4">
+<div class="w-32 h-32 border border-gray-300 flex items-center justify-center">
+<img alt="Placeholder Image" src="https://placehold.co/128x128"/>
+</div>
+<div class="ml-4 flex-1">
+<p class="mb-2 text-gray-700">Additional text input fields here.</p>
+<button class="bg-gray-400 text-white p-2 rounded">Back</button>
+</div>
+</div>
+<div class="flex items-center">
+<input class="mr-2" id="additionalCheckbox" type="checkbox"/>
+<label class="text-gray-700" for="additionalCheckbox">Check box</label>
+</div>
+</div>
+</section>
+<!-- Footer Section -->
+<footer class="mt-8 mx-auto max-w-3xl p-4 bg-white shadow-md">
+<h2 class="text-xl font-bold mb-4" id="6_2_1_2_1">Forma de envío</h2>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<input class="mr-2" id="parcel" name="shipping" type="radio"/>
+<label class="text-gray-700" for="parcel">Parcel Transport</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="plane" name="shipping" type="radio"/>
+<label class="text-gray-700" for="plane">Plane</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="maritime" name="shipping" type="radio"/>
+<label class="text-gray-700" for="maritime">Maritime</label>
+</div>
+</div>
+<h2 class="text-xl font-bold mb-4">Forma de pago</h2>
+<div class="mb-4">
+<div class="flex items-center mb-2">
+<input class="mr-2" id="card" name="payment" type="radio"/>
+<label class="text-gray-700" for="card">Credit/Debit Card</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="bank" name="payment" type="radio"/>
+<label class="text-gray-700" for="bank">Bank Transfer</label>
+</div>
+<div class="flex items-center mb-2">
+<input class="mr-2" id="cash" name="payment" type="radio"/>
+<label class="text-gray-700" for="cash">Cash</label>
+</div>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700" for="address">Address</label>
+<input class="w-full mt-1 p-2 border rounded" id="address" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700" for="country">País (Country)</label>
+<select class="w-full mt-1 p-2 border rounded" id="country">
+<option value="">Select a Country</option>
+<!-- Add other options as needed -->
+</select>
+</div>
+<button class="w-full bg-green-500 text-white p-2 rounded">Aceptar (Accept)</button>
+</footer>
+</body>
+</html>

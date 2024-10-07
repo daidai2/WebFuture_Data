@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Review</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .product-review, .product-info, .checklist, .form-elements {
+            margin-bottom: 30px;
+        }
+        .product-review img, .product-info img, .form-elements img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+        }
+        .rating, .review-rating, .product-rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating span, .review-rating span {
+            font-size: 24px;
+        }
+        .rating span.bad {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .stars {
+            display: flex;
+        }
+        .stars span {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        .checkbox-list, .radio-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .checkbox-list li, .radio-list li {
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        #new-module {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<a href="#" id="add-element">Add Element</a> <!-- Added hyperlink at the top -->
+<div class="product-review">
+<h2>Write Review</h2>
+<div class="product-info">
+<img alt="Product Image" src="placeholder.png"/>
+<div>
+<h3>Product Name</h3>
+<p>$Price</p>
+<div class="product-rating">
+<div class="stars">
+<span>★★★★★</span>
+</div>
+<p>45 reviews</p>
+</div>
+</div>
+</div>
+<div class="review-rating">
+<h3 id="6_2_1_1_2">Rate Product</h3>
+<div class="stars">
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+</div>
+<span class="bad">Bad :(</span>
+</div>
+<form>
+<div>
+<label for="headline">Headline</label>
+<input id="headline" name="headline" type="text"/>
+</div>
+<div>
+<label for="review">Review</label>
+<textarea id="review" name="review"></textarea>
+</div>
+<button class="submit-btn" type="submit">Submit</button>
+</form>
+</div>
+<div class="product-info">
+<img alt="Product Image" src="placeholder.png"/>
+<div>
+<h3>Product Title</h3>
+<p>$24.9</p>
+</div>
+</div>
+<div class="checklist">
+<h3>Check Items:</h3>
+<ul class="checkbox-list">
+<li><input id="item1" name="item1" type="checkbox"/> <label for="item1">Check item 1</label></li>
+<li><input id="item2" name="item2" type="checkbox"/> <label for="item2">Check item 2</label></li>
+<li><input id="item3" name="item3" type="checkbox"/> <label for="item3">Check item 3</label></li>
+</ul>
+<button class="submit-btn" id="buy-now">Buy Now</button>
+</div>
+<div class="form-elements">
+<div>
+<label for="label1" id="6_2_2_2_1">Label</label>
+<input id="label1" name="label1" type="text"/>
+</div>
+<div style="display: flex; align-items: center;">
+<label for="label2" id="6_2_2_2_2">Label</label>
+<input id="label2" name="label2" type="text"/>
+<span id="6_2_1_2_2" style="margin-left: 10px;">Rate Product</span> <!-- Placed text "Rate Product" to the right of "Label" -->
+</div>
+<button class="submit-btn">Button</button>
+<ul class="radio-list">
+<li><input id="radio1" name="radio" type="radio"/> <label for="radio1">Radio 1</label></li>
+<li><input id="radio2" name="radio" type="radio"/> <label for="radio2">Radio 2</label></li>
+<li><input id="radio3" name="radio" type="radio"/> <label for="radio3">Radio 3</label></li>
+<li><input id="radio4" name="radio" type="radio"/> <label for="radio4">Radio 4</label></li>
+</ul>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+<ul class="checkbox-list">
+<li><input id="checkbox1" name="checkbox1" type="checkbox"/> <label for="checkbox1">Checkbox 1</label></li>
+<li><input id="checkbox2" name="checkbox2" type="checkbox"/> <label for="checkbox2">Checkbox 2</label></li>
+<li><input id="checkbox3" name="checkbox3" type="checkbox"/> <label for="checkbox3">Checkbox 3</label></li>
+<li><input id="checkbox4" name="checkbox4" type="checkbox"/> <label for="checkbox4">Checkbox 4</label></li>
+</ul>
+</div>
+<!-- New module added at the bottom of the page -->
+<div id="new-module"></div>
+</div>
+<script>
+        document.getElementById('buy-now').addEventListener('click', function() {
+            const newModule = document.getElementById('new-module');
+            const textElement = document.createElement('p');
+            textElement.textContent = 'Add Interaction';
+            newModule.appendChild(textElement);
+        });
+    </script>
+</body>
+</html>

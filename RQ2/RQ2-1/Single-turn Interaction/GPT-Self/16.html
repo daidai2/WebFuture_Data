@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="radio"], input[type="checkbox"], select, button {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .shipping-options {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .right {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        button:first-of-type {
+            background-color: #C6A7B1;
+        }
+        button:first-of-type:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        <form>
+            <h3>Shipping Address</h3>
+            <!-- 删除第一个文本输入字段 -->
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <h3>Shipping Service</h3>
+            <div class="shipping-options">
+                <label>
+                    <input type="radio" name="shipping" value="standard" checked>
+                    Standard (14 days - $6.59)
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="expedited">
+                    Expedited (7 days - $1.97)
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="express">
+                    Express (3 days - $19.97)
+                </label>
+            </div>
+
+            <label for="dropdown">Dropdown</label>
+            <select id="dropdown" name="dropdown">
+                <option value="csharp">C#</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+                <option value="visualbasic">Visual Basic</option>
+            </select>
+            <button type="button">Get Drop Down Here</button>
+
+            <h3>CheckBoxes</h3>
+            <label><input type="checkbox" name="language" value="csharp"> C#</label>
+            <label><input type="checkbox" name="language" value="java"> Java</label>
+            <label><input type="checkbox" name="language" value="php"> PHP</label>
+            <label><input type="checkbox" name="language" value="visualbasic"> Visual Basic</label>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+
+            <h3>Radio Buttons</h3>
+            <label><input type="radio" name="relevance" value="not-relevant" checked> Not relevant</label>
+            <label><input type="radio" name="relevance" value="low"> Low</label>
+            <label><input type="radio" name="relevance" value="medium"> Medium</label>
+            <label><input type="radio" name="relevance" value="high"> High
+                <!-- 将“CheckBoxes”放在“High”右侧 -->
+                <span class="right">CheckBoxes</span>
+            </label>
+
+            <h3>CheckBoxes</h3>
+            <label><input type="checkbox" name="choice" value="choice1"> choice1</label>
+            <label><input type="checkbox" name="choice" value="choice2" checked> choice2</label>
+            <label><input type="checkbox" name="choice" value="choice3"> choice3</label>
+            <label><input type="checkbox" name="choice" value="choice4"> choice4</label>
+            <label><input type="checkbox" name="choice" value="choice5" checked> choice5</label>
+            <label><input type="checkbox" name="choice" value="choice6"> choice6</label>
+            <label><input type="checkbox" name="choice" value="choice7"> choice7</label>
+            <label><input type="checkbox" name="choice" value="choice8" checked> choice8</label>
+
+            <div class="buttons">
+                <button type="submit">OK</button>
+                <button type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

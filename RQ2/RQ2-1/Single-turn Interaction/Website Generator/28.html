@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      // Add event listener to the Login button
+      document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Add Interaction');
+      });
+
+      // Change font size of the first text element to 50px
+      document.querySelector('h1').style.fontSize = '50px';
+
+      // Delete the first image on the page
+      let firstImage = document.querySelector('img');
+      if (firstImage) {
+        firstImage.remove();
+      }
+    });
+  </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white p-4 shadow-md flex justify-between items-center">
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-blue-500 hover:underline">Login</a></li>
+        <li><a href="#" class="text-blue-500 hover:underline">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <section class="mt-6 max-w-4xl mx-auto p-4">
+
+    <!-- Login Form -->
+    <div class="bg-white p-6 rounded-md shadow-md mb-6">
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700">Login</label>
+          <input type="text" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your login details">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Password</label>
+          <input type="password" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your password">
+        </div>
+        <div class="mb-4 flex items-center">
+          <input type="checkbox" id="remember" class="mr-2">
+          <label for="remember" class="text-gray-700">Remember me</label>
+        </div>
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-blue-500 hover:underline">Forgot Password</a>
+          <button type="submit" class="bg-blue-500 text-white p-2 rounded-md">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Content Section -->
+    <div class="bg-white p-6 rounded-md shadow-md mb-6">
+      <div class="mb-4">
+        <h1 class="text-2xl font-bold">Title</h1>
+        <h2 class="text-xl font-semibold text-gray-700">Title Page</h2>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec elit a nunc aliquet fermentum.</p>
+      </div>
+      <div class="mb-4">
+        <iframe width="560" height="315" class="w-full rounded-md" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <article class="bg-gray-50 p-4 rounded-md shadow-md">
+          <header class="mb-2 font-semibold">Title</header>
+          <img src="https://placehold.co/150x150" alt="Placeholder Image" class="mb-2 rounded-md">
+          <p>Title Post</p>
+        </article>
+        <article class="bg-gray-50 p-4 rounded-md shadow-md">
+          <header class="mb-2 font-semibold">Title</header>
+          <img src="https://placehold.co/150x150" alt="Placeholder Image" class="mb-2 rounded-md">
+          <p>Title Post</p>
+        </article>
+        <article class="bg-gray-50 p-4 rounded-md shadow-md">
+          <header class="mb-2 font-semibold">Title</header>
+          <img src="https://placehold.co/150x150" alt="Placeholder Image" class="mb-2 rounded-md">
+          <p>Title Post</p>
+        </article>
+        <article class="bg-gray-50 p-4 rounded-md shadow-md">
+          <header class="mb-2 font-semibold">Title</header>
+          <img src="https://placehold.co/150x150" alt="Placeholder Image" class="mb-2 rounded-md">
+          <p>Title Post</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Product Catalog -->
+    <div class="bg-white p-6 rounded-md shadow-md">
+      <header class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-bold">Product Catalog</h2>
+        <form class="flex space-x-2">
+          <input type="text" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Search...">
+          <button type="submit" class="bg-blue-500 text-white p-2 rounded-md">Search</button>
+        </form>
+      </header>
+      <div class="grid grid-cols-3 gap-4">
+        <article class="bg-gray-50 p-4 rounded-md shadow-md flex flex-col items-center">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="mb-2 rounded-md">
+          <h3 class="font-semibold">Product 1</h3>
+          <p class="text-gray-700">$20.00</p>
+          <button class="bg-blue-500 text-white p-2 rounded-md mt-2">Add to Cart</button>
+        </article>
+        <article class="bg-gray-50 p-4 rounded-md shadow-md flex flex-col items-center">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="mb-2 rounded-md">
+          <h3 class="font-semibold">Product 2</h3>
+          <p class="text-gray-700">$10.00</p>
+          <button class="bg-blue-500 text-white p-2 rounded-md mt-2">Add to Cart</button>
+        </article>
+        <article class="bg-gray-50 p-4 rounded-md shadow-md flex flex-col items-center">
+          <img src="https://placehold.co/150x150" alt="Product Image" class="mb-2 rounded-md">
+          <h3 class="font-semibold">Product 3</h3>
+          <p class="text-gray-700">$40.00</p>
+          <button class="bg-blue-500 text-white p-2 rounded-md mt-2">Add to Cart</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

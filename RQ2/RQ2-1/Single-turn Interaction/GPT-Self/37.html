@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .inline-group {
+            display: flex;
+            align-items: center;
+        }
+        .inline-group label {
+            margin-right: 10px;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<a href="#" id="add-element">Add Element</a>
+<div class="container">
+<h2>Checkout</h2>
+<form>
+<div class="form-group">
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" type="text"/>
+</div>
+<div class="form-group inline-group">
+<label for="last-name" id="6_2_2_1_1">Last Name</label>
+<input id="last-name" name="last-name" type="text"/>
+<label for="company" id="6_2_1_1_1">Company</label>
+<input id="company" name="company" type="text"/>
+</div>
+<h3>Shipping Service</h3>
+<div class="form-group shipping-service">
+<input id="standard" name="shipping" type="radio" value="standard"/>
+<label for="standard">Standard 14 days - $6.59</label><br/>
+<input id="expedited" name="shipping" type="radio" value="expedited"/>
+<label for="expedited">Expedited 7 days - $1.97</label><br/>
+<input id="express" name="shipping" type="radio" value="express"/>
+<label for="express">Express 3 days - $19.99</label>
+</div>
+<div class="form-group">
+<label for="language">Programming Language</label>
+<select id="language" name="language">
+<option value="csharp">C#</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="visual-basic">Visual Basic</option>
+</select>
+</div>
+<h3>Languages</h3>
+<div class="form-group">
+<input id="csharp" name="csharp" type="checkbox"/>
+<label for="csharp">C#</label><br/>
+<input id="java" name="java" type="checkbox"/>
+<label for="java">Java</label><br/>
+<input id="php" name="php" type="checkbox"/>
+<label for="php">PHP</label><br/>
+<input id="visual-basic" name="visual-basic" type="checkbox"/>
+<label for="visual-basic">Visual Basic</label>
+</div>
+<div class="buttons">
+<button id="back-button" type="button">Back</button>
+<button type="submit">Submit</button>
+</div>
+</form>
+<div id="dynamic-content"></div>
+</div>
+<script>
+        document.getElementById('back-button').addEventListener('click', function() {
+            var dynamicContent = document.getElementById('dynamic-content');
+            var newModule = document.createElement('div');
+            newModule.classList.add('form-group');
+            newModule.innerHTML = '<p>Add Interaction</p>';
+            dynamicContent.appendChild(newModule);
+        });
+    </script>
+</body>
+</html>

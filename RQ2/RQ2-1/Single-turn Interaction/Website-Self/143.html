@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .shipping-service {
+            margin: 10px 0;
+        }
+        .shipping-service input {
+            margin-right: 10px;
+        }
+        .review-section {
+            margin: 20px 0;
+        }
+        .star-rating {
+            display: flex;
+            flex-direction: row;
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            font-size: 1.5em;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f5a623;
+        }
+        textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+        /* Additional styles */
+        .first-btn {
+            background-color: #C6A7B1;
+        }
+        .first-btn:hover {
+            background-color: #FFDEE9;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert('Add Interaction');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <form>
+            <h2>Shipping Address</h2>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <h2>Shipping Service</h2>
+            <div class="shipping-service">
+                <input type="radio" id="standard" name="shipping-service" value="standard" checked>
+                <label for="standard">Standard (14 days - $6.59)</label>
+            </div>
+            <div class="shipping-service">
+                <input type="radio" id="expedited" name="shipping-service" value="expedited">
+                <label for="expedited">Expedited (7 days - $11.99)</label>
+            </div>
+            <div class="shipping-service">
+                <input type="radio" id="express" name="shipping-service" value="express">
+                <label for="express">Express (3 days - $19.99)</label>
+            </div>
+
+            <h2>Write Review</h2>
+            <div class="review-section">
+                <label>Product Name</label>
+                <div style="margin-bottom: 10px;">
+                    <img src="product-image.jpg" alt="Product Image" width="50" height="50" style="vertical-align: middle; margin-right: 10px;">
+                    <span>Product Name - $Price</span>
+                </div>
+
+                <label>Rate Product</label>
+                <div class="star-rating">
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;</label>
+                </div>
+
+                <label for="headline">Headline</label>
+                <input type="text" id="headline" name="headline">
+
+                <label for="review">Review</label>
+                <textarea id="review" name="review" rows="5"></textarea>
+
+                <button type="submit" class="submit-btn first-btn" onclick="showAlert()">Submit</button>
+            </div>
+        </form>
+        <!-- Add Element text at the bottom -->
+        <p>Add Element</p>
+    </div>
+</body>
+</html>

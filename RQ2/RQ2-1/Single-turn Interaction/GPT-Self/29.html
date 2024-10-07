@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up Page</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"], 
+        .form-group input[type="email"], 
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            margin-bottom: 15px;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 15px;
+        }
+        .checkbox-group input, .radio-group input {
+            margin-right: 5px;
+        }
+        .checkbox-group label, .radio-group label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- 添加超链接 -->
+<a href="#" id="addElementLink">Add Element</a>
+<div class="container">
+<h1>Sign Up</h1>
+<h2>Login</h2>
+<div class="form-group">
+<label for="firstName">Name</label>
+<input id="firstName" name="firstName" type="text"/>
+</div>
+<div class="form-group">
+<label for="lastName">Last Name</label>
+<input id="lastName" name="lastName" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone" id="6_2_1_1_1">Phone</label>
+<input id="phone" name="phone" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">e-mail</label>
+<input id="email" name="email" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" type="password"/>
+</div>
+<div class="form-group">
+<label for="confirmPassword">Confirm Password</label>
+<input id="confirmPassword" name="confirmPassword" type="password"/>
+</div>
+<div class="form-group">
+<input id="terms" name="terms" type="checkbox"/>
+<label for="terms">I agree to Terms and Conditions</label>
+</div>
+<div class="form-group">
+<button type="submit">Sign Up</button>
+</div>
+<div class="image-placeholder"></div>
+<div class="form-group">
+<button id="backButton" type="button">Back</button>
+</div>
+<div class="checkbox-group">
+<input id="checkbox1" name="checkbox1" type="checkbox"/>
+<label for="checkbox1">Checkbox 1</label>
+<input id="checkbox2" name="checkbox2" type="checkbox"/>
+<label for="checkbox2">Checkbox 2</label>
+<input id="checkbox3" name="checkbox3" type="checkbox"/>
+<label for="checkbox3">Checkbox 3</label>
+<input id="checkbox4" name="checkbox4" type="checkbox"/>
+<label for="checkbox4" id="6_2_2_2_1">Checkbox 4</label>
+<!-- 添加文本 "Phone" -->
+<span id="6_2_1_2_1">Phone</span>
+</div>
+<div class="radio-group">
+<input id="radio1" name="radio" type="radio" value="1"/>
+<label for="radio1">Radio 1</label>
+<input id="radio2" name="radio" type="radio" value="2"/>
+<label for="radio2">Radio 2</label>
+<input id="radio3" name="radio" type="radio" value="3"/>
+<label for="radio3">Radio 3</label>
+<input id="radio4" name="radio" type="radio" value="4"/>
+<label for="radio4">Radio 4</label>
+</div>
+<div class="form-group">
+<label for="input1">Label</label>
+<input id="input1" name="input1" type="text"/>
+</div>
+<div class="form-group">
+<label for="input2">Label</label>
+<input id="input2" name="input2" type="text"/>
+</div>
+<div class="form-group">
+<button type="button">Button</button>
+</div>
+<div class="image-placeholder">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+</div>
+</div>
+<script>
+    document.getElementById('backButton').addEventListener('click', function() {
+        alert('Add Interaction');
+    });
+</script>
+</body>
+</html>

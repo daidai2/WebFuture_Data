@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .payment-methods {
+            margin: 20px 0;
+        }
+        .payment-methods label {
+            display: block;
+            margin: 5px 0;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-content div {
+            width: 30%;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .bottom-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .first-text {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="payment-methods">
+            <p class="first-text">Select your payment method</p>
+            <label>
+                <input type="radio" name="payment" value="credit-card" checked> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="paypal"> Paypal
+            </label>
+            <label>
+                <input type="radio" name="payment" value="bank-transfer"> Bank Transfer
+            </label>
+        </div>
+
+        <div class="input-group">
+            <label for="card-number">Enter your data</label>
+            <input type="text" id="card-number" placeholder="Card Number">
+        </div>
+
+        <div class="input-group">
+            <label for="expiration-date">Expiration date</label>
+            <input type="text" id="expiration-date" placeholder="MM / YY">
+        </div>
+
+        <div class="input-group">
+            <label for="ccv">CCV</label>
+            <input type="text" id="ccv" placeholder="CCV">
+        </div>
+
+        <div class="button-container">
+            <a href="#" class="btn">Complete</a>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Mobility Solutions & Daily Living Aids</div>
+            <div class="section-content">
+                <div>
+                    <p>Making life easier</p>
+                    <a href="#" class="btn">Find out More</a>
+                </div>
+                <div>
+                    <p>Wheelchair Repair</p>
+                    <a href="#" class="btn">Find out More</a>
+                </div>
+                <div>
+                    <p>Community Contracts</p>
+                    <a href="#" class="btn">Find out More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Additional Information</div>
+            <div class="section-content">
+                <div>
+                    <label>Label</label>
+                    <input type="checkbox" checked> Checkbox
+                    <input type="checkbox"> Checkbox
+                </div>
+                <div>
+                    <label>Radio Buttons</label>
+                    <input type="radio" name="radio" checked> Radio Button
+                    <input type="radio" name="radio"> Radio Button
+                </div>
+                <div>
+                    <label>Label</label>
+                    <button class="btn" id="alertButton">Button</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-text">
+            Add Element
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("alertButton").addEventListener("click", function() {
+            alert("Add Interaction");
+        });
+    </script>
+</body>
+</html>
